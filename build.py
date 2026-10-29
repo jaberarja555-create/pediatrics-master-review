@@ -587,6 +587,10 @@ def build():
     # Copy for a claude.ai Artifact preview: the host adds the doctype/html/head/body skeleton itself.
     art = re.sub(r'<!doctype html>\s*<html[^>]*><head>\s*<meta charset="utf-8">\s*<meta name="viewport"[^>]*>\s*', '', page)
     art = art.replace('</head><body>', '').replace('</body></html>', '')
+    # The review copy is for the authors: every page, card and question open (the live book keeps the free trial lock).
+    for a, b in (("var LOCKED=!st('act')||!ACC.public_key;", 'var LOCKED=false;'), ('if(!LOCKED)checkCode(', 'if(false)checkCode(')):
+        assert a in art, a
+        art = art.replace(a, b)
     if not os.environ.get('SRR_OUT'):
         (ROOT / 'artifact').mkdir(exist_ok=True)
         (ROOT / 'artifact' / 'index.html').write_text(art)
