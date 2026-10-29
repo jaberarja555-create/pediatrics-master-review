@@ -970,3 +970,4 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .toc.ccm .bp { letter-spacing:1.2px; white-space:nowrap; }
 .toc.ccm .bp span { flex:none; white-space:nowrap; }
 .tools .tool:last-child:nth-child(odd){grid-column:1/-1}
+.mz .mzh .tt { font-size:8pt; font-weight:800; color:var(--ch-dark); letter-spacing:.2px; }

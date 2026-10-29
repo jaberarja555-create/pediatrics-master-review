@@ -22,7 +22,7 @@ const MARGIN = 40, GAP = 10;
       const bd = c.querySelector('.body').getBoundingClientRect();
       const mzc = document.createElement('h1'); mzc.className = 'mzt mzc'; mzc.textContent = 'X';
       c.querySelector('.mzm').prepend(mzc);
-      const cont = mzc.getBoundingClientRect().height + 12;
+      const cont = 0; // no repeated topic title on continuation pages (owner)
       mzc.remove();
       out[s.dataset.orig] = { cap: bd.height, cont, atoms: [...c.querySelectorAll('.ms')].map(m => ({
         k: m.dataset.k, w: m.dataset.w === '1', t: m.dataset.t,

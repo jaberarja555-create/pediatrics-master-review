@@ -205,11 +205,12 @@ def top_blocks(body):
     return blocks
 
 
-def mosaic_page(book, ch, sub, body, pno, pid, orig=''):
+def mosaic_page(book, ch, sub, body, pno, pid, orig='', t=None):
     """New book layout (owner, Oct 2026): full-width rows of coloured boxes, written directly in the topic file
     as <page sub="..." layout="mosaic"> with .mrow rows and .mb boxes."""
     return (f'<section class="page mz c{ch["no"]}" id="p{pno}" data-id="{pid}" data-orig="{orig or pid}">'
-            f'<div class="mzh{" left" if pno % 2 == 0 else ""}"><span>Chapter {ch["no"]} · {ch["title"]}</span>'
+            f'<div class="mzh{" left" if pno % 2 == 0 else ""}"><span>Chapter {ch["no"]} · '
+            + (f'<b class="tt">{t["no"]} {t["title"]}</b>' if t and sub != 'Rapid Review' else ch['title']) + '</span>'
             f'<span>{sub}<b>{pno}</b></span></div>'
             f'<div class="body"><div class="main mzm">'
             f'{body}\n</div></div>'
@@ -458,9 +459,7 @@ def build():
         numbering = {}
         for rows in plan['pages']:
             first = stream[rows[0][0]]
-            head = ('' if first[0] == 'title' else
-                    '' if first[3] == 'Rapid Review' else
-                    f'<h1 class="mzt mzc"><span class="no">{first[4]["no"]}</span>{first[4]["title"]}</h1>')
+            head = ''  # owner: the topic title is shown once, on its first page; the running header names the topic
             for row in rows:
                 for i in row:
                     k, h, w, sb, t = stream[i]
@@ -498,7 +497,7 @@ def build():
     topic_pages = {}
     for ch, t0, sub, body, n, key, tids in paged:
         pid = f'p{n}'
-        html_pages.append(mosaic_page(book, ch, sub, body, n, pid, key))
+        html_pages.append(mosaic_page(book, ch, sub, body, n, pid, key, t0))
         meta_pages.append({'id': pid, 'label': f'{t0["no"]} · {text(sub)}', 'topic': t0['id'], 'ch': ch['no'], **({'ex': 1} if sub == 'Rapid Review' else {})})
         for tid in tids:
             topic_pages.setdefault(tid, []).append(pid)
