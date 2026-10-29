@@ -45,6 +45,9 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
   **Sudan protocol · …** (local programme or protocol). A fact in a box is not repeated in the side column.
 - **Never crowded (owner):** boxes and cells stay short and airy: one idea per line, a small table or list instead of
   a dense paragraph; split long content rather than packing it.
+- **Pictures placed well (owner):** medium size (about 180–220 px high), sharp, whole subject visible (check the crop),
+  beside a full-height text block or in a full-width row of 2–3, never squeezed under a short list in a narrow column;
+  look at every page with a picture in the screenshots before publishing.
 
 ## App shape (copy from the reference)
 - One-screen mobile-first web app: dark top bar (title + theme toggle), scrolling view, bottom tabs:
