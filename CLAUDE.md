@@ -46,6 +46,9 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
   **Sudan protocol · …** (local programme or protocol). A fact in a box is not repeated in the side column.
 - **Never vague (owner):** write complete, plain sentences a student understands without knowing the exam wording:
   state the fact first, then (if useful) how the MCQ asks it. No shorthand such as '"All are live EXCEPT": …'.
+- **Correct and checked (owner):** the whole book must contain no vague or wrong information. Before publishing a topic,
+  re-read its pages, side column (Rapid Review lines), flashcards and QBank as plain text and fix anything unclear,
+  uncertain or wrong; where a Sudan detail is not in the resources, do not state it as Sudan fact.
 - **Never crowded (owner):** boxes and cells stay short and airy: one idea per line, a small table or list instead of
   a dense paragraph; split long content rather than packing it.
 - **Pictures placed well (owner):** small to medium, never big (about 140–160 px high; the picture column
