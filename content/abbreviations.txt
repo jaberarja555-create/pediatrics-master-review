@@ -34,6 +34,7 @@ ART | Antiretroviral therapy
 ASA | American Society of Anesthesiologists (grade)
 ASIS | Anterior superior iliac spine
 ATLS | Advanced Trauma Life Support
+ATNR | Asymmetrical tonic neck reflex
 AUS | Atypia of undetermined significance (Bethesda III)
 AVPU | Alert, Voice, Pain, Unresponsive
 AXR | Abdominal X-ray
@@ -72,6 +73,7 @@ CLL / CML | Chronic lymphocytic / myeloid leukaemia
 CLO | Campylobacter-like organism (rapid urease test)
 CMAM | Community-based management of acute malnutrition
 CMV | Cytomegalovirus
+CNS | Central nervous system
 CO / COHb | Carbon monoxide / carboxyhaemoglobin
 COPD | Chronic obstructive pulmonary disease
 COX-2 | Cyclo-oxygenase 2
@@ -106,6 +108,7 @@ ECF / ICF | Extracellular / intracellular fluid
 ECG | Electrocardiogram
 ED | Emergency department
 EDH | Extradural haematoma
+EEG | Electroencephalogram
 eFAST | Extended focused assessment with sonography in trauma (adds the chest)
 EMR / ESD | Endoscopic mucosal resection / submucosal dissection
 ENT | Ear, nose and throat
@@ -187,6 +190,7 @@ IO | Intraosseous
 IP / MCP | Interphalangeal / metacarpophalangeal (joints)
 IPAA | Ileal pouch–anal anastomosis
 IPMN | Intraductal papillary mucinous neoplasm
+IQ | Intelligence quotient
 IRA | Ileorectal anastomosis
 IRP | Integrated relaxation pressure (manometry)
 ITA / STA | Inferior / superior thyroid artery
@@ -194,6 +198,7 @@ ITP | Immune thrombocytopenic purpura
 IU | International units
 IUGR | Intrauterine growth restriction
 IVC | Inferior vena cava
+IVH | Intraventricular haemorrhage
 IVIG | Intravenous immunoglobulin
 JVP | Jugular venous pressure
 KCl | Potassium chloride
@@ -247,6 +252,7 @@ NEXUS | National Emergency X-Radiography Utilization Study (C-spine rules)
 NF1 / NF2 | Neurofibromatosis type 1 / 2
 NG / NJ | Nasogastric / nasojejunal
 NICE | National Institute for Health and Care Excellence (UK)
+NICU | Neonatal intensive care unit
 NIS | Sodium–iodide symporter
 NPI | Nottingham Prognostic Index
 NPO | Nil by mouth (nil per os)
@@ -293,6 +299,7 @@ PTX | Pneumothorax
 PU / PUD | Peptic ulcer / peptic ulcer disease
 PV | Per vaginam (vaginal)
 PVD | Peripheral vascular disease
+PVL | Periventricular leukomalacia
 qSOFA | Quick sequential organ failure assessment
 QT / QRS | ECG intervals (QT interval, QRS complex)
 R0 | Complete resection, clear margins

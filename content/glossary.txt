@@ -438,3 +438,11 @@ osteogenesis imperfecta | Inherited collagen defect with fragile bones that frac
 stadiometer | Fixed vertical board for measuring standing height
 stunting | Low height-for-age (below −2 SD): chronic undernutrition
 wasting | Low weight-for-height (below −2 SD): acute undernutrition
+autism | Neurodevelopmental disorder with poor social communication and repetitive behaviour
+bottom shuffler / bottom shufflers / bottom shuffling | Infant who moves sitting on the bottom instead of crawling; a familial normal variant
+Erb's palsy | Upper brachial plexus (C5–C6) birth injury: arm limp, internally rotated ("waiter's tip")
+Gowers sign | Child climbs up his own legs with the hands to stand: weak hip muscles (Duchenne)
+hemiplegia / hemiplegic | Weakness of one side of the body
+kernicterus | Brain damage from high unconjugated bilirubin deposited in the basal ganglia
+pincer grip / pincer | Picking up a small object between the tips of thumb and index finger
+regression | Loss of skills a child had already gained
