@@ -49,6 +49,8 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
 - **Correct and checked (owner):** the whole book must contain no vague or wrong information. Before publishing a topic,
   re-read its pages, side column (Rapid Review lines), flashcards and QBank as plain text and fix anything unclear,
   uncertain or wrong; where a Sudan detail is not in the resources, do not state it as Sudan fact.
+- **App, not print (owner):** every page has the same layout (no left/right mirrored headers or print-only
+  conventions); the topic title is shown once, the small header names chapter · topic and the page's section.
 - **Never crowded (owner):** boxes and cells stay short and airy: one idea per line, a small table or list instead of
   a dense paragraph; split long content rather than packing it.
 - **Pictures placed well (owner):** small to medium, never big (about 140–160 px high; the picture column

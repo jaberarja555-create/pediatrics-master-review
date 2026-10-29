@@ -209,7 +209,7 @@ def mosaic_page(book, ch, sub, body, pno, pid, orig='', t=None):
     """New book layout (owner, Oct 2026): full-width rows of coloured boxes, written directly in the topic file
     as <page sub="..." layout="mosaic"> with .mrow rows and .mb boxes."""
     return (f'<section class="page mz c{ch["no"]}" id="p{pno}" data-id="{pid}" data-orig="{orig or pid}">'
-            f'<div class="mzh{" left" if pno % 2 == 0 else ""}"><span>Chapter {ch["no"]} · '
+            f'<div class="mzh"><span>Chapter {ch["no"]} · '
             + (f'<b class="tt">{t["no"]} {t["title"]}</b>' if t and sub != 'Rapid Review' else ch['title']) + '</span>'
             f'<span>{sub}<b>{pno}</b></span></div>'
             f'<div class="body"><div class="main mzm">'
@@ -221,7 +221,7 @@ def topic_page(book, ch, t, sub, main, side, pno, pid):
     side_html = f'<div class="side">{side}</div>' if side.strip() else ''
     grid = 'grid' if side_html else 'grid wide'
     return (f'<section class="page c{ch["no"]}" id="p{pno}" data-id="{pid}">'
-            f'<div class="hdr{" left" if pno % 2 == 0 else ""}"><div class="chap">{ICON}{ch["short"]}</div>'
+            f'<div class="hdr"><div class="chap">{ICON}{ch["short"]}</div>'
             f'<div class="topic">{t["no"]} · {sub}</div><div class="pno">{pno}</div></div>'
             f'<div class="body"><div class="{grid}"><div class="main">'
             f'<div class="kicker"><span class="num">{t["no"]}</span>{ch["title"]}</div>'
@@ -385,7 +385,7 @@ def rr_pages(book, groups, first_pno):
         pno = first_pno + n // 2
         left, right = ''.join(cols[n]), ''.join(cols[n + 1]) if n + 1 < len(cols) else ''
         pages.append(f'<section class="page" id="p{pno}" data-id="rapid-review-{n // 2 + 1}">'
-                     f'<div class="hdr{" left" if pno % 2 == 0 else ""}"><div class="chap">{ICON}Rapid review</div>'
+                     f'<div class="hdr"><div class="chap">{ICON}Rapid review</div>'
                      f'<div class="topic">Every clue → answer</div><div class="pno">{pno}</div></div>'
                      f'<div class="body"><div class="grid wide"><div class="main">'
                      f'<div class="kicker"><span class="num">RR</span>Last-minute revision</div>'
