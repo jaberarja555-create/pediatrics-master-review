@@ -689,7 +689,13 @@
   "bankak_account": "",
   "bankak_name": "",
   "server": "same",
-  "free_label": "أول topic في كل chapter"
+  "free_label": "أول topic في كل chapter",
+  "public_key": {
+   "kty": "EC",
+   "x": "Rs5DF-fMX-HKD_ohSU4NXNCkhzcCzAnMvB69ZwLcBqg",
+   "y": "pZ_UOmnNSLGjMvlX2Bs5JqrDzlJP6TB6oVsHz4hymfQ",
+   "crv": "P-256"
+  }
  },
  "contents_split": [
   8

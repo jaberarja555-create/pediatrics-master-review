@@ -1,3 +1,6 @@
 __pycache__/
 artifact/
 resources/text/
+server/node_modules/
+server/package.json
+server/package-lock.json
