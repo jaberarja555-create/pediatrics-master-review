@@ -117,11 +117,8 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
   the next. The book must be illustrated: SVG diagrams/ECGs/flowcharts drawn in-page; clinical photos where they help.
 - Check: `node check.js [screenshot-dir]` must print "All pages fit." If a column is too long, move or
   trim content (move a section to another page of the topic, or add a page). Never shrink fonts.
-- Resources are in `resources/` (see `resources/README.md` for what each PDF is for and the Mojahid page map).
-  The chapter list in book.json (22 chapters in 5 parts, ~90 topics) uses ALL resources: Mojahid order as the spine, plus
-  topics from Ellis, Pocket Pediatrics, Surgical Problems, the Khartoum cases/OSCE and the MCQ bank. For each topic
-  read every resource that covers it (grep resources/text): Mojahid for local practice, Ellis/Pocket for facts and
-  depth, the MCQ bank and case books for Try it, traps and clue switch. Mycetoma is not in any resource.
+- Resources are in `resources/` (the owner sends them chapter by chapter; keep a `resources/README.md` saying what each
+  file is for). For each topic read every resource that covers it; put extracted text in `resources/text/` (not committed).
 
 ## Subscription (free trial + activation codes)
 - `book.json` → `access`: free topics (owner's model, from the obstetrics app: the first topic of each chapter; `free_label` is the short Arabic line shown instead of the topic list; the drugs chapter is not free) with ALL their flashcards / questions (`"all"`); a chapter whose topics are all free also has a free Exam corner;
@@ -129,7 +126,7 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
 - Online: `server/` = one Cloudflare Worker serving the book (docs/) + `/admin` control page + `/check`; see server/DEPLOY.md.
 - Codes work like Dr. Arja Master Note: the owner makes codes `PMR-XXXX-XXXX` on `/admin` (note = buyer's name/phone, Copy message for WhatsApp,
   Reset devices, Switch off/on, Delete). The student types the code in the app (or opens `<app url>#code=PMR-…`); the Worker's `/activate` binds the
-  device (`prr-dev`, max 2 per code, stored in a SQLite Durable Object, class CodesDB in worker.js) and returns a token `DEV.sig` (ECDSA P-256 signature of `PMR|surgery|1|<DEV>`), checked with
+  device (`prr-dev`, max 2 per code, stored in a SQLite Durable Object, class CodesDB in worker.js) and returns a token `DEV.sig` (ECDSA P-256 signature of `PMR|pediatrics|1|<DEV>`), checked with
   `access.public_key` so the book also opens offline. `/check` relocks a device whose code is off/reset/deleted. The PRIVATE key lives only in
   Cloudflare (secret PRIVATE_KEY): never commit it.
 - **Sync (owner): everything the student saves** — highlights, notes, drawings (`ink`/`idel`, per stroke id), page progress, and (`sm`, app.js `SM`:
