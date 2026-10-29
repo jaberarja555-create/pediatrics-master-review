@@ -974,3 +974,8 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .mrow:has(> .mb.rv.rvc) { margin-top:-10px; } .mb.rv.rvc { border-top:0; border-radius:0 0 7px 7px; }
 .mrow:has(+ .mrow > .mb.rv.rvc) > .mb.rv { border-bottom-left-radius:0; border-bottom-right-radius:0; }
 .mzm > .mrow:first-child:has(> .mb.rv.rvc) { margin-top:0; } .mzm > .mrow:first-child > .mb.rv.rvc { border-top:1.3px solid var(--mbl); border-radius:7px; }
+/* Rapid Review rows: each piece is one row of two lines; pieces join into one block */
+.mb.rv .mc { padding: 2px 10px; }
+.mb.rv:not(.rvc) .mc { padding-top: 6px; }
+.mrow:has(> .mb.rv.rvc) { margin-top: -10px; margin-bottom: 10px; }
+.mb.rv .rs { columns: auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: 22px; }

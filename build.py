@@ -184,7 +184,7 @@ def chapter_exam(t):
     """Rapid Review of one topic (owner): only the topic name and one list of scenario → answer lines
     (diagnosis, best test, best treatment, drug of choice), in two columns; long lists continue in a second box."""
     # small pieces flow from page to page with no empty space (owner); the topic name heads only the first piece
-    rows, out, per = rv_rows(t['_exam']), [], 6
+    rows, out, per = rv_rows(t['_exam']), [], 2
     for i in range(0, len(rows), per):
         head = f'<div class="mh">{t["no"]} {t["title"]}</div>' if i == 0 else ''
         out.append((f'<div class="mb rv{"" if i == 0 else " rvc"}">{head}<div class="mc"><div class="rs">{"".join(rows[i:i + per])}</div></div></div>', True))
