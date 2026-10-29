@@ -122,3 +122,20 @@ child on a trolley, a monitor in the background. Left 55 % plain dark red, nothi
 **part5.jpg** · Clinical & Drugs · background dark navy (#0b1f33 → #23405f)
 Wide banner illustration, 4:1. Right side: a doctor with a clipboard talking to a child and mother, a few
 medicine bottles and a syringe on a small table. Left 55 % plain dark navy, nothing on it. No text.
+
+## Chapter 1 · Topic 1.4 Immunization
+
+**imm_bcg_scar.jpg**
+Realistic close-up medical photograph, square 1:1. The left upper arm (deltoid area) of a Sudanese infant showing
+a typical healed BCG scar: a small round depressed scar about 5 mm across. Plain background, no text.
+
+**imm_bcg_adenitis.jpg**
+Realistic medical photograph, landscape 4:3. A 3-month-old infant lying on the back with the left arm raised,
+showing a single enlarged, rounded lymph node (about 2 cm) in the left axilla with slightly reddish skin over it;
+the infant looks well. Plain background, no text.
+
+**imm_sites.jpg** (optional)
+Clean medical illustration, landscape 4:3. An infant lying on the back showing vaccine sites: left upper arm
+(intradermal BCG), right upper arm (subcutaneous measles), left anterolateral thigh and right anterolateral
+thigh (intramuscular pentavalent and pneumococcal), drops into the mouth (oral polio, rotavirus). Coloured dots
+on each site, no words or labels.
