@@ -117,7 +117,7 @@ def auto_mosaic(main):
 
 def exam_parts(side, ex):
     """Collect a page's exam material (formula, numbers, clue switch, try it) into the topic's exam dict."""
-    ex['formula'] += re.findall(r'<div class="formula">.*?</div></div></div>', side, re.S)
+    ex['formula'] += re.findall(r'<div class="formula">.*?</div></div>', side, re.S)
     ex['numbers'] += re.findall(r'<tr>.*?</tr>', ''.join(re.findall(r'<table class="numt">(.*?)</table>', side, re.S)), re.S)
     ex['clues'] += re.findall(r'<div class="r">.*?</div>', side, re.S)
     ex['try'] += re.findall(r'<div class="try">.*?</div></div>', side, re.S)
@@ -144,10 +144,18 @@ def exam_rows(ex, title):
     return rows
 
 
+def formula_row(f):
+    """Exam corner: a side-column Formula strip as one plain row 'clue + clue → ANSWER' (the strip layout breaks in a half-width box)."""
+    parts = re.findall(r'<span class="(c|p|ans)">(.*?)</span>', f, re.S)
+    left = ' '.join(h if k != 'p' else f'<i>{h}</i>' for k, h in parts if k != 'ans' and h != '=')
+    ans = next((h for k, h in parts if k == 'ans'), '')
+    return f'<div class="r fr"><span>{left}</span><span class="to">{ans}</span></div>'
+
+
 def chapter_exam(t):
     """Exam corner atoms for one topic: a clue box and a formulas + questions box (they can pair side by side)."""
     ex = t['_exam']
-    fl = ''.join(f.replace('<div class="formula">', '<div class="formula fl">') for f in ex['formula'])
+    fl = ''.join(formula_row(f) for f in ex['formula'])
     qa = ''.join(re.sub(r'<div class="a"><span>ANSWER</span>', '<div class="a">', q).replace('class="try"', 'class="qa"')
                  for q in ex['try'])
     out = []

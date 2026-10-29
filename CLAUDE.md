@@ -30,6 +30,17 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
 - Contents lists every planned topic; a topic without `content/topics/<id>.html` shows without a page number
   (book) and as "Soon" (home). `contents_split` in book.json = chapters that start a new contents page.
 
+## Owner's writing rules for this book (Oct 2026, stricter than the obstetrics book)
+- **Clear and formal**: standard textbook wording, standard abbreviations only (each added to abbreviations.txt);
+  nothing casual or funny like the obstetrics book had.
+- **Sudan protocols first, local resources preferred** (Asma Hadida, Kibreet, Aljazeera, Shendi cases, Osman,
+  MED 06 MCQs); Baby Nelson and Case Files check facts. Where resources disagree, use the value the MCQ keys and
+  Sudan/WHO protocols agree with.
+- **Not a textbook**: everything the student needs, short and simple; every line exam-important; no background.
+- **Read every resource that covers the topic** before writing it (owner checks this): list them in the reply.
+- Pages clear and pleasant to read, normal text size, pictures only where they matter.
+- Topic 1.1 (growth.html) is the model for later topics.
+
 ## App shape (copy from the reference)
 - One-screen mobile-first web app: dark top bar (title + theme toggle), scrolling view, bottom tabs:
   **Home · Read · Cards · Search**.

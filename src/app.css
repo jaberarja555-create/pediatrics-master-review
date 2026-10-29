@@ -954,3 +954,4 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 /* pediatrics: topics not written yet */
 .toc .ct.soon{cursor:default;color:#57534e}.toc .ct.soon i{opacity:.75}
 .htp.soon{cursor:default;opacity:.62}.htp.soon .pc{font:800 10px var(--sans);letter-spacing:1px;text-transform:uppercase;color:var(--muted);background:transparent;border:1px solid var(--line)}
+.mb.exam .r.fr i { font-style: normal; font-weight: 800; color: var(--mbd); }

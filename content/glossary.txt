@@ -426,3 +426,15 @@ Trousseau's sign | Carpal spasm when a BP cuff is inflated (low calcium); also m
 Virchow's node | Enlarged left supraclavicular node from an abdominal cancer (Troisier's sign)
 Whipple's operation | Pancreaticoduodenectomy for cancer of the pancreatic head or periampullary region
 Zollinger–Ellison syndrome | Gastrinoma causing severe, multiple peptic ulcers
+achondroplasia | Inherited (autosomal dominant) dwarfism with short limbs and a large head
+centile / centiles / percentile / percentiles | Position of a measurement among 100 normal children of the same age and sex
+craniosynostosis | Early fusion of one or more skull sutures, giving a small or abnormally shaped skull
+epiphysis / epiphyses | Growing end of a long bone; growth stops when it fuses with the shaft
+fontanelle / fontanelles | Soft membranous gap between the skull bones of an infant
+kwashiorkor | Severe malnutrition with bilateral pitting oedema
+macrosomia | Birth weight above 4 kg
+megalencephaly | Abnormally large brain
+osteogenesis imperfecta | Inherited collagen defect with fragile bones that fracture easily
+stadiometer | Fixed vertical board for measuring standing height
+stunting | Low height-for-age (below −2 SD): chronic undernutrition
+wasting | Low weight-for-height (below −2 SD): acute undernutrition
