@@ -632,7 +632,11 @@ var GL_RE=Object.keys(TGL).length?new RegExp('(^|[^A-Za-z])('+alts(Object.keys(T
 var TSKIP='svg,script,style,.gt,.ftr,h1,.kicker,.toc-h,.mzh,a,input,textarea';
 function termText(root,skip){var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){return n.parentNode.closest(skip)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),a=[];while(w.nextNode())a.push(w.currentNode);return a}
 function termPass(root,skip,re,key,seen){if(!re)return;termText(root,skip).forEach(function(n){var t=n.nodeValue,m,last=0,frag=null;re.lastIndex=0;
-  while((m=re.exec(t))){var k=key(m[2]);if(k===undefined||(seen&&seen[k])){re.lastIndex=m.index+m[1].length+1;continue}if(seen)seen[k]=1;
+  while((m=re.exec(t))){var k=key(m[2]);
+    /* part of a chemical formula (PO4, CO2, HCO3 written with <sub>): not an abbreviation */
+    if(k!==undefined&&m.index+m[0].length===t.length&&n.nextSibling&&/^(SUB|SUP)$/.test(n.nextSibling.nodeName))k=undefined;
+    if(k===undefined){re.lastIndex=m.index+m[1].length+1;continue}
+    if(seen&&seen[k]){re.lastIndex=m.index+m[0].length;continue}  /* already explained on this page: skip the whole phrase */if(seen)seen[k]=1;
     var st0=m.index+m[1].length,word=m[2]+m[3];frag=frag||document.createDocumentFragment();frag.appendChild(document.createTextNode(t.slice(last,st0)));
     var sp=document.createElement('span');sp.className='gt';sp.dataset.t=k;sp.textContent=word;frag.appendChild(sp);last=st0+word.length;re.lastIndex=last}
   if(frag){frag.appendChild(document.createTextNode(t.slice(last)));n.parentNode.replaceChild(frag,n)}})}

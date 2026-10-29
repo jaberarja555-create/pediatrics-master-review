@@ -51,6 +51,9 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
   uncertain or wrong; where a Sudan detail is not in the resources, do not state it as Sudan fact.
 - **App, not print (owner):** every page has the same layout (no left/right mirrored headers or print-only
   conventions); the topic title is shown once, the small header names chapter · topic and the page's section.
+- **Tap meanings checked (owner):** abbreviations.txt and glossary.txt are for pediatrics only (the surgery list was
+  pruned; conflicting meanings fixed). After each topic run `node tools/terms.js artifact/index.html` and check every
+  word shows the right meaning in its context (e.g. PO in PO₄, CHD = congenital heart disease, MMR = vaccine).
 - **Never crowded (owner):** boxes and cells stay short and airy: one idea per line, a small table or list instead of
   a dense paragraph; split long content rather than packing it.
 - **Pictures placed well (owner):** small to medium, never big (about 140–160 px high; the picture column

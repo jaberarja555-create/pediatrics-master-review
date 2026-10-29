@@ -47,7 +47,7 @@ branchial | Arising from the embryonic branchial (pharyngeal) arches
 brawny | Hard, thick and swollen (oedema or cellulitis)
 cachexia | Severe weight and muscle loss from chronic illness or cancer
 caecum / caecal | First part of the large bowel, in the right iliac fossa
-calcification / calcified | Calcium deposits in a tissue, seen on X-ray or mammogram
+calcification / calcified | Calcium deposits in a tissue, seen on X-ray, CT or ultrasound
 carbuncle | Group of linked boils draining through several openings
 carcinoid | Neuroendocrine tumour, often in the appendix or small bowel; secretes serotonin
 carcinoma | Cancer arising from epithelium
@@ -101,7 +101,7 @@ dysentery | Bloody diarrhoea with mucus
 dyskinesia | Abnormal movement (e.g. of the gallbladder)
 dyspepsia | Upper abdominal pain or discomfort after meals
 dysphagia | Difficulty swallowing
-dysplasia / dysplastic | Abnormal cells and growth before cancer
+dysplasia / dysplastic | Abnormal development of a tissue (skeletal dysplasia: abnormal bone growth); in pathology, abnormal cells that may precede cancer
 dyspnoea | Shortness of breath
 ectasia | Dilatation of a duct (duct ectasia of the breast)
 ectopic | In the wrong place (ectopic pregnancy outside the uterus)
@@ -109,7 +109,7 @@ effusion | Fluid collecting in a body space (e.g. pleural effusion)
 embolisation / embolise | Blocking a vessel on purpose through a catheter to stop bleeding
 embolus | A clot or other material carried in the blood that blocks a vessel
 empyema | Pus inside a body cavity or hollow organ (pleura, gallbladder)
-encephalopathy | Brain dysfunction (confusion) from a systemic cause, e.g. liver failure
+encephalopathy | Brain dysfunction (drowsiness, seizures, coma) from any cause, e.g. hypoxia, high bilirubin, infection
 endemic | Constantly present in a population or region
 endoscopy / endoscopic | Looking inside the body with a flexible camera
 enteral | Feeding into the gut (mouth, NG or feeding tube)
@@ -456,3 +456,5 @@ attenuated | Weakened live organism that immunises without causing disease
 conjugate vaccine | Polysaccharide joined to a protein so infants under 2 years respond and form memory
 cold chain | Keeping vaccines at 2–8 °C from the factory to the child
 intussusception | Telescoping of one bowel segment into the next
+cystic fibrosis | Inherited disease (CFTR gene) with thick secretions: chest infections, malabsorption, salty sweat
+pyloric stenosis | Thickened pylorus in infants (2–8 weeks): projectile non-bilious vomiting
