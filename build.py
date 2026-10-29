@@ -123,6 +123,19 @@ def exam_parts(side, ex):
     ex['try'] += re.findall(r'<div class="try">.*?</div></div>', side, re.S)
 
 
+def exam_boxes(main):
+    """Exam trap / Best next step / Sudan protocol boxes of a page, each cut at its own closing </div>."""
+    out = []
+    for m in re.finditer(r'<div class="box (?:trap|next|guide)"[^>]*>', main):
+        depth, i = 0, m.start()
+        for t in re.finditer(r'<(/?)div\b[^>]*>', main[m.start():]):
+            depth += -1 if t.group(1) else 1
+            if depth == 0:
+                out.append(main[m.start():m.start() + t.end()])
+                break
+    return out
+
+
 def exam_rows(ex, title):
     """One exam section at the end of the topic (owner): key points, numbers, formulas, test yourself."""
     rows = []
@@ -407,7 +420,7 @@ def build():
             for sub, hand, body in pages:
                 main, _, side = body.partition('<aside>')
                 exam_parts(side, ex)
-                ex['boxes'] += re.findall(r'<div class="box (?:trap|next|guide)"[^>]*><div class="bh">.*?</div>.*?</div>\n', main, re.S)
+                ex['boxes'] += exam_boxes(main)
                 got = [('row' if r.startswith('<div class="m') else 'raw', r, True) for r in top_blocks(main)] if hand else auto_mosaic(main.strip())
                 atoms += [(k, h, w, sub) for k, h, w in got]
             t['_exam'] = ex

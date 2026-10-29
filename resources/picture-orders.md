@@ -75,3 +75,24 @@ itself (parachute reaction). Plain background, no text.
 **dev_sitting.jpg** (optional)
 Realistic photograph, square 1:1. A 6-month-old Sudanese baby sitting on a mat, leaning forward and propping
 itself up on both hands placed on the floor in front (tripod sitting). Plain background, no text.
+
+## Chapter 1 · Topic 1.3 Failure to Thrive & Short Stature
+
+**ftt_marasmus.jpg**
+Realistic medical photograph, portrait 3:4. A Sudanese infant about 10 months old with severe wasting (marasmus)
+sitting on the mother's lap: very thin limbs, loose skin folds on the thighs and buttocks ("baggy pants"), visible
+ribs, old-looking face, alert eyes. Clinic background, respectful, no text.
+
+**ftt_turner.jpg**
+Realistic medical photograph, portrait 3:4, front view, upper body. A girl about 10 years old with Turner
+syndrome: short, broad "shield" chest with widely spaced nipples, webbed neck (skin fold from neck to shoulder),
+low posterior hairline, wearing a vest. Plain background, respectful, no text.
+
+**ftt_constitutional.jpg** (optional)
+Realistic photograph, landscape 4:3. Two 14-year-old boys standing side by side against a height chart on a
+clinic wall: one of average height with a pubertal build, the other clearly shorter with a child-like
+(prepubertal) body and face. Plain background, no text, no numbers.
+
+**Real pictures, not AI:**
+- **ftt_boneage_delayed.jpg**: X-ray of the left hand and wrist showing delayed bone age (few carpal bones for
+  the age), ideally beside a normal one of the same age.

@@ -65,6 +65,7 @@ CCK | Cholecystokinin
 CD117 | c-KIT protein (marker of GIST)
 CDC | Centers for Disease Control and Prevention
 CEA | Carcinoembryonic antigen
+CF | Cystic fibrosis
 CHD | Common hepatic duct
 CHRPE | Congenital hypertrophy of the retinal pigment epithelium
 CK | Creatine kinase
@@ -131,6 +132,7 @@ FNH | Focal nodular hyperplasia
 FOBT | Faecal occult blood test
 FOLFOX | Folinic acid, 5-FU, oxaliplatin (chemotherapy)
 FTSG / STSG | Full- / split-thickness skin graft
+FTT | Failure to thrive
 G6PD | Glucose-6-phosphate dehydrogenase
 GA | General anaesthesia
 GABA | Gamma-aminobutyric acid
@@ -176,6 +178,7 @@ IC | Ileocaecal (valve)
 ICA | Internal carotid artery
 ICP | Intracranial pressure
 ICU | Intensive care unit
+IgA | Immunoglobulin A
 IgA / IgG / IgM | Immunoglobulin A / G / M
 IGF | Insulin-like growth factor
 IGF-1 | Insulin-like growth factor 1
@@ -185,6 +188,7 @@ IJV | Internal jugular vein
 IL-6 | Interleukin-6
 IM / IV | Intramuscular / intravenous
 IMA / IMV | Inferior mesenteric artery / vein
+IMCI | Integrated Management of Childhood Illness (WHO / Sudan Ministry of Health)
 INR | International normalised ratio
 IO | Intraosseous
 IP / MCP | Interphalangeal / metacarpophalangeal (joints)
@@ -323,6 +327,7 @@ SCM | Sternocleidomastoid
 SD | Standard deviation (z-score)
 SDH | Subdural haematoma
 SG | Specific gravity (urine)
+SGA | Small for gestational age
 SIADH | Syndrome of inappropriate ADH secretion
 SIRS | Systemic inflammatory response syndrome
 SLE | Systemic lupus erythematosus
@@ -361,6 +366,7 @@ TR | Tricuspid regurgitation
 TRAb | TSH-receptor antibodies
 TRALI | Transfusion-related acute lung injury
 TSH | Thyroid-stimulating hormone
+tTG | Tissue transglutaminase (coeliac antibody test)
 TXA | Tranexamic acid
 U&E | Urea and electrolytes
 UC | Ulcerative colitis

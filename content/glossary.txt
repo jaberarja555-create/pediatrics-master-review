@@ -446,3 +446,8 @@ hemiplegia / hemiplegic | Weakness of one side of the body
 kernicterus | Brain damage from high unconjugated bilirubin deposited in the basal ganglia
 pincer grip / pincer | Picking up a small object between the tips of thumb and index finger
 regression | Loss of skills a child had already gained
+craniopharyngioma | Benign suprasellar tumour from Rathke's pouch; short stature, headache, visual field loss, calcification on X-ray
+Laron syndrome | Growth hormone resistance (receptor defect): high GH, low IGF-1, short stature
+micropenis | Stretched penile length below −2.5 SD for age (under about 2.5 cm in a term newborn)
+Turner syndrome | 45,X girl: short stature, webbed neck, widely spaced nipples, ovarian failure, coarctation
+constitutional delay | Normal variant: slow growth and late puberty with delayed bone age; normal final height
