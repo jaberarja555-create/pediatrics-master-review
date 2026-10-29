@@ -101,7 +101,9 @@ Side column (every topic page):
 - **Clue switch · the detail that flips the answer**: rows `clue → answer`.
 - **Try it · exam-style**: 2 short questions with answers.
 
-End-of-book **Rapid review** page: every clue → answer (`.frow` rows).
+**Rapid Review (owner):** one section at the end of each chapter (no separate end-of-book pages, no "Exam corner"):
+ per topic its key points (every Exam trap / Best next step / Sudan protocol box of the pages), clue → answer, formulas
+ and test yourself, key numbers (Numbers rows live only here, not as a box in the topic). Listed in the contents per chapter.
 
 ## Writing style
 **Clear, standard headings (owner):** use the terms students know from lectures and textbooks ("Blood investigations on admission", "Clinical features", "Indications for surgery"), never slang or riddles ("Bloods", "The plan", "One stone, many pictures").
@@ -120,7 +122,7 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
   Topic ids there decide which file is used. A topic with no file shows as "Coming soon".
 - `content/topics/<id>.html`: one file per topic. Each page is `<page sub="Page subtitle"> main column … <aside> side column </aside></page>`.
   Write only the body: header, kicker, title, page numbers, footer, contents and Rapid Review pages are generated.
-  Rapid Review is built automatically from every Formula strip and Clue-switch row.
+  The chapter Rapid Review is built automatically (build.py chapter_exam) from the exam boxes and the side column.
 - `content/decks/<id>.json`: flashcards `[[section, question, answer], ...]`.
 - `content/img/`: images (cover.webp, icon.png, clinical photos). Name photos `<topic>_<thing>.jpg`, ≤ 900 px wide.
   The owner may send photos in a Word file: unzip the .docx and take `word/media/*`; labels under each picture say where it goes.
@@ -141,7 +143,7 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
   file is for). For each topic read every resource that covers it; put extracted text in `resources/text/` (not committed).
 
 ## Subscription (free trial + activation codes)
-- `book.json` → `access`: free topics (owner's model, from the obstetrics app: the first topic of each chapter; `free_label` is the short Arabic line shown instead of the topic list; the drugs chapter is not free) with ALL their flashcards / questions (`"all"`); a chapter whose topics are all free also has a free Exam corner;
+- `book.json` → `access`: free topics (owner's model, from the obstetrics app: the first topic of each chapter; `free_label` is the short Arabic line shown instead of the topic list; the drugs chapter is not free) with ALL their flashcards / questions (`"all"`); a chapter whose topics are all free also has a free Rapid Review;
   one code opens up to 2 devices (student sends both device codes), WhatsApp, price, Bankak account. Empty fields are hidden. Subscription text is in Sudanese Arabic (English terms kept).
 - Online: `server/` = one Cloudflare Worker serving the book (docs/) + `/admin` control page + `/check`; see server/DEPLOY.md.
 - Codes work like Dr. Arja Master Note: the owner makes codes `PMR-XXXX-XXXX` on `/admin` (note = buyer's name/phone, Copy message for WhatsApp,
@@ -153,4 +155,4 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
   key maps stamped in `prr-smu`, newest per key wins) flashcards known, QBank answers/marks, previous tests, daily streak and last page — (`prog` = page key → [state, time], newest wins) are shared by the devices of one code: `POST /sync` (device proves itself with its token; data in the
   `sync` table of CodesDB, versioned). app.js merges per highlight (id = page key + start + end, `u` = last change, deletions kept in `prr-hldel`);
   syncs on open, 4 s after a change, when back online, and from **Sync now** in the Notes sheet. Free-trial devices do not sync.
-- Locked: pages of non-free topics, Exam corners of non-free chapters, Rapid review, other decks and questions.
+- Locked: pages of non-free topics, Rapid Reviews of non-free chapters, other decks and questions.

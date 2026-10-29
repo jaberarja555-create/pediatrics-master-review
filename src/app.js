@@ -258,7 +258,7 @@ function contentsHtml(){return META.contents.map(function(ch){
   return (ch.part?'<div class="partx">'+esc(ch.part)+'</div>':'')+'<div class="sh" style="margin:14px 0 4px"><h3><small>Chapter '+ch.no+'</small> · '+esc(ch.title)+'</h3></div>'+ch.topics.map(function(t){
     if(!t.p)return '<div class="trow soon c'+ch.no+'"><span class="n">'+esc(t.no)+'</span><span class="l">'+esc(t.title)+'<small>Coming soon</small></span><span class="p"></span></div>';
     var tt=TOPICS.filter(function(x){return x.id===t.id})[0],ok=tt&&topicRead(tt)===tt.pages.length;
-    return '<button class="trow c'+ch.no+'" type="button" data-p="'+t.p+'"><span class="n">'+esc(t.no)+'</span><span class="l">'+esc(t.title)+'<small>'+esc(t.sub||'')+'</small></span><span class="p'+(ok?' ok':'')+'">'+(ok?'✓ ':'')+'p '+t.p+'</span></button>'}).join('')}).join('')+
+    return '<button class="trow c'+ch.no+'" type="button" data-p="'+t.p+'"><span class="n">'+esc(t.no)+'</span><span class="l">'+esc(t.title)+'<small>'+esc(t.sub||'')+'</small></span><span class="p'+(ok?' ok':'')+'">'+(ok?'✓ ':'')+'p '+t.p+'</span></button>'}).join('')+(ch.rv?'<button class="trow rr" type="button" data-p="'+ch.rv+'"><span class="n">RR</span><span class="l">Rapid Review<small>All key points of the chapter</small></span><span class="p">p '+ch.rv+'</span></button>':'')}).join('')+
   (META.rr<=NP?'<button class="trow rr" type="button" data-p="'+META.rr+'"><span class="n">RR</span><span class="l">Rapid review<small>Every clue → answer</small></span><span class="p">p '+META.rr+'</span></button>':'')}
 $('tocBtn').onclick=function(){openSheet('Contents',contentsHtml())};
 /* Notes and highlights are listed apart: tab Notes = everything with a note, tab Highlights = coloured highlights */

@@ -153,19 +153,26 @@ def formula_row(f):
 
 
 def chapter_exam(t):
-    """Exam corner atoms for one topic: a clue box and a formulas + questions box (they can pair side by side)."""
+    """Rapid Review atoms for one topic (owner: the Exam corner and the Rapid review are one section at the end of
+    each chapter): exam boxes from the pages, clue → answer, formulas and test yourself, key numbers."""
     ex = t['_exam']
     fl = ''.join(formula_row(f) for f in ex['formula'])
     qa = ''.join(re.sub(r'<div class="a"><span>ANSWER</span>', '<div class="a">', q).replace('class="try"', 'class="qa"')
                  for q in ex['try'])
     out = []
+    if ex['boxes']:
+        out.append((f'<div class="mb exam"><div class="mh">{t["no"]} {t["title"]} · key points</div>'
+                    f'<div class="mc rvb">{"".join(ex["boxes"])}</div></div>', False))
     if ex['clues']:
-        out.append((f'<div class="mb exam"><div class="mh">{t["no"]} {t["title"]} · clue → answer</div>'
+        out.append((f'<div class="mb exam"><div class="mh">{t["no"]} · clue → answer</div>'
                     f'<div class="mc">{"".join(ex["clues"])}</div></div>', False))
     if fl or qa:
         out.append((f'<div class="mb exam"><div class="mh">{t["no"]} · formulas &amp; test yourself</div><div class="mc">'
                     + (f'<div class="xsub">Formulas</div>{fl}' if fl else '') + (f'<div class="xsub">Test yourself</div>{qa}' if qa else '')
                     + '</div></div>', False))
+    if ex['numbers']:
+        out.append((f'<div class="mb exam"><div class="mh">{t["no"]} · key numbers</div><div class="mc">'
+                    f'<table class="numt">{"".join(ex["numbers"])}</table></div></div>', False))
     return out
 
 
@@ -225,6 +232,8 @@ def contents_pages(book, rr_page):
         tops = ''.join((f'<div class="ct" data-p="{t["p"]}"><i>{t["no"]}</i><span>{t["title"]}</span><em>{t["p"]}</em></div>'
                         if t.get('p') else
                         f'<div class="ct soon"><i>{t["no"]}</i><span>{t["title"]}</span><em></em></div>') for t in ch['topics'])
+        if ch.get('rv'):
+            tops += f'<div class="ct rvr" data-p="{ch["rv"]}"><i>RR</i><span>Rapid Review</span><em>{ch["rv"]}</em></div>'
         dp = f' data-p="{written[0]["p"]}"' if written else ''
         parts[-1][1].append(f'<div class="cc c{ch["no"]}"><div class="cch"{dp}><b>{ch["no"]}</b>'
                             f'<span>{ch["title"]}</span></div><div class="ctl">{tops}</div></div>')
@@ -323,7 +332,7 @@ def audio_meta(meta_pages, topics_meta, book):
         p0 = meta_pages[parts[0][0]]
         if g.startswith('ex'):
             ch = next(c for c in book['chapters'] if c['no'] == p0['ch'])
-            title, no = f'Exam corner · {text(ch["title"])}', f'{ch["no"]}'
+            title, no = f'Rapid Review · {text(ch["title"])}', f'{ch["no"]}'
         else:
             title, no = titles[g]['title'], titles[g]['no']
         out.append({'g': g, 'title': title, 'no': no, 'ch': p0['ch'], 'n': sum(1 for k in keys if k.startswith(g + ':')), 'parts': parts})
@@ -394,16 +403,13 @@ def build():
                 continue
             src = f.read_text()
             pages = re.findall(r'<page sub="(.*?)"( layout="mosaic")?>(.*?)</page>', src, re.S)
-            atoms, ex = [], {'formula': [], 'numbers': [], 'clues': [], 'try': []}
+            atoms, ex = [], {'formula': [], 'numbers': [], 'clues': [], 'try': [], 'boxes': []}
             for sub, hand, body in pages:
                 main, _, side = body.partition('<aside>')
                 exam_parts(side, ex)
+                ex['boxes'] += re.findall(r'<div class="box (?:trap|next|guide)"[^>]*><div class="bh">.*?</div>.*?</div>\n', main, re.S)
                 got = [('row' if r.startswith('<div class="m') else 'raw', r, True) for r in top_blocks(main)] if hand else auto_mosaic(main.strip())
                 atoms += [(k, h, w, sub) for k, h, w in got]
-            if ex['numbers']:
-                nr, half = ex['numbers'], -(-len(ex['numbers']) // 2)
-                tables = ''.join(f'<table class="numt">{"".join(nr[i:i + half])}</table>' for i in (0, half) if nr[i:i + half])
-                atoms.append(('box', f'<div class="mb nums"><div class="mh">Key numbers</div><div class="mc"><div class="ng">{tables}</div></div></div>', len(nr) > 6, pages[-1][0]))
             t['_exam'] = ex
             written.append((ch, t, src))
             if not chapters or chapters[-1][0] is not ch:
@@ -414,8 +420,8 @@ def build():
         tps = [a[4] for a in stream if a[0] == 'title']
         exam = [x for t in tps for x in chapter_exam(t)]
         if exam:
-            stream.append(('title', f'<h1 class="mzt"><span class="no">{ch["no"]}</span>Exam corner · {ch["title"]}</h1>', True, 'Exam corner', tps[-1]))
-            stream.extend(('box', r, w, 'Exam corner', tps[-1]) for r, w in exam)
+            stream.append(('title', f'<h1 class="mzt"><span class="no">{ch["no"]}</span>Rapid Review · {ch["title"]}</h1>', True, 'Rapid Review', tps[-1]))
+            stream.extend(('box', r, w, 'Rapid Review', tps[-1]) for r, w in exam)
 
     def compose(stream, rows):
         """HTML of one page from its rows of atom indexes; boxes are renumbered per topic in reading order."""
@@ -442,12 +448,16 @@ def build():
         numbering = {}
         for rows in plan['pages']:
             first = stream[rows[0][0]]
-            head = '' if first[0] == 'title' else f'<h1 class="mzt mzc"><span class="no">{first[4]["no"]}</span>{first[4]["title"]}</h1>'
+            head = ('' if first[0] == 'title' else
+                    f'<h1 class="mzt mzc"><span class="no">{ch["no"]}</span>Rapid Review · {ch["title"]}</h1>' if first[3] == 'Rapid Review' else
+                    f'<h1 class="mzt mzc"><span class="no">{first[4]["no"]}</span>{first[4]["title"]}</h1>')
             for row in rows:
                 for i in row:
                     k, h, w, sb, t = stream[i]
-                    if k == 'title' and 'p' not in t and sb != 'Exam corner':
+                    if k == 'title' and 'p' not in t and sb != 'Rapid Review':
                         t['p'] = pno
+                    if k == 'title' and sb == 'Rapid Review':
+                        ch['rv'] = pno
                     if k in ('raw', 'row'):
                         numbering[t['id']] = numbering.get(t['id'], 0) + len(re.findall(r'<div class="mh">\d+\.', h))
                     if '<div class="mh"># ' in h:
@@ -479,7 +489,7 @@ def build():
     for ch, t0, sub, body, n, key, tids in paged:
         pid = f'p{n}'
         html_pages.append(mosaic_page(book, ch, sub, body, n, pid, key))
-        meta_pages.append({'id': pid, 'label': f'{t0["no"]} · {text(sub)}', 'topic': t0['id'], 'ch': ch['no'], **({'ex': 1} if sub == 'Exam corner' else {})})
+        meta_pages.append({'id': pid, 'label': f'{t0["no"]} · {text(sub)}', 'topic': t0['id'], 'ch': ch['no'], **({'ex': 1} if sub == 'Rapid Review' else {})})
         for tid in tids:
             topic_pages.setdefault(tid, []).append(pid)
     topics_meta, rr_groups = [], []
@@ -487,7 +497,7 @@ def build():
         topics_meta.append({'id': t['id'], 'no': t['no'], 'title': text(t['title']), 'sub': text(t.get('sub', '')),
                             'ch': ch['no'], 'p': t.get('p', 0), 'pages': topic_pages.get(t['id'], [])})
         rr_groups.append(((t, ch), rr_items(src)))
-    rr = rr_pages(book, rr_groups, rr_first)
+    rr = []  # owner: one Rapid Review section per chapter instead of end-of-book pages
     html_pages += rr
     meta_pages += [{'id': f'rapid-review-{i + 1}', 'label': 'Rapid review'} for i in range(len(rr))]
 
@@ -562,7 +572,7 @@ def build():
                  f'{len(book["chapters"])} chapters · {sum(len(c["topics"]) for c in book["chapters"])} topics'),
         'contents': [{'no': ch['no'], 'title': text(ch['title']), 'part': ch.get('part', ''), 'color': ch['color'],
                       'topics': [{'id': t['id'], 'no': t['no'], 'title': text(t['title']), 'sub': text(t.get('sub', '')),
-                                  'p': t.get('p')} for t in ch['topics']]} for ch in book['chapters']],
+                                  'p': t.get('p')} for t in ch['topics']], 'rv': ch.get('rv')} for ch in book['chapters']],
     }
 
     def js_json(o):

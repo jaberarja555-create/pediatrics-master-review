@@ -955,3 +955,6 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .toc .ct.soon{cursor:default;color:#57534e}.toc .ct.soon i{opacity:.75}
 .htp.soon{cursor:default;opacity:.62}.htp.soon .pc{font:800 10px var(--sans);letter-spacing:1px;text-transform:uppercase;color:var(--muted);background:transparent;border:1px solid var(--line)}
 .mb.exam .r.fr i { font-style: normal; font-weight: 800; color: var(--mbd); }
+.mb.exam .rvb .box { margin: 0 0 6px; padding: 5px 9px 6px; font-size: 8.7pt; } .mb.exam .rvb .box:last-child { margin-bottom: 0; }
+.mb.exam .rvb .box table.t { font-size: 8.4pt; } .mb.exam .rvb .box td { padding: 2.5px 5px; }
+.toc .ct.rvr i { color:#b8892b; } .toc .ct.rvr span { font-weight:800; color:var(--ch-dark); }
