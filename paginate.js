@@ -70,7 +70,7 @@ const MARGIN = 40, GAP = 10;
     for (let i = 0; i < A.length; i++) {
       if (done.has(i)) continue;
       let opt = option(i);
-      if (A[i].k === 'title') {                                // every topic (and Exam corner) starts on a new page
+      if (A[i].k === 'title' || A[i].k === 'rvt') {             // every topic (and each Rapid Review topic) starts on a new page
         if (rows.length) newPage(false);
         place(opt.row, opt.h); continue;
       }

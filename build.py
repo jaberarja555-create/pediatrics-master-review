@@ -183,11 +183,9 @@ def rv_rows(ex):
 def chapter_exam(t):
     """Rapid Review of one topic (owner): only the topic name and one list of scenario → answer lines
     (diagnosis, best test, best treatment, drug of choice), in two columns; long lists continue in a second box."""
-    # small pieces flow from page to page with no empty space (owner); the topic name heads only the first piece
-    rows, out, per = rv_rows(t['_exam']), [], 2
-    for i in range(0, len(rows), per):
-        head = f'<div class="mh">{t["no"]} {t["title"]}</div>' if i == 0 else ''
-        out.append((f'<div class="mb rv{"" if i == 0 else " rvc"}">{head}<div class="mc"><div class="rs">{"".join(rows[i:i + per])}</div></div></div>', True))
+    # owner: one block per topic, each on its own page (too long → remove the least important lines, never split)
+    rows, out = rv_rows(t['_exam']), []
+    out.append((f'<div class="mb rv"><div class="mh">{t["no"]} {t["title"]}</div><div class="mc"><div class="rs">{"".join(rows)}</div></div></div>', True))
     return out
 
 
@@ -433,7 +431,8 @@ def build():
         exam = [(x, t) for t in tps for x in chapter_exam(t)]   # each piece keeps its own topic (gap filling stays in-topic)
         if exam:
             stream.append(('title', f'<h1 class="mzt"><span class="no">{ch["no"]}</span>Rapid Review</h1>', True, 'Rapid Review', tps[0]))
-            stream.extend(('box', r, w, 'Rapid Review', t) for (r, w), t in exam)
+            # each topic's block opens a new page (kind 'rvt' acts like a title for pagination)
+            stream.extend(('box' if i == 0 else 'rvt', r, w, 'Rapid Review', t) for i, ((r, w), t) in enumerate(exam))
 
     def compose(stream, rows):
         """HTML of one page from its rows of atom indexes; boxes are renumbered per topic in reading order."""
