@@ -250,7 +250,12 @@ $('contBtn').onclick=function(){goPage(lastPage())};
 $('coverBtn').onclick=function(){goPage(0)};
 if(LOCKED){$('trialCard').hidden=false;$('trialTxt').innerHTML=ACC.free_label?'بيفتح ليك '+freeList()+'، مع الـ <span class="en">flashcards</span> والـ <span class="en">QBank</span> بتاعته':freeList()+' كاملين، مع الـ <span class="en">flashcards</span> والـ <span class="en">QBank</span>'}
 document.querySelector('.hero .cv').onclick=function(){goPage(0)};
-$('rrTool').onclick=function(){goPage(META.rr-1)};if(META.rr>NP)$('rrTool').hidden=true;
+/* Home: Rapid Review box (owner) = each chapter's Rapid Review section */
+(function(){var rv=META.contents.filter(function(ch){return ch.rv});if(!rv.length)return;var b=$('rvHome');b.hidden=false;
+  b.innerHTML='<div class="rvh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span><b class="gtx">Rapid Review</b><small>Last-minute revision of each chapter</small></span></div>'+
+    rv.map(function(ch){var lk=LOCKED&&(ACC.free_chapters||[]).indexOf(ch.no)<0;
+      return '<button class="rvr" type="button" data-rv="'+ch.rv+'"><span class="n c'+ch.no+'">'+ch.no+'</span><span class="l">'+esc(ch.title)+'</span><span class="p">'+(lk?'🔒':'p '+ch.rv)+'</span></button>'}).join('');
+  b.addEventListener('click',function(e){var r=e.target.closest('[data-rv]');if(r)goPage(+r.dataset.rv-1)})})();
 
 /* ---------- sheet: contents and highlights ---------- */
 function openSheet(title,html){$('sheetT').textContent=title;$('sheetBody').innerHTML=html;$('sheet').hidden=false}
