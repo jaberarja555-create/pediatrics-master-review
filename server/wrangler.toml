@@ -1,0 +1,23 @@
+name = "pediatrics-master-review"
+main = "worker.js"
+compatibility_date = "2024-09-01"
+
+# The book app itself (built by build.py into docs/) is served from the same address.
+[assets]
+directory = "../docs"
+binding = "ASSETS"
+
+# Activation codes: one SQLite-backed Durable Object (free plan; changes show at once; no extra token permission).
+[[durable_objects.bindings]]
+name = "CODES"
+class_name = "CodesDB"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["CodesDB"]
+
+[vars]
+# Leave empty: links use this Worker's own address. Set it only if the book moves to a custom domain.
+APP_URL = ""
+
+# Secrets (deploy.sh sets them, never written here): ADMIN_PASSWORD, PRIVATE_KEY

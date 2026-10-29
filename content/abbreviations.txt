@@ -1,0 +1,360 @@
+5-HT | 5-hydroxytryptamine (serotonin)
+5-HIAA | 5-hydroxyindoleacetic acid
+AAA | Abdominal aortic aneurysm
+ABG | Arterial blood gas
+ABPI | Ankle–brachial pressure index
+ADH | Antidiuretic hormone
+AF | Atrial fibrillation
+AFB | Acid-fast bacilli
+AFP | Alpha-fetoprotein
+AJCC | American Joint Committee on Cancer
+AKI | Acute kidney injury
+ALND | Axillary lymph node dissection
+ALP | Alkaline phosphatase
+ALT / AST | Alanine / aspartate aminotransferase
+AMPLE | Allergies, Medicines, Past history, Last meal, Events
+ANDI | Aberrations of normal development and involution
+APACHE | Acute Physiology and Chronic Health Evaluation
+APC | Adenomatous polyposis coli (gene)
+APR | Abdominoperineal resection
+APTT | Activated partial thromboplastin time
+ARDS | Acute respiratory distress syndrome
+ASA | American Society of Anesthesiologists (grade)
+ATLS | Advanced Trauma Life Support
+AVPU | Alert, Voice, Pain, Unresponsive
+AXR | Abdominal X-ray
+BCC | Basal cell carcinoma
+BCLC | Barcelona Clinic Liver Cancer (staging)
+BCS | Breast-conserving surgery
+BI-RADS | Breast Imaging Reporting and Data System
+BISAP | Bedside Index of Severity in Acute Pancreatitis
+BMI | Body mass index
+BP | Blood pressure
+BPH | Benign prostatic hyperplasia
+CA 19-9, CA 15-3 | Cancer antigens (tumour markers)
+CBC | Complete blood count
+CBD | Common bile duct
+CCK | Cholecystokinin
+CEA | Carcinoembryonic antigen
+CHD | Common hepatic duct
+CK | Creatine kinase
+CMV | Cytomegalovirus
+CO / COHb | Carbon monoxide / carboxyhaemoglobin
+COPD | Chronic obstructive pulmonary disease
+CRC | Colorectal cancer
+CRP | C-reactive protein
+CRT | Chemoradiotherapy
+CSF | Cerebrospinal fluid
+CT / CTA | Computed tomography / CT angiography
+CVP | Central venous pressure
+CXR | Chest X-ray
+DCIS | Ductal carcinoma in situ
+DIC | Disseminated intravascular coagulation
+DKA | Diabetic ketoacidosis
+DPL | Diagnostic peritoneal lavage
+DRE | Digital rectal examination
+DTC | Differentiated thyroid cancer
+DU | Duodenal ulcer
+DVT | Deep vein thrombosis
+EBSLN | External branch of the superior laryngeal nerve
+ECG | Electrocardiogram
+EDH | Extradural haematoma
+EMR / ESD | Endoscopic mucosal resection / submucosal dissection
+ER / PR | Oestrogen / progesterone receptor
+ERAS | Enhanced recovery after surgery
+ERCP | Endoscopic retrograde cholangiopancreatography
+ESR | Erythrocyte sedimentation rate
+ESWL | Extracorporeal shock-wave lithotripsy
+EUA | Examination under anaesthesia
+EUS | Endoscopic ultrasound
+FAP | Familial adenomatous polyposis
+FAST | Focused assessment with sonography for trauma
+FFP | Fresh frozen plasma
+FIT | Faecal immunochemical test
+FNA / FNAC | Fine-needle aspiration (cytology)
+FNH | Focal nodular hyperplasia
+FTSG / STSG | Full- / split-thickness skin graft
+G6PD | Glucose-6-phosphate dehydrogenase
+GA | General anaesthesia
+GB | Gallbladder
+GCS | Glasgow Coma Scale
+GDA | Gastroduodenal artery
+GI | Gastrointestinal
+GIST | Gastrointestinal stromal tumour
+GOJ | Gastro-oesophageal junction
+GOO | Gastric outlet obstruction
+GORD | Gastro-oesophageal reflux disease
+GTN | Glyceryl trinitrate
+GU | Gastric ulcer
+HBV / HCV | Hepatitis B / C virus
+HBsAg | Hepatitis B surface antigen
+HCC | Hepatocellular carcinoma
+HDU | High-dependency unit
+HER2 | Human epidermal growth factor receptor 2
+HIDA | Hepatobiliary iminodiacetic acid (scan)
+HIV | Human immunodeficiency virus
+HNPCC | Hereditary non-polyposis colorectal cancer (Lynch syndrome)
+HPV | Human papillomavirus
+HR | Heart rate
+HRT | Hormone replacement therapy
+HTIG | Human tetanus immunoglobulin
+HVPG | Hepatic venous pressure gradient
+IBD | Inflammatory bowel disease
+ICP | Intracranial pressure
+ICU | Intensive care unit
+IM / IV | Intramuscular / intravenous
+IMA / IMV | Inferior mesenteric artery / vein
+INR | International normalised ratio
+IPAA | Ileal pouch–anal anastomosis
+IPMN | Intraductal papillary mucinous neoplasm
+ITP | Immune thrombocytopenic purpura
+IVC | Inferior vena cava
+IVIG | Intravenous immunoglobulin
+JVP | Jugular venous pressure
+KCl | Potassium chloride
+LA | Local anaesthesia
+LBO / SBO | Large / small bowel obstruction
+LCIS | Lobular carcinoma in situ
+LDH | Lactate dehydrogenase
+LFT | Liver function tests
+LGIB / UGIB | Lower / upper gastrointestinal bleeding
+LIF / RIF | Left / right iliac fossa
+LMWH | Low-molecular-weight heparin
+LOS | Lower oesophageal sphincter
+LRINEC | Laboratory Risk Indicator for Necrotising Fasciitis
+LUQ / RUQ | Left / right upper quadrant
+MALT | Mucosa-associated lymphoid tissue
+MCQ | Multiple-choice question
+MDT | Multidisciplinary team
+MELD | Model for End-stage Liver Disease
+MEN | Multiple endocrine neoplasia
+MI | Myocardial infarction
+MNG | Multinodular goitre
+MRCP | Magnetic resonance cholangiopancreatography
+MRI | Magnetic resonance imaging
+MRSA | Meticillin-resistant Staphylococcus aureus
+MTC | Medullary thyroid carcinoma
+NG / NJ | Nasogastric / nasojejunal
+NICE | National Institute for Health and Care Excellence (UK)
+NPI | Nottingham Prognostic Index
+NPO | Nil by mouth (nil per os)
+NS | Normal saline (0.9% sodium chloride)
+NSAIDs | Non-steroidal anti-inflammatory drugs
+OCP | Oral contraceptive pill
+OGD | Oesophagogastroduodenoscopy (upper endoscopy)
+OPSI | Overwhelming post-splenectomy infection
+OSCE | Objective structured clinical examination
+PE | Pulmonary embolism
+PEG | Percutaneous endoscopic gastrostomy
+PET | Positron emission tomography
+PID | Pelvic inflammatory disease
+POEM | Peroral endoscopic myotomy
+PPI | Proton pump inhibitor
+PR | Per rectum (rectal examination)
+PSC | Primary sclerosing cholangitis
+PT | Prothrombin time
+PTC | Percutaneous transhepatic cholangiography
+PTH | Parathyroid hormone
+PTU | Propylthiouracil
+PV | Per vaginam (vaginal)
+RAI | Radioactive iodine
+RFA | Radiofrequency ablation
+RL | Ringer's lactate
+RLN | Recurrent laryngeal nerve
+RT | Radiotherapy
+RTA | Road traffic accident
+SAAG | Serum–ascites albumin gradient
+SBP | Spontaneous bacterial peritonitis
+SCC | Squamous cell carcinoma
+SDH | Subdural haematoma
+SIADH | Syndrome of inappropriate ADH secretion
+SIRS | Systemic inflammatory response syndrome
+SLNB | Sentinel lymph node biopsy
+SMA / SMV | Superior mesenteric artery / vein
+SSI | Surgical site infection
+SVC | Superior vena cava
+TACE | Transarterial chemoembolisation
+TACO | Transfusion-associated circulatory overload
+TB | Tuberculosis
+TBSA | Total body surface area
+TFT | Thyroid function tests
+TIPS | Transjugular intrahepatic portosystemic shunt
+TME | Total mesorectal excision
+TNM | Tumour, Node, Metastasis (staging)
+TPN | Total parenteral nutrition
+TPO | Thyroid peroxidase
+TRAb | TSH-receptor antibodies
+TRALI | Transfusion-related acute lung injury
+TSH | Thyroid-stimulating hormone
+TXA | Tranexamic acid
+U&E | Urea and electrolytes
+UC | Ulcerative colitis
+US | Ultrasound
+UTI | Urinary tract infection
+VTE | Venous thromboembolism
+WBC | White blood cell count
+WHO | World Health Organization
+WLE | Wide local excision
+VAC | Vacuum-assisted closure (negative-pressure dressing)
+PVD | Peripheral vascular disease
+MCL | Mid-clavicular line
+eFAST | Extended focused assessment with sonography in trauma (adds the chest)
+IO | Intraosseous
+PEP | Post-exposure prophylaxis
+ART | Antiretroviral therapy
+HHV | Human herpesvirus
+PD-1 | Programmed cell death protein 1 (immunotherapy target)
+BRAF | BRAF gene (mutated in many melanomas; BRAF inhibitor drugs)
+MEK | MEK enzyme (MEK inhibitor drugs, given with BRAF inhibitors)
+CDC | Centers for Disease Control and Prevention
+qSOFA | Quick sequential organ failure assessment
+IRP | Integrated relaxation pressure (manometry)
+NIS | Sodium–iodide symporter
+MIT | Monoiodotyrosine
+DIT | Diiodotyrosine
+TBG | Thyroxine-binding globulin
+HSV | Highly selective vagotomy
+PPH | Procedure for prolapse and haemorrhoids (stapled haemorrhoidopexy)
+PCC | Prothrombin complex concentrate
+ESGE | European Society of Gastrointestinal Endoscopy
+FLOT | 5-FU, leucovorin, oxaliplatin, docetaxel (chemotherapy)
+5-FU | 5-fluorouracil
+ZN | Ziehl–Neelsen (stain for acid-fast bacilli)
+HPB | Hepato-pancreato-biliary
+SCM | Sternocleidomastoid
+CCA | Common carotid artery
+IJV | Internal jugular vein
+ICA | Internal carotid artery
+ECA | External carotid artery
+ENT | Ear, nose and throat
+IL-6 | Interleukin-6
+TNF | Tumour necrosis factor
+EBV | Epstein–Barr virus
+SLE | Systemic lupus erythematosus
+IgG4 | Immunoglobulin G4
+BUN | Blood urea nitrogen
+PEEP | Positive end-expiratory pressure
+GABA | Gamma-aminobutyric acid
+LMP | Last menstrual period
+β-hCG | Beta human chorionic gonadotrophin
+hCG | Human chorionic gonadotrophin
+SpO₂ | Oxygen saturation (pulse oximeter)
+5-ASA | 5-aminosalicylic acid (mesalazine)
+TPMT | Thiopurine methyltransferase
+NBD | Nasobiliary drain
+GGT | Gamma-glutamyl transferase
+WDHA | Watery diarrhoea, hypokalaemia, achlorhydria
+PPPD | Pylorus-preserving pancreaticoduodenectomy
+CLO | Campylobacter-like organism (rapid urease test)
+LH | Luteinising hormone
+Hb | Haemoglobin
+UFH | Unfractionated heparin
+vWF | von Willebrand factor
+DAT | Direct antiglobulin test
+ASIS | Anterior superior iliac spine
+TAPP | Transabdominal preperitoneal (laparoscopic hernia repair)
+TEP | Totally extraperitoneal (laparoscopic hernia repair)
+IRA | Ileorectal anastomosis
+MMR | Mismatch repair (genes)
+MSI | Microsatellite instability
+FOBT | Faecal occult blood test
+CHRPE | Congenital hypertrophy of the retinal pigment epithelium
+TEMS | Transanal endoscopic microsurgery
+FOLFOX | Folinic acid, 5-FU, oxaliplatin (chemotherapy)
+CAPOX | Capecitabine + oxaliplatin (chemotherapy)
+NST | No special type (invasive ductal carcinoma)
+PN | Parenteral nutrition
+PICC | Peripherally inserted central catheter
+RR | Respiratory rate
+Rh | Rhesus (blood group)
+X-match | Cross-match
+NEC | Necrotising enterocolitis
+NEXUS | National Emergency X-Radiography Utilization Study (C-spine rules)
+TR | Tricuspid regurgitation
+PS | Pulmonary stenosis
+NET | Neuroendocrine tumour
+ADA | Adenosine deaminase
+HRZE | Isoniazid, rifampicin, pyrazinamide, ethambutol (TB drugs)
+Vi | Vi capsular antigen (typhoid vaccine)
+LIS | Lateral internal sphincterotomy
+LIFT | Ligation of the intersphincteric fistula tract
+LINX | Magnetic ring around the lower oesophageal sphincter (reflux device)
+PTX | Pneumothorax
+BRCA / BRCA1 / BRCA2 | Breast cancer genes 1 and 2
+ABC / ABCDE | Airway, Breathing, Circulation (Disability, Exposure)
+ABO | ABO blood groups (A, B, AB, O)
+ACE-I | Angiotensin-converting enzyme inhibitor
+ACS | Abdominal compartment syndrome
+ANC | Acute necrotic collection (pancreatitis)
+AP | Anteroposterior (X-ray view)
+APFC | Acute peripancreatic fluid collection
+AR | Anterior resection (rectum)
+AUS | Atypia of undetermined significance (Bethesda III)
+B1 / B12 | Vitamin B1 (thiamine) / vitamin B12 (cobalamin)
+BCG | Bacille Calmette–Guérin (vaccine)
+BM | Basement membrane
+KRAS | KRAS oncogene (bowel and pancreatic cancer)
+BT | Bleeding time
+CA 19-9 / CA 125 | Cancer antigen 19-9 / 125 (tumour markers)
+CCB | Calcium-channel blocker
+CD117 | c-KIT protein (marker of GIST)
+CLL / CML | Chronic lymphocytic / myeloid leukaemia
+COX-2 | Cyclo-oxygenase 2
+CPP | Cerebral perfusion pressure
+DD / DDx | Differential diagnosis
+DI | Diabetes insipidus
+DM | Diabetes mellitus
+DNS | Dextrose 5% in normal saline
+D5 | Dextrose 5% (in water)
+D1 / D2 | Limited / extended lymph node dissection (gastric cancer)
+ECF / ICF | Extracellular / intracellular fluid
+ED | Emergency department
+FC | Flail chest and cardiac tamponade (with ATOM)
+GJ | Gastrojejunostomy
+HbA1c | Glycated haemoglobin
+HES | Hydroxyethyl starch
+HIT | Heparin-induced thrombocytopenia
+HPT | Hyperparathyroidism
+IC | Ileocaecal (valve)
+IgA / IgG / IgM | Immunoglobulin A / G / M
+IHD | Ischaemic heart disease
+IP / MCP | Interphalangeal / metacarpophalangeal (joints)
+ITA / STA | Inferior / superior thyroid artery
+IU | International units
+LATS | Long-acting thyroid stimulator
+LOC | Loss of consciousness
+MAP | Mean arterial pressure
+MCV | Mean corpuscular volume
+MEN1 / MEN2 | Multiple endocrine neoplasia type 1 / 2
+MOF | Multiple organ failure
+MR | Magnetic resonance
+NF1 / NF2 | Neurofibromatosis type 1 / 2
+PARP | Poly-ADP-ribose polymerase (inhibitors)
+PCV | Packed cell volume (haematocrit)
+PDS | Polydioxanone (absorbable suture)
+PET-CT | Positron emission tomography with CT
+PHT | Portal hypertension
+PO | By mouth (per os)
+PTSD | Post-traumatic stress disorder
+PU / PUD | Peptic ulcer / peptic ulcer disease
+QT / QRS | ECG intervals (QT interval, QRS complex)
+R0 | Complete resection, clear margins
+RBC | Red blood cell
+RET | RET proto-oncogene (medullary thyroid cancer)
+SC | Subcutaneous
+SG | Specific gravity (urine)
+SPC | Suprapubic catheter
+SSG | Sodium stibogluconate
+ST | ST segment (ECG)
+SVR | Systemic vascular resistance
+TCA | Tricyclic antidepressant
+TED | Thrombo-embolic deterrent (stockings)
+TF | Transversalis fascia
+TG | Triglycerides
+TNBC | Triple-negative breast cancer
+UOQ | Upper outer quadrant (breast)
+UV | Ultraviolet
+VARD | Video-assisted retroperitoneal debridement
+VF | Ventricular fibrillation
+VIP / VIPoma | Vasoactive intestinal peptide / its tumour
+WON | Walled-off necrosis
