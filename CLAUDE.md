@@ -40,6 +40,9 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
 - **Read every resource that covers the topic** before writing it (owner checks this): list them in the reply.
 - Pages clear and pleasant to read, normal text size, pictures only where they matter.
 - Topic 1.1 (growth.html) is the model for later topics.
+- **Exam boxes inside the pages (owner):** each topic has coloured boxes at the end of the section they belong to:
+  `box trap` **Exam trap** (MCQ favourites, "all EXCEPT" traps), `box next` **Best next step**, `box guide`
+  **Sudan protocol · …** (local programme or protocol). A fact in a box is not repeated in the side column.
 
 ## App shape (copy from the reference)
 - One-screen mobile-first web app: dark top bar (title + theme toggle), scrolling view, bottom tabs:
