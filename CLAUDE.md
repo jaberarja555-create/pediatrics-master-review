@@ -28,7 +28,8 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
   frequency, duration, side effects, contraindications).
 - The chapter list in book.json is a draft made before the resources arrived: adjust it to the resources.
 - Contents lists every planned topic; a topic without `content/topics/<id>.html` shows without a page number
-  (book) and as "Soon" (home). `contents_split` in book.json = chapters that start a new contents page.
+  (book) and as "Soon" (home). The book contents is ONE page (owner): chapters flow down three columns, each part
+  heading kept with its first chapter (build.py contents_pages); `contents_split` stays empty.
 
 ## Owner's writing rules for this book (Oct 2026, stricter than the obstetrics book)
 - **Clear and formal**: standard textbook wording, standard abbreviations only (each added to abbreviations.txt);

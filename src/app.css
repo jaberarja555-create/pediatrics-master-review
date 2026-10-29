@@ -962,3 +962,10 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .mb.rv .rs { columns: 2; column-gap: 22px; }
 .mb.rv .r { break-inside: avoid; padding: 3px 0 3px 12px; line-height: 1.35; border-bottom: 1px dotted var(--ch-line); }
 .page.mz .mb.rv .r .to { font-weight: 800; color: var(--ch-dark); }
+.toc.ccm { top:116px; columns:3; column-gap:12px; }
+.toc.ccm .tk { break-inside:avoid; margin:0 0 9px; }
+.toc.ccm .bp { margin:0 0 5px; }
+.page:has(.toc.ccm) .toc-h { height:72px; }
+.page:has(.toc.ccm) .toc-h div { padding:10px 20px; }
+.toc.ccm .bp { letter-spacing:1.2px; white-space:nowrap; }
+.toc.ccm .bp span { flex:none; white-space:nowrap; }

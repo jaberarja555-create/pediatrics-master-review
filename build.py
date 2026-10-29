@@ -251,27 +251,19 @@ def contents_pages(book, rr_page):
         dp = f' data-p="{written[0]["p"]}"' if written else ''
         parts[-1][1].append(f'<div class="cc c{ch["no"]}"><div class="cch"{dp}><b>{ch["no"]}</b>'
                             f'<span>{ch["title"]}</span></div><div class="ctl">{tops}</div></div>')
+    # owner: one well-filled contents page; chapters flow down three columns (no empty holes); a part heading
+    # is kept together with its first chapter
     roman = 'I II III IV V VI VII VIII'.split()
-    out, pi = [], 0
-    for n, parts in enumerate(pages_parts):
-        body, i = '', 0
-        while i < len(parts):
-            group = [i]  # small parts share one row of three
-            while len(parts[group[0]][1]) < 3 and group[-1] + 1 < len(parts) and \
-                    sum(len(parts[j][1]) for j in group) + len(parts[group[-1] + 1][1]) <= 3:
-                group.append(group[-1] + 1)
-            for j in group:
-                span = '1/-1' if len(group) == 1 else (f'1/span {len(parts[j][1])}' if j == group[0] else f'span {len(parts[j][1])}')
-                body += (f'<div class="bp" style="grid-column:{span}"><span>Part {roman[parts[j][2]]}</span>{parts[j][0]}'
-                         f'{" (continued)" if parts[j][3] else ""}</div>')
-            for j in group:
-                body += ''.join(parts[j][1])
-            i = group[-1] + 1
-        more = f' · page {n + 1} of {len(pages_parts)}' if len(pages_parts) > 1 else ''
-        out.append(f'<section class="page" id="pc{n}" data-id="contents-{n + 1}">'
-                   f'<div class="toc-h"><div><b>Contents</b><span>{book["edition"]}{more}</span></div></div>'
-                   f'<div class="toc ccg">{body}</div>{footer(book)}</section>\n')
-    return out
+    body = ''
+    for parts in pages_parts:
+        for name, boxes, no, cont in parts:
+            if not boxes:
+                continue
+            head = '' if cont else f'<div class="bp"><span>Part {roman[no]}</span>{name}</div>'
+            body += f'<div class="tk">{head}{boxes[0]}</div>' + ''.join(f'<div class="tk">{x}</div>' for x in boxes[1:])
+    return [f'<section class="page" id="pc0" data-id="contents-1">'
+            f'<div class="toc-h"><div><b>Contents</b><span>{book["edition"]}</span></div></div>'
+            f'<div class="toc ccm">{body}</div>{footer(book)}</section>\n']
 
 
 def abbr_pages(book, pages=3):
@@ -452,7 +444,7 @@ def build():
                 out.append(f'<div class="mrow{" c1" if len(items) == 1 else ""}">{"".join(x[1] for x in items)}</div>')
         return '\n'.join(out)
 
-    n_contents = 1 + len(book.get('contents_split', []))
+    n_contents = 1  # one contents page (owner)
     authors = (CONTENT / 'authors.html').read_text() if (CONTENT / 'authors.html').exists() else ''
     about = (CONTENT / 'about.html').read_text() if (CONTENT / 'about.html').exists() else ''
     n_abbr = 0   # abbreviations are shown by tapping them on the page (meta 'abbr'), no list pages
