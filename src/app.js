@@ -250,12 +250,11 @@ $('contBtn').onclick=function(){goPage(lastPage())};
 $('coverBtn').onclick=function(){goPage(0)};
 if(LOCKED){$('trialCard').hidden=false;$('trialTxt').innerHTML=ACC.free_label?'بيفتح ليك '+freeList()+'، مع الـ <span class="en">flashcards</span> والـ <span class="en">QBank</span> بتاعته':freeList()+' كاملين، مع الـ <span class="en">flashcards</span> والـ <span class="en">QBank</span>'}
 document.querySelector('.hero .cv').onclick=function(){goPage(0)};
-/* Home: Rapid Review box (owner) = each chapter's Rapid Review section */
-(function(){var rv=META.contents.filter(function(ch){return ch.rv});if(!rv.length)return;var b=$('rvHome');b.hidden=false;
-  b.innerHTML='<div class="rvh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span><b class="gtx">Rapid Review</b><small>Last-minute revision of each chapter</small></span></div>'+
-    rv.map(function(ch){var lk=LOCKED&&(ACC.free_chapters||[]).indexOf(ch.no)<0;
-      return '<button class="rvr" type="button" data-rv="'+ch.rv+'"><span class="n c'+ch.no+'">'+ch.no+'</span><span class="l">'+esc(ch.title)+'</span><span class="p">'+(lk?'🔒':'p '+ch.rv)+'</span></button>'}).join('');
-  b.addEventListener('click',function(e){var r=e.target.closest('[data-rv]');if(r)goPage(+r.dataset.rv-1)})})();
+/* Study tools: Rapid Review tile (owner) = each chapter's Rapid Review section */
+(function(){var rv=META.contents.filter(function(ch){return ch.rv}),t=$('rrTool');if(!rv.length){t.hidden=true;return}
+  $('toolRr').textContent=rv.length+' chapter'+(rv.length>1?'s':'')+' · last-minute revision';
+  t.onclick=function(){openSheet('Rapid Review',rv.map(function(ch){var lk=LOCKED&&(ACC.free_chapters||[]).indexOf(ch.no)<0;
+    return '<button class="trow rvt c'+ch.no+'" type="button" data-p="'+ch.rv+'"><span class="n">'+ch.no+'</span><span class="l">'+esc(ch.title)+'<small>Rapid Review</small></span><span class="p">'+(lk?'🔒':'p '+ch.rv)+'</span></button>'}).join(''))}})();
 
 /* ---------- sheet: contents and highlights ---------- */
 function openSheet(title,html){$('sheetT').textContent=title;$('sheetBody').innerHTML=html;$('sheet').hidden=false}
@@ -263,8 +262,8 @@ function contentsHtml(){return META.contents.map(function(ch){
   return (ch.part?'<div class="partx">'+esc(ch.part)+'</div>':'')+'<div class="sh" style="margin:14px 0 4px"><h3><small>Chapter '+ch.no+'</small> · '+esc(ch.title)+'</h3></div>'+ch.topics.map(function(t){
     if(!t.p)return '<div class="trow soon c'+ch.no+'"><span class="n">'+esc(t.no)+'</span><span class="l">'+esc(t.title)+'<small>Coming soon</small></span><span class="p"></span></div>';
     var tt=TOPICS.filter(function(x){return x.id===t.id})[0],ok=tt&&topicRead(tt)===tt.pages.length;
-    return '<button class="trow c'+ch.no+'" type="button" data-p="'+t.p+'"><span class="n">'+esc(t.no)+'</span><span class="l">'+esc(t.title)+'<small>'+esc(t.sub||'')+'</small></span><span class="p'+(ok?' ok':'')+'">'+(ok?'✓ ':'')+'p '+t.p+'</span></button>'}).join('')+(ch.rv?'<button class="trow rr" type="button" data-p="'+ch.rv+'"><span class="n">RR</span><span class="l">Rapid Review<small>All key points of the chapter</small></span><span class="p">p '+ch.rv+'</span></button>':'')}).join('')+
-  (META.rr<=NP?'<button class="trow rr" type="button" data-p="'+META.rr+'"><span class="n">RR</span><span class="l">Rapid review<small>Every clue → answer</small></span><span class="p">p '+META.rr+'</span></button>':'')}
+    return '<button class="trow c'+ch.no+'" type="button" data-p="'+t.p+'"><span class="n">'+esc(t.no)+'</span><span class="l">'+esc(t.title)+'<small>'+esc(t.sub||'')+'</small></span><span class="p'+(ok?' ok':'')+'">'+(ok?'✓ ':'')+'p '+t.p+'</span></button>'}).join('')+(ch.rv?'<button class="trow rvt" type="button" data-p="'+ch.rv+'"><span class="n">RR</span><span class="l">Rapid Review<small>All key points of the chapter</small></span><span class="p">p '+ch.rv+'</span></button>':'')}).join('')+
+  (META.rr<=NP?'<button class="trow rvt" type="button" data-p="'+META.rr+'"><span class="n">RR</span><span class="l">Rapid review<small>Every clue → answer</small></span><span class="p">p '+META.rr+'</span></button>':'')}
 $('tocBtn').onclick=function(){openSheet('Contents',contentsHtml())};
 /* Notes and highlights are listed apart: tab Notes = everything with a note, tab Highlights = coloured highlights */
 var HLTAB=st('hltab')==='h'?'h':'n';
