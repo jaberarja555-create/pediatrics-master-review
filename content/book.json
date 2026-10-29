@@ -620,7 +620,7 @@
    "short": "OSCE",
    "tab": "OSCE",
    "color": "#3d5a80",
-   "part": "Clinical & Drugs",
+   "part": "Clinical & OSCE",
    "topics": [
     {
      "id": "history",
@@ -659,7 +659,8 @@
      "short": "Drugs",
      "sub": "Use · dose per kg · frequency · duration · side effects"
     }
-   ]
+   ],
+   "part": "Drugs & Doses"
   }
  ],
  "access": {

@@ -238,7 +238,7 @@ function refreshHome(){
         '</details>'}).join('');
     if(!nt)return '';
     return '<details class="hpt"'+(curIn?' open':'')+'><summary class="shine" style="background-image:linear-gradient(90deg,rgba(6,27,36,.78) 0,rgba(6,27,36,.35) 50%,rgba(6,27,36,0) 75%),url(img/'+PIMG[pi]+'.jpg),linear-gradient(120deg,#08232f 0,'+(PCLR[pi]||'#13606b')+' 100%)">'+
-      '<span class="pk">Part '+['I','II','III','IV','V'][pi]+'</span><b class="gtx">'+esc(pt.name)+'</b><small>'+pt.chs.length+' chapter'+(pt.chs.length>1?'s':'')+' · '+nt+' topics · '+pct(pr,pn)+'% done</small>'+
+      '<span class="pk">Part '+['I','II','III','IV','V','VI','VII','VIII'][pi]+'</span><b class="gtx">'+esc(pt.name)+'</b><small>'+pt.chs.length+' chapter'+(pt.chs.length>1?'s':'')+' · '+nt+' topic'+(nt>1?'s':'')+' · '+pct(pr,pn)+'% done</small>'+
       '<span class="hx">›</span><span class="tbar"><i style="width:'+pct(pr,pn)+'%"></i></span></summary><div class="hpb">'+inner+'</div></details>'}).join('');
   if(deckIds.length)refreshDaily();else $('dailyBtn').hidden=true;
   var nn=0;Object.keys(HL).forEach(function(k){HL[k].forEach(function(h){if(h.n)nn++})});
