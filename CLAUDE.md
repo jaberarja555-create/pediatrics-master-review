@@ -43,6 +43,8 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
 - **Exam boxes inside the pages (owner):** each topic has coloured boxes at the end of the section they belong to:
   `box trap` **Exam trap** (MCQ favourites, "all EXCEPT" traps), `box next` **Best next step**, `box guide`
   **Sudan protocol · …** (local programme or protocol). A fact in a box is not repeated in the side column.
+- **Never crowded (owner):** boxes and cells stay short and airy: one idea per line, a small table or list instead of
+  a dense paragraph; split long content rather than packing it.
 
 ## App shape (copy from the reference)
 - One-screen mobile-first web app: dark top bar (title + theme toggle), scrolling view, bottom tabs:

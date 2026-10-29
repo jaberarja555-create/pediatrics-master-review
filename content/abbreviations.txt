@@ -313,6 +313,7 @@ RLN | Recurrent laryngeal nerve
 RR | Respiratory rate
 RT | Radiotherapy
 RTA | Road traffic accident
+RUTF | Ready-to-use therapeutic food
 SAAG | Serum–ascites albumin gradient
 SAM | Severe acute malnutrition
 SBP | Spontaneous bacterial peritonitis
