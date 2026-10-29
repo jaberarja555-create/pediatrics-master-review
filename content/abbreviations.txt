@@ -113,6 +113,7 @@ EEG | Electroencephalogram
 eFAST | Extended focused assessment with sonography in trauma (adds the chest)
 EMR / ESD | Endoscopic mucosal resection / submucosal dissection
 ENT | Ear, nose and throat
+EPI | Expanded Programme on Immunization
 ER / PR | Oestrogen / progesterone receptor
 ERAS | Enhanced recovery after surgery
 ERCP | Endoscopic retrograde cholangiopancreatography
@@ -151,14 +152,17 @@ GTN | Glyceryl trinitrate
 GU | Gastric ulcer
 Hb | Haemoglobin
 HbA1c | Glycated haemoglobin
+HBIG | Hepatitis B immunoglobulin
 HBsAg | Hepatitis B surface antigen
 HBV / HCV | Hepatitis B / C virus
 HCC | Hepatocellular carcinoma
 hCG | Human chorionic gonadotrophin
 HDU | High-dependency unit
+HepB | Hepatitis B vaccine
 HER2 | Human epidermal growth factor receptor 2
 HES | Hydroxyethyl starch
 HHV | Human herpesvirus
+Hib | Haemophilus influenzae type b
 HIDA | Hepatobiliary iminodiacetic acid (scan)
 HIE | Hypoxic–ischaemic encephalopathy
 HIT | Heparin-induced thrombocytopenia
@@ -186,6 +190,7 @@ IgG4 | Immunoglobulin G4
 IHD | Ischaemic heart disease
 IJV | Internal jugular vein
 IL-6 | Interleukin-6
+IM | Intramuscular
 IM / IV | Intramuscular / intravenous
 IMA / IMV | Inferior mesenteric artery / vein
 IMCI | Integrated Management of Childhood Illness (WHO / Sudan Ministry of Health)
@@ -194,6 +199,7 @@ IO | Intraosseous
 IP / MCP | Interphalangeal / metacarpophalangeal (joints)
 IPAA | Ileal pouch–anal anastomosis
 IPMN | Intraductal papillary mucinous neoplasm
+IPV | Inactivated (injected) polio vaccine
 IQ | Intelligence quotient
 IRA | Ileorectal anastomosis
 IRP | Integrated relaxation pressure (manometry)
@@ -242,7 +248,7 @@ MIT | Monoiodotyrosine
 MMR | Mismatch repair (genes)
 MNG | Multinodular goitre
 MOF | Multiple organ failure
-MR | Magnetic resonance
+MR | Measles–rubella vaccine (in imaging: magnetic resonance)
 MRCP | Magnetic resonance cholangiopancreatography
 MRI | Magnetic resonance imaging
 MRSA | Meticillin-resistant Staphylococcus aureus
@@ -267,11 +273,12 @@ OCP | Oral contraceptive pill
 OFC | Occipitofrontal (head) circumference
 OGD | Oesophagogastroduodenoscopy (upper endoscopy)
 OPSI | Overwhelming post-splenectomy infection
+OPV | Oral polio vaccine
 OSCE | Objective structured clinical examination
 OTP | Outpatient therapeutic programme (for uncomplicated SAM)
 PARP | Poly-ADP-ribose polymerase (inhibitors)
 PCC | Prothrombin complex concentrate
-PCV | Packed cell volume (haematocrit)
+PCV | Pneumococcal conjugate vaccine (in haematology: packed cell volume)
 PD-1 | Programmed cell death protein 1 (immunotherapy target)
 PDS | Polydioxanone (absorbable suture)
 PE | Pulmonary embolism
@@ -291,6 +298,7 @@ POEM | Peroral endoscopic myotomy
 PPH | Procedure for prolapse and haemorrhoids (stapled haemorrhoidopexy)
 PPI | Proton pump inhibitor
 PPPD | Pylorus-preserving pancreaticoduodenectomy
+PPV23 | 23-valent pneumococcal polysaccharide vaccine
 PR | Per rectum (rectal examination)
 PS | Pulmonary stenosis
 PSC | Primary sclerosing cholangitis
@@ -323,6 +331,7 @@ SAM | Severe acute malnutrition
 SBP | Spontaneous bacterial peritonitis
 SC | Subcutaneous
 SCC | Squamous cell carcinoma
+SCID | Severe combined immunodeficiency
 SCM | Sternocleidomastoid
 SD | Standard deviation (z-score)
 SDH | Subdural haematoma
@@ -347,12 +356,14 @@ TB | Tuberculosis
 TBG | Thyroxine-binding globulin
 TBSA | Total body surface area
 TCA | Tricyclic antidepressant
+Td | Tetanus and reduced diphtheria toxoid (adult type)
 TED | Thrombo-embolic deterrent (stockings)
 TEMS | Transanal endoscopic microsurgery
 TEP | Totally extraperitoneal (laparoscopic hernia repair)
 TF | Transversalis fascia
 TFT | Thyroid function tests
 TG | Triglycerides
+TIG | Tetanus immunoglobulin
 TIPS | Transjugular intrahepatic portosystemic shunt
 TME | Total mesorectal excision
 TNBC | Triple-negative breast cancer
@@ -366,6 +377,7 @@ TR | Tricuspid regurgitation
 TRAb | TSH-receptor antibodies
 TRALI | Transfusion-related acute lung injury
 TSH | Thyroid-stimulating hormone
+TT | Tetanus toxoid
 tTG | Tissue transglutaminase (coeliac antibody test)
 TXA | Tranexamic acid
 U&E | Urea and electrolytes

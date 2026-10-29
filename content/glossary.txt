@@ -451,3 +451,8 @@ Laron syndrome | Growth hormone resistance (receptor defect): high GH, low IGF-1
 micropenis | Stretched penile length below −2.5 SD for age (under about 2.5 cm in a term newborn)
 Turner syndrome | 45,X girl: short stature, webbed neck, widely spaced nipples, ovarian failure, coarctation
 constitutional delay | Normal variant: slow growth and late puberty with delayed bone age; normal final height
+toxoid | Inactivated bacterial toxin used as a vaccine (diphtheria, tetanus)
+attenuated | Weakened live organism that immunises without causing disease
+conjugate vaccine | Polysaccharide joined to a protein so infants under 2 years respond and form memory
+cold chain | Keeping vaccines at 2–8 °C from the factory to the child
+intussusception | Telescoping of one bowel segment into the next
