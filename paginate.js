@@ -26,7 +26,7 @@ const MARGIN = 40, GAP = 10;
       mzc.remove();
       out[s.dataset.orig] = { cap: bd.height, cont, atoms: [...c.querySelectorAll('.ms')].map(m => ({
         k: m.dataset.k, w: m.dataset.w === '1', t: m.dataset.t,
-        nums: !!m.querySelector('.mb.nums'), ph: !!m.querySelector('.msf .mb > .mc > .photo:only-child'),
+        nums: !!m.querySelector('.mb.nums'), rv: !!m.querySelector('.msf .mb.rv'), ph: !!m.querySelector('.msf .mb > .mc > .photo:only-child'),
         full: m.querySelector('.msf').getBoundingClientRect().height,
         half: m.querySelector('.msh').getBoundingClientRect().height })) };
     });
@@ -39,7 +39,8 @@ const MARGIN = 40, GAP = 10;
     let rows = [], used = 0;
     const done = new Set();
     const newPage = (midTopic) => { if (rows.length) pages.push(rows); rows = []; used = midTopic ? ch.cont : 0; };
-    const place = (row, h) => { rows.push(row); used += h; row.forEach(i => done.add(i)); };
+    let lastT = null;
+    const place = (row, h) => { rows.push(row); used += h; row.forEach(i => done.add(i)); lastT = A[row[row.length - 1]].t; };
     const pairable = (i, j) => j < A.length && A[i].k === 'box' && A[j].k === 'box' && !A[i].w && !A[j].w && A[i].t === A[j].t;
     // best way to set atom i (and maybe i+1) as the next row
     const option = (i) => {
@@ -54,11 +55,17 @@ const MARGIN = 40, GAP = 10;
       }
       return { row: [i], h: A[i].full };
     };
-    // before a page break, fill a big gap with the topic's Key numbers box (it may move up); never split a box
+    // before a page break, fill a big gap (owner: no empty space unless necessary): first the topic's Key numbers
+    // box, then the next boxes of the same topic that fit (looking at most 3 boxes ahead); never split a box
     const fill = (i) => {
-      if (cap - used <= 0.15 * cap) return;
-      const n = A.findIndex((a, j) => j > i && !done.has(j) && a.nums && a.t === A[i].t && a.full <= cap - used);
-      if (n >= 0) place([n], A[n].full);
+      for (;;) {
+        if (cap - used <= 0.08 * cap) return;
+        // only the topic already on this page; Rapid Review pieces keep their order
+        let n = A.findIndex((a, j) => j > i && !done.has(j) && a.nums && a.t === lastT && a.full <= cap - used);
+        if (n < 0) n = A.findIndex((a, j) => j >= i && j <= i + 3 && !done.has(j) && !a.rv && (a.k === 'box' || a.k === 'row') && a.t === lastT && a.full <= cap - used);
+        if (n < 0) return;
+        place([n], A[n].full);
+      }
     };
     for (let i = 0; i < A.length; i++) {
       if (done.has(i)) continue;

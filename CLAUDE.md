@@ -54,6 +54,9 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
 - **Tap meanings checked (owner):** abbreviations.txt and glossary.txt are for pediatrics only (the surgery list was
   pruned; conflicting meanings fixed). After each topic run `node tools/terms.js artifact/index.html` and check every
   word shows the right meaning in its context (e.g. PO in PO₄, CHD = congenital heart disease, MMR = vaccine).
+- **No empty space unless necessary (owner):** paginate.js fills a page gap with the next box of the same topic that
+  fits (3 boxes ahead), Rapid Review is cut into 6-line pieces that flow on; `node tools/gaps.js` lists the space left
+  at the bottom of every page: check it after each topic (gaps remain only at a topic's end or before a box taller than the gap).
 - **Never crowded (owner):** boxes and cells stay short and airy: one idea per line, a small table or list instead of
   a dense paragraph; split long content rather than packing it.
 - **Pictures placed well (owner):** small to medium, never big (about 140–160 px high; the picture column

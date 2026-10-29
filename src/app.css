@@ -971,3 +971,6 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .toc.ccm .bp span { flex:none; white-space:nowrap; }
 .tools .tool:last-child:nth-child(odd){grid-column:1/-1}
 .mz .mzh .tt { font-size:8pt; font-weight:800; color:var(--ch-dark); letter-spacing:.2px; }
+.mrow:has(> .mb.rv.rvc) { margin-top:-10px; } .mb.rv.rvc { border-top:0; border-radius:0 0 7px 7px; }
+.mrow:has(+ .mrow > .mb.rv.rvc) > .mb.rv { border-bottom-left-radius:0; border-bottom-right-radius:0; }
+.mzm > .mrow:first-child:has(> .mb.rv.rvc) { margin-top:0; } .mzm > .mrow:first-child > .mb.rv.rvc { border-top:1.3px solid var(--mbl); border-radius:7px; }

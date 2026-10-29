@@ -183,10 +183,11 @@ def rv_rows(ex):
 def chapter_exam(t):
     """Rapid Review of one topic (owner): only the topic name and one list of scenario → answer lines
     (diagnosis, best test, best treatment, drug of choice), in two columns; long lists continue in a second box."""
-    rows, out, per = rv_rows(t['_exam']), [], 64
+    # small pieces flow from page to page with no empty space (owner); the topic name heads only the first piece
+    rows, out, per = rv_rows(t['_exam']), [], 6
     for i in range(0, len(rows), per):
-        head = f'{t["no"]} {t["title"]}' + (' (continued)' if i else '')
-        out.append((f'<div class="mb rv"><div class="mh">{head}</div><div class="mc"><div class="rs">{"".join(rows[i:i + per])}</div></div></div>', True))
+        head = f'<div class="mh">{t["no"]} {t["title"]}</div>' if i == 0 else ''
+        out.append((f'<div class="mb rv{"" if i == 0 else " rvc"}">{head}<div class="mc"><div class="rs">{"".join(rows[i:i + per])}</div></div></div>', True))
     return out
 
 
@@ -429,10 +430,10 @@ def build():
             chapters[-1][1].extend((k, h, w, sb, t) for k, h, w, sb in atoms)
     for ch, stream in chapters:
         tps = [a[4] for a in stream if a[0] == 'title']
-        exam = [x for t in tps for x in chapter_exam(t)]
+        exam = [(x, t) for t in tps for x in chapter_exam(t)]   # each piece keeps its own topic (gap filling stays in-topic)
         if exam:
-            stream.append(('title', f'<h1 class="mzt"><span class="no">{ch["no"]}</span>Rapid Review</h1>', True, 'Rapid Review', tps[-1]))
-            stream.extend(('box', r, w, 'Rapid Review', tps[-1]) for r, w in exam)
+            stream.append(('title', f'<h1 class="mzt"><span class="no">{ch["no"]}</span>Rapid Review</h1>', True, 'Rapid Review', tps[0]))
+            stream.extend(('box', r, w, 'Rapid Review', t) for (r, w), t in exam)
 
     def compose(stream, rows):
         """HTML of one page from its rows of atom indexes; boxes are renumbered per topic in reading order."""
@@ -479,7 +480,7 @@ def build():
                                f'<div class="msf">{compose(stream, [[i]])}</div>'
                                f'<div class="msh"><div class="mrow">{a[1]}<div></div></div></div></div>'
                                for i, a in enumerate(stream))
-            paged.append((ch, first[4], sub, body, pno, key, {stream[i][4]['id'] for row in rows for i in row}))
+            paged.append((ch, first[4], sub, body, pno, key, {stream[i][4]['id'] for row in rows for i in row if stream[i][3] != 'Rapid Review'}))
             pno += 1
     rr_first = pno
 
