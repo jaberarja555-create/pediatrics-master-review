@@ -96,3 +96,29 @@ clinic wall: one of average height with a pubertal build, the other clearly shor
 **Real pictures, not AI:**
 - **ftt_boneage_delayed.jpg**: X-ray of the left hand and wrist showing delayed bone age (few carpal bones for
   the age), ideally beside a normal one of the same age.
+
+## Home screen · part banners (one per part)
+
+Same rules for all five: wide banner 4:1 (e.g. 1600 × 400 px), digital illustration, warm and clean, **no text,
+no letters, no arrows**. The **left 55 % is plain dark background only** (the app writes the title there); the
+illustration sits in the **right 45 %**, fading softly into the background on its left edge.
+
+**part1.jpg** · General Pediatrics · background dark teal (#0b4a55 → #13606b)
+Wide banner illustration, 4:1. Right side: a friendly doctor in a white coat examining a smiling baby with a
+stethoscope, a small growth chart on the wall. Left 55 % plain dark teal, nothing on it. No text.
+
+**part2.jpg** · Infectious Diseases · background dark crimson (#4a0f1a → #7a1d2b)
+Wide banner illustration, 4:1. Right side: a sick child resting in bed with a thermometer, a few stylised
+microbes (virus and bacteria shapes) floating nearby. Left 55 % plain dark crimson, nothing on it. No text.
+
+**part3.jpg** · Systems · background dark green (#0b2e18 → #1f5a2e)
+Wide banner illustration, 4:1. Right side: a child's outline with the heart, lungs, liver, kidneys and
+intestines drawn inside in soft anatomical colours. Left 55 % plain dark green, nothing on it. No text.
+
+**part4.jpg** · Emergencies · background dark red (#3d0a0a → #7a1515)
+Wide banner illustration, 4:1. Right side: a calm emergency team (doctor and nurse with masks) caring for a
+child on a trolley, a monitor in the background. Left 55 % plain dark red, nothing on it. No text.
+
+**part5.jpg** · Clinical & Drugs · background dark navy (#0b1f33 → #23405f)
+Wide banner illustration, 4:1. Right side: a doctor with a clipboard talking to a child and mother, a few
+medicine bottles and a syringe on a small table. Left 55 % plain dark navy, nothing on it. No text.
