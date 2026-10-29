@@ -958,3 +958,7 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .mb.exam .rvb .box { margin: 0 0 6px; padding: 5px 9px 6px; font-size: 8.7pt; } .mb.exam .rvb .box:last-child { margin-bottom: 0; }
 .mb.exam .rvb .box table.t { font-size: 8.4pt; } .mb.exam .rvb .box td { padding: 2.5px 5px; }
 .toc .ct.rvr i { color:#b8892b; } .toc .ct.rvr span { font-weight:800; color:var(--ch-dark); }
+.mb.rv .mh { text-transform: none; font-size: 10.6pt; }
+.mb.rv .rs { columns: 2; column-gap: 22px; }
+.mb.rv .r { break-inside: avoid; padding: 3px 0 3px 12px; line-height: 1.35; border-bottom: 1px dotted var(--ch-line); }
+.page.mz .mb.rv .r .to { font-weight: 800; color: var(--ch-dark); }

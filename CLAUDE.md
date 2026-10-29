@@ -102,9 +102,12 @@ Side column (every topic page):
 - **Clue switch · the detail that flips the answer**: rows `clue → answer`.
 - **Try it · exam-style**: 2 short questions with answers.
 
-**Rapid Review (owner):** one section at the end of each chapter (no separate end-of-book pages, no "Exam corner"):
- per topic its key points (every Exam trap / Best next step / Sudan protocol box of the pages), clue → answer, formulas
- and test yourself, key numbers (Numbers rows live only here, not as a box in the topic). Listed in the contents per chapter.
+**Rapid Review (owner):** one section at the end of each chapter with ONE title "Rapid Review" (no other labels: no
+ numbers, formulas, exam traps, guidelines or test-yourself headings). Under it each topic is one block titled only with
+ its number and name, holding one two-column list of "scenario → answer" lines: clinical pictures, special clues, best
+ test, best treatment, drug of choice. Built from the side column (Clue switch rows, Formula strips and Try it
+ questions all become lines), so every topic's side column must include best-test / best-treatment / of-choice rows.
+ Key numbers stay as a box at the end of the topic. Listed in the contents per chapter.
 
 ## Writing style
 **Clear, standard headings (owner):** use the terms students know from lectures and textbooks ("Blood investigations on admission", "Clinical features", "Indications for surgery"), never slang or riddles ("Bloods", "The plan", "One stone, many pictures").

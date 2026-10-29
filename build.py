@@ -165,27 +165,28 @@ def formula_row(f):
     return f'<div class="r fr"><span>{left}</span><span class="to">{ans}</span></div>'
 
 
+def rv_rows(ex):
+    """Rapid Review lines of one topic, all as 'scenario → answer': clue rows, formulas and test-yourself questions."""
+    rows = list(ex['clues'])
+    for f in ex['formula']:
+        parts = re.findall(r'<span class="(c|p|ans)">(.*?)</span>', f, re.S)
+        left = ' '.join(h for k, h in parts if k != 'ans' and h != '=')
+        ans = next((h for k, h in parts if k == 'ans'), '')
+        rows.append(f'<div class="r"><span>{left}</span><span class="to">{ans}</span></div>')
+    for q in ex['try']:
+        m = re.search(r'<div class="q">(.*?)</div><div class="a"><span>ANSWER</span>(.*?)</div>', q, re.S)
+        if m:
+            rows.append(f'<div class="r"><span>{m.group(1)}</span><span class="to">{m.group(2)}</span></div>')
+    return rows
+
+
 def chapter_exam(t):
-    """Rapid Review atoms for one topic (owner: the Exam corner and the Rapid review are one section at the end of
-    each chapter): exam boxes from the pages, clue → answer, formulas and test yourself, key numbers."""
-    ex = t['_exam']
-    fl = ''.join(formula_row(f) for f in ex['formula'])
-    qa = ''.join(re.sub(r'<div class="a"><span>ANSWER</span>', '<div class="a">', q).replace('class="try"', 'class="qa"')
-                 for q in ex['try'])
-    out = []
-    if ex['boxes']:
-        out.append((f'<div class="mb exam"><div class="mh">{t["no"]} {t["title"]} · key points</div>'
-                    f'<div class="mc rvb">{"".join(ex["boxes"])}</div></div>', False))
-    if ex['clues']:
-        out.append((f'<div class="mb exam"><div class="mh">{t["no"]} · clue → answer</div>'
-                    f'<div class="mc">{"".join(ex["clues"])}</div></div>', False))
-    if fl or qa:
-        out.append((f'<div class="mb exam"><div class="mh">{t["no"]} · formulas &amp; test yourself</div><div class="mc">'
-                    + (f'<div class="xsub">Formulas</div>{fl}' if fl else '') + (f'<div class="xsub">Test yourself</div>{qa}' if qa else '')
-                    + '</div></div>', False))
-    if ex['numbers']:
-        out.append((f'<div class="mb exam"><div class="mh">{t["no"]} · key numbers</div><div class="mc">'
-                    f'<table class="numt">{"".join(ex["numbers"])}</table></div></div>', False))
+    """Rapid Review of one topic (owner): only the topic name and one list of scenario → answer lines
+    (diagnosis, best test, best treatment, drug of choice), in two columns; long lists continue in a second box."""
+    rows, out, per = rv_rows(t['_exam']), [], 64
+    for i in range(0, len(rows), per):
+        head = f'{t["no"]} {t["title"]}' + (' (continued)' if i else '')
+        out.append((f'<div class="mb rv"><div class="mh">{head}</div><div class="mc"><div class="rs">{"".join(rows[i:i + per])}</div></div></div>', True))
     return out
 
 
@@ -423,6 +424,10 @@ def build():
                 ex['boxes'] += exam_boxes(main)
                 got = [('row' if r.startswith('<div class="m') else 'raw', r, True) for r in top_blocks(main)] if hand else auto_mosaic(main.strip())
                 atoms += [(k, h, w, sub) for k, h, w in got]
+            if ex['numbers']:
+                nr, half = ex['numbers'], -(-len(ex['numbers']) // 2)
+                tables = ''.join(f'<table class="numt">{"".join(nr[i:i + half])}</table>' for i in (0, half) if nr[i:i + half])
+                atoms.append(('box', f'<div class="mb nums"><div class="mh">Key numbers</div><div class="mc"><div class="ng">{tables}</div></div></div>', len(nr) > 6, pages[-1][0]))
             t['_exam'] = ex
             written.append((ch, t, src))
             if not chapters or chapters[-1][0] is not ch:
@@ -433,7 +438,7 @@ def build():
         tps = [a[4] for a in stream if a[0] == 'title']
         exam = [x for t in tps for x in chapter_exam(t)]
         if exam:
-            stream.append(('title', f'<h1 class="mzt"><span class="no">{ch["no"]}</span>Rapid Review · {ch["title"]}</h1>', True, 'Rapid Review', tps[-1]))
+            stream.append(('title', f'<h1 class="mzt"><span class="no">{ch["no"]}</span>Rapid Review</h1>', True, 'Rapid Review', tps[-1]))
             stream.extend(('box', r, w, 'Rapid Review', tps[-1]) for r, w in exam)
 
     def compose(stream, rows):
@@ -462,7 +467,7 @@ def build():
         for rows in plan['pages']:
             first = stream[rows[0][0]]
             head = ('' if first[0] == 'title' else
-                    f'<h1 class="mzt mzc"><span class="no">{ch["no"]}</span>Rapid Review · {ch["title"]}</h1>' if first[3] == 'Rapid Review' else
+                    '' if first[3] == 'Rapid Review' else
                     f'<h1 class="mzt mzc"><span class="no">{first[4]["no"]}</span>{first[4]["title"]}</h1>')
             for row in rows:
                 for i in row:
