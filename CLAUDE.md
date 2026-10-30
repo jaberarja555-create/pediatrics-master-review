@@ -32,6 +32,10 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
   heading kept with its first chapter (build.py contents_pages); `contents_split` stays empty.
 
 ## Owner's writing rules for this book (Oct 2026, stricter than the obstetrics book)
+- **Latest guidelines, named only (owner):** follow the newest WHO guideline and the national programmes
+  (e.g. WHO 2023 wasting and nutritional oedema: severe wasting = marasmus, nutritional oedema = kwashiorkor),
+  but in the book never write "Sudan protocol", "in Sudan we..." or what older/other guidelines said: only the guideline's
+  name (WHO 2023, CMAM, IMCI, EPI, ETAT). Geographic clinical clues (kala-azar in Sudan) are fine.
 - **Clear and formal**: standard textbook wording, standard abbreviations only (each added to abbreviations.txt);
   nothing casual or funny like the obstetrics book had.
 - **Sudan protocols first, local resources preferred** (Asma Hadida, Kibreet, Aljazeera, Shendi cases, Osman,
@@ -43,7 +47,7 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
 - Topic 1.1 (growth.html) is the model for later topics.
 - **Exam boxes inside the pages (owner):** each topic has coloured boxes at the end of the section they belong to:
   `box trap` **Exam trap** (MCQ favourites, "all EXCEPT" traps), `box next` **Best next step**, `box guide`
-  **Sudan protocol · …** (local programme or protocol). A fact in a box is not repeated in the side column.
+  headed with the guideline's name only (**CMAM · …**, **IMCI · …**, **EPI · …**). A fact in a box is not repeated in the side column.
 - **Never vague (owner):** write complete, plain sentences a student understands without knowing the exam wording:
   state the fact first, then (if useful) how the MCQ asks it. No shorthand such as '"All are live EXCEPT": …'.
 - **Correct and checked (owner):** the whole book must contain no vague or wrong information. Before publishing a topic,
