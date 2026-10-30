@@ -315,6 +315,7 @@ neuroendocrine tumour | Tumour of hormone-making cells (carcinoid, insulinoma)
 neurofibroma | Benign tumour of a nerve sheath
 Nissen fundoplication | 360° wrap of the gastric fundus around the lower oesophagus for reflux
 nodule / nodular | A small rounded lump
+nutritional oedema | Bilateral pitting oedema from malnutrition (kwashiorkor); always severe acute malnutrition
 odynophagia | Pain on swallowing
 oedema | Swelling from fluid in the tissues
 oesophagectomy | Removal of the oesophagus
@@ -414,6 +415,7 @@ sentinel node | The first lymph node that drains a tumour
 seroma | Collection of serous fluid under a wound
 serosa | The outer peritoneal layer of the gut
 sessile | Flat, without a stalk
+severe wasting | Weight-for-height below −3 SD or MUAC below 11.5 cm (marasmus)
 sigmoidoscopy | Camera examination of the rectum and sigmoid colon
 sinus | A blind track from an epithelial surface into the tissues
 Sister Mary Joseph nodule | Metastatic nodule at the umbilicus from an abdominal cancer
