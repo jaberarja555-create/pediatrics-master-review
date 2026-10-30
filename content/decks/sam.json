@@ -49,7 +49,7 @@
  ["Feeding", "Pulse rises by 25/min and breathing by 5/min during transition. Action?", "Heart failure warning: reduce the feed volume."],
  ["Outpatient", "Energy of one RUTF sachet?", "500 kcal (92 g)."],
  ["Outpatient", "Main advantage of RUTF at home?", "Needs no water or cooking, so it is not contaminated."],
- ["Outpatient", "Cure criteria for SAM?", "Weight-for-height ≥ −2 SD or MUAC ≥ 12.5 cm and no oedema for 2 weeks."],
+ ["Outpatient", "Cure criteria for SAM?", "MUAC ≥ 12.5 cm and/or WFH ≥ −2 SD (as at admission) with no oedema, on 2 consecutive visits."],
  ["Outpatient", "Treatment of MAM?", "Targeted supplementary feeding programme (RUSF or corn-soya blend), visits every 2 weeks."],
  ["Outpatient", "First sign of recovery in SAM?", "Return of appetite and smile (days 3–4)."]
 ]
