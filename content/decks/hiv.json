@@ -1,0 +1,22 @@
+[
+ ["Transmission", "Main route of HIV infection in children?", "Mother-to-child: pregnancy, delivery, breastfeeding."],
+ ["PMTCT", "Maternal ART in PMTCT?", "Lifelong dolutegravir-based ART from diagnosis."],
+ ["PMTCT", "Infant prophylaxis, low risk?", "Nevirapine for 6 weeks."],
+ ["PMTCT", "Infant prophylaxis, high risk?", "Zidovudine + nevirapine for 6 weeks (NVP continued in breastfeeding)."],
+ ["PMTCT", "Feeding advice for HIV-positive mother on ART?", "Exclusive breastfeeding 6 months, then continue with food."],
+ ["PMTCT", "When does an HIV-exposed infant start cotrimoxazole?", "From 6 weeks until HIV is excluded."],
+ ["Diagnosis", "Test to diagnose HIV under 18 months?", "Nucleic acid test (HIV DNA/RNA PCR)."],
+ ["Diagnosis", "Why not antibody under 18 months?", "Maternal antibody persists up to 18 months."],
+ ["Diagnosis", "When is the first infant PCR done?", "At 6 weeks (also birth where used)."],
+ ["Diagnosis", "Test after 18 months?", "Antibody rapid tests."],
+ ["Clinical", "Clinical features suggesting HIV?", "FTT, persistent thrush, recurrent pneumonia, persistent diarrhoea, lymphadenopathy, parotid swelling."],
+ ["Clinical", "PCP in infants: features?", "2–6 months, severe hypoxia, few chest signs."],
+ ["Clinical", "Treatment of PCP?", "High-dose cotrimoxazole 21 days + prednisolone if hypoxic."],
+ ["Clinical", "Parotid swelling, clubbing, nodes in HIV?", "Lymphoid interstitial pneumonitis (LIP)."],
+ ["Treatment", "When to start ART in children?", "Immediately in all, regardless of CD4."],
+ ["Treatment", "Preferred first-line ART?", "Dolutegravir + abacavir + lamivudine."],
+ ["Treatment", "ART in neonates under 4 weeks?", "Zidovudine + lamivudine + raltegravir (or nevirapine)."],
+ ["Treatment", "Best test to monitor ART?", "Viral load."],
+ ["Treatment", "Commonest cause of ART failure?", "Poor adherence."],
+ ["Treatment", "Abacavir serious side effect?", "Hypersensitivity reaction: stop, never restart."]
+]

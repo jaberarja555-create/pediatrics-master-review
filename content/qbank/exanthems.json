@@ -1,0 +1,11 @@
+[
+{"q": "Koplik spots are pathognomonic of:", "o": ["Rubella", "Measles", "Roseola", "Scarlet fever", "Chickenpox"], "a": 1, "e": "Grey-white spots on buccal mucosa in the measles prodrome.", "k": "koplik spots", "s": "book"},
+{"q": "The commonest cause of death in measles is:", "o": ["Encephalitis", "Pneumonia", "SSPE", "Otitis media", "Myocarditis"], "a": 1, "e": "Viral or secondary bacterial pneumonia.", "k": "pneumonia", "s": "book"},
+{"q": "All children with measles should receive:", "o": ["Antibiotics", "Vitamin A on days 1 and 2", "Steroids", "Aciclovir", "Immunoglobulin"], "a": 1, "e": "Vitamin A lowers death and blindness.", "k": "vitamin a to every child", "s": "book"},
+{"q": "A 9-month-old has 3 days of high fever then a rash appears as the fever falls. Diagnosis?", "o": ["Measles", "Roseola infantum", "Rubella", "Scarlet fever", "Kawasaki"], "a": 1, "e": "HHV-6; febrile seizures common.", "k": "roseola", "s": "book"},
+{"q": "A child with sickle cell disease develops sudden severe anaemia with low reticulocytes after a slapped-cheek rash. The cause is:", "o": ["Malaria", "Parvovirus B19", "Measles", "EBV", "Hepatitis A"], "a": 1, "e": "Parvovirus B19 aplastic crisis.", "k": "aplastic crisis", "s": "book"},
+{"q": "Scarlet fever is treated with:", "o": ["No treatment", "Penicillin for 10 days", "Aciclovir", "Vitamin A", "Steroids"], "a": 1, "e": "Treats group A strep and prevents rheumatic fever.", "k": "penicillin 10 days", "s": "book"},
+{"q": "A teenager with tonsillitis develops a widespread rash after amoxicillin. The most likely diagnosis is:", "o": ["Penicillin allergy", "Infectious mononucleosis", "Scarlet fever", "Measles", "Kawasaki"], "a": 1, "e": "EBV with amoxicillin gives rash in 80%.", "k": "infectious mononucleosis", "s": "book"},
+{"q": "The commonest complication of mumps is:", "o": ["Orchitis in infants", "Aseptic meningitis", "Pancreatitis", "Deafness", "Myocarditis"], "a": 1, "e": "Aseptic meningitis; orchitis after puberty.", "k": "aseptic meningitis", "s": "book"},
+{"q": "All stages of lesions (papules, vesicles, crusts) seen together in an itchy rash suggest:", "o": ["Smallpox", "Chickenpox", "Measles", "Impetigo", "Scabies"], "a": 1, "e": "Chickenpox appears in crops.", "k": "all stages together", "s": "book"}
+]

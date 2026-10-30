@@ -4,11 +4,12 @@ ABC / ABCDE | Airway, Breathing, Circulation (Disability, Exposure)
 ABG | Arterial blood gas
 ABO | ABO blood groups (A, B, AB, O)
 ACE-I | Angiotensin-converting enzyme inhibitor
+ACT | Artemisinin-based combination therapy
 ADA | Adenosine deaminase
 ADH | Antidiuretic hormone
 AF | Atrial fibrillation
 AFB | Acid-fast bacilli
-AFP | Alpha-fetoprotein
+AFP | Acute flaccid paralysis (as a tumour marker: alpha-fetoprotein)
 AGA | Appropriate for gestational age
 AHA | American Heart Association
 AKI | Acute kidney injury
@@ -35,6 +36,7 @@ CBC | Complete blood count
 CBD | Common bile duct
 CCB | Calcium-channel blocker
 CCK | Cholecystokinin
+CD4 | CD4 T-lymphocyte count
 CDC | Centers for Disease Control and Prevention
 CDH | Congenital diaphragmatic hernia
 CF | Cystic fibrosis
@@ -57,14 +59,17 @@ CT / CTA | Computed tomography / CT angiography
 CVP | Central venous pressure
 CXR | Chest X-ray
 D5 | Dextrose 5% (in water)
-DAT | Direct antiglobulin test
+DAT | Direct antiglobulin (Coombs) test; in kala-azar: direct agglutination test
 DD / DDx | Differential diagnosis
 DDH | Developmental dysplasia of the hip
 DI | Diabetes insipidus
 DIC | Disseminated intravascular coagulation
 DKA | Diabetic ketoacidosis
 DM | Diabetes mellitus
+DNA | Deoxyribonucleic acid
 DNS | Dextrose 5% in normal saline
+DOT | Directly observed treatment
+DTG | Dolutegravir
 DVT | Deep vein thrombosis
 EBV | Epstein–Barr virus
 ECF / ICF | Extracellular / intracellular fluid
@@ -80,7 +85,9 @@ ERCP | Endoscopic retrograde cholangiopancreatography
 ESR | Erythrocyte sedimentation rate
 FAST | Focused assessment with sonography for trauma
 FFP | Fresh frozen plasma
+FNA | Fine-needle aspiration
 FTT | Failure to thrive
+FUO | Fever of unknown origin
 G6PD | Glucose-6-phosphate dehydrogenase
 GA | Gestational age
 GABA | Gamma-aminobutyric acid
@@ -92,6 +99,7 @@ GI | Gastrointestinal
 GORD | Gastro-oesophageal reflux disease
 Hb | Haemoglobin
 HbA1c | Glycated haemoglobin
+HbF | Fetal haemoglobin
 HBIG | Hepatitis B immunoglobulin
 HBsAg | Hepatitis B surface antigen
 HBV / HCV | Hepatitis B / C virus
@@ -107,8 +115,10 @@ HIT | Heparin-induced thrombocytopenia
 HIV | Human immunodeficiency virus
 HPV | Human papillomavirus
 HR | Heart rate
+HRP2 | Histidine-rich protein 2 (malaria antigen)
 HRZE | Isoniazid, rifampicin, pyrazinamide, ethambutol (TB drugs)
 HSV | Herpes simplex virus
+HTIG | Human tetanus immunoglobulin
 IBD | Inflammatory bowel disease
 ICP | Intracranial pressure
 ICU | Intensive care unit
@@ -117,6 +127,7 @@ IgA / IgG / IgM | Immunoglobulin A / G / M
 IGF | Insulin-like growth factor
 IGF-1 | Insulin-like growth factor 1
 IgG4 | Immunoglobulin G4
+IGRA | Interferon-gamma release assay (TB blood test)
 IL-6 | Interleukin-6
 ILAE | International League Against Epilepsy
 ILCOR | International Liaison Committee on Resuscitation
@@ -133,15 +144,18 @@ IV | Intravenous
 IVC | Inferior vena cava
 IVH | Intraventricular haemorrhage
 IVIG | Intravenous immunoglobulin
+JIA | Juvenile idiopathic arthritis
 JVP | Jugular venous pressure
 KCl | Potassium chloride
 KMC | Kangaroo mother care
 LA | Local anaesthesia
 LBW | Low birth weight (below 2.5 kg)
+LD | Leishman–Donovan (bodies)
 LDH | Lactate dehydrogenase
 LFT | Liver function tests
 LGA | Large for gestational age
 LH | Luteinising hormone
+LIP | Lymphoid interstitial pneumonitis
 LISA | Less invasive surfactant administration
 LMA | Laryngeal mask airway
 LMWH | Low-molecular-weight heparin
@@ -159,6 +173,7 @@ MOF | Multiple organ failure
 MR | Measles–rubella vaccine (in imaging: magnetic resonance)
 MRI | Magnetic resonance imaging
 MRSA | Meticillin-resistant Staphylococcus aureus
+MTB | Mycobacterium tuberculosis
 MUAC | Mid-upper arm circumference
 NEC | Necrotising enterocolitis
 NF1 / NF2 | Neurofibromatosis type 1 / 2
@@ -166,9 +181,11 @@ NG / NJ | Nasogastric / nasojejunal
 NGT | Nasogastric tube
 NICE | National Institute for Health and Care Excellence (UK)
 NICU | Neonatal intensive care unit
+NPA | Nasopharyngeal aspirate
 NPO | Nil by mouth (nil per os)
 NS | Normal saline (0.9% sodium chloride)
 NSAIDs | Non-steroidal anti-inflammatory drugs
+NVP | Nevirapine
 OFC | Occipitofrontal (head) circumference
 OGD | Oesophagogastroduodenoscopy (upper endoscopy)
 OPSI | Overwhelming post-splenectomy infection
@@ -176,7 +193,9 @@ OPV | Oral polio vaccine
 ORS | Oral rehydration solution
 OSCE | Objective structured clinical examination
 OTP | Outpatient therapeutic programme (for uncomplicated SAM)
+PAIR | Puncture, aspiration, injection, re-aspiration (hydatid cyst)
 PaO2 | Arterial oxygen tension
+PCP | Pneumocystis pneumonia
 PCR | Polymerase chain reaction
 PCV | Pneumococcal conjugate vaccine (in haematology: packed cell volume)
 PDA | Patent ductus arteriosus
@@ -186,7 +205,9 @@ PEG | Percutaneous endoscopic gastrostomy
 PEM | Protein–energy malnutrition
 PEP | Post-exposure prophylaxis
 PHT | Portal hypertension
+PKDL | Post-kala-azar dermal leishmaniasis
 PKU | Phenylketonuria
+PMTCT | Prevention of mother-to-child transmission (of HIV)
 PN | Parenteral nutrition
 PO | By mouth (per os)
 POEM | Peroral endoscopic myotomy
@@ -206,9 +227,12 @@ QT / QRS | ECG intervals (QT interval, QRS complex)
 RBC | Red blood cell
 RD | Respiratory distress
 RDS | Respiratory distress syndrome (surfactant deficiency)
+RDT | Rapid diagnostic test
 ReSoMal | Rehydration solution for malnutrition
 Rh | Rhesus (blood group)
+RIF | Rifampicin (resistance)
 RL | Ringer's lactate
+RNA | Ribonucleic acid
 ROP | Retinopathy of prematurity
 RR | Respiratory rate
 RT | Radiotherapy
@@ -229,6 +253,7 @@ SLE | Systemic lupus erythematosus
 SpO2 | Oxygen saturation by pulse oximeter
 SpO₂ | Oxygen saturation (pulse oximeter)
 SSG | Sodium stibogluconate
+SSPE | Subacute sclerosing panencephalitis
 ST | ST segment (ECG)
 SVC | Superior vena cava
 SVR | Systemic vascular resistance
@@ -237,11 +262,13 @@ TB | Tuberculosis
 TBG | Thyroxine-binding globulin
 TBSA | Total body surface area
 TCA | Tricyclic antidepressant
+TCV | Typhoid conjugate vaccine
 Td | Tetanus and reduced diphtheria toxoid (adult type)
 TFT | Thyroid function tests
 TG | Triglycerides
 TGA | Transposition of the great arteries
 TIG | Tetanus immunoglobulin
+TMP | Trimethoprim
 TNF | Tumour necrosis factor
 TOF | Tetralogy of Fallot
 TORCH | Toxoplasma, Others (syphilis, varicella, Zika), Rubella, CMV, Herpes simplex
@@ -255,6 +282,7 @@ TSH | Thyroid-stimulating hormone
 TT | Tetanus toxoid
 tTG | Tissue transglutaminase (coeliac antibody test)
 TTN | Transient tachypnoea of the newborn
+TU | Tuberculin units
 TXA | Tranexamic acid
 U&E | Urea and electrolytes
 UC | Ulcerative colitis
@@ -267,6 +295,7 @@ VEGF | Vascular endothelial growth factor
 VF | Ventricular fibrillation
 Vi | Vi capsular antigen (typhoid vaccine)
 VKDB | Vitamin K deficiency bleeding
+VL | Visceral leishmaniasis (in HIV: viral load)
 VLBW | Very low birth weight (below 1500 g)
 VSD | Ventricular septal defect
 VTE | Venous thromboembolism

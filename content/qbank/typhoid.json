@@ -1,0 +1,8 @@
+[
+{"q": "The best test for typhoid fever in the first week is:", "o": ["Widal test", "Blood culture", "Stool culture", "Urine culture", "Liver function"], "a": 1, "e": "Blood culture positive in 40–60% early.", "k": "blood culture", "s": "book"},
+{"q": "The drug of choice for uncomplicated typhoid fever (WHO) is:", "o": ["Chloramphenicol", "Oral azithromycin", "Amoxicillin", "Cotrimoxazole", "Metronidazole"], "a": 1, "e": "Resistance limits older drugs.", "k": "azithromycin", "s": "book"},
+{"q": "In week 3 of typhoid a child develops sudden abdominal pain and a rigid abdomen. Diagnosis?", "o": ["Appendicitis", "Ileal perforation", "Cholecystitis", "Pancreatitis", "Intussusception"], "a": 1, "e": "Perforation of Peyer patches; surgery.", "k": "perforation", "s": "book"},
+{"q": "Brucellosis in a 6-year-old is treated with:", "o": ["Doxycycline alone", "Rifampicin + cotrimoxazole for 6 weeks", "Ceftriaxone 7 days", "Azithromycin 3 days", "Penicillin"], "a": 1, "e": "Doxycycline avoided under 8 years; two drugs for 6 weeks.", "k": "rifampicin", "s": "book"},
+{"q": "Brucellosis is mainly caught by:", "o": ["Mosquito bite", "Drinking raw milk", "Contaminated water only", "Respiratory droplets", "Blood transfusion"], "a": 1, "e": "Raw milk and fresh cheese from infected animals.", "k": "raw", "s": "book"},
+{"q": "The chronic carrier site of Salmonella Typhi is:", "o": ["Liver", "Gallbladder", "Spleen", "Kidney", "Lymph nodes"], "a": 1, "e": "Gallbladder (especially with stones).", "k": "gallbladder", "s": "book"}
+]

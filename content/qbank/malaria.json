@@ -1,0 +1,10 @@
+[
+{"q": "The gold standard for diagnosis of malaria is:", "o": ["Widal test", "Blood film (thick and thin)", "CBC", "RDT only", "Splenic aspirate"], "a": 1, "e": "Microscopy gives species and parasite density.", "k": "gold standard", "s": "book"},
+{"q": "The drug of choice for uncomplicated falciparum malaria in a child is:", "o": ["Chloroquine", "Artemether–lumefantrine", "Quinine IV", "Primaquine alone", "SP alone"], "a": 1, "e": "An ACT; artemether–lumefantrine is first line.", "k": "artemether–lumefantrine", "s": "book"},
+{"q": "The drug of choice for severe malaria is:", "o": ["Oral ACT", "IV artesunate", "Chloroquine IM", "Doxycycline", "Mefloquine"], "a": 1, "e": "IV/IM artesunate lowers mortality compared with quinine.", "k": "iv (or im) artesunate", "s": "book"},
+{"q": "The IV artesunate dose for a 12 kg child with severe malaria is:", "o": ["1 mg/kg", "2.4 mg/kg", "3 mg/kg", "10 mg/kg", "20 mg/kg"], "a": 2, "e": "3 mg/kg under 20 kg; 2.4 mg/kg at 20 kg and over.", "k": "3 mg/kg", "s": "book"},
+{"q": "All are features of severe malaria EXCEPT:", "o": ["Prostration", "Hb 4.5 g/dL", "Glucose 1.8 mmol/L", "Fever of 38.5 °C alone", "Repeated convulsions"], "a": 3, "e": "Fever alone is uncomplicated malaria.", "k": "prostration", "s": "book"},
+{"q": "A comatose child with malaria: the first bedside investigation is:", "o": ["Chest X-ray", "Blood glucose", "CT head", "Liver function", "Widal"], "a": 1, "e": "Hypoglycaemia is common and treatable.", "k": "blood glucose", "s": "book"},
+{"q": "Which condition protects against severe falciparum malaria?", "o": ["Sickle cell disease", "Sickle cell trait", "HIV", "Malnutrition", "Splenectomy"], "a": 1, "e": "Trait protects; sickle cell disease increases risk.", "k": "sickle cell trait", "s": "bank"},
+{"q": "Splenomegaly occurs in all of the following EXCEPT:", "o": ["Brucellosis", "Malaria", "Visceral leishmaniasis", "Congenital spherocytosis", "G6PD deficiency"], "a": 4, "e": "G6PD deficiency causes episodic haemolysis without splenomegaly.", "k": "spleen", "s": "bank"}
+]

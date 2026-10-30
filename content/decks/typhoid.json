@@ -1,0 +1,22 @@
+[
+ ["Typhoid", "Cause and spread of typhoid?", "Salmonella Typhi/Paratyphi; faeco-oral via food and water."],
+ ["Typhoid", "Fever pattern in typhoid?", "Step-wise rising fever in week 1, sustained in week 2."],
+ ["Typhoid", "Signs of typhoid?", "Coated tongue, relative bradycardia, soft splenomegaly, rose spots, apathy."],
+ ["Typhoid", "Bowel habit in typhoid?", "Diarrhoea in young children; constipation in older ones."],
+ ["Typhoid", "Major complications in week 3?", "Intestinal perforation and bleeding."],
+ ["Typhoid", "Best test in week 1?", "Blood culture."],
+ ["Typhoid", "Most sensitive test?", "Bone marrow culture."],
+ ["Typhoid", "CBC in typhoid?", "Leucopenia, anaemia, low platelets."],
+ ["Typhoid", "Value of Widal test?", "Poor in endemic areas; never diagnose on Widal alone."],
+ ["Typhoid", "Treatment of uncomplicated typhoid?", "Azithromycin 20 mg/kg once daily for 7 days."],
+ ["Typhoid", "Treatment of severe typhoid?", "Ceftriaxone 80 mg/kg/day IV for 10–14 days."],
+ ["Typhoid", "Site of chronic carriage?", "Gallbladder."],
+ ["Typhoid", "Typhoid vaccine for children?", "Typhoid conjugate vaccine, one dose from 6 months."],
+ ["Brucella", "How is brucellosis caught?", "Raw milk or fresh cheese from goats, sheep, camels, cattle."],
+ ["Brucella", "Features of brucellosis?", "Undulant fever, sweats, joint pain, hepatosplenomegaly."],
+ ["Brucella", "Main cause of death in brucellosis?", "Endocarditis."],
+ ["Brucella", "Diagnosis of brucellosis?", "Blood culture, agglutination titre ≥ 1:160."],
+ ["Brucella", "Treatment under 8 years?", "Rifampicin + cotrimoxazole for 6 weeks."],
+ ["Brucella", "Treatment 8 years and over?", "Doxycycline + rifampicin for 6 weeks."],
+ ["Brucella", "Added drug in complicated brucellosis?", "Gentamicin for the first 7–14 days."]
+]

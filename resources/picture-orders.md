@@ -287,3 +287,84 @@ No text. Must show: the waiter's tip posture of one arm.
 Realistic medical photograph, landscape 4:3. Both feet of a newborn with bilateral club foot: feet pointing down
 and turned inwards with the soles facing each other. Plain background, no text.
 Must show: both feet in equinus and varus.
+
+## Chapter 4 · Infectious Diseases
+
+**malaria_film.jpg** · 4.2, beside diagnosis
+Microscope photograph collage, landscape 2:1, two panels, no text: left a thin blood film with many small ring forms
+(P. falciparum) inside red cells, some cells with two rings; right a banana-shaped (crescent) falciparum gametocyte.
+Must show: ring forms and the crescent gametocyte.
+
+**malaria_rdt.jpg** · 4.2, beside diagnosis
+Realistic photograph, landscape 4:3: a malaria rapid diagnostic test cassette showing two red lines (control and test)
+next to a finger-prick lancet. No brand name, no writing. Must show: the two lines clearly.
+
+**mening_rash.jpg** · 4.3, beside clinical features
+Realistic medical photograph, landscape 4:3: a clear drinking glass pressed on the thigh of a child with
+meningococcal septicaemia; dark red-purple non-blanching purpuric spots stay visible through the glass. No text.
+Must show: purpura visible through the glass.
+
+**mening_signs.jpg** · 4.3, beside examination (optional)
+Clean medical illustration, landscape 2:1, two panels, no text: left Kernig sign (hip flexed 90°, knee extension
+resisted, child in pain); right Brudzinski sign (neck flexion causes hips and knees to flex).
+
+**rash_collage.jpg** · 4.4, full-width row
+Six realistic close-up medical photographs in one image, landscape 3:1 (3 × 2 panels), thin white gaps, no text,
+dark-skinned children where possible: (1) Koplik spots: tiny white spots on red buccal mucosa opposite the molars;
+(2) measles: blotchy maculopapular rash spreading down from the face, red eyes; (3) chickenpox: crops of papules,
+clear vesicles and crusts together on the trunk; (4) scarlet fever: red "strawberry" tongue; (5) erythema infectiosum:
+bright red "slapped cheeks"; (6) hand-foot-mouth disease: oval vesicles on the palm.
+Must show: each sign clearly in its panel.
+
+**mumps.jpg** · 4.4, beside mumps
+Realistic photograph, landscape 4:3: a 6-year-old Sudanese child with swelling of one parotid gland in front of
+and below the ear, lifting the ear lobe. No text. Must show: the parotid swelling lifting the ear lobe.
+
+**tb_cxr.jpg** · 4.5, beside diagnosis
+Two chest X-rays side by side, landscape 2:1, no labels: left primary TB in a child (enlarged right hilar lymph
+nodes with a small right middle-zone opacity); right miliary TB (many tiny 1–2 mm nodules evenly in both lungs).
+Must show: hilar nodes (left) and miliary pattern (right).
+
+**tb_mantoux.jpg** · 4.5, beside diagnosis
+Realistic close-up photograph, landscape 4:3: the forearm of a child 72 hours after a tuberculin skin test with a raised
+firm swelling (induration) being measured across with a clear ruler in millimetres. No text.
+Must show: the induration and the ruler.
+
+**tb_node.jpg** · 4.5, beside extrapulmonary TB (optional)
+Realistic photograph, landscape 4:3: a child with a matted, painless swelling of the neck lymph nodes (scrofula),
+one with bluish thin skin over it. No text.
+
+**hiv_thrush.jpg** · 4.6, beside clinical features
+Realistic close-up photograph, landscape 4:3: the open mouth of an infant with severe oral candidiasis: thick
+white plaques on the tongue, palate and cheeks. No text. Must show: plaques over the whole mouth.
+
+**kala_spleen.jpg** · 4.7, beside clinical features
+Realistic medical photograph, portrait 3:4: a thin Sudanese child of about 8 years lying on the back, the outline of a
+massively enlarged spleen and liver marked on the abdominal skin with a skin pen (spleen reaching below the umbilicus),
+wasted limbs. Respectful, no text. Must show: the marked huge spleen.
+
+**kala_ld.jpg** · 4.7, beside diagnosis
+Microscope photograph, square 1:1: Giemsa-stained bone marrow or spleen aspirate showing a macrophage full of small
+round Leishman–Donovan bodies (amastigotes), each with a nucleus and rod-shaped kinetoplast. No labels.
+
+**kala_pkdl.jpg** · 4.7, beside complications (optional)
+Realistic photograph, landscape 4:3: the face of a Sudanese child with post-kala-azar dermal leishmaniasis: many small
+pale and raised papules around the mouth and cheeks. No text.
+
+**diphtheria.jpg** · 4.9, beside diphtheria
+Two realistic medical photographs side by side, landscape 2:1, no text: left the throat of a child with a thick
+grey-white membrane covering the tonsils and spreading onto the soft palate; right a child with a "bull neck"
+(marked swelling of the neck). Must show: the grey membrane and the bull neck.
+
+**pertussis.jpg** · 4.9, beside pertussis
+Realistic photograph, landscape 4:3: a 6-month-old infant with red subconjunctival haemorrhages in both eyes and
+small petechiae on the face after coughing fits. No text. Must show: the subconjunctival haemorrhages.
+
+**worms.jpg** · 4.10, full-width row
+Three microscope photographs in one image, landscape 3:1, no labels: (1) Ascaris egg (round, thick rough shell);
+(2) Schistosoma haematobium egg with a terminal spine; (3) Schistosoma mansoni egg with a lateral spine.
+Must show: the spine positions clearly.
+
+**ascaris.jpg** · 4.10, beside ascaris (optional)
+Realistic photograph, landscape 4:3: several long pinkish-white round worms (Ascaris lumbricoides, about 20 cm)
+in a kidney dish beside a ruler. No text.

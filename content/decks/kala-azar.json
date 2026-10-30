@@ -1,0 +1,18 @@
+[
+ ["Basics", "Cause and vector of kala-azar?", "Leishmania donovani; sandfly (Phlebotomus)."],
+ ["Basics", "Main endemic area in Sudan?", "Eastern Sudan (Gedaref, Sennar, Blue Nile)."],
+ ["Clinical", "Clinical features of kala-azar?", "Fever > 2 weeks, wasting, massive splenomegaly, hepatomegaly, pallor, bleeding."],
+ ["Clinical", "Blood findings in kala-azar?", "Pancytopenia, high ESR, high gamma globulin, low albumin."],
+ ["Clinical", "Common causes of death in kala-azar?", "Bleeding, secondary infection, severe anaemia, malnutrition."],
+ ["Diagnosis", "Clinical case definition?", "Fever > 2 weeks + splenomegaly or nodes + weight loss in endemic area."],
+ ["Diagnosis", "First serological test?", "rK39 rapid test (or DAT)."],
+ ["Diagnosis", "Most sensitive parasitological test?", "Spleen aspirate for LD bodies (~95%)."],
+ ["Diagnosis", "Why are serological tests not used for relapse?", "They stay positive after cure."],
+ ["Treatment", "Treatment for primary VL ≥ 4 years (WHO update)?", "Paromomycin + miltefosine for 14 days."],
+ ["Treatment", "SSG + paromomycin regimen?", "SSG 20 mg/kg/day + paromomycin 15 mg/kg/day IM for 17 days."],
+ ["Treatment", "Monitoring with SSG?", "ECG (cardiotoxicity), pancreatitis."],
+ ["Treatment", "Treatment of severe VL, relapse or HIV?", "Liposomal amphotericin B (+ miltefosine in HIV)."],
+ ["Treatment", "Supportive care in kala-azar?", "Nutrition, transfusion, treat infections and malaria."],
+ ["PKDL", "What is PKDL?", "Papules around the mouth spreading over the face, after VL treatment."],
+ ["Prevention", "Prevention of kala-azar?", "Insecticide-treated nets, early diagnosis and treatment."]
+]

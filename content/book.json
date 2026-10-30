@@ -198,7 +198,7 @@
      "no": "4.4",
      "title": "Measles & Childhood Rashes",
      "short": "Rashes",
-     "sub": "Measles · varicella · rubella · roseola · scarlet fever"
+     "sub": "Measles · chickenpox · scarlet fever · mumps · EBV"
     },
     {
      "id": "tb",
@@ -219,7 +219,7 @@
      "no": "4.7",
      "title": "Visceral Leishmaniasis (Kala-azar)",
      "short": "Kala-azar",
-     "sub": "Diagnosis · SSG and paromomycin · AmBisome"
+     "sub": "Diagnosis · paromomycin · miltefosine · SSG"
     },
     {
      "id": "typhoid",
@@ -238,9 +238,9 @@
     {
      "id": "parasites",
      "no": "4.10",
-     "title": "Intestinal Worms & Schistosomiasis",
+     "title": "Intestinal Worms, Schistosomiasis & Hydatid",
      "short": "Parasites",
-     "sub": "Ascaris · hookworm · giardia · bilharzia"
+     "sub": "Ascaris · hookworm · giardia · amoeba · bilharzia"
     }
    ]
   },

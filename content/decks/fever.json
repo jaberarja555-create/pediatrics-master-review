@@ -1,0 +1,21 @@
+[
+ ["Definition", "Define fever.", "Core temperature ≥ 38 °C (axillary ≥ 37.5 °C)."],
+ ["Assessment", "Four IMCI general danger signs?", "Unable to drink or breastfeed, vomits everything, convulsions, lethargic or unconscious."],
+ ["Assessment", "IMCI very severe febrile disease: action?", "First dose of antibiotic and antimalarial, treat low glucose, refer urgently."],
+ ["Assessment", "Fever red flag in young infants?", "Any fever ≥ 38 °C under 3 months."],
+ ["Assessment", "Rash that signals meningococcal disease?", "Non-blanching petechial or purpuric rash."],
+ ["Assessment", "Test for every febrile child in a malaria area?", "Malaria RDT or blood film."],
+ ["Fever without focus", "Febrile baby under 1 month: management?", "Admit, full septic screen (blood, urine, LP), IV antibiotics."],
+ ["Fever without focus", "Commonest hidden serious cause of fever in a toddler?", "Urinary tract infection."],
+ ["Treatment", "Dose of paracetamol?", "15 mg/kg every 6 hours (max 4 doses a day)."],
+ ["Treatment", "Dose of ibuprofen?", "10 mg/kg every 6–8 hours (over 3 months)."],
+ ["Treatment", "Do antipyretics prevent febrile seizures?", "No."],
+ ["Treatment", "Why avoid aspirin in children?", "Reye syndrome."],
+ ["Treatment", "Is tepid sponging recommended?", "No; light clothing and fluids instead."],
+ ["Prolonged fever", "Define fever of unknown origin.", "≥ 38 °C most days for > 2–3 weeks, no cause after 1 week of tests."],
+ ["Prolonged fever", "Infectious causes of prolonged fever in Sudan?", "Typhoid, brucellosis, TB, kala-azar, malaria, UTI, endocarditis, HIV."],
+ ["Prolonged fever", "Non-infectious causes of prolonged fever?", "Kawasaki disease, systemic JIA, rheumatic fever, SLE, leukaemia, lymphoma."],
+ ["Prolonged fever", "Features of Kawasaki disease?", "Fever ≥ 5 days + red eyes, red cracked lips, rash, swollen hands/feet, neck node."],
+ ["Prolonged fever", "Fever + hepatosplenomegaly + pancytopenia?", "Kala-azar (also leukaemia)."],
+ ["Prolonged fever", "Prolonged fever with joint pain and raw milk?", "Brucellosis."]
+]

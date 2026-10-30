@@ -1,0 +1,8 @@
+[
+{"q": "A child from Gedaref has fever for 5 weeks, wasting, massive splenomegaly and pancytopenia. The first test is:", "o": ["Widal", "rK39 rapid test", "Bone marrow biopsy", "Blood culture", "Monospot"], "a": 1, "e": "rK39 (or DAT) with the clinical case definition.", "k": "rk39", "s": "book"},
+{"q": "The most sensitive parasitological test for visceral leishmaniasis is:", "o": ["Bone marrow aspirate", "Splenic aspirate", "Lymph node aspirate", "Blood film", "Skin snip"], "a": 1, "e": "About 95%; check platelets and clotting first.", "k": "spleen", "s": "book"},
+{"q": "The vector of kala-azar is:", "o": ["Anopheles mosquito", "Sandfly", "Tsetse fly", "Snail", "Tick"], "a": 1, "e": "Phlebotomus sandfly.", "k": "sandfly", "s": "book"},
+{"q": "Kala-azar with HIV co-infection is best treated with:", "o": ["SSG alone", "Liposomal amphotericin B (+ miltefosine)", "Chloroquine", "Praziquantel", "Metronidazole"], "a": 1, "e": "AmBisome-based regimen.", "k": "liposomal amphotericin b", "s": "book"},
+{"q": "SSG plus paromomycin is given for:", "o": ["5 days", "10 days", "17 days", "30 days", "6 weeks"], "a": 2, "e": "East African combination for 17 days.", "k": "17 days", "s": "book"},
+{"q": "Papules around the mouth months after kala-azar treatment indicate:", "o": ["Relapse of VL", "PKDL", "Drug allergy", "Measles", "Leprosy"], "a": 1, "e": "Post-kala-azar dermal leishmaniasis.", "k": "pkdl", "s": "book"}
+]

@@ -1,0 +1,9 @@
+[
+{"q": "The worm that enters through the skin of bare feet and causes iron deficiency anaemia is:", "o": ["Ascaris", "Hookworm", "Enterobius", "Taenia", "Giardia"], "a": 1, "e": "Ancylostoma/Necator.", "k": "hookworm", "s": "book"},
+{"q": "Night-time perianal itching in a 5-year-old is best diagnosed by:", "o": ["Stool microscopy", "Sticky tape test", "Blood film", "Ultrasound", "Urine test"], "a": 1, "e": "Enterobius eggs on the perianal skin.", "k": "sticky tape test", "s": "book"},
+{"q": "A child with persistent greasy foul-smelling diarrhoea and failure to thrive most likely has:", "o": ["Amoebiasis", "Giardiasis", "Cholera", "Rotavirus", "Typhoid"], "a": 1, "e": "Treat with metronidazole or tinidazole.", "k": "giardia", "s": "book"},
+{"q": "A schoolboy who swims in canals has terminal haematuria. The best test is:", "o": ["Stool for eggs", "Midday urine for terminal-spined eggs", "Blood culture", "Cystoscopy first", "Widal"], "a": 1, "e": "S. haematobium.", "k": "terminal spine", "s": "book"},
+{"q": "The drug of choice for schistosomiasis is:", "o": ["Albendazole", "Praziquantel", "Metronidazole", "Ivermectin", "Mebendazole"], "a": 1, "e": "40 mg/kg single dose.", "k": "praziquantel", "s": "book"},
+{"q": "Portal hypertension with normal liver function in a child from an irrigation area suggests:", "o": ["Cirrhosis", "S. mansoni periportal fibrosis", "Hepatitis B", "Wilson disease", "Budd–Chiari"], "a": 1, "e": "Periportal fibrosis spares liver cells.", "k": "normal liver function", "s": "book"},
+{"q": "The WHO deworming dose of albendazole for a 4-year-old is:", "o": ["100 mg", "200 mg", "400 mg single dose", "400 mg for 7 days", "800 mg"], "a": 2, "e": "200 mg at 12–23 months.", "k": "albendazole 400 mg", "s": "book"}
+]

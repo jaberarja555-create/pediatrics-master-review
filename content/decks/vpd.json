@@ -1,0 +1,20 @@
+[
+ ["Diphtheria", "Pathology of diphtheria?", "Exotoxin; grey adherent membrane that bleeds when removed."],
+ ["Diphtheria", "Bull neck in diphtheria?", "Neck swelling from nodes and oedema in faucial diphtheria."],
+ ["Diphtheria", "Main cause of death in diphtheria?", "Myocarditis (week 2–3)."],
+ ["Diphtheria", "Neurological complication of diphtheria?", "Palatal palsy (nasal regurgitation), accommodation and limb neuritis."],
+ ["Diphtheria", "Most important treatment of diphtheria?", "Antitoxin early, plus penicillin (or erythromycin) 14 days."],
+ ["Pertussis", "Stages of pertussis?", "Catarrhal (1–2 wk), paroxysmal (2–6 wk), convalescent."],
+ ["Pertussis", "Most infectious stage?", "Catarrhal stage."],
+ ["Pertussis", "Pertussis in young infants?", "Apnoea and cyanosis instead of whoop."],
+ ["Pertussis", "Blood finding in pertussis?", "Marked lymphocytosis."],
+ ["Pertussis", "Complications of pertussis?", "Pneumonia, apnoea, seizures, subconjunctival haemorrhage, hernia, rectal prolapse."],
+ ["Pertussis", "Drug of choice in pertussis?", "Azithromycin 10 mg/kg day 1, then 5 mg/kg days 2–5."],
+ ["Pertussis", "Does antibiotic shorten the cough?", "No; it shortens infectivity."],
+ ["Tetanus", "Clinical features of tetanus?", "Trismus, risus sardonicus, opisthotonus, spasms, fully conscious."],
+ ["Tetanus", "Treatment of tetanus?", "HTIG 500 IU IM, wound care, metronidazole, diazepam, quiet room."],
+ ["Tetanus", "Does tetanus give immunity?", "No: vaccinate after recovery."],
+ ["Polio", "Paralysis of polio?", "Asymmetric flaccid, absent reflexes, normal sensation."],
+ ["Polio", "AFP surveillance rule?", "Any child < 15 with acute flaccid paralysis: notify, 2 stools 24 h apart within 14 days."],
+ ["Polio", "Polio versus Guillain–Barré syndrome?", "Polio asymmetric with fever · Guillain–Barré symmetric ascending, CSF high protein, normal cells."]
+]

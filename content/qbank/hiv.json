@@ -1,0 +1,8 @@
+[
+{"q": "The test to diagnose HIV in a 6-week-old HIV-exposed infant is:", "o": ["HIV antibody rapid test", "HIV DNA PCR", "CD4 count", "ELISA at 6 weeks", "Western blot"], "a": 1, "e": "Maternal antibody makes antibody tests unreliable before 18 months.", "k": "pcr", "s": "book"},
+{"q": "An HIV-positive mother on ART with an undetectable viral load should feed her baby by:", "o": ["Formula only", "Exclusive breastfeeding for 6 months", "Mixed feeding", "Cow's milk", "Wet nurse"], "a": 1, "e": "WHO: breastfeed while mother takes ART.", "k": "exclusive breastfeeding", "s": "book"},
+{"q": "ART in a child newly diagnosed with HIV should be started:", "o": ["When CD4 < 15%", "Only if symptomatic", "Immediately, whatever the CD4", "After 2 years", "After TB is excluded only"], "a": 2, "e": "Treat all children.", "k": "whatever the cd4", "s": "book"},
+{"q": "The preferred first-line ART for children is:", "o": ["AZT + 3TC + NVP", "DTG + ABC + 3TC", "LPV/r only", "EFV + TDF + FTC", "Monotherapy"], "a": 1, "e": "Dolutegravir-based regimen.", "k": "dolutegravir", "s": "book"},
+{"q": "A 3-month-old HIV-exposed infant has severe hypoxia with few chest signs. The likely diagnosis and treatment:", "o": ["Bronchiolitis; salbutamol", "PCP; high-dose cotrimoxazole + prednisolone", "TB; HRZE", "Asthma; steroids", "Pertussis; azithromycin"], "a": 1, "e": "Pneumocystis pneumonia in young HIV-infected infants.", "k": "pcp", "s": "book"},
+{"q": "The commonest cause of ART failure in children is:", "o": ["Drug resistance at start", "Poor adherence", "Malaria", "Vaccination", "Breastfeeding"], "a": 1, "e": "Check adherence first.", "k": "poor adherence", "s": "book"}
+]
