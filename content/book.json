@@ -104,63 +104,63 @@
      "no": "3.1",
      "title": "The Normal Newborn",
      "short": "Newborn",
-     "sub": "Apgar · newborn examination · routine care"
+     "sub": "Definitions · examination · routine care · screening"
     },
     {
      "id": "nls",
      "no": "3.2",
      "title": "Neonatal Resuscitation",
      "short": "Resuscitation",
-     "sub": "Helping Babies Breathe · bag and mask"
+     "sub": "Apgar · golden minute · ventilation · drugs"
     },
     {
      "id": "preterm",
      "no": "3.3",
-     "title": "Prematurity & Low Birth Weight",
+     "title": "Preterm, Small & Large Babies",
      "short": "Preterm",
-     "sub": "Thermal care · feeding · KMC · complications"
+     "sub": "Prematurity · thermal care · NEC · IUGR · post-term"
     },
     {
      "id": "neo-rds",
      "no": "3.4",
-     "title": "Respiratory Distress in the Newborn",
-     "short": "Neonatal RDS",
-     "sub": "RDS · TTN · meconium aspiration"
+     "title": "Respiratory Distress & Cyanosis in the Newborn",
+     "short": "Neonatal RD",
+     "sub": "RDS · TTN · meconium aspiration · CDH · cyanosis"
     },
     {
      "id": "neo-jaundice",
      "no": "3.5",
      "title": "Neonatal Jaundice",
      "short": "Neonatal jaundice",
-     "sub": "Physiological vs pathological · phototherapy · exchange"
+     "sub": "Physiological · haemolytic · phototherapy · biliary atresia"
     },
     {
      "id": "neo-sepsis",
      "no": "3.6",
-     "title": "Neonatal Sepsis & Meningitis",
+     "title": "Neonatal Sepsis & Congenital Infections",
      "short": "Neonatal sepsis",
-     "sub": "Early and late onset · antibiotics"
+     "sub": "Early and late sepsis · TORCH · neonatal tetanus"
     },
     {
      "id": "hie",
      "no": "3.7",
      "title": "Birth Asphyxia & Neonatal Seizures",
      "short": "HIE",
-     "sub": "HIE staging · seizure control"
+     "sub": "HIE staging · cooling · seizure control"
     },
     {
      "id": "neo-metabolic",
      "no": "3.8",
-     "title": "Neonatal Hypoglycaemia & Infant of a Diabetic Mother",
-     "short": "Hypoglycaemia",
-     "sub": "Causes · glucose targets · treatment"
+     "title": "Infant of a Diabetic Mother & Metabolic Problems",
+     "short": "IDM",
+     "sub": "Hypoglycaemia · hypocalcaemia · polycythaemia · vitamin K"
     },
     {
-     "id": "torch",
+     "id": "birth-injury",
      "no": "3.9",
-     "title": "Congenital Infections & Birth Injuries",
-     "short": "TORCH",
-     "sub": "TORCH · neonatal tetanus · birth trauma"
+     "title": "Birth Injuries & Congenital Orthopaedic Problems",
+     "short": "Birth injuries",
+     "sub": "Scalp swellings · brachial plexus · clavicle · DDH · club foot"
     }
    ]
   },

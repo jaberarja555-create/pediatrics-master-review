@@ -201,3 +201,89 @@ Realistic medical photograph, landscape 4:3. An 8-month-old infant with acroderm
 bordered red, scaly, crusted rash around the mouth and on the nappy area, sparse thin hair. Respectful, plain
 background, no text.
 Must show: the red scaly rash around the mouth with a sharp border.
+
+## Chapter 3 · Neonatology
+
+**newborn_skin.jpg** · 3.1 page "Examination", beside the normal findings table
+Three realistic close-up medical photographs side by side in one image, landscape 3:1, thin white gaps, no text:
+(1) erythema toxicum: small yellow-white pustules on red blotches on the chest of a 2-day-old baby;
+(2) Mongolian spot: large blue-grey patch over the lower back and buttocks of a dark-skinned newborn;
+(3) milia: tiny white dots on the nose of a newborn.
+Must show: each lesion clearly, one per panel.
+
+**nls_bagmask.jpg** · 3.2 page "Algorithm", beside the algorithm
+Realistic photograph, square 1:1. A health worker giving bag-and-mask ventilation to a newborn lying on a warm
+towel: the head in neutral position (not over-extended), a round mask covering the mouth and nose but not the eyes,
+held with a C-grip seal, the self-inflating bag squeezed gently. No text.
+Must show: correct mask size and position, neutral head.
+
+**nls_compressions.jpg** · 3.2, beside the compression points
+Realistic photograph or clean medical illustration, landscape 4:3. Two-thumb chest compression on a newborn: both
+hands encircling the chest, thumbs side by side on the lower third of the sternum just below the nipple line. No text.
+Must show: thumb position on the lower sternum, hands around the chest.
+
+**preterm_kmc.jpg** · 3.3 page "Prematurity", beside the care table
+Realistic photograph, portrait 3:4. A Sudanese mother sitting upright giving kangaroo mother care: a small preterm
+baby in a nappy and cap lying upright skin-to-skin between her breasts, held by a cloth wrap, head turned to one side.
+Respectful, no text. Must show: skin-to-skin contact and the wrap.
+
+**preterm_nec_xray.jpg** · 3.3 page "Complications", beside the NEC points
+Abdominal X-ray of a preterm newborn, portrait 3:4, black background: distended bowel loops with bubbly and linear
+gas in the bowel wall (pneumatosis intestinalis). No labels or arrows.
+Must show: the bubbly gas in the bowel wall.
+
+**rds_xray.jpg** · 3.4 page "RDS", beside the RDS points
+Chest X-ray of a preterm newborn, square 1:1: both lungs diffusely hazy with a fine ground-glass pattern and dark air
+bronchograms, small lung volume, endotracheal tube in place. No labels.
+Must show: ground-glass lungs with air bronchograms.
+
+**cdh_xray.jpg** · 3.4 page "TTN, Meconium Aspiration & Surgical Causes", beside the CDH points
+Chest and abdomen X-ray of a newborn, portrait 3:4: gas-filled bowel loops in the left chest, heart and mediastinum
+pushed to the right, nasogastric tube tip in the chest. No labels.
+Must show: bowel loops in the left hemithorax with mediastinal shift.
+
+**jaundice_photo.jpg** · 3.5 page "Assessment, Treatment & Kernicterus", beside the phototherapy points
+Realistic photograph, landscape 4:3. A jaundiced newborn lying naked except a nappy under a blue phototherapy lamp,
+with eye shields on. Hospital cot, no text.
+Must show: blue light, eye shields, most skin exposed.
+
+**jaundice_stool.jpg** · 3.5 page "Haemolytic, Breast Milk & Conjugated Jaundice", beside biliary atresia
+Realistic photograph, landscape 4:3. Two open baby nappies side by side: left a normal yellow breastfed stool,
+right a pale clay-white (acholic) stool. Plain background, no text.
+Must show: the clear colour difference.
+
+**sepsis_tetanus.jpg** · 3.6 page "Local Infections & Neonatal Tetanus", beside the tetanus points
+Realistic medical photograph, landscape 4:3. A newborn with neonatal tetanus in a spasm: arched back (opisthotonus),
+clenched fists, stiff extended legs, tight closed mouth, alert eyes. Respectful, plain cot, no text.
+Must show: arching and clenched fists.
+
+**sepsis_gono.jpg** · 3.6 same page, beside the conjunctivitis rows
+Realistic close-up medical photograph, landscape 4:3. A 3-day-old newborn with gonococcal conjunctivitis: both
+eyelids markedly swollen and red with thick yellow pus at the lid margins. No text.
+Must show: swollen lids with thick pus.
+
+**torch_cataract.jpg** · 3.6 page "Congenital Infections", beside the TORCH table
+Realistic close-up photograph, landscape 4:3. The face of a 2-month-old baby with congenital rubella: a dense white
+pupil (cataract) in one or both eyes. No text.
+Must show: the white pupil.
+
+**idm_baby.jpg** · 3.8 page "Infant of a Diabetic Mother", beside the complications table
+Realistic photograph, landscape 4:3. A very large, chubby, plethoric (red-faced) newborn of about 4.8 kg lying in a
+cot beside a normal-size newborn for comparison. No text.
+Must show: the size difference and the red, puffy face.
+
+**birth_scalp.jpg** · 3.9 page "Birth Injuries", beside the scalp swellings table
+Two realistic medical photographs side by side, landscape 2:1, no text: left a newborn with caput succedaneum (soft
+boggy swelling over the top of the head crossing the midline, slight bruising); right a newborn with a cephalhaematoma
+(firm rounded swelling limited to one side of the head over the parietal bone).
+Must show: the diffuse swelling (left) and the one-sided well-defined swelling (right).
+
+**birth_erb.jpg** · 3.9 same page, beside the nerve injuries table
+Realistic medical photograph, portrait 3:4. A newborn lying on the back with Erb palsy of the right arm: arm by the
+side, internally rotated, elbow straight, forearm pronated, wrist and fingers flexed ("waiter's tip"); left arm normal.
+No text. Must show: the waiter's tip posture of one arm.
+
+**birth_clubfoot.jpg** · 3.9 page "DDH & Club Foot", beside the club foot points
+Realistic medical photograph, landscape 4:3. Both feet of a newborn with bilateral club foot: feet pointing down
+and turned inwards with the soles facing each other. Plain background, no text.
+Must show: both feet in equinus and varus.

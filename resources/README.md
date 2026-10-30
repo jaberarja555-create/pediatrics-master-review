@@ -14,6 +14,11 @@ Files the owner sends for the book. Extracted text goes in `resources/text/` (no
 | `Illustrated baby nelson special pediatrics.pdf` | Illustrated Baby Nelson, special (systemic) pediatrics, 384 pages. | Standard reference for system chapters. |
 | `Case files pediatrics 5th edition.pdf` | Case Files Pediatrics, 5th ed., 550 pages: clinical cases with discussion and review questions. | Case approach, Try-it and QBank items. |
 
+## Chapter resources
+| File | What it is | Use for |
+|---|---|---|
+| `Neonatology (black) د ع الجعكي 2024.pdf` | Dr. Abdulrahman Al-Jaaki's Neonatology notes (2024–2025), 67 pages: introduction and normal newborn, resuscitation, prematurity, post-maturity, LGA, IUGR, sepsis, TORCH, respiratory distress (RDS, TTN, MAS, CDH, cyanosis, apnoea), IDM, birth injuries, jaundice, biliary atresia, HIE, seizures, haematological problems, DDH, club foot, Ballard score, primitive reflexes. No text layer: OCR with tesseract (`pdftoppm -r 200` then `tesseract -l eng --psm 4`). | Main source for Chapter 3 (Neonatology). |
+
 ## Cases (Shendi and Sudan)
 | File | What it is | Use for |
 |---|---|---|

@@ -1,4 +1,5 @@
 5-ASA | 5-aminosalicylic acid (mesalazine)
+AAP | American Academy of Pediatrics
 ABC / ABCDE | Airway, Breathing, Circulation (Disability, Exposure)
 ABG | Arterial blood gas
 ABO | ABO blood groups (A, B, AB, O)
@@ -8,6 +9,8 @@ ADH | Antidiuretic hormone
 AF | Atrial fibrillation
 AFB | Acid-fast bacilli
 AFP | Alpha-fetoprotein
+AGA | Appropriate for gestational age
+AHA | American Heart Association
 AKI | Acute kidney injury
 ALP | Alkaline phosphatase
 ALT / AST | Alanine / aspartate aminotransferase
@@ -33,6 +36,7 @@ CBD | Common bile duct
 CCB | Calcium-channel blocker
 CCK | Cholecystokinin
 CDC | Centers for Disease Control and Prevention
+CDH | Congenital diaphragmatic hernia
 CF | Cystic fibrosis
 CHD | Congenital heart disease
 CK | Creatine kinase
@@ -44,6 +48,8 @@ CNS | Central nervous system
 CO / COHb | Carbon monoxide / carboxyhaemoglobin
 COPD | Chronic obstructive pulmonary disease
 COX-2 | Cyclo-oxygenase 2
+CP | Cerebral palsy
+CPAP | Continuous positive airway pressure
 CPP | Cerebral perfusion pressure
 CRP | C-reactive protein
 CSF | Cerebrospinal fluid
@@ -53,6 +59,7 @@ CXR | Chest X-ray
 D5 | Dextrose 5% (in water)
 DAT | Direct antiglobulin test
 DD / DDx | Differential diagnosis
+DDH | Developmental dysplasia of the hip
 DI | Diabetes insipidus
 DIC | Disseminated intravascular coagulation
 DKA | Diabetic ketoacidosis
@@ -65,8 +72,10 @@ ECG | Electrocardiogram
 ED | Emergency department
 EDH | Extradural haematoma
 EEG | Electroencephalogram
+ELBW | Extremely low birth weight (below 1000 g)
 ENT | Ear, nose and throat
 EPI | Expanded Programme on Immunization
+ERC | European Resuscitation Council
 ERCP | Endoscopic retrograde cholangiopancreatography
 ESR | Erythrocyte sedimentation rate
 FAST | Focused assessment with sonography for trauma
@@ -75,6 +84,7 @@ FTT | Failure to thrive
 G6PD | Glucose-6-phosphate dehydrogenase
 GA | Gestational age
 GABA | Gamma-aminobutyric acid
+GBS | Group B streptococcus
 GCS | Glasgow Coma Scale
 GGT | Gamma-glutamyl transferase
 GH | Growth hormone
@@ -91,6 +101,7 @@ HDU | High-dependency unit
 HepB | Hepatitis B vaccine
 HHV | Human herpesvirus
 Hib | Haemophilus influenzae type b
+HIDA | Hepatobiliary iminodiacetic acid (scan)
 HIE | Hypoxic–ischaemic encephalopathy
 HIT | Heparin-induced thrombocytopenia
 HIV | Human immunodeficiency virus
@@ -101,11 +112,14 @@ HSV | Herpes simplex virus
 IBD | Inflammatory bowel disease
 ICP | Intracranial pressure
 ICU | Intensive care unit
+IDM / IDMs | Infant of a diabetic mother
 IgA / IgG / IgM | Immunoglobulin A / G / M
 IGF | Insulin-like growth factor
 IGF-1 | Insulin-like growth factor 1
 IgG4 | Immunoglobulin G4
 IL-6 | Interleukin-6
+ILAE | International League Against Epilepsy
+ILCOR | International Liaison Committee on Resuscitation
 IM | Intramuscular
 IMCI | Integrated Management of Childhood Illness (WHO / Sudan Ministry of Health)
 INR | International normalised ratio
@@ -121,15 +135,21 @@ IVH | Intraventricular haemorrhage
 IVIG | Intravenous immunoglobulin
 JVP | Jugular venous pressure
 KCl | Potassium chloride
+KMC | Kangaroo mother care
 LA | Local anaesthesia
 LBW | Low birth weight (below 2.5 kg)
 LDH | Lactate dehydrogenase
 LFT | Liver function tests
+LGA | Large for gestational age
 LH | Luteinising hormone
+LISA | Less invasive surfactant administration
+LMA | Laryngeal mask airway
 LMWH | Low-molecular-weight heparin
 LOC | Loss of consciousness
+LP | Lumbar puncture
 MAM | Moderate acute malnutrition
 MAP | Mean arterial pressure
+MAS | Meconium aspiration syndrome
 MCQ | Multiple-choice question
 MCV | Mean corpuscular volume
 MDT | Multidisciplinary team
@@ -156,7 +176,10 @@ OPV | Oral polio vaccine
 ORS | Oral rehydration solution
 OSCE | Objective structured clinical examination
 OTP | Outpatient therapeutic programme (for uncomplicated SAM)
+PaO2 | Arterial oxygen tension
+PCR | Polymerase chain reaction
 PCV | Pneumococcal conjugate vaccine (in haematology: packed cell volume)
+PDA | Patent ductus arteriosus
 PE | Pulmonary embolism
 PEEP | Positive end-expiratory pressure
 PEG | Percutaneous endoscopic gastrostomy
@@ -167,6 +190,7 @@ PKU | Phenylketonuria
 PN | Parenteral nutrition
 PO | By mouth (per os)
 POEM | Peroral endoscopic myotomy
+PPHN | Persistent pulmonary hypertension of the newborn
 PPI | Proton pump inhibitor
 PPV23 | 23-valent pneumococcal polysaccharide vaccine
 PR | Per rectum (rectal examination)
@@ -180,9 +204,12 @@ PVL | Periventricular leukomalacia
 qSOFA | Quick sequential organ failure assessment
 QT / QRS | ECG intervals (QT interval, QRS complex)
 RBC | Red blood cell
+RD | Respiratory distress
+RDS | Respiratory distress syndrome (surfactant deficiency)
 ReSoMal | Rehydration solution for malnutrition
 Rh | Rhesus (blood group)
 RL | Ringer's lactate
+ROP | Retinopathy of prematurity
 RR | Respiratory rate
 RT | Radiotherapy
 RTA | Renal tubular acidosis
@@ -199,11 +226,13 @@ SGA | Small for gestational age
 SIADH | Syndrome of inappropriate ADH secretion
 SIRS | Systemic inflammatory response syndrome
 SLE | Systemic lupus erythematosus
+SpO2 | Oxygen saturation by pulse oximeter
 SpO₂ | Oxygen saturation (pulse oximeter)
 SSG | Sodium stibogluconate
 ST | ST segment (ECG)
 SVC | Superior vena cava
 SVR | Systemic vascular resistance
+TAPVR | Total anomalous pulmonary venous return
 TB | Tuberculosis
 TBG | Thyroxine-binding globulin
 TBSA | Total body surface area
@@ -211,8 +240,10 @@ TCA | Tricyclic antidepressant
 Td | Tetanus and reduced diphtheria toxoid (adult type)
 TFT | Thyroid function tests
 TG | Triglycerides
+TGA | Transposition of the great arteries
 TIG | Tetanus immunoglobulin
 TNF | Tumour necrosis factor
+TOF | Tetralogy of Fallot
 TORCH | Toxoplasma, Others (syphilis, varicella, Zika), Rubella, CMV, Herpes simplex
 TPMT | Thiopurine methyltransferase
 TPN | Total parenteral nutrition
@@ -223,6 +254,7 @@ TSFP | Targeted supplementary feeding programme
 TSH | Thyroid-stimulating hormone
 TT | Tetanus toxoid
 tTG | Tissue transglutaminase (coeliac antibody test)
+TTN | Transient tachypnoea of the newborn
 TXA | Tranexamic acid
 U&E | Urea and electrolytes
 UC | Ulcerative colitis
@@ -231,10 +263,15 @@ US | Ultrasound
 UTI | Urinary tract infection
 UV | Ultraviolet
 VDDR | Vitamin D-dependent rickets
+VEGF | Vascular endothelial growth factor
 VF | Ventricular fibrillation
 Vi | Vi capsular antigen (typhoid vaccine)
+VKDB | Vitamin K deficiency bleeding
+VLBW | Very low birth weight (below 1500 g)
+VSD | Ventricular septal defect
 VTE | Venous thromboembolism
 vWF | von Willebrand factor
+VZIG | Varicella-zoster immunoglobulin
 WBC | White blood cell count
 WFH | Weight-for-height
 WHO | World Health Organization
