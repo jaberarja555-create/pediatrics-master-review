@@ -70,9 +70,13 @@ const MARGIN = 40, GAP = 10;
     for (let i = 0; i < A.length; i++) {
       if (done.has(i)) continue;
       let opt = option(i);
-      if (A[i].k === 'title' || A[i].k === 'rvt') {             // every topic (and each Rapid Review topic) starts on a new page
+      if (A[i].k === 'title') {                                // every topic starts on a new page
         if (rows.length) newPage(false);
         place(opt.row, opt.h); continue;
+      }
+      if (A[i].k === 'rvt') {                                  // a Rapid Review topic block is never split: it joins the page only if it fits whole (owner)
+        if (rows.length && used + GAP + opt.h > cap) newPage(false);
+        place(opt.row, opt.h + (rows.length ? GAP : 0)); continue;
       }
       if (A[i].k === 'raw' && rows.length) {                   // an opening sentence stays with the box after it
         let need = opt.h, j = i + 1;
