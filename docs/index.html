@@ -992,6 +992,17 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .mb.rv:not(.rvc) .mc { padding-top: 6px; }
 .mrow:has(> .mb.rv.rvc) { margin-top: -10px; margin-bottom: 10px; }
 .mb.rv .rs { columns: auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: 22px; }
+/* topic title banner (owner): chapter-colour band, number in a gold badge as large as the title */
+.mz h1.mzt { display:flex; align-items:center; gap:14px; margin:4px 0 10px; padding:10px 18px 10px 10px; border-left:0; border-radius:12px;
+  background:linear-gradient(115deg,var(--ch-dark) 0%,var(--ch) 70%,var(--ch-mid) 100%); color:#fff; font-size:24pt; line-height:1.1;
+  letter-spacing:-.2px; box-shadow:0 3px 10px rgba(11,44,58,.18), inset 0 0 0 1px rgba(255,255,255,.12); position:relative; overflow:hidden; }
+.mz h1.mzt::after { content:""; position:absolute; right:-40px; top:-40px; width:160px; height:160px; border-radius:50%;
+  background:radial-gradient(circle,rgba(230,195,120,.28) 0,rgba(230,195,120,0) 70%); }
+.mz h1.mzt .no { flex:none; min-width:60px; height:52px; padding:0 10px; border-radius:9px; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(145deg,#f3d98b 0%,#c99a3b 100%); color:#0b2c3a; font-size:20pt; font-weight:900; letter-spacing:-.5px;
+  box-shadow:0 2px 6px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.6); }
+.mz h1.mzt .no { background:linear-gradient(145deg,#123a4c 0%,#071d27 100%); color:#f3d98b; box-shadow:0 2px 6px rgba(0,0,0,.3), inset 0 0 0 1.5px rgba(243,217,139,.55); }
+.mz h1.mzt .no { font-size:24pt; height:56px; min-width:68px; }
 
 .page.c1{--ch:#0f7c78;--ch-dark:#084442;--ch-mid:#63aaa7;--ch-tint:#e2efef;--ch-tint-2:#f3f8f8;--ch-line:#cae2e1;--ch-line2:#e5f1f0;--ch-wash:#f9fcfc;--hdr-topic:#cfe5e4}
 .tp.ch1,.hch.ch1 summary{background:linear-gradient(135deg,#084442 0,#0f7c78 100%)}
