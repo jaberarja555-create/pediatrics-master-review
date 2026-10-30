@@ -20,6 +20,7 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
   For unsure facts: owner's resources first, then Sudan guidelines, then universal guidelines — decide, don't ask.
 - Formal, clear, standard textbook headings; no catchy titles, no gimmick mnemonics, no meta text
   (how to use, who it is for), no build-status text anywhere in the book. Only common abbreviations.
+- Picture requests (owner): give them as ready-to-copy prompts, ONE prompt per 2 × 2 collage of 4 pictures (panels named by position); I cut the panels and place them.
 - Real clinical pictures where they help understanding or are exam-important (owner makes or finds them; list
   the pictures needed for each chapter with exact search specs). No credits/licence text on the pages.
 - Never delete or shorten content just to make a page fit. Each chapter has its own colour (book.json).

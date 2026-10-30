@@ -368,3 +368,11 @@ Must show: the spine positions clearly.
 **ascaris.jpg** · 4.10, beside ascaris (optional)
 Realistic photograph, landscape 4:3: several long pinkish-white round worms (Ascaris lumbricoides, about 20 cm)
 in a kidney dish beside a ruler. No text.
+
+### Chapter 4 as collages (owner: one prompt = one 2 × 2 collage of 4 pictures)
+Collage A: TL falciparum film · TR malaria RDT · BL glass test purpura · BR Koplik spots
+Collage B: TL measles rash · TR chickenpox · BL scarlet fever tongue · BR slapped cheek
+Collage C: TL primary TB X-ray · TR miliary TB X-ray · BL Mantoux reading · BR oral thrush (HIV)
+Collage D: TL kala-azar spleen · TR LD bodies · BL diphtheria membrane · BR pertussis eyes
+Collage E: TL mumps · TR hand-foot-mouth · BL S. haematobium egg · BR S. mansoni egg
+(Full prompts as sent in the chat; each panel is cut out and placed in its topic.)
