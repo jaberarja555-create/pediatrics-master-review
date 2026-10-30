@@ -33,8 +33,8 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
 
 ## Owner's writing rules for this book (Oct 2026, stricter than the obstetrics book)
 - **Latest guidelines, named only (owner):** follow the newest WHO guideline (search the web for the current version before writing a topic) and the national programmes
-  (e.g. WHO 2023: write severe wasting and nutritional oedema, old names marasmus / kwashiorkor only once in
-  brackets; no Wellcome or Gomez tables),
+  (e.g. malnutrition: only SAM and MAM, as malnutrition units do; the forms are "SAM without oedema" and
+  "SAM with oedema", old names marasmus / kwashiorkor only in brackets for the MCQs; no Wellcome or Gomez tables),
   but in the book never write "Sudan protocol", "in Sudan we..." or what older/other guidelines said: only the guideline's
   name (WHO 2023, CMAM, IMCI, EPI, ETAT). Geographic clinical clues (kala-azar in Sudan) are fine.
 - **Clear and formal**: standard textbook wording, standard abbreviations only (each added to abbreviations.txt);

@@ -315,7 +315,6 @@ neuroendocrine tumour | Tumour of hormone-making cells (carcinoid, insulinoma)
 neurofibroma | Benign tumour of a nerve sheath
 Nissen fundoplication | 360° wrap of the gastric fundus around the lower oesophagus for reflux
 nodule / nodular | A small rounded lump
-nutritional oedema | Bilateral pitting oedema from malnutrition (kwashiorkor); always severe acute malnutrition
 odynophagia | Pain on swallowing
 oedema | Swelling from fluid in the tissues
 oesophagectomy | Removal of the oesophagus
