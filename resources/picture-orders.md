@@ -173,3 +173,31 @@ Realistic photograph, square 1:1. A Sudanese mother squeezing a plain foil sache
 (brown peanut paste) into the mouth of a thin 18-month-old child sitting on her lap; a cup of water beside them.
 No brand name or writing on the sachet, no text.
 Must show: the sachet with the brown paste and the child eating it.
+
+## Chapter 2 · Topic 2.3 Rickets
+
+**rickets_legs.jpg** · page "Clinical Features & Investigations", beside the clinical features table
+Realistic medical photograph, portrait 3:4. A Sudanese toddler of about 2 years standing barefoot, wearing only a
+nappy or shorts, front view from head to feet: clearly bowed legs (knees wide apart while the ankles touch),
+thick wide wrists, a slightly prominent forehead and a pot belly. Plain light background, no text.
+Must show: the bowed legs with the gap between the knees, the whole child from head to feet.
+
+**rickets_xray.jpg** · same page, beside the X-ray points
+X-ray image, landscape 4:3, two wrist X-rays side by side. Left: normal wrist of a 2-year-old with flat, sharp
+ends of the radius and ulna. Right: active rickets: the ends of the radius and ulna are widened, cup-shaped and
+frayed (brush-like), with a wide gap to the carpal bones and thin pale bones. Black background, no text or labels.
+Must show: the cupped, frayed ends of the radius and ulna on the right.
+
+## Chapter 2 · Topic 2.4 Vitamin & Micronutrient Deficiencies
+
+**micro_bitot.jpg** · page "Vitamin A Deficiency", beside the eye signs table
+Realistic close-up medical photograph, landscape 4:3. The eye of a 4-year-old African child looking towards the
+nose, showing a foamy, grey-white triangular patch (Bitot spot) on the white of the eye on the outer (temporal)
+side of the cornea; the cornea is clear. No text.
+Must show: the foamy triangular patch on the outer white of the eye.
+
+**micro_acro.jpg** · page "Zinc, Iodine & Iron", beside the zinc table
+Realistic medical photograph, landscape 4:3. An 8-month-old infant with acrodermatitis enteropathica: a sharply
+bordered red, scaly, crusted rash around the mouth and on the nappy area, sparse thin hair. Respectful, plain
+background, no text.
+Must show: the red scaly rash around the mouth with a sharp border.

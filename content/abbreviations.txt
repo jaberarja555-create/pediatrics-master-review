@@ -230,6 +230,7 @@ UFH | Unfractionated heparin
 US | Ultrasound
 UTI | Urinary tract infection
 UV | Ultraviolet
+VDDR | Vitamin D-dependent rickets
 VF | Ventricular fibrillation
 Vi | Vi capsular antigen (typhoid vaccine)
 VTE | Venous thromboembolism
@@ -238,5 +239,6 @@ WBC | White blood cell count
 WFH | Weight-for-height
 WHO | World Health Organization
 X-match | Cross-match
+XN | Night blindness (WHO xerophthalmia grade)
 ZN | Ziehl–Neelsen (stain for acid-fast bacilli)
 β-hCG | Beta human chorionic gonadotrophin
