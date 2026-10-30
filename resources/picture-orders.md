@@ -139,3 +139,16 @@ Clean medical illustration, landscape 4:3. An infant lying on the back showing v
 (intradermal BCG), right upper arm (subcutaneous measles), left anterolateral thigh and right anterolateral
 thigh (intramuscular pentavalent and pneumococcal), drops into the mouth (oral polio, rotavirus). Coloured dots
 on each site, no words or labels.
+
+## Chapter 2 · Topic 2.1 Infant & Young Child Feeding
+
+**feed_attach.jpg**
+Two realistic close-up photographs side by side, landscape 16:9. Left: a Sudanese mother breastfeeding a newborn
+with GOOD attachment (baby's chin touching the breast, mouth wide open, lower lip turned out, more dark areola
+visible above the mouth than below). Right: POOR attachment (mouth not wide open, only the nipple in the mouth,
+lips pointing forward, chin away from the breast). Respectful, natural light, no text.
+
+**feed_position.jpg** (optional)
+Realistic photograph, landscape 4:3. A Sudanese mother sitting on a chair holding her baby in the cradle position
+for breastfeeding: baby's head and body in a straight line, tummy facing the mother, whole body supported.
+Respectful, plain background, no text.

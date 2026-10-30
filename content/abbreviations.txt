@@ -20,7 +20,8 @@ ASIS | Anterior superior iliac spine
 ATNR | Asymmetrical tonic neck reflex
 AVPU | Alert, Voice, Pain, Unresponsive
 AXR | Abdominal X-ray
-B1 / B12 | Vitamin B1 (thiamine) / vitamin B12 (cobalamin)
+B12 | Vitamin B12 (cobalamin)
+B1 | Vitamin B1 (thiamine)
 BCG | Bacille Calmette–Guérin (vaccine)
 BMI | Body mass index
 BP | Blood pressure
