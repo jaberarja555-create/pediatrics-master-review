@@ -152,3 +152,24 @@ lips pointing forward, chin away from the breast). Respectful, natural light, no
 Realistic photograph, landscape 4:3. A Sudanese mother sitting on a chair holding her baby in the cradle position
 for breastfeeding: baby's head and body in a straight line, tummy facing the mother, whole body supported.
 Respectful, plain background, no text.
+
+## Chapter 2 · Topic 2.2 Severe Acute Malnutrition
+
+**sam_kwash.jpg** · page "Marasmus & Kwashiorkor", beside the comparison table (with the marasmus photo)
+Realistic medical photograph, portrait 3:4. A Sudanese child of about 2 years with kwashiorkor, standing or
+sitting on the mother's lap, whole body visible from head to feet: puffy moon face, swollen (oedematous) feet and
+lower legs, dark peeling patches of skin on the legs and buttocks (flaky-paint dermatosis), thin sparse light
+reddish-brown hair, sad apathetic look. Plain background, no text.
+Must show: oedema of the feet and legs + peeling skin + pale sparse hair, the whole child in the frame.
+
+**sam_oedema.jpg** · page "Marasmus & Kwashiorkor", beside the oedema grade table
+Realistic close-up medical photograph, landscape 4:3. A doctor's thumb has just pressed the top (dorsum) of a
+small child's swollen foot, and a clear round pit (dent) remains in the skin after the thumb is lifted. Both feet
+visible, both swollen. Plain background, no text.
+Must show: the pit clearly visible on the top of the foot.
+
+**sam_rutf.jpg** · page "Outpatient Care", beside the OTP list
+Realistic photograph, square 1:1. A Sudanese mother squeezing a plain foil sachet of ready-to-use therapeutic food
+(brown peanut paste) into the mouth of a thin 18-month-old child sitting on her lap; a cup of water beside them.
+No brand name or writing on the sachet, no text.
+Must show: the sachet with the brown paste and the child eating it.

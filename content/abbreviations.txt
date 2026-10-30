@@ -20,8 +20,8 @@ ASIS | Anterior superior iliac spine
 ATNR | Asymmetrical tonic neck reflex
 AVPU | Alert, Voice, Pain, Unresponsive
 AXR | Abdominal X-ray
-B12 | Vitamin B12 (cobalamin)
 B1 | Vitamin B1 (thiamine)
+B12 | Vitamin B12 (cobalamin)
 BCG | Bacille Calmette–Guérin (vaccine)
 BMI | Body mass index
 BP | Blood pressure
@@ -143,6 +143,7 @@ MUAC | Mid-upper arm circumference
 NEC | Necrotising enterocolitis
 NF1 / NF2 | Neurofibromatosis type 1 / 2
 NG / NJ | Nasogastric / nasojejunal
+NGT | Nasogastric tube
 NICE | National Institute for Health and Care Excellence (UK)
 NICU | Neonatal intensive care unit
 NPO | Nil by mouth (nil per os)
@@ -152,6 +153,7 @@ OFC | Occipitofrontal (head) circumference
 OGD | Oesophagogastroduodenoscopy (upper endoscopy)
 OPSI | Overwhelming post-splenectomy infection
 OPV | Oral polio vaccine
+ORS | Oral rehydration solution
 OSCE | Objective structured clinical examination
 OTP | Outpatient therapeutic programme (for uncomplicated SAM)
 PCV | Pneumococcal conjugate vaccine (in haematology: packed cell volume)
@@ -178,11 +180,13 @@ PVL | Periventricular leukomalacia
 qSOFA | Quick sequential organ failure assessment
 QT / QRS | ECG intervals (QT interval, QRS complex)
 RBC | Red blood cell
+ReSoMal | Rehydration solution for malnutrition
 Rh | Rhesus (blood group)
 RL | Ringer's lactate
 RR | Respiratory rate
 RT | Radiotherapy
 RTA | Renal tubular acidosis
+RUSF | Ready-to-use supplementary food
 RUTF | Ready-to-use therapeutic food
 SAM | Severe acute malnutrition
 SBP | Spontaneous bacterial peritonitis
@@ -215,6 +219,7 @@ TPN | Total parenteral nutrition
 TPO | Thyroid peroxidase
 TR | Tricuspid regurgitation
 TRAb | TSH-receptor antibodies
+TSFP | Targeted supplementary feeding programme
 TSH | Thyroid-stimulating hormone
 TT | Tetanus toxoid
 tTG | Tissue transglutaminase (coeliac antibody test)

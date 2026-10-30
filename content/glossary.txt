@@ -4,6 +4,7 @@ abscess | A walled-off collection of pus
 acalculous | Without stones (e.g. acalculous cholecystitis)
 achalasia | Failure of the lower oesophageal sphincter to relax, with loss of oesophageal peristalsis
 achlorhydria | No acid in the stomach
+achondroplasia | Inherited (autosomal dominant) dwarfism with short limbs and a large head
 acropachy | Clubbing and swelling of fingers and toes in Graves' disease
 adenitis | Inflammation of a lymph node or gland
 adenocarcinoma | Cancer arising from gland-forming epithelium
@@ -13,6 +14,7 @@ adhesions | Bands of fibrous scar joining tissues or bowel loops, often after su
 adjuvant | Treatment given after the main operation to lower recurrence
 aflatoxin | Liver toxin from Aspergillus mould on stored grain and peanuts; causes HCC
 agranulocytosis | Severe fall in neutrophils (drug side effect, e.g. carbimazole)
+Alvarado score | Clinical score (symptoms, signs, WBC) for the likelihood of appendicitis
 amelanotic | Without pigment (a melanoma that is not dark)
 amoebic | Caused by Entamoeba histolytica
 ampulla | Ampulla of Vater: where the bile duct and pancreatic duct open into the duodenum
@@ -27,24 +29,35 @@ anorexia | Loss of appetite
 antibioma | Hard sterile mass left when an abscess is treated with antibiotics without drainage
 antrum | The lower part of the stomach, before the pylorus
 apnoea | Stopping breathing
+apolipoprotein | Protein that carries fat out of the liver in the blood
 appendicectomy | Removal of the appendix
 appendicular mass | Inflamed appendix wrapped in omentum and bowel, felt as a mass
+appetite test | Watching a malnourished child eat a measured amount of RUTF to decide outpatient or inpatient care
 ascites | Free fluid in the peritoneal cavity
 aspiration | Drawing out fluid or cells with a needle; or inhaling stomach content into the lungs
 atelectasis | Collapse of part of the lung
 atresia | Congenital absence or closure of a normal opening or tube
 atrophy / atrophic | Wasting and shrinking of a tissue
+attenuated | Weakened live organism that immunises without causing disease
 atypia | Abnormal-looking cells, not yet cancer
+autism | Neurodevelopmental disorder with poor social communication and repetitive behaviour
 autoclave | Steam sterilisation under pressure
 autosomal dominant | Inherited from one affected parent; 50% chance for each child
 avulsed / avulsion | Torn away from its attachment
+baggy pants | Loose skin folds over the buttocks from loss of fat and muscle in severe wasting
 barium | Contrast that shows the gut on X-ray (swallow, meal, enema)
+Barrett's oesophagus | Columnar (intestinal) metaplasia of the lower oesophagus from reflux; premalignant
 benign | Not cancer; does not invade or spread
 bilious | Containing bile (green vomit)
+Billroth I / Billroth II | Partial gastrectomy rejoined to the duodenum (I) or to a jejunal loop (II)
+Blatchford score | Glasgow–Blatchford score: bleeding risk before endoscopy in upper GI bleeding
+Boerhaave syndrome | Full-thickness rupture of the oesophagus after forceful vomiting
 bosselated | Knobby, with rounded bumps on the surface
+bottom shuffler / bottom shufflers / bottom shuffling | Infant who moves sitting on the bottom instead of crawling; a familial normal variant
 bougie | A smooth tube used to dilate a narrowing
 branchial | Arising from the embryonic branchial (pharyngeal) arches
 brawny | Hard, thick and swollen (oedema or cellulitis)
+Breslow thickness | Depth of a melanoma in mm: the main prognostic factor
 cachexia | Severe weight and muscle loss from chronic illness or cancer
 caecum / caecal | First part of the large bowel, in the right iliac fossa
 calcification / calcified | Calcium deposits in a tissue, seen on X-ray, CT or ultrasound
@@ -53,6 +66,10 @@ carcinoid | Neuroendocrine tumour, often in the appendix or small bowel; secrete
 carcinoma | Cancer arising from epithelium
 caseating / caseous | Cheese-like necrosis, typical of tuberculosis
 cellulitis | Spreading infection of skin and subcutaneous tissue
+centile / centiles / percentile / percentiles | Position of a measurement among 100 normal children of the same age and sex
+Charcot's triad | Fever with rigors, jaundice and RUQ pain: cholangitis
+chemoradiotherapy | Chemotherapy given together with radiotherapy
+chemosis | Swelling of the conjunctiva
 cholangiocarcinoma | Cancer of the bile ducts
 cholangiogram | X-ray picture of the bile ducts with contrast
 cholangitis | Infection of the obstructed bile ducts
@@ -61,10 +78,10 @@ cholecystitis | Inflammation of the gallbladder
 choledochal cyst | Congenital dilatation of the bile duct
 choledochojejunostomy | Joining the bile duct to the jejunum
 cholestasis | Reduced or blocked flow of bile
-chemosis | Swelling of the conjunctiva
-chemoradiotherapy | Chemotherapy given together with radiotherapy
+Chvostek's sign | Tapping the facial nerve makes the face twitch (low calcium)
 cirrhosis | Scarring of the whole liver with regenerating nodules
 coagulopathy | Failure of blood to clot normally
+cold chain | Keeping vaccines at 2–8 °C from the factory to the child
 colectomy | Removal of all or part of the colon
 colicky | Pain that comes in waves (from a hollow tube contracting)
 colitis | Inflammation of the colon
@@ -74,19 +91,28 @@ colostomy | The colon brought out onto the skin as a stoma
 compartment syndrome | Raised pressure inside a closed space that cuts off blood flow to its tissues
 concussion | Brief loss of brain function after a head injury, with a normal CT
 congenital | Present from birth
+conjugate vaccine | Polysaccharide joined to a protein so infants under 2 years respond and form memory
+constitutional delay | Normal variant: slow growth and late puberty with delayed bone age; normal final height
 contracture | Shortening of scar or muscle that limits movement
 contralateral | On the opposite side
 contusion | Bruise of a tissue or organ
+Courvoisier's law | Painless palpable gallbladder with jaundice: probably not stones (think cancer of pancreas head)
+craniopharyngioma | Benign suprasellar tumour from Rathke's pouch; short stature, headache, visual field loss, calcification on X-ray
+craniosynostosis | Early fusion of one or more skull sutures, giving a small or abnormally shaped skull
 crepitus | Crackling felt under the skin (gas) or grating between bone ends
 cricothyroidotomy | Emergency opening through the cricothyroid membrane to secure the airway
 crystalloid | Salt-water IV fluid (normal saline, Ringer's lactate)
+Cullen's sign | Bruising around the umbilicus (bleeding in the retroperitoneum, e.g. pancreatitis)
 curative | Treatment aimed at cure
 curettage | Scraping out tissue with a curette
+Curling's ulcer | Stress ulcer of the stomach or duodenum after major burns
+Cushing's ulcer | Stress ulcer after head injury or raised intracranial pressure
 cystgastrostomy | Draining a pancreatic pseudocyst into the stomach
+cystic fibrosis | Inherited disease (CFTR gene) with thick secretions: chest infections, malabsorption, salty sweat
 cytology | Study of single cells (from FNA, fluid or brushings)
 debridement / debride | Cutting away dead or infected tissue
-decompression | Relieving pressure (e.g. a drip-and-suck tube for a distended bowel)
 deceleration | Sudden slowing (RTA): tears fixed organs and vessels
+decompression | Relieving pressure (e.g. a drip-and-suck tube for a distended bowel)
 dehiscence | Wound or anastomosis coming apart
 dermoid | Cyst lined by skin, at lines of embryonic fusion
 diathermy | Electric current used to cut tissue and stop bleeding
@@ -117,8 +143,10 @@ enterocutaneous fistula | Abnormal track from the bowel to the skin
 enucleation / enucleate | Shelling out a lump whole, without a margin
 epidermoid | Cyst lined by epidermis (sebaceous cyst)
 epigastric / epigastrium | Upper middle abdomen, below the breastbone
+epiphysis / epiphyses | Growing end of a long bone; growth stops when it fuses with the shaft
 epithelium / epithelial | The cell layer lining surfaces and glands
 eradication | Complete killing of an organism (e.g. H. pylori)
+Erb's palsy | Upper brachial plexus (C5–C6) birth injury: arm limp, internally rotated ("waiter's tip")
 erysipelas | Superficial skin infection with a raised sharp edge (Streptococcus)
 erythema | Redness of the skin
 eschar | Hard dead skin of a full-thickness burn
@@ -126,9 +154,11 @@ escharotomy | Cutting through a tight burn eschar to free breathing or blood flo
 euthyroid | Normal thyroid function
 everted | Turned outwards (an everted edge of a cancer ulcer)
 excision / excise | Cutting out completely
+exocrine | Secreting into a duct (pancreatic enzymes)
 exophthalmos | Forward bulging of the eyes
 extradural | Between the skull and the dura (extradural haematoma)
-exocrine | Secreting into a duct (pancreatic enzymes)
+F-100 | Catch-up therapeutic milk: 100 kcal and 2.9 g protein per 100 ml
+F-75 | Starter therapeutic milk: 75 kcal and 0.9 g protein per 100 ml
 faecolith | A hard stone of faeces (can block the appendix)
 fasciitis | Inflammation of fascia (necrotising fasciitis = spreading flesh-eating infection)
 fasciotomy | Cutting open the fascia to release raised compartment pressure
@@ -138,22 +168,29 @@ fissure | A split or tear in the skin lining (anal fissure)
 fistula / fistulae | Abnormal connection between two epithelial surfaces
 fistulogram | X-ray of a fistula track with contrast
 fistulotomy | Laying open a fistula track
+flag sign | Alternating pale and dark bands along the hair in kwashiorkor
+flaky-paint dermatosis | Dark skin patches that peel off like old paint, leaving raw skin (kwashiorkor)
 flatus | Gas passed from the bowel
 fluctuant / fluctuation | Feels like it contains fluid
+fontanelle / fontanelles | Soft membranous gap between the skull bones of an infant
+Forrest classification | Endoscopic grading of a peptic ulcer's bleeding risk
 fundoplication | Wrapping the gastric fundus around the lower oesophagus to stop reflux
 fundus | The top part of an organ (gastric fundus, gallbladder fundus)
 fungating | A cancer growing out through the skin like a fungus
 galactocele | Milk-filled breast cyst during or after breastfeeding
 galactorrhoea | Milky nipple discharge when not breastfeeding
 gangrene / gangrenous | Death of tissue from loss of blood supply
+Gardner's syndrome | FAP with osteomas, epidermoid cysts and desmoid tumours
 gastrectomy | Removal of all or part of the stomach
 gastrinoma | Gastrin-secreting tumour causing many peptic ulcers (Zollinger–Ellison)
 gastritis | Inflammation of the stomach lining
 gastrojejunostomy | Joining the stomach to the jejunum (bypass)
 gastrostomy | Opening into the stomach through the abdominal wall (feeding)
 goitre | Enlargement of the thyroid gland
+Gowers sign | Child climbs up his own legs with the hands to stand: weak hip muscles (Duchenne)
 granulation tissue | New pink tissue with small vessels that fills a healing wound
 granuloma | Small collection of macrophages from chronic inflammation (TB, foreign body)
+Grey Turner's sign | Bruising of the flanks (retroperitoneal bleeding, e.g. pancreatitis)
 gridiron incision | Muscle-splitting incision at McBurney's point for appendicectomy
 guarding | Abdominal muscles tightening when pressed (peritoneal irritation)
 gynaecomastia | Breast enlargement in a male
@@ -162,19 +199,25 @@ haematocrit | Fraction of the blood volume made of red cells
 haematoma | A collection of clotted blood in a tissue
 haemobilia | Bleeding into the bile ducts
 haemolysis / haemolytic | Destruction of red blood cells
-haemorrhoids | Enlarged anal vascular cushions that bleed or prolapse
 haemorrhoidectomy | Surgical removal of haemorrhoids
+haemorrhoids | Enlarged anal vascular cushions that bleed or prolapse
 haemostasis | Stopping bleeding
 haemothorax | Blood in the pleural cavity
+Hartmann's procedure | Sigmoid resection with an end colostomy and a closed rectal stump
+Hassab's operation | Devascularisation of the upper stomach and oesophagus with splenectomy for bleeding varices
 haustra | Sacculations of the colon wall, seen on X-ray
+Heller's myotomy | Cutting the muscle of the lower oesophageal sphincter for achalasia
 hemicolectomy | Removal of the right or left half of the colon
-hepatomegaly | Enlarged liver
+hemiplegia / hemiplegic | Weakness of one side of the body
 hepaticojejunostomy | Joining the hepatic bile duct to the jejunum
+hepatomegaly | Enlarged liver
 hepatorenal syndrome | Kidney failure caused by advanced liver disease
 hernia | Protrusion of an organ or tissue through a defect in the wall that contains it
 herniotomy | Removing the hernia sac only (children)
 hiatus hernia | Part of the stomach slides up through the diaphragm into the chest
 hidradenitis | Chronic infection of sweat glands in the axilla and groin
+Hinchey classification | Grades of perforated diverticulitis (I abscess beside colon → IV faecal peritonitis)
+Hutchinson's sign | Pigment spreading into the nail fold: subungual melanoma
 hydatid | Cyst of the dog tapeworm Echinococcus (liver, lung)
 hydrocele | Fluid around the testis
 hygroma | Cystic lymphatic malformation (cystic hygroma) of the neck
@@ -196,17 +239,25 @@ inguinoscrotal | Extending from the groin into the scrotum
 insulinoma | Insulin-secreting pancreatic tumour causing low blood sugar
 intersphincteric | Between the internal and external anal sphincters
 intussusception | One segment of bowel telescoping into the next
+intussusception | Telescoping of one bowel segment into the next
 ipsilateral | On the same side
 irreducible | A hernia that cannot be pushed back
 ischaemia / ischaemic | Too little blood supply to a tissue
 isthmus | Narrow band joining the two thyroid lobes
 jaundice | Yellow skin and eyes from raised bilirubin
 jejunostomy | Opening into the jejunum (feeding tube)
+kangaroo / kangaroo care / kangaroo technique | Skin-to-skin contact of the baby on the mother's chest to keep it warm
+Kehr's sign | Left shoulder-tip pain from blood under the diaphragm (ruptured spleen)
 keloid | Scar that grows beyond the wound edges
 keratoacanthoma | Fast-growing benign skin nodule with a keratin-filled centre; mimics SCC
 keratosis | Thickened scaly skin (actinic keratosis = sun damage, premalignant)
+kernicterus | Brain damage from high unconjugated bilirubin deposited in the basal ganglia
+Kocher's incision | Right subcostal incision (open cholecystectomy)
+Krukenberg tumour | Ovarian metastasis from a stomach (signet ring) cancer
+kwashiorkor | Severe malnutrition with bilateral pitting oedema
 laparoscopy / laparoscopic | Keyhole surgery of the abdomen with a camera
 laparotomy | Opening the abdomen through a large incision
+Laron syndrome | Growth hormone resistance (receptor defect): high GH, low IGF-1, short stature
 laryngoscopy | Looking at the larynx and vocal cords
 lavage | Washing out a body cavity
 lentigo maligna | Slow-growing in-situ melanoma on sun-damaged face
@@ -214,31 +265,43 @@ leucocytosis | Raised white blood cell count
 leucopenia | Low white blood cell count
 lipoma | Benign tumour of fat: soft, lobulated, slips under the finger
 lithotomy | Lying on the back with hips and knees flexed and legs raised
+Littre's hernia | Hernia that contains a Meckel's diverticulum
 lobectomy | Removal of one lobe (thyroid, lung)
-lymphangitis | Red streaks of infection spreading along lymph vessels
 lymphadenectomy | Removal of lymph nodes
+lymphangitis | Red streaks of infection spreading along lymph vessels
 lymphoma | Cancer of lymphocytes
+macrosomia | Birth weight above 4 kg
 malabsorption | Poor absorption of nutrients from the gut
 malignant / malignancy | Cancer: invades and can spread
+Mallory–Weiss tear | Mucosal tear at the oesophagogastric junction after retching
 malrotation | Abnormal rotation of the gut in the embryo (risk of midgut volvulus)
 mammography / mammogram | Low-dose X-ray of the breast
 manometry | Measuring pressure inside the gut (oesophageal manometry)
+marasmus / marasmic | Severe wasting from lack of total energy (calories and protein), without oedema
+Marjolin's ulcer | Squamous cell carcinoma arising in an old scar or chronic ulcer
 marsupialisation | Opening a cyst and suturing its edges to the skin so it drains
 mastalgia | Breast pain
 mastectomy | Removal of the breast
 mastitis | Inflammation or infection of the breast
+McBurney's point | One-third of the way from the right ASIS to the umbilicus (appendix)
+Meckel's diverticulum | Remnant of the vitellointestinal duct on the ileum (rule of 2s)
 mediastinum / mediastinal | The central chest space between the lungs
 megacolon | Very dilated colon
+megalencephaly | Abnormally large brain
 melaena | Black tarry stool from upper GI bleeding
 mesentery / mesenteric | Fold of peritoneum carrying vessels to the bowel
 metaplasia | One mature cell type replaced by another (Barrett's oesophagus)
 metastasis / metastases / metastatic | Spread of cancer to a distant site
 microcalcification | Tiny calcium flecks on a mammogram (may mean DCIS)
+micropenis | Stretched penile length below −2.5 SD for age (under about 2.5 cm in a term newborn)
 midgut | Embryonic gut from the duodenum to the distal transverse colon
+Mirizzi syndrome | Gallstone in the cystic duct or Hartmann's pouch pressing on the common hepatic duct
+Mondor's disease | Thrombophlebitis of a superficial vein of the breast wall
 mucocele | Distended structure full of mucus (appendix, gallbladder)
 mucosa / mucosal | The inner lining of the gut
 multicentric | Cancer in more than one quadrant of the breast
 multifocal | More than one tumour focus in the same area
+Murphy's sign | Breath catches when the inflamed gallbladder meets the examining hand in the RUQ
 mycetoma | Chronic fungal or bacterial infection of the foot with sinuses discharging grains (Sudan)
 myotomy | Cutting the muscle layer (Heller's myotomy for achalasia)
 myxoedema | Severe hypothyroidism with puffy skin
@@ -250,16 +313,21 @@ neoadjuvant | Treatment (chemo or radiotherapy) given before the operation to sh
 neoplasm | A new abnormal growth (benign or malignant)
 neuroendocrine tumour | Tumour of hormone-making cells (carcinoid, insulinoma)
 neurofibroma | Benign tumour of a nerve sheath
+Nissen fundoplication | 360° wrap of the gastric fundus around the lower oesophagus for reflux
 nodule / nodular | A small rounded lump
 odynophagia | Pain on swallowing
 oedema | Swelling from fluid in the tissues
 oesophagectomy | Removal of the oesophagus
 oesophagitis | Inflammation of the oesophagus
+Ogilvie's syndrome | Pseudo-obstruction: dilated colon with no mechanical block
 oliguria | Low urine output
 omentum / omental | Fatty apron of peritoneum hanging from the stomach
+oncotic pressure | Pressure from plasma proteins (mainly albumin) that holds fluid inside the vessels
 ophthalmoplegia | Weakness of eye movements
 orchitis | Inflammation of the testis
+osteogenesis imperfecta | Inherited collagen defect with fragile bones that fracture easily
 osteomyelitis | Infection of bone
+Paget's disease of the nipple | Eczema-like nipple change from an underlying breast cancer
 palliation / palliative | Treatment to relieve symptoms, not to cure
 pancreatectomy | Removal of all or part of the pancreas
 pancreaticoduodenectomy | Whipple's operation: removal of the pancreatic head and duodenum
@@ -270,21 +338,26 @@ papilloma | Benign finger-like growth (intraduct papilloma: bloody nipple discha
 paracentesis | Draining ascites with a needle
 paralytic ileus | Bowel paralysis with no mechanical obstruction
 parenteral | Given by vein, not through the gut
+Parkland formula | Burns fluid: 4 mL × weight (kg) × % TBSA in 24 h, half in the first 8 h
 peau d'orange | Breast skin dimpled like orange peel (lymph block by cancer)
 pedunculated | On a stalk
+Pemberton's sign | Raising both arms makes the face congested: retrosternal goitre
 percutaneous | Through the skin with a needle or tube
 perforation / perforated | A hole through the wall of a hollow organ
-pericardiocentesis | Needle drainage of fluid or blood around the heart
 perianal | Around the anus
+pericardiocentesis | Needle drainage of fluid or blood around the heart
 perineum | Area between the anus and the genitals
 peristalsis | Wave-like contractions that push gut content forward
 peritoneum / peritoneal | The membrane lining the abdominal cavity and its organs
 peritonism | Signs of peritoneal irritation (tenderness, guarding, rebound)
 peritonitis | Inflammation of the peritoneum
+Peutz–Jeghers syndrome | Hamartomatous gut polyps with dark freckles of the lips and mouth
 phaeochromocytoma | Adrenaline-secreting tumour of the adrenal medulla
 phyllodes tumour | Fast-growing leaf-like breast tumour (can be malignant)
 pilonidal sinus | Hair-filled sinus in the natal cleft
+pincer grip / pincer | Picking up a small object between the tips of thumb and index finger
 pleomorphic adenoma | Commonest benign parotid tumour (mixed tumour)
+Plummer–Vinson syndrome | Iron-deficiency anaemia with an oesophageal web and dysphagia
 pneumobilia | Air in the bile ducts
 pneumoperitoneum | Free gas in the peritoneal cavity (perforation)
 pneumothorax | Air in the pleural cavity
@@ -292,6 +365,7 @@ polyp / polyps / polypoid | Growth projecting from a mucosal surface
 polyposis | Many polyps (familial adenomatous polyposis)
 portosystemic | Between the portal and systemic venous systems
 premalignant | Can turn into cancer
+Pringle manoeuvre | Clamping the hepatic pedicle to control liver bleeding
 proctitis | Inflammation of the rectum
 proctocolectomy | Removal of the colon and rectum
 proctoscopy | Looking into the anal canal with a short scope
@@ -306,46 +380,59 @@ pseudocyst | Fluid collection with a fibrous wall but no epithelial lining (panc
 punctum | Small dark opening on a sebaceous (epidermoid) cyst
 pyelonephritis | Infection of the kidney
 pylephlebitis | Infected clot in the portal vein
+pyloric stenosis | Thickened pylorus in infants (2–8 weeks): projectile non-bilious vomiting
 pyloroplasty | Widening the pylorus surgically
 pylorus / pyloric | The outlet of the stomach into the duodenum
 pyogenic | Pus-forming
 pyomyositis | Pus inside a skeletal muscle
 radioiodine | Radioactive iodine used to destroy thyroid tissue
 radiotherapy | Treatment with radiation
+Ranson criteria | Score of severity in acute pancreatitis (on admission and at 48 h)
 rebound tenderness | Pain when the pressing hand is quickly released (peritonitis)
 reducible | A hernia that can be pushed back
 refeeding syndrome | Dangerous fall in phosphate, potassium and magnesium when a starved patient is fed
 reflux | Backward flow (stomach acid into the oesophagus)
+regression | Loss of skills a child had already gained
 regurgitation | Effortless return of swallowed food into the mouth
 resection / resect / resectable | Surgical removal of part of an organ
 retrocaecal | Behind the caecum
 retroperitoneum / retroperitoneal | Space behind the peritoneum (kidneys, pancreas, aorta)
 retrosternal | Behind the breastbone
+Reynolds' pentad | Charcot's triad + confusion + shock: severe cholangitis
+Richter's hernia | Only part of the bowel wall is trapped: strangulation without obstruction
 rigidity | Board-like abdomen from generalised peritonitis
 rigors | Shaking chills with high fever (bacteraemia)
+Rockall score | Risk of rebleeding and death in upper GI bleeding (after endoscopy)
+Rovsing's sign | Pressing the left iliac fossa causes pain in the right iliac fossa (appendicitis)
 sarcoma | Cancer of connective tissue (bone, muscle, fat)
 schistosomiasis / schistosomal | Infection with Schistosoma blood flukes (liver fibrosis, portal hypertension)
 sclerosing | Causing scarring
 sclerotherapy | Injecting a substance that scars and closes vessels (varices, haemorrhoids)
 sebaceous cyst | Epidermoid cyst of the skin with a punctum
+Sengstaken–Blakemore tube | Balloon tube that compresses bleeding oesophageal varices
 sentinel node | The first lymph node that drains a tumour
 seroma | Collection of serous fluid under a wound
 serosa | The outer peritoneal layer of the gut
 sessile | Flat, without a stalk
 sigmoidoscopy | Camera examination of the rectum and sigmoid colon
 sinus | A blind track from an epithelial surface into the tissues
+Sister Mary Joseph nodule | Metastatic nodule at the umbilicus from an abdominal cancer
+Sistrunk's operation | Excision of a thyroglossal cyst with the middle of the hyoid bone
 slough / sloughy | Yellow dead tissue in a wound
+spherocytosis | Inherited disorder with round fragile red cells destroyed in the spleen
 sphincterotomy | Cutting a sphincter (anal sphincter, or the ampulla at ERCP)
 splenectomy | Removal of the spleen
 splenomegaly | Enlarged spleen
-spherocytosis | Inherited disorder with round fragile red cells destroyed in the spleen
 squamous | Flat surface cells (squamous cell carcinoma)
+stabilisation centre | Hospital ward that treats complicated severe acute malnutrition
+stadiometer | Fixed vertical board for measuring standing height
 steatorrhoea | Pale, greasy, foul stools that float (fat malabsorption)
 stenosis | Narrowing
 stoma | A surgical opening of the bowel onto the skin
 strangulation / strangulated | Blood supply of a hernia or bowel cut off
 stricture | Abnormal narrowing of a tube
 stricturoplasty | Widening a bowel stricture without removing bowel (Crohn's)
+stunting | Low height-for-age (below −2 SD): chronic undernutrition
 subdural | Between the dura and the brain (subdural haematoma)
 subphrenic | Below the diaphragm
 succussion splash | Splash heard on shaking the abdomen (gastric outlet obstruction)
@@ -362,99 +449,23 @@ thyroglossal cyst | Midline neck cyst that moves up when the tongue is protruded
 thyroidectomy | Removal of the thyroid gland
 thyroiditis | Inflammation of the thyroid
 thyrotoxicosis | Excess thyroid hormone in the blood
+Tietze's syndrome | Painful swelling of the costal cartilages
 torsion | Twisting of an organ on its blood supply (testis, ovary)
+toxoid | Inactivated bacterial toxin used as a vaccine (diphtheria, tetanus)
 tracheomalacia | Soft, collapsing trachea
 tracheostomy | Opening into the trachea through the neck
 transillumination / transilluminates | Shines through when a light is held behind it (fluid)
 trismus | Difficulty opening the mouth (jaw muscle spasm; tetanus)
+Trousseau's sign | Carpal spasm when a BP cuff is inflated (low calcium); also migratory thrombophlebitis with cancer
+Turner syndrome | 45,X girl: short stature, webbed neck, widely spaced nipples, ovarian failure, coarctation
 ulcer / ulcerated / ulceration | Break in the skin or mucosa
 umbilicus / umbilical | The navel
 uraemia | Raised urea in the blood (kidney failure)
 vagotomy | Cutting the vagus nerves to reduce stomach acid
 varices / variceal | Dilated veins (in the oesophagus in portal hypertension)
+Virchow's node | Enlarged left supraclavicular node from an abdominal cancer (Troisier's sign)
 viscus | A hollow internal organ
 volvulus | Twisting of a loop of bowel on its mesentery
-Alvarado score | Clinical score (symptoms, signs, WBC) for the likelihood of appendicitis
-Barrett's oesophagus | Columnar (intestinal) metaplasia of the lower oesophagus from reflux; premalignant
-Billroth I / Billroth II | Partial gastrectomy rejoined to the duodenum (I) or to a jejunal loop (II)
-Blatchford score | Glasgow–Blatchford score: bleeding risk before endoscopy in upper GI bleeding
-Boerhaave syndrome | Full-thickness rupture of the oesophagus after forceful vomiting
-Breslow thickness | Depth of a melanoma in mm: the main prognostic factor
-Charcot's triad | Fever with rigors, jaundice and RUQ pain: cholangitis
-Chvostek's sign | Tapping the facial nerve makes the face twitch (low calcium)
-Courvoisier's law | Painless palpable gallbladder with jaundice: probably not stones (think cancer of pancreas head)
-Cullen's sign | Bruising around the umbilicus (bleeding in the retroperitoneum, e.g. pancreatitis)
-Curling's ulcer | Stress ulcer of the stomach or duodenum after major burns
-Cushing's ulcer | Stress ulcer after head injury or raised intracranial pressure
-Forrest classification | Endoscopic grading of a peptic ulcer's bleeding risk
-Gardner's syndrome | FAP with osteomas, epidermoid cysts and desmoid tumours
-Grey Turner's sign | Bruising of the flanks (retroperitoneal bleeding, e.g. pancreatitis)
-Hartmann's procedure | Sigmoid resection with an end colostomy and a closed rectal stump
-Hassab's operation | Devascularisation of the upper stomach and oesophagus with splenectomy for bleeding varices
-Heller's myotomy | Cutting the muscle of the lower oesophageal sphincter for achalasia
-Hinchey classification | Grades of perforated diverticulitis (I abscess beside colon → IV faecal peritonitis)
-Hutchinson's sign | Pigment spreading into the nail fold: subungual melanoma
-Kehr's sign | Left shoulder-tip pain from blood under the diaphragm (ruptured spleen)
-Kocher's incision | Right subcostal incision (open cholecystectomy)
-Krukenberg tumour | Ovarian metastasis from a stomach (signet ring) cancer
-Littre's hernia | Hernia that contains a Meckel's diverticulum
-Mallory–Weiss tear | Mucosal tear at the oesophagogastric junction after retching
-Marjolin's ulcer | Squamous cell carcinoma arising in an old scar or chronic ulcer
-McBurney's point | One-third of the way from the right ASIS to the umbilicus (appendix)
-Meckel's diverticulum | Remnant of the vitellointestinal duct on the ileum (rule of 2s)
-Mirizzi syndrome | Gallstone in the cystic duct or Hartmann's pouch pressing on the common hepatic duct
-Mondor's disease | Thrombophlebitis of a superficial vein of the breast wall
-Murphy's sign | Breath catches when the inflamed gallbladder meets the examining hand in the RUQ
-Nissen fundoplication | 360° wrap of the gastric fundus around the lower oesophagus for reflux
-Ogilvie's syndrome | Pseudo-obstruction: dilated colon with no mechanical block
-Paget's disease of the nipple | Eczema-like nipple change from an underlying breast cancer
-Parkland formula | Burns fluid: 4 mL × weight (kg) × % TBSA in 24 h, half in the first 8 h
-Pemberton's sign | Raising both arms makes the face congested: retrosternal goitre
-Peutz–Jeghers syndrome | Hamartomatous gut polyps with dark freckles of the lips and mouth
-Plummer–Vinson syndrome | Iron-deficiency anaemia with an oesophageal web and dysphagia
-Pringle manoeuvre | Clamping the hepatic pedicle to control liver bleeding
-Ranson criteria | Score of severity in acute pancreatitis (on admission and at 48 h)
-Reynolds' pentad | Charcot's triad + confusion + shock: severe cholangitis
-Richter's hernia | Only part of the bowel wall is trapped: strangulation without obstruction
-Rockall score | Risk of rebleeding and death in upper GI bleeding (after endoscopy)
-Rovsing's sign | Pressing the left iliac fossa causes pain in the right iliac fossa (appendicitis)
-Sengstaken–Blakemore tube | Balloon tube that compresses bleeding oesophageal varices
-Sister Mary Joseph nodule | Metastatic nodule at the umbilicus from an abdominal cancer
-Sistrunk's operation | Excision of a thyroglossal cyst with the middle of the hyoid bone
-Tietze's syndrome | Painful swelling of the costal cartilages
-Trousseau's sign | Carpal spasm when a BP cuff is inflated (low calcium); also migratory thrombophlebitis with cancer
-Virchow's node | Enlarged left supraclavicular node from an abdominal cancer (Troisier's sign)
+wasting | Low weight-for-height (below −2 SD): acute undernutrition
 Whipple's operation | Pancreaticoduodenectomy for cancer of the pancreatic head or periampullary region
 Zollinger–Ellison syndrome | Gastrinoma causing severe, multiple peptic ulcers
-achondroplasia | Inherited (autosomal dominant) dwarfism with short limbs and a large head
-centile / centiles / percentile / percentiles | Position of a measurement among 100 normal children of the same age and sex
-craniosynostosis | Early fusion of one or more skull sutures, giving a small or abnormally shaped skull
-epiphysis / epiphyses | Growing end of a long bone; growth stops when it fuses with the shaft
-fontanelle / fontanelles | Soft membranous gap between the skull bones of an infant
-kwashiorkor | Severe malnutrition with bilateral pitting oedema
-macrosomia | Birth weight above 4 kg
-megalencephaly | Abnormally large brain
-osteogenesis imperfecta | Inherited collagen defect with fragile bones that fracture easily
-stadiometer | Fixed vertical board for measuring standing height
-stunting | Low height-for-age (below −2 SD): chronic undernutrition
-wasting | Low weight-for-height (below −2 SD): acute undernutrition
-autism | Neurodevelopmental disorder with poor social communication and repetitive behaviour
-bottom shuffler / bottom shufflers / bottom shuffling | Infant who moves sitting on the bottom instead of crawling; a familial normal variant
-Erb's palsy | Upper brachial plexus (C5–C6) birth injury: arm limp, internally rotated ("waiter's tip")
-Gowers sign | Child climbs up his own legs with the hands to stand: weak hip muscles (Duchenne)
-hemiplegia / hemiplegic | Weakness of one side of the body
-kernicterus | Brain damage from high unconjugated bilirubin deposited in the basal ganglia
-pincer grip / pincer | Picking up a small object between the tips of thumb and index finger
-regression | Loss of skills a child had already gained
-craniopharyngioma | Benign suprasellar tumour from Rathke's pouch; short stature, headache, visual field loss, calcification on X-ray
-Laron syndrome | Growth hormone resistance (receptor defect): high GH, low IGF-1, short stature
-micropenis | Stretched penile length below −2.5 SD for age (under about 2.5 cm in a term newborn)
-Turner syndrome | 45,X girl: short stature, webbed neck, widely spaced nipples, ovarian failure, coarctation
-constitutional delay | Normal variant: slow growth and late puberty with delayed bone age; normal final height
-toxoid | Inactivated bacterial toxin used as a vaccine (diphtheria, tetanus)
-attenuated | Weakened live organism that immunises without causing disease
-conjugate vaccine | Polysaccharide joined to a protein so infants under 2 years respond and form memory
-cold chain | Keeping vaccines at 2–8 °C from the factory to the child
-intussusception | Telescoping of one bowel segment into the next
-cystic fibrosis | Inherited disease (CFTR gene) with thick secretions: chest infections, malabsorption, salty sweat
-pyloric stenosis | Thickened pylorus in infants (2–8 weeks): projectile non-bilious vomiting
