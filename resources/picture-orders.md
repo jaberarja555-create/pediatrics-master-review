@@ -396,3 +396,4 @@ Collage C (6.3–6.5): TL infant with subcostal indrawing on nasal cannula oxyge
 Received and placed: tonsillitis, quinsy, bulging drum, tripod, steeple sign, right lower-lobe consolidation, bronchiolitis indrawing, spacer with mask.
 Not used (medically unclear): clubbing (fingers not clubbed), foreign-body X-ray (both lungs equal, no shift), lateral neck (mass outside the airway, not an epiglottis), left effusion (looks like a big heart, no meniscus). Re-ordered as Collage D.
 Collage D: TL finger clubbing (side view) · TR lateral neck X-ray, thumb sign · BL expiratory X-ray, one hyperlucent lung · BR left pleural effusion with meniscus
+Collage D received: effusion placed; clubbing, thumb sign and foreign-body X-ray still not correct (not used).
