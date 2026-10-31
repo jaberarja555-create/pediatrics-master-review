@@ -377,7 +377,7 @@ Collage D: TL kala-azar spleen · TR LD bodies · BL diphtheria membrane · BR p
 Collage E: TL mumps · TR hand-foot-mouth · BL S. haematobium egg · BR S. mansoni egg
 Collage D (5.3 skin and gut signs): TL dermatitis herpetiformis (elbows) · TR aphthous mouth ulcers · BL erythema nodosum (shins) · BR perianal Crohn disease (skin tags, fistula opening)
 Collage E (5.4, 5.6, 5.7 signs): TL visible gastric peristalsis in pyloric stenosis · TR scleral jaundice · BL palmar erythema · BR spider naevi on the chest
-Received Nov 2026 and placed; not used: double-bubble X-ray (distal gas shown), Kayser–Fleischer ring (no clear ring), perianal Crohn (unclear).
+Received Nov 2026 and placed (incl. replacements: double bubble, KF ring, Crohn cobblestone + granuloma). Not used: perianal Crohn, Crohn CT and resection specimen.
 (Full prompts as sent in the chat; each panel is cut out and placed in its topic.)
 
 ### Chapter 5 as collages (owner: one prompt = one 2 × 2 collage of 4 pictures)
@@ -386,5 +386,5 @@ Collage B (5.4–5.6 imaging): TL pyloric stenosis ultrasound · TR double-bubbl
 Collage C (5.3, 5.5, 5.7 clinical): TL coeliac child (distended abdomen, wasted buttocks) · TR redcurrant jelly stool · BL Kayser–Fleischer ring · BR child with ascites and dilated abdominal veins
 Collage D (5.3 skin and gut signs): TL dermatitis herpetiformis (elbows) · TR aphthous mouth ulcers · BL erythema nodosum (shins) · BR perianal Crohn disease (skin tags, fistula opening)
 Collage E (5.4, 5.6, 5.7 signs): TL visible gastric peristalsis in pyloric stenosis · TR scleral jaundice · BL palmar erythema · BR spider naevi on the chest
-Received Nov 2026 and placed; not used: double-bubble X-ray (distal gas shown), Kayser–Fleischer ring (no clear ring), perianal Crohn (unclear).
+Received Nov 2026 and placed (incl. replacements: double bubble, KF ring, Crohn cobblestone + granuloma). Not used: perianal Crohn, Crohn CT and resection specimen.
 (Full prompts as sent in the chat; each panel is cut out and placed in its topic.)
