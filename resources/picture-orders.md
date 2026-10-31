@@ -393,3 +393,6 @@ Received Nov 2026 and placed (incl. replacements: double bubble, KF ring, Crohn 
 Collage A (6.1 clinical): TL exudative tonsillitis · TR red bulging eardrum (otoscope view) · BL peritonsillar abscess with uvula pushed aside · BR child in tripod position, drooling (epiglottitis)
 Collage B (6.1–6.2 imaging): TL steeple sign (AP neck X-ray) · TR thumb sign (lateral neck X-ray) · BL right lower-lobe consolidation · BR large left pleural effusion with meniscus
 Collage C (6.3–6.5): TL infant with subcostal indrawing on nasal cannula oxygen (bronchiolitis) · TR toddler using an inhaler with spacer and face mask · BL finger clubbing · BR expiratory chest X-ray with one hyperlucent lung (inhaled foreign body)
+Received and placed: tonsillitis, quinsy, bulging drum, tripod, steeple sign, right lower-lobe consolidation, bronchiolitis indrawing, spacer with mask.
+Not used (medically unclear): clubbing (fingers not clubbed), foreign-body X-ray (both lungs equal, no shift), lateral neck (mass outside the airway, not an epiglottis), left effusion (looks like a big heart, no meniscus). Re-ordered as Collage D.
+Collage D: TL finger clubbing (side view) · TR lateral neck X-ray, thumb sign · BL expiratory X-ray, one hyperlucent lung · BR left pleural effusion with meniscus
