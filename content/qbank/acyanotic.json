@@ -1,0 +1,156 @@
+[
+ {
+  "q": "Regarding VSD, which is TRUE?",
+  "o": [
+   "The murmur gets louder as pulmonary hypertension develops",
+   "It increases the risk of brain abscess",
+   "The smallest defects produce the softest murmurs",
+   "There is no risk of endocarditis",
+   "The characteristic murmur is pansystolic at the left sternal border"
+  ],
+  "a": 4,
+  "e": "Small defects give loud murmurs; pulmonary hypertension softens them.",
+  "k": "pansystolic murmur",
+  "s": "bank"
+ },
+ {
+  "q": "Right ventricular hypertrophy is seen in all EXCEPT:",
+  "o": [
+   "ASD",
+   "Tetralogy of Fallot",
+   "Pulmonary stenosis",
+   "PDA",
+   "Mitral stenosis with pulmonary hypertension"
+  ],
+  "a": 3,
+  "e": "PDA causes LVH (volume load of the left heart).",
+  "k": "lvh",
+  "s": "bank"
+ },
+ {
+  "q": "Regarding left-to-right shunts, which is NOT true?",
+  "o": [
+   "VSD causes biventricular hypertrophy",
+   "Large shunts cause heart failure",
+   "ECG in PDA shows right ventricular hypertrophy",
+   "ASD causes right ventricular hypertrophy",
+   "They cause plethoric lungs"
+  ],
+  "a": 2,
+  "e": "PDA shows LVH; RVH only with pulmonary hypertension.",
+  "k": "lvh",
+  "s": "bank"
+ },
+ {
+  "q": "Which congenital lesion is least likely to cause infective endocarditis?",
+  "o": [
+   "PDA",
+   "Secundum ASD",
+   "Bicuspid aortic valve",
+   "Small VSD",
+   "Tetralogy of Fallot"
+  ],
+  "a": 1,
+  "e": "Low pressure gradient across an ASD.",
+  "k": "endocarditis is very rare",
+  "s": "bank"
+ },
+ {
+  "q": "An accentuated (loud) pulmonary second sound in a child with a large VSD indicates:",
+  "o": [
+   "Closure of the VSD",
+   "Pulmonary stenosis",
+   "Aortic stenosis",
+   "Heart block",
+   "Pulmonary hypertension"
+  ],
+  "a": 4,
+  "e": "Loud P2 = pulmonary hypertension.",
+  "k": "loud p2",
+  "s": "bank"
+ },
+ {
+  "q": "A parasternal heave is NOT expected in:",
+  "o": [
+   "Mitral stenosis with pulmonary hypertension",
+   "ASD",
+   "PDA",
+   "Tetralogy of Fallot",
+   "Pulmonary stenosis"
+  ],
+  "a": 2,
+  "e": "Parasternal heave means RVH; PDA loads the left ventricle.",
+  "k": "left parasternal heave",
+  "s": "bank"
+ },
+ {
+  "q": "A 6-week-old breathless on feeds has a loud pansystolic murmur at the lower left sternal edge and a liver 3 cm below the costal margin. The best confirmatory test is:",
+  "o": [
+   "ECG",
+   "Chest X-ray",
+   "Echocardiography",
+   "Cardiac catheterisation",
+   "Blood culture"
+  ],
+  "a": 2,
+  "e": "Echo is diagnostic for VSD.",
+  "k": "echocardiography",
+  "s": "bank"
+ },
+ {
+  "q": "A 9-year-old has headache and BP 150/95 in the arm; femoral pulses are weak and delayed. The diagnosis is:",
+  "o": [
+   "Phaeochromocytoma",
+   "Aortic stenosis",
+   "Renal artery stenosis",
+   "Essential hypertension",
+   "Coarctation of the aorta"
+  ],
+  "a": 4,
+  "e": "Radio-femoral delay with arm hypertension.",
+  "k": "radio-femoral delay",
+  "s": "new"
+ },
+ {
+  "q": "The key auscultatory sign of an ASD is:",
+  "o": [
+   "Early diastolic murmur",
+   "Opening snap",
+   "Continuous murmur",
+   "Single S2",
+   "Wide fixed splitting of S2"
+  ],
+  "a": 4,
+  "e": "Constant RV overfilling fixes the split.",
+  "k": "wide, fixed splitting",
+  "s": "new"
+ },
+ {
+  "q": "A preterm infant on day 5 has a systolic murmur below the left clavicle, bounding pulses and is hard to wean from the ventilator. Treatment is:",
+  "o": [
+   "Digoxin",
+   "Prostaglandin E1",
+   "Immediate surgical ligation",
+   "Ibuprofen or indomethacin",
+   "Propranolol"
+  ],
+  "a": 3,
+  "e": "Medical closure of PDA in preterms.",
+  "k": "preterm",
+  "s": "new"
+ },
+ {
+  "q": "A newborn on day 5 is in shock with absent femoral pulses. The first drug is:",
+  "o": [
+   "Digoxin",
+   "Adenosine",
+   "Propranolol",
+   "Prostaglandin E1",
+   "Indomethacin"
+  ],
+  "a": 3,
+  "e": "Duct-dependent systemic circulation (coarctation).",
+  "k": "pge 1 infusion",
+  "s": "new"
+ }
+]

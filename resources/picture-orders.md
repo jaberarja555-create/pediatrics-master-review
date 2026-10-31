@@ -398,3 +398,8 @@ Not used (medically unclear): clubbing (fingers not clubbed), foreign-body X-ray
 Collage D: TL finger clubbing (side view) · TR lateral neck X-ray, thumb sign · BL expiratory X-ray, one hyperlucent lung · BR left pleural effusion with meniscus
 Collage D received: effusion placed; clubbing, thumb sign and foreign-body X-ray still not correct (not used).
 Real images received and placed: clubbing (6.3), thumb sign (6.1), inspiration/expiration foreign-body X-ray (6.5).
+
+### Chapter 7 as collages (owner: one prompt = one 2 × 2 collage of 4 pictures)
+Collage A (7.3, 7.5, 7.6 clinical): TL central cyanosis of lips and tongue in a toddler · TR child squatting after play (tetralogy) · BL erythema marginatum on the trunk · BR Janeway lesions on the palm
+Collage B (7.1–7.3 X-rays): TL boot-shaped heart, oligaemic lungs (tetralogy) · TR egg-on-side heart, narrow mediastinum, plethoric lungs (TGA) · BL rib notching (coarctation) · BR snowman heart (supracardiac TAPVR)
+Real-image search specs if the generator fails: "tetralogy of Fallot boot shaped heart chest x-ray child", "transposition great arteries egg on a string x-ray", "coarctation rib notching x-ray", "TAPVR snowman sign", "erythema marginatum rheumatic fever", "Janeway lesions".

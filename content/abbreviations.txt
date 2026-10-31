@@ -3,6 +3,7 @@ AAP | American Academy of Pediatrics
 ABC / ABCDE | Airway, Breathing, Circulation (Disability, Exposure)
 ABG | Arterial blood gas
 ABO | ABO blood groups (A, B, AB, O)
+ACE | Angiotensin-converting enzyme (ACE inhibitor: captopril)
 ACE-I | Angiotensin-converting enzyme inhibitor
 ACT | Artemisinin-based combination therapy
 ADA | Adenosine deaminase
@@ -21,10 +22,16 @@ AOM | Acute otitis media
 AP | Anteroposterior (X-ray view)
 APTT | Activated partial thromboplastin time
 ARDS | Acute respiratory distress syndrome
+ARF | Acute rheumatic fever
 ART | Antiretroviral therapy
+AS | Aortic stenosis
+ASD | Atrial septal defect
 ASIS | Anterior superior iliac spine
+ASO | Antistreptolysin O (antibody showing recent streptococcal infection)
 ATNR | Asymmetrical tonic neck reflex
+AV | Atrioventricular
 AVPU | Alert, Voice, Pain, Unresponsive
+AVSD | Atrioventricular septal defect (AV canal)
 AXR | Abdominal X-ray
 B1 | Vitamin B1 (thiamine)
 B12 | Vitamin B12 (cobalamin)
@@ -52,7 +59,9 @@ CMPA | Cow's milk protein allergy
 CMV | Cytomegalovirus
 CNS | Central nervous system
 CO / COHb | Carbon monoxide / carboxyhaemoglobin
+CoA | Coarctation of the aorta
 COPD | Chronic obstructive pulmonary disease
+COVID-19 | Coronavirus disease 2019
 COX-2 | Cyclo-oxygenase 2
 CP | Cerebral palsy
 CPAP | Continuous positive airway pressure
@@ -66,6 +75,7 @@ CXR | Chest X-ray
 D5 | Dextrose 5% (in water)
 DAA / DAAs | Direct-acting antivirals (hepatitis C)
 DAT | Direct antiglobulin (Coombs) test; in kala-azar: direct agglutination test
+DC | Direct current (DC cardioversion)
 DD / DDx | Differential diagnosis
 DDH | Developmental dysplasia of the hip
 DI | Diabetes insipidus
@@ -113,8 +123,10 @@ GGT | Gamma-glutamyl transferase
 GH | Growth hormone
 GI | Gastrointestinal
 GINA | Global Initiative for Asthma
+GN | Glomerulonephritis
 GOR | Gastro-oesophageal reflux (without complications)
 GORD | Gastro-oesophageal reflux disease
+HACEK | Group of slow-growing Gram-negative bacteria that cause culture-negative endocarditis
 HAV | Hepatitis A virus
 Hb | Haemoglobin
 HbA1c | Glycated haemoglobin
@@ -146,10 +158,12 @@ HSV | Herpes simplex virus
 HTIG | Human tetanus immunoglobulin
 HUS | Haemolytic uraemic syndrome
 IBD | Inflammatory bowel disease
+ICD | Implantable cardioverter-defibrillator
 ICP | Intracranial pressure
 ICS | Inhaled corticosteroid
 ICU | Intensive care unit
 IDM / IDMs | Infant of a diabetic mother
+IE | Infective endocarditis
 IgA / IgG / IgM | Immunoglobulin A / G / M
 IgE | Immunoglobulin E (allergy antibody)
 IGF | Insulin-like growth factor
@@ -178,7 +192,7 @@ JVP | Jugular venous pressure
 KCl | Potassium chloride
 KF | Kayser–Fleischer (copper ring in the cornea, Wilson disease)
 KMC | Kangaroo mother care
-LA | Local anaesthesia
+LA | Left atrium
 LABA | Long-acting beta-2 agonist
 LBW | Low birth weight (below 2.5 kg)
 LD | Leishman–Donovan (bodies)
@@ -192,6 +206,8 @@ LMA | Laryngeal mask airway
 LMWH | Low-molecular-weight heparin
 LOC | Loss of consciousness
 LP | Lumbar puncture
+LV | Left ventricle
+LVH | Left ventricular hypertrophy
 MAM | Moderate acute malnutrition
 MAP | Mean arterial pressure
 MART | Maintenance and reliever therapy (one ICS–formoterol inhaler)
@@ -207,6 +223,7 @@ MOF | Multiple organ failure
 MR | Measles–rubella vaccine (in imaging: magnetic resonance)
 MRI | Magnetic resonance imaging
 MRSA | Meticillin-resistant Staphylococcus aureus
+MS | Mitral stenosis
 MTB | Mycobacterium tuberculosis
 MUAC | Mid-upper arm circumference
 NASPGHAN | North American Society for Pediatric Gastroenterology, Hepatology and Nutrition
@@ -231,6 +248,7 @@ OSCE | Objective structured clinical examination
 OTP | Outpatient therapeutic programme (for uncomplicated SAM)
 PaCO2 / PaCO₂ | Arterial carbon dioxide tension
 PAIR | Puncture, aspiration, injection, re-aspiration (hydatid cyst)
+PaO2 / PaO₂ | Arterial oxygen tension
 PaO2 | Arterial oxygen tension
 PCP | Pneumocystis pneumonia
 PCR | Polymerase chain reaction
@@ -242,6 +260,7 @@ PEF | Peak expiratory flow
 PEG | Polyethylene glycol (macrogol), an osmotic laxative
 PEM | Protein–energy malnutrition
 PEP | Post-exposure prophylaxis
+PGE1 / PGE₁ / PGE | Prostaglandin E1 (keeps the ductus arteriosus open)
 PHT | Portal hypertension
 PICU | Paediatric intensive care unit
 PKDL | Post-kala-azar dermal leishmaniasis
@@ -263,12 +282,14 @@ PTX | Pneumothorax
 PVL | Periventricular leukomalacia
 qSOFA | Quick sequential organ failure assessment
 QT / QRS | ECG intervals (QT interval, QRS complex)
+RA | Right atrium
 RBC | Red blood cell
 RD | Respiratory distress
 RDS | Respiratory distress syndrome (surfactant deficiency)
 RDT | Rapid diagnostic test
 ReSoMal | Rehydration solution for malnutrition
 Rh | Rhesus (blood group)
+RHD | Rheumatic heart disease
 RIF | Rifampicin (resistance)
 RL | Ringer's lactate
 RNA | Ribonucleic acid
@@ -279,6 +300,8 @@ RT | Radiotherapy
 RTA | Renal tubular acidosis
 RUSF | Ready-to-use supplementary food
 RUTF | Ready-to-use therapeutic food
+RV | Right ventricle
+RVH | Right ventricular hypertrophy
 SABA | Short-acting beta-2 agonist (salbutamol)
 SAM | Severe acute malnutrition
 SBP | Spontaneous bacterial peritonitis
@@ -298,6 +321,7 @@ SSPE | Subacute sclerosing panencephalitis
 ST | ST segment (ECG)
 SVC | Superior vena cava
 SVR | Systemic vascular resistance
+SVT | Supraventricular tachycardia
 TAPVR | Total anomalous pulmonary venous return
 TB | Tuberculosis
 TBG | Thyroxine-binding globulin
@@ -348,6 +372,7 @@ VZIG | Varicella-zoster immunoglobulin
 WBC | White blood cell count
 WFH | Weight-for-height
 WHO | World Health Organization
+WPW | Wolff–Parkinson–White syndrome (accessory pathway)
 X-match | Cross-match
 XN | Night blindness (WHO xerophthalmia grade)
 ZN | Ziehl–Neelsen (stain for acid-fast bacilli)

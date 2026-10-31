@@ -1,0 +1,156 @@
+[
+ {
+  "q": "A major criterion of rheumatic fever is:",
+  "o": [
+   "Arthritis",
+   "Fever",
+   "Arthralgia",
+   "Raised ESR",
+   "Prolonged PR interval"
+  ],
+  "a": 0,
+  "e": "Fever, PR and ESR are minor.",
+  "k": "arthritis",
+  "s": "bank"
+ },
+ {
+  "q": "Each of the following is a major criterion of rheumatic fever EXCEPT:",
+  "o": [
+   "Carditis",
+   "Erythema marginatum",
+   "Subcutaneous nodules",
+   "Sydenham chorea",
+   "Fever"
+  ],
+  "a": 4,
+  "e": "Fever is minor.",
+  "k": "fever ≥ 38 °c",
+  "s": "bank"
+ },
+ {
+  "q": "Regarding carditis of acute rheumatic fever, which is TRUE?",
+  "o": [
+   "Aortic regurgitation is the commonest lesion",
+   "It is characterised by valve involvement",
+   "Early treatment does not change valve involvement",
+   "Echo is not useful",
+   "Valve damage never follows asymptomatic carditis"
+  ],
+  "a": 1,
+  "e": "Mitral regurgitation is commonest; echo finds subclinical carditis.",
+  "k": "valvulitis",
+  "s": "bank"
+ },
+ {
+  "q": "All are true of rheumatic fever EXCEPT:",
+  "o": [
+   "It occurs in school-age children",
+   "A systolic murmur may be heard",
+   "ASO titre rises",
+   "It usually follows pneumonia 2–6 weeks earlier",
+   "Migratory arthritis is a major criterion"
+  ],
+  "a": 3,
+  "e": "It follows streptococcal pharyngitis.",
+  "k": "pharyngitis",
+  "s": "bank"
+ },
+ {
+  "q": "Rheumatic chorea is associated with:",
+  "o": [
+   "Fine resting tremor",
+   "Increased muscle power",
+   "Convulsions",
+   "Irregular jerky movements",
+   "Fasciculation"
+  ],
+  "a": 3,
+  "e": "Purposeless jerky movements with hypotonia.",
+  "k": "jerky purposeless",
+  "s": "bank"
+ },
+ {
+  "q": "A patient with rheumatic heart disease has fever for 2 weeks. The most likely diagnosis is:",
+  "o": [
+   "Infective endocarditis",
+   "Typhoid",
+   "Viral infection",
+   "Rheumatic recurrence only",
+   "Malaria"
+  ],
+  "a": 0,
+  "e": "Fever in RHD = IE until proved otherwise.",
+  "k": "infective endocarditis until proved otherwise",
+  "s": "bank"
+ },
+ {
+  "q": "A 10-year-old girl has a painful swollen right knee, fever, an apical diastolic murmur, high ESR and positive ASO. The diagnosis is:",
+  "o": [
+   "Juvenile idiopathic arthritis",
+   "Septic arthritis",
+   "Infective endocarditis",
+   "Post-streptococcal reactive arthritis only",
+   "Acute rheumatic fever"
+  ],
+  "a": 4,
+  "e": "2 major (arthritis, carditis) + GAS evidence (Carey Coombs murmur).",
+  "k": "carey coombs",
+  "s": "bank"
+ },
+ {
+  "q": "The drug of choice for secondary prophylaxis of rheumatic fever is:",
+  "o": [
+   "Aspirin daily",
+   "Azithromycin weekly",
+   "Oral amoxicillin for 10 days once",
+   "Ceftriaxone monthly",
+   "Benzathine penicillin G IM every 4 weeks"
+  ],
+  "a": 4,
+  "e": "Long-acting penicillin.",
+  "k": "every 4 weeks",
+  "s": "new"
+ },
+ {
+  "q": "A 22 kg child with ARF needs benzathine penicillin. The dose is:",
+  "o": [
+   "1.2 million units IM",
+   "50 000 units/kg",
+   "2.4 million units IM",
+   "300 000 units IM",
+   "600 000 units IM"
+  ],
+  "a": 4,
+  "e": "600 000 units below 27 kg.",
+  "k": "600 000 units",
+  "s": "new"
+ },
+ {
+  "q": "An apical diastolic rumble, loud S1 and opening snap indicate:",
+  "o": [
+   "Mitral regurgitation",
+   "Mitral stenosis",
+   "Aortic regurgitation",
+   "Aortic stenosis",
+   "VSD"
+  ],
+  "a": 1,
+  "e": "Rheumatic MS takes years to develop.",
+  "k": "opening snap",
+  "s": "new"
+ },
+ {
+  "q": "In ARF with carditis and heart failure, the anti-inflammatory of choice is:",
+  "o": [
+   "Aspirin alone",
+   "Ibuprofen",
+   "Colchicine",
+   "Prednisolone",
+   "Paracetamol"
+  ],
+  "a": 3,
+  "e": "Steroids for moderate-severe carditis.",
+  "k": "prednisolone 2 mg/kg",
+  "s": "new"
+ }
+]

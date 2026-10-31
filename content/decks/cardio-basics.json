@@ -1,0 +1,197 @@
+[
+ [
+  "Fetal circulation",
+  "Three fetal shunts?",
+  "Ductus venosus, foramen ovale, ductus arteriosus."
+ ],
+ [
+  "Fetal circulation",
+  "Where does the fetus get oxygen?",
+  "Placenta, via the umbilical vein."
+ ],
+ [
+  "Fetal circulation",
+  "Why does right-heart blood bypass the fetal lungs?",
+  "High pulmonary vascular resistance; blood goes through the ductus to the aorta."
+ ],
+ [
+  "Transition",
+  "What closes the foramen ovale at birth?",
+  "Left atrial pressure rises above right atrial pressure."
+ ],
+ [
+  "Transition",
+  "What closes the ductus arteriosus?",
+  "Rise in oxygen and fall in prostaglandin E."
+ ],
+ [
+  "Transition",
+  "When does the duct close functionally?",
+  "In 1–3 days."
+ ],
+ [
+  "Transition",
+  "Drug that keeps the duct open?",
+  "Prostaglandin E1."
+ ],
+ [
+  "Transition",
+  "Drugs that close a PDA in preterms?",
+  "Ibuprofen, indomethacin or paracetamol."
+ ],
+ [
+  "Transition",
+  "When does pulmonary resistance reach adult level?",
+  "About 6–8 weeks."
+ ],
+ [
+  "Transition",
+  "Why does a large VSD present at 4–8 weeks?",
+  "The shunt grows as pulmonary resistance falls."
+ ],
+ [
+  "Transition",
+  "Duct-dependent lesion presenting with shock?",
+  "Coarctation, critical AS, hypoplastic left heart: give PGE1."
+ ],
+ [
+  "Associations",
+  "Down syndrome heart lesion?",
+  "AVSD (also VSD)."
+ ],
+ [
+  "Associations",
+  "Turner syndrome heart lesion?",
+  "Coarctation of the aorta, bicuspid aortic valve."
+ ],
+ [
+  "Associations",
+  "Noonan syndrome heart lesion?",
+  "Pulmonary stenosis."
+ ],
+ [
+  "Associations",
+  "Williams syndrome heart lesion?",
+  "Supravalvular aortic stenosis."
+ ],
+ [
+  "Associations",
+  "Maternal lupus → ?",
+  "Congenital complete heart block."
+ ],
+ [
+  "Associations",
+  "Maternal lithium → ?",
+  "Ebstein anomaly."
+ ],
+ [
+  "Associations",
+  "Congenital rubella heart lesions?",
+  "PDA, peripheral pulmonary stenosis."
+ ],
+ [
+  "Associations",
+  "Maternal diabetes heart lesions?",
+  "TGA, VSD, hypertrophic cardiomyopathy."
+ ],
+ [
+  "Examination",
+  "Sign of coarctation on pulses?",
+  "Weak or delayed femoral pulse (radio-femoral delay)."
+ ],
+ [
+  "Examination",
+  "Collapsing pulse in a child?",
+  "PDA or aortic regurgitation."
+ ],
+ [
+  "Examination",
+  "Wide fixed splitting of S2?",
+  "Atrial septal defect."
+ ],
+ [
+  "Examination",
+  "Single S2 in a cyanosed infant?",
+  "Tetralogy, TGA or pulmonary atresia."
+ ],
+ [
+  "Examination",
+  "Is a thrill ever innocent?",
+  "No (grade ≥ 4, always pathological)."
+ ],
+ [
+  "Murmurs",
+  "Features of an innocent murmur?",
+  "Soft systolic, no thrill, normal heart sounds, changes with posture, well child."
+ ],
+ [
+  "Murmurs",
+  "Still's murmur?",
+  "Musical mid-systolic at lower left sternal edge, age 3–7 years."
+ ],
+ [
+  "Murmurs",
+  "Venous hum?",
+  "Continuous under the clavicle, disappears on lying flat."
+ ],
+ [
+  "Murmurs",
+  "Is a diastolic murmur innocent?",
+  "No; always pathological."
+ ],
+ [
+  "Approach",
+  "Commonest congenital heart disease?",
+  "VSD."
+ ],
+ [
+  "Approach",
+  "Commonest cyanotic CHD after infancy?",
+  "Tetralogy of Fallot."
+ ],
+ [
+  "Approach",
+  "Commonest cyanotic CHD at birth?",
+  "Transposition of the great arteries."
+ ],
+ [
+  "Approach",
+  "Boot-shaped heart?",
+  "Tetralogy of Fallot."
+ ],
+ [
+  "Approach",
+  "Egg-on-side heart?",
+  "TGA."
+ ],
+ [
+  "Approach",
+  "Snowman heart?",
+  "Supracardiac TAPVR."
+ ],
+ [
+  "Approach",
+  "Rib notching?",
+  "Coarctation of the aorta (older child)."
+ ],
+ [
+  "Approach",
+  "Eisenmenger syndrome?",
+  "Reversal of a left-to-right shunt after pulmonary vascular disease → cyanosis."
+ ],
+ [
+  "Approach",
+  "Diagnostic test for structural heart disease?",
+  "Echocardiography."
+ ],
+ [
+  "Approach",
+  "Hyperoxia test in cyanotic CHD?",
+  "PaO2 stays < 150 mmHg on 100% oxygen."
+ ],
+ [
+  "Approach",
+  "Newborn pulse oximetry screen positive?",
+  "SpO2 < 95% or > 3% hand–foot difference."
+ ]
+]

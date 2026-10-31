@@ -1,0 +1,142 @@
+[
+ {
+  "q": "Which is true regarding cyanotic heart disease?",
+  "o": [
+   "TOF shows pulmonary plethora",
+   "VSD is a common cause",
+   "Clubbing is present at birth",
+   "There is an increased risk of brain abscess",
+   "Infants are distressed in proportion to cyanosis"
+  ],
+  "a": 3,
+  "e": "Right-to-left shunts bypass the lung filter.",
+  "k": "brain abscess",
+  "s": "bank"
+ },
+ {
+  "q": "Squatting with episodes of cyanosis suggests:",
+  "o": [
+   "VSD",
+   "Coarctation",
+   "Cardiomyopathy",
+   "Tracheo-oesophageal fistula",
+   "Tetralogy of Fallot"
+  ],
+  "a": 4,
+  "e": "Squatting raises systemic resistance.",
+  "k": "squatting",
+  "s": "bank"
+ },
+ {
+  "q": "Which of the following is a cyanotic heart disease?",
+  "o": [
+   "PDA",
+   "Tricuspid atresia",
+   "Coarctation",
+   "Pulmonary stenosis (mild)",
+   "ASD"
+  ],
+  "a": 1,
+  "e": "Tricuspid atresia: right-to-left at atrial level.",
+  "k": "tricuspid atresia",
+  "s": "bank"
+ },
+ {
+  "q": "All of the following are associated with tetralogy of Fallot EXCEPT:",
+  "o": [
+   "Single S2",
+   "Brain abscess",
+   "Squatting",
+   "Cyanotic spells",
+   "Pulmonary plethora on X-ray"
+  ],
+  "a": 4,
+  "e": "TOF has oligaemic lungs.",
+  "k": "oligaemic lungs",
+  "s": "bank"
+ },
+ {
+  "q": "An 8-day-old baby becomes blue when crying. The most likely diagnosis among these is:",
+  "o": [
+   "ASD",
+   "VSD",
+   "PDA",
+   "Coarctation",
+   "Tetralogy of Fallot"
+  ],
+  "a": 4,
+  "e": "Of the options, only TOF is cyanotic; severe forms present early.",
+  "k": "tetralogy",
+  "s": "bank"
+ },
+ {
+  "q": "All are associated with hypoxaemia EXCEPT:",
+  "o": [
+   "Left-to-right shunt",
+   "Mixing lesion",
+   "Right-to-left shunt",
+   "Pneumonia",
+   "Persistent pulmonary hypertension"
+  ],
+  "a": 0,
+  "e": "Left-to-right shunts are acyanotic.",
+  "k": "left-to-right",
+  "s": "bank"
+ },
+ {
+  "q": "A 4-month-old with TOF becomes deeply cyanosed and breathless after crying; the murmur is softer. The first step is:",
+  "o": [
+   "Chest X-ray",
+   "Furosemide IV",
+   "Digoxin IV",
+   "Knee–chest position and oxygen",
+   "Indomethacin"
+  ],
+  "a": 3,
+  "e": "Then morphine, fluids, bicarbonate, propranolol.",
+  "k": "knee–chest position",
+  "s": "new"
+ },
+ {
+  "q": "Which drug is used to prevent hypercyanotic spells?",
+  "o": [
+   "Propranolol",
+   "Captopril",
+   "Digoxin",
+   "Indomethacin",
+   "Furosemide"
+  ],
+  "a": 0,
+  "e": "Beta-blocker relaxes the infundibulum.",
+  "k": "oral propranolol",
+  "s": "new"
+ },
+ {
+  "q": "A newborn of a diabetic mother is deeply cyanosed on day 1, has no murmur and an egg-shaped heart. The diagnosis is:",
+  "o": [
+   "VSD",
+   "Coarctation",
+   "Persistent pulmonary hypertension",
+   "Transposition of the great arteries",
+   "Tetralogy of Fallot"
+  ],
+  "a": 3,
+  "e": "TGA: commonest cyanotic CHD at birth.",
+  "k": "egg on its side",
+  "s": "new"
+ },
+ {
+  "q": "Cyanotic heart disease with left axis deviation on ECG suggests:",
+  "o": [
+   "Tetralogy of Fallot",
+   "TGA",
+   "Pulmonary stenosis",
+   "Ebstein anomaly",
+   "Tricuspid atresia"
+  ],
+  "a": 4,
+  "e": "Small RV → LV dominance.",
+  "k": "left axis deviation",
+  "s": "new"
+ }
+]

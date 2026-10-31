@@ -1,0 +1,156 @@
+[
+ {
+  "q": "All are features of an innocent murmur EXCEPT:",
+  "o": [
+   "It changes with position",
+   "It does not radiate to the back",
+   "It extends into diastole",
+   "It is soft without a thrill",
+   "It is short"
+  ],
+  "a": 2,
+  "e": "Innocent murmurs are systolic (except a venous hum); diastolic murmurs are pathological.",
+  "k": "innocent (functional)",
+  "s": "bank"
+ },
+ {
+  "q": "Which is NOT a characteristic of a functional (innocent) murmur?",
+  "o": [
+   "Louder with fever",
+   "Physiologically split S2",
+   "No clicks",
+   "Pansystolic murmur",
+   "Varies with position"
+  ],
+  "a": 3,
+  "e": "Innocent murmurs are short ejection (mid-systolic) murmurs.",
+  "k": "still's murmur",
+  "s": "bank"
+ },
+ {
+  "q": "Which murmur feature is NOT significant (can be innocent)?",
+  "o": [
+   "Diastolic timing",
+   "A thrill",
+   "Soft, musical systolic murmur",
+   "Radiation all over the precordium",
+   "Other abnormal cardiac signs"
+  ],
+  "a": 2,
+  "e": "A soft musical systolic murmur is Still's murmur.",
+  "k": "musical, vibratory",
+  "s": "bank"
+ },
+ {
+  "q": "Which statement about heart sounds in children is FALSE?",
+  "o": [
+   "S2 is closure of the semilunar valves",
+   "S1 is closure of the AV valves",
+   "S2 normally splits on inspiration",
+   "The first heart sound is normally widely split",
+   "A third heart sound may be normal"
+  ],
+  "a": 3,
+  "e": "S2 splits physiologically; S3 can be normal; S4 is abnormal.",
+  "k": "s3 can be normal",
+  "s": "bank"
+ },
+ {
+  "q": "A PDA is closed medically by:",
+  "o": [
+   "Oestrogen",
+   "Digoxin",
+   "An anti-prostaglandin (ibuprofen or indomethacin)",
+   "Progesterone",
+   "Prostaglandin E1"
+  ],
+  "a": 2,
+  "e": "PGE keeps the duct open; prostaglandin inhibitors close it.",
+  "k": "indomethacin, ibuprofen or paracetamol",
+  "s": "bank"
+ },
+ {
+  "q": "The most common congenital heart lesion in children is:",
+  "o": [
+   "Coarctation",
+   "ASD",
+   "Tetralogy of Fallot",
+   "VSD",
+   "PDA"
+  ],
+  "a": 3,
+  "e": "VSD about 30% of CHD.",
+  "k": "commonest chd",
+  "s": "bank"
+ },
+ {
+  "q": "An oligaemic lung field on chest X-ray is typical of:",
+  "o": [
+   "VSD",
+   "PDA",
+   "Tetralogy of Fallot",
+   "TGA",
+   "Truncus arteriosus"
+  ],
+  "a": 2,
+  "e": "Right-to-left shunts with pulmonary stenosis reduce lung blood flow.",
+  "k": "oligaemic lungs",
+  "s": "bank"
+ },
+ {
+  "q": "A plethoric lung field is seen in:",
+  "o": [
+   "Pulmonary atresia",
+   "Tetralogy of Fallot",
+   "Tricuspid atresia",
+   "PDA",
+   "Pulmonary stenosis"
+  ],
+  "a": 3,
+  "e": "Left-to-right shunts increase pulmonary flow.",
+  "k": "plethoric lungs",
+  "s": "bank"
+ },
+ {
+  "q": "A newborn with Down syndrome should be screened for which heart lesion?",
+  "o": [
+   "Coarctation",
+   "Atrioventricular septal defect",
+   "Ebstein anomaly",
+   "TGA",
+   "Aortic stenosis"
+  ],
+  "a": 1,
+  "e": "AVSD is strongly linked with Down syndrome.",
+  "k": "avsd",
+  "s": "new"
+ },
+ {
+  "q": "A newborn whose mother has lupus has a heart rate of 55. The likely diagnosis is:",
+  "o": [
+   "Hypoglycaemia",
+   "Myocarditis",
+   "SVT",
+   "Sinus bradycardia from hypothermia",
+   "Congenital complete heart block"
+  ],
+  "a": 4,
+  "e": "Anti-Ro/La antibodies damage the conduction system.",
+  "k": "complete heart block",
+  "s": "new"
+ },
+ {
+  "q": "A newborn becomes cyanosed on day 3 as the duct closes. The first drug is:",
+  "o": [
+   "Furosemide",
+   "Indomethacin",
+   "Digoxin",
+   "High-flow oxygen alone",
+   "Prostaglandin E1 infusion"
+  ],
+  "a": 4,
+  "e": "PGE1 reopens the duct in duct-dependent lesions.",
+  "k": "pge 1 infusion",
+  "s": "new"
+ }
+]

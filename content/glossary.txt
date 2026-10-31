@@ -655,3 +655,48 @@ grunting | Short expiratory noise against a closed glottis, a sign of severe res
 clubbing | Loss of the angle at the nail bed with a bulbous fingertip; chronic lung, heart or liver disease
 haemoptysis | Coughing up blood
 otorrhoea | Discharge from the ear
+ductus arteriosus | Fetal vessel joining the pulmonary artery to the aorta; closes in the first days of life
+foramen ovale | Fetal opening between the atria; closes when left atrial pressure rises at birth
+ductus venosus | Fetal vessel carrying placental blood past the liver to the IVC
+duct-dependent / duct-dependent lesion | Heart lesion in which survival depends on an open ductus arteriosus (kept open with PGE1)
+Eisenmenger syndrome | Reversal of a long-standing left-to-right shunt after pulmonary vascular disease, causing late cyanosis
+tetralogy of Fallot | Pulmonary stenosis, VSD, overriding aorta and RVH: the commonest cyanotic heart disease
+hypercyanotic spell / tet spell / tet spells | Sudden attack of deeper cyanosis and fast breathing in tetralogy, from infundibular spasm
+squatting | Crouching posture that raises systemic resistance and relieves cyanosis in tetralogy
+infundibulum / infundibular | Muscular outflow part of the right ventricle below the pulmonary valve
+overriding aorta | Aorta sitting over the VSD and receiving blood from both ventricles
+Blalock–Taussig shunt | Surgical tube from the subclavian to the pulmonary artery to increase lung blood flow
+balloon atrial septostomy / Rashkind | Catheter tearing of the atrial septum to improve mixing in TGA
+arterial switch | Operation that moves the great arteries back to the correct ventricles in TGA
+Ebstein anomaly | Downward displacement of the tricuspid valve with a huge right atrium
+coarctation | Narrowing of the aorta near the ductus arteriosus
+radio-femoral delay | Femoral pulse later and weaker than the radial pulse, a sign of coarctation
+rib notching | Erosion of the lower rib borders by enlarged collateral arteries in coarctation
+collapsing pulse / bounding pulse | Strong pulse that falls away quickly, with a wide pulse pressure (PDA, aortic regurgitation)
+pulse pressure | Difference between systolic and diastolic blood pressure
+thrill | Palpable murmur (grade 4 or more); always pathological
+Still's murmur | Innocent musical systolic murmur at the lower left sternal edge in young children
+venous hum | Innocent continuous murmur under the clavicle that disappears on lying flat
+gallop rhythm | Extra third or fourth heart sound giving a galloping rhythm, a sign of heart failure
+plethoric / plethora | Increased pulmonary blood vessel markings on chest X-ray
+oligaemic | Reduced pulmonary blood vessel markings on chest X-ray
+cardiomegaly | Enlarged heart (cardiothoracic ratio above 0.5)
+Carey Coombs murmur | Soft apical mid-diastolic murmur of acute rheumatic mitral valvulitis
+Sydenham chorea | Involuntary jerky movements and emotional lability of rheumatic fever
+erythema marginatum | Pink non-itchy rings with clear centres on the trunk in rheumatic fever
+milkmaid grip | Rhythmic squeezing and relaxing grip in Sydenham chorea
+opening snap | Sharp early diastolic sound of a stiff mitral valve in mitral stenosis
+valvulitis | Inflammation of a heart valve
+pancarditis | Inflammation of the pericardium, myocardium and endocardium together
+vegetation / vegetations | Mass of platelets, fibrin and organisms on a heart valve in endocarditis
+Osler nodes | Tender red nodules on the finger pads in infective endocarditis
+Janeway lesions | Painless red spots on the palms and soles in infective endocarditis
+Roth spots | Retinal haemorrhages with pale centres in infective endocarditis
+splinter haemorrhages | Thin red-brown lines under the nails in infective endocarditis
+myocarditis | Inflammation of the heart muscle, usually viral
+cardiomyopathy | Disease of the heart muscle (dilated or hypertrophic)
+adenosine | Very short-acting drug that blocks the AV node; first drug for SVT
+vagal manoeuvres | Actions (ice to the face, Valsalva) that slow the AV node and may stop SVT
+delta wave | Slurred start of the QRS complex in Wolff–Parkinson–White syndrome
+afterload | Resistance the ventricle pumps against; reduced by ACE inhibitors
+

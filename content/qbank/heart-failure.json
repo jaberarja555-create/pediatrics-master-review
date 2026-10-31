@@ -1,0 +1,114 @@
+[
+ {
+  "q": "All are common signs of heart failure in children EXCEPT:",
+  "o": [
+   "Decreased exercise tolerance",
+   "Failure to thrive",
+   "Fatigue",
+   "Frequent chest infections",
+   "Lower limb oedema in infants"
+  ],
+  "a": 4,
+  "e": "Oedema is a late sign in infants (eyelids, sacrum).",
+  "k": "oedema of the eyelids",
+  "s": "bank"
+ },
+ {
+  "q": "An early manifestation of heart failure in a newborn is:",
+  "o": [
+   "Clubbing",
+   "Poor feeding",
+   "Splenomegaly",
+   "Leg oedema",
+   "Raised JVP"
+  ],
+  "a": 1,
+  "e": "Breathless, sweating, poor feeding.",
+  "k": "poor feeding",
+  "s": "bank"
+ },
+ {
+  "q": "Signs of heart failure in infancy include all EXCEPT:",
+  "o": [
+   "Hepatomegaly",
+   "Tachypnoea",
+   "Splenomegaly",
+   "Tachycardia",
+   "Poor weight gain"
+  ],
+  "a": 2,
+  "e": "The liver enlarges, not the spleen.",
+  "k": "splenomegaly is not",
+  "s": "bank"
+ },
+ {
+  "q": "Which is a sign of heart failure in a child?",
+  "o": [
+   "Enlarged tender liver",
+   "Clubbing",
+   "Splenomegaly",
+   "Hypertension",
+   "Bradycardia"
+  ],
+  "a": 0,
+  "e": "The most reliable sign in infants.",
+  "k": "enlarged, tender liver",
+  "s": "bank"
+ },
+ {
+  "q": "Digoxin is contraindicated in:",
+  "o": [
+   "Tetralogy of Fallot",
+   "Dilated cardiomyopathy",
+   "Rheumatic mitral regurgitation",
+   "Heart failure with AF",
+   "Large VSD"
+  ],
+  "a": 0,
+  "e": "Also hypertrophic cardiomyopathy and heart block.",
+  "k": "tetralogy of fallot",
+  "s": "new"
+ },
+ {
+  "q": "A child on digoxin and furosemide develops vomiting and bradycardia. The most likely contributing factor is:",
+  "o": [
+   "Hypocalcaemia",
+   "Hyperglycaemia",
+   "Hyperkalaemia",
+   "Hyponatraemia",
+   "Hypokalaemia"
+  ],
+  "a": 4,
+  "e": "Loop diuretics lower potassium and increase digoxin toxicity.",
+  "k": "hypokalaemia",
+  "s": "new"
+ },
+ {
+  "q": "A pale 3-month-old has a heart rate of 270, narrow QRS and no P waves. After vagal manoeuvres fail, give:",
+  "o": [
+   "IV adenosine 0.1 mg/kg rapidly",
+   "IV digoxin",
+   "Oral propranolol",
+   "IV amiodarone first",
+   "IV verapamil"
+  ],
+  "a": 0,
+  "e": "Adenosine; cardiovert if in shock.",
+  "k": "adenosine 0.1 mg/kg",
+  "s": "new"
+ },
+ {
+  "q": "The commonest cause of heart failure in infancy is:",
+  "o": [
+   "Congenital heart disease with a left-to-right shunt",
+   "Rheumatic heart disease",
+   "Viral myocarditis",
+   "Hypertension",
+   "Thyrotoxicosis"
+  ],
+  "a": 0,
+  "e": "VSD, AVSD, PDA.",
+  "k": "large left-to-right shunts",
+  "s": "new"
+ }
+]

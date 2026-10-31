@@ -1,0 +1,114 @@
+[
+ {
+  "q": "All are present in infective endocarditis EXCEPT:",
+  "o": [
+   "Splenomegaly",
+   "Streptococcus viridans as commonest organism",
+   "Negative blood culture in most cases",
+   "Roth spots",
+   "Petechiae"
+  ],
+  "a": 2,
+  "e": "Blood cultures are positive in about 90%.",
+  "k": "positive in about 90%",
+  "s": "bank"
+ },
+ {
+  "q": "The commonest organism in infective endocarditis in children is:",
+  "o": [
+   "Staphylococcus epidermidis",
+   "Streptococcus viridans",
+   "Candida",
+   "Enterococcus",
+   "Pseudomonas"
+  ],
+  "a": 1,
+  "e": "From the mouth; S. aureus after surgery or lines.",
+  "k": "streptococcus viridans",
+  "s": "bank"
+ },
+ {
+  "q": "The best initial investigation in suspected endocarditis is:",
+  "o": [
+   "ESR",
+   "Chest X-ray",
+   "ECG",
+   "Three sets of blood cultures before antibiotics",
+   "Urine culture"
+  ],
+  "a": 3,
+  "e": "Then echocardiography.",
+  "k": "3 sets from separate venepunctures",
+  "s": "new"
+ },
+ {
+  "q": "Tender nodules in the finger pads of a child with a heart murmur and fever are:",
+  "o": [
+   "Janeway lesions",
+   "Osler nodes",
+   "Splinter haemorrhages",
+   "Heberden nodes",
+   "Rheumatic nodules"
+  ],
+  "a": 1,
+  "e": "Immune phenomenon in IE.",
+  "k": "osler nodes",
+  "s": "new"
+ },
+ {
+  "q": "According to AHA 2021, dental antibiotic prophylaxis is indicated for:",
+  "o": [
+   "A child with a secundum ASD",
+   "A child with an innocent murmur",
+   "A child with a prosthetic heart valve",
+   "A child with a closed PDA (no residual leak, > 6 months)",
+   "A child with a small VSD"
+  ],
+  "a": 2,
+  "e": "Only the highest-risk groups.",
+  "k": "prosthetic valve",
+  "s": "new"
+ },
+ {
+  "q": "A previously well infant has tachycardia out of proportion to fever, gallop rhythm, no murmur and cardiomegaly after a cold. The most likely cause is:",
+  "o": [
+   "Rheumatic carditis",
+   "Hypertrophic cardiomyopathy",
+   "Viral myocarditis (Coxsackie B)",
+   "Infective endocarditis",
+   "Large VSD"
+  ],
+  "a": 2,
+  "e": "Myocarditis gives failure without a significant murmur.",
+  "k": "coxsackie b",
+  "s": "new"
+ },
+ {
+  "q": "A 15-year-old collapses while playing football; his uncle died suddenly young. The likely diagnosis is:",
+  "o": [
+   "Hypertrophic cardiomyopathy",
+   "Dilated cardiomyopathy",
+   "Rheumatic heart disease",
+   "Mitral valve prolapse",
+   "ASD"
+  ],
+  "a": 0,
+  "e": "Autosomal dominant; avoid digoxin.",
+  "k": "sudden death in athletes",
+  "s": "new"
+ },
+ {
+  "q": "Muffled heart sounds, low blood pressure and pulsus paradoxus suggest:",
+  "o": [
+   "Endocarditis",
+   "Cardiac tamponade",
+   "Coarctation",
+   "Myocarditis",
+   "Asthma"
+  ],
+  "a": 1,
+  "e": "Urgent pericardiocentesis.",
+  "k": "tamponade",
+  "s": "new"
+ }
+]
