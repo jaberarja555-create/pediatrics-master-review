@@ -66,7 +66,7 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
   at the bottom of every page: check it after each topic (gaps remain only at a topic's end or before a box taller than the gap).
 - **Never crowded (owner):** boxes and cells stay short and airy: one idea per line, a small table or list instead of
   a dense paragraph; split long content rather than packing it.
-- **Marked pictures (owner):** every picture (clinical photos, X-rays, ultrasound, drawings) carries short yellow labels and arrows on the sign (tools/annotate.py; labels inside the part of the picture that shows on the page, readable at page size); check the side (patient right = image left) before labelling.
+- **Marked pictures (owner):** label a picture only where it helps: a small yellow label/arrow on a sign that is not obvious (defect in a heart drawing, X-ray/ultrasound sign, subtle skin or eye sign); no label when the sign is plain or the caption already says it, or the source already has an arrow. Labels small (about 20 px on a 480 px picture, never covering the sign), few per picture (tools/annotate.py, w=3); inside the visible crop; check the side (patient right = image left).
 - **Pictures placed well (owner):** small to medium, never big (about 140–160 px high; the picture column
   at most a third of the width, text gets the rest), sharp, whole subject visible (check the crop),
   beside a full-height text block or in a full-width row of 2–3, never squeezed under a short list in a narrow column;

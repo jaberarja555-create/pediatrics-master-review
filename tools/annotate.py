@@ -8,12 +8,12 @@ FONT='/usr/share/fonts/opentype/inter/Inter-Bold.otf'
 Y=(255,214,64)
 def label(d,xy,text,size):
     f=ImageFont.truetype(FONT,size); x,y=xy
-    b=d.textbbox((x,y),text,font=f); p=max(4,size//5)
+    b=d.textbbox((x,y),text,font=f); p=max(3,size//6)
     d.rounded_rectangle((b[0]-p,b[1]-p,b[2]+p,b[3]+p),radius=p,fill=(0,0,0,175))
     d.text((x,y),text,font=f,fill=Y)
     return b
 def arrow(d,a,b,w):
-    for col,ww in (((0,0,0,230),w+4),(Y+(255,),w)):
+    for col,ww in (((0,0,0,200),w+2),(Y+(255,),w)):
         d.line([a,b],fill=col,width=ww)
         ang=math.atan2(b[1]-a[1],b[0]-a[0]); L=w*4
         pts=[b,(b[0]-L*math.cos(ang-0.45),b[1]-L*math.sin(ang-0.45)),(b[0]-L*math.cos(ang+0.45),b[1]-L*math.sin(ang+0.45))]
