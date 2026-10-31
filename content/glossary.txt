@@ -611,3 +611,8 @@ calprotectin / faecal calprotectin | Stool protein from neutrophils; high in gut
 osmotic demyelination | Brain damage from raising a low sodium too fast
 redcurrant jelly stool | Dark red stool of blood and mucus in intussusception (a late sign)
 target sign / doughnut sign | Ring pattern of telescoped bowel on ultrasound in intussusception
+erythema nodosum | Tender red nodules under the skin of the shins; seen with IBD, TB, streptococcal infection and some drugs
+aphthous ulcer / aphthous ulcers | Small, round, painful shallow mouth ulcer with a yellow-white base and red rim
+palmar erythema | Redness of the palms, mainly the thenar and hypothenar areas; a sign of chronic liver disease
+spider naevi / spider naevus | Small red spot with fine vessels radiating from it, on the upper body; a sign of chronic liver disease
+transition zone | Cone-shaped change from the narrow aganglionic bowel to the dilated normal bowel on contrast enema (Hirschsprung disease)
