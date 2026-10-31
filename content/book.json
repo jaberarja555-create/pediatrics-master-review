@@ -170,7 +170,7 @@
    "short": "Infections",
    "tab": "Infection",
    "color": "#b3261e",
-   "part": "Infectious Diseases",
+   "part": "Systems",
    "topics": [
     {
      "id": "fever",
@@ -250,7 +250,6 @@
    "short": "GIT",
    "tab": "GIT",
    "color": "#5b8c2a",
-   "part": "Systems",
    "topics": [
     {
      "id": "gastroenteritis",

@@ -221,7 +221,7 @@ function refreshHome(){
   // Home: parts → chapter cards (tap to open) → topic rows with progress
   var tById={};TOPICS.forEach(function(t){tById[t.id]=t});
   var cur=(PAGES[lastPage()]||{}).topic, curCh=cur&&tById[cur]?tById[cur].ch:null;
-  var parts=[],PIMG=['part1','part2','part3','part4','part5','part6'],PCLR=[];
+  var parts=[],PIMG=['part1','part2','part3','part4','part5'],PCLR=[];
   META.contents.forEach(function(ch){if(ch.part||!parts.length){parts.push({name:ch.part||'Chapters',chs:[]});PCLR.push(ch.color)}parts[parts.length-1].chs.push(ch)});
   $('topics').innerHTML=parts.map(function(pt,pi){
     var pr=0,pn=0,nt=0,curIn=false;
