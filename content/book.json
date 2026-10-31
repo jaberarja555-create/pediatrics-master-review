@@ -314,7 +314,7 @@
      "no": "6.1",
      "title": "Upper Airway Infections & Stridor",
      "short": "Upper airway",
-     "sub": "Croup · epiglottitis · tonsillitis · otitis media · foreign body"
+     "sub": "Common cold · tonsillitis · otitis media · croup · epiglottitis"
     },
     {
      "id": "pneumonia",
@@ -326,16 +326,23 @@
     {
      "id": "bronchiolitis",
      "no": "6.3",
-     "title": "Bronchiolitis",
+     "title": "Bronchiolitis & the Wheezy Infant",
      "short": "Bronchiolitis",
-     "sub": "RSV · supportive care"
+     "sub": "RSV · supportive care · causes of wheeze"
     },
     {
      "id": "asthma",
      "no": "6.4",
      "title": "Asthma",
      "short": "Asthma",
-     "sub": "Acute attack · stepwise control"
+     "sub": "Acute attack · stepwise control (GINA)"
+    },
+    {
+     "id": "cystic-fibrosis",
+     "no": "6.5",
+     "title": "Cystic Fibrosis, Foreign Body & Chronic Lung Disease",
+     "short": "CF & chronic lung",
+     "sub": "Sweat test · inhaled foreign body · bronchiectasis"
     }
    ]
   },

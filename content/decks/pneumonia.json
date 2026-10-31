@@ -1,0 +1,202 @@
+[
+ [
+  "Causes",
+  "Commonest bacterial cause of pneumonia in children?",
+  "Streptococcus pneumoniae."
+ ],
+ [
+  "Causes",
+  "Commonest cause of pneumonia in infants?",
+  "Viruses, especially RSV."
+ ],
+ [
+  "Causes",
+  "Causes of neonatal pneumonia?",
+  "Group B streptococcus, E. coli, Listeria."
+ ],
+ [
+  "Causes",
+  "Afebrile 6-week-old with staccato cough and conjunctivitis?",
+  "Chlamydia trachomatis pneumonia: azithromycin."
+ ],
+ [
+  "Causes",
+  "Atypical pneumonia in school children?",
+  "Mycoplasma pneumoniae."
+ ],
+ [
+  "Causes",
+  "Pneumonia organism in an HIV-exposed infant with severe hypoxia?",
+  "Pneumocystis jirovecii."
+ ],
+ [
+  "Clinical",
+  "Most sensitive sign of pneumonia in a child?",
+  "Fast breathing."
+ ],
+ [
+  "Clinical",
+  "Fast breathing at 2–11 months?",
+  "50 breaths per minute or more."
+ ],
+ [
+  "Clinical",
+  "Fast breathing at 1–5 years?",
+  "40 breaths per minute or more."
+ ],
+ [
+  "Clinical",
+  "Fast breathing under 2 months?",
+  "60 breaths per minute or more."
+ ],
+ [
+  "Clinical",
+  "Lower-lobe pneumonia may mimic?",
+  "Appendicitis (abdominal pain)."
+ ],
+ [
+  "Clinical",
+  "Signs of lobar consolidation?",
+  "Dull percussion, bronchial breathing, increased vocal resonance."
+ ],
+ [
+  "Classification",
+  "WHO/IMCI: fast breathing and/or chest indrawing, no danger sign?",
+  "Pneumonia: oral amoxicillin at home."
+ ],
+ [
+  "Classification",
+  "Amoxicillin dose for pneumonia?",
+  "40 mg/kg twice daily."
+ ],
+ [
+  "Classification",
+  "Duration of amoxicillin with chest indrawing?",
+  "5 days."
+ ],
+ [
+  "Classification",
+  "Duration for fast breathing only (low HIV area)?",
+  "3 days."
+ ],
+ [
+  "Classification",
+  "What makes pneumonia severe (WHO)?",
+  "General danger sign, central cyanosis or SpO₂ < 90%, severe respiratory distress."
+ ],
+ [
+  "Classification",
+  "General danger signs?",
+  "Not able to drink or breastfeed, vomits everything, convulsions, lethargic or unconscious."
+ ],
+ [
+  "Classification",
+  "Cough or cold classification: antibiotic?",
+  "No antibiotic."
+ ],
+ [
+  "Hospital",
+  "Antibiotics for severe pneumonia?",
+  "Ampicillin 50 mg/kg 6-hourly + gentamicin 7.5 mg/kg once daily, at least 5 days."
+ ],
+ [
+  "Hospital",
+  "No improvement after 48 hours of ampicillin–gentamicin?",
+  "Change to ceftriaxone; look for empyema."
+ ],
+ [
+  "Hospital",
+  "Treatment of suspected staphylococcal pneumonia?",
+  "Cloxacillin + gentamicin."
+ ],
+ [
+  "Hospital",
+  "When to give oxygen?",
+  "SpO₂ < 90% (or central cyanosis, grunting, inability to drink)."
+ ],
+ [
+  "Hospital",
+  "Best test to decide on oxygen?",
+  "Pulse oximetry."
+ ],
+ [
+  "Hospital",
+  "Why restrict IV fluids in severe pneumonia?",
+  "Risk of SIADH (give 70–80% of maintenance)."
+ ],
+ [
+  "Investigations",
+  "Is chest X-ray needed in simple pneumonia?",
+  "No; only if severe, not improving or complicated."
+ ],
+ [
+  "Investigations",
+  "X-ray signs pointing to S. aureus?",
+  "Pneumatoceles, empyema, abscess, pneumothorax."
+ ],
+ [
+  "Mycoplasma",
+  "Features of mycoplasma pneumonia?",
+  "School child, persistent dry cough, headache, few signs; X-ray worse than the child."
+ ],
+ [
+  "Mycoplasma",
+  "Treatment of mycoplasma pneumonia?",
+  "A macrolide (azithromycin)."
+ ],
+ [
+  "Mycoplasma",
+  "Why don't penicillins work on mycoplasma?",
+  "It has no cell wall."
+ ],
+ [
+  "Mycoplasma",
+  "Extrapulmonary features of mycoplasma?",
+  "Erythema multiforme, SJS, haemolytic anaemia, encephalitis, GBS."
+ ],
+ [
+  "Mycoplasma",
+  "Laboratory clue to mycoplasma?",
+  "Cold agglutinins."
+ ],
+ [
+  "Empyema",
+  "When to suspect empyema?",
+  "Fever persisting after 48 hours of antibiotics, stony dullness, absent breath sounds."
+ ],
+ [
+  "Empyema",
+  "Commonest cause of empyema?",
+  "Streptococcus pneumoniae."
+ ],
+ [
+  "Empyema",
+  "Pleural fluid findings in empyema?",
+  "Pus or organisms on Gram stain, pH < 7.2, low glucose, high LDH."
+ ],
+ [
+  "Empyema",
+  "Treatment of empyema?",
+  "Chest drain + IV antibiotics; fibrinolytics or VATS if loculated."
+ ],
+ [
+  "Signs",
+  "Trachea pulled towards the dull side?",
+  "Lung collapse."
+ ],
+ [
+  "Signs",
+  "Trachea pushed away with stony dullness?",
+  "Large pleural effusion."
+ ],
+ [
+  "Recurrent",
+  "Recurrent pneumonia in the same lobe?",
+  "Local cause: foreign body, TB node, malformation."
+ ],
+ [
+  "Recurrent",
+  "Recurrent pneumonia in different lobes?",
+  "Aspiration, cystic fibrosis, immunodeficiency, sickle cell disease."
+ ]
+]

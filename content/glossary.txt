@@ -616,3 +616,42 @@ aphthous ulcer / aphthous ulcers | Small, round, painful shallow mouth ulcer wit
 palmar erythema | Redness of the palms, mainly the thenar and hypothenar areas; a sign of chronic liver disease
 spider naevi / spider naevus | Small red spot with fine vessels radiating from it, on the upper body; a sign of chronic liver disease
 transition zone | Cone-shaped change from the narrow aganglionic bowel to the dilated normal bowel on contrast enema (Hirschsprung disease)
+stridor | Harsh, high-pitched, mainly inspiratory noise from narrowing of the larynx or trachea
+wheeze / wheezing | Musical, mainly expiratory sound from narrowed bronchi and bronchioles
+croup / laryngotracheobronchitis | Viral (parainfluenza) swelling below the vocal cords: barking cough, hoarse voice, stridor
+epiglottitis / supraglottitis | Bacterial (Hib) infection of the epiglottis: toxic child, drooling, airway emergency
+laryngomalacia | Soft laryngeal tissues collapsing on inspiration; the commonest cause of chronic stridor in infants
+quinsy / peritonsillar abscess | Pus collection beside a tonsil: trismus, muffled voice, uvula pushed aside
+tympanometry | Test of eardrum movement; a flat trace means fluid in the middle ear
+grommet / grommets | Small ventilation tube placed in the eardrum to drain glue ear
+glue ear / otitis media with effusion | Fluid in the middle ear without acute infection; causes conductive hearing loss
+mastoiditis | Infection of the mastoid bone behind the ear, a complication of otitis media
+steeple sign | Pencil-like narrowing below the vocal cords on an AP neck X-ray in croup
+thumb sign | Swollen epiglottis on a lateral neck X-ray in epiglottitis
+tripod position | Sitting upright, leaning forward on the hands, to keep the airway open
+pneumatocele / pneumatoceles | Thin-walled air cyst in the lung, typical of staphylococcal pneumonia
+cold agglutinins | Antibodies that clump red cells in the cold; found in mycoplasma infection
+bronchiolitis obliterans | Scarring that blocks the small airways after severe infection (adenovirus): persistent wheeze
+nirsevimab | Long-acting monoclonal antibody against RSV, one injection protects an infant for a season
+palivizumab | Monoclonal antibody against RSV given monthly to high-risk infants in the RSV season
+hyperinflation | Over-expanded lungs from trapped air: flat diaphragm, more than 8 posterior ribs visible
+pulsus paradoxus | Fall in systolic pressure of more than 10 mmHg on inspiration; a sign of severe asthma
+spacer | Plastic chamber attached to an inhaler so the child can breathe the medicine in slowly
+silent chest | No wheeze or air entry because so little air moves: a sign of life-threatening asthma
+meconium ileus | Newborn bowel obstruction by thick, sticky meconium; an early sign of cystic fibrosis
+bronchiectasis | Permanent dilatation of bronchi with chronic infection and foul sputum
+Kartagener syndrome | Primary ciliary dyskinesia with situs inversus (dextrocardia), sinusitis and bronchiectasis
+dornase alfa | Inhaled enzyme that breaks down DNA in sputum to thin mucus in cystic fibrosis
+ivacaftor | CFTR modulator drug that improves the function of the faulty chloride channel
+air trapping | Air that enters the lung but cannot leave, behind a partial obstruction (e.g. foreign body)
+Heimlich manoeuvre / abdominal thrusts | Upward thrusts below the breastbone to expel a choking object (children over 1 year)
+sweat test | Measurement of chloride in sweat; 60 mmol/L or more on two tests confirms cystic fibrosis
+consolidation | Lung tissue filled with exudate instead of air: dull note, bronchial breathing
+bronchial breathing | Harsh breath sound with a gap between inspiration and expiration, heard over consolidation
+vocal resonance | Voice sound heard over the chest; increased over consolidation, decreased over fluid or air
+atopy / atopic | Inherited tendency to make IgE to common allergens: eczema, allergic rhinitis, asthma
+chest indrawing | Lower chest wall moving in when the child breathes in; a sign of pneumonia in IMCI
+grunting | Short expiratory noise against a closed glottis, a sign of severe respiratory distress
+clubbing | Loss of the angle at the nail bed with a bulbous fingertip; chronic lung, heart or liver disease
+haemoptysis | Coughing up blood
+otorrhoea | Discharge from the ear

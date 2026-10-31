@@ -1,0 +1,170 @@
+[
+ {
+  "q": "Common causes of pneumonia in the first year of life include all EXCEPT:",
+  "o": [
+   "Streptococcus pneumoniae",
+   "Respiratory syncytial virus",
+   "Mycoplasma pneumoniae",
+   "Haemophilus influenzae",
+   "Staphylococcus aureus"
+  ],
+  "a": 2,
+  "e": "Mycoplasma affects school-age children (5–15 years).",
+  "k": "school-age child",
+  "s": "bank"
+ },
+ {
+  "q": "The commonest cause of pneumonia in a 6-year-old child is:",
+  "o": [
+   "Respiratory syncytial virus",
+   "Staphylococcus aureus",
+   "Klebsiella pneumoniae",
+   "Streptococcus pneumoniae",
+   "Pseudomonas aeruginosa"
+  ],
+  "a": 3,
+  "e": "Pneumococcus is the commonest bacterial cause at all ages after the newborn period.",
+  "k": "commonest bacterium",
+  "s": "bank"
+ },
+ {
+  "q": "A 9-year-old has fever, cough and crepitations; the X-ray shows consolidation with a pleural effusion. The most likely organism and treatment are:",
+  "o": [
+   "Pneumococcus, treated with IV penicillin or ampicillin",
+   "RSV, treated with ribavirin",
+   "H. influenzae, treated with acyclovir",
+   "Chlamydia, treated with cefuroxime",
+   "Herpes virus, treated with acyclovir"
+  ],
+  "a": 0,
+  "e": "Effusion and lobar consolidation point to bacteria; pneumococcus is the commonest cause of empyema.",
+  "k": "s. pneumoniae (commonest)",
+  "s": "bank"
+ },
+ {
+  "q": "Regarding mycoplasma pneumonia, which is CORRECT?",
+  "o": [
+   "It is commonest in infants",
+   "High fever and toxicity are usual",
+   "The chest X-ray often looks worse than the child",
+   "Lobar consolidation with large effusion is typical",
+   "Penicillins are the drugs of choice"
+  ],
+  "a": 2,
+  "e": "Walking pneumonia: few signs, X-ray worse than the child; treat with a macrolide.",
+  "k": "worse than the child",
+  "s": "bank"
+ },
+ {
+  "q": "A 6-month-old is tachypnoeic if the respiratory rate is at least:",
+  "o": [
+   "60 per minute",
+   "70 per minute",
+   "30 per minute",
+   "50 per minute",
+   "40 per minute"
+  ],
+  "a": 3,
+  "e": "Fast breathing: ≥ 50/min at 2–11 months, ≥ 40/min at 1–5 years, ≥ 60/min under 2 months.",
+  "k": "≥ 50/min at 2–11 months",
+  "s": "bank"
+ },
+ {
+  "q": "In lobar pneumonia, which sign is expected over the affected lobe?",
+  "o": [
+   "Reduced tactile fremitus only",
+   "Increased vocal resonance",
+   "Normal breath sounds",
+   "Hyper-resonant percussion",
+   "Trachea shifted to the opposite side"
+  ],
+  "a": 1,
+  "e": "Consolidation: dull note, bronchial breathing, increased vocal resonance; trachea central.",
+  "k": "increased vocal resonance",
+  "s": "bank"
+ },
+ {
+  "q": "A 2-year-old has cough, RR 46/min and chest indrawing. He drinks well and has no danger signs. According to WHO 2024, the correct management is:",
+  "o": [
+   "Oral amoxicillin for 5 days at home",
+   "Oral amoxicillin for 3 days",
+   "No antibiotic; home care",
+   "Admission for IV ampicillin and gentamicin",
+   "IM ceftriaxone single dose"
+  ],
+  "a": 0,
+  "e": "Chest-indrawing pneumonia without danger signs: oral amoxicillin 40 mg/kg twice daily for 5 days at home.",
+  "k": "5 days at home",
+  "s": "new"
+ },
+ {
+  "q": "A 14-month-old with cough has RR 52/min, cannot drink and is lethargic. The classification and treatment are:",
+  "o": [
+   "Severe pneumonia: oral azithromycin",
+   "Pneumonia: oral cotrimoxazole",
+   "Pneumonia: oral amoxicillin at home",
+   "Severe pneumonia: admit, oxygen, IV ampicillin + gentamicin",
+   "Cough or cold: home care"
+  ],
+  "a": 3,
+  "e": "Any general danger sign makes it severe pneumonia.",
+  "k": "any general danger sign",
+  "s": "new"
+ },
+ {
+  "q": "A child on ampicillin and gentamicin for pneumonia still has fever after 48 hours, with stony dullness at the right base. The best next step is:",
+  "o": [
+   "Bronchoscopy",
+   "Add salbutamol",
+   "Start anti-TB treatment",
+   "Chest X-ray and ultrasound, then pleural tap",
+   "Stop antibiotics"
+  ],
+  "a": 3,
+  "e": "Suspect effusion or empyema; confirm by imaging and tap the fluid.",
+  "k": "repeat the chest x-ray",
+  "s": "new"
+ },
+ {
+  "q": "Which pleural fluid finding defines an empyema?",
+  "o": [
+   "High glucose",
+   "Clear straw-coloured fluid",
+   "Lymphocytes only",
+   "Protein below 30 g/L",
+   "pH below 7.2"
+  ],
+  "a": 4,
+  "e": "Empyema: pus, organisms on Gram stain, pH < 7.2, low glucose, high LDH.",
+  "k": "ph < 7.2",
+  "s": "new"
+ },
+ {
+  "q": "Pneumatoceles on the chest X-ray of an infant with skin boils suggest:",
+  "o": [
+   "Mycoplasma pneumonia",
+   "RSV bronchiolitis",
+   "Aspiration of a foreign body",
+   "Pneumocystis pneumonia",
+   "Staphylococcus aureus pneumonia"
+  ],
+  "a": 4,
+  "e": "Treat with cloxacillin + gentamicin.",
+  "k": "pneumatoceles",
+  "s": "new"
+ },
+ {
+  "q": "A child has three pneumonias in the right lower lobe in one year. The most likely cause is:",
+  "o": [
+   "Cystic fibrosis",
+   "A retained inhaled foreign body",
+   "Gastro-oesophageal reflux",
+   "Sickle cell disease",
+   "Hypogammaglobulinaemia"
+  ],
+  "a": 1,
+  "e": "Same lobe each time → a local cause; different lobes → a general cause.",
+  "k": "same lobe every time",
+  "s": "new"
+ }
+]

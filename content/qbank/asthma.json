@@ -1,0 +1,170 @@
+[
+ {
+  "q": "Which investigation is most helpful in assessing a child with an acute asthma attack?",
+  "o": [
+   "Formal pulmonary function test",
+   "Chest X-ray",
+   "White cell count",
+   "Arterial blood gas in every child",
+   "Oxygen saturation monitoring"
+  ],
+  "a": 4,
+  "e": "Pulse oximetry is the best bedside test of severity.",
+  "k": "pulse oximetry",
+  "s": "bank"
+ },
+ {
+  "q": "The most significant risk factor for childhood asthma is:",
+  "o": [
+   "Family social background",
+   "Parental smoking",
+   "Parental asthma",
+   "Pets in the house",
+   "Stress in the family"
+  ],
+  "a": 2,
+  "e": "Atopy and parental asthma are the strongest risk factors.",
+  "k": "parental asthma",
+  "s": "bank"
+ },
+ {
+  "q": "In acute severe asthma, all are true EXCEPT:",
+  "o": [
+   "Peak flow above 50% of predicted",
+   "Tachypnoea",
+   "Tachycardia",
+   "Use of accessory muscles",
+   "Inability to talk in sentences"
+  ],
+  "a": 0,
+  "e": "Severe: PEF ≤ 50%; life-threatening: < 33%.",
+  "k": "≤ 50%",
+  "s": "bank"
+ },
+ {
+  "q": "Which finding indicates life-threatening asthma?",
+  "o": [
+   "Loud expiratory wheeze",
+   "PEF 70% of predicted",
+   "Talking in full sentences",
+   "Silent chest",
+   "Respiratory rate 24 in a 10-year-old"
+  ],
+  "a": 3,
+  "e": "Little air moves, so the wheeze disappears.",
+  "k": "silent chest",
+  "s": "bank"
+ },
+ {
+  "q": "All are chest X-ray findings in asthma EXCEPT:",
+  "o": [
+   "Cardiomegaly",
+   "Hyperinflation",
+   "Increased lung lucency",
+   "Increased bronchovascular markings",
+   "Flat diaphragms"
+  ],
+  "a": 0,
+  "e": "Hyperinflation is typical; the heart is normal.",
+  "k": "hyperinflation",
+  "s": "bank"
+ },
+ {
+  "q": "In an acute attack, a normal or rising PaCO₂ means:",
+  "o": [
+   "The child is tiring and needs intensive care",
+   "Metabolic alkalosis",
+   "Hyperventilation",
+   "The attack is mild",
+   "The child is improving"
+  ],
+  "a": 0,
+  "e": "Early attacks have low PaCO₂; a normal PaCO₂ is a danger sign.",
+  "k": "rising paco",
+  "s": "bank"
+ },
+ {
+  "q": "A 16-year-old known asthmatic is short of breath. Which feature suggests severe asthma?",
+  "o": [
+   "Pulse 100/min",
+   "Respiratory rate 22/min",
+   "Temperature 39 °C",
+   "Pulsus paradoxus",
+   "Blood pressure 156/80"
+  ],
+  "a": 3,
+  "e": "Pulsus paradoxus > 10–20 mmHg indicates severe obstruction.",
+  "k": "pulsus paradoxus",
+  "s": "bank"
+ },
+ {
+  "q": "According to GINA 2026, a 9-year-old with asthma symptoms twice a week should receive:",
+  "o": [
+   "Salbutamol alone as needed",
+   "An ICS-containing treatment, not salbutamol alone",
+   "LABA alone",
+   "Theophylline alone",
+   "Oral prednisolone daily"
+  ],
+  "a": 1,
+  "e": "SABA-only treatment is no longer advised for children 6–11.",
+  "k": "not be treated with salbutamol alone",
+  "s": "new"
+ },
+ {
+  "q": "Before stepping up treatment in a poorly controlled asthmatic child, the first thing to check is:",
+  "o": [
+   "Inhaler technique and adherence",
+   "Sweat test",
+   "Chest X-ray",
+   "Spirometry after exercise",
+   "Serum IgE"
+  ],
+  "a": 0,
+  "e": "Most poor control is due to technique, adherence or triggers.",
+  "k": "inhaler technique",
+  "s": "new"
+ },
+ {
+  "q": "A 7-year-old in a severe asthma attack has not improved after salbutamol, ipratropium and IV hydrocortisone. The next drug is:",
+  "o": [
+   "IV antibiotics",
+   "Sedation with diazepam",
+   "IV magnesium sulphate",
+   "Inhaled budesonide",
+   "Oral montelukast"
+  ],
+  "a": 2,
+  "e": "MgSO₄ 40 mg/kg (max 2 g) over 20 minutes.",
+  "k": "magnesium sulphate",
+  "s": "new"
+ },
+ {
+  "q": "An asthmatic child on inhaled fluticasone develops white plaques in the mouth. Advice is:",
+  "o": [
+   "Add a LABA",
+   "Start oral antibiotics",
+   "Stop all inhaled steroids",
+   "Use a spacer and rinse the mouth after each dose",
+   "Change to oral prednisolone"
+  ],
+  "a": 3,
+  "e": "Oral thrush from ICS is reduced by a spacer and mouth rinsing.",
+  "k": "rinse the mouth",
+  "s": "new"
+ },
+ {
+  "q": "The best device for a 2-year-old with asthma is:",
+  "o": [
+   "MDI with spacer and face mask",
+   "Dry-powder inhaler",
+   "Peak flow meter",
+   "Turbohaler",
+   "MDI without spacer"
+  ],
+  "a": 0,
+  "e": "0–3 years: MDI + spacer + face mask.",
+  "k": "spacer + face mask",
+  "s": "new"
+ }
+]

@@ -1,0 +1,142 @@
+[
+ {
+  "q": "The best investigation for a child with recurrent wheeze, nasal polyps, malabsorption and abnormal liver tests is:",
+  "o": [
+   "Bronchography",
+   "Sweat chloride test",
+   "Arterial blood gas",
+   "Lung scan",
+   "Pulmonary function test"
+  ],
+  "a": 1,
+  "e": "These point to cystic fibrosis.",
+  "k": "sweat test",
+  "s": "bank"
+ },
+ {
+  "q": "A frequent organism causing pneumonia in a 14-year-old with cystic fibrosis is:",
+  "o": [
+   "Klebsiella pneumoniae",
+   "Neisseria gonorrhoeae",
+   "Streptococcus pneumoniae",
+   "Pseudomonas aeruginosa",
+   "Mycoplasma pneumoniae"
+  ],
+  "a": 3,
+  "e": "S. aureus early, Pseudomonas in older children.",
+  "k": "pseudomonas aeruginosa",
+  "s": "bank"
+ },
+ {
+  "q": "A 3-year-old girl has sudden breathlessness and paroxysmal cough; there is reduced air entry and wheeze over the right lung. The most likely diagnosis is:",
+  "o": [
+   "Aspiration pneumonia",
+   "Acute bronchiolitis",
+   "Acute epiglottitis",
+   "Foreign body in the right bronchus",
+   "Tension pneumothorax"
+  ],
+  "a": 3,
+  "e": "Sudden onset with one-sided signs in a toddler.",
+  "k": "right main bronchus",
+  "s": "bank"
+ },
+ {
+  "q": "Which sweat chloride result confirms cystic fibrosis?",
+  "o": [
+   "60 mmol/L or more on two occasions",
+   "40 mmol/L once",
+   "Normal sodium with high potassium",
+   "Any value above 10 mmol/L",
+   "20 mmol/L once"
+  ],
+  "a": 0,
+  "e": "30–59 is borderline (genetic test).",
+  "k": "≥ 60 mmol/l",
+  "s": "new"
+ },
+ {
+  "q": "The inheritance of cystic fibrosis is:",
+  "o": [
+   "Autosomal recessive",
+   "Multifactorial",
+   "Mitochondrial",
+   "Autosomal dominant",
+   "X-linked recessive"
+  ],
+  "a": 0,
+  "e": "CFTR gene on chromosome 7; 25% risk for each child of carrier parents.",
+  "k": "autosomal recessive",
+  "s": "new"
+ },
+ {
+  "q": "A newborn has bilious vomiting, abdominal distension and no meconium. A sibling has chronic cough and oily stools. The likely diagnosis is:",
+  "o": [
+   "Duodenal atresia",
+   "Hirschsprung disease",
+   "Necrotising enterocolitis",
+   "Malrotation",
+   "Meconium ileus from cystic fibrosis"
+  ],
+  "a": 4,
+  "e": "Meconium ileus occurs in 10–20% of CF newborns.",
+  "k": "meconium ileus",
+  "s": "new"
+ },
+ {
+  "q": "In a toddler with suspected inhaled foreign body and a normal chest X-ray, the next step is:",
+  "o": [
+   "CT abdomen",
+   "Rigid bronchoscopy",
+   "Reassure and discharge",
+   "Nebulised salbutamol",
+   "Repeat X-ray in a month"
+  ],
+  "a": 1,
+  "e": "A normal X-ray does not exclude a foreign body.",
+  "k": "rigid bronchoscopy",
+  "s": "new"
+ },
+ {
+  "q": "A choking 8-month-old cannot cough or cry but is conscious. The correct first aid is:",
+  "o": [
+   "5 abdominal thrusts",
+   "Turn on the back and wait",
+   "Blind finger sweep",
+   "Start rescue breaths at once",
+   "5 back blows followed by 5 chest thrusts"
+  ],
+  "a": 4,
+  "e": "Abdominal thrusts are not used under 1 year.",
+  "k": "5 back blows",
+  "s": "new"
+ },
+ {
+  "q": "A child with wet cough from birth, chronic otitis media and dextrocardia most likely has:",
+  "o": [
+   "Kartagener syndrome",
+   "Cystic fibrosis",
+   "Tetralogy of Fallot",
+   "Asthma",
+   "Immunodeficiency"
+  ],
+  "a": 0,
+  "e": "Primary ciliary dyskinesia with situs inversus.",
+  "k": "kartagener syndrome",
+  "s": "new"
+ },
+ {
+  "q": "The best test for bronchiectasis is:",
+  "o": [
+   "Spirometry",
+   "High-resolution CT chest",
+   "Bronchography",
+   "Plain chest X-ray",
+   "Sputum culture"
+  ],
+  "a": 1,
+  "e": "HRCT is most accurate.",
+  "k": "high-resolution ct",
+  "s": "new"
+ }
+]

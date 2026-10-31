@@ -1,0 +1,128 @@
+[
+ {
+  "q": "The most common cause of acute bronchiolitis is:",
+  "o": [
+   "Adenovirus",
+   "Mycoplasma pneumoniae",
+   "Parainfluenza virus",
+   "Streptococcus pneumoniae",
+   "Respiratory syncytial virus"
+  ],
+  "a": 4,
+  "e": "RSV causes most cases; parainfluenza causes croup.",
+  "k": "respiratory syncytial virus",
+  "s": "bank"
+ },
+ {
+  "q": "Regarding viral bronchiolitis, which statement is TRUE?",
+  "o": [
+   "Inspiratory wheezes are characteristic",
+   "A hyperinflated chest is a common feature",
+   "Asthma is not a differential diagnosis",
+   "It never recurs after the first attack",
+   "Parainfluenza virus is the commonest cause"
+  ],
+  "a": 1,
+  "e": "Air trapping causes hyperinflation; wheeze is expiratory.",
+  "k": "hyperinflated chest",
+  "s": "bank"
+ },
+ {
+  "q": "A 6-month-old in winter has fever, cough, wheeze and fast breathing; the X-ray shows hyperinflation and perihilar streaky shadows. The most likely organism is:",
+  "o": [
+   "Streptococcus pneumoniae",
+   "Mycoplasma pneumoniae",
+   "Chlamydia pneumoniae",
+   "Respiratory syncytial virus",
+   "Haemophilus influenzae"
+  ],
+  "a": 3,
+  "e": "Viral lower respiratory infection in infancy: RSV.",
+  "k": "rsv",
+  "s": "bank"
+ },
+ {
+  "q": "All are true about bronchiolitis EXCEPT:",
+  "o": [
+   "Oxygen is given when saturation is low",
+   "It is mostly caused by adenovirus",
+   "Treatment is mainly supportive",
+   "Apnoea may be the first sign in young infants",
+   "It peaks at 3–6 months of age"
+  ],
+  "a": 1,
+  "e": "RSV is the commonest cause; adenovirus causes severe cases and bronchiolitis obliterans.",
+  "k": "bronchiolitis obliterans",
+  "s": "bank"
+ },
+ {
+  "q": "A 4-month-old with bronchiolitis has SpO₂ 87% in air and takes half his usual feeds. The best management is:",
+  "o": [
+   "Chest physiotherapy",
+   "Admit, oxygen by nasal cannula and nasogastric feeds",
+   "IV ceftriaxone",
+   "Nebulised salbutamol and discharge",
+   "Oral prednisolone"
+  ],
+  "a": 1,
+  "e": "Supportive care; salbutamol, steroids and antibiotics are not recommended.",
+  "k": "oxygen by nasal cannula",
+  "s": "new"
+ },
+ {
+  "q": "Which treatment is recommended in bronchiolitis?",
+  "o": [
+   "Montelukast",
+   "Gentle nasal suction",
+   "Oral dexamethasone",
+   "Nebulised hypertonic saline",
+   "Nebulised salbutamol"
+  ],
+  "a": 1,
+  "e": "NICE: do not use salbutamol, steroids, montelukast or hypertonic saline.",
+  "k": "gentle nasal suction",
+  "s": "new"
+ },
+ {
+  "q": "Wheezing is NOT a feature of:",
+  "o": [
+   "Bronchopulmonary dysplasia",
+   "Aspiration pneumonia",
+   "Bronchiolitis",
+   "Asthma",
+   "Allergic (spasmodic) croup"
+  ],
+  "a": 4,
+  "e": "Croup causes inspiratory stridor from the larynx, not wheeze.",
+  "k": "which causes croup",
+  "s": "bank"
+ },
+ {
+  "q": "WHO 2025 recommends which of the following to protect infants from RSV?",
+  "o": [
+   "BCG revaccination",
+   "Influenza vaccine at birth",
+   "Oral ribavirin in winter",
+   "Palivizumab for every newborn",
+   "Maternal RSV vaccine in the third trimester or nirsevimab for the infant"
+  ],
+  "a": 4,
+  "e": "One of the two products, chosen by each country.",
+  "k": "maternal rsv vaccine",
+  "s": "new"
+ },
+ {
+  "q": "A 10-month-old with recurrent wheeze has a murmur, a liver 4 cm below the costal margin and sweats on feeding. The cause of the wheeze is most likely:",
+  "o": [
+   "Cystic fibrosis",
+   "Heart failure",
+   "Asthma",
+   "Foreign body",
+   "Bronchiolitis obliterans"
+  ],
+  "a": 1,
+  "e": "Cardiac asthma: wheeze from pulmonary congestion.",
+  "k": "cardiac asthma",
+  "s": "new"
+ }
+]

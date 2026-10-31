@@ -388,3 +388,8 @@ Collage D (5.3 skin and gut signs): TL dermatitis herpetiformis (elbows) · TR a
 Collage E (5.4, 5.6, 5.7 signs): TL visible gastric peristalsis in pyloric stenosis · TR scleral jaundice · BL palmar erythema · BR spider naevi on the chest
 Received Nov 2026 and placed (incl. replacements: double bubble, KF ring, Crohn cobblestone + granuloma). Not used: perianal Crohn, Crohn CT and resection specimen.
 (Full prompts as sent in the chat; each panel is cut out and placed in its topic.)
+
+### Chapter 6 as collages (owner: one prompt = one 2 × 2 collage of 4 pictures)
+Collage A (6.1 clinical): TL exudative tonsillitis · TR red bulging eardrum (otoscope view) · BL peritonsillar abscess with uvula pushed aside · BR child in tripod position, drooling (epiglottitis)
+Collage B (6.1–6.2 imaging): TL steeple sign (AP neck X-ray) · TR thumb sign (lateral neck X-ray) · BL right lower-lobe consolidation · BR large left pleural effusion with meniscus
+Collage C (6.3–6.5): TL infant with subcostal indrawing on nasal cannula oxygen (bronchiolitis) · TR toddler using an inhaler with spacer and face mask · BL finger clubbing · BR expiratory chest X-ray with one hyperlucent lung (inhaled foreign body)

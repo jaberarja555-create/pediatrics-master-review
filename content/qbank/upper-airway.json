@@ -1,0 +1,184 @@
+[
+ {
+  "q": "Regarding infectious croup, which statement is TRUE?",
+  "o": [
+   "It is a common indication for tracheostomy",
+   "Haemophilus influenzae type b is the usual cause",
+   "Trismus is a recognised feature",
+   "Laryngoscopy is necessary for diagnosis",
+   "Corticosteroids are effective in relieving symptoms"
+  ],
+  "a": 4,
+  "e": "Croup is viral (parainfluenza); dexamethasone helps in all grades. The diagnosis is clinical.",
+  "k": "corticosteroids are effective in all grades",
+  "s": "bank"
+ },
+ {
+  "q": "All of the following are true of croup EXCEPT:",
+  "o": [
+   "It is worse at night",
+   "It is caused by a bacterial agent",
+   "Parainfluenza virus is the commonest cause",
+   "Most cases are self-limiting",
+   "Stridor is a prominent sign"
+  ],
+  "a": 1,
+  "e": "Croup is viral; antibiotics are not part of treatment.",
+  "k": "parainfluenza virus",
+  "s": "bank"
+ },
+ {
+  "q": "Which step is NOT indicated in the management of croup?",
+  "o": [
+   "Oral dexamethasone",
+   "Antibiotics",
+   "Nebulised adrenaline for stridor at rest",
+   "Keeping the child calm",
+   "Oxygen if saturation is low"
+  ],
+  "a": 1,
+  "e": "Croup is viral; antibiotics are not useful.",
+  "k": "not useful",
+  "s": "bank"
+ },
+ {
+  "q": "A 4-year-old unvaccinated child has sudden high fever, drooling, a muffled voice and soft stridor. He sits leaning forward. What is the FIRST step?",
+  "o": [
+   "Examine the throat with a tongue depressor",
+   "Nebulised salbutamol",
+   "Insert an IV cannula and take blood cultures",
+   "Lateral neck X-ray",
+   "Secure the airway by intubation in theatre"
+  ],
+  "a": 4,
+  "e": "Epiglottitis: do not upset the child; secure the airway first, then IV ceftriaxone.",
+  "k": "secure the airway first",
+  "s": "bank"
+ },
+ {
+  "q": "All of the following favour epiglottitis rather than viral croup EXCEPT:",
+  "o": [
+   "Drooling of saliva",
+   "Harsh barking cough",
+   "High fever and toxic look",
+   "Sudden onset without a preceding cold",
+   "Muffled voice"
+  ],
+  "a": 1,
+  "e": "A barking cough is typical of croup; epiglottitis has little or no cough.",
+  "k": "barking",
+  "s": "bank"
+ },
+ {
+  "q": "A 6-week-old has had inspiratory noisy breathing since shortly after birth, worse with crying and with a cold. He feeds and grows well. The most likely diagnosis is:",
+  "o": [
+   "Cystic fibrosis",
+   "Bronchopulmonary dysplasia",
+   "Bronchial asthma",
+   "Laryngomalacia",
+   "Tuberculosis"
+  ],
+  "a": 3,
+  "e": "Laryngomalacia is the commonest cause of chronic stridor in infants and resolves by 12–24 months.",
+  "k": "commonest cause of chronic stridor",
+  "s": "bank"
+ },
+ {
+  "q": "A 2-year-old wakes at midnight with a barking cough and stridor, no fever; it settles quickly and has happened before. The diagnosis is:",
+  "o": [
+   "Epiglottitis",
+   "Diphtheria",
+   "Laryngomalacia",
+   "Spasmodic croup",
+   "Bacterial tracheitis"
+  ],
+  "a": 3,
+  "e": "Spasmodic croup: sudden night attacks, no fever, recurrent, atopic child.",
+  "k": "spasmodic croup",
+  "s": "bank"
+ },
+ {
+  "q": "Which organism does NOT commonly cause acute otitis media?",
+  "o": [
+   "Pseudomonas aeruginosa",
+   "Respiratory syncytial virus",
+   "Haemophilus influenzae",
+   "Streptococcus pneumoniae",
+   "Moraxella catarrhalis"
+  ],
+  "a": 0,
+  "e": "AOM is caused by pneumococcus, non-typeable H. influenzae, Moraxella and viruses; Pseudomonas is seen in chronic or neonatal infection.",
+  "k": "streptococcus pneumoniae",
+  "s": "bank"
+ },
+ {
+  "q": "An 8-year-old has fever, sore throat, tonsillar exudate and tender anterior neck nodes, no cough. What is the main aim of antibiotic treatment?",
+  "o": [
+   "To shorten the illness by a week",
+   "To prevent acute rheumatic fever",
+   "To prevent post-streptococcal glomerulonephritis",
+   "To prevent glandular fever",
+   "To prevent otitis media with effusion"
+  ],
+  "a": 1,
+  "e": "Penicillin given within 9 days prevents rheumatic fever; it does not prevent glomerulonephritis.",
+  "k": "prevent rheumatic fever",
+  "s": "new"
+ },
+ {
+  "q": "A 15-year-old with exudative tonsillitis develops a widespread rash after amoxicillin. He has splenomegaly. The diagnosis is:",
+  "o": [
+   "Kawasaki disease",
+   "Scarlet fever",
+   "Diphtheria",
+   "Infectious mononucleosis",
+   "Penicillin anaphylaxis"
+  ],
+  "a": 3,
+  "e": "EBV infection: exudative tonsillitis, nodes, splenomegaly; amoxicillin causes a rash.",
+  "k": "infectious mononucleosis",
+  "s": "new"
+ },
+ {
+  "q": "According to IMCI, a child with pus draining from the ear for 3 weeks should receive:",
+  "o": [
+   "Oral steroids",
+   "Oral amoxicillin for 5 days only",
+   "Ear wicking and topical quinolone drops",
+   "No treatment; it settles",
+   "Urgent referral for mastoiditis"
+  ],
+  "a": 2,
+  "e": "Chronic ear infection (14 days or more): dry by wicking and topical quinolone drops.",
+  "k": "topical quinolone ear drops",
+  "s": "new"
+ },
+ {
+  "q": "What is the commonest cause of conductive hearing loss in children?",
+  "o": [
+   "Congenital rubella",
+   "Perforated drum after trauma",
+   "Wax impaction",
+   "Meningitis",
+   "Otitis media with effusion"
+  ],
+  "a": 4,
+  "e": "Glue ear is the commonest cause; it may delay speech.",
+  "k": "commonest cause of conductive hearing loss",
+  "s": "new"
+ },
+ {
+  "q": "Which X-ray sign belongs to epiglottitis?",
+  "o": [
+   "Air bronchogram",
+   "Double bubble",
+   "Steeple sign on the AP view",
+   "Thumb sign on the lateral neck view",
+   "Sail sign"
+  ],
+  "a": 3,
+  "e": "Epiglottitis: thumb sign (lateral); croup: steeple sign (AP).",
+  "k": "thumb sign",
+  "s": "new"
+ }
+]

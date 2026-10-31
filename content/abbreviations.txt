@@ -17,6 +17,7 @@ ALP | Alkaline phosphatase
 ALT / AST | Alanine / aspartate aminotransferase
 AMPLE | Allergies, Medicines, Past history, Last meal, Events
 ANA | Antinuclear antibody
+AOM | Acute otitis media
 AP | Anteroposterior (X-ray view)
 APTT | Activated partial thromboplastin time
 ARDS | Acute respiratory distress syndrome
@@ -41,6 +42,7 @@ CD4 | CD4 T-lymphocyte count
 CDC | Centers for Disease Control and Prevention
 CDH | Congenital diaphragmatic hernia
 CF | Cystic fibrosis
+CFTR | Cystic fibrosis transmembrane conductance regulator (chloride channel)
 CHD | Congenital heart disease
 CK | Creatine kinase
 CKD | Chronic kidney disease
@@ -55,6 +57,7 @@ COX-2 | Cyclo-oxygenase 2
 CP | Cerebral palsy
 CPAP | Continuous positive airway pressure
 CPP | Cerebral perfusion pressure
+CPR | Cardiopulmonary resuscitation
 CRP | C-reactive protein
 CSF | Cerebrospinal fluid
 CT / CTA | Computed tomography / CT angiography
@@ -71,6 +74,7 @@ DJ | Duodenojejunal (flexure)
 DKA | Diabetic ketoacidosis
 DM | Diabetes mellitus
 DNA | Deoxyribonucleic acid
+DNase | Deoxyribonuclease (dornase alfa), thins mucus in cystic fibrosis
 DNS | Dextrose 5% in normal saline
 DOT | Directly observed treatment
 DTG | Dolutegravir
@@ -92,19 +96,23 @@ ESR | Erythrocyte sedimentation rate
 ETAT | Emergency Triage Assessment and Treatment (WHO)
 ETEC | Enterotoxigenic Escherichia coli
 FAST | Focused assessment with sonography for trauma
+FEV1 / FEV₁ | Forced expiratory volume in the first second
 FFP | Fresh frozen plasma
 FNA | Fine-needle aspiration
 FTT | Failure to thrive
 FUO | Fever of unknown origin
+FVC | Forced vital capacity
 G6PD | Glucose-6-phosphate dehydrogenase
 GA | Gestational age
 GABA | Gamma-aminobutyric acid
+GAS | Group A (beta-haemolytic) streptococcus
 GBS | Group B streptococcus
 GCS | Glasgow Coma Scale
 GE | Gastroenteritis
 GGT | Gamma-glutamyl transferase
 GH | Growth hormone
 GI | Gastrointestinal
+GINA | Global Initiative for Asthma
 GOR | Gastro-oesophageal reflux (without complications)
 GORD | Gastro-oesophageal reflux disease
 HAV | Hepatitis A virus
@@ -139,9 +147,11 @@ HTIG | Human tetanus immunoglobulin
 HUS | Haemolytic uraemic syndrome
 IBD | Inflammatory bowel disease
 ICP | Intracranial pressure
+ICS | Inhaled corticosteroid
 ICU | Intensive care unit
 IDM / IDMs | Infant of a diabetic mother
 IgA / IgG / IgM | Immunoglobulin A / G / M
+IgE | Immunoglobulin E (allergy antibody)
 IGF | Insulin-like growth factor
 IGF-1 | Insulin-like growth factor 1
 IgG4 | Immunoglobulin G4
@@ -155,6 +165,7 @@ INR | International normalised ratio
 IO | Intraosseous
 IPV | Inactivated (injected) polio vaccine
 IQ | Intelligence quotient
+IRT | Immunoreactive trypsinogen (newborn screening for cystic fibrosis)
 ITP | Immune thrombocytopenic purpura
 IU | International units
 IUGR | Intrauterine growth restriction
@@ -168,6 +179,7 @@ KCl | Potassium chloride
 KF | Kayser–Fleischer (copper ring in the cornea, Wilson disease)
 KMC | Kangaroo mother care
 LA | Local anaesthesia
+LABA | Long-acting beta-2 agonist
 LBW | Low birth weight (below 2.5 kg)
 LD | Leishman–Donovan (bodies)
 LDH | Lactate dehydrogenase
@@ -182,10 +194,13 @@ LOC | Loss of consciousness
 LP | Lumbar puncture
 MAM | Moderate acute malnutrition
 MAP | Mean arterial pressure
+MART | Maintenance and reliever therapy (one ICS–formoterol inhaler)
 MAS | Meconium aspiration syndrome
 MCQ | Multiple-choice question
 MCV | Mean corpuscular volume
+MDI | Metered-dose inhaler
 MDT | Multidisciplinary team
+MgSO4 / MgSO₄ | Magnesium sulphate
 MI | Myocardial infarction
 MMR | Measles, mumps and rubella vaccine
 MOF | Multiple organ failure
@@ -204,6 +219,7 @@ NICU | Neonatal intensive care unit
 NPA | Nasopharyngeal aspirate
 NPO | Nil by mouth (nil per os)
 NS | Normal saline (0.9% sodium chloride)
+NSAID | Non-steroidal anti-inflammatory drug
 NSAIDs | Non-steroidal anti-inflammatory drugs
 NVP | Nevirapine
 OFC | Occipitofrontal (head) circumference
@@ -213,6 +229,7 @@ OPV | Oral polio vaccine
 ORS | Oral rehydration solution
 OSCE | Objective structured clinical examination
 OTP | Outpatient therapeutic programme (for uncomplicated SAM)
+PaCO2 / PaCO₂ | Arterial carbon dioxide tension
 PAIR | Puncture, aspiration, injection, re-aspiration (hydatid cyst)
 PaO2 | Arterial oxygen tension
 PCP | Pneumocystis pneumonia
@@ -221,10 +238,12 @@ PCV | Pneumococcal conjugate vaccine (in haematology: packed cell volume)
 PDA | Patent ductus arteriosus
 PE | Pulmonary embolism
 PEEP | Positive end-expiratory pressure
+PEF | Peak expiratory flow
 PEG | Polyethylene glycol (macrogol), an osmotic laxative
 PEM | Protein–energy malnutrition
 PEP | Post-exposure prophylaxis
 PHT | Portal hypertension
+PICU | Paediatric intensive care unit
 PKDL | Post-kala-azar dermal leishmaniasis
 PKU | Phenylketonuria
 PMTCT | Prevention of mother-to-child transmission (of HIV)
@@ -255,10 +274,12 @@ RL | Ringer's lactate
 RNA | Ribonucleic acid
 ROP | Retinopathy of prematurity
 RR | Respiratory rate
+RSV | Respiratory syncytial virus
 RT | Radiotherapy
 RTA | Renal tubular acidosis
 RUSF | Ready-to-use supplementary food
 RUTF | Ready-to-use therapeutic food
+SABA | Short-acting beta-2 agonist (salbutamol)
 SAM | Severe acute malnutrition
 SBP | Spontaneous bacterial peritonitis
 SC | Subcutaneous
@@ -311,6 +332,7 @@ ULN | Upper limit of normal
 US | Ultrasound
 UTI | Urinary tract infection
 UV | Ultraviolet
+VATS | Video-assisted thoracoscopic surgery
 VDDR | Vitamin D-dependent rickets
 VEGF | Vascular endothelial growth factor
 VF | Ventricular fibrillation
