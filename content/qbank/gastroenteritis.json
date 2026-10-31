@@ -1,0 +1,198 @@
+[
+ {
+  "q": "Regarding acute gastroenteritis in children, all are true EXCEPT:",
+  "o": [
+   "Isonatraemic dehydration is the commonest type",
+   "Secondary lactose intolerance may occur",
+   "It is treated with ORS",
+   "Breastfeeding should not stop",
+   "The commonest cause is adenovirus"
+  ],
+  "a": 4,
+  "e": "The commonest cause is rotavirus; adenovirus causes a minority.",
+  "k": "rotavirus",
+  "s": "bank"
+ },
+ {
+  "q": "Each statement about rotavirus gastroenteritis is correct EXCEPT:",
+  "o": [
+   "It often starts with vomiting",
+   "It mainly affects children under 2 years",
+   "It may have low fever",
+   "It is self-limited",
+   "It is often associated with grossly bloody diarrhoea"
+  ],
+  "a": 4,
+  "e": "Rotavirus causes watery, not bloody, diarrhoea.",
+  "k": "not bloody",
+  "s": "bank"
+ },
+ {
+  "q": "A 2-year-old with fever has a generalised seizure and foul-smelling blood-tinged diarrhoea. The stool culture will most likely grow:",
+  "o": [
+   "Shigella",
+   "Campylobacter",
+   "Salmonella",
+   "Entamoeba histolytica",
+   "E. coli"
+  ],
+  "a": 0,
+  "e": "Shigella causes dysentery with high fever and may cause convulsions.",
+  "k": "convulsions",
+  "s": "bank"
+ },
+ {
+  "q": "Signs of some (moderate) dehydration in an infant include all EXCEPT:",
+  "o": [
+   "Shock",
+   "Dry mucous membranes",
+   "Decreased tears",
+   "Restlessness",
+   "Depressed anterior fontanelle"
+  ],
+  "a": 0,
+  "e": "Shock is a sign of severe dehydration.",
+  "k": "shock",
+  "s": "bank"
+ },
+ {
+  "q": "A 1-year-old has a rapid pulse, slightly low blood pressure, cool extremities, oliguria and dry mouth. He is about:",
+  "o": [
+   "15% dehydrated",
+   "3% dehydrated",
+   "5% dehydrated",
+   "10% dehydrated",
+   "20% dehydrated"
+  ],
+  "a": 3,
+  "e": "Signs of poor perfusion with low BP fit about 10% dehydration (severe end of moderate) in an infant.",
+  "k": "mild 5%, moderate 10%",
+  "s": "bank"
+ },
+ {
+  "q": "A 20 kg child is 6% dehydrated. The fluid deficit is:",
+  "o": [
+   "1800 ml",
+   "2000 ml",
+   "1600 ml",
+   "1400 ml",
+   "1200 ml"
+  ],
+  "a": 4,
+  "e": "Deficit = % × weight × 10 = 6 × 20 × 10 = 1200 ml.",
+  "k": "deficit (ml)",
+  "s": "bank"
+ },
+ {
+  "q": "A 9-month-old weighing 7.5 kg is lethargic, unable to drink, with sunken eyes and a very slow skin pinch. The correct first fluid plan is:",
+  "o": [
+   "ORS 75 ml/kg over 4 hours",
+   "Ringer lactate 750 ml over 30 minutes",
+   "Ringer lactate 225 ml in 1 hour, then 525 ml in 5 hours",
+   "0.18% saline with glucose at maintenance",
+   "ORS 50–100 ml after each stool"
+  ],
+  "a": 2,
+  "e": "Severe dehydration under 12 months: Plan C, 30 ml/kg in 1 hour then 70 ml/kg in 5 hours.",
+  "k": "plan c (severe dehydration)",
+  "s": "book"
+ },
+ {
+  "q": "A 3-year-old with diarrhoea is irritable, drinks eagerly and his skin pinch goes back slowly. He weighs 14 kg. The best treatment is:",
+  "o": [
+   "ORS 100–200 ml after each stool at home",
+   "Nil by mouth and IV fluids",
+   "ORS 1050 ml over 4 hours in the facility",
+   "IV Ringer lactate 1400 ml",
+   "Ciprofloxacin and ORS"
+  ],
+  "a": 2,
+  "e": "Some dehydration = Plan B: ORS 75 ml/kg over 4 hours = 1050 ml.",
+  "k": "plan b (some dehydration)",
+  "s": "book"
+ },
+ {
+  "q": "The zinc dose for a 9-month-old with acute diarrhoea (IMCI) is:",
+  "o": [
+   "20 mg daily for 3 days",
+   "40 mg single dose",
+   "20 mg daily for 10–14 days",
+   "5 mg weekly",
+   "10 mg daily for 5 days"
+  ],
+  "a": 2,
+  "e": "6 months or more: 20 mg daily for 10–14 days.",
+  "k": "10–14 days",
+  "s": "book"
+ },
+ {
+  "q": "Low-osmolarity WHO ORS has a total osmolarity of:",
+  "o": [
+   "200 mOsm/L",
+   "245 mOsm/L",
+   "350 mOsm/L",
+   "290 mOsm/L",
+   "311 mOsm/L"
+  ],
+  "a": 1,
+  "e": "Low-osmolarity ORS: Na 75, glucose 75, total 245 mOsm/L.",
+  "k": "245 mosm/l",
+  "s": "book"
+ },
+ {
+  "q": "The drug of choice for dysentery in a 2-year-old is:",
+  "o": [
+   "Cotrimoxazole for 5 days",
+   "Amoxicillin for 5 days",
+   "Metronidazole for 7 days",
+   "Loperamide",
+   "Ciprofloxacin for 3 days"
+  ],
+  "a": 4,
+  "e": "WHO: ciprofloxacin 15 mg/kg twice daily for 3 days.",
+  "k": "ciprofloxacin 15 mg/kg",
+  "s": "book"
+ },
+ {
+  "q": "A complication of viral gastroenteritis is all of the following EXCEPT:",
+  "o": [
+   "Secondary lactose intolerance",
+   "Hyponatraemic dehydration",
+   "Hypertension",
+   "Acute kidney injury",
+   "Metabolic acidosis"
+  ],
+  "a": 2,
+  "e": "Dehydration lowers, not raises, blood pressure.",
+  "k": "pre-renal acute kidney injury",
+  "s": "bank"
+ },
+ {
+  "q": "A child develops pallor, low platelets and oliguria one week after bloody diarrhoea. The most likely diagnosis is:",
+  "o": [
+   "Immune thrombocytopenia",
+   "Severe dehydration",
+   "Haemolytic uraemic syndrome",
+   "Intussusception",
+   "Acute post-streptococcal glomerulonephritis"
+  ],
+  "a": 2,
+  "e": "HUS: haemolytic anaemia, thrombocytopenia and AKI after E. coli O157 or Shigella.",
+  "k": "haemolytic uraemic syndrome",
+  "s": "book"
+ },
+ {
+  "q": "In a child with acute watery diarrhoea and fever but no blood in the stool, the correct statement is:",
+  "o": [
+   "Metronidazole is given",
+   "Antibiotics are not given",
+   "Loperamide reduces stool losses",
+   "Ciprofloxacin is given for 3 days",
+   "Probiotics are routinely needed"
+  ],
+  "a": 1,
+  "e": "WHO 2024: no antibiotics for acute watery diarrhoea.",
+  "k": "not for watery diarrhoea",
+  "s": "book"
+ }
+]

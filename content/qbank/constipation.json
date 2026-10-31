@@ -1,0 +1,114 @@
+[
+ {
+  "q": "All are recognised causes of constipation in childhood EXCEPT:",
+  "o": [
+   "Spina bifida",
+   "Hypercalcaemia",
+   "Hirschsprung disease",
+   "Hypothyroidism",
+   "Gastro-oesophageal reflux"
+  ],
+  "a": 4,
+  "e": "GOR does not cause constipation.",
+  "k": "not a cause of constipation",
+  "s": "bank"
+ },
+ {
+  "q": "Causes of constipation in childhood include all EXCEPT:",
+  "o": [
+   "Hirschsprung disease",
+   "Hypothyroidism",
+   "Spina bifida",
+   "Hypokalaemia",
+   "Hypocalcaemia"
+  ],
+  "a": 4,
+  "e": "Hypercalcaemia (not hypocalcaemia) causes constipation.",
+  "k": "hypercalcaemia",
+  "s": "bank"
+ },
+ {
+  "q": "The gold-standard test for Hirschsprung disease is:",
+  "o": [
+   "Rectal suction biopsy",
+   "Barium enema",
+   "Colonoscopy",
+   "Anorectal manometry",
+   "Plain abdominal X-ray"
+  ],
+  "a": 0,
+  "e": "Biopsy shows absent ganglion cells.",
+  "k": "rectal suction biopsy",
+  "s": "book"
+ },
+ {
+  "q": "Which favours Hirschsprung disease over functional constipation?",
+  "o": [
+   "Normal growth",
+   "Empty rectum with distension since birth",
+   "Withholding behaviour",
+   "Onset after toilet training",
+   "Soiling"
+  ],
+  "a": 1,
+  "e": "Hirschsprung: from birth, empty rectum, poor growth, rare soiling.",
+  "k": "empty",
+  "s": "book"
+ },
+ {
+  "q": "A child with Hirschsprung disease develops fever, distension and explosive foul diarrhoea. The diagnosis is:",
+  "o": [
+   "Enterocolitis",
+   "Intussusception",
+   "Volvulus",
+   "Appendicitis",
+   "Gastroenteritis"
+  ],
+  "a": 0,
+  "e": "Hirschsprung enterocolitis is life-threatening.",
+  "k": "enterocolitis",
+  "s": "book"
+ },
+ {
+  "q": "The drug of choice for functional constipation in children is:",
+  "o": [
+   "Senna",
+   "Loperamide",
+   "Polyethylene glycol",
+   "Liquid paraffin",
+   "Bisacodyl suppositories"
+  ],
+  "a": 2,
+  "e": "PEG for disimpaction and maintenance.",
+  "k": "peg",
+  "s": "book"
+ },
+ {
+  "q": "A 6-year-old soils his underwear daily; the rectum is full of hard stool. The cause is:",
+  "o": [
+   "Overflow from functional constipation",
+   "Hirschsprung disease",
+   "Lactose intolerance",
+   "Behavioural laziness",
+   "Spinal cord lesion"
+  ],
+  "a": 0,
+  "e": "Encopresis is usually overflow around a faecal mass.",
+  "k": "overflow",
+  "s": "book"
+ },
+ {
+  "q": "Which newborn finding most strongly suggests Hirschsprung disease?",
+  "o": [
+   "Blood-streaked stool",
+   "Bilious vomiting on day 1 with double bubble",
+   "Projectile vomiting at 4 weeks",
+   "Jaundice on day 3",
+   "Meconium passed after 48 hours"
+  ],
+  "a": 4,
+  "e": "90% of affected babies pass meconium late.",
+  "k": "delayed meconium beyond 48 hours",
+  "s": "book"
+ }
+]

@@ -1,0 +1,128 @@
+[
+ {
+  "q": "A 6-week-old boy has recurrent vomiting and dehydration. All are consistent with pyloric stenosis EXCEPT:",
+  "o": [
+   "Non-bilious vomiting after feeds",
+   "Metabolic acidosis with hyperkalaemia",
+   "Increasing constipation",
+   "Visible epigastric peristalsis",
+   "Good appetite"
+  ],
+  "a": 1,
+  "e": "Pyloric stenosis causes hypochloraemic hypokalaemic metabolic alkalosis.",
+  "k": "metabolic alkalosis with low potassium",
+  "s": "bank"
+ },
+ {
+  "q": "A newborn develops bilious vomiting, appears ill with absent bowel sounds; X-ray shows some distal air. The most likely cause is:",
+  "o": [
+   "Pyloric stenosis",
+   "Choledochal cyst",
+   "Antral web",
+   "Volvulus",
+   "Tracheo-oesophageal fistula"
+  ],
+  "a": 3,
+  "e": "Bilious vomiting in an ill newborn = malrotation with volvulus until proven otherwise.",
+  "k": "malrotation with volvulus",
+  "s": "bank"
+ },
+ {
+  "q": "The investigation of choice for suspected malrotation in a 7-day-old with bilious vomiting is:",
+  "o": [
+   "CT abdomen",
+   "Abdominal ultrasound for pyloric thickness",
+   "Barium enema",
+   "Upper GI contrast study",
+   "Chest X-ray"
+  ],
+  "a": 3,
+  "e": "Upper GI contrast shows the DJ flexure position and corkscrew duodenum.",
+  "k": "upper gi contrast study",
+  "s": "book"
+ },
+ {
+  "q": "The investigation of choice for pyloric stenosis is:",
+  "o": [
+   "Upper GI endoscopy",
+   "Abdominal ultrasound",
+   "Barium meal",
+   "CT scan",
+   "Plain abdominal X-ray"
+  ],
+  "a": 1,
+  "e": "Ultrasound: muscle ≥ 3 mm, canal ≥ 15 mm.",
+  "k": "ultrasound",
+  "s": "book"
+ },
+ {
+  "q": "The first step in a dehydrated 5-week-old with pyloric stenosis and Cl 84 mmol/L is:",
+  "o": [
+   "Oral feeds with thickener",
+   "Erythromycin",
+   "IV sodium bicarbonate",
+   "Immediate pyloromyotomy",
+   "IV 0.9% saline with glucose and potassium after urine"
+  ],
+  "a": 4,
+  "e": "Correct dehydration and alkalosis before surgery; it is not an emergency operation.",
+  "k": "not an emergency operation",
+  "s": "book"
+ },
+ {
+  "q": "A thriving 3-month-old spits up after most feeds and is happy. The best management is:",
+  "o": [
+   "Omeprazole",
+   "Fundoplication",
+   "Domperidone",
+   "Barium meal",
+   "Reassurance"
+  ],
+  "a": 4,
+  "e": "Physiological reflux in a happy spitter needs only reassurance.",
+  "k": "reassure",
+  "s": "book"
+ },
+ {
+  "q": "The best test to confirm gastro-oesophageal reflux is:",
+  "o": [
+   "Barium swallow",
+   "Chest X-ray",
+   "24-hour pH-impedance study",
+   "Stool pH",
+   "Abdominal ultrasound"
+  ],
+  "a": 2,
+  "e": "pH-impedance monitoring is the best test; barium is to exclude anatomy.",
+  "k": "ph-impedance",
+  "s": "book"
+ },
+ {
+  "q": "Double bubble on X-ray in a newborn with Down syndrome indicates:",
+  "o": [
+   "Meconium ileus",
+   "Duodenal atresia",
+   "Hirschsprung disease",
+   "Pyloric stenosis",
+   "Oesophageal atresia"
+  ],
+  "a": 1,
+  "e": "Double bubble = duodenal atresia, linked with Down syndrome.",
+  "k": "double bubble",
+  "s": "book"
+ },
+ {
+  "q": "Which antibiotic given in the first 2 weeks raises the risk of pyloric stenosis?",
+  "o": [
+   "Ampicillin",
+   "Gentamicin",
+   "Erythromycin",
+   "Ceftriaxone",
+   "Metronidazole"
+  ],
+  "a": 2,
+  "e": "Macrolides (erythromycin, azithromycin) early in life raise the risk.",
+  "k": "erythromycin or azithromycin",
+  "s": "book"
+ }
+]

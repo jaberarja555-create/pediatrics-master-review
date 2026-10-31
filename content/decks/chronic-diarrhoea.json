@@ -1,0 +1,172 @@
+[
+ [
+  "Persistent",
+  "IMCI severe persistent diarrhoea?",
+  "Diarrhoea ≥ 14 days with any dehydration: refer."
+ ],
+ [
+  "Persistent",
+  "Home treatment of persistent diarrhoea?",
+  "Continue breastfeeding, yoghurt instead of half the milk, 6 meals a day, zinc, vitamin A, review in 5 days."
+ ],
+ [
+  "Persistent",
+  "Commonest mechanism of persistent diarrhoea after GE?",
+  "Secondary lactose intolerance."
+ ],
+ [
+  "Chronic",
+  "Definition of chronic diarrhoea?",
+  "More than 4 weeks, or recurrent."
+ ],
+ [
+  "Chronic",
+  "Stool in osmotic diarrhoea?",
+  "Acidic (pH < 5.5), reducing substances positive."
+ ],
+ [
+  "Chronic",
+  "Toddler's diarrhoea features?",
+  "Loose stools with undigested food by day, normal growth, too much juice."
+ ],
+ [
+  "Chronic",
+  "Steatorrhoea + recurrent chest infections?",
+  "Cystic fibrosis: sweat chloride test."
+ ],
+ [
+  "Coeliac",
+  "Cause of coeliac disease?",
+  "T-cell reaction to gluten (HLA-DQ2/DQ8)."
+ ],
+ [
+  "Coeliac",
+  "Grains with gluten?",
+  "Wheat, barley, rye."
+ ],
+ [
+  "Coeliac",
+  "Safe cereals in coeliac disease?",
+  "Rice and maize."
+ ],
+ [
+  "Coeliac",
+  "Classic coeliac picture?",
+  "Diarrhoea, distended abdomen, wasted buttocks, FTT after wheat introduced."
+ ],
+ [
+  "Coeliac",
+  "Older child presentations?",
+  "Short stature, iron deficiency anaemia, delayed puberty, dermatitis herpetiformis."
+ ],
+ [
+  "Coeliac",
+  "Screening test?",
+  "tTG-IgA with total IgA, while eating gluten."
+ ],
+ [
+  "Coeliac",
+  "Why measure total IgA?",
+  "IgA deficiency gives a false-negative tTG-IgA."
+ ],
+ [
+  "Coeliac",
+  "No-biopsy diagnosis (ESPGHAN 2020)?",
+  "tTG-IgA ≥ 10 × ULN + positive EMA in a second sample."
+ ],
+ [
+  "Coeliac",
+  "Biopsy findings?",
+  "Villous atrophy, crypt hyperplasia, intraepithelial lymphocytes."
+ ],
+ [
+  "Coeliac",
+  "Groups screened for coeliac disease?",
+  "Type 1 diabetes, Down, Turner, Williams, IgA deficiency, autoimmune thyroiditis, relatives."
+ ],
+ [
+  "Coeliac",
+  "Treatment?",
+  "Lifelong strict gluten-free diet."
+ ],
+ [
+  "Coeliac",
+  "Long-term risk of untreated coeliac disease?",
+  "Small-bowel lymphoma."
+ ],
+ [
+  "IBD",
+  "Crohn vs UC: site?",
+  "Crohn: mouth to anus, skip, transmural; UC: colon from rectum, continuous, mucosal."
+ ],
+ [
+  "IBD",
+  "IBD with perianal fistula and growth failure?",
+  "Crohn disease."
+ ],
+ [
+  "IBD",
+  "IBD complication: toxic megacolon?",
+  "Ulcerative colitis."
+ ],
+ [
+  "IBD",
+  "Biopsy granulomas?",
+  "Crohn disease."
+ ],
+ [
+  "IBD",
+  "First-line treatment of paediatric Crohn disease?",
+  "Exclusive enteral nutrition 6–8 weeks."
+ ],
+ [
+  "Lactose",
+  "Commonest type of lactose intolerance in children?",
+  "Secondary, after gastroenteritis."
+ ],
+ [
+  "Lactose",
+  "Stool tests for lactose intolerance?",
+  "pH < 5.5 and positive reducing substances."
+ ],
+ [
+  "Lactose",
+  "Management after GE?",
+  "Continue breastfeeding; lactose-free formula 2–4 weeks."
+ ],
+ [
+  "CMPA",
+  "Cow's milk protein allergy features?",
+  "Vomiting, diarrhoea, bloody mucoid stool, eczema, wheeze, poor weight gain."
+ ],
+ [
+  "CMPA",
+  "How is CMPA diagnosed?",
+  "Elimination for 2–4 weeks, then re-introduction challenge."
+ ],
+ [
+  "CMPA",
+  "Formula for CMPA?",
+  "Extensively hydrolysed formula (amino-acid if severe)."
+ ],
+ [
+  "CMPA",
+  "Breastfed baby with CMPA?",
+  "Continue breastfeeding; mother avoids dairy, takes calcium."
+ ],
+ [
+  "CMPA",
+  "When do most outgrow CMPA?",
+  "By 3–5 years."
+ ],
+ [
+  "Giardia",
+  "Giardiasis features?",
+  "Watery offensive greasy stools, bloating, no blood, weight loss."
+ ],
+ [
+  "Giardia",
+  "Treatment of giardiasis?",
+  "Metronidazole 5 mg/kg three times daily for 5 days."
+ ]
+]

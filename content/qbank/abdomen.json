@@ -1,0 +1,142 @@
+[
+ {
+  "q": "Which is NOT a common early finding in intussusception?",
+  "o": [
+   "Intermittent colicky pain",
+   "Abdominal distension",
+   "Lethargy",
+   "Pallor between attacks",
+   "Vomiting"
+  ],
+  "a": 1,
+  "e": "Distension is a late sign.",
+  "k": "not an early finding",
+  "s": "bank"
+ },
+ {
+  "q": "A 12-month-old has intermittent screaming attacks with vomiting, is lethargic between them and has a sausage-shaped mass in the right upper abdomen. The best first test is:",
+  "o": [
+   "CT abdomen",
+   "Abdominal ultrasound",
+   "Upper GI endoscopy",
+   "Barium meal",
+   "Stool culture"
+  ],
+  "a": 1,
+  "e": "Ultrasound shows the target sign; then enema reduction.",
+  "k": "target (doughnut) sign",
+  "s": "bank"
+ },
+ {
+  "q": "The first-line treatment of uncomplicated intussusception is:",
+  "o": [
+   "Air or saline enema reduction",
+   "Barium meal",
+   "Nasogastric suction and observation",
+   "IV antibiotics only",
+   "Immediate laparotomy"
+  ],
+  "a": 0,
+  "e": "Enema reduction succeeds in 80–90%.",
+  "k": "enema reduction",
+  "s": "book"
+ },
+ {
+  "q": "Enema reduction of intussusception is contraindicated in:",
+  "o": [
+   "Redcurrant jelly stool",
+   "A palpable mass",
+   "Age under 1 year",
+   "Peritonitis",
+   "Vomiting"
+  ],
+  "a": 3,
+  "e": "Peritonitis, perforation or uncorrected shock need surgery.",
+  "k": "contraindicated",
+  "s": "book"
+ },
+ {
+  "q": "Which supports functional recurrent abdominal pain?",
+  "o": [
+   "Prolonged fever",
+   "Weight loss",
+   "Pain that wakes the child",
+   "Periumbilical pain",
+   "Pain radiating to the back"
+  ],
+  "a": 3,
+  "e": "Periumbilical pain with normal growth favours functional pain.",
+  "k": "around the umbilicus",
+  "s": "bank"
+ },
+ {
+  "q": "A 2-year-old passes a large painless amount of brick-red blood per rectum and is pale. The best test is:",
+  "o": [
+   "Colonoscopy",
+   "Abdominal X-ray",
+   "Barium enema",
+   "Technetium-99m pertechnetate scan",
+   "Stool culture"
+  ],
+  "a": 3,
+  "e": "Meckel diverticulum with ectopic gastric mucosa.",
+  "k": "meckel scan",
+  "s": "book"
+ },
+ {
+  "q": "The commonest cause of rectal bleeding in an infant with hard stools is:",
+  "o": [
+   "Meckel diverticulum",
+   "Ulcerative colitis",
+   "Juvenile polyp",
+   "Anal fissure",
+   "Intussusception"
+  ],
+  "a": 3,
+  "e": "Anal fissure from hard stool is commonest.",
+  "k": "anal fissure",
+  "s": "book"
+ },
+ {
+  "q": "A 5-year-old has fever, cough, fast breathing and right-sided abdominal pain. The most likely cause is:",
+  "o": [
+   "Renal stone",
+   "Appendicitis",
+   "Intussusception",
+   "Meckel diverticulitis",
+   "Lower-lobe pneumonia"
+  ],
+  "a": 4,
+  "e": "Lower-lobe pneumonia refers pain to the abdomen.",
+  "k": "lower-lobe pneumonia",
+  "s": "book"
+ },
+ {
+  "q": "Regarding Meckel diverticulum, all are true EXCEPT:",
+  "o": [
+   "It is found in about 2% of people",
+   "It contains ectopic gastric tissue",
+   "It can be a lead point for intussusception",
+   "It is on the jejunum",
+   "It may cause painless bleeding"
+  ],
+  "a": 3,
+  "e": "Meckel diverticulum is on the ileum, about 60 cm from the ileocaecal valve.",
+  "k": "ileum",
+  "s": "book"
+ },
+ {
+  "q": "Intussusception in a 6-year-old should raise suspicion of:",
+  "o": [
+   "Cow's milk allergy",
+   "Adenovirus only",
+   "Pyloric stenosis",
+   "Rotavirus vaccine",
+   "A lead point such as lymphoma"
+  ],
+  "a": 4,
+  "e": "After 2 years look for a lead point: Meckel, polyp, lymphoma, HSP.",
+  "k": "lead point",
+  "s": "book"
+ }
+]

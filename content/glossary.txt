@@ -590,3 +590,24 @@ Whipple's operation | Pancreaticoduodenectomy for cancer of the pancreatic head 
 whoop | Noisy breath in after a coughing spell (pertussis)
 xerophthalmia | Eye damage from vitamin A deficiency, from night blindness to corneal melting
 Zollinger–Ellison syndrome | Gastrinoma causing severe, multiple peptic ulcers
+pyloromyotomy / Ramstedt pyloromyotomy | Operation that splits the thick pyloric muscle down to the lining, curing pyloric stenosis
+encopresis | Passing stool in the underwear after 4 years of age, usually overflow from constipation
+haematochezia | Fresh red or maroon blood passed per rectum
+aganglionic | Without nerve (ganglion) cells, as in Hirschsprung disease
+caeruloplasmin | Copper-carrying blood protein; low in Wilson disease
+enterocolitis | Inflammation of the small bowel and colon; the dangerous complication of Hirschsprung disease
+osmolarity | Concentration of dissolved particles in a fluid (mOsm/L)
+disimpaction | Clearing a large hard faecal mass from the rectum, usually with high-dose oral PEG
+Kussmaul breathing | Deep, rapid breathing that blows off CO₂ in metabolic acidosis
+villous atrophy | Flattening of the small-bowel villi, as in coeliac disease, reducing absorption
+Sandifer syndrome | Twisting and arching of the neck and back caused by gastro-oesophageal reflux
+Ladd procedure | Operation for malrotation: untwisting the gut, dividing bands and widening the mesentery
+proctocolitis | Inflammation of the rectum and colon; in infants often from cow's milk protein
+dermatitis herpetiformis | Very itchy blistering rash on elbows, knees and buttocks linked with coeliac disease
+pull-through | Operation for Hirschsprung disease: the aganglionic bowel is removed and normal bowel brought down to the anus
+gastrocolic reflex | Urge to pass stool after eating, used for toilet training
+transmural | Involving the whole thickness of the bowel wall (Crohn disease)
+calprotectin / faecal calprotectin | Stool protein from neutrophils; high in gut inflammation such as IBD
+osmotic demyelination | Brain damage from raising a low sodium too fast
+redcurrant jelly stool | Dark red stool of blood and mucus in intussusception (a late sign)
+target sign / doughnut sign | Ring pattern of telescoped bowel on ultrasound in intussusception

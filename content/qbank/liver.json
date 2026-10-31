@@ -1,0 +1,170 @@
+[
+ {
+  "q": "The best single test for acute hepatitis A is:",
+  "o": [
+   "Anti-HAV IgM",
+   "HBsAg",
+   "Anti-HAV IgG",
+   "ALT level",
+   "Liver biopsy"
+  ],
+  "a": 0,
+  "e": "IgM shows recent infection.",
+  "k": "anti-hav igm",
+  "s": "book"
+ },
+ {
+  "q": "Regarding hepatitis A, all are true EXCEPT:",
+  "o": [
+   "A vaccine exists",
+   "It spreads faeco-orally",
+   "Young children are often asymptomatic",
+   "It often becomes chronic",
+   "ALT may be in thousands"
+  ],
+  "a": 3,
+  "e": "Hepatitis A never becomes chronic.",
+  "k": "never chronic",
+  "s": "book"
+ },
+ {
+  "q": "A woman who is HBsAg-positive but HBeAg-negative delivers at term. The best management of the baby is:",
+  "o": [
+   "Gamma globulin at birth and 1 month",
+   "Avoid breastfeeding",
+   "HBIG only if cord blood is positive",
+   "HBIG and hepatitis B vaccine at birth, then routine doses",
+   "Vaccine only at 6 weeks"
+  ],
+  "a": 3,
+  "e": "Infant of an HBsAg-positive mother: HBIG + birth-dose vaccine within 12–24 h.",
+  "k": "hbig",
+  "s": "bank"
+ },
+ {
+  "q": "A child has only anti-HBs positive. This means:",
+  "o": [
+   "Past infection",
+   "High infectivity",
+   "Immunity from vaccination",
+   "Chronic hepatitis B",
+   "Acute hepatitis B"
+  ],
+  "a": 2,
+  "e": "Anti-HBs alone = vaccinated.",
+  "k": "vaccinated",
+  "s": "book"
+ },
+ {
+  "q": "Chronic hepatitis B is most likely after infection:",
+  "o": [
+   "At birth",
+   "In adulthood",
+   "At 10 years",
+   "At 5 years",
+   "In adolescence"
+  ],
+  "a": 0,
+  "e": "About 90% of infants infected at birth become chronic.",
+  "k": "90% if infected at birth",
+  "s": "book"
+ },
+ {
+  "q": "An absolute contraindication to breastfeeding is:",
+  "o": [
+   "Mother on paracetamol",
+   "Chronic hepatitis B in the mother",
+   "Acute EBV infection",
+   "Acute hepatitis A in the mother",
+   "None of these"
+  ],
+  "a": 4,
+  "e": "Hepatitis A, hepatitis B (after immunisation) and EBV do not contraindicate breastfeeding.",
+  "k": "breastfeeding is allowed",
+  "s": "bank"
+ },
+ {
+  "q": "A 5-year-old with hepatitis is confused, bilirubin 16 mg/dl, INR 1.9, HBV and HCV negative. The most likely diagnosis is:",
+  "o": [
+   "Gilbert syndrome",
+   "Biliary atresia",
+   "Wilson disease",
+   "Chronic hepatitis B",
+   "Acute liver failure from hepatitis A"
+  ],
+  "a": 4,
+  "e": "Encephalopathy + INR ≥ 1.5 = acute liver failure; hepatitis A is the commonest cause.",
+  "k": "acute liver failure",
+  "s": "book"
+ },
+ {
+  "q": "The best guide to the severity of acute liver injury is:",
+  "o": [
+   "Serum albumin",
+   "ALT level",
+   "Bilirubin",
+   "Alkaline phosphatase",
+   "Prothrombin time / INR"
+  ],
+  "a": 4,
+  "e": "INR rises within a day of synthetic failure.",
+  "k": "prothrombin time / inr",
+  "s": "book"
+ },
+ {
+  "q": "A teenager with liver disease, tremor and falling school performance has low caeruloplasmin. Treatment is:",
+  "o": [
+   "Interferon",
+   "Prednisolone",
+   "Penicillamine",
+   "Ursodeoxycholic acid",
+   "Lactulose only"
+  ],
+  "a": 2,
+  "e": "Wilson disease: copper chelation.",
+  "k": "penicillamine",
+  "s": "book"
+ },
+ {
+  "q": "Laboratory evidence of decompensated chronic liver disease includes:",
+  "o": [
+   "Low bilirubin",
+   "High alkaline phosphatase only",
+   "Low albumin and prolonged prothrombin time",
+   "High platelets",
+   "Very high ALT"
+  ],
+  "a": 2,
+  "e": "Synthetic failure: low albumin, prolonged PT; enzymes may be near normal.",
+  "k": "decompensation",
+  "s": "book"
+ },
+ {
+  "q": "A child with varicella is given aspirin and develops vomiting and coma without jaundice. The diagnosis is:",
+  "o": [
+   "Reye syndrome",
+   "Hepatitis A",
+   "Meningitis",
+   "Wilson disease",
+   "Varicella encephalitis only"
+  ],
+  "a": 0,
+  "e": "Reye syndrome: encephalopathy + fatty liver, anicteric.",
+  "k": "reye syndrome",
+  "s": "book"
+ },
+ {
+  "q": "Hepatitis C in a 10-year-old is treated with:",
+  "o": [
+   "Interferon for 1 year",
+   "Lamivudine",
+   "No treatment until adulthood",
+   "Direct-acting antivirals for 12 weeks",
+   "Vaccine"
+  ],
+  "a": 3,
+  "e": "WHO 2022: DAAs for all from 3 years.",
+  "k": "direct-acting antivirals",
+  "s": "book"
+ }
+]

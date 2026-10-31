@@ -256,35 +256,49 @@
      "no": "5.1",
      "title": "Acute Gastroenteritis & Dehydration",
      "short": "Diarrhoea",
-     "sub": "Assessing dehydration · Plans A, B, C · ORS · zinc"
+     "sub": "Causes · assessing dehydration · Plans A, B, C · ORS · zinc · dysentery"
     },
     {
      "id": "fluids",
      "no": "5.2",
      "title": "Fluids & Electrolytes in Children",
      "short": "Fluids",
-     "sub": "Maintenance · Holliday–Segar · Na⁺ and K⁺"
+     "sub": "Maintenance · deficit · sodium and potassium disorders"
     },
     {
      "id": "chronic-diarrhoea",
      "no": "5.3",
-     "title": "Persistent Diarrhoea & Malabsorption",
-     "short": "Malabsorption",
-     "sub": "Coeliac disease · lactose intolerance"
+     "title": "Persistent & Chronic Diarrhoea",
+     "short": "Chronic diarrhoea",
+     "sub": "Persistent diarrhoea · malabsorption · coeliac disease · lactose intolerance · cow's milk protein allergy"
     },
     {
      "id": "vomiting",
      "no": "5.4",
      "title": "The Vomiting Infant",
      "short": "Vomiting",
-     "sub": "GORD · pyloric stenosis · intussusception"
+     "sub": "GORD · pyloric stenosis · malrotation and volvulus"
+    },
+    {
+     "id": "abdomen",
+     "no": "5.5",
+     "title": "Abdominal Pain & Gastrointestinal Bleeding",
+     "short": "Abdominal pain",
+     "sub": "Intussusception · appendicitis · Meckel diverticulum · recurrent abdominal pain"
+    },
+    {
+     "id": "constipation",
+     "no": "5.6",
+     "title": "Constipation & Hirschsprung Disease",
+     "short": "Constipation",
+     "sub": "Functional constipation · Hirschsprung disease · anal fissure"
     },
     {
      "id": "liver",
-     "no": "5.5",
-     "title": "Hepatitis & Liver Disease",
+     "no": "5.7",
+     "title": "Viral Hepatitis & Liver Disease",
      "short": "Liver",
-     "sub": "Viral hepatitis · chronic liver disease · portal hypertension"
+     "sub": "Hepatitis A, B, C, E · acute liver failure · chronic liver disease · Wilson disease"
     }
    ]
   },

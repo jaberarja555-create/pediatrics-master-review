@@ -1,0 +1,142 @@
+[
+ {
+  "q": "All of the following cause chronic diarrhoea EXCEPT:",
+  "o": [
+   "Coeliac disease",
+   "Cystic fibrosis",
+   "Giardiasis",
+   "Rotavirus",
+   "Cow's milk protein allergy"
+  ],
+  "a": 3,
+  "e": "Rotavirus causes acute diarrhoea.",
+  "k": "rotavirus (acute)",
+  "s": "bank"
+ },
+ {
+  "q": "A 2-year-old has loose stools with undigested vegetables 4 times a day for months; he drinks much juice and grows normally. The diagnosis is:",
+  "o": [
+   "Toddler's diarrhoea",
+   "Lactose intolerance",
+   "Crohn disease",
+   "Giardiasis",
+   "Coeliac disease"
+  ],
+  "a": 0,
+  "e": "Chronic non-specific (toddler's) diarrhoea: normal growth, undigested food, excess juice.",
+  "k": "toddler's diarrhoea",
+  "s": "book"
+ },
+ {
+  "q": "The best screening test for coeliac disease is:",
+  "o": [
+   "tTG-IgA with total IgA",
+   "Anti-gliadin IgG",
+   "Sweat chloride",
+   "Stool reducing substances",
+   "Barium meal"
+  ],
+  "a": 0,
+  "e": "tTG-IgA is the best test; total IgA excludes IgA deficiency.",
+  "k": "tTG-IgA with total IgA",
+  "s": "book"
+ },
+ {
+  "q": "Regarding coeliac disease, all are true EXCEPT:",
+  "o": [
+   "It is a T-cell reaction to gluten",
+   "Treatment is a lifelong gluten-free diet",
+   "Rice must be avoided",
+   "It may present with short stature",
+   "It is linked with Down syndrome"
+  ],
+  "a": 2,
+  "e": "Rice and maize are gluten-free and safe.",
+  "k": "rice and maize are safe",
+  "s": "book"
+ },
+ {
+  "q": "Biopsy findings of coeliac disease include all EXCEPT:",
+  "o": [
+   "Granulomas",
+   "Intraepithelial lymphocytes",
+   "Crypt hyperplasia",
+   "Total or subtotal flat mucosa",
+   "Villous atrophy"
+  ],
+  "a": 0,
+  "e": "Granulomas suggest Crohn disease.",
+  "k": "villous atrophy",
+  "s": "book"
+ },
+ {
+  "q": "A teenager has weight loss, short stature, abdominal pain and a perianal fistula. The most likely diagnosis is:",
+  "o": [
+   "Ulcerative colitis",
+   "Coeliac disease",
+   "Crohn disease",
+   "Irritable bowel syndrome",
+   "Giardiasis"
+  ],
+  "a": 2,
+  "e": "Perianal disease, growth failure and transmural fistulae are typical of Crohn disease.",
+  "k": "perianal",
+  "s": "book"
+ },
+ {
+  "q": "Frothy acidic stools with sore buttocks after rotavirus gastroenteritis are best managed by:",
+  "o": [
+   "Gluten-free diet",
+   "Stop all feeds for 48 hours",
+   "Metronidazole",
+   "Continue breastfeeding; lactose-free formula if formula-fed",
+   "Extensively hydrolysed formula for 6 months"
+  ],
+  "a": 3,
+  "e": "Secondary lactose intolerance is temporary; continue breastfeeding.",
+  "k": "lactose-free formula for 2–4 weeks",
+  "s": "book"
+ },
+ {
+  "q": "A 13-month-old has chronic diarrhoea since 3 months of age, failure to thrive and stools positive for reducing sugars with no pathogens. The most likely diagnosis is:",
+  "o": [
+   "Crohn disease",
+   "Toddler's diarrhoea",
+   "Cow's milk protein allergy",
+   "Cystic fibrosis",
+   "Coeliac disease"
+  ],
+  "a": 2,
+  "e": "Onset at 3 months on milk with damaged mucosa fits cow's milk protein enteropathy; coeliac needs wheat after 6 months.",
+  "k": "cow's milk protein allergy",
+  "s": "bank"
+ },
+ {
+  "q": "The formula of choice for a formula-fed infant with cow's milk protein allergy is:",
+  "o": [
+   "Goat's milk",
+   "Lactose-free cow's milk formula",
+   "Partially hydrolysed formula",
+   "Soy formula at 2 months",
+   "Extensively hydrolysed formula"
+  ],
+  "a": 4,
+  "e": "Lactose-free formula still contains cow's milk protein.",
+  "k": "extensively hydrolysed formula",
+  "s": "book"
+ },
+ {
+  "q": "IMCI management of persistent diarrhoea with some dehydration is:",
+  "o": [
+   "Lactose-free milk only",
+   "Stop breastfeeding",
+   "Antibiotics for 5 days",
+   "Treat dehydration and refer",
+   "Home feeding advice only"
+  ],
+  "a": 3,
+  "e": "Severe persistent diarrhoea (any dehydration) is referred.",
+  "k": "severe persistent diarrhoea",
+  "s": "book"
+ }
+]

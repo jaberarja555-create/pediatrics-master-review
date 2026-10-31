@@ -16,6 +16,7 @@ AKI | Acute kidney injury
 ALP | Alkaline phosphatase
 ALT / AST | Alanine / aspartate aminotransferase
 AMPLE | Allergies, Medicines, Past history, Last meal, Events
+ANA | Antinuclear antibody
 AP | Anteroposterior (X-ray view)
 APTT | Activated partial thromboplastin time
 ARDS | Acute respiratory distress syndrome
@@ -45,6 +46,7 @@ CK | Creatine kinase
 CKD | Chronic kidney disease
 CLL / CML | Chronic lymphocytic / myeloid leukaemia
 CMAM | Community-based management of acute malnutrition
+CMPA | Cow's milk protein allergy
 CMV | Cytomegalovirus
 CNS | Central nervous system
 CO / COHb | Carbon monoxide / carboxyhaemoglobin
@@ -59,11 +61,13 @@ CT / CTA | Computed tomography / CT angiography
 CVP | Central venous pressure
 CXR | Chest X-ray
 D5 | Dextrose 5% (in water)
+DAA / DAAs | Direct-acting antivirals (hepatitis C)
 DAT | Direct antiglobulin (Coombs) test; in kala-azar: direct agglutination test
 DD / DDx | Differential diagnosis
 DDH | Developmental dysplasia of the hip
 DI | Diabetes insipidus
 DIC | Disseminated intravascular coagulation
+DJ | Duodenojejunal (flexure)
 DKA | Diabetic ketoacidosis
 DM | Diabetes mellitus
 DNA | Deoxyribonucleic acid
@@ -78,11 +82,15 @@ ED | Emergency department
 EDH | Extradural haematoma
 EEG | Electroencephalogram
 ELBW | Extremely low birth weight (below 1000 g)
+EMA | Endomysial antibody (coeliac disease)
 ENT | Ear, nose and throat
 EPI | Expanded Programme on Immunization
 ERC | European Resuscitation Council
 ERCP | Endoscopic retrograde cholangiopancreatography
+ESPGHAN | European Society for Paediatric Gastroenterology, Hepatology and Nutrition
 ESR | Erythrocyte sedimentation rate
+ETAT | Emergency Triage Assessment and Treatment (WHO)
+ETEC | Enterotoxigenic Escherichia coli
 FAST | Focused assessment with sonography for trauma
 FFP | Fresh frozen plasma
 FNA | Fine-needle aspiration
@@ -93,32 +101,42 @@ GA | Gestational age
 GABA | Gamma-aminobutyric acid
 GBS | Group B streptococcus
 GCS | Glasgow Coma Scale
+GE | Gastroenteritis
 GGT | Gamma-glutamyl transferase
 GH | Growth hormone
 GI | Gastrointestinal
+GOR | Gastro-oesophageal reflux (without complications)
 GORD | Gastro-oesophageal reflux disease
+HAV | Hepatitis A virus
 Hb | Haemoglobin
 HbA1c | Glycated haemoglobin
+HBc | Hepatitis B core (anti-HBc: antibody to the core antigen)
+HBeAg | Hepatitis B e antigen (active replication, high infectivity)
 HbF | Fetal haemoglobin
 HBIG | Hepatitis B immunoglobulin
+HBs | Hepatitis B surface (anti-HBs: antibody to the surface antigen; immunity)
 HBsAg | Hepatitis B surface antigen
 HBV / HCV | Hepatitis B / C virus
 HCC | Hepatocellular carcinoma
 hCG | Human chorionic gonadotrophin
 HDU | High-dependency unit
 HepB | Hepatitis B vaccine
+HEV | Hepatitis E virus
 HHV | Human herpesvirus
 Hib | Haemophilus influenzae type b
 HIDA | Hepatobiliary iminodiacetic acid (scan)
 HIE | Hypoxic–ischaemic encephalopathy
 HIT | Heparin-induced thrombocytopenia
 HIV | Human immunodeficiency virus
+HLA | Human leucocyte antigen
 HPV | Human papillomavirus
 HR | Heart rate
 HRP2 | Histidine-rich protein 2 (malaria antigen)
 HRZE | Isoniazid, rifampicin, pyrazinamide, ethambutol (TB drugs)
+HSP | Henoch–Schönlein purpura (IgA vasculitis)
 HSV | Herpes simplex virus
 HTIG | Human tetanus immunoglobulin
+HUS | Haemolytic uraemic syndrome
 IBD | Inflammatory bowel disease
 ICP | Intracranial pressure
 ICU | Intensive care unit
@@ -147,6 +165,7 @@ IVIG | Intravenous immunoglobulin
 JIA | Juvenile idiopathic arthritis
 JVP | Jugular venous pressure
 KCl | Potassium chloride
+KF | Kayser–Fleischer (copper ring in the cornea, Wilson disease)
 KMC | Kangaroo mother care
 LA | Local anaesthesia
 LBW | Low birth weight (below 2.5 kg)
@@ -175,6 +194,7 @@ MRI | Magnetic resonance imaging
 MRSA | Meticillin-resistant Staphylococcus aureus
 MTB | Mycobacterium tuberculosis
 MUAC | Mid-upper arm circumference
+NASPGHAN | North American Society for Pediatric Gastroenterology, Hepatology and Nutrition
 NEC | Necrotising enterocolitis
 NF1 / NF2 | Neurofibromatosis type 1 / 2
 NG / NJ | Nasogastric / nasojejunal
@@ -201,7 +221,7 @@ PCV | Pneumococcal conjugate vaccine (in haematology: packed cell volume)
 PDA | Patent ductus arteriosus
 PE | Pulmonary embolism
 PEEP | Positive end-expiratory pressure
-PEG | Percutaneous endoscopic gastrostomy
+PEG | Polyethylene glycol (macrogol), an osmotic laxative
 PEM | Protein–energy malnutrition
 PEP | Post-exposure prophylaxis
 PHT | Portal hypertension
@@ -287,6 +307,7 @@ TXA | Tranexamic acid
 U&E | Urea and electrolytes
 UC | Ulcerative colitis
 UFH | Unfractionated heparin
+ULN | Upper limit of normal
 US | Ultrasound
 UTI | Urinary tract infection
 UV | Ultraviolet
@@ -294,6 +315,7 @@ VDDR | Vitamin D-dependent rickets
 VEGF | Vascular endothelial growth factor
 VF | Ventricular fibrillation
 Vi | Vi capsular antigen (typhoid vaccine)
+VIP | Vasoactive intestinal peptide
 VKDB | Vitamin K deficiency bleeding
 VL | Visceral leishmaniasis (in HIV: viral load)
 VLBW | Very low birth weight (below 1500 g)

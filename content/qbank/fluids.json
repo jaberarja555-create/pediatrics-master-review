@@ -1,0 +1,156 @@
+[
+ {
+  "q": "A 16 kg boy needs maintenance IV fluid of:",
+  "o": [
+   "1300 ml/day",
+   "1600 ml/day",
+   "1500 ml/day",
+   "1000 ml/day",
+   "1200 ml/day"
+  ],
+  "a": 0,
+  "e": "1000 ml (first 10 kg) + 6 × 50 = 1300 ml.",
+  "k": "1300 ml/day",
+  "s": "bank"
+ },
+ {
+  "q": "The daily maintenance fluid for a 30 kg child is:",
+  "o": [
+   "2000 ml",
+   "1300 ml",
+   "1500 ml",
+   "1700 ml",
+   "3000 ml"
+  ],
+  "a": 3,
+  "e": "1000 + 500 + 10 × 20 = 1700 ml.",
+  "k": "1700 ml/day",
+  "s": "bank"
+ },
+ {
+  "q": "Concerning dehydration, which statement is NOT true?",
+  "o": [
+   "Prolonged capillary refill is a sign",
+   "Hypernatraemic dehydration gives doughy skin",
+   "Serum sodium is the main determinant of plasma osmolality",
+   "Haematocrit is low",
+   "Tachycardia is common"
+  ],
+  "a": 3,
+  "e": "Haematocrit is raised (haemoconcentration) in dehydration.",
+  "k": "haematocrit is",
+  "s": "book"
+ },
+ {
+  "q": "Drowsiness out of proportion to the dehydration signs suggests:",
+  "o": [
+   "Hypokalaemia",
+   "Hypernatraemic dehydration",
+   "Hyponatraemic dehydration",
+   "Metabolic alkalosis",
+   "Isonatraemic dehydration"
+  ],
+  "a": 1,
+  "e": "Brain cell shrinkage in hypernatraemia causes irritability, drowsiness and seizures with few ECF signs.",
+  "k": "drowsiness out of proportion",
+  "s": "bank"
+ },
+ {
+  "q": "Regarding hypernatraemic dehydration, which statement is TRUE?",
+  "o": [
+   "Shock appears early",
+   "The skin feels doughy",
+   "Serum sodium is below 130 mmol/L",
+   "It should be corrected within 6 hours",
+   "Hypotonic fluids are given as a fast bolus"
+  ],
+  "a": 1,
+  "e": "Water leaves the cells but the ECF is kept: skin is doughy, shock is late; correct slowly over 48 hours.",
+  "k": "doughy skin",
+  "s": "book"
+ },
+ {
+  "q": "An infant with hypernatraemic dehydration (Na 162) seizes 6 hours into IV rehydration. The most likely cause is:",
+  "o": [
+   "Meningitis",
+   "Hyperkalaemia",
+   "Hypoglycaemia from 5% glucose",
+   "Cerebral oedema from too rapid correction",
+   "Febrile seizure"
+  ],
+  "a": 3,
+  "e": "A fast fall in sodium draws water into brain cells.",
+  "k": "correct slowly over 48 h",
+  "s": "book"
+ },
+ {
+  "q": "The safe maximum fall in serum sodium when treating hypernatraemia is:",
+  "o": [
+   "Any rate if the child is shocked",
+   "20 mmol/L per 24 hours",
+   "10–12 mmol/L per 24 hours",
+   "2 mmol/L per hour",
+   "5 mmol/L per hour"
+  ],
+  "a": 2,
+  "e": "No more than 10–12 mmol/L per day (0.5 mmol/L per hour).",
+  "k": "10–12 mmol/l per 24 hours",
+  "s": "book"
+ },
+ {
+  "q": "The preferred maintenance IV fluid for an ill child (AAP 2018) is:",
+  "o": [
+   "0.9% sodium chloride with 5% glucose",
+   "Half-strength Darrow's",
+   "5% glucose in water",
+   "10% glucose",
+   "0.18% saline with 4% glucose"
+  ],
+  "a": 0,
+  "e": "Isotonic fluid prevents hospital-acquired hyponatraemia.",
+  "k": "0.9% sodium chloride with 5% glucose",
+  "s": "book"
+ },
+ {
+  "q": "A child with potassium 7.1 mmol/L has peaked T waves. The first drug is:",
+  "o": [
+   "IV calcium gluconate",
+   "Insulin alone",
+   "Furosemide",
+   "Calcium resonium",
+   "Sodium bicarbonate"
+  ],
+  "a": 0,
+  "e": "Calcium stabilises the heart muscle first; then shift and remove potassium.",
+  "k": "first drug in hyperkalaemia",
+  "s": "book"
+ },
+ {
+  "q": "The ECG change of hypokalaemia is:",
+  "o": [
+   "ST elevation",
+   "Delta wave",
+   "Short QT",
+   "Tall peaked T waves",
+   "Flat T waves with U waves"
+  ],
+  "a": 4,
+  "e": "Hypokalaemia: flat T, U waves, ST depression.",
+  "k": "flat t waves, u waves",
+  "s": "book"
+ },
+ {
+  "q": "A child with meningitis has Na 126 mmol/L and concentrated urine. The best management is:",
+  "o": [
+   "Fluid restriction (SIADH)",
+   "Large volume 0.18% saline",
+   "Desmopressin",
+   "IV furosemide",
+   "3% saline 20 ml/kg"
+  ],
+  "a": 0,
+  "e": "SIADH from meningitis: restrict fluids.",
+  "k": "siadh",
+  "s": "book"
+ }
+]

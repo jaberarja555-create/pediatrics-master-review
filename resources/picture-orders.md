@@ -376,3 +376,9 @@ Collage C: TL primary TB X-ray · TR miliary TB X-ray · BL Mantoux reading · B
 Collage D: TL kala-azar spleen · TR LD bodies · BL diphtheria membrane · BR pertussis eyes
 Collage E: TL mumps · TR hand-foot-mouth · BL S. haematobium egg · BR S. mansoni egg
 (Full prompts as sent in the chat; each panel is cut out and placed in its topic.)
+
+### Chapter 5 as collages (owner: one prompt = one 2 × 2 collage of 4 pictures)
+Collage A (5.1 dehydration): TL sunken eyes, dry mouth · TR skin pinch going back slowly · BL ORS packet + cup and spoon · BR child with SAM and dehydration (optional)
+Collage B (5.4–5.6 imaging): TL pyloric stenosis ultrasound · TR double-bubble X-ray · BL intussusception target sign ultrasound · BR Hirschsprung contrast enema transition zone
+Collage C (5.3, 5.5, 5.7 clinical): TL coeliac child (distended abdomen, wasted buttocks) · TR redcurrant jelly stool · BL Kayser–Fleischer ring · BR child with ascites and dilated abdominal veins
+(Full prompts as sent in the chat; each panel is cut out and placed in its topic.)
