@@ -56,17 +56,17 @@
   "s": "bank"
  },
  {
-  "q": "An 18-month-old has microcytic hypochromic anaemia, Hb 6.5 g/dl, reticulocytes 2%, and no heart failure. The first line of management is:",
+  "q": "An 18-month-old with iron deficiency anaemia is pale, tired and feeding poorly; Hb 6.5 g/dl, reticulocytes 2%. The first line of management is:",
   "o": [
-   "Vitamin B12 injection",
    "IM iron",
-   "Oral iron",
    "Folic acid",
-   "Blood transfusion"
+   "Packed red cell transfusion 10 ml/kg, then oral iron",
+   "Vitamin B12 injection",
+   "Observation only"
   ],
   "a": 2,
-  "e": "Transfusion only if Hb < 4 or 4–6 with heart failure, shock or distress.",
-  "k": "oral iron",
+  "e": "Hb below 7 g/dl with symptoms: transfuse slowly, then oral iron for 3 months to refill stores.",
+  "k": "below 7 g/dl",
   "s": "bank"
  },
  {

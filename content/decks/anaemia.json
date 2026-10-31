@@ -126,8 +126,8 @@
  ],
  [
   "IDA",
-  "WHO indication for transfusion?",
-  "Hb < 4 g/dl, or 4–6 g/dl with heart failure, shock, deep breathing or coma."
+  "When to transfuse in iron deficiency?",
+  "Hb < 7 g/dl with symptoms; always if < 4, or 4–6 with heart failure, shock, deep breathing or coma (WHO)."
  ],
  [
   "IDA",
@@ -188,5 +188,10 @@
   "Lead",
   "Blood film clue to lead poisoning?",
   "Basophilic stippling."
+ ],
+ [
+  "IDA",
+  "After transfusion for IDA?",
+  "Oral iron for 3 months (transfusion does not refill stores)."
  ]
 ]
