@@ -572,6 +572,8 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .ms, .msf { display: flow-root; } .msh .mrow { margin: 0; }
 .mb.nums .ng { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
 .mb.nums .ng:has(> table:only-child) { grid-template-columns: 1fr; }
+.mrow:not(.c1) > .mb.nums .ng { grid-template-columns: 1fr; }  /* owner: a half-width Key numbers box keeps one column, never squeezed */
+.mb.nums .ng .numt { width: 100%; table-layout: fixed; } .mb.nums .ng .numt td:first-child { width: 34%; }
 .mb.exam .mc .r { font-size: 8.6pt; }
 /* Home: chapters grouped by part (owner, Oct 2026) */
 .topics{display:block}
