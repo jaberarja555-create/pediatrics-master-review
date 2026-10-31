@@ -995,10 +995,10 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .hpt>summary b{filter:drop-shadow(0 1px 2px rgba(0,0,0,.85)) drop-shadow(0 0 6px rgba(0,0,0,.45))}
 .hpt>summary small,.hpt .pk{text-shadow:0 1px 3px rgba(0,0,0,.9),0 0 8px rgba(0,0,0,.55)}
 /* end-of-book Rapid Review (owner): one title, then each chapter's blocks under a chapter band */
-.mz h1.mzt.rrh { background:linear-gradient(115deg,#071d27 0%,#0b2c3a 60%,#123a4c 100%); color:#f3d98b; justify-content:center; margin-bottom:8px; }
-.mz h2.rrc { display:flex; align-items:center; gap:10px; margin:0 0 10px; padding:6px 12px 6px 6px; border-radius:9px; font:800 14pt/1.15 Inter, sans-serif;
+.mz h1.mzt.rrh { background:linear-gradient(115deg,#071d27 0%,#0b2c3a 60%,#123a4c 100%); color:#f3d98b; justify-content:center; margin:0 0 6px; padding:5px 12px; font-size:19pt; }
+.mz h2.rrc { display:flex; align-items:center; gap:10px; margin:0 0 8px; padding:4px 12px 4px 4px; border-radius:8px; font:800 12.5pt/1.15 Inter, sans-serif;
   color:#fff; background:linear-gradient(115deg,var(--ch-dark) 0%,var(--ch) 75%,var(--ch-mid) 100%); }
-.mz h2.rrc .no { flex:none; min-width:38px; height:32px; border-radius:7px; display:flex; align-items:center; justify-content:center;
-  background:linear-gradient(145deg,#123a4c 0%,#071d27 100%); color:#f3d98b; font-size:15pt; font-weight:900; box-shadow:inset 0 0 0 1.2px rgba(243,217,139,.55); }
+.mz h2.rrc .no { flex:none; min-width:32px; height:26px; border-radius:6px; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(145deg,#123a4c 0%,#071d27 100%); color:#f3d98b; font-size:13pt; font-weight:900; box-shadow:inset 0 0 0 1.2px rgba(243,217,139,.55); }
 .toc .rrcc { --ch:#0b2c3a; --ch-dark:#071d27; --ch-line:rgba(201,154,59,.45); }
 .toc .rrcc .cch b { color:#f3d98b; }
