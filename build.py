@@ -246,8 +246,6 @@ def contents_pages(book, rr_page):
         tops = ''.join((f'<div class="ct" data-p="{t["p"]}"><i>{t["no"]}</i><span>{t["title"]}</span><em>{t["p"]}</em></div>'
                         if t.get('p') else
                         f'<div class="ct soon"><i>{t["no"]}</i><span>{t["title"]}</span><em></em></div>') for t in ch['topics'])
-        if ch.get('rv'):
-            tops += f'<div class="ct rvr" data-p="{ch["rv"]}"><i>RR</i><span>Rapid Review</span><em>{ch["rv"]}</em></div>'
         dp = f' data-p="{written[0]["p"]}"' if written else ''
         parts[-1][1].append(f'<div class="cc c{ch["no"]}"><div class="cch"{dp}><b>{ch["no"]}</b>'
                             f'<span>{ch["title"]}</span></div><div class="ctl">{tops}</div></div>')
@@ -261,6 +259,11 @@ def contents_pages(book, rr_page):
                 continue
             head = '' if cont else f'<div class="bp"><span>Part {roman[no]}</span>{name}</div>'
             body += f'<div class="tk">{head}{boxes[0]}</div>' + ''.join(f'<div class="tk">{x}</div>' for x in boxes[1:])
+    rv = [ch for ch in book['chapters'] if ch.get('rv')]
+    if rv:  # owner: all Rapid Reviews together at the end of the book
+        rows = ''.join(f'<div class="ct rvr" data-p="{ch["rv"]}"><i>{ch["no"]}</i><span>{ch["title"]}</span><em>{ch["rv"]}</em></div>' for ch in rv)
+        body += (f'<div class="tk"><div class="bp"><span>End of book</span>Rapid Review</div><div class="cc rrcc"><div class="cch" data-p="{rv[0]["rv"]}"><b>RR</b>'
+                 f'<span>Rapid Review</span></div><div class="ctl">{rows}</div></div></div>')
     return [f'<section class="page" id="pc0" data-id="contents-1">'
             f'<div class="toc-h"><div><b>Contents</b><span>{book["edition"]}</span></div></div>'
             f'<div class="toc ccm">{body}</div>{footer(book)}</section>\n']
@@ -426,13 +429,19 @@ def build():
                 chapters.append((ch, []))
             chapters[-1][1].append(('title', f'<h1 class="mzt"><span class="no">{t["no"]}</span>{t["title"]}</h1>', True, pages[0][0], t))
             chapters[-1][1].extend((k, h, w, sb, t) for k, h, w, sb in atoms)
+    # owner: the Rapid Review of every chapter sits together at the end of the book, chapter by chapter
+    rr_streams = []
     for ch, stream in chapters:
         tps = [a[4] for a in stream if a[0] == 'title']
-        exam = [(x, t) for t in tps for x in chapter_exam(t)]   # each piece keeps its own topic (gap filling stays in-topic)
+        exam = [(x, t) for t in tps for x in chapter_exam(t)]
         if exam:
-            stream.append(('title', f'<h1 class="mzt"><span class="no">{ch["no"]}</span>Rapid Review</h1>', True, 'Rapid Review', tps[0]))
-            # each topic's block opens a new page (kind 'rvt' acts like a title for pagination)
-            stream.extend(('box' if i == 0 else 'rvt', r, w, 'Rapid Review', t) for i, ((r, w), t) in enumerate(exam))
+            head = ('<h1 class="mzt rrh">Rapid Review</h1>' if not rr_streams else '') + \
+                   f'<h2 class="rrc"><span class="no">{ch["no"]}</span>{ch["title"]}</h2>'
+            rs = [('title', head, True, 'Rapid Review', tps[0])]
+            # each topic block is never split (kind 'rvt'); short blocks share a page
+            rs.extend(('box' if i == 0 else 'rvt', r, w, 'Rapid Review', t) for i, ((r, w), t) in enumerate(exam))
+            rr_streams.append((ch, rs, f'rr{ch["no"]}'))
+    chapters = [(ch, stream, f'ch{ch["no"]}') for ch, stream in chapters] + rr_streams
 
     def compose(stream, rows):
         """HTML of one page from its rows of atom indexes; boxes are renumbered per topic in reading order."""
@@ -451,8 +460,10 @@ def build():
     n_abbr = 0   # abbreviations are shown by tapping them on the page (meta 'abbr'), no list pages
     pno = 1 + bool(authors) + bool(about) + n_contents + n_abbr + 1
     paged = []
-    for ch, stream in chapters:
-        key = f'ch{ch["no"]}'
+    rr_first = None
+    for ch, stream, key in chapters:
+        if key.startswith('rr') and rr_first is None:
+            rr_first = pno
         plan = LAYOUT.get(key)
         if MEASURE or not plan or plan.get('n') != len(stream):
             plan = {'pages': [[[i] for i in range(len(stream))]]}
@@ -481,7 +492,7 @@ def build():
                                for i, a in enumerate(stream))
             paged.append((ch, first[4], sub, body, pno, key, {stream[i][4]['id'] for row in rows for i in row if stream[i][3] != 'Rapid Review'}))
             pno += 1
-    rr_first = pno
+    rr_first = rr_first or pno
 
     meta_pages = [{'id': 'cover', 'label': 'Cover'}]
     meta_pages += [{'id': f'contents-{i + 1}', 'label': 'Contents'} for i in range(n_contents)]
