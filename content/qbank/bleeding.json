@@ -1,0 +1,170 @@
+[
+ {
+  "q": "All the following are true in haemophilia EXCEPT:",
+  "o": [
+   "It affects males and females equally",
+   "APTT is prolonged",
+   "Factor assay confirms it",
+   "Haemarthrosis occurs",
+   "It is X-linked"
+  ],
+  "a": 0,
+  "e": "X-linked: boys are affected.",
+  "k": "x-linked recessive",
+  "s": "bank"
+ },
+ {
+  "q": "The following are features of von Willebrand disease EXCEPT:",
+  "o": [
+   "Prolonged bleeding time",
+   "Mucosal bleeding",
+   "X-linked inheritance",
+   "Prolonged APTT",
+   "Bleeding"
+  ],
+  "a": 2,
+  "e": "Usually autosomal dominant.",
+  "k": "autosomal dominant",
+  "s": "bank"
+ },
+ {
+  "q": "All are features of haemophilia A EXCEPT:",
+  "o": [
+   "Males and females are equally affected",
+   "Risk of transfusion-transmitted hepatitis C",
+   "Factor VIII < 1% gives spontaneous bleeding",
+   "APTT is prolonged",
+   "Haemarthrosis can be the presenting feature"
+  ],
+  "a": 0,
+  "e": "X-linked recessive.",
+  "k": "x-linked recessive",
+  "s": "bank"
+ },
+ {
+  "q": "A 1-month-old bleeds after circumcision; his older brother has the same problem. The expected test result is:",
+  "o": [
+   "Low platelets",
+   "Prolonged bleeding time",
+   "Prolonged APTT",
+   "Low fibrinogen",
+   "Prolonged PT only"
+  ],
+  "a": 2,
+  "e": "Haemophilia: APTT long, PT and bleeding time normal.",
+  "k": "aptt long",
+  "s": "bank"
+ },
+ {
+  "q": "A prolonged bleeding time is NOT seen in:",
+  "o": [
+   "ITP",
+   "Glanzmann thrombasthenia",
+   "Haemophilia A",
+   "DIC",
+   "Von Willebrand disease"
+  ],
+  "a": 2,
+  "e": "Haemophilia has a normal bleeding time.",
+  "k": "bleeding time normal",
+  "s": "bank"
+ },
+ {
+  "q": "Regarding ITP in children, all are true EXCEPT:",
+  "o": [
+   "Steroids are one mode of therapy",
+   "Marrow shows increased megakaryocytes",
+   "It often follows a viral infection",
+   "Intracranial haemorrhage is a rare complication",
+   "Most children need splenectomy"
+  ],
+  "a": 4,
+  "e": "About 80% recover; splenectomy is rare.",
+  "k": "80%",
+  "s": "bank"
+ },
+ {
+  "q": "Thrombocytopenia is present in all of the following EXCEPT:",
+  "o": [
+   "Leukaemia",
+   "Henoch–Schönlein purpura",
+   "Aplastic anaemia",
+   "SLE",
+   "ITP"
+  ],
+  "a": 1,
+  "e": "HSP is a vasculitis with normal platelets.",
+  "k": "hsp",
+  "s": "bank"
+ },
+ {
+  "q": "Which is true regarding haemophilia?",
+  "o": [
+   "Females are usually severely affected",
+   "PT and bleeding time are both abnormal",
+   "Factor IX deficiency is haemophilia B",
+   "It is autosomal dominant",
+   "Hepatosplenomegaly is typical"
+  ],
+  "a": 2,
+  "e": "Christmas disease.",
+  "k": "haemophilia b",
+  "s": "bank"
+ },
+ {
+  "q": "Regarding ITP:",
+  "o": [
+   "It is caused by antiplatelet antibodies",
+   "The spleen is usually large",
+   "Bone marrow shows few megakaryocytes",
+   "It always needs platelet transfusion",
+   "Haemarthrosis is common"
+  ],
+  "a": 0,
+  "e": "IgG autoantibodies.",
+  "k": "igg autoantibodies",
+  "s": "bank"
+ },
+ {
+  "q": "A well 3-year-old has petechiae only; platelets 12 × 10⁹/L, Hb and WBC normal. Best management (ASH 2019):",
+  "o": [
+   "Platelet transfusion",
+   "IVIG",
+   "Splenectomy",
+   "Observation with advice",
+   "Bone marrow transplant"
+  ],
+  "a": 3,
+  "e": "Skin bleeding only → observe.",
+  "k": "observation",
+  "s": "new"
+ },
+ {
+  "q": "A 20 kg boy with haemophilia A has a knee bleed. To raise factor VIII by 50% you give:",
+  "o": [
+   "250 IU",
+   "2000 IU",
+   "1000 IU",
+   "500 IU",
+   "100 IU"
+  ],
+  "a": 3,
+  "e": "Weight × rise ÷ 2.",
+  "k": "÷ 2",
+  "s": "new"
+ },
+ {
+  "q": "Bleeding in Henoch–Schönlein purpura is due to:",
+  "o": [
+   "Vasculitis",
+   "Factor VIII deficiency",
+   "Thrombocytopenia",
+   "Vitamin K deficiency",
+   "DIC"
+  ],
+  "a": 0,
+  "e": "Small-vessel IgA vasculitis.",
+  "k": "vasculitis",
+  "s": "bank"
+ }
+]

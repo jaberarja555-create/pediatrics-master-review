@@ -1,0 +1,177 @@
+[
+ [
+  "Facts",
+  "Commonest childhood cancer?",
+  "Leukaemia (ALL)."
+ ],
+ [
+  "Facts",
+  "Peak age of ALL?",
+  "2–5 years."
+ ],
+ [
+  "Facts",
+  "Risk factors for leukaemia?",
+  "Down syndrome, Fanconi, ataxia telangiectasia, radiation."
+ ],
+ [
+  "Features",
+  "Features of marrow failure?",
+  "Pallor, petechiae, fever and infections."
+ ],
+ [
+  "Features",
+  "Features of infiltration?",
+  "Bone pain, limp, hepatosplenomegaly, nodes, testis, CNS."
+ ],
+ [
+  "Features",
+  "Mediastinal mass in an adolescent boy?",
+  "T-cell ALL."
+ ],
+ [
+  "Features",
+  "Gum hypertrophy and chloroma?",
+  "AML (monocytic)."
+ ],
+ [
+  "Diagnosis",
+  "Diagnostic test?",
+  "Bone marrow aspirate with immunophenotyping."
+ ],
+ [
+  "Diagnosis",
+  "Marrow blasts for ALL?",
+  "≥ 25%."
+ ],
+ [
+  "Diagnosis",
+  "Auer rods?",
+  "AML."
+ ],
+ [
+  "Diagnosis",
+  "Can WBC be normal or low in leukaemia?",
+  "Yes; blasts may be absent from the film."
+ ],
+ [
+  "DDx",
+  "JIA vs leukaemia clue?",
+  "Platelets high in JIA, low in leukaemia."
+ ],
+ [
+  "DDx",
+  "Sudan mimic of leukaemia with huge spleen?",
+  "Kala-azar."
+ ],
+ [
+  "DDx",
+  "Leukaemoid reaction?",
+  "High WBC of mature cells with infection; no blasts."
+ ],
+ [
+  "Treatment",
+  "Induction drugs?",
+  "Vincristine, steroid, asparaginase ± daunorubicin, IT methotrexate."
+ ],
+ [
+  "Treatment",
+  "Remission definition?",
+  "< 5% blasts in a normal marrow."
+ ],
+ [
+  "Treatment",
+  "Why intrathecal therapy?",
+  "CNS is a sanctuary site."
+ ],
+ [
+  "Treatment",
+  "Maintenance drugs?",
+  "Daily 6-mercaptopurine, weekly methotrexate."
+ ],
+ [
+  "Treatment",
+  "Total treatment length?",
+  "2–3 years."
+ ],
+ [
+  "Treatment",
+  "Prophylaxis against Pneumocystis?",
+  "Co-trimoxazole."
+ ],
+ [
+  "Treatment",
+  "Sanctuary sites of relapse?",
+  "CNS and testes."
+ ],
+ [
+  "Treatment",
+  "Acute promyelocytic leukaemia drug?",
+  "ATRA (all-trans retinoic acid)."
+ ],
+ [
+  "Prognosis",
+  "Good-prognosis age?",
+  "1–10 years."
+ ],
+ [
+  "Prognosis",
+  "WBC predicting poor prognosis?",
+  "≥ 50 × 10⁹/L."
+ ],
+ [
+  "Prognosis",
+  "Poor genetic findings?",
+  "t(9;22), t(4;11), hypodiploidy."
+ ],
+ [
+  "Prognosis",
+  "Strongest prognostic factor?",
+  "Response to induction (MRD)."
+ ],
+ [
+  "Prognosis",
+  "Cure of childhood ALL?",
+  "About 90%."
+ ],
+ [
+  "TLS",
+  "Biochemistry of tumour lysis?",
+  "High K⁺, phosphate, uric acid; low calcium."
+ ],
+ [
+  "TLS",
+  "Prevention of tumour lysis?",
+  "Hyperhydration without K⁺, allopurinol or rasburicase."
+ ],
+ [
+  "Neutropenia",
+  "Febrile neutropenia definition?",
+  "Fever ≥ 38.3 °C with neutrophils < 0.5 × 10⁹/L."
+ ],
+ [
+  "Neutropenia",
+  "Action in febrile neutropenia?",
+  "Cultures and IV broad-spectrum antibiotics within 1 hour."
+ ],
+ [
+  "Side effects",
+  "Vincristine toxicity?",
+  "Neuropathy, constipation; fatal if intrathecal."
+ ],
+ [
+  "Side effects",
+  "Anthracycline toxicity?",
+  "Cardiomyopathy."
+ ],
+ [
+  "Side effects",
+  "Asparaginase toxicity?",
+  "Allergy, pancreatitis, thrombosis."
+ ],
+ [
+  "Side effects",
+  "Cyclophosphamide toxicity?",
+  "Haemorrhagic cystitis, infertility."
+ ]
+]

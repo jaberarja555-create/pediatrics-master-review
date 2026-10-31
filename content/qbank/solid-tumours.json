@@ -1,0 +1,156 @@
+[
+ {
+  "q": "A 2-year-old has a large flank mass, fever, weight loss, proptosis and bruising of the right eye. The diagnosis is:",
+  "o": [
+   "Disseminated tuberculosis",
+   "Metastatic neuroblastoma",
+   "Burkitt lymphoma",
+   "Wilms tumour",
+   "Hydronephrosis"
+  ],
+  "a": 1,
+  "e": "Raccoon eyes and proptosis = orbital metastases.",
+  "k": "raccoon eyes",
+  "s": "bank"
+ },
+ {
+  "q": "A well 3-year-old has a smooth flank mass that does not cross the midline, haematuria and high BP. The diagnosis is:",
+  "o": [
+   "Hepatoblastoma",
+   "Burkitt lymphoma",
+   "Neuroblastoma",
+   "Wilms tumour",
+   "Polycystic kidney"
+  ],
+  "a": 3,
+  "e": "Mother finds it while bathing.",
+  "k": "does not cross the midline",
+  "s": "new"
+ },
+ {
+  "q": "The urine test for neuroblastoma is:",
+  "o": [
+   "Bence Jones protein",
+   "Urine porphyrins",
+   "5-HIAA",
+   "VMA and HVA",
+   "Urine osmolality"
+  ],
+  "a": 3,
+  "e": "Catecholamine metabolites.",
+  "k": "vma and hva",
+  "s": "new"
+ },
+ {
+  "q": "Wilms tumour is associated with all EXCEPT:",
+  "o": [
+   "Café-au-lait spots",
+   "Aniridia",
+   "Hypospadias",
+   "Hemihypertrophy",
+   "Beckwith–Wiedemann syndrome"
+  ],
+  "a": 0,
+  "e": "Café-au-lait spots suggest NF1 or Fanconi.",
+  "k": "aniridia",
+  "s": "new"
+ },
+ {
+  "q": "A 6-year-old from a malarial area has a fast-growing jaw mass with loose teeth. The diagnosis is:",
+  "o": [
+   "Ewing sarcoma",
+   "Endemic Burkitt lymphoma",
+   "Hodgkin lymphoma",
+   "Dental abscess",
+   "Rhabdomyosarcoma"
+  ],
+  "a": 1,
+  "e": "EBV-linked, t(8;14), starry sky.",
+  "k": "jaw or orbit tumour",
+  "s": "new"
+ },
+ {
+  "q": "Reed–Sternberg cells are characteristic of:",
+  "o": [
+   "ALL",
+   "Hodgkin lymphoma",
+   "Tuberculosis",
+   "Burkitt lymphoma",
+   "Neuroblastoma"
+  ],
+  "a": 1,
+  "e": "Owl-eye cells.",
+  "k": "reed–sternberg cells",
+  "s": "new"
+ },
+ {
+  "q": "The commonest presenting sign of retinoblastoma is:",
+  "o": [
+   "Leukocoria (white pupil)",
+   "Red painful eye",
+   "Squint",
+   "Nystagmus",
+   "Proptosis"
+  ],
+  "a": 0,
+  "e": "Squint is second.",
+  "k": "leukocoria",
+  "s": "new"
+ },
+ {
+  "q": "A child with a mediastinal mass needs a biopsy. The main danger is:",
+  "o": [
+   "Hypoglycaemia",
+   "Airway collapse under sedation or general anaesthesia",
+   "Bleeding",
+   "Infection",
+   "Seizures"
+  ],
+  "a": 1,
+  "e": "Keep the child sitting up.",
+  "k": "no sedation or general anaesthesia",
+  "s": "new"
+ },
+ {
+  "q": "An adolescent has knee pain at night; X-ray shows a sunburst pattern and Codman triangle. The diagnosis is:",
+  "o": [
+   "Osteosarcoma",
+   "Osgood–Schlatter disease",
+   "Ewing sarcoma",
+   "Leukaemia",
+   "Osteomyelitis"
+  ],
+  "a": 0,
+  "e": "Metaphysis; lungs metastases.",
+  "k": "sunburst",
+  "s": "new"
+ },
+ {
+  "q": "Truncal ataxia with morning headache and vomiting in a 5-year-old suggests:",
+  "o": [
+   "Brainstem glioma without raised pressure",
+   "Medulloblastoma",
+   "Migraine",
+   "Craniopharyngioma",
+   "Pituitary adenoma"
+  ],
+  "a": 1,
+  "e": "Posterior fossa tumour.",
+  "k": "medulloblastoma",
+  "s": "new"
+ },
+ {
+  "q": "Poor prognosis in neuroblastoma is predicted by:",
+  "o": [
+   "Opsoclonus–myoclonus",
+   "Age under 18 months",
+   "Localised tumour",
+   "MYCN amplification",
+   "Stage 4S"
+  ],
+  "a": 3,
+  "e": "Also bone metastases and older age.",
+  "k": "mycn",
+  "s": "new"
+ }
+]

@@ -1,0 +1,170 @@
+[
+ {
+  "q": "All of the following are causes of microcytic hypochromic anaemia EXCEPT:",
+  "o": [
+   "Thalassaemia",
+   "Folic acid deficiency",
+   "Lead poisoning",
+   "Iron deficiency anaemia",
+   "Sideroblastic anaemia"
+  ],
+  "a": 1,
+  "e": "Folate deficiency causes macrocytic anaemia.",
+  "k": "microcytic (mcv < 70 fl)",
+  "s": "bank"
+ },
+ {
+  "q": "Which is a cause of normocytic normochromic anaemia?",
+  "o": [
+   "Pernicious anaemia",
+   "Thalassaemia major",
+   "Iron deficiency from cow's milk",
+   "Folate deficiency",
+   "Chronic kidney disease"
+  ],
+  "a": 4,
+  "e": "Low erythropoietin gives normocytic anaemia.",
+  "k": "chronic kidney disease",
+  "s": "bank"
+ },
+ {
+  "q": "Iron deficiency anaemia is characterised by all of the following EXCEPT:",
+  "o": [
+   "Increased iron absorption from the gut",
+   "Decreased ferritin",
+   "Decreased total iron-binding capacity",
+   "Decreased MCV",
+   "Decreased serum iron"
+  ],
+  "a": 2,
+  "e": "TIBC (transferrin) is high in iron deficiency.",
+  "k": "tibc",
+  "s": "bank"
+ },
+ {
+  "q": "Iron deficiency anaemia is characterised by all of the following EXCEPT:",
+  "o": [
+   "Hb electrophoresis is the diagnostic test",
+   "High total iron-binding capacity",
+   "Microcytic hypochromic film",
+   "Low iron stores",
+   "Raised free erythrocyte protoporphyrin"
+  ],
+  "a": 0,
+  "e": "Serum ferritin is the diagnostic test.",
+  "k": "serum ferritin",
+  "s": "bank"
+ },
+ {
+  "q": "An 18-month-old has microcytic hypochromic anaemia, Hb 6.5 g/dl, reticulocytes 2%, and no heart failure. The first line of management is:",
+  "o": [
+   "Vitamin B12 injection",
+   "IM iron",
+   "Oral iron",
+   "Folic acid",
+   "Blood transfusion"
+  ],
+  "a": 2,
+  "e": "Transfusion only if Hb < 4 or 4–6 with heart failure, shock or distress.",
+  "k": "oral iron",
+  "s": "bank"
+ },
+ {
+  "q": "Which statement is correct?",
+  "o": [
+   "Lead poisoning is macrocytic",
+   "Thalassaemia trait is macrocytic",
+   "B12 deficiency is microcytic",
+   "Macrocytic anaemia is associated with folic acid deficiency",
+   "Iron deficiency causes macrocytosis"
+  ],
+  "a": 3,
+  "e": "Folate and B12 deficiency are macrocytic.",
+  "k": "macrocytic (mcv > 100 fl)",
+  "s": "bank"
+ },
+ {
+  "q": "About iron deficiency anaemia, all are true EXCEPT:",
+  "o": [
+   "Pica occurs",
+   "Ferritin is low",
+   "Platelets may be raised",
+   "RDW is increased",
+   "Blood loss is the commonest cause in infants"
+  ],
+  "a": 4,
+  "e": "Low intake (late weaning, cow's milk) is commonest in infants.",
+  "k": "late weaning",
+  "s": "bank"
+ },
+ {
+  "q": "A 6-month-old fed only goat's milk is pale with an MCV of 108 fl. The likely deficiency is:",
+  "o": [
+   "Vitamin C",
+   "Vitamin B12",
+   "Folate",
+   "Zinc",
+   "Iron"
+  ],
+  "a": 2,
+  "e": "Goat's milk is very low in folate.",
+  "k": "goat's milk",
+  "s": "new"
+ },
+ {
+  "q": "The first laboratory sign of response to oral iron is:",
+  "o": [
+   "Rise in MCV within 24 hours",
+   "Rise in reticulocytes at 5–10 days",
+   "Rise in Hb at 2 days",
+   "Fall in platelets",
+   "Rise in ferritin at 2 days"
+  ],
+  "a": 1,
+  "e": "Reticulocytes peak at 5–10 days.",
+  "k": "reticulocytes peak at 5–10 days",
+  "s": "new"
+ },
+ {
+  "q": "A 7-year-old with short stature, absent thumbs and café-au-lait spots has pancytopenia. The diagnostic test is:",
+  "o": [
+   "Chromosome breakage test",
+   "Hb electrophoresis",
+   "Coombs test",
+   "Osmotic fragility",
+   "Serum ferritin"
+  ],
+  "a": 0,
+  "e": "Fanconi anaemia: increased chromosome breakage.",
+  "k": "chromosome breakage",
+  "s": "new"
+ },
+ {
+  "q": "Which feature favours aplastic anaemia over leukaemia?",
+  "o": [
+   "Testicular swelling",
+   "Mediastinal mass",
+   "Bone pain",
+   "No hepatosplenomegaly or lymphadenopathy",
+   "Gum hypertrophy"
+  ],
+  "a": 3,
+  "e": "Aplastic anaemia has an empty marrow and no organomegaly.",
+  "k": "no lymph nodes, liver or spleen enlargement",
+  "s": "new"
+ },
+ {
+  "q": "In IMCI, a child with some palmar pallor should receive:",
+  "o": [
+   "Urgent referral",
+   "Blood transfusion",
+   "Antibiotics",
+   "Iron, a malaria test and mebendazole if 1 year or older",
+   "Vitamin A only"
+  ],
+  "a": 3,
+  "e": "Severe palmar pallor is referred.",
+  "k": "some palmar pallor",
+  "s": "new"
+ }
+]

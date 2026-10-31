@@ -125,7 +125,7 @@ constitutional delay | Normal variant: slow growth and late puberty with delayed
 contracture | Shortening of scar or muscle that limits movement
 contralateral | On the opposite side
 contusion | Bruise of a tissue or organ
-Coombs test / direct Coombs test | Test for antibody on the baby's red cells (immune haemolysis)
+Coombs test / direct Coombs test | Test for antibody on the red cells (immune haemolysis)
 coryza | Runny, blocked nose
 Courvoisier's law | Painless palpable gallbladder with jaundice: probably not stones (think cancer of pancreas head)
 craniopharyngioma | Benign suprasellar tumour from Rathke's pouch; short stature, headache, visual field loss, calcification on X-ray
@@ -174,7 +174,7 @@ endemic | Constantly present in a population or region
 endoscopy / endoscopic | Looking inside the body with a flexible camera
 enteral | Feeding into the gut (mouth, NG or feeding tube)
 enterocutaneous fistula | Abnormal track from the bowel to the skin
-enucleation / enucleate | Shelling out a lump whole, without a margin
+enucleation / enucleate | Removing a lump or an organ whole (of the eye: removal of the eyeball)
 eosinophilia | Raised eosinophil count (parasites, allergy)
 epidermoid | Cyst lined by epidermis (sebaceous cyst)
 epigastric / epigastrium | Upper middle abdomen, below the breastbone
@@ -516,7 +516,7 @@ scurvy / scorbutic | Vitamin C deficiency: bleeding gums, painful legs from blee
 sebaceous cyst | Epidermoid cyst of the skin with a punctum
 Sengstaken–Blakemore tube | Balloon tube that compresses bleeding oesophageal varices
 sentinel node | The first lymph node that drains a tumour
-sequestration | Infected red cells sticking in small vessels (falciparum malaria)
+sequestration | Trapping of blood cells in small vessels or an organ (falciparum malaria; the spleen in sickle cell disease)
 seroma | Collection of serous fluid under a wound
 serosa | The outer peritoneal layer of the gut
 sessile | Flat, without a stalk
@@ -699,4 +699,67 @@ adenosine | Very short-acting drug that blocks the AV node; first drug for SVT
 vagal manoeuvres | Actions (ice to the face, Valsalva) that slow the AV node and may stop SVT
 delta wave | Slurred start of the QRS complex in Wolff–Parkinson–White syndrome
 afterload | Resistance the ventricle pumps against; reduced by ACE inhibitors
-
+koilonychia / spoon nails | Thin, flat or spoon-shaped nails of iron deficiency
+reticulocyte / reticulocytes | Young red cell just released from the marrow; many when the marrow works hard
+haptoglobin | Plasma protein that binds free haemoglobin; low in haemolysis
+spherocyte / spherocytes | Small round red cell without central pallor
+target cell / target cells | Red cell with a dark centre and ring (thalassaemia, liver disease)
+Heinz bodies | Clumps of damaged haemoglobin inside red cells (G6PD deficiency)
+bite cell / bite cells | Red cell with a bite-like notch after the spleen removes Heinz bodies
+Howell–Jolly bodies | Nuclear remnants in red cells when the spleen is absent or not working
+dactylitis | Painful swelling of fingers and toes (hand–foot syndrome in sickle cell disease)
+autosplenectomy | Shrunken, scarred spleen after repeated infarcts (sickle cell disease)
+haemarthrosis | Bleeding into a joint
+petechiae / petechia | Pinpoint red-purple spots of bleeding under the skin, not fading on pressure
+ecchymosis / ecchymoses | Large flat bruise
+megakaryocyte / megakaryocytes | Large marrow cell that makes platelets
+haemosiderosis | Iron deposited in organs after many transfusions
+chelation / chelator | Drug binding a metal (iron, lead) so the body excretes it
+leukocoria | White pupil reflex instead of the normal red reflex
+opsoclonus | Rapid, chaotic movements of both eyes ("dancing eyes")
+blast / blasts / blast cells | Immature cancer cell of leukaemia
+Auer rods | Rod-shaped granules in myeloid blasts (acute myeloid leukaemia)
+Reed–Sternberg cells | Large cells with two nuclei ("owl eyes") typical of Hodgkin lymphoma
+starry sky / starry-sky | Pale macrophages among dark tumour cells (Burkitt lymphoma)
+raccoon eyes | Bruised, swollen eyelids around both eyes (orbit metastases of neuroblastoma; skull base fracture)
+Codman triangle | Raised edge of periosteum at the margin of an aggressive bone tumour
+hypersegmented neutrophils / hypersegmented | Neutrophils with 6 or more lobes (folate or B12 deficiency)
+Mentzer index | MCV divided by red cell count (millions); below 13 suggests thalassaemia trait
+leukaemoid reaction | Very high white count of mature cells due to infection, not leukaemia
+priapism | Painful erection lasting hours (sickle cell disease)
+hydroxyurea / hydroxycarbamide | Oral drug raising fetal haemoglobin in sickle cell disease
+desmopressin | Synthetic vasopressin; releases stored factor VIII and von Willebrand factor
+emicizumab | Antibody given under the skin that replaces factor VIII function (haemophilia A)
+rasburicase | Enzyme that breaks down uric acid (tumour lysis syndrome)
+asparaginase | Chemotherapy enzyme used in ALL (allergy, pancreatitis, thrombosis)
+vincristine | Chemotherapy drug (nerve damage, constipation); never intrathecal
+chloroma | Green tumour mass of myeloid leukaemia cells (skin, orbit)
+favism | Haemolysis after eating fava beans in G6PD deficiency
+megaloblast / megaloblasts / megaloblastic | Large immature red cell precursor (folate or B12 deficiency)
+basophilic stippling | Blue dots in red cells (lead poisoning, thalassaemia)
+anisocytosis | Red cells of different sizes
+poikilocytosis | Red cells of different shapes
+sideroblast / sideroblasts / ring sideroblasts | Red cell precursor with an iron ring round the nucleus
+neutropenia | Low neutrophil count (below 1.5 × 10⁹/L; severe below 0.5)
+mucositis | Painful inflammation and ulcers of the mouth and gut lining after chemotherapy
+papilloedema | Swollen optic disc from raised intracranial pressure
+bitemporal hemianopia / hemianopia | Loss of the outer half of vision in both eyes (pressure on the optic chiasm)
+sunburst | Bone spicules radiating from a tumour on X-ray (osteosarcoma)
+onion-skin | Layered periosteal reaction on X-ray (Ewing sarcoma)
+sarcoma botryoides | Grape-like rhabdomyosarcoma of the vagina or bladder in infants
+aniridia | Absent iris
+hemihypertrophy | One side of the body larger than the other
+macroglossia | Large tongue
+arthropathy | Chronic joint damage
+cryoprecipitate | Blood product rich in fibrinogen, factor VIII and von Willebrand factor
+tranexamic acid | Drug that stops clot breakdown (mouth and nose bleeds)
+deferasirox | Oral iron chelator taken once daily
+desferrioxamine | Iron chelator given under the skin by pump
+intrinsic factor | Stomach protein needed to absorb vitamin B12
+hyposplenism | Poor spleen function; risk of overwhelming infection
+encapsulated bacteria | Bacteria with a capsule (pneumococcus, Hib, meningococcus) cleared mainly by the spleen
+incentive spirometry | Deep-breathing exercises with a device to keep the lungs open
+transcranial Doppler | Ultrasound of brain artery blood speed; high speed means stroke risk in sickle cell disease
+thrombocytopenia | Low platelet count (below 150 × 10⁹/L)
+B symptoms | Fever, drenching night sweats and weight loss in lymphoma
+erythroblastopenia | Temporary lack of red cell precursors in the marrow

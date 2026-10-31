@@ -1,0 +1,192 @@
+[
+ [
+  "Haemolysis",
+  "Lab signs of haemolysis?",
+  "High reticulocytes, unconjugated bilirubin, LDH; low haptoglobin."
+ ],
+ [
+  "Haemolysis",
+  "Test for immune haemolysis?",
+  "Direct Coombs test."
+ ],
+ [
+  "Haemolysis",
+  "Haemolysis with dark urine means?",
+  "Intravascular haemolysis (haemoglobinuria)."
+ ],
+ [
+  "Haemolysis",
+  "Skull X-ray of chronic haemolysis?",
+  "Hair-on-end."
+ ],
+ [
+  "Haemolysis",
+  "Megaloblastic crisis cause?",
+  "Folate deficiency."
+ ],
+ [
+  "Thalassaemia",
+  "Thalassaemia vs SCD defect?",
+  "Thalassaemia: too little globin; SCD: abnormal globin."
+ ],
+ [
+  "Thalassaemia",
+  "Age of onset of β-thalassaemia major?",
+  "6–12 months."
+ ],
+ [
+  "Thalassaemia",
+  "Thalassaemic face?",
+  "Frontal bossing, prominent maxilla, depressed nasal bridge."
+ ],
+ [
+  "Thalassaemia",
+  "Blood film in thalassaemia major?",
+  "Microcytic hypochromic, target cells, nucleated red cells."
+ ],
+ [
+  "Thalassaemia",
+  "Electrophoresis of β-thalassaemia major?",
+  "HbF very high, HbA absent or low."
+ ],
+ [
+  "Thalassaemia",
+  "Diagnostic finding in β-thalassaemia trait?",
+  "HbA₂ > 3.5%."
+ ],
+ [
+  "Thalassaemia",
+  "How is α-thalassaemia trait diagnosed?",
+  "DNA testing (electrophoresis normal)."
+ ],
+ [
+  "Thalassaemia",
+  "Three α genes deleted?",
+  "HbH disease."
+ ],
+ [
+  "Thalassaemia",
+  "Four α genes deleted?",
+  "Hb Bart's hydrops fetalis."
+ ],
+ [
+  "Thalassaemia",
+  "Ferritin in thalassaemia major?",
+  "High (iron overload)."
+ ],
+ [
+  "Thalassaemia",
+  "Commonest cause of death in thalassaemia major?",
+  "Cardiac iron overload (heart failure, arrhythmia)."
+ ],
+ [
+  "Treatment",
+  "Target pre-transfusion Hb (TIF)?",
+  "9.5–10.5 g/dl."
+ ],
+ [
+  "Treatment",
+  "Transfusion volume and interval?",
+  "10–15 ml/kg every 2–5 weeks."
+ ],
+ [
+  "Treatment",
+  "When to start chelation?",
+  "After 10–20 transfusions or ferritin > 1000 µg/L."
+ ],
+ [
+  "Treatment",
+  "Oral chelator dose?",
+  "Deferasirox 20–40 mg/kg/day once daily."
+ ],
+ [
+  "Treatment",
+  "Desferrioxamine route?",
+  "SC pump over 8–12 hours, 5–7 nights a week."
+ ],
+ [
+  "Treatment",
+  "Deferiprone side effect?",
+  "Agranulocytosis."
+ ],
+ [
+  "Treatment",
+  "Splenectomy indication in thalassaemia?",
+  "Hypersplenism or huge painful spleen, after 5–6 years."
+ ],
+ [
+  "Treatment",
+  "Cure of thalassaemia major?",
+  "Stem cell transplant."
+ ],
+ [
+  "G6PD",
+  "Inheritance of G6PD deficiency?",
+  "X-linked recessive."
+ ],
+ [
+  "G6PD",
+  "Triggers?",
+  "Fava beans, infection, primaquine, sulphonamides, nitrofurantoin, mothballs."
+ ],
+ [
+  "G6PD",
+  "Film in G6PD haemolysis?",
+  "Bite cells, Heinz bodies."
+ ],
+ [
+  "G6PD",
+  "Why repeat the G6PD assay later?",
+  "Young cells have more enzyme: falsely normal during attack."
+ ],
+ [
+  "G6PD",
+  "Newborn risk in G6PD deficiency?",
+  "Severe early jaundice."
+ ],
+ [
+  "Spherocytosis",
+  "Inheritance of hereditary spherocytosis?",
+  "Usually autosomal dominant."
+ ],
+ [
+  "Spherocytosis",
+  "Protein defect?",
+  "Spectrin or ankyrin."
+ ],
+ [
+  "Spherocytosis",
+  "Red cell index high in HS?",
+  "MCHC."
+ ],
+ [
+  "Spherocytosis",
+  "Best test for HS?",
+  "Eosin-5-maleimide binding test (flow cytometry)."
+ ],
+ [
+  "Spherocytosis",
+  "Coombs test in HS?",
+  "Negative."
+ ],
+ [
+  "Spherocytosis",
+  "Timing of splenectomy in HS?",
+  "After 6 years (vaccines before, penicillin after)."
+ ],
+ [
+  "AIHA",
+  "Warm AIHA antibody?",
+  "IgG; treat with prednisolone."
+ ],
+ [
+  "AIHA",
+  "Cold AIHA causes?",
+  "Mycoplasma, EBV (IgM)."
+ ],
+ [
+  "AIHA",
+  "Evans syndrome?",
+  "Autoimmune haemolytic anaemia + immune thrombocytopenia."
+ ]
+]

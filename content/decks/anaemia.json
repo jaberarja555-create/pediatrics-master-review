@@ -1,0 +1,192 @@
+[
+ [
+  "Definition",
+  "WHO 2024 anaemia cut-off at 6–23 months?",
+  "Hb below 10.5 g/dl."
+ ],
+ [
+  "Definition",
+  "WHO 2024 cut-off at 2–4 years?",
+  "Hb below 11.0 g/dl."
+ ],
+ [
+  "Definition",
+  "WHO 2024 cut-off at 5–11 years?",
+  "Hb below 11.5 g/dl."
+ ],
+ [
+  "Definition",
+  "Severe anaemia in children under 5?",
+  "Hb below 7 g/dl."
+ ],
+ [
+  "Definition",
+  "Lowest Hb of physiological anaemia in term babies?",
+  "About 10 g/dl at 8–12 weeks; no treatment."
+ ],
+ [
+  "Approach",
+  "Two tests that classify any anaemia?",
+  "MCV (cell size) and reticulocyte count."
+ ],
+ [
+  "Approach",
+  "Causes of microcytic anaemia?",
+  "Iron deficiency, thalassaemia, chronic disease, lead, sideroblastic."
+ ],
+ [
+  "Approach",
+  "Causes of macrocytic anaemia?",
+  "Folate or B12 deficiency, Fanconi, Diamond–Blackfan, liver disease, drugs."
+ ],
+ [
+  "Approach",
+  "Normocytic anaemia with high reticulocytes?",
+  "Haemolysis or acute bleeding."
+ ],
+ [
+  "Approach",
+  "Most important sign of anaemia?",
+  "Pallor of palms, nail beds, conjunctiva and tongue."
+ ],
+ [
+  "IMCI",
+  "Severe palmar pallor?",
+  "Severe anaemia: refer urgently."
+ ],
+ [
+  "IMCI",
+  "Some palmar pallor?",
+  "Iron, malaria test, mebendazole if ≥ 1 year, review in 14 days."
+ ],
+ [
+  "IDA",
+  "Commonest age of iron deficiency anaemia?",
+  "6–24 months."
+ ],
+ [
+  "IDA",
+  "Why is IDA uncommon before 6 months in term babies?",
+  "Iron stores from birth last about 6 months."
+ ],
+ [
+  "IDA",
+  "Dietary causes of IDA?",
+  "Late weaning, cow's or goat's milk before 1 year, poor diet."
+ ],
+ [
+  "IDA",
+  "Parasitic causes of IDA in Sudan?",
+  "Hookworm and urinary schistosomiasis."
+ ],
+ [
+  "IDA",
+  "Specific signs of IDA?",
+  "Pica, koilonychia, angular stomatitis."
+ ],
+ [
+  "IDA",
+  "Diagnostic test for iron deficiency?",
+  "Low serum ferritin."
+ ],
+ [
+  "IDA",
+  "TIBC in iron deficiency?",
+  "High."
+ ],
+ [
+  "IDA",
+  "Iron indices in anaemia of chronic disease?",
+  "Low iron, low TIBC, high ferritin."
+ ],
+ [
+  "IDA",
+  "Mentzer index pointing to thalassaemia trait?",
+  "MCV ÷ RBC count below 13."
+ ],
+ [
+  "IDA",
+  "Dose of oral iron?",
+  "3–6 mg/kg/day elemental iron in 2–3 doses between meals."
+ ],
+ [
+  "IDA",
+  "How long to continue iron?",
+  "3 months after Hb is normal."
+ ],
+ [
+  "IDA",
+  "First sign of response to iron?",
+  "Reticulocyte peak at 5–10 days."
+ ],
+ [
+  "IDA",
+  "Expected rise in Hb on iron?",
+  "About 1 g/dl per week."
+ ],
+ [
+  "IDA",
+  "WHO indication for transfusion?",
+  "Hb < 4 g/dl, or 4–6 g/dl with heart failure, shock, deep breathing or coma."
+ ],
+ [
+  "IDA",
+  "Commonest cause of failure of oral iron?",
+  "Not taking it."
+ ],
+ [
+  "Megaloblastic",
+  "Milk that causes folate deficiency?",
+  "Goat's milk."
+ ],
+ [
+  "Megaloblastic",
+  "B12 deficiency in a breastfed infant?",
+  "Mother is vegan or B12 deficient."
+ ],
+ [
+  "Megaloblastic",
+  "Feature only in B12 deficiency?",
+  "Neurological signs (subacute combined degeneration)."
+ ],
+ [
+  "Megaloblastic",
+  "Danger of folic acid alone in B12 deficiency?",
+  "Blood improves but nerve damage worsens."
+ ],
+ [
+  "Marrow failure",
+  "Aplastic anaemia vs leukaemia at the bedside?",
+  "No nodes, liver or spleen enlargement in aplastic anaemia."
+ ],
+ [
+  "Marrow failure",
+  "Best treatment for severe aplastic anaemia?",
+  "Matched sibling stem cell transplant."
+ ],
+ [
+  "Marrow failure",
+  "Fanconi anaemia features?",
+  "Absent thumb/radius, café-au-lait spots, short stature, pancytopenia at 5–10 years."
+ ],
+ [
+  "Marrow failure",
+  "Diagnostic test for Fanconi anaemia?",
+  "Increased chromosome breakage."
+ ],
+ [
+  "Marrow failure",
+  "Diamond–Blackfan anaemia?",
+  "Pure red cell aplasia in the first year, triphalangeal thumbs; steroids."
+ ],
+ [
+  "Marrow failure",
+  "Transient erythroblastopenia of childhood?",
+  "Well 1–4-year-old after a virus, low reticulocytes, recovers in 1–2 months."
+ ],
+ [
+  "Lead",
+  "Blood film clue to lead poisoning?",
+  "Basophilic stippling."
+ ]
+]

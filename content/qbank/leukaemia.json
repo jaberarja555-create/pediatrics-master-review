@@ -1,0 +1,156 @@
+[
+ {
+  "q": "Which is a diagnostic feature of leukaemia?",
+  "o": [
+   "Blast cells in the bone marrow",
+   "Fever",
+   "High ESR",
+   "Anaemia alone",
+   "Leucocytosis alone"
+  ],
+  "a": 0,
+  "e": "WBC may be low, normal or high; marrow blasts ≥ 25% diagnose ALL.",
+  "k": "≥ 25% blasts",
+  "s": "bank"
+ },
+ {
+  "q": "A 3-year-old with fever, petechiae, Hb 4.5 g/dl, WBC 1.8 and platelets 25 × 10⁹/L. The confirmatory test is:",
+  "o": [
+   "Blood culture",
+   "Hb electrophoresis",
+   "Coombs test",
+   "Chest X-ray",
+   "Bone marrow aspiration"
+  ],
+  "a": 4,
+  "e": "Pancytopenia with fever: leukaemia likely.",
+  "k": "bone marrow aspirate",
+  "s": "bank"
+ },
+ {
+  "q": "Each of the following is a complication of chemotherapy EXCEPT:",
+  "o": [
+   "Neuritis",
+   "Tumour lysis syndrome",
+   "Infertility",
+   "Polycythaemia",
+   "Bone marrow depression"
+  ],
+  "a": 3,
+  "e": "Chemotherapy suppresses the marrow.",
+  "k": "marrow suppression",
+  "s": "bank"
+ },
+ {
+  "q": "A 6-year-old has a week of leg pain, limp, low fever, petechiae and hepatosplenomegaly. The next step is:",
+  "o": [
+   "Rheumatoid factor",
+   "Start NSAIDs",
+   "ASO titre",
+   "X-ray of the leg only",
+   "CBC with blood film"
+  ],
+  "a": 4,
+  "e": "ALL is likely.",
+  "k": "limp",
+  "s": "new"
+ },
+ {
+  "q": "Which feature carries a GOOD prognosis in ALL?",
+  "o": [
+   "Age 1–10 years",
+   "Philadelphia chromosome t(9;22)",
+   "CNS disease at diagnosis",
+   "T-cell type",
+   "WBC 100 × 10⁹/L at diagnosis"
+  ],
+  "a": 0,
+  "e": "Also rapid response to induction.",
+  "k": "1–10 years",
+  "s": "new"
+ },
+ {
+  "q": "The strongest prognostic factor in childhood ALL is:",
+  "o": [
+   "Sex",
+   "Haemoglobin at diagnosis",
+   "Response to induction (minimal residual disease)",
+   "Spleen size",
+   "Platelet count"
+  ],
+  "a": 2,
+  "e": "MRD after induction.",
+  "k": "mrd",
+  "s": "new"
+ },
+ {
+  "q": "On day 2 of chemotherapy a child has K⁺ 6.8, phosphate high, calcium low and rising creatinine. The diagnosis is:",
+  "o": [
+   "Hypoparathyroidism",
+   "Dehydration only",
+   "Septic shock",
+   "Vincristine toxicity",
+   "Tumour lysis syndrome"
+  ],
+  "a": 4,
+  "e": "Prevent with fluids and rasburicase.",
+  "k": "tumour lysis syndrome",
+  "s": "new"
+ },
+ {
+  "q": "A child on chemotherapy has fever 38.5 °C. The correct action is:",
+  "o": [
+   "Blood cultures and IV broad-spectrum antibiotics within 1 hour",
+   "Wait for the neutrophil count",
+   "Rectal temperature check",
+   "Paracetamol only",
+   "Oral amoxicillin and review tomorrow"
+  ],
+  "a": 0,
+  "e": "Febrile neutropenia is an emergency.",
+  "k": "within 1 hour",
+  "s": "new"
+ },
+ {
+  "q": "Auer rods in blasts indicate:",
+  "o": [
+   "ALL",
+   "ITP",
+   "Acute myeloid leukaemia",
+   "Infectious mononucleosis",
+   "CML"
+  ],
+  "a": 2,
+  "e": "Myeloperoxidase-positive myeloblasts.",
+  "k": "auer rods",
+  "s": "new"
+ },
+ {
+  "q": "Which chemotherapy drug causes peripheral neuropathy and constipation?",
+  "o": [
+   "Asparaginase",
+   "Vincristine",
+   "6-mercaptopurine",
+   "Daunorubicin",
+   "Methotrexate"
+  ],
+  "a": 1,
+  "e": "Never give it intrathecally.",
+  "k": "vincristine",
+  "s": "new"
+ },
+ {
+  "q": "Fever, joint pain and anaemia with a HIGH platelet count suggest:",
+  "o": [
+   "ITP",
+   "Juvenile idiopathic arthritis",
+   "ALL",
+   "Aplastic anaemia",
+   "AML"
+  ],
+  "a": 1,
+  "e": "Platelets are low in leukaemia.",
+  "k": "platelets high",
+  "s": "new"
+ }
+]

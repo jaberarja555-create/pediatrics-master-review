@@ -377,3 +377,34 @@ X-match | Cross-match
 XN | Night blindness (WHO xerophthalmia grade)
 ZN | Ziehl–Neelsen (stain for acid-fast bacilli)
 β-hCG | Beta human chorionic gonadotrophin
+ABVD | Doxorubicin (Adriamycin), bleomycin, vinblastine, dacarbazine (Hodgkin chemotherapy)
+ALL | Acute lymphoblastic leukaemia
+AML | Acute myeloid leukaemia
+ASH | American Society of Hematology
+ATRA | All-trans retinoic acid (tretinoin)
+DDAVP | Desmopressin (1-deamino-8-D-arginine vasopressin)
+DMSA | Dimercaptosuccinic acid
+EDTA | Ethylenediaminetetraacetic acid (lead chelator)
+HbA₂ / HbA2 | Haemoglobin A2 (α₂δ₂), raised in β-thalassaemia trait
+HbS | Sickle haemoglobin
+HbSS | Sickle cell anaemia (homozygous)
+HbAS | Sickle cell trait (carrier)
+HbSC | Sickle–haemoglobin C disease
+HPLC | High-performance liquid chromatography (haemoglobin analysis)
+HVA | Homovanillic acid (urine catecholamine metabolite)
+IDA | Iron deficiency anaemia
+MCH | Mean corpuscular haemoglobin
+MCHC | Mean corpuscular haemoglobin concentration
+MIBG | Metaiodobenzylguanidine (scan for neuroblastoma)
+MRD | Minimal residual disease
+MYCN | Oncogene amplified in poor-prognosis neuroblastoma
+NHL | Non-Hodgkin lymphoma
+PPSV23 | 23-valent pneumococcal polysaccharide vaccine
+RDW | Red cell distribution width
+SCD | Sickle cell disease
+TAR | Thrombocytopenia with absent radius
+TIBC | Total iron-binding capacity
+TIF | Thalassaemia International Federation
+VMA | Vanillylmandelic acid (urine catecholamine metabolite)
+VWF | Von Willebrand factor
+WAGR | Wilms tumour, Aniridia, Genitourinary anomalies, Retardation

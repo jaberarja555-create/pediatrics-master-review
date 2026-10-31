@@ -1,0 +1,170 @@
+[
+ {
+  "q": "All of the following are true about sickle cell anaemia EXCEPT:",
+  "o": [
+   "Hand–foot syndrome occurs",
+   "Immunity is normal",
+   "Gallstones occur",
+   "Osteomyelitis is a complication",
+   "Stroke needs exchange transfusion"
+  ],
+  "a": 1,
+  "e": "Hyposplenism impairs defence against encapsulated bacteria.",
+  "k": "functional asplenia",
+  "s": "bank"
+ },
+ {
+  "q": "Which statement about sickle cell disease is TRUE?",
+  "o": [
+   "Splenic dysfunction starts only in the teens",
+   "Crises usually start within one month of birth",
+   "Infections are mainly with non-encapsulated organisms",
+   "It causes chronic anaemia that is not routinely transfusion dependent",
+   "All patients are homozygous HbSS"
+  ],
+  "a": 3,
+  "e": "Hb 6–9 g/dl is well tolerated; HbF protects for 6 months.",
+  "k": "well tolerated",
+  "s": "bank"
+ },
+ {
+  "q": "Exchange transfusion in sickle cell anaemia is indicated for:",
+  "o": [
+   "Autosplenectomy",
+   "Priapism not responding to treatment",
+   "Aplastic crisis",
+   "Hyperhaemolytic crisis",
+   "Hypersplenism"
+  ],
+  "a": 1,
+  "e": "Exchange: stroke, severe acute chest syndrome, priapism.",
+  "k": "priapism",
+  "s": "bank"
+ },
+ {
+  "q": "About sickle cell anaemia, all are true EXCEPT:",
+  "o": [
+   "Diagnosed by Hb electrophoresis",
+   "Aplastic crisis is the commonest crisis",
+   "Cardiomegaly is common in older children",
+   "Hand–foot syndrome is often the first presentation",
+   "Risk of infection is increased"
+  ],
+  "a": 1,
+  "e": "Vaso-occlusive crisis is commonest.",
+  "k": "the commonest",
+  "s": "bank"
+ },
+ {
+  "q": "The TRUE statement about sickle cell anaemia is:",
+  "o": [
+   "The heterozygous (trait) state is asymptomatic",
+   "A positive sickling test is diagnostic",
+   "Splenomegaly is usual at 10 years",
+   "Desferrioxamine improves life expectancy",
+   "Hand–foot syndrome usually occurs after 5 years"
+  ],
+  "a": 0,
+  "e": "Trait: no anaemia or crises.",
+  "k": "no anaemia, no crises",
+  "s": "bank"
+ },
+ {
+  "q": "To differentiate a vaso-occlusive crisis from osteomyelitis in SCD, the most helpful tests are:",
+  "o": [
+   "Hb electrophoresis",
+   "ESR",
+   "Blood culture and MRI (or bone aspirate)",
+   "CBC",
+   "Sickling test"
+  ],
+  "a": 2,
+  "e": "ESR and WBC are raised in both.",
+  "k": "blood culture and mri",
+  "s": "bank"
+ },
+ {
+  "q": "Why are children with SCD at high risk of infection?",
+  "o": [
+   "Hyposplenism with poor opsonisation of encapsulated bacteria",
+   "Neutropenia",
+   "Complement deficiency",
+   "T-cell deficiency",
+   "Low immunoglobulins"
+  ],
+  "a": 0,
+  "e": "Autosplenectomy by 5–6 years.",
+  "k": "encapsulated bacteria",
+  "s": "bank"
+ },
+ {
+  "q": "A 12-year-old with HbSS is examined. Which finding is NOT expected?",
+  "o": [
+   "Pallor",
+   "Jaundice",
+   "Splenomegaly",
+   "Delayed puberty",
+   "Systolic flow murmur"
+  ],
+  "a": 2,
+  "e": "The spleen has infarcted (autosplenectomy).",
+  "k": "autosplenectomy",
+  "s": "bank"
+ },
+ {
+  "q": "A 2-year-old with HbSS becomes suddenly pale and shocked with a rapidly enlarging spleen. Management is:",
+  "o": [
+   "Urgent transfusion of 5–10 ml/kg packed cells",
+   "Exchange transfusion only after electrophoresis",
+   "Observation",
+   "Hydroxyurea",
+   "Splenectomy at once"
+  ],
+  "a": 0,
+  "e": "Splenic sequestration.",
+  "k": "5–10 ml/kg",
+  "s": "new"
+ },
+ {
+  "q": "A child with HbSS has severe pallor without more jaundice and reticulocytes of 0.2% after a rash. The cause is:",
+  "o": [
+   "Splenic sequestration",
+   "Iron deficiency",
+   "Hyperhaemolytic crisis",
+   "Folate deficiency",
+   "Parvovirus B19 aplastic crisis"
+  ],
+  "a": 4,
+  "e": "Parvovirus stops red cell production.",
+  "k": "parvovirus b19",
+  "s": "new"
+ },
+ {
+  "q": "Hydroxyurea in sickle cell anaemia works mainly by:",
+  "o": [
+   "Raising fetal haemoglobin",
+   "Killing sickle cells",
+   "Chelating iron",
+   "Dilating vessels",
+   "Preventing infection"
+  ],
+  "a": 0,
+  "e": "Offered from 9 months at 20 mg/kg/day.",
+  "k": "hbf",
+  "s": "new"
+ },
+ {
+  "q": "Annual transcranial Doppler in HbSS is done to:",
+  "o": [
+   "Detect retinopathy",
+   "Detect gallstones",
+   "Measure spleen size",
+   "Assess kidney function",
+   "Find children at high risk of stroke"
+  ],
+  "a": 4,
+  "e": "Abnormal result → regular transfusion.",
+  "k": "transcranial doppler",
+  "s": "new"
+ }
+]

@@ -1,0 +1,192 @@
+[
+ [
+  "Approach",
+  "Bleeding pattern of platelet defects?",
+  "Petechiae, purpura, mucosal bleeding, immediate."
+ ],
+ [
+  "Approach",
+  "Bleeding pattern of factor defects?",
+  "Haemarthrosis, deep haematomas, delayed bleeding."
+ ],
+ [
+  "Approach",
+  "Isolated long APTT, normal PT?",
+  "Haemophilia A or B."
+ ],
+ [
+  "Approach",
+  "Long PT, normal platelets in a newborn?",
+  "Vitamin K deficiency bleeding."
+ ],
+ [
+  "Approach",
+  "Low platelets, long PT and APTT, low fibrinogen?",
+  "DIC."
+ ],
+ [
+  "Approach",
+  "Long bleeding time, normal platelets?",
+  "Von Willebrand disease (or platelet function defect)."
+ ],
+ [
+  "Approach",
+  "Purpura with normal tests?",
+  "HSP (vasculitis)."
+ ],
+ [
+  "Approach",
+  "Wiskott–Aldrich triad?",
+  "Small platelets, eczema, recurrent infections."
+ ],
+ [
+  "ITP",
+  "Mechanism of ITP?",
+  "IgG antibodies coat platelets; spleen removes them."
+ ],
+ [
+  "ITP",
+  "Typical ITP patient?",
+  "Well 2–5-year-old, petechiae after a viral illness."
+ ],
+ [
+  "ITP",
+  "Findings that exclude ITP?",
+  "Pallor, organomegaly, nodes, bone pain, abnormal WBC."
+ ],
+ [
+  "ITP",
+  "Film in ITP?",
+  "Low, large platelets; no blasts."
+ ],
+ [
+  "ITP",
+  "Marrow in ITP?",
+  "Many megakaryocytes."
+ ],
+ [
+  "ITP",
+  "When is marrow needed in ITP?",
+  "Atypical features or before steroids if unsure."
+ ],
+ [
+  "ITP",
+  "Chronic ITP definition?",
+  "Over 12 months."
+ ],
+ [
+  "ITP",
+  "Recovery rate in children?",
+  "About 80%."
+ ],
+ [
+  "ITP",
+  "Treatment of ITP with skin bleeding only?",
+  "Observation (ASH 2019)."
+ ],
+ [
+  "ITP",
+  "Treatment of mucosal bleeding?",
+  "Prednisolone 2–4 mg/kg/day for 5–7 days or IVIG."
+ ],
+ [
+  "ITP",
+  "Fastest rise in platelets?",
+  "IVIG 0.8–1 g/kg."
+ ],
+ [
+  "ITP",
+  "Intracranial bleed in ITP?",
+  "Platelets + IV methylprednisolone + IVIG."
+ ],
+ [
+  "ITP",
+  "Drugs to avoid in ITP?",
+  "Aspirin, NSAIDs, IM injections."
+ ],
+ [
+  "Haemophilia",
+  "Factor in haemophilia A?",
+  "Factor VIII."
+ ],
+ [
+  "Haemophilia",
+  "Factor in haemophilia B?",
+  "Factor IX (Christmas disease)."
+ ],
+ [
+  "Haemophilia",
+  "Inheritance?",
+  "X-linked recessive."
+ ],
+ [
+  "Haemophilia",
+  "Severe haemophilia level?",
+  "Factor < 1%: spontaneous bleeds."
+ ],
+ [
+  "Haemophilia",
+  "Hallmark bleed?",
+  "Haemarthrosis."
+ ],
+ [
+  "Haemophilia",
+  "Tests in haemophilia?",
+  "Long APTT; normal PT, platelets, bleeding time."
+ ],
+ [
+  "Haemophilia",
+  "Factor VIII dose formula?",
+  "Weight × desired rise (%) ÷ 2."
+ ],
+ [
+  "Haemophilia",
+  "Target for a joint bleed?",
+  "40–60%."
+ ],
+ [
+  "Haemophilia",
+  "Target for head bleed or surgery?",
+  "80–100%."
+ ],
+ [
+  "Haemophilia",
+  "Desmopressin is useful in?",
+  "Mild haemophilia A and von Willebrand type 1."
+ ],
+ [
+  "Haemophilia",
+  "Bleeding continues despite factor?",
+  "Inhibitor (antibody)."
+ ],
+ [
+  "Haemophilia",
+  "Prophylaxis for severe haemophilia A?",
+  "Regular factor VIII or emicizumab."
+ ],
+ [
+  "vWD",
+  "Commonest inherited bleeding disorder?",
+  "Von Willebrand disease."
+ ],
+ [
+  "vWD",
+  "Inheritance of vWD?",
+  "Usually autosomal dominant."
+ ],
+ [
+  "vWD",
+  "Typical bleeding in vWD?",
+  "Mucosal: nose, gums, menorrhagia."
+ ],
+ [
+  "DIC",
+  "Commonest cause of DIC in children?",
+  "Septic shock."
+ ],
+ [
+  "DIC",
+  "Treatment of DIC?",
+  "Treat the cause; FFP, platelets, cryoprecipitate."
+ ]
+]

@@ -1,0 +1,156 @@
+[
+ {
+  "q": "Which is correct about β-thalassaemia major?",
+  "o": [
+   "Ferritin is low",
+   "It presents at birth",
+   "HbF is low",
+   "There is iron overload",
+   "Regular transfusion is not needed"
+  ],
+  "a": 3,
+  "e": "Transfusions and gut absorption overload iron.",
+  "k": "iron overload",
+  "s": "bank"
+ },
+ {
+  "q": "Hb electrophoresis in β-thalassaemia trait shows:",
+  "o": [
+   "Hb Bart's",
+   "Absent HbA",
+   "HbH",
+   "Raised HbA₂",
+   "Raised HbS"
+  ],
+  "a": 3,
+  "e": "HbA₂ > 3.5% is diagnostic.",
+  "k": "hba₂ > 3.5%",
+  "s": "bank"
+ },
+ {
+  "q": "Which of the following does NOT support thalassaemia major?",
+  "o": [
+   "Increased HbF",
+   "Hb below 5 g/dl",
+   "Decreased serum ferritin",
+   "Hypochromic cells",
+   "Target cells"
+  ],
+  "a": 2,
+  "e": "Ferritin is high.",
+  "k": "ferritin and serum iron",
+  "s": "bank"
+ },
+ {
+  "q": "Which is true regarding β-thalassaemia?",
+  "o": [
+   "It may present with gallstones",
+   "It is treated with iron and folic acid",
+   "It is X-linked",
+   "The trait is usually symptomatic",
+   "HbA is high in the major form"
+  ],
+  "a": 0,
+  "e": "Chronic haemolysis forms pigment stones.",
+  "k": "gallstones",
+  "s": "bank"
+ },
+ {
+  "q": "A congenital haemolytic anaemia typically shows:",
+  "o": [
+   "High haptoglobin",
+   "Conjugated hyperbilirubinaemia",
+   "Bilirubin in the urine",
+   "Low reticulocytes",
+   "A high stool stercobilinogen"
+  ],
+  "a": 4,
+  "e": "Extra bilirubin is excreted in the stool.",
+  "k": "stercobilinogen",
+  "s": "bank"
+ },
+ {
+  "q": "Splenectomy is particularly helpful in:",
+  "o": [
+   "Aplastic anaemia",
+   "Hereditary spherocytosis",
+   "Iron deficiency",
+   "Sickle cell anaemia in a 10-year-old",
+   "G6PD deficiency"
+  ],
+  "a": 1,
+  "e": "Spherocytes are destroyed in the spleen.",
+  "k": "splenectomy",
+  "s": "bank"
+ },
+ {
+  "q": "A boy develops pallor, jaundice and cola-coloured urine 2 days after eating fava beans. The diagnosis is:",
+  "o": [
+   "Hereditary spherocytosis",
+   "Malaria",
+   "Autoimmune haemolysis",
+   "Sickle cell crisis",
+   "G6PD deficiency"
+  ],
+  "a": 4,
+  "e": "Favism; bite cells and Heinz bodies.",
+  "k": "fava beans",
+  "s": "new"
+ },
+ {
+  "q": "In thalassaemia major, the target pre-transfusion Hb is:",
+  "o": [
+   "9.5–10.5 g/dl",
+   "7–8 g/dl",
+   "Above 15 g/dl",
+   "6–7 g/dl",
+   "12–14 g/dl"
+  ],
+  "a": 0,
+  "e": "TIF 2025.",
+  "k": "9.5–10.5 g/dl",
+  "s": "new"
+ },
+ {
+  "q": "Iron chelation is usually started when ferritin exceeds:",
+  "o": [
+   "100 µg/L",
+   "300 µg/L",
+   "1000 µg/L",
+   "5000 µg/L",
+   "10 000 µg/L"
+  ],
+  "a": 2,
+  "e": "Or after 10–20 transfusions.",
+  "k": "1000 µg/l",
+  "s": "new"
+ },
+ {
+  "q": "Spherocytes with a negative direct Coombs test and a high MCHC suggest:",
+  "o": [
+   "Hereditary spherocytosis",
+   "G6PD deficiency",
+   "Warm autoimmune haemolysis",
+   "β-thalassaemia",
+   "ABO incompatibility"
+  ],
+  "a": 0,
+  "e": "Coombs separates HS from immune haemolysis.",
+  "k": "coombs negative",
+  "s": "new"
+ },
+ {
+  "q": "Haemolytic anaemia with mycoplasma pneumonia is usually due to:",
+  "o": [
+   "Cold IgM antibodies",
+   "Spherocytosis",
+   "Warm IgG antibodies",
+   "DIC",
+   "G6PD deficiency"
+  ],
+  "a": 0,
+  "e": "Cold agglutinins.",
+  "k": "mycoplasma pneumoniae",
+  "s": "new"
+ }
+]
