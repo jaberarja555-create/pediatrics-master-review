@@ -261,7 +261,7 @@ def contents_pages(book, rr_page):
             body += f'<div class="tk">{head}{boxes[0]}</div>' + ''.join(f'<div class="tk">{x}</div>' for x in boxes[1:])
     rv = [ch for ch in book['chapters'] if ch.get('rv')]
     if rv:  # owner: all Rapid Reviews together at the end of the book
-        rows = ''.join(f'<div class="ct rvr" data-p="{ch["rv"]}"><i>{ch["no"]}</i><span>{ch["title"]}</span><em>{ch["rv"]}</em></div>' for ch in rv)
+        rows = ''.join(f'<div class="ct rvr" data-p="{ch["rv"]}"><i>{ch["no"]}</i><span>{ch.get("short", ch["title"])}</span><em>{ch["rv"]}</em></div>' for ch in rv)
         body += (f'<div class="tk"><div class="bp"><span>End of book</span>Rapid Review</div><div class="cc rrcc"><div class="cch" data-p="{rv[0]["rv"]}"><b>RR</b>'
                  f'<span>Rapid Review</span></div><div class="ctl">{rows}</div></div></div>')
     return [f'<section class="page" id="pc0" data-id="contents-1">'

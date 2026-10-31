@@ -1004,3 +1004,8 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
   background:linear-gradient(145deg,#123a4c 0%,#071d27 100%); color:#f3d98b; font-size:13pt; font-weight:900; box-shadow:inset 0 0 0 1.2px rgba(243,217,139,.55); }
 .toc .rrcc { --ch:#0b2c3a; --ch-dark:#071d27; --ch-line:rgba(201,154,59,.45); }
 .toc .rrcc .cch b { color:#f3d98b; }
+.toc .rrcc .ctl { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); column-gap:8px; }
+.toc .rrcc .ct span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0; }
+.toc .rrcc .ct i { display:none; }
+.toc .rrcc .ct { grid-template-columns:minmax(0,1fr) auto; }
+.toc .rrcc .ct:nth-last-child(2):nth-child(odd) { border-bottom:0; }
