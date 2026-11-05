@@ -210,4 +210,4 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   Rapid Review go in `<table class="rvnums">` in the aside.
 - **Mnemonics:** standard memory aids in a `box mnem` (`<div class="mnl"><span><i>A</i>word</span>…`).
 - **No cramped half-width boxes**; give every page `h2.s` sections; photos ≤ ~200 px high.
-- Not yet rewritten in this style: chapters 1–8 (next: start with chapter 1).
+- Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.
