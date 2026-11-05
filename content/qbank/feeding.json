@@ -1,0 +1,86 @@
+[
+{
+"q": "Regarding breast milk, all are true EXCEPT:",
+"o": [
+"Lactoferrin inhibits growth of E. coli",
+"Fore-milk has more fat than hind-milk",
+"It produces an acidic stool",
+"Its fatty acid pattern reflects maternal diet",
+"It contains secretory IgA"
+],
+"a": 1,
+"e": "Hind-milk, at the end of the feed, is the fat-rich part.",
+"k": "rich in fat",
+"s": "bank"
+},
+{
+"q": "Comparing breast milk with formula, which is NOT correct?",
+"o": [
+"Breast milk has a higher percentage of protein",
+"Breast milk contains leucocytes and lysozyme",
+"Breast milk has less iron than iron-fortified formula",
+"Breast milk has a Ca : PO₄ ratio of 2 : 1",
+"Breast-milk iron is better absorbed"
+],
+"a": 0,
+"e": "Breast milk has less protein than cow's milk and formula.",
+"k": "low (1.1 g/dl)",
+"s": "bank"
+},
+{
+"q": "An absolute contraindication to breastfeeding is:",
+"o": [
+"Maternal hepatitis B",
+"Galactosaemia in the baby",
+"Maternal mastitis",
+"Neonatal jaundice",
+"Maternal fever"
+],
+"a": 1,
+"e": "Galactosaemia is the absolute contraindication in the baby.",
+"k": "galactosaemia",
+"s": "bank"
+},
+{
+"q": "A 12-month-old who began whole cow's milk at 6 months is most likely to have:",
+"o": [
+"Otitis media",
+"Wheezing",
+"Nasal congestion",
+"Low serum ferritin",
+"Diaper dermatitis"
+],
+"a": 3,
+"e": "Cow's milk is poor in absorbable iron and causes occult GI blood loss → iron deficiency.",
+"k": "iron deficiency",
+"s": "bank"
+},
+{
+"q": "Complementary feeding should start at:",
+"o": [
+"2 months",
+"4 months",
+"6 months",
+"9 months",
+"12 months"
+],
+"a": 2,
+"e": "Breast milk alone meets needs until 6 months.",
+"k": "start at 6 months",
+"s": "bank"
+},
+{
+"q": "The daily milk requirement of a 4-kg young infant is about:",
+"o": [
+"300 mL",
+"450 mL",
+"600 mL",
+"800 mL",
+"1000 mL"
+],
+"a": 2,
+"e": "150 mL/kg/day × 4 kg = 600 mL.",
+"k": "150 ml/kg/day",
+"s": "bank"
+}
+]

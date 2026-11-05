@@ -1,0 +1,72 @@
+[
+{
+"q": "All are correctly paired EXCEPT:",
+"o": [
+"Vitamin B12 – pellagra",
+"Vitamin K – prolonged PT",
+"Vitamin C – scurvy",
+"Pyridoxine – peripheral neuritis",
+"Thiamine – beriberi"
+],
+"a": 0,
+"e": "Pellagra is niacin (B3) deficiency.",
+"k": "pellagra",
+"s": "bank"
+},
+{
+"q": "The earliest sign of vitamin A deficiency is:",
+"o": [
+"Bitot's spots",
+"Night blindness",
+"Keratomalacia",
+"Corneal scar",
+"Conjunctival xerosis"
+],
+"a": 1,
+"e": "Night blindness (XN) comes first.",
+"k": "night blindness",
+"s": "bank"
+},
+{
+"q": "The vitamin A dose for a 2-year-old with measles is:",
+"o": [
+"50 000 IU",
+"100 000 IU",
+"200 000 IU",
+"400 000 IU",
+"25 000 IU"
+],
+"a": 2,
+"e": "> 12 months: 200 000 IU on days 1 and 2.",
+"k": "200 000 iu",
+"s": "bank"
+},
+{
+"q": "Zinc dose for a 9-month-old with acute diarrhoea is:",
+"o": [
+"5 mg/day for 3 days",
+"10 mg/day for 5 days",
+"20 mg/day for 10–14 days",
+"40 mg/day for 14 days",
+"50 mg once"
+],
+"a": 2,
+"e": "≥ 6 months: 20 mg/day for 10–14 days.",
+"k": "20 mg/day",
+"s": "bank"
+},
+{
+"q": "A 3-month-old exclusively breastfed baby born at home bleeds from the gut on day 3; platelets normal, PT prolonged. Diagnosis:",
+"o": [
+"ITP",
+"Haemophilia",
+"Vitamin K deficiency bleeding",
+"DIC",
+"Von Willebrand disease"
+],
+"a": 2,
+"e": "VKDB: prolonged PT, normal platelets, no vitamin K at birth.",
+"k": "vitamin k deficiency",
+"s": "bank"
+}
+]

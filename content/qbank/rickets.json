@@ -1,0 +1,72 @@
+[
+{
+"q": "Nutritional rickets is characterised by all EXCEPT:",
+"o": [
+"Normal or low calcium",
+"Raised alkaline phosphatase",
+"Raised plasma phosphate",
+"Raised PTH",
+"Low 25-OH vitamin D"
+],
+"a": 2,
+"e": "Phosphate is low in nutritional rickets; high phosphate suggests CKD.",
+"k": "nutritional",
+"s": "bank"
+},
+{
+"q": "The earliest clinical sign of rickets in a 4-month-old is:",
+"o": [
+"Bowed legs",
+"Craniotabes",
+"Harrison's sulcus",
+"Delayed walking",
+"Kyphosis"
+],
+"a": 1,
+"e": "Craniotabes appears under 6 months.",
+"k": "craniotabes",
+"s": "bank"
+},
+{
+"q": "The X-ray sign of rickets at the wrist is:",
+"o": [
+"Periosteal reaction",
+"Cupping and fraying of the metaphysis",
+"Sclerosis of the epiphysis",
+"Bone cyst",
+"Soft tissue calcification"
+],
+"a": 1,
+"e": "Cupping, fraying and widening of the metaphysis.",
+"k": "cupping",
+"s": "bank"
+},
+{
+"q": "Rickets with normal calcium, normal PTH and very low phosphate is:",
+"o": [
+"Nutritional rickets",
+"VDDR type 1",
+"X-linked hypophosphataemic rickets",
+"Renal rickets",
+"Calcium deficiency rickets"
+],
+"a": 2,
+"e": "Renal phosphate wasting; treat with phosphate + calcitriol.",
+"k": "hypophosphataemic",
+"s": "bank"
+},
+{
+"q": "A 6-month-old with rickets has a convulsion and calcium of 1.5 mmol/L. First treatment:",
+"o": [
+"Vitamin D 300 000 IU",
+"IV 10% calcium gluconate",
+"Phenobarbitone",
+"Oral phosphate",
+"Calcitriol"
+],
+"a": 1,
+"e": "Hypocalcaemic fits: IV calcium gluconate slowly with ECG monitoring.",
+"k": "calcium gluconate 0.5 ml/kg",
+"s": "bank"
+}
+]

@@ -399,3 +399,17 @@ Hib | Haemophilus influenzae type b
 DTwP | Diphtheria, tetanus, whole-cell pertussis vaccine
 Td | Tetanus–diphtheria toxoid (adult)
 AEFI | Adverse event following immunization
+IV | Intravenous
+RUTF | Ready-to-use therapeutic food
+VDDR | Vitamin D-dependent rickets
+NG | Nasogastric
+CMAM | Community-based management of acute malnutrition
+MAM | Moderate acute malnutrition
+OTP | Outpatient therapeutic programme
+ORS | Oral rehydration solution
+VKDB | Vitamin K deficiency bleeding
+IMCI | Integrated Management of Childhood Illness
+PTT | Partial thromboplastin time
+UVB | Ultraviolet B light
+DHA | Docosahexaenoic acid (an omega-3 fatty acid)
+ReSoMal | Rehydration solution for malnutrition

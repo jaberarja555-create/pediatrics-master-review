@@ -1,0 +1,100 @@
+[
+{
+"q": "Kwashiorkor is characterised by all EXCEPT:",
+"o": [
+"Oedema",
+"Apathy",
+"Hair changes",
+"Weight < 60% of expected",
+"Skin changes"
+],
+"a": 3,
+"e": "Weight < 60% without oedema is marasmus; kwashiorkor is 60–80% with oedema.",
+"k": "60–80% of expected",
+"s": "bank"
+},
+{
+"q": "The fluid used to rehydrate a child with SAM and no shock is:",
+"o": [
+"Normal saline IV",
+"Ringer's lactate IV",
+"ReSoMal orally",
+"Standard ORS freely",
+"5% dextrose IV"
+],
+"a": 2,
+"e": "ReSoMal (low Na, high K) orally or NG; IV only for shock.",
+"k": "use resomal",
+"s": "bank"
+},
+{
+"q": "In the stabilisation phase of SAM, which is NOT given?",
+"o": [
+"F-75",
+"Antibiotics",
+"Iron",
+"Folic acid",
+"Potassium and magnesium"
+],
+"a": 2,
+"e": "Iron is withheld until rehabilitation.",
+"k": "never in the stabilisation phase",
+"s": "bank"
+},
+{
+"q": "A 2-year-old with SAM, alert, oedema +, no complications, eats RUTF well. Best management:",
+"o": [
+"Admit to stabilisation centre",
+"Outpatient RUTF",
+"IV albumin",
+"Furosemide",
+"F-100 in hospital"
+],
+"a": 1,
+"e": "Uncomplicated SAM passing the appetite test is treated as an outpatient.",
+"k": "passes the appetite test",
+"s": "bank"
+},
+{
+"q": "The energy content of F-75 per 100 mL is:",
+"o": [
+"50 kcal",
+"75 kcal",
+"100 kcal",
+"150 kcal",
+"200 kcal"
+],
+"a": 1,
+"e": "F-75: 75 kcal and 0.9 g protein per 100 mL.",
+"k": "75 kcal and 0.9 g protein",
+"s": "bank"
+},
+{
+"q": "Hypoglycaemia in a malnourished child is defined as blood glucose below:",
+"o": [
+"2 mmol/L",
+"2.6 mmol/L",
+"3 mmol/L",
+"4 mmol/L",
+"5 mmol/L"
+],
+"a": 2,
+"e": "< 3 mmol/L (54 mg/dL) in SAM.",
+"k": "glucose < 3 mmol/l",
+"s": "bank"
+},
+{
+"q": "Poor weight gain (< 5 g/kg/day) in rehabilitation most likely indicates:",
+"o": [
+"Too much F-100",
+"Hidden infection",
+"Refeeding syndrome",
+"Vitamin A excess",
+"Normal course"
+],
+"a": 1,
+"e": "Look for TB, HIV, UTI and other infection.",
+"k": "look for infection",
+"s": "bank"
+}
+]
