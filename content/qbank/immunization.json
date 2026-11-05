@@ -1,0 +1,114 @@
+[
+{
+"q": "The pentavalent vaccine contains all EXCEPT:",
+"o": [
+"Diphtheria toxoid",
+"Tetanus toxoid",
+"Pertussis",
+"Hepatitis B",
+"Poliovirus"
+],
+"a": 4,
+"e": "Pentavalent = DTwP + hepatitis B + Hib; polio is given separately (OPV, IPV).",
+"k": "pentavalent = dtwp",
+"s": "bank"
+},
+{
+"q": "A true contraindication to all vaccines is:",
+"o": [
+"Mild diarrhoea",
+"Low-grade fever",
+"Anaphylaxis to a previous dose",
+"Prematurity",
+"Malnutrition"
+],
+"a": 2,
+"e": "Only anaphylaxis to a previous dose or component contraindicates all vaccines.",
+"k": "anaphylaxis to a previous dose",
+"s": "bank"
+},
+{
+"q": "The BCG vaccine in a newborn is given:",
+"o": [
+"0.5 mL subcutaneously",
+"0.05 mL intradermally",
+"0.1 mL intramuscularly",
+"2 drops orally",
+"0.5 mL intramuscularly"
+],
+"a": 1,
+"e": "BCG: 0.05 mL intradermal for neonates, left upper arm.",
+"k": "0.05 ml (neonate)",
+"s": "bank"
+},
+{
+"q": "A contraindication to whole-cell pertussis vaccine is:",
+"o": [
+"Family history of fits",
+"Encephalopathy within 7 days of a previous dose",
+"Mild fever",
+"Prematurity",
+"Breastfeeding"
+],
+"a": 1,
+"e": "Encephalopathy within 7 days of a previous dose contraindicates further pertussis vaccine.",
+"k": "encephalopathy within",
+"s": "bank"
+},
+{
+"q": "Which vaccine is a live attenuated vaccine?",
+"o": [
+"Hepatitis B",
+"Tetanus toxoid",
+"Rotavirus",
+"Hib",
+"IPV"
+],
+"a": 2,
+"e": "Rotavirus, BCG, OPV and measles are live.",
+"k": "live attenuated",
+"s": "bank"
+},
+{
+"q": "A 10-month-old with severe acute malnutrition missed his measles vaccine. You should:",
+"o": [
+"Delay until recovery",
+"Give measles vaccine now",
+"Give immunoglobulin only",
+"Contraindicated forever",
+"Give OPV only"
+],
+"a": 1,
+"e": "Malnutrition is not a contraindication; measles is deadly in SAM.",
+"k": "malnutrition (vaccinate",
+"s": "bank"
+},
+{
+"q": "The correct storage temperature for EPI vaccines is:",
+"o": [
+"−20 to −10 °C",
+"0 to +2 °C",
+"+2 to +8 °C",
+"+8 to +15 °C",
+"Room temperature"
+],
+"a": 2,
+"e": "The cold chain keeps vaccines at +2 to +8 °C.",
+"k": "+2 to +8 °c",
+"s": "bank"
+},
+{
+"q": "Rotavirus vaccine is contraindicated in a child with:",
+"o": [
+"Previous intussusception",
+"Mild cold",
+"Eczema",
+"Egg allergy",
+"Breastfeeding"
+],
+"a": 0,
+"e": "Rotavirus vaccine carries a small risk of intussusception.",
+"k": "previous intussusception",
+"s": "bank"
+}
+]

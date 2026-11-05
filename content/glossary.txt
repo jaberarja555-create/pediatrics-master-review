@@ -426,3 +426,13 @@ Trousseau's sign | Carpal spasm when a BP cuff is inflated (low calcium); also m
 Virchow's node | Enlarged left supraclavicular node from an abdominal cancer (Troisier's sign)
 Whipple's operation | Pancreaticoduodenectomy for cancer of the pancreatic head or periampullary region
 Zollinger–Ellison syndrome | Gastrinoma causing severe, multiple peptic ulcers
+centile / percentile | Position of a measurement among 100 children of the same age and sex
+stunting / stunted | Low height for age: the sign of chronic under-nutrition
+wasting / wasted | Low weight for height: the sign of acute under-nutrition
+fontanelle | Soft gap between the skull bones of an infant
+microcephaly | Head circumference below the 3rd centile
+macrocephaly | Head circumference above the 97th centile
+bottom-shuffling / bottom-shuffler | Moving about on the bottom instead of crawling; a normal variant that delays walking
+pincer grasp | Picking up a small object between the tips of the thumb and index finger
+toxoid | Inactivated bacterial toxin used as a vaccine
+cold chain | System that keeps vaccines at +2 to +8 °C from the factory to the child

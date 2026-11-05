@@ -1,0 +1,177 @@
+[
+ [
+  "Periods",
+  "Define the neonatal period.",
+  "Birth to 28 days."
+ ],
+ [
+  "Periods",
+  "Period of the most rapid growth after birth?",
+  "Infancy (first year)."
+ ],
+ [
+  "Weight",
+  "Average term birth weight?",
+  "3–3.5 kg."
+ ],
+ [
+  "Weight",
+  "Maximum normal weight loss in the first week?",
+  "Up to 10% of birth weight."
+ ],
+ [
+  "Weight",
+  "When does a term baby regain birth weight?",
+  "By day 10–14."
+ ],
+ [
+  "Weight",
+  "Weight gain per month in the first 4 months?",
+  "About 750 g/month."
+ ],
+ [
+  "Weight",
+  "When is birth weight doubled?",
+  "At 4–5 months."
+ ],
+ [
+  "Weight",
+  "When is birth weight tripled?",
+  "At 1 year (≈ 10 kg)."
+ ],
+ [
+  "Weight",
+  "Formula for weight at 1–6 years?",
+  "(Age in years × 2) + 8 kg."
+ ],
+ [
+  "Length",
+  "Average length at birth and at 1 year?",
+  "50 cm at birth, 75 cm at 1 year."
+ ],
+ [
+  "Length",
+  "At what age is birth length doubled?",
+  "4 years (≈ 100 cm)."
+ ],
+ [
+  "Length",
+  "How is length measured under 2 years?",
+  "Lying down (infantometer)."
+ ],
+ [
+  "Length",
+  "Height formula from 2 years to puberty?",
+  "(Age × 6) + 77 cm."
+ ],
+ [
+  "Length",
+  "Abnormal height velocity after age 3?",
+  "Less than 4 cm/year."
+ ],
+ [
+  "Head",
+  "Head circumference at birth and 1 year?",
+  "35 cm at birth, 47 cm at 1 year."
+ ],
+ [
+  "Head",
+  "Increase in OFC during the first year?",
+  "About 12 cm."
+ ],
+ [
+  "Head",
+  "Define microcephaly.",
+  "OFC below the 3rd centile (−2 SD)."
+ ],
+ [
+  "Head",
+  "Blood cause of macrocephaly?",
+  "Chronic haemolytic anaemia (thalassaemia): marrow expansion."
+ ],
+ [
+  "Fontanelle",
+  "When does the anterior fontanelle close?",
+  "12–18 months."
+ ],
+ [
+  "Fontanelle",
+  "When does the posterior fontanelle close?",
+  "6–8 weeks."
+ ],
+ [
+  "Fontanelle",
+  "Two common causes of a large, late-closing anterior fontanelle?",
+  "Rickets and congenital hypothyroidism."
+ ],
+ [
+  "Proportions",
+  "Upper : lower segment ratio at birth?",
+  "1.7 : 1 (becomes 1 : 1 at about 10 years)."
+ ],
+ [
+  "Proportions",
+  "Upper : lower ratio stays high in?",
+  "Short-limb conditions: achondroplasia, rickets, hypothyroidism."
+ ],
+ [
+  "Proportions",
+  "When are head and chest circumference equal?",
+  "At about 1 year."
+ ],
+ [
+  "MUAC",
+  "MUAC cut-off for severe acute malnutrition?",
+  "Below 11.5 cm (6–59 months)."
+ ],
+ [
+  "Teeth",
+  "Age of the first tooth?",
+  "6–7 months (lower central incisor)."
+ ],
+ [
+  "Teeth",
+  "When are all 20 primary teeth present?",
+  "By 2½ years."
+ ],
+ [
+  "Bone age",
+  "Best measure of skeletal maturity?",
+  "Bone age (left wrist X-ray)."
+ ],
+ [
+  "Bone age",
+  "Two causes of advanced bone age?",
+  "Precocious puberty and CAH (also obesity)."
+ ],
+ [
+  "Charts",
+  "Which growth charts are used in Sudan?",
+  "WHO Child Growth Standards."
+ ],
+ [
+  "Charts",
+  "Normal range on a centile chart?",
+  "3rd to 97th centile, following its own line."
+ ],
+ [
+  "Charts",
+  "Define growth faltering.",
+  "A fall across two major centile lines."
+ ],
+ [
+  "Charts",
+  "Weight-for-height below −3 SD means?",
+  "Severe wasting (SAM)."
+ ],
+ [
+  "Charts",
+  "Low height-for-age means?",
+  "Stunting: chronic malnutrition."
+ ],
+ [
+  "Charts",
+  "Until what age is the corrected age used for preterms?",
+  "2 years."
+ ]
+]

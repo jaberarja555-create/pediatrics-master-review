@@ -1,0 +1,100 @@
+[
+{
+"q": "The most common cause of failure to thrive is:",
+"o": [
+"Congenital heart disease",
+"Malnutrition (inadequate intake)",
+"Repeated respiratory infections",
+"Chromosomal abnormality",
+"Coeliac disease"
+],
+"a": 1,
+"e": "Inadequate intake is by far the commonest cause.",
+"k": "commonest · poor feeding",
+"s": "bank"
+},
+{
+"q": "The most useful basis for diagnosing the cause of failure to thrive is:",
+"o": [
+"Blood chemistry",
+"Cultures",
+"History and physical examination",
+"Radiographs",
+"Growth hormone level"
+],
+"a": 2,
+"e": "A careful feeding history and examination point to the cause in most children.",
+"k": "history (the most useful tool)",
+"s": "bank"
+},
+{
+"q": "All are appropriate in the initial assessment of failure to thrive EXCEPT:",
+"o": [
+"Diet history",
+"Social history",
+"Weight, length and OFC",
+"Urine culture",
+"Growth hormone levels"
+],
+"a": 4,
+"e": "GH tests are second-line, for short stature after screening tests.",
+"k": "first line:",
+"s": "bank"
+},
+{
+"q": "Regarding short stature, which statement is CORRECT?",
+"o": [
+"Bone age is delayed in constitutional growth delay",
+"Height crosses centile lines in familial short stature",
+"Weight is more affected than height in endocrine disease",
+"Karyotype is needed in every short boy",
+"GH helps familial short stature"
+],
+"a": 0,
+"e": "Constitutional delay: delayed bone age, delayed puberty, normal final height.",
+"k": "constitutional delay",
+"s": "bank"
+},
+{
+"q": "All are recognized causes of short stature EXCEPT:",
+"o": [
+"Renal tubular acidosis",
+"Coeliac disease",
+"Hypothyroidism",
+"Turner syndrome",
+"Acute renal failure"
+],
+"a": 4,
+"e": "Chronic, not acute, renal failure causes short stature.",
+"k": "ckd, rta",
+"s": "bank"
+},
+{
+"q": "A short 8-year-old girl with a webbed neck and wide-spaced nipples. The key investigation is:",
+"o": [
+"Bone age",
+"TSH",
+"Karyotype",
+"GH stimulation test",
+"MRI pituitary"
+],
+"a": 2,
+"e": "Turner syndrome (45,X) is confirmed by karyotype.",
+"k": "turner syndrome",
+"s": "bank"
+},
+{
+"q": "Delayed bone age with a plump, short child suggests:",
+"o": [
+"Familial short stature",
+"Hypothyroidism",
+"Coeliac disease",
+"Precocious puberty",
+"Achondroplasia"
+],
+"a": 1,
+"e": "Endocrine causes reduce height more than weight and delay bone age.",
+"k": "proportionate · overweight",
+"s": "bank"
+}
+]

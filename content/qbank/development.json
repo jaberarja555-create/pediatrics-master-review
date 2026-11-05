@@ -1,0 +1,128 @@
+[
+{
+"q": "A child can hop and stand on one leg. His age is about:",
+"o": [
+"12 months",
+"18 months",
+"2 years",
+"3 years",
+"4 years"
+],
+"a": 4,
+"e": "Hopping on one foot is a 4-year skill; a 3-year-old stands on one foot only briefly.",
+"k": "hops on one foot",
+"s": "bank"
+},
+{
+"q": "Which pair shows the CORRECT stage of normal development?",
+"o": [
+"6 months – pulls to stand",
+"12 months – pincer grasp",
+"18 months – copies a cross",
+"2 years – draws a square",
+"3 years – skips"
+],
+"a": 1,
+"e": "Mature pincer grasp is a 12-month skill. Pulling to stand is 9 months, a cross 4 years, a square 4½ years, skipping 5 years.",
+"k": "mature pincer grasp",
+"s": "bank"
+},
+{
+"q": "The correct order in which children copy shapes is:",
+"o": [
+"Circle, square, cross",
+"Cross, circle, square",
+"Circle, cross, square",
+"Square, cross, circle",
+"Line, square, circle"
+],
+"a": 2,
+"e": "Line (2 yr) → circle (3 yr) → cross (4 yr) → square → triangle (5 yr).",
+"k": "order of copying shapes",
+"s": "bank"
+},
+{
+"q": "A 2-year-old child can do all the following EXCEPT:",
+"o": [
+"Run",
+"Build a tower of 6 cubes",
+"Copy a vertical line",
+"Use 2–3-word phrases",
+"Ride a tricycle"
+],
+"a": 4,
+"e": "Riding a tricycle is a 3-year skill.",
+"k": "rides a tricycle",
+"s": "bank"
+},
+{
+"q": "A baby says 'mama, dada', waves bye-bye and pulls to stand. The age is about:",
+"o": [
+"6 months",
+"9–10 months",
+"15 months",
+"18 months",
+"2 years"
+],
+"a": 1,
+"e": "These are 9–10-month milestones.",
+"k": "waves bye-bye",
+"s": "bank"
+},
+{
+"q": "The Moro reflex normally disappears by:",
+"o": [
+"6 weeks",
+"2 months",
+"4–6 months",
+"9 months",
+"12 months"
+],
+"a": 2,
+"e": "Moro disappears by 4–6 months; persistence suggests cerebral palsy.",
+"k": "moro",
+"s": "bank"
+},
+{
+"q": "All of the following cause motor developmental delay EXCEPT:",
+"o": [
+"Cerebral palsy",
+"Rickets",
+"Emotional neglect",
+"Duchenne muscular dystrophy",
+"Asthma"
+],
+"a": 4,
+"e": "Asthma does not delay motor milestones.",
+"k": "causes by field",
+"s": "bank"
+},
+{
+"q": "The first investigation in a 2-year-old who has no words but normal motor and social development is:",
+"o": [
+"CT brain",
+"Karyotype",
+"Hearing assessment",
+"TSH",
+"EEG"
+],
+"a": 2,
+"e": "Isolated speech delay: exclude deafness first.",
+"k": "hearing test first",
+"s": "bank"
+},
+{
+"q": "Social smile appears at:",
+"o": [
+"Birth",
+"6 weeks",
+"3 months",
+"6 months",
+"9 months"
+],
+"a": 1,
+"e": "The social smile appears at 6 weeks; limit age 8 weeks.",
+"k": "social smile",
+"s": "bank"
+}
+]

@@ -1,0 +1,114 @@
+[
+{
+"q": "All are true about normal weight change in a term infant EXCEPT:",
+"o": [
+"Weight loss in the first few days of life",
+"Return to birth weight by day 10–14",
+"Doubling of birth weight by 1 year",
+"Tripling of birth weight by 1 year",
+"Gain of about 750 g/month in the first 4 months"
+],
+"a": 2,
+"e": "Birth weight doubles by 4–5 months and triples by 1 year.",
+"k": "doubles by 4–5 months",
+"s": "bank"
+},
+{
+"q": "The average increase in head circumference during the first year of life is:",
+"o": [
+"4 cm",
+"12 cm",
+"20 cm",
+"25 cm",
+"34 cm"
+],
+"a": 1,
+"e": "OFC rises from 35 cm at birth to about 47 cm at 1 year: about 12 cm.",
+"k": "gain in year 1 ≈ 12 cm",
+"s": "bank"
+},
+{
+"q": "Recognized causes of macrocephaly include all EXCEPT:",
+"o": [
+"Hydrocephalus",
+"Thalassaemia major",
+"Achondroplasia",
+"Familial large head",
+"Down syndrome"
+],
+"a": 4,
+"e": "Down syndrome is associated with a small, brachycephalic head; the others cause a large head.",
+"k": "macrocephaly:",
+"s": "bank"
+},
+{
+"q": "A 2-year-old has a head circumference of 40 cm. Possible causes include all EXCEPT:",
+"o": [
+"TORCH infection",
+"Birth asphyxia",
+"Familial microcephaly",
+"Trisomy",
+"Rickets"
+],
+"a": 4,
+"e": "40 cm at 2 years is microcephaly. Rickets enlarges the skull rather than making it small.",
+"k": "microcephaly:",
+"s": "bank"
+},
+{
+"q": "A baby's weight and length are both on the 10th centile and have followed that line since birth. The child is:",
+"o": [
+"Normal",
+"Stunted",
+"Wasted",
+"Failing to thrive",
+"In need of endocrine tests"
+],
+"a": 0,
+"e": "A child between the 3rd and 97th centiles who follows his own centile line is growing normally.",
+"k": "small but normal",
+"s": "bank"
+},
+{
+"q": "The most accurate method of assessing a child's biological (skeletal) maturity is:",
+"o": [
+"Head circumference",
+"Upper to lower segment ratio",
+"Bone age",
+"Height velocity",
+"Dentition"
+],
+"a": 2,
+"e": "Bone age (left wrist X-ray) is the best measure of skeletal maturity.",
+"k": "best measure of biological maturity",
+"s": "bank"
+},
+{
+"q": "The length of a term baby increases during the first year by about:",
+"o": [
+"10 cm",
+"15 cm",
+"25 cm",
+"35 cm",
+"50 cm"
+],
+"a": 2,
+"e": "Length rises from 50 cm at birth to 75 cm at 1 year.",
+"k": "+25 cm in year 1",
+"s": "bank"
+},
+{
+"q": "Which anthropometric index reflects chronic malnutrition?",
+"o": [
+"Weight-for-height",
+"Height-for-age",
+"MUAC",
+"Weight-for-age",
+"BMI-for-age"
+],
+"a": 1,
+"e": "Low height-for-age (stunting) reflects chronic under-nutrition; weight-for-height reflects acute wasting.",
+"k": "chronic malnutrition (stunting)",
+"s": "bank"
+}
+]

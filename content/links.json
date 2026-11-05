@@ -1,1 +1,21 @@
-{}
+{
+ "growth": [
+  "growth chart",
+  "growth charts",
+  "centile chart"
+ ],
+ "development": [
+  "developmental milestones",
+  "milestones",
+  "developmental delay"
+ ],
+ "ftt": [
+  "failure to thrive",
+  "short stature"
+ ],
+ "immunization": [
+  "EPI schedule",
+  "immunization",
+  "vaccination"
+ ]
+}

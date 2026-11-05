@@ -112,7 +112,7 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
 - `src/`: app shell, CSS, JS, manifest, service worker. Change these only for app features.
 - Build: `python3 build.py` → `docs/` (committed) and `artifact/index.html` (not committed). Review copy is published
   with the Artifact tool from `artifact/index.html` + every file in content/img as `img/<name>` to
-  https://claude.ai/artifact/TCV2sVb8tfxrEzcET5D1jX (pass it as `url` from a new session).
+  https://claude.ai/artifact/KTSxsCQJwcmV1kFkYanT91 (slug 9575d593-f369-49e1-8263-c0a1f78a68b0; publish docs/index.html as index.html, since the server needs a full HTML document) (pass it as `url` from a new session).
 - Workflow: one chapter at a time; show the owner each finished chapter (republish the artifact) before starting
   the next. The book must be illustrated: SVG diagrams/ECGs/flowcharts drawn in-page; clinical photos where they help.
 - Check: `node check.js [screenshot-dir]` must print "All pages fit." If a column is too long, move or
