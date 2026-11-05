@@ -1,14 +1,14 @@
 import { DurableObject } from 'cloudflare:workers';
 // Pediatrics Master Review · activation server (Cloudflare Worker + Durable Object)
 // Like Dr. Arja Master Note: the authors make codes (PMR-XXXX-XXXX) on /admin and send one to each buyer;
-// the student types it in the app, which activates itself (one code = up to 2 devices).
+// the student types it in the app, which activates itself (one code = 2 devices by default; the authors can set 1–10 per code).
 // Routes: GET  /admin      control page (password)
 //         /api/*           control API (Authorization: Bearer <ADMIN_PASSWORD>)
 //         POST /activate   public: { code, dev } → signed token for this device
 //         GET  /check      public: is this code still on for this device?
 //         POST /sync       device of a code: { code, dev, token, ver?, data? } → highlights and notes shared by the code's devices
 //         anything else    the book app (static files from docs/)
-const MSG = 'PMR|pediatrics|1|', MAX_DEV = 2;
+const MSG = 'PMR|pediatrics|1|', MAX_DEV = 2, DEV_LIMIT = 10;   // default devices per code · highest the control page allows
 const AB = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 const DEV = /^[A-Z2-9]{8}$/, CODE = /^PMR[A-Z2-9]{8}$/;
 
@@ -29,7 +29,12 @@ function kindOf(req) {
 const SCHEMA = 'CREATE TABLE IF NOT EXISTS codes (code TEXT PRIMARY KEY, note TEXT NOT NULL DEFAULT \'\', created TEXT NOT NULL, activated TEXT, active INTEGER NOT NULL DEFAULT 1, devices TEXT NOT NULL DEFAULT \'[]\')';
 const SYNC_SCHEMA = 'CREATE TABLE IF NOT EXISTS sync (code TEXT PRIMARY KEY, ver INTEGER NOT NULL, data TEXT NOT NULL, updated TEXT NOT NULL)';
 export class CodesDB extends DurableObject {
-  constructor(ctx, env) { super(ctx, env); ctx.storage.sql.exec(SCHEMA); ctx.storage.sql.exec(SYNC_SCHEMA); }
+  constructor(ctx, env) {
+    super(ctx, env); ctx.storage.sql.exec(SCHEMA); ctx.storage.sql.exec(SYNC_SCHEMA);
+    // devices allowed for each code (added later: older stores get the column with the default of 2)
+    const cols = ctx.storage.sql.exec('PRAGMA table_info(codes)').toArray().map(c => c.name);
+    if (!cols.includes('maxdev')) ctx.storage.sql.exec('ALTER TABLE codes ADD COLUMN maxdev INTEGER NOT NULL DEFAULT ' + MAX_DEV);
+  }
   q(sql, params, mode) {
     const cur = this.ctx.storage.sql.exec(sql, ...params), rows = cur.toArray();
     return mode === 'first' ? rows[0] || null : mode === 'all' ? { results: rows } : { ok: true, changes: cur.rowsWritten };
@@ -39,7 +44,8 @@ async function db(env) {
   const stub = env.CODES.get(env.CODES.idFromName('codes'));
   return { prepare: sql => { const st = { p: [], bind(...a) { st.p = a; return st }, run: () => stub.q(sql, st.p, 'run'), first: () => stub.q(sql, st.p, 'first'), all: () => stub.q(sql, st.p, 'all') }; return st } };
 }
-const row = r => r && { code: fmt(r.code), note: r.note, created: r.created, activated: r.activated, on: !!r.active, devices: JSON.parse(r.devices || '[]') };
+const row = r => r && { code: fmt(r.code), note: r.note, created: r.created, activated: r.activated, on: !!r.active, devices: JSON.parse(r.devices || '[]'), max: r.maxdev || MAX_DEV };
+const devLimit = v => Math.min(Math.max(parseInt(v, 10) || MAX_DEV, 1), DEV_LIMIT);
 async function one(env, code) { return (await db(env)).prepare('SELECT * FROM codes WHERE code = ?').bind(code).first() }
 async function all(env) { return (await (await db(env)).prepare('SELECT * FROM codes ORDER BY created DESC, code').all()).results.map(row) }
 async function setDevices(env, code, devs) { await (await db(env)).prepare('UPDATE codes SET devices = ? WHERE code = ?').bind(JSON.stringify(devs), code).run() }
@@ -58,26 +64,35 @@ async function api(req, env, path) {
   const body = await req.json().catch(() => ({}));
   const D = await db(env);
   if (path === '/api/codes') {
-    const n = Math.min(Math.max(parseInt(body.count, 10) || 1, 1), 50), note = String(body.note || '').trim().slice(0, 200), made = [];
+    const n = Math.min(Math.max(parseInt(body.count, 10) || 1, 1), 50), note = String(body.note || '').trim().slice(0, 200), mx = devLimit(body.max), made = [];
     for (let i = 0; i < n; i++) {
       const c = newCode();
-      await D.prepare('INSERT OR IGNORE INTO codes (code, note, created) VALUES (?, ?, ?)').bind(c, note, now()).run();
+      await D.prepare('INSERT OR IGNORE INTO codes (code, note, created, maxdev) VALUES (?, ?, ?, ?)').bind(c, note, now(), mx).run();
       made.push(fmt(c));
     }
     return json({ made, codes: await all(env) });
   }
-  const m = path.match(/^\/api\/codes\/([A-Za-z0-9-]+)\/(off|on|reset|note|delete)$/);
+  const nm = path.match(/^\/api\/codes\/([A-Za-z0-9-]+)\/notes$/);
+  if (nm) {  // the student's written notes (feedback on the book), newest first; highlights without a note are left out
+    const cur = await D.prepare('SELECT data FROM sync WHERE code = ?').bind(norm(nm[1])).first();
+    const hl = cur ? (JSON.parse(cur.data).hl || {}) : {}, notes = [];
+    for (const k of Object.keys(hl)) for (const h of hl[k] || []) if (h.n) notes.push({ page: k, text: h.t || '', note: h.n, u: h.u || 0 });
+    notes.sort((a, b) => b.u - a.u);
+    return json({ notes });
+  }
+  const m = path.match(/^\/api\/codes\/([A-Za-z0-9-]+)\/(off|on|reset|note|delete|max)$/);
   if (!m) return json({ error: 'Unknown' }, 404);
   const code = norm(m[1]);
   if (!await one(env, code)) return json({ error: 'This code no longer exists.', codes: await all(env) }, 404);
   if (m[2] === 'off' || m[2] === 'on') await D.prepare('UPDATE codes SET active = ? WHERE code = ?').bind(m[2] === 'on' ? 1 : 0, code).run();
   if (m[2] === 'reset') await D.prepare('UPDATE codes SET devices = \'[]\', activated = NULL WHERE code = ?').bind(code).run();
+  if (m[2] === 'max') await D.prepare('UPDATE codes SET maxdev = ? WHERE code = ?').bind(devLimit(body.max), code).run();
   if (m[2] === 'note') await D.prepare('UPDATE codes SET note = ? WHERE code = ?').bind(String(body.note || '').trim().slice(0, 200), code).run();
   if (m[2] === 'delete') { await D.prepare('DELETE FROM codes WHERE code = ?').bind(code).run(); await D.prepare('DELETE FROM sync WHERE code = ?').bind(code).run() }
   return json({ codes: await all(env) });
 }
 
-// The student types the code in the app: bind this device (max 2 per code) and send back its signed token.
+// The student types the code in the app: bind this device (up to the code's device limit, 2 by default) and send back its signed token.
 async function activate(req, env) {
   const body = await req.json().catch(() => ({}));
   const code = norm(body.code), dev = norm(body.dev);
@@ -89,7 +104,7 @@ async function activate(req, env) {
   if (!r.on) return json({ ok: false, reason: 'off' });
   const t = now(), d = r.devices.find(x => x.dev === dev);
   if (d) d.last = t;
-  else if (r.devices.length >= MAX_DEV) return json({ ok: false, reason: 'full' });
+  else if (r.devices.length >= r.max) return json({ ok: false, reason: 'full' });
   else r.devices.push({ dev, kind: kindOf(req), first: t, last: t });
   await (await db(env)).prepare('UPDATE codes SET devices = ?, activated = COALESCE(activated, ?) WHERE code = ?').bind(JSON.stringify(r.devices), t, code).run();
   return json({ ok: true, code: r.code, token: await sign(env, dev) });
@@ -161,6 +176,7 @@ export default {
 const PAGE = (env, origin) => `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Activation Codes</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
 <style>
+.nbox{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:50;padding:14px}.nbox[hidden]{display:none}.nin{background:#fff;color:#111;border-radius:14px;max-width:640px;width:100%;max-height:85vh;overflow:auto;padding:16px}.ni{border-top:1px solid #e5e7eb;padding:8px 0}.ni i{display:block;color:#555;font-size:13px}.ni p{margin:4px 0 0;white-space:normal}
 :root{--bg:#f4efe7;--card:#fff;--line:#e8dfd1;--ink:#1d1916;--muted:#6f655a;--gold:#c0892b;--ok:#0f7a55;--ok-soft:#c9f2e1;--off:#b42318;--off-soft:#fde2df;--new:#6f655a;--new-soft:#eee7dc;--field:#f4efe7}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15120f;--card:#1f1b17;--line:#352d25;--ink:#f3ede4;--muted:#b3a796;--field:#2a241e;--ok-soft:#123b2c;--off-soft:#3d1714;--new:#b3a796;--new-soft:#2d2620}}
 :root[data-theme="dark"]{--bg:#15120f;--card:#1f1b17;--line:#352d25;--ink:#f3ede4;--muted:#b3a796;--field:#2a241e;--ok-soft:#123b2c;--off-soft:#3d1714;--new:#b3a796;--new-soft:#2d2620}
@@ -187,14 +203,16 @@ h2{font:900 13px Inter;letter-spacing:2.5px;text-transform:uppercase;color:var(-
 .row .muted{font-size:14px;margin:3px 0}.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.ed{display:flex;gap:8px;margin:6px 0}
 .msg{min-height:1.4em;font-weight:700;margin:8px 0 0}.msg.err{color:var(--off)}.msg.ok{color:var(--ok)}
 #login{max-width:420px;margin:60px auto}.hide{display:none!important}
+  .devs{display:flex;align-items:center;gap:8px;margin-top:8px;font-weight:600}.devs button{width:34px;height:32px;padding:0;font-size:18px;line-height:1}.devs b{min-width:44px;text-align:center}.devs button:disabled{opacity:.35;cursor:default}
 #toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#1d1916;color:#fff;padding:10px 16px;border-radius:12px;font-weight:700;opacity:0;transition:opacity .2s;pointer-events:none;max-width:90vw}#toast.show{opacity:1}#toast.err{background:var(--off)}
 </style></head><body>
 <header><div><b>PEDIATRICS <span>MASTER REVIEW</span></b><small>Activation codes</small></div><button id="out" class="hide">Sign out</button></header>
 <div id="login" class="card"><h2>Sign in</h2><p class="muted">Control page for the authors.</p><input id="pw" type="password" placeholder="Password"><p></p><button class="pri" id="go">Sign in</button><p class="msg err" id="lmsg"></p></div>
 <main id="app" class="hide">
 <div class="stats"><div><b id="sAll">0</b><span>Codes</span></div><div><b id="sAct">0</b><span>Activated</span></div><div><b id="sNew">0</b><span>Unused</span></div><div><b id="sOff">0</b><span>Switched off</span></div></div>
-<div class="card"><h2>New codes</h2><p class="muted" style="margin:0">Make one code per buyer. Write their name or phone in the note so you can find them later. One code opens 2 devices.</p>
-<div class="form"><input id="note" placeholder="Note, e.g. Ahmed · 0912 345 678"><input id="count" type="number" min="1" max="50" value="1"><button class="pri" id="make">Create</button></div>
+<div class="card"><h2>New codes</h2><p class="muted" style="margin:0">Make one code per buyer. Write their name or phone in the note so you can find them later. One code opens 2 devices; choose more for someone who needs it, or change it later on the code.</p>
+<div class="form"><input id="note" placeholder="Note, e.g. Ahmed · 0912 345 678"><input id="count" type="number" min="1" max="50" value="1" title="How many codes"><button class="pri" id="make">Create</button></div>
+<div class="devs">Devices for each code: <button data-mx="-1" aria-label="Fewer devices">−</button><b id="mx">2</b><button data-mx="1" aria-label="More devices">+</button></div>
 <p class="msg" id="mmsg"></p><div class="made" id="made"></div></div>
 <div class="card"><div class="head"><h2 style="margin:0">All codes</h2><input id="q" placeholder="Search code, note or device"></div><div id="list"></div></div>
 </main><div id="toast"></div>
@@ -208,7 +226,7 @@ function call(path,body){return fetch(path,{method:body?'POST':'GET',cache:'no-s
   .then(function(r){return r.json().catch(function(){return {error:'Server error ('+r.status+')'}}).then(function(j){if(j&&j.codes){ALL=j.codes;draw()}if(!r.ok)throw new Error(j.error||'Error');return j})})}
 function day(t){return t?new Date(t).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):''}
 function status(r){return !r.on?['b-off','SWITCHED OFF']:r.devices.length?['b-act','ACTIVATED']:['b-new','UNUSED']}
-function message(r){return 'السلام عليكم 🌷\\nشكراً على اشتراكك في Pediatrics Master Review.\\n\\nالـ activation code بتاعك:\\n*'+r.code+'*\\n\\nافتح الكتاب من اللينك دا ودوس "افتح الكتاب كامل"، اكتب الكود ودوس Activate:\\n'+APP_URL+'\\n\\nأو دوس على اللينك دا وبيتفعّل براه:\\n'+APP_URL+'#code='+r.code+'\\n\\nالكود الواحد بيفتح جهازين (الموبايل واللابتوب). ما ترسله لزول تاني.'}
+function message(r){return 'السلام عليكم 🌷\\nشكراً على اشتراكك في Pediatrics Master Review.\\n\\nالـ activation code بتاعك:\\n*'+r.code+'*\\n\\nافتح الكتاب من اللينك دا ودوس "افتح الكتاب كامل"، اكتب الكود ودوس Activate:\\n'+APP_URL+'\\n\\nأو دوس على اللينك دا وبيتفعّل براه:\\n'+APP_URL+'#code='+r.code+'\\n\\n'+(r.max===2?'الكود الواحد بيفتح جهازين (الموبايل واللابتوب).':r.max===1?'الكود دا بيفتح جهاز واحد.':'الكود دا بيفتح '+r.max+' أجهزة.')+' ما ترسله لزول تاني.'}
 function copy(t,what){function ok(){toast(what+' copied')}
   if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(t).then(ok,function(){fallback(t)?ok():toast('Could not copy',1)});else fallback(t)?ok():toast('Could not copy',1)}
 function fallback(t){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();var k=false;try{k=document.execCommand('copy')}catch(e){}a.remove();return k}
@@ -219,22 +237,32 @@ function draw(){var q=$('q').value.trim().toUpperCase().replace(/[^A-Z0-9\\u0600
   $('list').innerHTML=l.length?l.map(function(r){var s=status(r);return '<div class="row" data-c="'+r.code+'"><div class="top"><div><span class="code">'+r.code+'</span><span class="badge '+s[0]+'">'+s[1]+'</span></div><span class="muted">'+day(r.created)+'</span></div>'+
     (EDIT===r.code?'<div class="ed"><input id="edIn" value="'+esc(r.note)+'" placeholder="Name · phone"><button class="pri" data-a="save">Save</button><button data-a="cancel">Cancel</button></div>'
       :'<div class="muted">'+(r.note?esc(r.note):'<i>No note</i>')+(r.activated?' · activated '+day(r.activated):'')+'</div>')+
-    '<div class="muted">Devices: '+(r.devices.length?r.devices.map(function(d){return esc(d.kind)+' (since '+day(d.first)+', last '+day(d.last)+')'}).join(' · ')+' &nbsp;['+r.devices.length+'/2]':'none yet')+'</div>'+
-    '<div class="acts"><button data-a="code">Copy code</button><button data-a="msg">Copy message</button><button data-a="edit">Edit note</button>'+
+    '<div class="muted">Devices: '+(r.devices.length?r.devices.map(function(d){return esc(d.kind)+' (since '+day(d.first)+', last '+day(d.last)+')'}).join(' · ')+'':'none yet')+'</div>'+
+    '<div class="devs">Devices allowed: <button data-a="max" data-v="'+(r.max-1)+'"'+(r.max<=Math.max(1,r.devices.length)?' disabled':'')+' aria-label="Fewer devices">−</button><b>'+r.devices.length+' / '+r.max+'</b><button data-a="max" data-v="'+(r.max+1)+'"'+(r.max>=10?' disabled':'')+' aria-label="More devices">+</button><span class="muted">used / allowed</span></div>'+
+    '<div class="acts"><button data-a="code">Copy code</button><button data-a="msg">Copy message</button><button data-a="edit">Edit note</button><button data-a="notes">Student notes</button>'+
     (r.devices.length?'<button data-a="reset">Reset devices</button>':'')+(r.on?'<button class="red" data-a="off">Switch off</button>':'<button data-a="on">Switch on</button>')+'<button class="red" data-a="delete">Delete</button></div></div>'}).join('')
     :'<p class="muted">'+(ALL.length?'Nothing matches.':'No codes yet. Make the first one above.')+'</p>';
   if(EDIT&&$('edIn')){$('edIn').focus();$('edIn').onkeydown=function(e){if(e.key==='Enter')saveNote();if(e.key==='Escape'){EDIT=null;draw()}}}}
+function showNotes(r,n){var w=$('nbox');if(!w){w=document.createElement('div');w.id='nbox';w.className='nbox';document.body.appendChild(w)}
+  var txt=n.map(function(x){return x.page+' · "'+x.text+'"\\n'+x.note}).join('\\n\\n');
+  w.innerHTML='<div class="nin"><div class="nh"><b>Notes of '+esc(r.note||r.code)+'</b> <span class="muted">'+n.length+' note'+(n.length===1?'':'s')+'</span></div>'+
+    (n.length?n.map(function(x){return '<div class="ni"><div class="muted">'+esc(x.page)+' · '+day(x.u)+'</div><i>"'+esc(x.text)+'"</i><p>'+esc(x.note).replace(/\\n/g,'<br>')+'</p></div>'}).join(''):'<p class="muted">No notes yet (notes reach the server when the student is online).</p>')+
+    '<div class="acts"><button class="pri" id="ncopy">Copy all</button><button id="nx">Close</button></div></div>';
+  w.hidden=false;$('nx').onclick=function(){w.hidden=true};$('ncopy').onclick=function(){copy(txt,'Notes')};w.onclick=function(e){if(e.target===w)w.hidden=true}}
 function saveNote(){var c=EDIT,v=$('edIn').value;EDIT=null;call('/api/codes/'+c+'/note',{note:v}).then(function(){toast('Note saved')}).catch(function(e){toast(e.message,1)})}
-var SURE={reset:'Sure? Reset',delete:'Sure? Delete',off:'Sure? Switch off'},DONE={on:'Switched on',off:'Switched off',reset:'Devices reset: the code can be used on 2 new devices',delete:'Deleted'};
+var SURE={reset:'Sure? Reset',delete:'Sure? Delete',off:'Sure? Switch off'},DONE={on:'Switched on',off:'Switched off',reset:'Devices reset: the code can be used on new devices again',delete:'Deleted'};
 $('list').onclick=function(e){var b=e.target.closest('button');if(!b||b.disabled)return;var c=b.closest('.row').dataset.c,r=ALL.filter(function(x){return x.code===c})[0],a=b.dataset.a;if(!r)return;
   if(a==='code')return copy(r.code,'Code');if(a==='msg')return copy(message(r),'Message');
+  if(a==='max'){b.disabled=true;return call('/api/codes/'+c+'/max',{max:+b.dataset.v}).then(function(j){toast('This code now opens '+b.dataset.v+' device'+(b.dataset.v==='1'?'':'s'))}).catch(function(e){b.disabled=false;toast(e.message,1)})}
+  if(a==='notes'){b.disabled=true;return call('/api/codes/'+c+'/notes',{}).then(function(j){b.disabled=false;showNotes(r,j.notes||[])}).catch(function(e){b.disabled=false;toast(e.message,1)})}
   if(a==='edit'){EDIT=c;return draw()}if(a==='cancel'){EDIT=null;return draw()}if(a==='save')return saveNote();
   if(SURE[a]&&!b.classList.contains('sure')){b.dataset.t=b.textContent;b.textContent=SURE[a];b.classList.add('sure');setTimeout(function(){if(b.isConnected){b.textContent=b.dataset.t;b.classList.remove('sure')}},3000);return}
   b.disabled=true;call('/api/codes/'+c+'/'+a,{}).then(function(){toast(DONE[a])}).catch(function(e){b.disabled=false;toast(e.message,1)})};
 $('make').onclick=function(){var b=this;b.disabled=true;$('mmsg').className='msg';$('mmsg').textContent='…';
-  call('/api/codes',{note:$('note').value,count:$('count').value}).then(function(j){b.disabled=false;$('note').value='';$('count').value=1;
+  call('/api/codes',{note:$('note').value,count:$('count').value,max:+$('mx').textContent}).then(function(j){b.disabled=false;$('note').value='';$('count').value=1;$('mx').textContent=2;
     $('mmsg').className='msg ok';$('mmsg').textContent=j.made.length>1?j.made.length+' codes ready. Tap a code to copy it.':'Code ready. Tap it to copy, or use Copy message below.';
     $('made').innerHTML=j.made.map(function(c){return '<button data-c="'+c+'">'+c+'</button>'}).join('')}).catch(function(e){b.disabled=false;$('mmsg').className='msg err';$('mmsg').textContent=e.message})};
+document.querySelector('.card .devs').onclick=function(e){var b=e.target.closest('[data-mx]');if(!b)return;$('mx').textContent=Math.min(10,Math.max(1,+$('mx').textContent+(+b.dataset.mx)))};
 $('made').onclick=function(e){var b=e.target.closest('button');if(b)copy(b.dataset.c,'Code')};
 $('q').oninput=draw;
 function enter(){call('/api/codes').then(function(){try{localStorage.setItem('pmr-admin',PW)}catch(e){}$('login').classList.add('hide');$('app').classList.remove('hide');$('out').classList.remove('hide')})

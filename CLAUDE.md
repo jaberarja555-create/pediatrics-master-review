@@ -182,3 +182,32 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
   `sync` table of CodesDB, versioned). app.js merges per highlight (id = page key + start + end, `u` = last change, deletions kept in `prr-hldel`);
   syncs on open, 4 s after a change, when back online, and from **Sync now** in the Notes sheet. Free-trial devices do not sync.
 - Locked: pages of non-free topics, Rapid Reviews of non-free chapters, other decks and questions.
+
+## Changes ported from Surgery Master Review (owner, Nov 2026)
+The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porting its later app changes here):
+- **Front matter:** Cover · About the authors · About · (Reviewers: `content/reviewers.html`, when the owner sends the names) · two Arabic
+  how-to pages (`content/howto-app.html`, `content/howto-tools.html`) · **References** (`content/references.html`) · **Contents** on 2 pages
+  (build.py `contents_pages`: a colour band per chapter with a faded picture `CH_IMG`, topics as small boxes three to a row; planned topics
+  not written yet are shown dimmed without a page number). **Every new app feature must be added to the how-to pages.**
+- **Chapter covers:** a chapter opens with a cover page when `content/img/chcover_<no>.jpg` exists (owner's illustration).
+- **Emblem:** `content/img/logo.webp` (round seal) and icons `icon.png`, `icon-192.png`, `apple-touch-icon.png`. The current Pediatrics seal
+  is a stand-in drawn in the series style; replace it with the owner's own emblem when he sends it.
+- **Home:** light design (series logo, cover card, Continue button, part photo banners, study tools, daily cards, progress tiles,
+  day/night button). **Reader:** tools bar along the top; Contents and Listen in the bottom bar; blank note pages (صفحة); highlights re-anchor
+  after a re-layout; tap the page number to go to a page; scrolling down hides the bars (a tap brings them back).
+- **Rapid Review:** at the end of the book, per chapter a colour band and per topic a table (clue / question → answer, Key numbers,
+  Test yourself with answers hidden until tapped).
+- **Topic title shown once** (pediatrics owner): no repeated title on a topic's later pages; the running head names the topic.
+- **Review copy:** `artifact/index.html` has meta `review: true` (whole book open).
+- **Deploy:** `bash server/deploy.sh` on "deployment"; or connect Cloudflare Workers Builds to this branch (server/DEPLOY.md).
+
+### Writing style for junior clinical students (owner, Nov 2026; apply chapter by chapter, owner reviews each)
+- Each topic opens with a 2–3 sentence introduction (what it is, why it happens, why it matters), formal textbook register.
+- Explain the **why** in a short clause after key facts; short complete sentences instead of fragments.
+- No long inline lists joined by " · ": use bullet lists or small tables (keep " · " for 2–3 short items).
+- **Monitoring the response** wherever treatment is given: first sign of improvement, targets, when to stop or step down, signs of failure.
+- **Numbers sit in the text:** no Numbers box on rewritten topics; figures go in the sentence or table row; numbers wanted only in the
+  Rapid Review go in `<table class="rvnums">` in the aside.
+- **Mnemonics:** standard memory aids in a `box mnem` (`<div class="mnl"><span><i>A</i>word</span>…`).
+- **No cramped half-width boxes**; give every page `h2.s` sections; photos ≤ ~200 px high.
+- Not yet rewritten in this style: chapters 1–8 (next: start with chapter 1).

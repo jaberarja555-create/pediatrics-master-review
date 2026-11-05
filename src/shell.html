@@ -2,11 +2,11 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b2c3a">
+<meta name="theme-color" content="#0e2547">
 <title>{{TITLE}}</title>
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="img/icon.png">
-<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Cairo:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
@@ -18,32 +18,39 @@
 <div class="app" id="app">
   <header class="bar">
     <button class="ib" id="backBtn" type="button" aria-label="Home" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img class="blogo" src="img/logo.webp" alt="">
     <h1 id="title">{{SUBJECT}} <b>Master Review</b><small id="subtitle">{{EDITION}}</small></h1>
     <button class="ib rbshow" id="rbShow" type="button" hidden aria-label="إظهار الأدوات" title="إظهار الأدوات"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v16h-6"/><path d="M10 8l-4 4 4 4"/></svg></button>
+    <button class="ib" id="hmMode" type="button" aria-label="Day or night colours"></button>
     <button class="ib" id="themeBtn" type="button" hidden aria-label="Switch light or dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
   </header>
 
-  <section class="view" id="home"><div class="wrap">
-    <div class="hero"><div class="cv shine"><div class="bk" id="coverMini"></div></div>
-      <div><span class="eyebrow gtx">{{SERIES}}</span><h2 class="gtx">{{SUBJECT}} Master Review</h2><p>{{BLURB}}</p><span class="pill" id="pill"></span></div></div>
-    <button class="cont cov shine" id="coverBtn" type="button"><span class="k gtx">Open the book</span><span class="t">From the cover</span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></span></button>
-    <button class="cont shine" id="contBtn" type="button"><span class="k gtx" id="contK">Start reading</span><span class="t" id="contT">Contents</span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></button>
+  <section class="view" id="home"><div class="wrap hm">
+    <div class="hm-card">
+    <div class="smlogo" aria-label="Student Master Note Series"><img class="sml" src="img/logo.webp" alt=""><span class="a">Student Master</span><i></i><span class="b">Note Series</span></div>
+    <div class="hm-top">
+      <div class="cv" id="hmCover"><div class="bk" id="coverMini"></div></div>
+      <div class="hm-ti"><h2>{{SUBJECT}}<span>Master Review</span></h2><span class="pill" id="pill"></span>
+        <button type="button" class="hm-cov" id="coverBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg>Open the book</button></div>
+    </div>
+    </div>
+    <button class="hm-cont" id="contBtn" type="button"><span class="k" id="contK">Start reading</span><span class="t" id="contT">Contents</span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></button>
+    <div class="sh"><h3>The book</h3><span>Tap a part to open</span></div>
+    <div class="topics" id="topics"></div>
+    <div class="sh"><h3>Study tools</h3></div>
+    <div class="hm-grid">
+      <button type="button" class="hm-t" id="hmToc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><b>Contents</b><span>All chapters</span></button>
+      <button type="button" class="hm-t" data-go="qbank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><b>Question bank</b><span id="toolQb">MCQs</span></button>
+      <button type="button" class="hm-t" data-go="cards"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="14" height="16" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v12"/></svg><b>Flashcards</b><span id="toolCards">Flip and mark</span></button>
+      <button type="button" class="hm-t" data-go="lectures"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg><b>Lectures</b><span id="lectSub">Audio</span></button>
+      <button type="button" class="hm-t" id="rrTool"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><b>Rapid review</b><span>Clue → answer</span></button>
+      <button type="button" class="hm-t" id="hlTool"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><b>My notes</b><span id="toolHl">Highlights</span></button>
+    </div>
     <button class="daily shine" id="dailyBtn" type="button"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="14" height="16" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v12"/><path d="M10 9l-1.5 4h3L10 17"/></svg></span><span class="dx"><span class="k gtx">Daily flashcards</span><span class="t" id="dailyT">10 cards for today</span><span class="dots" id="dailyDots"></span></span><span class="ds" id="dailyS"></span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></button>
     <button type="button" class="trial ar shine" dir="rtl" id="trialCard" data-sub="1" hidden><b><span class="en">Free trial</span></b><span id="trialTxt"></span><i>افتح الكتاب كامل</i></button>
-    <div class="sh"><h3 class="gtx">Your progress</h3></div>
+    <div class="sh"><h3>Your progress</h3></div>
     <div class="prog" id="prog"></div>
-    <div class="sh"><h3 class="gtx">The book</h3><span>Tap a part to open</span></div>
-    <div class="topics" id="topics"></div>
-    <div class="sh"><h3 class="gtx">Study tools</h3></div>
-    <div class="tools">
-      <button class="tool shine" type="button" data-go="qbank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><b class="gtx">Question bank</b><span id="toolQb">MCQs with explanations</span></button>
-      <button class="tool shine" type="button" data-go="cards"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="14" height="16" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v12"/></svg><b class="gtx">Flashcards</b><span id="toolCards">Flip, mark, repeat</span></button>
-      <button class="tool shine" type="button" id="rrTool"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><b class="gtx">Rapid Review</b><span id="toolRr">Last-minute revision</span></button>
-      <button class="tool shine" type="button" id="hlTool"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><b class="gtx">Notes</b><span id="toolHl">Your notes and highlights</span></button>
-    </div>
-    <button class="lect shine" type="button" data-go="lectures"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg><span><b class="gtx">Lectures</b><small id="lectSub">Listen to every page explained · download and listen offline</small></span><i>AUDIO</i></button>
   </div></section>
-
   <section class="view" id="reader" hidden>
     <div id="scroller"><div id="pages"></div></div>
     <div class="pnum" id="pnum">1 / 1</div>
@@ -51,14 +58,13 @@
     <div class="penfly" id="penFly" hidden lang="ar"></div>
     <div class="rbar" id="rbar" lang="ar">
       <button type="button" id="rbHide" aria-label="إخفاء الأدوات"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>إخفاء</button>
-      <button type="button" id="tocBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>الفهرس</button>
       <button type="button" id="hlPen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l-5 5v3h3l5-5"/><path d="M9 11l7-7 4 4-7 7z"/><path class="ink" d="M3 22h18" stroke-width="3"/></svg><span id="penLbl">تظليل</span></button>
       <button type="button" id="ulBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v7a5 5 0 0 0 10 0V4"/><path class="ink" d="M5 21h14" stroke-width="2.6"/></svg><span id="ulLbl">خط</span></button>
       <button type="button" id="inkBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4L8 20H4v-4z"/><path class="ink" d="M3 22c3-2 5 1 8-1" stroke-width="2.6"/></svg><span id="inkLbl">قلم</span></button>
       <button type="button" id="txtBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6V4h14v2M12 4v14"/><path class="ink" d="M8 21h8" stroke-width="2.6"/></svg><span id="txtLbl">نص</span></button>
       <button type="button" id="rNotes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span id="nLbl">ملاحظات</span></button>
-      <button type="button" id="lisBtn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg><span id="lisLbl">استمع</span></button>
       <button type="button" id="prBtn" class="pr0" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></svg><span id="prLbl">ما قريتها</span></button>
+      <button type="button" id="upBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M12 12v6M9 15h6"/></svg>صفحة</button>
       <button type="button" id="zoomBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M11 8v6M8 11h6M21 21l-4.3-4.3"/></svg><span id="zoomLbl">الحجم</span></button>
       <div class="urw"><button type="button" id="urUndo" disabled aria-label="تراجع"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14L4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg>تراجع</button><button type="button" id="urRedo" disabled aria-label="إعادة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14l5-5-5-5"/><path d="M20 9H9a5 5 0 0 0 0 10h3"/></svg>إعادة</button></div>
     </div>
@@ -96,6 +102,8 @@
   <nav class="tabs" id="tabs">
     <button type="button" data-go="home" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</button>
     <button type="button" data-go="reader"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg>Read</button>
+    <button type="button" id="tocBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Contents</button>
+    <button type="button" id="lisBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg><span id="lisLbl">Listen</span></button>
     <button type="button" data-go="cards"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="14" height="16" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v12"/></svg>Cards</button>
     <button type="button" data-go="qbank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg>QBank</button>
     <button type="button" data-go="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Search</button>

@@ -1,12 +1,17 @@
 # Deploy (for the next Claude session)
 
+**Automatic deploys (as in Surgery Master Review):** in Cloudflare, Workers & Pages → pediatrics-master-review → Settings →
+Builds, connect this GitHub repo (branch `claude/confident-turing-evm4gu`, root directory `/`, deploy command `npx wrangler deploy`;
+the root `wrangler.toml` points to `server/worker.js` and `docs/`). After that every push deploys the live book: commit the rebuilt
+`docs/` and push. Secrets (PRIVATE_KEY, ADMIN_PASSWORD) stay in Cloudflare. Until it is connected, use `bash server/deploy.sh`.
+
 How subscription works (like Dr. Arja Master Note): the authors make codes `PMR-XXXX-XXXX` on `/admin` and send
 one to each buyer on WhatsApp ("Copy message"). The student types it in the app (or opens `<book>#code=PMR-…`);
-`/activate` binds that device (max 2 per code) and returns a signed token, so the book then opens offline too.
+`/activate` binds that device (2 per code by default; the control page sets 1–10 for each code, column `maxdev`, added automatically to old stores) and returns a signed token, so the book then opens offline too.
 `/check` (when online) locks the device again if its code is switched off, reset or deleted.
-`/sync` lets the two devices of one code share their highlights and notes (stored with the codes; deleting a code deletes them too).
+`/sync` lets the devices of one code share their highlights and notes (stored with the codes; deleting a code deletes them too).
 
-The owner has added CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID and PMR_ADMIN_PASSWORD (or SMR_ADMIN_PASSWORD) to the environment
+The owner has added CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID and PMR_ADMIN_PASSWORD to the environment
 and allowed api.cloudflare.com. Then:
 
 1. `bash server/deploy.sh` (from the repo root). It only creates what is missing:

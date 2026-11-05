@@ -7,7 +7,7 @@ Content lives in content/:
   decks/<id>.json      flashcards: [[section, question, answer], ...]
 A topic without a topics/<id>.html file is listed in Contents as "coming soon".
 """
-import html, json, os, re, shutil
+import hashlib, html, json, os, re, shutil
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -21,6 +21,9 @@ ECG = ('<svg class="ecgmini" viewBox="0 0 90 12"><path d="M0 6 C8 1,14 11,22 6 S
 LAYOUT_FILE = Path(__file__).parent / 'content' / 'layout.json'  # page plan made by paginate.js
 LAYOUT = json.loads(LAYOUT_FILE.read_text()) if LAYOUT_FILE.exists() else {}
 MEASURE = bool(os.environ.get('SRR_MEASURE'))
+COLW_FILE = Path(__file__).parent / 'content' / 'colw.json'   # column widths of split tables, measured by paginate.js
+COLW = json.loads(COLW_FILE.read_text()) if COLW_FILE.exists() else {}
+MTK = {}  # table key -> the whole table (measured for its column widths)
 RR_COL_UNITS = 37  # rough height budget of one rapid-review column, checked by check.py
 
 
@@ -43,7 +46,7 @@ def chapter_css(no, c):
             f'.qx{no}{{--qc:{v["ch"]};--qd:{v["dark"]}}}\n'
             f'.lc{no}{{--ch:{v["ch"]}}}\n'
             f'.tabs .tb.c{no}{{--t:{v["ch"]};--tt:{v["tint"]}}}\n'
-            f'.toc .row.c{no},.toc .cc.c{no}{{--ch:{v["ch"]};--ch-tint:{v["tint"]};--ch-dark:{v["dark"]};--ch-line:{v["line"]}}}\n'
+            f'.toc .row.c{no},.toc .cc.c{no},.toc .tch.c{no}{{--ch:{v["ch"]};--ch-tint:{v["tint"]};--ch-dark:{v["dark"]};--ch-line:{v["line"]};--ch-wash:{v["tint2"]}}}\n'
             f'.toc .part.c{no}{{color:{v["ch"]}}}.toc .part.c{no}::after{{background:linear-gradient(90deg,{v["ch"]} 0,{v["tint"]} 100%)}}\n')
 
 
@@ -101,7 +104,9 @@ def is_wide(body):
         return False  # a single photo box sits beside another box
     first_row = re.search(r'<tr>(.*?)</tr>', body, re.S)
     cols = len(re.findall(r'<t[hd][ >]', first_row.group(1))) if first_row else 0
-    return (cols >= 3 or len(text(body)) > 700 or
+    # owner (Nov 2026): no cramped half-width boxes; a box goes beside another only when it is short and simple
+    n = len(text(body))
+    return (cols >= 3 or n > 420 or (n > 220 and ('<table' in body or body.count('<li') > 3)) or '<ul' in body and '<table' in body or
             any(k in body for k in ('class="photos"', 'class="fig"', 'class="two"', 'class="ladder"')))
 
 
@@ -111,29 +116,97 @@ def auto_mosaic(main):
     intro = re.sub(r'^<p[^>]*>', '<p class="lead">', intro) if intro.startswith('<p') else intro
     atoms = [('raw', b, True) for b in (top_blocks(intro) or ([intro] if intro.strip() else []))]
     for title, body in secs:
-        atoms.append(('box', f'<div class="mb"><div class="mh"># {title}</div><div class="mc">{body}</div></div>', is_wide(body)))
+        wide = is_wide(body)
+        parts = split_box(body) if wide and not os.environ.get('SRR_NOSPLIT') else [body]
+        atoms.append(('box', f'<div class="mb"><div class="mh"># {title}</div><div class="mc">{parts[0]}</div></div>', wide))
+        for part in parts[1:]:  # owner (Nov 2026): a long box may continue on the next page instead of leaving a gap
+            atoms.append(('cbox', f'<div class="mb mcont" data-h="{html.escape(text(title))}"><div class="mc">{part}</div></div>', True))
     return atoms
+
+
+VOID = {'br', 'img', 'hr', 'input', 'wbr', 'col', 'source'}
+
+
+def top_level(body):
+    """Top-level pieces of an HTML fragment (text before an element joins it); None if the markup is unbalanced."""
+    out, depth, start = [], 0, 0
+    for m in re.finditer(r'<(/?)([a-zA-Z][a-zA-Z0-9]*)\b[^>]*?(/?)>', body):
+        tag = m.group(2).lower()
+        if tag in VOID or m.group(3):
+            if depth == 0:
+                out.append(body[start:m.end()]); start = m.end()
+            continue
+        if m.group(1):
+            depth -= 1
+            if depth < 0:
+                return None
+            if depth == 0:
+                out.append(body[start:m.end()]); start = m.end()
+        else:
+            depth += 1
+    if depth:
+        return None
+    if body[start:].strip():
+        out.append(body[start:])
+    return out
+
+
+def split_box(body, rows_per=2, min_chars=170):
+    """Pieces of a long box body that may fall on different pages: top-level blocks; long tables and lists in row groups."""
+    if len(text(body)) < 500:
+        return [body]
+    tops = top_level(body)
+    if not tops or ''.join(tops).strip() != body.strip():
+        return [body]
+    pieces = []
+    for t in tops:
+        m = re.match(r'\s*(<table\b[^>]*>)(.*)(</table>)\s*$', t, re.S)
+        if m and 'rowspan' not in t and '<table' not in m.group(2):
+            inner = re.sub(r'</?(thead|tbody)>', '', m.group(2))
+            trs = re.findall(r'<tr\b.*?</tr>', inner, re.S)
+            if trs and ''.join(trs) == re.sub(r'\s+(?=<)', '', inner).strip() or (trs and len(''.join(trs)) > .95 * len(inner.strip())):
+                head = [r for r in trs[:1] if '<th' in r and '<td' not in r]
+                rows = trs[len(head):]
+                if len(rows) > rows_per + 2:
+                    # same column widths in every piece, so the pieces line up when they join on one page
+                    cells = [[len(text(c)) for c in re.findall(r'<t[hd]\b.*?</t[hd]>', r, re.S)] for r in rows]
+                    ncol = max(len(c) for c in cells)
+                    if any(len(c) != ncol for c in cells) or 'colspan' in t:
+                        pieces.append((None, t)); continue
+                    tk = hashlib.md5(t.encode()).hexdigest()[:10]
+                    MTK[tk] = t
+                    cw = COLW.get(tk)
+                    cg = ('<colgroup>' + ''.join(f'<col style="width:{x:.2f}%">' for x in cw) + '</colgroup>') if cw and len(cw) == ncol else ''
+                    open_ = m.group(1).replace('<table', f'<table data-tk="{tk}"' + (' style="table-layout:fixed"' if cg else ''), 1)
+                    for k in range(0, len(rows), rows_per):
+                        grp = rows[k:k + rows_per]
+                        if k and len(grp) < 2 and pieces:   # no single orphan row
+                            pieces[-1] = (pieces[-1][0], pieces[-1][1].replace('</tbody>', ''.join(grp) + '</tbody>')); continue
+                        hd = ''.join(head) if not k else ''.join(r.replace('<tr', '<tr class="rh"', 1) for r in head)
+                        pieces.append((tk, f'{open_}{cg}<thead>{hd}</thead><tbody>{"".join(grp)}</tbody>{m.group(3)}'))
+                    continue
+        pieces.append((None, t))
+    # a page may break only between row groups of one table (owner: no orphan notes, pictures stay with their text)
+    merged = []
+    for k, (tk, pc) in enumerate(pieces):
+        if merged and not (tk and pieces[k - 1][0] == tk and len(text(merged[-1])) >= min_chars):
+            merged[-1] += pc
+        else:
+            merged.append(pc)
+    if len(merged) > 1 and len(text(merged[-1])) < 120:
+        merged[-2] += merged.pop()
+    return merged
 
 
 def exam_parts(side, ex):
     """Collect a page's exam material (formula, numbers, clue switch, try it) into the topic's exam dict."""
     ex['formula'] += re.findall(r'<div class="formula">.*?</div></div>', side, re.S)
     ex['numbers'] += re.findall(r'<tr>.*?</tr>', ''.join(re.findall(r'<table class="numt">(.*?)</table>', side, re.S)), re.S)
+    # key numbers kept only for the Rapid Review (rewritten chapters keep their numbers in the text): <table class="rvnums"> in the aside
+    ex.setdefault('rvnums', [])
+    ex['rvnums'] += re.findall(r'<tr>.*?</tr>', ''.join(re.findall(r'<table class="rvnums">(.*?)</table>', side, re.S)), re.S)
     ex['clues'] += re.findall(r'<div class="r">.*?</div>', side, re.S)
     ex['try'] += re.findall(r'<div class="try">.*?</div></div>', side, re.S)
-
-
-def exam_boxes(main):
-    """Exam trap / Best next step / Sudan protocol boxes of a page, each cut at its own closing </div>."""
-    out = []
-    for m in re.finditer(r'<div class="box (?:trap|next|guide)"[^>]*>', main):
-        depth, i = 0, m.start()
-        for t in re.finditer(r'<(/?)div\b[^>]*>', main[m.start():]):
-            depth += -1 if t.group(1) else 1
-            if depth == 0:
-                out.append(main[m.start():m.start() + t.end()])
-                break
-    return out
 
 
 def exam_rows(ex, title):
@@ -157,35 +230,56 @@ def exam_rows(ex, title):
     return rows
 
 
-def formula_row(f):
-    """Exam corner: a side-column Formula strip as one plain row 'clue + clue → ANSWER' (the strip layout breaks in a half-width box)."""
-    parts = re.findall(r'<span class="(c|p|ans)">(.*?)</span>', f, re.S)
-    left = ' '.join(h if k != 'p' else f'<i>{h}</i>' for k, h in parts if k != 'ans' and h != '=')
-    ans = next((h for k, h in parts if k == 'ans'), '')
-    return f'<div class="r fr"><span>{left}</span><span class="to">{ans}</span></div>'
-
-
 def rv_rows(ex):
-    """Rapid Review lines of one topic, all as 'scenario → answer': clue rows, formulas and test-yourself questions."""
-    rows = list(ex['clues'])
+    """Rapid Review rows of one topic: (clue or question, answer, kind) from Clue switch rows, Formula strips and Try it."""
+    rows = []
+    for r in ex['clues']:
+        m = re.search(r'<div class="r"><span>(.*?)</span><span class="to">(.*?)</span></div>', r, re.S)
+        if m:
+            rows.append((m.group(1), m.group(2), 'c'))
     for f in ex['formula']:
         parts = re.findall(r'<span class="(c|p|ans)">(.*?)</span>', f, re.S)
-        left = ' '.join(h for k, h in parts if k != 'ans' and h != '=')
+        lab = re.search(r'<div class="lab">(.*?)</div>', f, re.S)
+        left = ' '.join(h if k != 'p' else f'<i>{h}</i>' for k, h in parts if k != 'ans' and h != '=')
         ans = next((h for k, h in parts if k == 'ans'), '')
-        rows.append(f'<div class="r"><span>{left}</span><span class="to">{ans}</span></div>')
+        if left and ans:
+            rows.append(((f'<b class="rvl">{lab.group(1)}:</b> ' if lab else '') + left, ans, 'c'))
     for q in ex['try']:
         m = re.search(r'<div class="q">(.*?)</div><div class="a"><span>ANSWER</span>(.*?)</div>', q, re.S)
         if m:
-            rows.append(f'<div class="r"><span>{m.group(1)}</span><span class="to">{m.group(2)}</span></div>')
+            rows.append((m.group(1), m.group(2), 'q'))
     return rows
 
 
 def chapter_exam(t):
-    """Rapid Review of one topic (owner): only the topic name and one list of scenario → answer lines
-    (diagnosis, best test, best treatment, drug of choice), in two columns; long lists continue in a second box."""
-    # owner: one block per topic, each on its own page (too long → remove the least important lines, never split)
-    rows, out = rv_rows(t['_exam']), []
-    out.append((f'<div class="mb rv"><div class="mh">{t["no"]} {t["title"]}</div><div class="mc"><div class="rs">{"".join(rows)}</div></div></div>', True))
+    """Rapid Review block of one topic (owner, Nov 2026): one clear table, clue or question → answer;
+    the old per-chapter Exam corner (clue switch, formulas, test yourself) now lives here, at the end of the book."""
+    rows = rv_rows(t['_exam'])
+    if not rows:
+        return []
+    clues = [r for r in rows if r[2] == 'c']
+    qs = [r for r in rows if r[2] == 'q']
+    trs = [f'<tr><td>{a}</td><td>{b}</td></tr>' for a, b, _ in clues]
+    nums = []
+    for r in t['_exam'].get('rvnums', []) + t['_exam']['numbers']:
+        m = re.search(r'<td class="v">(.*?)</td><td>(.*?)</td>', r, re.S)
+        if m:
+            nums.append(f'<tr class="n"><td>{m.group(2)}</td><td>{m.group(1)}</td></tr>')
+    if nums:   # owner: the key numbers of each topic, to remember before the exam
+        trs += ['<tr class="rvq"><td colspan="2">Key numbers</td></tr>'] + nums
+    if qs:   # owner: answers stay hidden until the student taps the question
+        trs += ['<tr class="rvq"><td colspan="2">Test yourself · tap a question to see the answer</td></tr>'] + [f'<tr class="q"><td>{a}</td><td>{b}</td></tr>' for a, b, _ in qs]
+    # a block never splits across pages, so a long topic becomes several blocks of about 9 rows (fills pages better)
+    n = -(-len(trs) // 9)
+    size = -(-len(trs) // n)
+    out = []
+    for k in range(n):
+        part = trs[k * size:(k + 1) * size]
+        if k == 0:   # owner: one title per topic; the next pieces join on under it (no 'continued' headings)
+            out.append((f'<div class="mb rv"><div class="mh"><span class="rvn">{t["no"]}</span>{t["title"]}</div><div class="mc">'
+                        f'<table class="rvtab"><thead><tr><th>Clue / question</th><th>Answer</th></tr></thead><tbody>{"".join(part)}</tbody></table></div></div>', True))
+        else:
+            out.append((f'<div class="mb rv rvc"><div class="mc"><table class="rvtab"><tbody>{"".join(part)}</tbody></table></div></div>', True))
     return out
 
 
@@ -207,11 +301,15 @@ def top_blocks(body):
 def mosaic_page(book, ch, sub, body, pno, pid, orig='', t=None):
     """New book layout (owner, Oct 2026): full-width rows of coloured boxes, written directly in the topic file
     as <page sub="..." layout="mosaic"> with .mrow rows and .mb boxes."""
+    m = re.match(r'<div class="vj" style="--vj:(\d+)px"></div>', body)
+    vj = f' vjs" style="--vj:{m.group(1)}px' if m else ''
+    body = body[m.end():] if m else body
     return (f'<section class="page mz c{ch["no"]}" id="p{pno}" data-id="{pid}" data-orig="{orig or pid}">'
+            # running head (owner, Nov 2026, as in the Pediatrics app): same side on every page, topic named in bold
             f'<div class="mzh"><span>Chapter {ch["no"]} · '
             + (f'<b class="tt">{t["no"]} {t["title"]}</b>' if t and sub != 'Rapid Review' else ch['title']) + '</span>'
             f'<span>{sub}<b>{pno}</b></span></div>'
-            f'<div class="body"><div class="main mzm">'
+            f'<div class="body"><div class="main mzm{vj}">'
             f'{body}\n</div></div>'
             f'{footer(book)}</section>\n')
 
@@ -220,7 +318,7 @@ def topic_page(book, ch, t, sub, main, side, pno, pid):
     side_html = f'<div class="side">{side}</div>' if side.strip() else ''
     grid = 'grid' if side_html else 'grid wide'
     return (f'<section class="page c{ch["no"]}" id="p{pno}" data-id="{pid}">'
-            f'<div class="hdr"><div class="chap">{ICON}{ch["short"]}</div>'
+            f'<div class="hdr{" left" if pno % 2 == 0 else ""}"><div class="chap">{ICON}{ch["short"]}</div>'
             f'<div class="topic">{t["no"]} · {sub}</div><div class="pno">{pno}</div></div>'
             f'<div class="body"><div class="{grid}"><div class="main">'
             f'<div class="kicker"><span class="num">{t["no"]}</span>{ch["title"]}</div>'
@@ -228,45 +326,75 @@ def topic_page(book, ch, t, sub, main, side, pno, pid):
             f'{tabs(book, ch, pno)}{footer(book)}</section>\n')
 
 
+CH_IMG = {1: 'growth_chart', 2: 'sam_oedema', 3: 'neo-jaundice_phototherapy', 4: 'malaria_film', 5: 'gastroenteritis_sunken_eyes',
+          6: 'pneumonia_consolidation', 7: 'cyanotic_tof_heart', 8: 'sickle_film'}  # faded picture at the right end of each chapter band in the contents  # faded picture at the right end of each chapter band in the contents
+N_CONTENTS = 2
+LOGO = ('<svg viewBox="0 0 64 46" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round">'
+        '<path d="M31 41C24 35 14 33 5 34V9C14 8 24 10 31 16" stroke="#fff" stroke-width="3.6"/><path d="M33 41C40 35 50 33 59 34V9C50 8 40 10 33 16" stroke="#fff" stroke-width="3.6"/>'
+        '<path d="M31 35C25 30 18 28 11 28.5V4C18 4 25 6 31 11" stroke="#d4a62a" stroke-width="3.2"/><path d="M33 35C39 30 46 28 53 28.5V4C46 4 39 6 33 11" stroke="#d4a62a" stroke-width="3.2"/></g>'
+        '<path d="M37 3h6v13l-3-2.6-3 2.6z" fill="#d4a62a"/></svg>')
+PARTS = 'I II III IV V'.split()
+
+
+def chapter_cover(book, ch, pno):
+    """Opening page of a chapter (owner, Nov 2026): book title band, chapter number and title, picture
+    (content/img/chcover_<no>.jpg), the chapter's topics with their pages, series band."""
+    part_no = sum(1 for c in book['chapters'] if c.get('part') and c['no'] <= ch['no'])
+    part = next(c['part'] for c in reversed(book['chapters']) if c.get('part') and c['no'] <= ch['no'])
+    tops = [t for t in ch['topics'] if t.get('p')]
+    rows = ''.join(f'<div class="cvr" data-p="{t["p"]}"><i>{t["no"]}</i><div><b>{t["title"]}</b><span>{t.get("sub", "")}</span></div><em>{t["p"]}</em></div>' for t in tops)
+    return (f'<section class="page chcov c{ch["no"]}" id="p{pno}" data-id="p{pno}">'
+            f'<div class="cvtop"><div class="cvlogo"><span>Student Master Note Series</span></div>'
+            f'<div class="cvbook"><b>{book["subject"].upper()}</b><span>Master Review</span></div>'
+            f'<div class="cvtag">A concise revision guide for medical students · {book["edition"]}</div></div>'
+            f'<div class="cvhead"><div class="cvno"><span>Part {PARTS[part_no - 1]} · {part}</span><b>Chapter {ch["no"]}</b></div>'
+            f'<h1 class="cvt">{ch["title"]}</h1></div>'
+            f'<img class="cvseal" src="img/logo.webp" alt=""><div class="cvimg"><img src="img/chcover_{ch["no"]}.jpg" alt=""></div>'
+            f'<div class="cvin"><h3>In this chapter</h3>{rows}</div>'
+            f'<div class="cvbot"><span>Pediatrics Master Review</span><i></i><span>{book["edition"]}</span></div></section>\n')
+
+
 def contents_pages(book, rr_page):
-    """Contents: parts, each with its chapters as boxes (3 per row); each chapter lists all its topics.
-    Topics not written yet are listed without a page number (dimmed). book.json "contents_split" = chapter numbers
-    that start a new contents page."""
-    splits = set(book.get('contents_split', []))
-    pages_parts, cur_part = [[]], ('', 0)
-    for ch in book['chapters']:
-        if ch['no'] in splits:
-            pages_parts.append([])
-        parts = pages_parts[-1]
-        if ch.get('part') or not parts:
-            if ch.get('part'):
-                cur_part = (ch['part'], len([1 for pp in pages_parts for q in pp if not q[3]]))
-            parts.append((cur_part[0], [], cur_part[1], not ch.get('part')))
-        written = [t for t in ch['topics'] if t.get('p')]
-        tops = ''.join((f'<div class="ct" data-p="{t["p"]}"><i>{t["no"]}</i><span>{t["title"]}</span><em>{t["p"]}</em></div>'
-                        if t.get('p') else
-                        f'<div class="ct soon"><i>{t["no"]}</i><span>{t["title"]}</span><em></em></div>') for t in ch['topics'])
-        dp = f' data-p="{written[0]["p"]}"' if written else ''
-        parts[-1][1].append(f'<div class="cc c{ch["no"]}"><div class="cch"{dp}><b>{ch["no"]}</b>'
-                            f'<span>{ch["title"]}</span></div><div class="ctl">{tops}</div></div>')
-    # owner: one well-filled contents page; chapters flow down three columns (no empty holes); a part heading
-    # is kept together with its first chapter
-    roman = 'I II III IV V VI VII VIII'.split()
-    body = ''
-    for parts in pages_parts:
-        for name, boxes, no, cont in parts:
-            if not boxes:
-                continue
-            head = '' if cont else f'<div class="bp"><span>Part {roman[no]}</span>{name}</div>'
-            body += f'<div class="tk">{head}{boxes[0]}</div>' + ''.join(f'<div class="tk">{x}</div>' for x in boxes[1:])
-    rv = [ch for ch in book['chapters'] if ch.get('rv')]
-    if rv:  # owner: all Rapid Reviews together at the end of the book
-        rows = ''.join(f'<div class="ct rvr" data-p="{ch["rv"]}"><i>{ch["no"]}</i><span>{ch.get("short", ch["title"])}</span><em>{ch["rv"]}</em></div>' for ch in rv)
-        body += (f'<div class="tk"><div class="bp"><span>End of book</span>Rapid Review</div><div class="cc rrcc"><div class="cch" data-p="{rv[0]["rv"]}"><b>RR</b>'
-                 f'<span>Rapid Review</span></div><div class="ctl">{rows}</div></div></div>')
-    return [f'<section class="page" id="pc0" data-id="contents-1">'
-            f'<div class="toc-h"><div><b>Contents</b><span>{book["edition"]}</span></div></div>'
-            f'<div class="toc ccm">{body}</div>{footer(book)}</section>\n']
+    """Contents (owner, Nov 2026: like the Obstetrics book): one colour band per chapter (chapter no., title, topic count and
+    page range, a faded picture), its topics as small boxes three to a row; parts as slim labels; Rapid review at the end."""
+    chs = [(ch, [t for t in ch['topics'] if t.get('p')]) for ch in book['chapters']]
+    n_topics = sum(len(ch['topics']) for ch, _ in chs)
+    written_chs = [k for k, (_, w) in enumerate(chs) if w]
+    blocks = []  # (estimated height, html)
+    roman = iter('I II III IV V VI'.split())
+    for i, (ch, w) in enumerate(chs):
+        later = [k for k in written_chs if k > i]
+        nxt = chs[later[0]][0].get('_cover', chs[later[0]][1][0]['p']) if later else rr_page
+        last, start = nxt - 1, (ch.get('_cover', w[0]['p']) if w else None)
+        part = (f'<div class="tpart"><span>Part {next(roman)}</span>{ch["part"]}</div>' if ch.get('part') else '')
+        img = CH_IMG.get(ch['no'])
+        bg = f'<i class="tbi" style="background-image:url(img/{img}.jpg)"></i>' if img and (CONTENT / 'img' / f'{img}.jpg').exists() else ''
+        cells = ''.join(f'<div class="tc" data-p="{t["p"]}"><i>{t["no"]}</i><span>{t["title"]}</span><em>{t["p"]}</em></div>' if t.get('p') else
+                        f'<div class="tc soon"><i>{t["no"]}</i><span>{t["title"]}</span><em></em></div>' for t in ch['topics'])
+        nt = len(ch['topics'])
+        rng = f'p {start}–{last}' if w else 'coming soon'
+        dp = f' data-p="{start}"' if w else ''
+        html_ = (f'{part}<div class="tch c{ch["no"]}{"" if w else " soon"}"><div class="tbh"{dp}>{bg}<small>Chapter {ch["no"]}</small>'
+                 f'<b>{ch["title"]}</b><span class="tpg">{nt} topic{"s" * (nt > 1)} · {rng}</span></div>'
+                 f'<div class="tcg">{cells}</div></div>')
+        blocks.append((80 + 32 * (-(-nt // 3) - 1) + (26 if part else 0), html_))
+    rr = (f'<div class="trr"><div class="tc" data-p="{rr_page}"><i>RR</i><span>Rapid review · every clue → answer, '
+          f'key numbers and test-yourself questions, chapter by chapter</span><em>{rr_page}</em></div></div>')
+    blocks.append((56, rr))
+    run, cut = 0, len(blocks)
+    for k, (h, _) in enumerate(blocks):  # fill the first page, the rest go on the second
+        if run + h > 960:
+            cut = k
+            break
+        run += h
+    halves = [blocks[:cut], blocks[cut:]][:N_CONTENTS]
+    out = []
+    for n, part in enumerate(halves):
+        sub = (f'{len(chs)} chapters · {n_topics} topics · tap any topic' if n == 0 else 'continued · tap any topic')
+        out.append(f'<section class="page tocp" id="pc{n}" data-id="contents-{n + 1}">'
+                   f'<div class="toc-h"><div><b>Contents</b><span>{sub}</span></div></div>'
+                   f'<div class="toc tcv">{"".join(h for _, h in part)}</div>{footer(book)}</section>\n')
+    return out
 
 
 def abbr_pages(book, pages=3):
@@ -380,14 +508,13 @@ def rr_pages(book, groups, first_pno):
             used += need
     if cur:
         cols.append(cur)
-    if not cols:
-        return []  # no rapid-review page until topics are written
+    cols = cols or [['<p class="small">Rapid-review rows appear here as topics are written.</p>']]
     pages = []
     for n in range(0, len(cols), 2):
         pno = first_pno + n // 2
         left, right = ''.join(cols[n]), ''.join(cols[n + 1]) if n + 1 < len(cols) else ''
         pages.append(f'<section class="page" id="p{pno}" data-id="rapid-review-{n // 2 + 1}">'
-                     f'<div class="hdr"><div class="chap">{ICON}Rapid review</div>'
+                     f'<div class="hdr{" left" if pno % 2 == 0 else ""}"><div class="chap">{ICON}Rapid review</div>'
                      f'<div class="topic">Every clue → answer</div><div class="pno">{pno}</div></div>'
                      f'<div class="body"><div class="grid wide"><div class="main">'
                      f'<div class="kicker"><span class="num">RR</span>Last-minute revision</div>'
@@ -412,11 +539,10 @@ def build():
                 continue
             src = f.read_text()
             pages = re.findall(r'<page sub="(.*?)"( layout="mosaic")?>(.*?)</page>', src, re.S)
-            atoms, ex = [], {'formula': [], 'numbers': [], 'clues': [], 'try': [], 'boxes': []}
+            atoms, ex = [], {'formula': [], 'numbers': [], 'clues': [], 'try': []}
             for sub, hand, body in pages:
                 main, _, side = body.partition('<aside>')
                 exam_parts(side, ex)
-                ex['boxes'] += exam_boxes(main)
                 got = [('row' if r.startswith('<div class="m') else 'raw', r, True) for r in top_blocks(main)] if hand else auto_mosaic(main.strip())
                 atoms += [(k, h, w, sub) for k, h, w in got]
             if ex['numbers']:
@@ -429,17 +555,17 @@ def build():
                 chapters.append((ch, []))
             chapters[-1][1].append(('title', f'<h1 class="mzt"><span class="no">{t["no"]}</span>{t["title"]}</h1>', True, pages[0][0], t))
             chapters[-1][1].extend((k, h, w, sb, t) for k, h, w, sb in atoms)
-    # owner: the Rapid Review of every chapter sits together at the end of the book, chapter by chapter
+    # owner (Nov 2026): no Exam corner after each chapter; every chapter's exam material is gathered in the
+    # Rapid Review section at the end of the book, chapter by chapter, one block per topic
     rr_streams = []
     for ch, stream in chapters:
         tps = [a[4] for a in stream if a[0] == 'title']
         exam = [(x, t) for t in tps for x in chapter_exam(t)]
         if exam:
-            head = ('<h1 class="mzt rrh">Rapid Review</h1>' if not rr_streams else '') + \
-                   f'<h2 class="rrc"><span class="no">{ch["no"]}</span>{ch["title"]}</h2>'
+            head = ('<h1 class="mzt rrh"><img class="rrlogo" src="img/logo.webp" alt="">Rapid Review<small>Every clue, formula and question, chapter by chapter</small></h1>'
+                    if not rr_streams else '') + f'<h2 class="rrc"><span class="no">{ch["no"]}</span>{ch["title"]}</h2>'
             rs = [('title', head, True, 'Rapid Review', tps[0])]
-            # each topic block is never split (kind 'rvt'); short blocks share a page
-            rs.extend(('box' if i == 0 else 'rvt', r, w, 'Rapid Review', t) for i, ((r, w), t) in enumerate(exam))
+            rs.extend(('rvt', r, w, 'Rapid Review', t) for (r, w), t in exam)
             rr_streams.append((ch, rs, f'rr{ch["no"]}'))
     chapters = [(ch, stream, f'ch{ch["no"]}') for ch, stream in chapters] + rr_streams
 
@@ -454,30 +580,35 @@ def build():
                 out.append(f'<div class="mrow{" c1" if len(items) == 1 else ""}">{"".join(x[1] for x in items)}</div>')
         return '\n'.join(out)
 
-    n_contents = 1  # one contents page (owner)
+    n_contents = N_CONTENTS
+    refs = (CONTENT / 'references.html').read_text() if (CONTENT / 'references.html').exists() else ''  # owner, Nov 2026
+    howto = [(CONTENT / f'howto-{k}.html').read_text() for k in ('app', 'tools') if (CONTENT / f'howto-{k}.html').exists()]
     authors = (CONTENT / 'authors.html').read_text() if (CONTENT / 'authors.html').exists() else ''
     about = (CONTENT / 'about.html').read_text() if (CONTENT / 'about.html').exists() else ''
+    reviewers = (CONTENT / 'reviewers.html').read_text() if (CONTENT / 'reviewers.html').exists() else ''  # owner, Nov 2026
     n_abbr = 0   # abbreviations are shown by tapping them on the page (meta 'abbr'), no list pages
-    pno = 1 + bool(authors) + bool(about) + n_contents + n_abbr + 1
+    pno = 1 + bool(authors) + bool(about) + bool(reviewers) + len(howto) + bool(refs) + n_contents + n_abbr + 1
     paged = []
     rr_first = None
     for ch, stream, key in chapters:
         if key.startswith('rr') and rr_first is None:
             rr_first = pno
+        if key.startswith('ch') and (CONTENT / 'img' / f'chcover_{ch["no"]}.jpg').exists():  # owner (Nov 2026): chapter opening cover
+            ch['_cover'] = pno
+            paged.append(('cover', ch, pno))
+            pno += 1
         plan = LAYOUT.get(key)
         if MEASURE or not plan or plan.get('n') != len(stream):
             plan = {'pages': [[[i] for i in range(len(stream))]]}
         numbering = {}
         for rows in plan['pages']:
             first = stream[rows[0][0]]
-            head = ''  # owner: the topic title is shown once, on its first page; the running header names the topic
+            head = ''  # owner (pediatrics): the topic title is shown once, on its first page; the running head names the topic
             for row in rows:
                 for i in row:
                     k, h, w, sb, t = stream[i]
                     if k == 'title' and 'p' not in t and sb != 'Rapid Review':
                         t['p'] = pno
-                    if k == 'title' and sb == 'Rapid Review':
-                        ch['rv'] = pno
                     if k in ('raw', 'row'):
                         numbering[t['id']] = numbering.get(t['id'], 0) + len(re.findall(r'<div class="mh">\d+\.', h))
                     if '<div class="mh"># ' in h:
@@ -488,8 +619,15 @@ def build():
             if MEASURE:
                 body = ''.join(f'<div class="ms" data-a="{i}" data-k="{a[0]}" data-w="{int(a[2])}" data-t="{a[4]["id"]}">'
                                f'<div class="msf">{compose(stream, [[i]])}</div>'
-                               f'<div class="msh"><div class="mrow">{a[1]}<div></div></div></div></div>'
+                               f'<div class="msh"><div class="mrow">{a[1]}<div></div></div></div>'
+                               + ''.join(f'<div class="mtk" data-tk="{tk}"><div class="mb"><div class="mc">{MTK[tk]}</div></div></div>'
+                                         for tk in dict.fromkeys(re.findall(r'data-tk="(\w+)"', a[1])) if tk in MTK) + '</div>'
                                for i, a in enumerate(stream))
+            fills = plan.get('fills') or []
+            k_ = len(paged_keys := [x for x in paged if x[0] != 'cover' and x[5] == key])
+            vj = min(26, int(max(0, fills[k_] - 20) * .75 / max(1, len(rows) - 1))) if k_ < len(fills) and not MEASURE else 0
+            if vj > 1:  # spread the page's spare height evenly between its rows (no empty block at the bottom)
+                body = f'<div class="vj" style="--vj:{vj}px"></div>' + body
             paged.append((ch, first[4], sub, body, pno, key, {stream[i][4]['id'] for row in rows for i in row if stream[i][3] != 'Rapid Review'}))
             pno += 1
     rr_first = rr_first or pno
@@ -504,9 +642,24 @@ def build():
     if about:
         meta_pages.insert(1 + bool(authors), {'id': 'about', 'label': 'About this edition'})
         html_pages.append(f'<section class="page fmp" id="pab" data-id="about">{about}{footer(book)}</section>\n')
+    if reviewers:
+        meta_pages.insert(1 + bool(authors) + bool(about), {'id': 'reviewers', 'label': 'Reviewers'})
+        html_pages.append(f'<section class="page fmp rvw" id="prv" data-id="reviewers">{reviewers}{footer(book)}</section>\n')
+    for k, h in enumerate(howto):  # owner (Nov 2026): Arabic how-to pages (the app; study tools) before the contents
+        meta_pages.insert(1 + bool(authors) + bool(about) + bool(reviewers) + k, {'id': f'howto-{k + 1}', 'label': 'How to use the book'})
+        html_pages.append(f'<section class="page howto" id="ph{k}" data-id="howto-{k + 1}" dir="rtl" lang="ar">{h}{footer(book)}</section>\n')
+    if refs:  # after the how-to pages, before the contents (as in the Obstetrics book)
+        meta_pages.insert(1 + bool(authors) + bool(about) + bool(reviewers) + len(howto), {'id': 'references', 'label': 'References'})
+        html_pages.append(f'<section class="page refp" id="prf" data-id="references">{refs}{footer(book)}</section>\n')
     html_pages += contents_pages(book, rr_first)
     topic_pages = {}
-    for ch, t0, sub, body, n, key, tids in paged:
+    for item in paged:
+        if item[0] == 'cover':
+            _, ch, n = item
+            html_pages.append(chapter_cover(book, ch, n))
+            meta_pages.append({'id': f'p{n}', 'label': f'Chapter {ch["no"]} · {text(ch["title"])}', 'ch': ch['no'], 'chcover': 1})
+            continue
+        ch, t0, sub, body, n, key, tids = item
         pid = f'p{n}'
         html_pages.append(mosaic_page(book, ch, sub, body, n, pid, key, t0))
         meta_pages.append({'id': pid, 'label': f'{t0["no"]} · {text(sub)}', 'topic': t0['id'], 'ch': ch['no'], **({'ex': 1} if sub == 'Rapid Review' else {})})
@@ -517,7 +670,7 @@ def build():
         topics_meta.append({'id': t['id'], 'no': t['no'], 'title': text(t['title']), 'sub': text(t.get('sub', '')),
                             'ch': ch['no'], 'p': t.get('p', 0), 'pages': topic_pages.get(t['id'], [])})
         rr_groups.append(((t, ch), rr_items(src)))
-    rr = []  # owner: one Rapid Review section per chapter instead of end-of-book pages
+    rr = []  # owner (Nov 2026): the Rapid Review section is built per chapter above (exam material moved there)
     html_pages += rr
     meta_pages += [{'id': f'rapid-review-{i + 1}', 'label': 'Rapid review'} for i in range(len(rr))]
 
@@ -581,6 +734,7 @@ def build():
     xref = {k: v for k, v in json.loads(xf.read_text()).items() if not k.startswith('_')} if xf.exists() else {}
     meta = {
         'access': access, 'terms': terms(),
+        'review': bool(os.environ.get('PRR_REVIEW')),  # authors' review copy: whole book open (never for docs/)
         'audio': audio_meta(meta_pages, topics_meta, book),
         'edition': book['edition'], 'pages': meta_pages, 'topics': topics_meta, 'rr': rr_first,
         'chips': book.get('search_chips', []),
@@ -588,11 +742,10 @@ def build():
         'xref': [[ph, tid, tp[tid]['p'], tp[tid]['no']] for tid, phs in xref.items() if tid in tp for ph in phs],
         'tnos': {t['no']: [t['id'], t['p']] for t in topics_meta if t.get('p')},
         # 'terms': abbreviations + glossary, shown on hover / tap (app.js termify)
-        'pill': (f'{len(topics_meta)} topic{"s" * (len(topics_meta) != 1)} · {len(meta_pages)} pages' if topics_meta else
-                 f'{len(book["chapters"])} chapters · {sum(len(c["topics"]) for c in book["chapters"])} topics'),
+        'pill': f'{len(topics_meta)} topic{"s" * (len(topics_meta) != 1)} · {len(meta_pages)} pages',
         'contents': [{'no': ch['no'], 'title': text(ch['title']), 'part': ch.get('part', ''), 'color': ch['color'],
                       'topics': [{'id': t['id'], 'no': t['no'], 'title': text(t['title']), 'sub': text(t.get('sub', '')),
-                                  'p': t.get('p')} for t in ch['topics']], 'rv': ch.get('rv')} for ch in book['chapters']],
+                                  'p': t.get('p')} for t in ch['topics']]} for ch in book['chapters']],
     }
 
     def js_json(o):
@@ -614,13 +767,9 @@ def build():
         shutil.copytree(CONTENT / 'audio', OUT / 'audio', dirs_exist_ok=True, ignore=shutil.ignore_patterns('*.json'))
     for f in ('manifest.json', 'sw.js'):
         shutil.copy(SRC / f, OUT / f)
-    # Copy for a claude.ai Artifact preview: the host adds the doctype/html/head/body skeleton itself.
-    art = re.sub(r'<!doctype html>\s*<html[^>]*><head>\s*<meta charset="utf-8">\s*<meta name="viewport"[^>]*>\s*', '', page)
-    art = art.replace('</head><body>', '').replace('</body></html>', '')
-    # The review copy is for the authors: every page, card and question open (the live book keeps the free trial lock).
-    for a, b in (("var LOCKED=!st('act')||!ACC.public_key;", 'var LOCKED=false;'), ('if(!LOCKED)checkCode(', 'if(false)checkCode(')):
-        assert a in art, a
-        art = art.replace(a, b)
+    # Authors' review copy for the claude.ai Artifact preview: a full HTML document with the whole book open (meta review = true).
+    art, nrev = re.subn(r'"review":\s*false', '"review": true', page, count=1)
+    assert nrev == 1 or os.environ.get('PRR_REVIEW'), 'review flag not found in meta'
     if not os.environ.get('SRR_OUT'):
         (ROOT / 'artifact').mkdir(exist_ok=True)
         (ROOT / 'artifact' / 'index.html').write_text(art)
