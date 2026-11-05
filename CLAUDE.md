@@ -224,5 +224,7 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   tightens any page left with < 42 px (content/capfix.json), up to 5 rounds. `node tools/blockers.js [px]` lists mid-topic gaps and the box
   that did not fit. split_box also: two-column bullet blocks → one list; two-column blocks without a picture → stacked; a list of
   "Label: sub-list" lines → two-column table; ol.steps continue with counter-reset. Remaining gaps: boxes that keep a picture or diagram whole.
+- **Tables are never split (owner, Nov 2026):** a table stays whole on one page (split_box breaks a table only if its text > 2600
+  characters, i.e. taller than a page); boxes may still break between blocks and inside lists.
 - **Topic titles on one line (owner):** build.py gives titles over 32 characters a smaller font (min 16.5 pt) instead of wrapping.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.

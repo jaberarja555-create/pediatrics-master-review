@@ -209,7 +209,7 @@ def split_box(body, rows_per=1, min_chars=50):
             if trs and ''.join(trs) == re.sub(r'\s+(?=<)', '', inner).strip() or (trs and len(''.join(trs)) > .95 * len(inner.strip())):
                 head = [r for r in trs[:1] if '<th' in r and '<td' not in r]
                 rows = trs[len(head):]
-                if len(rows) >= 2:
+                if len(rows) >= 2 and len(text(t)) > 2600:   # owner: a table stays whole on one page unless it is too tall for a page
                     # same column widths in every piece, so the pieces line up when they join on one page
                     cells = [[len(text(c)) for c in re.findall(r'<t[hd]\b.*?</t[hd]>', r, re.S)] for r in rows]
                     ncol = max(len(c) for c in cells)
