@@ -217,4 +217,8 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   the chapter's end; joined pieces keep 0 gap (app.css vjs rules).
 - **Every hard word has a tap meaning (owner):** glossary now covers eponyms, organisms, drugs and clinical terms (~1,800 entries); after
   writing a topic, list words with no meaning (wordfreq rarity scan) and add them.
+- **Pages fill in order (owner, Nov 2026):** paginate.js is greedy (no "even pages" balancing): each page takes pieces until the next does
+  not fit; then a later whole box of the topic that fits (≤ 3 ahead) moves up; a box splits between its blocks, table rows (1 per piece)
+  or bullet-list groups of 3 (build.py split_box), never before a picture or after a short lead-in. `tools/gaps.js` marks gaps mid/end.
+- **Topic titles on one line (owner):** build.py gives titles over 32 characters a smaller font (min 16.5 pt) instead of wrapping.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.

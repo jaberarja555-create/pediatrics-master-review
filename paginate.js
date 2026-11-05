@@ -121,16 +121,30 @@ const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
         let h = (st === 0 ? 0 : cont) - (U[st].rv ? GAP : 0) + (U[st].cb ? CONT_TOP : 0); for (let k = st; k < e; k++) h += U[k].h;
         if (h > cap && e - st > 1) break;
         if (h > cap) report.push(`${key} a box is taller than a page`);
-        const last = e === n, rvG = cont === 0 && U.some(u => u.rv);  // Rapid Review (owner): fill each page, the space is left only at the chapter's end
-        const c = best[st] + cap * cap * 20 + (rvG ? (last ? 0 : Math.max(cap - h, 0) * cap * 4) : Math.pow(Math.max(cap - h, 0), 2)) + (U[st].cb ? Math.pow(0.22 * cap, 2) : 0);  // splitting a box costs something  // fewest pages first, then the most even
+        const last = e === n, rvG = true;  // owner: fill every page (topics and Rapid Review); space is left only at the end  // Rapid Review (owner): fill each page, the space is left only at the chapter's end
+        const c = best[st] + cap * cap * 20 + (rvG ? (last ? 0 : Math.max(cap - h, 0) * cap * 4 * Math.pow(n - st + 1, 2)) : Math.pow(Math.max(cap - h, 0), 2)) + (U[st].cb ? Math.pow(0.22 * cap, 2) : 0);  // splitting a box costs something  // fewest pages first, then the most even
         if (c < best[e]) { best[e] = c; prev[e] = st; }
       }
-      const cuts = []; for (let e = n; e > 0; e = prev[e]) cuts.unshift([prev[e], e]);
-      const P = [], F = [];
-      for (const [st, e] of cuts) {
-        let h = (st === 0 ? 0 : cont) - (U[st].rv ? GAP : 0) + (U[st].cb ? CONT_TOP : 0); const rs = [];
-        for (let k = st; k < e; k++) { h += U[k].h; rs.push(...U[k].rows); }
-        P.push(rs); F.push(cap - h);
+      // owner (pediatrics): fill every page in order; when the next piece does not fit, a later whole box of the same topic
+      // that fits (up to 3 boxes ahead) moves up into the gap; space is left only at the topic's end
+      const P = [], F = []; {
+        const R = U.map((u, i) => i);
+        while (R.length) {
+          const first = R[0]; let h = (P.length === 0 ? 0 : cont) - (U[first].rv ? GAP : 0) + (U[first].cb ? CONT_TOP : 0) + U[first].h;
+          if (h > cap) report.push(`${key} a box is taller than a page`);
+          const rs = [...U[first].rows]; R.shift();
+          while (R.length) {
+            if (h + U[R[0]].h <= cap) { h += U[R[0]].h; rs.push(...U[R.shift()].rows); continue; }
+            let moved = false;
+            for (let a = 1; a < Math.min(R.length, 4); a++) {
+              const u = U[R[a]], nx = U[R[a + 1]];
+              if (u.cb || u.rv || u.title || (nx && nx.cb) || h + u.h > cap) continue;
+              h += u.h; rs.push(...u.rows); R.splice(a, 1); moved = true; break;
+            }
+            if (!moved) break;
+          }
+          P.push(rs); F.push(cap - h);
+        }
       }
       let ok = true;
       if (!tryNums) for (const nu of numsU) {

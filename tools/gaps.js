@@ -9,6 +9,6 @@ const path = require('path'); const pw = require('playwright');
       const c = s.cloneNode(true); box.innerHTML = ''; box.appendChild(c);
       const lim = c.querySelector('.body').getBoundingClientRect().bottom; let bot = 0;
       [...c.querySelector('.mzm').children].forEach(x => bot = Math.max(bot, x.getBoundingClientRect().bottom));
-      out.push([c.id, c.querySelector('.mzh span:last-child').textContent.trim(), Math.round(lim - bot)]); });
-    return out; });
+      out.push([c.id, c.querySelector('.mzh span:last-child').textContent.trim(), Math.round(lim - bot), c.querySelector('.mzh span:first-child').textContent.trim()]); });
+    return out.map((x, i) => [...x.slice(0, 3), out[i + 1] && out[i + 1][3] === x[3] ? 'mid' : 'end']); });
   r.forEach(x => console.log(x.join('\t'))); await b.close(); })();

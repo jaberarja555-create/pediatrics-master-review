@@ -151,7 +151,7 @@ def top_level(body):
     return out
 
 
-def split_box(body, rows_per=2, min_chars=170):
+def split_box(body, rows_per=1, min_chars=120):
     """Pieces of a long box body that may fall on different pages: top-level blocks; long tables and lists in row groups."""
     if len(text(body)) < 500:
         return [body]
@@ -185,16 +185,35 @@ def split_box(body, rows_per=2, min_chars=170):
                         hd = ''.join(head) if not k else ''.join(r.replace('<tr', '<tr class="rh"', 1) for r in head)
                         pieces.append((tk, f'{open_}{cg}<thead>{hd}</thead><tbody>{"".join(grp)}</tbody>{m.group(3)}'))
                     continue
+        lm = re.match(r'\s*(<ul class="b"[^>]*>)(.*)(</ul>)\s*$', t, re.S)
+        if lm:   # owner (pediatrics): a long bullet list may continue on the next page, in groups of 3 lines
+            lis = top_level(lm.group(2))
+            if lis and all(x.strip().startswith('<li') for x in lis if x.strip()) and len(lis) > 4:
+                lis = [x for x in lis if x.strip()]
+                tk = 'ul' + hashlib.md5(t.encode()).hexdigest()[:8]
+                for k in range(0, len(lis), 3):
+                    grp = lis[k:k + 3]
+                    if k and len(grp) < 2 and pieces:
+                        pieces[-1] = (tk, pieces[-1][1][:-5] + ''.join(grp) + '</ul>'); continue
+                    pieces.append((tk, lm.group(1) + ''.join(grp) + '</ul>'))
+                continue
         pieces.append((None, t))
-    # a page may break only between row groups of one table (owner: no orphan notes, pictures stay with their text)
+    # a page may break between row groups of a table or list, and between the blocks of a box (owner: fill the page);
+    # never before a picture, and never right after a short lead-in line (it stays with what it introduces)
+    def lead_in(pc):
+        return pc.lstrip().startswith(('<p', '<b', '<div class="small"')) and len(text(pc)) < 200
     merged = []
     for k, (tk, pc) in enumerate(pieces):
-        if merged and not (tk and pieces[k - 1][0] == tk and len(text(merged[-1])) >= min_chars):
+        prev = pieces[k - 1] if k else None
+        brk = merged and len(text(merged[-1])) >= min_chars and (
+            (tk and prev[0] == tk) or
+            (not pc.lstrip().startswith('<div class="photo') and 'class="photo' not in prev[1][:40] and not lead_in(prev[1])))
+        if merged and not brk:
             merged[-1] += pc
         else:
             merged.append(pc)
     if len(merged) > 1 and len(text(merged[-1])) < 120:
-        merged[-2] += merged.pop()
+        last = merged.pop(); merged[-1] += last
     return merged
 
 
@@ -558,7 +577,10 @@ def build():
             written.append((ch, t, src))
             if not chapters or chapters[-1][0] is not ch:
                 chapters.append((ch, []))
-            chapters[-1][1].append(('title', f'<h1 class="mzt"><span class="no">{t["no"]}</span>{t["title"]}</h1>', True, pages[0][0], t))
+            # owner: the title stays on one line; a long title gets a smaller font instead of wrapping
+            nch = len(text(t['title']))
+            fs = '' if nch <= 32 else f' style="font-size:{max(16.5, 24 * 32 / nch):.1f}pt"'
+            chapters[-1][1].append(('title', f'<h1 class="mzt"{fs}><span class="no">{t["no"]}</span>{t["title"]}</h1>', True, pages[0][0], t))
             chapters[-1][1].extend((k, h, w, sb, t) for k, h, w, sb in atoms)
     # owner (Nov 2026): no Exam corner after each chapter; every chapter's exam material is gathered in the
     # Rapid Review section at the end of the book, chapter by chapter, one block per topic
