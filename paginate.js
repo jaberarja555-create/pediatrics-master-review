@@ -4,7 +4,7 @@
 // Writes content/layout.json and rebuilds the book.
 const path = require('path'), fs = require('fs'), os = require('os'), { execSync } = require('child_process');
 const pw = (() => { try { return require('playwright'); } catch (e) { return require('/opt/node-tools/node_modules/playwright'); } })();
-const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the top of a page gets a 'continued' heading and its table header
+const MARGIN = 42, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the top of a page gets a 'continued' heading and its table header
 (async () => {
   let data;
   for (let pass = 0; pass < 3; pass++) {   // pass 1 learns the column widths of split tables; then measure again with them
@@ -30,8 +30,10 @@ const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
         // a split box: measure its pieces joined together, so the saving of each join is exact
         const joinSave = {};
         for (let i = 0; i < ms.length; i++) {
-          if (ms[i].dataset.k !== 'box' || !ms[i + 1] || ms[i + 1].dataset.k !== 'cbox') continue;
-          let j = i + 1; while (ms[j] && ms[j].dataset.k === 'cbox') j++;
+          const isRc = x => x && x.dataset.k === 'rvt' && x.querySelector('.mb.rv.rvc');
+          const rvStart = ms[i].dataset.k === 'rvt' && !isRc(ms[i]) && isRc(ms[i + 1]);
+          if (!rvStart && (ms[i].dataset.k !== 'box' || !ms[i + 1] || ms[i + 1].dataset.k !== 'cbox')) continue;
+          let j = i + 1; while (ms[j] && (rvStart ? isRc(ms[j]) : ms[j].dataset.k === 'cbox')) j++;
           const holder = document.createElement('div'); holder.className = 'main mzm'; holder.style.cssText = 'position:static;display:flow-root';
           const h1 = document.createElement('h1'); h1.className = 'mzt mzc'; h1.textContent = 'X'; holder.appendChild(h1);
           let sum = 0;
@@ -99,7 +101,7 @@ const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
       const opt = option(i); opt.row.forEach(j => done.add(j));
       const isTitle = A[i].k === 'title';
       if (isTitle) seg++;
-      const h = opt.h + (A[i].k === 'rvt' ? (A[i].rc ? 2 : GAP) : 0) - (A[i].k === 'cbox' ? A[i].js : 0);
+      const h = opt.h + (A[i].k === 'rvt' && !A[i].rc ? GAP : 0) - (A[i].k === 'cbox' || A[i].rc ? A[i].js : 0);
       if (A[i].k === 'raw' && !isTitle) { glue = glue ? { rows: [...glue.rows, opt.row], h: glue.h + h } : { rows: [opt.row], h }; continue; }
       const u = { rows: [opt.row], h, title: isTitle, rv: A[i].k === 'rvt', cb: A[i].k === 'cbox', seg: Math.max(seg, 0) };
       if (glue && !isTitle && glue.h + u.h <= cap - ch.cont) { u.rows = [...glue.rows, ...u.rows]; u.h += glue.h; glue = null; }
@@ -127,6 +129,8 @@ const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
       }
       // owner (pediatrics): fill every page in order; when the next piece does not fit, a later whole box of the same topic
       // that fits (up to 3 boxes ahead) moves up into the gap; space is left only at the topic's end
+      const FIX = (() => { try { return JSON.parse(fs.readFileSync(path.join(__dirname, 'content', 'capfix.json'), 'utf8')); } catch (e) { return {}; } })();
+      const capOf = (pi) => cap - ((FIX[key] || {})[pages.length + pi] || 0);
       const P = [], F = []; {
         const R = U.map((u, i) => i);
         while (R.length) {
@@ -134,16 +138,18 @@ const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
           if (h > cap) report.push(`${key} a box is taller than a page`);
           const rs = [...U[first].rows]; R.shift();
           while (R.length) {
-            if (h + U[R[0]].h <= cap) { h += U[R[0]].h; rs.push(...U[R.shift()].rows); continue; }
+            if (h + U[R[0]].h <= capOf(P.length)) { h += U[R[0]].h; rs.push(...U[R.shift()].rows); continue; }
             let moved = false;
             for (let a = 1; a < Math.min(R.length, 4); a++) {
-              const u = U[R[a]], nx = U[R[a + 1]];
-              if (u.cb || u.rv || u.title || (nx && nx.cb) || h + u.h > cap) continue;
-              h += u.h; rs.push(...u.rows); R.splice(a, 1); moved = true; break;
+              const u = U[R[a]];
+              if (u.cb || u.rv || u.title) continue;
+              let e = a + 1, hh = u.h; while (e < R.length && U[R[e]].cb) { hh += U[R[e]].h; e++; }   // a split box moves up whole
+              if (h + hh > capOf(P.length)) continue;
+              h += hh; for (let q = a; q < e; q++) rs.push(...U[R[q]].rows); R.splice(a, e - a); moved = true; break;
             }
             if (!moved) break;
           }
-          P.push(rs); F.push(cap - h);
+          F.push(capOf(P.length) - h); P.push(rs);
         }
       }
       let ok = true;

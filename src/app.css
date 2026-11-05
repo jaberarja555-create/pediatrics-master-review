@@ -1453,7 +1453,7 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 /* pediatrics: planned topics not written yet (owner) */
 .toc .tc.soon{cursor:default;opacity:.55}.toc .tc.soon em{display:none}
 .toc .tch.soon .tbh{cursor:default;filter:saturate(.55)}
-.mb .mc table.t + table.t tr.rh { display:none; }  /* split table pieces joined on one page: one header row */
+.mb .mc table.t + table.t tr.rh { display:none !important; }  /* split table pieces joined on one page: one header row */
 /* pieces of one box that join on a page stay joined when the page spreads its spare height (vjs) */
 .mzm.vjs > .mrow:has(+ .mrow > .mb.rv.rvc), .mzm.vjs > .mrow:has(+ .mrow > .mb.mcont) { margin-bottom:0 !important; }
 .mzm.vjs > .mrow:has(> .mb.rv.rvc) { margin-top:0; }

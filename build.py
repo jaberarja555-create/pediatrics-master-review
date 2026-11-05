@@ -151,23 +151,65 @@ def top_level(body):
     return out
 
 
-def split_box(body, rows_per=1, min_chars=120):
+def split_box(body, rows_per=1, min_chars=50):
     """Pieces of a long box body that may fall on different pages: top-level blocks; long tables and lists in row groups."""
-    if len(text(body)) < 500:
+    if len(text(body)) < 300:
         return [body]
     tops = top_level(body)
     if not tops or ''.join(tops).strip() != body.strip():
         return [body]
+    # owner (pediatrics): a two-column block of bullet lists becomes one full-width list, so it can continue on the next page
+    flat = []
+    for t in tops:
+        dm = re.match(r'\s*<div class="two"[^>]*>(.*)</div>\s*$', t, re.S)
+        cols = top_level(dm.group(1)) if dm else None
+        if cols:
+            cols = [c.strip() for c in cols if c.strip()]
+            cols = [re.sub(r'^<div>(.*)</div>$', r'\1', c, flags=re.S).strip() for c in cols]
+            if len(cols) == 2 and all(re.match(r'<ul class="b"[^>]*>.*</ul>$', c, re.S) and top_level(c) == [c] for c in cols):
+                lis = ''.join(re.sub(r'^<ul class="b"[^>]*>|</ul>$', '', c) for c in cols)
+                flat.append(f'<ul class="b">{lis}</ul>'); continue
+            ph = [c for c in cols if c.startswith('<div class="photo') and '<ul' not in c] if len(cols) == 2 else []
+            tx = [c for c in cols if c not in ph]
+            if len(ph) == 1 and len(tx) == 1 and re.match(r'<ul class="b"[^>]*>.*</ul>$', tx[0], re.S) and top_level(tx[0]) == [tx[0]]:
+                lis = [x for x in (top_level(re.sub(r'^<ul class="b"[^>]*>|</ul>$', '', tx[0])) or []) if x.strip()]
+                if len(lis) >= 5 and all(x.strip().startswith('<li') for x in lis):
+                    # owner (pediatrics): the picture keeps the first lines beside it; the rest of the list continues full width
+                    n = (len(lis) + 1) // 2
+                    open_two = re.match(r'\s*(<div class="two"[^>]*>)', t).group(1)
+                    left = cols[0] is ph[0]
+                    ul1 = '<ul class="b" style="margin:0">' + ''.join(lis[:n]) + '</ul>'
+                    flat.append(open_two + (ph[0] + ul1 if left else ul1 + ph[0]) + '</div>')
+                    flat.append('<ul class="b">' + ''.join(lis[n:]) + '</ul>'); continue
+            if len(cols) == 2 and not any(k in dm.group(1) for k in ('class="photo', '<img', '<svg', 'class="fig')):
+                # two different blocks side by side (no picture): stacked full width, so each can continue on the next page
+                for c in cols:
+                    sub = top_level(c) or [c]
+                    flat.extend(re.sub(r'(<(?:ul|table|ol)\b[^>]*?) style="margin:0"', r'\1', x) for x in sub if x.strip())
+                continue
+        flat.append(t)
+    # a list whose every line is "Label: sub-list" reads better (and breaks better) as a two-column table
+    flat2 = []
+    for t in flat:
+        um = re.match(r'\s*<ul class="b"[^>]*>(.*)</ul>\s*$', t, re.S)
+        lis = [x.strip() for x in (top_level(um.group(1)) or []) if x.strip()] if um else []
+        rows = [re.match(r'<li>\s*<b>([^<]{2,40})</b>\s*:\s*(<ul class="b"[^>]*>.*</ul>)\s*</li>$', x, re.S) for x in lis]
+        if len(lis) >= 2 and all(rows):
+            flat2.append('<table class="t"><colgroup><col style="width:22%"><col></colgroup><tbody>' + ''.join(
+                f'<tr><td class="hl">{r.group(1)}</td><td>{r.group(2)}</td></tr>' for r in rows) + '</tbody></table>')
+        else:
+            flat2.append(t)
+    tops = flat2
     pieces = []
     for t in tops:
         m = re.match(r'\s*(<table\b[^>]*>)(.*)(</table>)\s*$', t, re.S)
         if m and 'rowspan' not in t and '<table' not in m.group(2):
-            inner = re.sub(r'</?(thead|tbody)>', '', m.group(2))
+            inner = re.sub(r'</?(thead|tbody)>|<colgroup>.*?</colgroup>', '', m.group(2), flags=re.S)
             trs = re.findall(r'<tr\b.*?</tr>', inner, re.S)
             if trs and ''.join(trs) == re.sub(r'\s+(?=<)', '', inner).strip() or (trs and len(''.join(trs)) > .95 * len(inner.strip())):
                 head = [r for r in trs[:1] if '<th' in r and '<td' not in r]
                 rows = trs[len(head):]
-                if len(rows) > rows_per + 2:
+                if len(rows) >= 2:
                     # same column widths in every piece, so the pieces line up when they join on one page
                     cells = [[len(text(c)) for c in re.findall(r'<t[hd]\b.*?</t[hd]>', r, re.S)] for r in rows]
                     ncol = max(len(c) for c in cells)
@@ -180,21 +222,29 @@ def split_box(body, rows_per=1, min_chars=120):
                     open_ = m.group(1).replace('<table', f'<table data-tk="{tk}"' + (' style="table-layout:fixed"' if cg else ''), 1)
                     for k in range(0, len(rows), rows_per):
                         grp = rows[k:k + rows_per]
-                        if k and len(grp) < 2 and pieces:   # no single orphan row
+                        if k and len(grp) < min(2, rows_per) and pieces:   # no single orphan row
                             pieces[-1] = (pieces[-1][0], pieces[-1][1].replace('</tbody>', ''.join(grp) + '</tbody>')); continue
                         hd = ''.join(head) if not k else ''.join(r.replace('<tr', '<tr class="rh"', 1) for r in head)
                         pieces.append((tk, f'{open_}{cg}<thead>{hd}</thead><tbody>{"".join(grp)}</tbody>{m.group(3)}'))
                     continue
+        om = re.match(r'\s*<ol class="steps"[^>]*>(.*)</ol>\s*$', t, re.S)
+        if om:   # numbered steps may continue on the next page; the numbering goes on (counter-reset)
+            lis = [x for x in (top_level(om.group(1)) or []) if x.strip()]
+            if len(lis) >= 3 and all(x.strip().startswith('<li') for x in lis):
+                tk = 'ol' + hashlib.md5(t.encode()).hexdigest()[:8]
+                for k in range(0, len(lis), 2):
+                    pieces.append((tk, f'<ol class="steps" style="counter-reset:s {k}">' + ''.join(lis[k:k + 2]) + '</ol>'))
+                continue
         lm = re.match(r'\s*(<ul class="b"[^>]*>)(.*)(</ul>)\s*$', t, re.S)
         if lm:   # owner (pediatrics): a long bullet list may continue on the next page, in groups of 3 lines
             lis = top_level(lm.group(2))
-            if lis and all(x.strip().startswith('<li') for x in lis if x.strip()) and len(lis) > 4:
+            if lis and all(x.strip().startswith('<li') for x in lis if x.strip()) and len([x for x in lis if x.strip()]) >= 2:
                 lis = [x for x in lis if x.strip()]
                 tk = 'ul' + hashlib.md5(t.encode()).hexdigest()[:8]
-                for k in range(0, len(lis), 3):
-                    grp = lis[k:k + 3]
-                    if k and len(grp) < 2 and pieces:
-                        pieces[-1] = (tk, pieces[-1][1][:-5] + ''.join(grp) + '</ul>'); continue
+                for k in range(0, len(lis), 2):
+                    grp = lis[k:k + 2]
+                    if False:
+                        pass
                     pieces.append((tk, lm.group(1) + ''.join(grp) + '</ul>'))
                 continue
         pieces.append((None, t))
@@ -293,7 +343,7 @@ def chapter_exam(t):
     parts, cur = [], []
     for i, r in enumerate(trs):
         cur.append(r)
-        if len(cur) >= 3 and 'class="rvq"' not in r and not (i + 1 < len(trs) and len(trs) - i - 1 < 2):
+        if len(cur) >= 2 and 'class="rvq"' not in r and not (i + 1 < len(trs) and len(trs) - i - 1 < 2):
             parts.append(cur); cur = []
     if cur:
         parts.append(cur)
