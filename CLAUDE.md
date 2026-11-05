@@ -198,6 +198,7 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
 - **Rapid Review:** at the end of the book, per chapter a colour band and per topic a table (clue / question → answer, Key numbers,
   Test yourself with answers hidden until tapped).
 - **Topic title shown once** (pediatrics owner): no repeated title on a topic's later pages; the running head names the topic.
+  No "(continued)" headings either: a box split across pages just goes on at the top of the next page (app.css `.mb.mcont`, paginate.js CONT_TOP 18); Contents page 2 has no "continued".
 - **Review copy:** `artifact/index.html` has meta `review: true` (whole book open).
 - **Deploy:** `bash server/deploy.sh` on "deployment"; or connect Cloudflare Workers Builds to this branch (server/DEPLOY.md).
 

@@ -390,7 +390,7 @@ def contents_pages(book, rr_page):
     halves = [blocks[:cut], blocks[cut:]][:N_CONTENTS]
     out = []
     for n, part in enumerate(halves):
-        sub = (f'{len(chs)} chapters · {n_topics} topics · tap any topic' if n == 0 else 'continued · tap any topic')
+        sub = (f'{len(chs)} chapters · {n_topics} topics · tap any topic' if n == 0 else 'tap any topic')
         out.append(f'<section class="page tocp" id="pc{n}" data-id="contents-{n + 1}">'
                    f'<div class="toc-h"><div><b>Contents</b><span>{sub}</span></div></div>'
                    f'<div class="toc tcv">{"".join(h for _, h in part)}</div>{footer(book)}</section>\n')

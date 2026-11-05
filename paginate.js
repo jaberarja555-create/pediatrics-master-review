@@ -4,7 +4,7 @@
 // Writes content/layout.json and rebuilds the book.
 const path = require('path'), fs = require('fs'), os = require('os'), { execSync } = require('child_process');
 const pw = (() => { try { return require('playwright'); } catch (e) { return require('/opt/node-tools/node_modules/playwright'); } })();
-const MARGIN = 40, GAP = 10, CONT_TOP = 48, JOIN = 40;  // a box piece at the top of a page gets a 'continued' heading and its table header
+const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the top of a page gets a 'continued' heading and its table header
 (async () => {
   let data;
   for (let pass = 0; pass < 3; pass++) {   // pass 1 learns the column widths of split tables; then measure again with them

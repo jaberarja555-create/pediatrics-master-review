@@ -1408,8 +1408,8 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .mzm > .mrow:has(+ .mrow > .mb.mcont) > .mb > .mc { padding-bottom:0; }
 .mb.mcont tr.rh { display:none; }
 .mzm > h1 + .mrow > .mb.mcont, .mzm > .mrow:first-child > .mb.mcont { border-top:1.3px solid var(--mbl); border-radius:7px 7px 0 0; }
-.mzm > h1 + .mrow > .mb.mcont::before, .mzm > .mrow:first-child > .mb.mcont::before { content:attr(data-h) " (continued)"; display:block; margin-bottom:6px;
-  background:var(--mbt); color:var(--mbd); font-weight:850; font-size:10.6pt; padding:4px 10px 3px; text-transform:uppercase; border-bottom:1.3px solid var(--mbl); }
+/* owner (pediatrics): no "continued" headings; a piece at the top of a page just goes on, with its table header row */
+.mzm > h1 + .mrow > .mb.mcont > .mc, .mzm > .mrow:first-child > .mb.mcont > .mc { padding-top:6px; }
 .mzm > h1 + .mrow > .mb.mcont tr.rh, .mzm > .mrow:first-child > .mb.mcont tr.rh { display:table-row; }
 .ms { position:relative; } .mtk { position:absolute; left:0; right:0; top:0; visibility:hidden; }
 .mb .mc p.small, .mb .mc .small { font-size:8.5pt; line-height:1.45; color:#44403c; }
