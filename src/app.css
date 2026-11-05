@@ -1457,3 +1457,10 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 /* pieces of one box that join on a page stay joined when the page spreads its spare height (vjs) */
 .mzm.vjs > .mrow:has(+ .mrow > .mb.rv.rvc), .mzm.vjs > .mrow:has(+ .mrow > .mb.mcont) { margin-bottom:0 !important; }
 .mzm.vjs > .mrow:has(> .mb.rv.rvc) { margin-top:0; }
+/* chapter cover with many topics: two columns, compact rows (owner: everything fits on the page) */
+.chcov.many .cvin { display:grid; grid-template-columns:1fr 1fr; column-gap:22px; padding:14px 14px 6px; }
+.chcov.many .cvr { padding:6px 2px; }
+.chcov.many .cvr b { font-size:9.6pt; line-height:1.2; }
+.chcov.many .cvr span { font-size:7.6pt; line-height:1.25; }
+.chcov.many .cvimg { height:262px; } .chcov.many .cvin { top:728px; }
+.chcov.many .cvr { padding:4px 2px; } .chcov.many .cvin { top:722px; }

@@ -417,7 +417,8 @@ def chapter_cover(book, ch, pno):
     part = next(c['part'] for c in reversed(book['chapters']) if c.get('part') and c['no'] <= ch['no'])
     tops = [t for t in ch['topics'] if t.get('p')]
     rows = ''.join(f'<div class="cvr" data-p="{t["p"]}"><i>{t["no"]}</i><div><b>{t["title"]}</b><span>{t.get("sub", "")}</span></div><em>{t["p"]}</em></div>' for t in tops)
-    return (f'<section class="page chcov c{ch["no"]}" id="p{pno}" data-id="p{pno}">'
+    many = ' many' if len(tops) > 5 else ''   # a long topic list goes in two columns so it fits the page
+    return (f'<section class="page chcov c{ch["no"]}{many}" id="p{pno}" data-id="p{pno}">'
             f'<div class="cvtop"><div class="cvlogo"><span>Student Master Note Series</span></div>'
             f'<div class="cvbook"><b>{book["subject"].upper()}</b><span>Master Review</span></div>'
             f'<div class="cvtag">A concise revision guide for medical students · {book["edition"]}</div></div>'
