@@ -3,7 +3,7 @@
 const { execSync } = require('child_process'); const fs = require('fs'); const path = require('path');
 const root = path.join(__dirname, '..'), fixF = path.join(root, 'content', 'capfix.json');
 let fix = {}; try { fix = JSON.parse(fs.readFileSync(fixF, 'utf8')); } catch (e) {}
-for (let round = 0; round < 5; round++) {
+for (let round = 0; round < 8; round++) {
   console.log(execSync('node paginate.js', { cwd: root }).toString().trim());
   const L = JSON.parse(fs.readFileSync(path.join(root, 'content', 'layout.json'), 'utf8'));
   const keys = Object.keys(L).filter(k => /^ch\d+$/.test(k)).sort((a, b) => +a.slice(2) - +b.slice(2))
