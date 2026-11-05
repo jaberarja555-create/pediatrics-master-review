@@ -270,11 +270,16 @@ def chapter_exam(t):
     if qs:   # owner: answers stay hidden until the student taps the question
         trs += ['<tr class="rvq"><td colspan="2">Test yourself · tap a question to see the answer</td></tr>'] + [f'<tr class="q"><td>{a}</td><td>{b}</td></tr>' for a, b, _ in qs]
     # a block never splits across pages, so a long topic becomes several blocks of about 9 rows (fills pages better)
-    n = -(-len(trs) // 9)
-    size = -(-len(trs) // n)
+    # owner (pediatrics): no big gaps, so the pieces are small (3 rows); a sub-heading row stays with the rows under it
+    parts, cur = [], []
+    for i, r in enumerate(trs):
+        cur.append(r)
+        if len(cur) >= 3 and 'class="rvq"' not in r and not (i + 1 < len(trs) and len(trs) - i - 1 < 2):
+            parts.append(cur); cur = []
+    if cur:
+        parts.append(cur)
     out = []
-    for k in range(n):
-        part = trs[k * size:(k + 1) * size]
+    for k, part in enumerate(parts):
         if k == 0:   # owner: one title per topic; the next pieces join on under it (no 'continued' headings)
             out.append((f'<div class="mb rv"><div class="mh"><span class="rvn">{t["no"]}</span>{t["title"]}</div><div class="mc">'
                         f'<table class="rvtab"><thead><tr><th>Clue / question</th><th>Answer</th></tr></thead><tbody>{"".join(part)}</tbody></table></div></div>', True))

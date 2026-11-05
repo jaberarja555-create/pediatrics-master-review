@@ -763,3 +763,1079 @@ transcranial Doppler | Ultrasound of brain artery blood speed; high speed means 
 thrombocytopenia | Low platelet count (below 150 × 10⁹/L)
 B symptoms | Fever, drenching night sweats and weight loss in lymphoma
 erythroblastopenia | Temporary lack of red cell precursors in the marrow
+Greulich–Pyle atlas / Greulich–Pyle | Standard atlas of hand and wrist X-rays used to read bone age
+Moro reflex / Moro | Startle reflex: sudden head drop → arms open (abduct, extend) then close; present at birth, gone by 4–6 months
+Hirschsprung disease / Hirschsprung / Hirschsprung's | Absent ganglion cells in the distal bowel → functional obstruction, delayed meconium, constipation
+Wilms tumour / Wilms | Nephroblastoma: malignant kidney tumour of young children, smooth flank mass
+Burkitt lymphoma / Burkitt / Burkitt's | Fast-growing B-cell lymphoma; jaw mass (endemic African form), linked with EBV and malaria
+Crohn disease / Crohn / Crohn's | Inflammatory bowel disease affecting any part of the gut in patches, through the full bowel wall
+von Willebrand disease / Willebrand | Commonest inherited bleeding disorder: low or abnormal von Willebrand factor → mucosal bleeding
+Shigella | Gram-negative bacterium causing bloody diarrhoea (dysentery)
+Widal test / Widal | Old serology test for typhoid antibodies; unreliable in endemic areas
+Hodgkin lymphoma / Hodgkin / Hodgkin's | Lymphoma with Reed–Sternberg cells, painless rubbery neck nodes, mainly in older children
+non-Hodgkin lymphoma | Lymphomas other than Hodgkin (e.g. Burkitt, lymphoblastic); the commoner type in young children
+Staphylococcus / staphylococcal / staphylococci / staph | Gram-positive cocci in clusters; S. aureus causes skin, bone, lung and blood infections
+Staphylococcus aureus / aureus / Staph. aureus | The main pathogenic staphylococcus: boils, impetigo, osteomyelitis, pneumonia, sepsis
+Pneumocystis jirovecii / Pneumocystis / jirovecii / PJP | Fungus causing severe pneumonia in HIV-infected infants; prevented by cotrimoxazole
+Guillain–Barré syndrome / Guillain | Post-infectious immune polyneuropathy: ascending flaccid weakness with lost reflexes
+Noonan syndrome / Noonan | Genetic syndrome: short stature, webbed neck, pulmonary stenosis (a "male Turner" look)
+Enterobius vermicularis / Enterobius / pinworm / threadworm | Small worm living in the colon; causes itching around the anus at night
+Klebsiella | Gram-negative bacterium; hospital pneumonia, neonatal sepsis and UTI, often drug-resistant
+Campylobacter | Bacterium causing bloody or watery diarrhoea from undercooked poultry
+Schistosoma / bilharzia / Schisto | Blood fluke from fresh water; S. haematobium → haematuria, S. mansoni → liver fibrosis
+Haemophilus influenzae / Haemophilus / influenzae | Gram-negative bacterium; type b (Hib) causes meningitis, epiglottitis, pneumonia
+Prader–Willi syndrome / Prader / Willi | Chromosome 15 disorder: newborn hypotonia, later overeating and obesity, short stature
+Erb's / Erb | Upper brachial plexus (C5–C6) birth injury: "waiter's tip" arm
+Klumpke | Lower brachial plexus (C8–T1) birth injury: claw hand, may have Horner syndrome
+Beckwith–Wiedemann syndrome / Beckwith / Wiedemann | Overgrowth syndrome: macrosomia, large tongue, omphalocele, hypoglycaemia, Wilms risk
+Chlamydia / chlamydial / Chlamydia trachomatis / trachomatis | Intracellular bacterium: neonatal conjunctivitis (day 5–14) and afebrile infant pneumonia
+Chlamydophila pneumoniae / Chlamydophila | Atypical bacterium causing mild pneumonia in older children
+Duchenne muscular dystrophy / Duchenne | X-linked loss of dystrophin: boys with proximal weakness, Gowers sign, big calves
+DiGeorge syndrome / DiGeorge | 22q11 deletion: absent thymus and parathyroids (hypocalcaemia), heart defects, cleft palate
+Diamond–Blackfan anaemia / Blackfan | Congenital pure red cell aplasia in infancy, often with thumb anomalies
+autoimmune haemolytic anaemia | Red cells destroyed by the patient's own antibodies; Coombs test positive
+ulcerative colitis | Inflammatory bowel disease of the colon mucosa only, starting at the rectum; bloody diarrhoea
+Peyer patches / Peyer / Peyer's | Lymphoid tissue in the ileum wall; typhoid ulcers form here and may perforate
+Holliday–Segar method / Holliday / Segar | Maintenance fluid rule: 100 ml/kg for the first 10 kg, 50 ml/kg for the next 10, 20 ml/kg after
+Henoch–Schönlein purpura / Henoch | IgA vasculitis: purpura on legs and buttocks, joint pain, abdominal pain, nephritis
+transposition of the great arteries / transposition | Aorta from the right ventricle and pulmonary artery from the left: cyanosis from birth
+Hb Bart's / Bart's | Haemoglobin of four γ chains; all four α genes deleted → hydrops fetalis
+Phlebotomus | Sandfly genus that transmits leishmaniasis (kala-azar)
+technetium | Radioactive tracer used in scans (e.g. Meckel scan for gastric tissue)
+ivermectin | Antiparasitic drug for strongyloides, scabies and onchocerciasis
+Eustachian tube / Eustachian | Tube from the middle ear to the nasopharynx; short and flat in infants, so otitis media is common
+atrioventricular | Between the atria and ventricles (AV node, AV valves, AV septal defect)
+atrioventricular septal defect | Defect of the centre of the heart (both atrial and ventricular parts, common valve); typical in Down syndrome
+Crigler–Najjar syndrome / Crigler / Najjar | Inherited absence or deficiency of glucuronyl transferase → severe unconjugated jaundice
+Monospot test / Monospot | Rapid heterophile antibody test for infectious mononucleosis (often negative under 4 years)
+Salmonella Typhi / Typhi / Paratyphi | Salmonella serotypes causing enteric (typhoid and paratyphoid) fever
+chloroquine | Old antimalarial; P. falciparum is now resistant; still used for P. vivax in some areas
+isonatraemic | Dehydration with normal serum sodium (130–150 mmol/L), the commonest type
+Morquio syndrome / Morquio | Mucopolysaccharidosis type IV: short-trunk dwarfism with normal intelligence
+Entamoeba histolytica / Entamoeba / histolytica | Amoeba causing amoebic dysentery and liver abscess
+rotavirus / Rota | The commonest cause of severe watery diarrhoea in infants; prevented by oral vaccine
+Kayser–Fleischer ring / Kayser / Fleischer | Brown copper ring at the edge of the cornea in Wilson disease
+Cryptosporidium | Protozoan causing watery diarrhoea, prolonged in HIV infection
+rhabdomyosarcoma | Commonest soft-tissue sarcoma in children (head and neck, genitourinary)
+Wiskott–Aldrich syndrome / Wiskott | X-linked: eczema, small platelets with bleeding, recurrent infections
+Anopheles | Mosquito genus that transmits malaria; bites at night
+poliomyelitis / polio / poliovirus | Enterovirus infection of motor neurons → asymmetric flaccid paralysis; prevented by OPV and IPV
+Moraxella catarrhalis / Moraxella / catarrhalis | Bacterium causing otitis media and sinusitis
+Galeazzi sign / Galeazzi | One knee lower than the other with hips and knees flexed: short femur from hip dislocation
+Pott disease / Pott / Pott's | Tuberculosis of the spine: back pain, gibbus, cold abscess, risk of paraplegia
+Leishmania donovani / Leishmania / donovani | Protozoan causing visceral leishmaniasis (kala-azar)
+Casal necklace / Casal / Casal's | Dermatitis of pellagra around the neck in sun-exposed skin
+ursodeoxycholic acid / Ursodeoxycholic | Bile acid that improves bile flow in cholestasis
+streptomycin | Aminoglycoside injection used in brucellosis and resistant TB
+naloxone | Opioid antagonist that reverses opioid-induced breathing depression
+Plasmodium | Parasite causing malaria: P. falciparum (severe), P. vivax, P. ovale, P. malariae
+Clostridium tetani / Clostridium / tetani | Spore-forming soil bacterium whose toxin causes tetanus
+Clostridioides difficile | Bacterium causing antibiotic-associated colitis
+Ancylostoma / Necator / hookworm | Hookworms: larvae enter through the skin, adults suck blood in the gut → iron-deficiency anaemia
+Leishman–Donovan bodies / Leishman | Amastigotes of Leishmania seen in macrophages on spleen or bone marrow smear
+Darrow's solution / Darrow's | Half-strength potassium-containing IV fluid, formerly used in malnutrition and dehydration
+Ringer's lactate / Ringer's / Hartmann's | Balanced IV fluid with sodium, potassium, calcium and lactate; used for resuscitation and dehydration
+otoscopy / otoscope | Looking at the ear canal and drum with an otoscope
+Taenia / tapeworm / tapeworms | Tapeworms from undercooked beef (T. saginata) or pork (T. solium, cysticercosis)
+anorectal malformation / Anorectal | Congenital defect of the anus and rectum (imperforate anus)
+interferon | Antiviral cytokine; also a drug used in chronic hepatitis B
+amphotericin B / amphotericin / AmBisome / liposomal amphotericin | Antifungal; liposomal form (AmBisome) is a first-line drug for kala-azar
+Echinococcus granulosus / Echinococcus / granulosus | Dog tapeworm whose larvae form hydatid cysts in liver and lung
+Vibrio cholerae / Vibrio / cholerae | Bacterium causing cholera: profuse rice-water diarrhoea
+bronchography | Old X-ray of the bronchi with contrast; replaced by CT
+Keshan disease / Keshan | Cardiomyopathy caused by selenium deficiency
+maxillary / maxilla | Of the upper jaw (maxillary sinus, maxillary bone)
+genitourinary | Of the genital and urinary organs
+sagittal suture / sagittal | Suture running from front to back between the parietal bones
+neonate / neonates / newborn's | A baby in the first 28 days of life
+Turbohaler | Dry-powder inhaler device (e.g. budesonide–formoterol)
+aetiology | The cause of a disease
+parapneumonic effusion / Parapneumonic | Pleural fluid that forms next to a pneumonia
+GeneXpert / Xpert | Rapid PCR test for TB that also detects rifampicin resistance
+colchicine | Anti-inflammatory drug (familial Mediterranean fever, gout)
+Bitot's spots / Bitot's / Bitot | Foamy grey patches on the conjunctiva in vitamin A deficiency
+phosphopenic rickets / Phosphopenic | Rickets from phosphate loss (e.g. X-linked hypophosphataemia); calcium normal
+calcipenic rickets / Calcipenic | Rickets from lack of calcium or vitamin D
+Zika virus / Zika | Mosquito-borne virus; infection in pregnancy causes microcephaly
+Kasabach–Merritt phenomenon / Kasabach | Large vascular tumour trapping platelets → severe thrombocytopenia and bleeding
+nappy / nappies | Diaper
+supraventricular tachycardia / Supraventricular | Fast narrow-complex tachycardia from above the ventricles; the commonest arrhythmia in children
+levothyroxine / thyroxine | Thyroid hormone (T4); oral replacement in hypothyroidism
+haemophilia / Hemophilia / haemophiliac / Haemophilic | X-linked lack of factor VIII (A) or IX (B): joint and muscle bleeds in boys
+hydropic | Fluid in two or more fetal body spaces (skin oedema, ascites, effusions), e.g. from severe anaemia
+chemoprophylaxis | Drugs given to prevent an infection (e.g. rifampicin to meningococcal contacts)
+impetigo | Superficial skin infection (staph or strep) with honey-coloured crusts
+artemisinin / artemether / artesunate / dihydroartemisinin | Fast-acting antimalarials from sweet wormwood; artesunate IV for severe malaria, ACT for uncomplicated malaria
+meningococcaemia | Meningococcal bloodstream infection: purpuric rash, shock
+nicotinamide / niacin | Vitamin B3; deficiency causes pellagra
+engorgement | Painful overfull breasts when milk is not removed often enough
+Denys–Drash syndrome / Denys / Drash | Wilms tumour with ambiguous genitalia and nephrotic kidney disease (WT1 mutation)
+Osgood–Schlatter disease / Osgood / Schlatter | Painful swelling of the tibial tuberosity in active adolescents (traction apophysitis)
+tsetse fly / Tsetse | Fly that transmits African sleeping sickness (trypanosomiasis)
+MenAfriVac / MenA | Meningococcal group A conjugate vaccine used in the African meningitis belt
+polycystic kidney / Polycystic | Kidneys replaced by many cysts (autosomal recessive form in infants)
+Bochdalek hernia / Bochdalek | Posterolateral (usually left) congenital diaphragmatic hernia
+Kleihauer test / Kleihauer | Blood test counting fetal red cells in the mother's blood (feto-maternal bleed)
+meninges | The three membranes covering the brain and spinal cord
+elfin facies / Elfin | Elf-like face of Williams syndrome
+chelating | Drug binding a metal so it is excreted (iron chelation in thalassaemia)
+fasciculation | Visible twitching of muscle fibres, a sign of lower motor neuron disease
+cystoscopy | Looking inside the bladder with a telescope
+Kaposi sarcoma / Kaposi | Vascular tumour of skin and organs in advanced HIV
+scabies | Itchy rash from the mite Sarcoptes scabiei: burrows in finger webs, wrists; treat the family
+Babinski sign / Babinski | Upgoing big toe on stroking the sole: upper motor neuron sign (normal under 1–2 years)
+Enterococcus / enterococci | Gram-positive gut bacteria; cause UTI and endocarditis, resistant to cephalosporins
+Glanzmann thrombasthenia / Glanzmann / thrombasthenia | Inherited platelet defect (no GPIIb/IIIa): bleeding with normal platelet count
+Mycobacterium tuberculosis / Mycobacterium | Acid-fast bacillus causing tuberculosis
+hydroxocobalamin | Injectable vitamin B12
+lambdoid suture / Lambdoid | Suture between the occipital and parietal bones
+Li–Fraumeni syndrome / Fraumeni | Inherited p53 mutation: many cancers (sarcoma, leukaemia, brain, adrenal)
+Cooley anaemia / Cooley / Cooley's | Old name for β-thalassaemia major
+norovirus | Virus causing outbreaks of vomiting and diarrhoea
+cerebellum / cerebellar | Back part of the brain controlling balance and coordination
+skinfold thickness / Skinfold | Fat thickness measured with calipers (triceps)
+mefloquine | Antimalarial for prophylaxis; may cause neuropsychiatric effects
+mucopolysaccharidosis / mucopolysaccharidoses | Storage disease from lysosomal enzyme lack: coarse face, big liver, bone changes (Hurler, Hunter, Morquio)
+calcitonin | Thyroid C-cell hormone that lowers calcium
+Bence Jones protein / Bence | Free light chains in urine (myeloma; not a childhood test)
+monotherapy | Treatment with a single drug
+Valsalva manoeuvre / Valsalva | Forced expiration against a closed airway; raises vagal tone and can stop SVT
+domperidone | Dopamine-blocking anti-sickness drug; also raises prolactin
+bisacodyl / senna | Stimulant laxatives
+Chiari malformation / Chiari | Cerebellum pushed down through the foramen magnum; type II goes with myelomeningocele and hydrocephalus
+haematopoietic | Blood-forming (haematopoietic stem cell transplant)
+Neisseria meningitidis / Neisseria / meningitidis / meningococcus | Gram-negative diplococcus: meningitis and purpuric septicaemia
+Neisseria gonorrhoeae / gonorrhoeae / gonococcal | Gram-negative diplococcus: gonorrhoea and severe neonatal conjunctivitis (day 2–5)
+Trendelenburg sign / Trendelenburg | Pelvis drops on the opposite side when standing on one leg: weak hip abductors or hip dislocation
+nystagmus | Involuntary rhythmic eye movements
+macrolide / macrolides | Antibiotic group (erythromycin, azithromycin, clarithromycin); used for atypical pneumonia and pertussis
+Dubin–Johnson syndrome / Dubin | Benign inherited conjugated hyperbilirubinaemia with a black liver
+oncological | Relating to cancer
+ariboflavinosis / riboflavin | Vitamin B2 (riboflavin) deficiency: angular stomatitis, cheilosis, magenta tongue
+hand, foot and mouth disease / HFMD | Coxsackie virus infection: mouth ulcers and vesicles on hands and feet
+chignon | Temporary scalp swelling from a vacuum (ventouse) cup
+Katayama fever / Katayama | Acute schistosomiasis: fever, urticaria, eosinophilia weeks after exposure
+karyotype / karyotyping | Picture of a person's chromosomes, used to diagnose chromosomal disorders
+micturating cystourethrogram / Micturating / cystourethrogram / MCUG | X-ray with contrast in the bladder during voiding; shows reflux and posterior urethral valves
+stupor | Unresponsive except to vigorous painful stimuli
+otoacoustic emissions / Otoacoustic | Hearing screen in newborns: sound echoed back by a healthy cochlea
+antral | Of the antrum (e.g. pyloric antrum of the stomach)
+Budd–Chiari syndrome / Budd | Hepatic vein obstruction: painful liver, ascites
+haemoglobinopathy | Inherited haemoglobin disorder (sickle cell disease, thalassaemia)
+Klinefelter syndrome / Klinefelter | 47,XXY: tall male, small testes, infertility
+sporozoites | Malaria stage injected by the mosquito that goes to the liver
+merozoites | Malaria stage released from liver or red cells that invades new red cells
+trophozoites | Active feeding stage of a protozoan (malaria in red cells, Giardia, amoeba)
+lymphoblasts / lymphoblastic | Immature lymphocytes; their excess in marrow is acute lymphoblastic leukaemia
+hypogammaglobulinaemia / agammaglobulinaemia | Low (or absent) immunoglobulins → recurrent bacterial infections
+coronal suture / Coronal | Suture between the frontal and parietal bones
+protozoa | Single-celled parasites (malaria, amoeba, Giardia, Leishmania)
+PPSV | 23-valent pneumococcal polysaccharide vaccine, for children over 2 years at high risk (e.g. sickle cell)
+Hymenolepis nana / Hymenolepis | Dwarf tapeworm, spread person to person
+atonic seizure / Atonic | Sudden loss of muscle tone → drop attack
+ECMO | Extracorporeal membrane oxygenation: heart-lung bypass for severe respiratory failure
+choreoathetosis / choreoathetoid | Jerky (chorea) and writhing (athetosis) involuntary movements
+intraventricular haemorrhage / Intraventricular | Bleeding into the brain ventricles, mainly in very preterm babies (IVH)
+tuberculin skin test / Tuberculin | Mantoux test: intradermal PPD read at 48–72 h for TB infection
+Holt–Oram syndrome / Oram | Thumb or radius defects with ASD
+hypopigmentation / depigmentation | Lighter (or absent) skin colour
+antihistamine / antihistamines | Drugs blocking histamine (cetirizine, chlorphenamine) for itch and allergy
+chorea / Choreic | Brief, irregular, jerky purposeless movements (Sydenham chorea of rheumatic fever)
+Corynebacterium diphtheriae / Corynebacterium / diphtheriae | Bacterium of diphtheria; toxin causes myocarditis and neuritis
+5-HIAA / HIAA | Serotonin breakdown product in urine (carcinoid)
+encephalocele | Brain and meninges protruding through a skull defect (neural tube defect)
+Kasai | Operation joining a bowel loop to the liver hilum to drain bile in biliary atresia
+Ponseti | Club-foot treatment: weekly casts, Achilles tenotomy, then a foot-abduction brace
+Pavlik | Soft harness holding hips flexed and abducted to treat DDH in infants under 6 months
+Apt | Test of blood from a newborn's vomit or stool: fetal Hb resists alkali (stays pink), maternal Hb turns brown
+Coombs | Antiglobulin test: direct test finds antibodies on red cells (immune haemolysis)
+Pierre Robin sequence / Pierre Robin | Small jaw, backward tongue and cleft palate → airway obstruction in the newborn
+Hutchinson teeth / Hutchinson | Notched, peg-shaped upper incisors of late congenital syphilis
+Still disease / still's | Systemic juvenile idiopathic arthritis: daily spiking fever, salmon rash, arthritis
+Turner | 45,X: short girl, webbed neck, coarctation, ovarian failure
+Down syndrome | Trisomy 21: hypotonia, typical face, learning disability, AVSD, duodenal atresia
+Williams syndrome | 7q11 deletion: elfin face, supravalvular aortic stenosis, hypercalcaemia, friendly personality
+Marfan syndrome / Marfan / Marfan's | Fibrillin defect: tall, long limbs, lens dislocation, aortic dilatation
+rickets | Soft, deformed growing bones from poor mineralisation, usually from vitamin D deficiency
+cyanosis / cyanosed / cyanotic | Blue colour of skin or tongue from low oxygen in the blood (central) or slow circulation (peripheral)
+hypoglycaemia / hypoglycaemic | Low blood glucose (in newborns below 2.6 mmol/L)
+hyperglycaemia | High blood glucose
+thalassaemia / thalassaemic / thalassaemias | Inherited reduced production of α or β globin chains → microcytic haemolytic anaemia
+coeliac disease / coeliac | Small-bowel damage from gluten (wheat) in genetically prone children → malabsorption
+bilirubin | Yellow pigment made from the breakdown of haemoglobin; causes jaundice
+conjugated bilirubin / conjugated | Water-soluble bilirubin made in the liver; high levels mean liver or bile-duct disease
+unconjugated bilirubin / unconjugated | Fat-soluble bilirubin before the liver processes it; high levels can enter the brain (kernicterus)
+ceftriaxone | Third-generation cephalosporin given once daily IV/IM; avoided in jaundiced newborns
+cefotaxime | Third-generation cephalosporin used for neonatal sepsis and meningitis
+ceftazidime | Third-generation cephalosporin active against Pseudomonas
+cefixime / cefuroxime | Oral cephalosporins (cefixime for typhoid, cefuroxime for chest and ear infections)
+cephalosporin / cephalosporins | β-lactam antibiotic family (cefotaxime, ceftriaxone, cefixime)
+amoxicillin / amoxiclav / clavulanate | Oral penicillin; amoxiclav adds clavulanate to block β-lactamase
+ampicillin | Penicillin given IV/IM; covers Listeria and group B streptococcus in newborns
+benzylpenicillin / benzathine penicillin / benzathine | Injected penicillins; benzathine is long-acting (monthly in rheumatic fever)
+cloxacillin / flucloxacillin | Penicillins resistant to staphylococcal β-lactamase (skin, bone, staph infections)
+gentamicin | Aminoglycoside given once daily IV/IM for Gram-negative infections; can harm kidneys and hearing
+salbutamol | Short-acting β2-agonist bronchodilator; reliever in asthma
+ipratropium | Anticholinergic bronchodilator added to salbutamol in severe asthma
+budesonide / fluticasone / beclometasone | Inhaled corticosteroids, preventers in asthma
+formoterol / salmeterol | Long-acting β2-agonist bronchodilators, given with an inhaled steroid
+montelukast | Oral leukotriene-receptor antagonist used as an asthma preventer
+haemophilia A | Factor VIII deficiency
+aplastic anaemia / aplastic / aplasia | Bone marrow failure: low red cells, white cells and platelets with an empty marrow
+digoxin | Cardiac glycoside that slows the heart and strengthens contraction; used in heart failure
+hypocalcaemia / hypocalcaemic | Low blood calcium: jitteriness, tetany, seizures, long QT
+hypokalaemia / hypokalaemic | Low blood potassium: weakness, ileus, arrhythmia
+hyperkalaemia | High blood potassium: risk of cardiac arrest; peaked T waves
+hyponatraemia / hyponatraemic | Low blood sodium (below 135 mmol/L): seizures when severe
+hypernatraemia / hypernatraemic | High blood sodium (above 150 mmol/L); must be corrected slowly
+hypomagnesaemia | Low blood magnesium; keeps calcium low until corrected
+acidosis / acidotic | Too much acid in the blood (low pH)
+metabolic acidosis | Acidosis from acid gain or bicarbonate loss (diarrhoea, DKA, shock); deep fast breathing
+alkalosis | Too little acid in the blood (high pH), e.g. from vomiting in pyloric stenosis
+hypochloraemic | With low blood chloride (pyloric stenosis: hypochloraemic hypokalaemic alkalosis)
+carditis | Inflammation of the heart (pericardium, myocardium and endocardium), as in rheumatic fever
+endocarditis / infective endocarditis | Infection of the heart valves or lining: fever, new murmur, embolic signs
+pericarditis | Inflammation of the sac around the heart: chest pain, rub, effusion
+endocardium | Inner lining of the heart chambers and valves
+pericardial | Of the sac around the heart (pericardial effusion)
+distension / distended | Swelling of the abdomen from gas, fluid or a mass
+prematurity | Birth before 37 completed weeks
+azithromycin | Macrolide antibiotic given once daily (pertussis, trachoma, typhoid)
+erythromycin | Macrolide antibiotic (chlamydial conjunctivitis, pertussis); can cause pyloric stenosis in newborns
+clarithromycin | Macrolide antibiotic
+metronidazole | Antibiotic for anaerobes and protozoa (amoebiasis, giardiasis, tetanus)
+tinidazole | Single-dose relative of metronidazole for amoeba and giardia
+neuroblastoma | Childhood tumour of the adrenal or sympathetic chain; crosses the midline, raised urinary VMA
+retinoblastoma | Malignant eye tumour of young children; white pupil (leukocoria), squint
+hepatoblastoma | Commonest liver cancer of infancy; raised α-fetoprotein
+medulloblastoma | Malignant tumour of the cerebellum in children: ataxia, raised pressure
+astrocytoma | Glial brain tumour; the commonest childhood brain tumour (often cerebellar, low grade)
+glioma | Tumour of the brain's glial cells
+osteosarcoma | Malignant bone tumour of adolescents around the knee
+nephroblastoma | Wilms tumour of the kidney
+Streptococcus pneumoniae / pneumoniae / pneumococcus / pneumococcal | The commonest bacterial cause of pneumonia, otitis and meningitis; prevented by PCV
+prednisolone | Oral corticosteroid (asthma, nephrotic syndrome, ITP)
+dexamethasone / betamethasone | Strong corticosteroids (croup, antenatal lung maturation, meningitis)
+methylprednisolone / hydrocortisone | Corticosteroids given IV (hydrocortisone also replaces cortisol)
+corticosteroid / corticosteroids / steroids | Anti-inflammatory hormones like cortisol (prednisolone, dexamethasone)
+mycoplasma / Mycoplasma pneumoniae | Bacterium without a cell wall causing atypical pneumonia in school-age children; treated with macrolides
+ferritin | Iron-storage protein; low ferritin is the best test for iron deficiency (raised in infection)
+rifampicin | Anti-TB drug; colours urine orange; also for meningococcal contacts
+isoniazid | Anti-TB drug; give pyridoxine to prevent neuropathy
+pyrazinamide / ethambutol | Anti-TB drugs used in the first 2 months
+brucellosis / Brucella / melitensis / abortus | Infection from raw milk of goats, sheep or cattle: undulant fever, joint pain, big liver and spleen
+streptococcal / streptococcus / streptococci / strep | Gram-positive cocci in chains; group A causes tonsillitis, impetigo, rheumatic fever and glomerulonephritis
+group B streptococcus | Streptococcus from the mother's birth canal; the commonest cause of early neonatal sepsis and meningitis
+viridans streptococci / viridans | Mouth streptococci; the commonest cause of endocarditis after dental procedures
+prostaglandin | Hormone-like lipid; prostaglandin E1 infusion keeps the ductus arteriosus open
+tonsillitis / tonsillar / tonsils | Infection of the tonsils (viral, or group A streptococcus)
+pharyngitis | Sore throat from infection of the pharynx
+hepatosplenomegaly | Enlarged liver and spleen
+organomegaly | Enlarged organs (liver, spleen, kidneys)
+pyridoxine | Vitamin B6; prevents isoniazid neuropathy; treats pyridoxine-dependent seizures
+echocardiography / echo | Ultrasound of the heart
+meningococcal | Caused by Neisseria meningitidis (meningitis, purpuric septicaemia)
+microcephaly | Small head (OFC below −3 SD)
+macrocephaly | Large head (OFC above +2 SD)
+pentavalent / Penta | Five-in-one vaccine: diphtheria, tetanus, pertussis, hepatitis B and Hib
+furosemide | Loop diuretic that removes extra fluid (heart failure, oedema)
+spironolactone | Potassium-sparing diuretic
+contraindication / contraindications / contraindicated | A reason not to give a drug or vaccine
+microcytic / microcytosis / microcytes | Small red cells (low MCV): iron deficiency, thalassaemia
+macrocytic / macrocytosis / macrocytes | Large red cells (high MCV): B12 or folate deficiency
+normocytic | Normal-sized red cells (anaemia of chronic disease, acute blood loss, haemolysis)
+hypochromic | Pale red cells with little haemoglobin (iron deficiency, thalassaemia)
+gluconate / calcium gluconate | Calcium salt given IV (10%) for hypocalcaemia and hyperkalaemia
+haematuria | Blood in the urine
+haemoglobinuria | Free haemoglobin in urine (dark urine) from intravascular haemolysis
+proteinuria | Protein in the urine
+parvovirus / parvovirus B19 | Virus causing fifth disease (slapped cheek) and aplastic crisis in haemolytic anaemias
+cotrimoxazole / trimethoprim / co-trimoxazole | Sulphonamide-trimethoprim antibiotic; prophylaxis for Pneumocystis in HIV
+falciparum / Plasmodium falciparum | The malaria parasite that causes severe and cerebral malaria
+vivax / Plasmodium vivax / ovale | Malaria parasites that relapse from liver stages; need primaquine
+hydrocephalus | Excess CSF with enlarged ventricles → large head, bulging fontanelle, sunset eyes
+oesophageal | Of the oesophagus (gullet)
+oesophageal atresia | Blind-ending upper oesophagus, often with a tracheo-oesophageal fistula
+adenovirus | Virus causing fever, sore throat, conjunctivitis, pneumonia and diarrhoea
+albendazole / mebendazole | Anti-worm drugs (roundworm, hookworm, pinworm); single dose of albendazole
+praziquantel | Drug of choice for schistosomiasis and tapeworms
+conjunctivitis | Inflammation of the conjunctiva: red eye with discharge
+conjunctiva / conjunctival | Thin membrane covering the white of the eye and inner lids
+gastroenteritis | Infection of the gut causing diarrhoea with or without vomiting
+giardia / giardiasis / lamblia | Protozoan infection of the small bowel: chronic diarrhoea, bloating, malabsorption
+mononucleosis / infectious mononucleosis | EBV infection: fever, exudative tonsillitis, neck nodes, splenomegaly, atypical lymphocytes
+nebulised / nebuliser | Drug given as a fine mist breathed through a mask
+propranolol | β-blocker (tet spells, haemangioma, hyperthyroid symptoms)
+ciprofloxacin / quinolone / quinolones | Fluoroquinolone antibiotics (dysentery, typhoid)
+diaphragmatic hernia | Abdominal organs in the chest through a defect in the diaphragm
+hydrolysed formula / hydrolysed | Formula with proteins broken into small pieces, for cow's milk protein allergy
+hypotonia / hypotonic | Low muscle tone: floppy baby
+hyperinsulinism | Too much insulin → persistent hypoglycaemia (infant of a diabetic mother, rare genetic forms)
+undernutrition | Poor nutrition from too little intake or absorption (wasting, stunting, underweight)
+varicella / chickenpox / zoster | Varicella-zoster virus: chickenpox; later reactivation causes shingles
+dystocia / shoulder dystocia | Difficult labour; shoulder dystocia = shoulder stuck after the head is delivered
+lysis / tumour lysis | Breakdown of cells; tumour lysis releases potassium, phosphate and uric acid
+oximetry / pulse oximetry / oximeter | Measuring oxygen saturation with a probe on a finger or foot
+pansystolic | Murmur lasting through the whole of systole (VSD, mitral regurgitation)
+sensorineural deafness / sensorineural | Hearing loss from the inner ear or nerve (congenital infection, meningitis, kernicterus)
+sputum | Mucus coughed up from the lungs
+toxoplasmosis / toxoplasma | Parasite from cats and undercooked meat; congenital form: hydrocephalus, chorioretinitis, calcification
+tricuspid | The valve between the right atrium and right ventricle
+mitral | The valve between the left atrium and left ventricle
+axillary / axilla | Of the armpit
+indomethacin / indometacin | NSAID used to close a PDA in preterm babies
+parainfluenza | Virus causing croup
+phenobarbital / phenobarbitone | Barbiturate anticonvulsant; first-line for neonatal seizures
+phenytoin | Anticonvulsant given IV for status epilepticus
+secundum / atrial septal defect secundum | The commonest type of ASD, in the middle of the atrial septum
+primum | ASD low in the septum (part of AVSD), with a cleft mitral valve
+unvaccinated | Not vaccinated
+aciclovir / acyclovir | Antiviral for herpes simplex and varicella
+valganciclovir / ganciclovir | Antiviral drugs for CMV
+analgesia | Pain relief
+gallstones | Stones in the gallbladder; pigment stones in children with chronic haemolysis
+anticonvulsant / anticonvulsants | Drugs that stop or prevent seizures
+bronchoscopy | Looking into the airways with a tube (to remove a foreign body)
+doughy skin / doughy | Thick, soft skin feel of hypernatraemic dehydration
+doxycycline | Tetracycline antibiotic (brucellosis, over 8 years)
+tetracycline | Antibiotic that stains growing teeth; avoided under 8 years
+duodenal / duodenum | Of the first part of the small bowel; duodenal atresia gives a double-bubble X-ray
+galactosaemia / galactose | Inherited inability to use galactose (milk sugar): jaundice, vomiting, cataract, E. coli sepsis
+intubate / intubation / intubated | Pass a tube into the trachea to secure the airway
+endotracheal | Inside the trachea (endotracheal tube)
+nevirapine | Antiretroviral given to HIV-exposed infants as prophylaxis
+zidovudine / lamivudine / abacavir / tenofovir / dolutegravir / raltegravir | Antiretroviral drugs used in HIV treatment and prevention
+paromomycin | Antibiotic used with sodium stibogluconate for kala-azar
+sodium stibogluconate / stibogluconate | Pentavalent antimony injection for kala-azar
+miltefosine | Oral drug for leishmaniasis
+splenic | Of the spleen
+tachypnoea / tachypnoeic | Fast breathing (≥ 60/min under 2 months, ≥ 50 at 2–12 months, ≥ 40 at 1–5 years)
+breathlessness | Difficulty breathing
+bronchus / bronchi | The main airways branching from the trachea
+bronchioles | Small airways inside the lungs; inflamed in bronchiolitis
+inspiratory / expiratory | During breathing in / breathing out
+mansoni / Schistosoma mansoni | Intestinal schistosome → liver fibrosis, portal hypertension, splenomegaly
+haematobium / Schistosoma haematobium | Urinary schistosome → terminal haematuria
+neuritis | Inflammation of a nerve
+neuropathy | Disease of peripheral nerves: numbness, weakness, lost reflexes
+sinusitis | Infection of the air sinuses
+artemether–lumefantrine / lumefantrine | Oral ACT for uncomplicated falciparum malaria
+piperaquine | Partner drug in dihydroartemisinin–piperaquine (an ACT)
+primaquine | Antimalarial that kills liver stages of vivax; causes haemolysis in G6PD deficiency
+quinine | Old antimalarial for severe malaria when artesunate is unavailable
+sulfadoxine–pyrimethamine / sulfadoxine | Antimalarial combination used for prevention in pregnancy and infants
+pyrimethamine / sulfadiazine | Drugs for toxoplasmosis, given with folinic acid
+folinic acid / folinic | Active folate given to prevent bone-marrow toxicity of pyrimethamine or methotrexate
+arthralgia / polyarthralgia | Joint pain without swelling
+arthritis / monoarthritis | Inflamed, swollen joint(s)
+bronchopneumonia | Patchy pneumonia around the bronchi in both lungs
+lobar pneumonia / lobar | Pneumonia filling one lobe (typically pneumococcal)
+coxsackie | Enterovirus: hand, foot and mouth disease, myocarditis
+diuretic / diuretics | Drugs that increase urine output (furosemide, spironolactone)
+glomerulonephritis / nephritis | Inflammation of the kidney glomeruli: haematuria, oedema, hypertension
+hypoparathyroidism | Low parathyroid hormone → hypocalcaemia
+hyperparathyroidism | High parathyroid hormone; secondary form in rickets and kidney disease
+infectivity | How easily an infection spreads
+jaundiced / icteric | Yellow from jaundice
+anicteric | Without jaundice
+nasogastric | Through the nose into the stomach (nasogastric tube)
+polyuria | Passing large amounts of urine
+prothrombin time / prothrombin | Clotting test of factors II, V, VII, X; long in vitamin K deficiency and liver disease
+roseola | Roseola infantum (HHV-6): 3 days of high fever, then a rash as the fever falls
+sickling | Red cells taking a sickle shape when deoxygenated (sickle cell disease)
+thiamine | Vitamin B1; deficiency causes beriberi
+ascaris / roundworm | Large roundworm: worms in stool, intestinal or biliary obstruction
+crackles / crepitations | Fine bubbling sounds on inspiration (pneumonia, fluid)
+extensor | Muscle or surface that straightens a joint (extensor surfaces: elbows, knees)
+exudative / exudate | With fluid rich in protein and cells (exudative tonsillitis, pleural exudate)
+hilar | Of the hilum (root) of the lung (hilar nodes in TB)
+lymphadenopathy | Enlarged lymph nodes
+lymphadenitis | Inflamed, infected lymph node
+parotid | Salivary gland in front of the ear; swollen in mumps
+rehydration / rehydrate | Replacing lost body water and salts (ORS or IV)
+sacrum / sacral | Bone at the base of the spine
+syncytial / respiratory syncytial virus | RSV: the main cause of bronchiolitis
+uraemic | With raised urea from kidney failure (haemolytic uraemic syndrome)
+ventilate / ventilation / ventilated / ventilator | Breathing for a patient with a bag or machine
+wicking | Soaking out of ear discharge with clean cloth or tissue wicks (IMCI, chronic otitis)
+Pseudomonas aeruginosa / aeruginosa / Pseudomonas | Gram-negative hospital bacterium, resistant to many drugs; cystic fibrosis lungs
+agenesis | Failure of an organ to develop (renal agenesis, sacral agenesis)
+blanching / blanches / blanch | Fading on pressure (a non-blanching rash means bleeding into the skin)
+captopril | ACE inhibitor (heart failure, hypertension)
+chorioretinitis | Inflammation of the choroid and retina (toxoplasmosis, CMV)
+dextrose | Glucose solution (e.g. 10% dextrose IV)
+dysmorphic / dysmorphism | Unusual physical features suggesting a syndrome
+faeco-oral / faeco | Spread by swallowing traces of faeces (hands, water, food)
+hypoplastic / hypoplasia | Underdeveloped, too small (hypoplastic left heart, pulmonary hypoplasia)
+ileal / ileum / ileo / ileocaecal / ileocolic | Of the last part of the small bowel (ileum), where it joins the caecum
+jejunum / jejunal | Middle part of the small bowel
+lactoferrin | Iron-binding protein in breast milk that protects against infection
+leishmaniasis / kala-azar / visceral leishmaniasis / kala / azar | Sandfly-borne Leishmania infection: fever, wasting, huge spleen, pancytopenia (eastern Sudan)
+lymphocytosis | Raised lymphocyte count (pertussis, viral infection)
+mucoid | Containing mucus
+purulent | Containing pus
+sachet / sachets | Small packet (ORS, RUTF, zinc)
+septal | Of a septum (dividing wall), e.g. ventricular septal defect
+soiling | Leakage of stool into underwear from overflow around impacted faeces
+tracheitis | Bacterial infection of the trachea (thick pus, toxic child)
+transfuse / transfused / transfusion | Give blood or a blood product
+waiter's tip | Erb palsy arm posture: adducted, internally rotated, forearm pronated
+toddler's diarrhoea / toddler's | Loose stools with undigested food in a well, growing toddler
+antitrypsin / α1-antitrypsin | Liver protein; its deficiency causes neonatal cholestasis and later lung disease
+bronchodilator | Drug that opens the airways (salbutamol)
+colostrum | First thick, yellow breast milk of the first days, rich in antibodies
+costochondral | Where the ribs join their cartilage (rachitic rosary)
+eclampsia | Seizures in pregnancy with pre-eclampsia
+emboli / embolism | Clots or material carried in the blood that block a vessel
+fibrinogen | Clotting protein turned into fibrin; low in DIC
+fibrin | Protein mesh that forms a clot
+globin | Protein chains of haemoglobin (α, β, γ)
+hindmilk / foremilk | Breast milk at the end of a feed (fat-rich) / at the start (watery)
+hypertonic / isotonic | More concentrated than / same concentration as body fluids
+iliac | Of the ilium (hip bone) or the iliac fossa
+intradermal / intradermally | Into the skin (BCG)
+intrathecal / intrathecally | Into the CSF around the spinal cord
+intramuscularly | Into a muscle (IM)
+iodised salt / iodised | Salt with added iodine to prevent goitre and cretinism
+micronutrients / micronutrient | Vitamins and minerals needed in small amounts
+oestrogen | Female sex hormone
+papule / papules | Small raised spot under 1 cm
+pustules / pustule / pustular | Small raised spots filled with pus
+macule / macules | Flat coloured spot
+maculopapular | Rash of flat and raised spots (measles)
+vesicle / vesicles | Small fluid-filled blister
+penicillamine / trientine | Copper-chelating drugs for Wilson disease
+sandfly | Small fly that transmits leishmaniasis
+scaphoid abdomen / scaphoid | Sunken, boat-shaped abdomen (diaphragmatic hernia)
+serology / serological | Blood tests for antibodies
+spasmodic | Coming in spasms
+subglottic / subglottis | Below the vocal cords (narrowest part of a child's airway; swollen in croup)
+supine | Lying on the back
+tracheal / trachea | Of the windpipe
+truncus arteriosus / truncus | Single great artery leaving both ventricles: cyanosis and heart failure
+valproate | Broad-spectrum anticonvulsant (avoid in girls of childbearing age and in liver disease)
+carbamazepine | Anticonvulsant for focal seizures
+levetiracetam | Broad-spectrum anticonvulsant, also IV for seizures
+midazolam / diazepam | Benzodiazepines for stopping seizures (buccal, IV, rectal)
+vancomycin | Antibiotic for MRSA and resistant Gram-positive infections
+meropenem | Broad-spectrum carbapenem antibiotic for resistant hospital infections
+piperacillin–tazobactam / piperacillin / tazobactam | Broad-spectrum antipseudomonal penicillin
+colistin | Last-line antibiotic for multidrug-resistant Gram-negative bacteria
+chloramphenicol | Old antibiotic (typhoid, meningitis); grey baby syndrome in newborns, marrow suppression
+clindamycin | Antibiotic for staph and anaerobic infections
+nitrofurantoin | Antibiotic used for cystitis and UTI prophylaxis
+vasculitis | Inflammation of blood vessels (Henoch–Schönlein purpura, Kawasaki disease)
+Xpert MTB | Rapid TB PCR test (GeneXpert)
+alveoli | Tiny air sacs of the lungs where gas exchange happens
+amoebiasis / amoeba | Entamoeba histolytica infection: bloody dysentery, liver abscess
+anthracycline / anthracyclines / doxorubicin / daunorubicin | Anticancer drugs that can damage the heart
+aseptic | Without bacteria (aseptic meningitis = viral)
+bicuspid aortic valve / bicuspid | Aortic valve with two cusps instead of three
+buccal | Inside the cheek
+cardioversion / cardiovert | Electric shock or drug that restores normal rhythm
+catarrhal | With runny nose and mucus (catarrhal stage of pertussis)
+ciliary | Of the cilia (or the ciliary body of the eye)
+clunk | Felt movement of the femoral head back into the socket (positive Ortolani)
+deworming | Giving anti-worm drugs
+erythropoietin | Kidney hormone that drives red cell production
+fava beans / fava | Broad beans; trigger haemolysis in G6PD deficiency (favism)
+foamy | Frothy
+hydroxylase / hydroxylation / hydroxylated | Enzyme step adding OH (vitamin D activated in liver then kidney; 21-hydroxylase in CAH)
+hyperinflated / hyperlucent / hyperlucency | Over-expanded, too-black lung on X-ray (air trapping)
+hyperthyroidism | Overactive thyroid
+hypothyroidism | Underactive thyroid: in infants prolonged jaundice, constipation, big tongue, delayed development
+hypoxic / hypoxaemia | Low oxygen in tissues / in the blood
+infarcts | Tissue death from blocked blood supply
+lactulose | Osmotic laxative
+infantum | Of infants (roseola infantum, Leishmania infantum)
+liposomal | Packed in tiny fat bubbles (liposomal amphotericin, less toxic)
+myoclonus / myoclonic | Sudden brief muscle jerks
+nosebleeds / epistaxis | Bleeding from the nose
+palatal / palate | Of the roof of the mouth
+paroxysmal | Coming in sudden attacks (paroxysmal cough of pertussis)
+pathognomonic | A sign found only in one disease, so it alone confirms the diagnosis
+prolactin | Pituitary hormone that makes milk
+oxytocin | Pituitary hormone that ejects milk (let-down) and contracts the uterus
+reversibility | Improvement with a bronchodilator (asthma)
+subacute | Between acute and chronic in time course
+subconjunctival haemorrhage / subconjunctival | Bleeding under the conjunctiva (pertussis, birth)
+sulphonamides | Antibiotic group; displace bilirubin and are avoided in newborns
+supracardiac | Above the heart (supracardiac TAPVR)
+titre | Amount of antibody in blood (rising titre = recent infection)
+trisomy | Three copies of a chromosome instead of two (21 Down, 18 Edwards, 13 Patau)
+turbid | Cloudy (turbid CSF in bacterial meningitis)
+acrocyanosis | Blue hands and feet with a pink tongue: normal in the first day
+adducted / adduct | Moved towards the midline
+afebrile | Without fever
+agglutination | Clumping of cells or particles by antibodies
+allopurinol | Drug lowering uric acid (tumour lysis prevention)
+antipyretic / antipyretics | Fever-lowering drugs (paracetamol, ibuprofen)
+areola | Dark skin around the nipple; more should be in the baby's mouth above than below
+asplenia | No working spleen → risk of capsulated bacteria (pneumococcus)
+avascular necrosis / avascular | Bone death from lost blood supply (femoral head in sickle cell)
+bacteraemia / septicaemia | Bacteria in the blood / with systemic illness
+carbimazole | Antithyroid drug
+convulsion / convulsions | Seizure with jerking movements
+depressor / tongue depressor | Flat stick to press the tongue and see the throat
+dipstick | Paper strip that tests urine (blood, protein, glucose, nitrite, leucocytes)
+ductal | Fetal vessel joining pulmonary artery to aorta; closes after birth
+dullness / stony dullness | Flat percussion note (consolidation; stony dull = effusion)
+eosinophils / eosin | White cells raised in allergy and worm infections
+epidermidis / Staphylococcus epidermidis | Coagulase-negative staph: line infections in preterms
+coagulase | Staph enzyme; coagulase-negative staph are skin commensals that infect lines
+extrapulmonary | Outside the lungs (extrapulmonary TB)
+flexure | Bend (flexures: elbow and knee creases; splenic flexure)
+globulin / immunoglobulin / immunoglobulins | Antibody proteins (IgG, IgA, IgM); also given as IVIG
+haemorrhagic | Bleeding
+hemiparesis | Weakness of one side of the body
+hydronephrosis | Swollen kidney collecting system from blocked urine flow
+hyperalert | Over-alert, jittery (mild HIE)
+hyperbilirubinaemia | High bilirubin in the blood
+hyperhaemolytic | With sudden increased red cell destruction (hyperhaemolytic crisis)
+hypopituitarism | Low pituitary hormones (GH, TSH, ACTH): hypoglycaemia, micropenis, short stature
+immunocompromised / immunodeficient / immunodeficiency | With weak immunity (HIV, chemotherapy, inborn defects)
+inborn errors of metabolism / inborn | Inherited enzyme defects (PKU, galactosaemia)
+inotropes | Drugs that strengthen heart contraction (dopamine, adrenaline, dobutamine, milrinone)
+intercostal / subcostal / suprasternal | Between the ribs / below the ribs / above the sternum (sites of chest indrawing)
+isoimmune / isoimmunisation / alloimmune | Antibodies from the mother against the baby's cells (Rh disease)
+laryngospasm | Spasm of the vocal cords closing the airway (hypocalcaemia)
+loperamide | Antidiarrhoeal drug; not used in children with acute diarrhoea
+lymphoid | Of lymph tissue
+lysozyme | Antibacterial enzyme in breast milk and tears
+macrosomic | Birth weight above 4 kg (infant of a diabetic mother)
+malformation | Abnormal formation of a body part during development
+menorrhagia | Heavy menstrual bleeding (von Willebrand disease)
+nephrotic syndrome / nephrotic | Heavy proteinuria, low albumin and oedema
+nasopharyngeal / nasopharynx | Of the space behind the nose
+neutrophil / neutrophils | The main white cells fighting bacteria
+occulta / spina bifida occulta | Hidden bony defect of the spine, often with a hair tuft or dimple
+spina bifida / bifida | Neural tube defect of the spine (meningocele, myelomeningocele)
+parasternal heave / parasternal | Lift felt beside the sternum: right ventricular hypertrophy
+parathyroid | Small neck glands making PTH, which raises calcium
+pertechnetate | Technetium tracer for the Meckel scan
+phenylketonuria / phenylalanine | PKU: inherited inability to break down phenylalanine → learning disability unless diet is restricted
+phrenic nerve / phrenic | Nerve (C3–C5) supplying the diaphragm
+pneumonitis | Inflammation of lung tissue (chemical or viral)
+polysaccharide vaccine / polysaccharide | Vaccine from bacterial capsule sugar; poor response under 2 years unless conjugated
+prodrome | Early symptoms before the main illness (measles prodrome: fever, cough, coryza, conjunctivitis)
+promyelocytic | Acute promyelocytic leukaemia (M3): DIC, treated with retinoic acid
+pronated / pronation | Palm turned down
+pubertal / prepubertal | Of puberty / before puberty
+rhinovirus | Common cold virus; triggers asthma attacks
+sideroblastic anaemia / sideroblastic | Anaemia with ring sideroblasts in marrow (iron not used for haem)
+subperiosteal | Under the periosteum (bleeding in scurvy, abscess in osteomyelitis)
+suppurative | Forming pus
+supravalvular | Above a valve (supravalvular aortic stenosis in Williams syndrome)
+testis / testes / testicular | Male gonad(s)
+undescended testis / undescended / cryptorchidism | Testis not in the scrotum; operate by 12–18 months
+tobramycin | Aminoglycoside (often inhaled in cystic fibrosis)
+tonsillectomy / adenoidectomy / adenotonsillectomy | Removal of tonsils / adenoids / both
+adenoids | Lymphoid tissue in the nasopharynx; large adenoids cause snoring and mouth breathing
+truncal | Of the trunk (truncal obesity)
+unboiled | Not boiled (unboiled milk: brucellosis)
+undigested | Not digested
+unrepaired | Not corrected by surgery
+uvula | Small tissue hanging at the back of the soft palate
+valvuloplasty / valvotomy | Opening a narrowed valve with a balloon / surgically
+vasodilator | Drug widening blood vessels
+wheezy | Musical expiratory noise from narrowed small airways
+abruption / placental abruption | Placenta separating before birth → bleeding, fetal hypoxia
+acyanotic | Without cyanosis (acyanotic heart disease: VSD, ASD, PDA)
+anticancer | Against cancer
+antimalarial / malarial | Of malaria / drug against malaria
+autoantibodies | Antibodies against the body's own tissue
+auricular | Of the ear (pre-auricular tags)
+biventricular | Of both ventricles
+boggy | Soft and fluctuant (subgaleal haemorrhage)
+bolus / boluses | A dose of fluid or drug given quickly
+bulbar | Of the brainstem nerves for speech and swallowing (bulbar palsy)
+clonic | Rhythmic jerking (clonic seizure)
+tonic | Stiffening (tonic seizure)
+confirmatory | Confirming the diagnosis
+cyclophosphamide / mercaptopurine / methotrexate / cytarabine | Anticancer (chemotherapy) drugs used in childhood leukaemia and lymphoma
+decompensation / decompensated | Failure of the body's compensation (e.g. falling blood pressure in late shock)
+deoxygenated | Low in oxygen (venous blood)
+diazoxide | Drug that blocks insulin release; used in hyperinsulinism
+dilatation | Widening
+diplegia | Weakness of both legs more than arms (preterm cerebral palsy)
+quadriplegia / quadriplegic | Weakness of all four limbs
+paraplegia | Weakness of both legs (spinal cord lesion)
+dispersible | Tablet that dissolves in water (dispersible amoxicillin, zinc)
+enterohepatic circulation / enterohepatic | Bilirubin or bile acids absorbed from the gut back to the liver
+enuresis | Bedwetting beyond the age of continence (5 years)
+ethmoid | Air sinus between the eyes (ethmoiditis → orbital cellulitis)
+exacerbations | Flare-ups of a chronic illness
+fetoprotein / α-fetoprotein | Fetal protein raised in hepatoblastoma, germ-cell tumours and neural tube defects
+flitting / migratory | Moving from joint to joint (rheumatic fever)
+fortifier / human milk fortifier | Powder added to breast milk for preterm babies (protein, energy, minerals)
+glucuronyl transferase / glucuronyl | Liver enzyme that conjugates bilirubin; immature in newborns
+haemangioma | Benign vascular tumour of infancy (strawberry mark) that grows then fades
+haloperidol | Antipsychotic; used for chorea
+hepatocellular | Of liver cells (hepatocellular carcinoma)
+hyperdynamic | Over-active (hyperdynamic precordium in PDA or anaemia)
+hypospadias | Urethral opening on the underside of the penis; no circumcision before repair
+imperforate anus / imperforate | No anal opening
+immunophenotyping / cytometry / flow cytometry | Lab test naming the cell type of leukaemia by surface markers
+infectiosum / erythema infectiosum | Fifth disease (parvovirus B19): slapped-cheek rash
+intravascular | Inside blood vessels (intravascular haemolysis)
+situs inversus / situs / inversus / dextrocardia | Organs mirror-reversed / heart on the right
+methaemoglobinaemia | Haemoglobin that cannot carry oxygen: chocolate-coloured blood, cyanosis not helped by oxygen
+midclavicular line / midclavicular | Vertical line from the middle of the clavicle
+multiforme / erythema multiforme | Target-lesion rash after infection or drugs
+naphthalene / mothballs | Moth-ball chemical that triggers haemolysis in G6PD deficiency
+nephropathy | Kidney disease
+nmol | Nanomole per litre unit (e.g. vitamin D in nmol/L)
+nystatin | Antifungal drops for oral thrush
+oligohydramnios / polyhydramnios | Too little / too much amniotic fluid
+osmolality | Concentration of dissolved particles in a fluid
+ossified / ossification | Turned into bone
+osteodystrophy / renal osteodystrophy | Bone disease of chronic kidney disease
+overfeeding / underfeeding | Feeding too much / too little
+paramyxovirus | Virus family of measles, mumps and RSV
+penicillins | Antibiotic family (penicillin, amoxicillin, cloxacillin)
+perihilar | Around the lung roots
+periorbital | Around the eye (periorbital oedema in nephrotic syndrome; periorbital cellulitis)
+photophobia | Dislike of light (meningitis)
+pneumocytes | Cells lining the alveoli; type II make surfactant
+poractant | Natural surfactant from pig lung for RDS
+precordium / precordial | Front of the chest over the heart
+ptosis | Drooping upper eyelid
+purposeless | Without purpose (purposeless movements of chorea)
+rectosigmoid | Junction of rectum and sigmoid colon
+recurs | Comes back
+retropharyngeal abscess / retropharyngeal / prevertebral | Abscess behind the pharynx: fever, stiff neck, drooling; wide prevertebral space on X-ray
+rewarming | Slowly bringing the temperature back to normal
+snuffles | Blood-stained nasal discharge of early congenital syphilis
+spasticity / spastic | Stiff muscles with increased tone and reflexes (upper motor neuron)
+spitter / happy spitter | Thriving baby with harmless reflux
+stercobilinogen / urobilinogen | Bilirubin products in stool and urine; absent stool colour in obstructive jaundice
+stillbirth / stillborn | Baby born dead after 28 weeks
+strongyloides | Threadworm that can autoinfect; hyperinfection in immunosuppression
+subclavian | Under the clavicle (subclavian artery, vein)
+subclinical | Without symptoms
+syncope | Fainting
+tenotomy | Cutting a tendon (Achilles tenotomy in club foot)
+theophylline / aminophylline | Bronchodilators (aminophylline IV in severe asthma); narrow safety margin
+tibial / tibia | Of the shin bone
+transferase | Enzyme moving a chemical group (glucuronyl transferase)
+triphalangeal thumb / triphalangeal | Thumb with three bones (Diamond–Blackfan, Holt–Oram)
+unabsorbed | Not absorbed
+uncorrected | Not corrected
+washouts / rectal washout | Rinsing the rectum with saline (Hirschsprung before surgery)
+acetabulum | Hip socket
+acetylcholinesterase | Enzyme; raised in amniotic fluid with open neural tube defects
+aciduria / organic aciduria / methylmalonic | Inborn errors with acid in urine: vomiting, acidosis, coma
+anaesthetist | Doctor giving anaesthesia
+ankyrin / spectrin | Red cell skeleton proteins; defective in hereditary spherocytosis
+antacids | Drugs neutralising stomach acid
+anterolateral thigh / anterolateral | Front-outer part of the thigh: injection site in infants
+antiemetics | Anti-vomiting drugs (ondansetron)
+apnoeic | Not breathing (pause ≥ 20 s, or shorter with bradycardia or cyanosis)
+azathioprine | Immunosuppressant (IBD, autoimmune disease)
+bacteriostatic / bactericidal | Stops bacteria growing / kills bacteria
+bifidus factor / bifidus | Breast milk factor that helps lactobacilli grow in the baby's gut
+biologics | Antibody-based drugs (e.g. omalizumab, infliximab)
+brachial plexus / brachial | Nerve network (C5–T1) of the arm
+cardiothoracic | Of heart and chest surgery
+cardiotoxicity | Heart damage from a drug
+catecholamine / catecholamines | Adrenaline-like hormones (VMA in urine: neuroblastoma)
+catheterisation / cardiac catheterisation | Passing a tube into the bladder / heart
+chlorhexidine | Antiseptic (cord care, skin)
+cobweb | Fine web-like clot in standing CSF (TB meningitis)
+compressible | Can be pressed in
+consanguinity / consanguineous | Marriage between relatives (raises autosomal recessive disease)
+cystitis / dysuria | Bladder infection / pain on passing urine
+deferiprone | Iron-chelating drugs for transfusion iron overload
+dehydrate / dehydrating / dehydration | Losing body water and salts
+denaturation / alkali denaturation | Destruction of a protein's shape by alkali (Apt test)
+desaturates / desaturation | Fall in oxygen saturation
+diaphysis | Shaft / flared growing end / end of a long bone
+diphtheritic | Of diphtheria (grey diphtheritic membrane)
+dislocates / dislocatable / dislocation | Comes (or can be pushed) out of the joint
+duodenojejunal flexure | Junction of duodenum and jejunum; its position on contrast study shows malrotation
+dysenteriae | Bloody diarrhoea with fever (Shigella)
+dystonia / dyskinetic | Twisting sustained postures / involuntary movements (dyskinetic cerebral palsy)
+ejects / ejection systolic murmur | Murmur rising and falling in mid-systole (pulmonary or aortic flow)
+elastase / faecal elastase | Pancreatic enzyme; low in stool in pancreatic insufficiency (cystic fibrosis)
+elexacaftor / tezacaftor | CFTR modulator drugs for cystic fibrosis
+entecavir / sofosbuvir | Antivirals for hepatitis B / hepatitis C
+enterohaemorrhagic / enterotoxigenic / E. coli | Types of E. coli: bloody diarrhoea and HUS / travellers' watery diarrhoea
+enteroviruses / enterovirus | Gut viruses (polio, coxsackie, echovirus): viral meningitis, HFMD
+enteropathy | Disease of the small bowel lining
+epiglottis | Flap over the larynx / its bacterial infection (drooling, toxic, tripod position)
+equinus / varus | Foot pointing down / turned in (club foot)
+exotoxin | Toxin released by bacteria (diphtheria, tetanus)
+faucial | Of the fauces (back of the mouth; tonsillar area)
+fibrinolytics | Clot-dissolving drugs
+fraying / frayed | Ragged metaphyseal edge on X-ray (rickets)
+fulminans / purpura fulminans | Rapidly spreading skin bleeding and gangrene in meningococcal sepsis
+germline | Inherited in all cells (germline mutation)
+glucagon | Hormone that raises blood glucose
+glutamic acid decarboxylase / glutamic | Islet antibody (anti-GAD) in type 1 diabetes
+greenstick fracture / greenstick | Incomplete fracture of a soft child's bone, bent on one side
+haemoconcentration | Concentrated blood (high haematocrit) from plasma loss (dengue, dehydration)
+hemidiaphragm | One half of the diaphragm
+hoarseness / hoarse | Rough voice (laryngeal disease, hypothyroidism)
+hyaline membrane disease / hyaline | RDS of preterm babies (glassy membranes line the alveoli)
+hypercapnia | High CO2 in the blood
+hyperhydration | Giving more fluid than maintenance (e.g. 3 L/m2 in tumour lysis)
+hypodiploidy / hyperdiploidy | Fewer / more chromosomes in leukaemia cells (poor / good outlook in ALL)
+immunised / immunises / immunisation | Made immune (by vaccine)
+immunoreactive trypsinogen / trypsinogen | Newborn screening test for cystic fibrosis
+incisor / incisors / canines / molars | Front cutting teeth / pointed teeth / back grinding teeth
+indolent | Slow-growing
+insipidus / diabetes insipidus | Lack of ADH (or response): large dilute urine output, thirst
+intrapartum | During labour
+intrauterine | Inside the womb
+ionised calcium / ionised | The free, active calcium in blood
+keratitis | Inflammation of the cornea
+lability / labile | Instability / unstable
+leukotriene | Inflammatory chemical in asthma (blocked by montelukast)
+lipase | Fat-digesting enzyme
+lockjaw | Inability to open the mouth from jaw muscle spasm (tetanus)
+loculated / loculations | Divided into pockets (loculated empyema)
+luminal | Inside the bowel lumen
+mannitol | Osmotic diuretic to reduce raised intracranial pressure
+membranous | With a membrane
+mineralisation | Laying down of calcium and phosphate in bone
+modulators | Drugs that improve a protein's function (CFTR modulators)
+monocytic | Of monocytes (monocytic leukaemia)
+multifactorial | Caused by many genes and environmental factors
+multivalent | Covering several strains
+mutism | Not speaking
+myeloperoxidase / peroxidase | Enzyme stain marking myeloid leukaemia cells
+naproxen | NSAID used in juvenile arthritis
+nephrectomy | Removal of a kidney (Wilms tumour)
+neurofibromatosis | Inherited neurocutaneous disorder: café-au-lait spots, neurofibromas, axillary freckling
+neurocutaneous | Affecting skin and nervous system (neurofibromatosis, tuberous sclerosis)
+nucleated red cells / nucleated | Immature red cells in blood (haemolysis, marrow infiltration, newborns)
+occiput / occipital | Back of the head
+octreotide | Somatostatin analogue (variceal bleeding)
+omeprazole | Proton pump inhibitor reducing stomach acid
+osteoid | Unmineralised bone matrix
+palsy / palsies | Paralysis or weakness
+papilla | Optic disc / swollen optic disc from raised intracranial pressure
+parasitological | Confirmed by finding the parasite
+pasteurise / pasteurised | Heat milk to kill germs (prevents brucellosis)
+perforate / perforates | Make a hole in (perforation of typhoid ulcer)
+perimembranous VSD / perimembranous | VSD in the membranous septum, the commonest type
+periosteal / periosteum | Of the membrane covering bone
+petechial | Pinpoint non-blanching red spots from bleeding (low platelets, meningococcus)
+pylori / Helicobacter pylori | Stomach bacterium causing gastritis and peptic ulcer
+peptic ulcer / peptic | Ulcer of stomach or duodenum
+pyopneumothorax | Pus and air in the pleural space (staph pneumonia)
+renin | Kidney enzyme that raises blood pressure via angiotensin and aldosterone
+resonium / calcium resonium | Resin that removes potassium through the gut
+reticulogranular | Fine ground-glass pattern of RDS on chest X-ray
+retinoic acid / retinoic | Vitamin A drug (ATRA) for promyelocytic leukaemia
+rhinitis | Inflamed nasal lining (runny, blocked nose)
+ribavirin | Antiviral (severe RSV in high-risk infants)
+rituximab | Anti-CD20 antibody (refractory ITP, lymphoma)
+sensitisation / sensitised | Development of antibodies after a first exposure (Rh)
+serogroups | Groups of a bacterium by surface antigens (meningococcus A, C, W, Y)
+sponging / tepid sponging | Wiping with lukewarm water to cool a feverish child (not recommended)
+supravital stain / supravital | Stain of living cells (reticulocyte count)
+tarry stool / tarry | Black sticky stool from upper GI bleeding
+telangiectasia | Small dilated surface blood vessels
+teratogenic / teratogens | Causing birth defects
+thinness | Low BMI-for-age in older children
+transglutaminase / anti-tTG | Antibody test (tTG IgA) for coeliac disease
+troponin | Heart-muscle protein released when the myocardium is damaged
+turgor / skin turgor | Skin elasticity; slow skin pinch return means dehydration
+typeable / non-typeable | With or without a capsule type (non-typeable H. influenzae: otitis)
+ulcerates | Breaks down into an ulcer
+urticaria | Itchy wheals (hives) from allergy
+vaccinating / vaccinate | Giving a vaccine
+valine | An amino acid (sickle mutation: valine replaces glutamic acid)
+vascularisation | Growth of blood vessels
+venepuncture / venepunctures | Taking blood from a vein
+villi / villus | Finger-like folds of the small-bowel lining; flattened in coeliac disease
+xerosis / conjunctival xerosis | Dryness (of the conjunctiva in vitamin A deficiency)
+xerophthalmic | Eye damage from vitamin A deficiency (night blindness → Bitot spots → keratomalacia)
+accentuation / accentuated | Louder (accentuated P2 in pulmonary hypertension)
+acetylcysteine | Antidote for paracetamol poisoning
+acromion | Bony tip of the shoulder
+actinomycin D / actinomycin | Anticancer drug used in Wilms tumour
+aerated | Containing air
+aldosterone | Adrenal hormone that keeps sodium and loses potassium
+aliquots | Small measured portions (exchange transfusion)
+aminoaciduria | Amino acids in urine (Fanconi syndrome, rickets)
+aminosalicylates / mesalazine | Anti-inflammatory drugs for ulcerative colitis
+amiodarone | Anti-arrhythmic drug
+ammoniacal dermatitis / ammoniacal | Napkin rash from urine ammonia, sparing the skin folds
+angioplasty | Widening a narrowed vessel with a balloon
+anticholinergics | Drugs blocking acetylcholine (ipratropium, atropine)
+anticoagulation | Treatment to prevent clotting (heparin, warfarin)
+antidiarrhoeal / antidiarrhoeals | Drugs that stop diarrhoea; not given to children
+antiglobulin test / antiglobulin | Coombs test
+antihypertensives | Blood-pressure-lowering drugs
+antiplatelet | Drug stopping platelet clumping (aspirin)
+antipseudomonal | Active against Pseudomonas
+antithymocyte globulin / antithymocyte | Immunosuppressive treatment for aplastic anaemia
+anuria | No urine output
+aponeurosis | Sheet-like tendon (scalp aponeurosis: subgaleal haemorrhage lies under it)
+arboviruses | Insect-borne viruses (dengue, yellow fever)
+arthrogryposis | Multiple joint contractures from birth
+ascorbic acid / ascorbic | Vitamin C
+aspergillosis | Aspergillus fungal infection (allergic form in asthma and CF)
+aspirates / aspirate | Fluid drawn out with a needle (bone marrow aspirate)
+athetoid / athetosis | Slow writhing movements (kernicterus)
+auscultatory | Heard with a stethoscope
+bacilli / bacillus | Rod-shaped bacteria
+bleaches | Removes colour
+bleomycin | Anticancer drug (Hodgkin lymphoma)
+brachycephaly | Short, broad, flat-backed head (Down syndrome)
+bronchomalacia | Floppy airway wall collapsing on breathing
+bronchospasm | Narrowing of the airways from muscle spasm
+capsulated | Bacteria with a capsule (pneumococcus, Hib, meningococcus); dangerous without a spleen
+carpopedal spasm / carpopedal | Spasm of hands and feet in hypocalcaemic tetany
+centripetal | Most on the trunk (chickenpox rash)
+chemoprevention | Drugs given to prevent disease (seasonal malaria chemoprevention)
+cholestatic | Blocked bile flow: conjugated jaundice, pale stools, dark urine
+chorionic | Of the chorion (fetal membrane); chorionic villus sampling
+chubbiness | Plump build (GH deficiency, hypothyroidism)
+ciclosporin | Immunosuppressant (nephrotic syndrome, aplastic anaemia)
+cirrhotic | Scarred, shrunken liver
+cofactor | Helper molecule an enzyme needs
+cohorting | Nursing patients with the same infection together
+contractility | Strength of heart contraction
+convalescence / convalescent | Recovery period
+cooing / coos | Vowel baby sounds at about 2–3 months
+cricoid | Ring cartilage below the larynx
+cryotherapy | Freezing treatment (ROP, retinoblastoma)
+cryptococcus / cryptococcal | Fungus causing meningitis in advanced HIV
+currens / larva currens | Fast-moving itchy track from strongyloides
+cysticercosis | Pork tapeworm cysts in brain and muscle (seizures)
+cytochemistry / cytogenetics | Lab stains / chromosome studies of leukaemia cells
+dapsone | Antibiotic (leprosy, PCP prophylaxis)
+decongestants | Drugs that shrink nasal swelling; not for young children
+diastole / diastolic | Relaxation phase of the heart (diastolic murmur is always abnormal)
+systole / systolic | Contraction phase of the heart
+diloxanide | Drug killing amoeba cysts in the gut
+disproportion / disproportionate | Abnormal body proportions (short limbs or short trunk)
+dobutamine / milrinone | Inotropes for heart failure and shock
+drenching sweats / drenching | Heavy soaking sweats (TB, lymphoma)
+dysarthria | Slurred speech from poor muscle control
+elliptocytosis / ovalocytes | Inherited oval red cells
+eltrombopag / thrombopoietin | Drug / hormone driving platelet production
+endarteritis | Inflammation of an artery's inner lining
+enema / enemas | Fluid passed into the rectum (constipation, contrast study)
+epilepticus / status epilepticus | Seizure lasting ≥ 5 minutes or repeated without recovery
+erythropoiesis | Red cell production
+extracranial / extranodal / extramedullary | Outside the skull / lymph nodes / bone marrow
+factitious | Made up or caused on purpose
+foci | Areas (plural of focus)
+footboard | Board at the foot of the bed
+fremitus / vocal fremitus | Vibration felt on the chest wall when speaking
+fundi | Back of the eye seen with an ophthalmoscope
+gentian violet / gentian | Purple antiseptic paint (thrush, skin)
+germinal matrix | Fragile tissue near the ventricles of preterm brains, source of IVH
+gliadin | Gluten protein toxic in coeliac disease
+globules | Small round drops
+glottis | Vocal cords and the space between them
+glucuronidase / β-glucuronidase | Enzyme that unconjugates bilirubin (breast milk jaundice)
+haemic murmur / haemic | Flow murmur from anaemia
+haemolysed | Destroyed red cells (a haemolysed sample gives a false high potassium)
+helminths | Parasitic worms
+hematocrit | Proportion of blood volume made of red cells
+hemithorax | One side of the chest
+hepatolenticular degeneration / hepatolenticular | Wilson disease
+hernial / herniates | Of a hernia / pushes through a weak spot
+heterophile antibodies / heterophile | Antibodies detected by the Monospot test
+heterozygous / homozygous | One / two copies of the abnormal gene (trait / disease)
+homocystinuria | Inborn error: tall, lens dislocation downwards, clots, learning disability
+hyperinfection | Overwhelming spread of a parasite (strongyloides in steroid-treated patients)
+hyperosmolar | High concentration of dissolved particles
+hyperparasitaemia | Very high malaria parasite count (≥ 10% in children: severe malaria)
+hyperthermia / hypothermia / hypothermic | Body temperature too high / too low
+hypocellular | With few cells (marrow in aplastic anaemia)
+hyporesponsive | Less responsive than normal
+iliopsoas / psoas | Hip flexor muscle; psoas sign in appendicitis or psoas abscess
+imatinib | Targeted drug for Philadelphia-positive leukaemia
+impaction / faecal impaction | Hard stool stuck in the rectum
+inattention | Poor attention (ADHD, iron deficiency)
+infraclavicular | Below the clavicle (BCG site is upper arm, not here)
+inguinal | Of the groin (inguinal hernia)
+intermedia / thalassaemia intermedia | Thalassaemia between minor and major, needing occasional transfusion
+intrathoracic | Inside the chest
+iontophoresis | Using a small current to drive pilocarpine into skin for the sweat test
+kyphosis | Forward curve of the spine (hunchback)
+laryngoscope | Instrument to view the larynx for intubation
+lactase | Gut enzyme digesting lactose; lost after gastroenteritis
+leptospirosis | Infection from rat urine: fever, jaundice, kidney failure
+leucodepleted | Blood with white cells removed (fewer reactions)
+limpness | Floppiness
+lymphocytic | Of lymphocytes (lymphocytic CSF in TB or viral meningitis)
+macrophage | Large white cell that eats microbes and debris
+melanosis | Dark skin pigmentation
+metabolise | Break down chemically
+metapneumovirus | Virus causing bronchiolitis like RSV
+metoclopramide | Anti-sickness drug (dystonic reactions in children)
+microarray | Genetic test finding small chromosome deletions or duplications
+minora / labia minora | Inner vaginal lips
+mobilises | Moves (from stores)
+monoarthralgia | Pain in one joint
+mucocutaneous | Of skin and mucous membranes (Kawasaki disease)
+mucolytics | Mucus-thinning drugs
+multicystic dysplastic kidney / multicystic | Non-functioning kidney replaced by cysts
+multivitamins | Mixed vitamin supplements
+mycotic aneurysm / mycotic | Infected arterial bulge (endocarditis)
+myelitis / transverse myelitis | Inflammation of the spinal cord
+myeloblast / myeloblasts / myelopoiesis | Immature myeloid cells (AML) / white cell production
+nasolabial fold / nasolabial | Skin fold from nose to mouth corner (flat in facial palsy)
+nasopharyngitis | Common cold
+neurobrucellosis | Brucella infection of the nervous system
+neurotoxicity | Damage to the nervous system
+neutralise / neutralises | Make inactive (antitoxin neutralises free toxin)
+obliteration | Complete blockage (of bile ducts in biliary atresia)
+oedematous | Swollen with fluid
+olecranon | Bony tip of the elbow
+omalizumab | Anti-IgE antibody for severe allergic asthma
+omphalocele / exomphalos | Bowel herniating into the umbilical cord, covered by a sac (with other anomalies)
+opacities / opacity | White areas on X-ray or in the lens
+ophthalmoscope / ophthalmic | Instrument to see the back of the eye / of the eye
+opsonisation | Coating microbes with antibody or complement so they are eaten
+organophosphate | Insecticide that blocks cholinesterase: salivation, small pupils, bradycardia
+orifices | Openings
+orthopnoea | Breathlessness lying flat (heart failure)
+osteochondritis | Inflammation of bone and cartilage (pseudoparalysis in congenital syphilis)
+osteopenia | Low bone density on X-ray
+overfilling | Too much fluid in the circulation
+peripheries | Hands and feet
+pharyngeal | Of the throat
+phenylephrine | Vasoconstrictor
+phosphaturia | Phosphate loss in urine
+pilocarpine | Drug that makes sweat (sweat test)
+pLDH | Malaria enzyme detected by rapid diagnostic tests
+pleura / pleural | Membrane around the lungs (pleural effusion: fluid between its layers)
+pleuritic | Sharp chest pain on breathing in
+pneumonias | Plural of pneumonia
+polycythaemic | Too many red cells (venous haematocrit > 65% in newborns)
+popliteal | Behind the knee
+porphyrins | Pigments in haem making
+posterolateral | Back and side
+praevia / placenta praevia | Low-lying placenta: painless bleeding in pregnancy
+precipitates / precipitate | Triggers; also a solid formed from a solution
+predisposing | Making more likely
+presystolic | Just before systole (presystolic accentuation in mitral stenosis)
+prokinetics | Drugs speeding gut emptying
+promethazine | Sedating antihistamine (not under 2 years)
+pseudokidney sign / pseudokidney | Ultrasound look of intussusception in long section
+pubis / symphysis pubis / symphysis | Front of the pelvis where the pubic bones meet
+pulmonale / cor pulmonale | Right heart failure from lung disease
+quenches | Satisfies (thirst)
+radiosensitive | Killed by radiotherapy
+reabsorbed / reabsorption | Taken back into the blood
+reassessed | Examined again
+regresses / regress | Shrinks or goes back
+regurgitant | Leaking backwards through a valve
+resuscitated / resuscitation | Revived with emergency treatment
+reticulocytosis | Young red cells; a raised count means the marrow is responding (haemolysis, bleeding, treatment)
+revaccination | Giving a vaccine again
+ristocetin | Drug used in the lab test of von Willebrand factor
+sacroiliitis | Inflammation of the sacroiliac joint (brucellosis, spondyloarthritis)
+spondylitis | Inflammation of the spine (brucellosis, TB)
+sarcomere | Contractile unit of muscle
+scapulae / scapula | Shoulder blades
+sclerae / sclera | White of the eye (yellow in jaundice, blue in osteogenesis imperfecta)
+scrotal / scrotum | The skin sac holding the testes
+secretes / secretion / secretions | Releases (fluid or hormone)
+sella turcica / sella / suprasellar | Bony seat of the pituitary / above it (craniopharyngioma)
+semilunar valves / semilunar | Aortic and pulmonary valves
+serially | Repeated over time
+smallness | Small size
+solutes / solute | Dissolved particles
+sorbitol | Sugar alcohol; osmotic laxative
+spica / hip spica | Plaster cast from waist to legs (DDH, femur fracture)
+spicules | Thin spikes (sunray spicules in osteosarcoma)
+spined / spined eggs | Eggs with a spine (S. haematobium terminal, S. mansoni lateral)
+stabilises / stabilise | Becomes stable
+sternoclavicular / sternal / sternum | Of the breastbone
+striae | Stretch marks (purple in Cushing syndrome)
+subarachnoid | Under the arachnoid membrane, where CSF flows (subarachnoid haemorrhage)
+subtotal | Almost complete
+superinfection | New infection on top of another
+suppositories | Drugs given into the rectum
+supraglottoplasty | Surgery for severe laryngomalacia
+swaddling | Wrapping a baby tightly (legs straight → DDH)
+swellings | Plural of swelling
+swimmer's ear | Otitis externa
+teats | Bottle nipples
+telescoping | One bowel segment sliding into the next (intussusception)
+thickener | Powder that thickens feeds (reflux)
+thoracoscopic | Done through small chest incisions with a camera
+transcobalamin | Protein carrying vitamin B12 in blood
+transcutaneous bilirubin / transcutaneous | Measured through the skin with a meter
+transferrin | Iron-carrying protein in blood
+transoesophageal / transthoracic | Echo through the oesophagus / the chest wall
+traveller's diarrhoea / traveller's | Diarrhoea in travellers (enterotoxigenic E. coli)
+tympanic membrane / tympanic / tympanogram | Eardrum / its pressure test (flat in glue ear)
+undresses / undress / undressing | Takes clothes off (developmental milestone)
+unpaired | Single
+untwist | Turn back (volvulus at surgery)
+urethral | Of the urethra (posterior urethral valves in boys)
+uveitis | Eye inflammation (juvenile arthritis: slit-lamp screening)
+verapamil | Calcium-channel blocker; dangerous in infants with SVT
+ventricle / ventricles / ventricular | Pumping chambers of the heart; fluid spaces of the brain
+vermis | Middle part of the cerebellum
+vitello-intestinal duct / vitello | Fetal duct between gut and yolk sac; remnant = Meckel diverticulum
+vulvovaginitis | Inflammation of the vulva and vagina in young girls (hygiene, threadworm)
+waddling gait / waddling | Side-to-side walk (bilateral DDH, muscle disease)
+withholds / withholding | Holding back stool from fear of pain (functional constipation)
+xiphoid | Lower tip of the sternum
+asphyxia / asphyxiated / perinatal asphyxia | Failure of gas exchange around birth → low oxygen, high CO2 and acidosis
+leukaemia | Cancer of white blood cell precursors in the marrow (ALL is the commonest childhood cancer)
+rheumatic fever / rheumatic | Immune reaction 2–4 weeks after group A streptococcal throat infection: carditis, arthritis, chorea
+tetanus | Toxin disease from Clostridium tetani: trismus, spasms, opisthotonus with a clear mind
+pertussis / whooping cough | Bordetella pertussis infection: paroxysmal cough with whoop, apnoea in infants
+typhoid / enteric fever | Salmonella Typhi infection: step-ladder fever, abdominal pain, relative bradycardia
+diphtheria | Toxin-producing infection: grey throat membrane, bull neck, myocarditis
+Listeria | Bacterium from unpasteurised food; neonatal sepsis and meningitis; needs ampicillin
+rubella / German measles | Mild rash illness; in early pregnancy causes cataract, deafness and heart defects
+electrophoresis / haemoglobin electrophoresis | Lab test separating haemoglobins (HbS, HbF, HbA2) to diagnose sickle cell and thalassaemia
+chest compressions / compressions | Pressing the lower sternum to pump blood in cardiac arrest (3:1 with breaths in newborns)
+encephalitis | Inflammation of the brain: fever, altered consciousness, seizures
+ataxia | Unsteady, uncoordinated movement (cerebellar disease)
+incompatibility / blood group incompatibility | Mother's antibodies against the baby's blood group (Rh, ABO)
+thrush / candida | Candida yeast infection: white plaques in the mouth that do not wipe off; napkin rash
+breech | Baby presenting buttocks or feet first
+retinopathy of prematurity / retinopathy | Abnormal retinal vessel growth in preterm babies (worse with excess oxygen)
+cataract | Clouding of the lens (white pupil); congenital rubella, galactosaemia
+myeloid | Of the marrow cell line making neutrophils, monocytes, red cells and platelets (AML)
+idiopathic | Without a known cause
+alopecia | Hair loss
+caries / dental caries | Tooth decay
+mottled / mottling | Blotchy purple-pale skin from poor perfusion
+occlusive | Blocking
+interstitial | In the tissue between cells or alveoli (interstitial pneumonia)
+brainstem | Lower part of the brain controlling breathing, heart rate and cranial nerves
+maleimide / eosin-5-maleimide | Flow cytometry test (EMA binding) for hereditary spherocytosis
+staccato cough / staccato | Short repeated bursts of cough (chlamydial pneumonia)
+corkscrew | Twisted spiral look of the duodenum on contrast study in malrotation with volvulus
+botulism | Clostridium botulinum toxin (honey in infants): constipation, weak suck, descending paralysis
+miliaria | Heat rash from blocked sweat ducts
+cobblestone | Uneven, raised pattern (Crohn mucosa)
+intraepithelial | Within the epithelium (intraepithelial lymphocytes in coeliac disease)
+vas deferens / deferens | Sperm duct; absent in boys with cystic fibrosis
+precocious puberty / precocious | Puberty before 8 years in girls or 9 years in boys
+periumbilical | Around the umbilicus
+glycol / polyethylene glycol | Osmotic laxative (macrogol) of choice for childhood constipation
+paediatric | Of children
+neurodegenerative | Causing progressive loss of nerve cells and skills
+insecticide-treated net / insecticide | Mosquito net soaked with insecticide to prevent malaria
+probiotics | Live beneficial microbes given by mouth
+vena cava | The large veins returning blood to the right atrium
+cupping / cupped | Concave, cup-shaped metaphysis on X-ray (rickets)
+beading | Knobbly swelling of rib ends at the costochondral junctions (rickets)
+heaving apex / heaving | Forceful, sustained apex beat (left ventricular hypertrophy)
+dimer / D-dimer | Clot breakdown product raised in DIC and thrombosis
+glandular fever | Infectious mononucleosis
+supplementation | Giving extra (vitamin A supplementation every 6 months)
+recombinant | Made by genetic engineering (recombinant GH, factor VIII)
+synchronised | Timed with the patient's own breaths or heartbeat
+reconstituted | Mixed back into liquid form (powdered vaccine with its diluent)
+HbAA | Normal adult haemoglobin genotype
+inactivated vaccine / inactivated | Vaccine of killed organisms or their parts (IPV, Penta)
+conjugation / conjugated vaccine | Joining bilirubin to glucuronic acid in the liver / polysaccharide joined to a protein so infants respond
+retardation / growth retardation | Slowing (growth retardation)
+vaso-occlusive crisis / vaso-occlusive | Painful crisis of sickle cell disease: sickled cells block small vessels (bones, chest, abdomen)

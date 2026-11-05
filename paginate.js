@@ -50,7 +50,7 @@ const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
         });
         out[s.dataset.orig] = { cap: bd.height, cont, atoms: ms.map((m, ix) => ({ js: joinSave[ix] || 0,
           k: m.dataset.k, w: m.dataset.w === '1', t: m.dataset.t,
-          nums: !!m.querySelector('.mb.nums'), ph: !!m.querySelector('.msf .mb > .mc > .photo:only-child'),
+          nums: !!m.querySelector('.mb.nums'), rc: !!m.querySelector('.mb.rv.rvc'), ph: !!m.querySelector('.msf .mb > .mc > .photo:only-child'),
           full: m.querySelector('.msf').getBoundingClientRect().height,
           half: m.querySelector('.msh').getBoundingClientRect().height })) };
       });
@@ -99,7 +99,7 @@ const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
       const opt = option(i); opt.row.forEach(j => done.add(j));
       const isTitle = A[i].k === 'title';
       if (isTitle) seg++;
-      const h = opt.h + (A[i].k === 'rvt' ? GAP : 0) - (A[i].k === 'cbox' ? A[i].js : 0);
+      const h = opt.h + (A[i].k === 'rvt' ? (A[i].rc ? 2 : GAP) : 0) - (A[i].k === 'cbox' ? A[i].js : 0);
       if (A[i].k === 'raw' && !isTitle) { glue = glue ? { rows: [...glue.rows, opt.row], h: glue.h + h } : { rows: [opt.row], h }; continue; }
       const u = { rows: [opt.row], h, title: isTitle, rv: A[i].k === 'rvt', cb: A[i].k === 'cbox', seg: Math.max(seg, 0) };
       if (glue && !isTitle && glue.h + u.h <= cap - ch.cont) { u.rows = [...glue.rows, ...u.rows]; u.h += glue.h; glue = null; }
@@ -121,7 +121,8 @@ const MARGIN = 40, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
         let h = (st === 0 ? 0 : cont) - (U[st].rv ? GAP : 0) + (U[st].cb ? CONT_TOP : 0); for (let k = st; k < e; k++) h += U[k].h;
         if (h > cap && e - st > 1) break;
         if (h > cap) report.push(`${key} a box is taller than a page`);
-        const c = best[st] + cap * cap * 20 + Math.pow(Math.max(cap - h, 0), 2) + (U[st].cb ? Math.pow(0.22 * cap, 2) : 0);  // splitting a box costs something  // fewest pages first, then the most even
+        const last = e === n, rvG = cont === 0 && U.some(u => u.rv);  // Rapid Review (owner): fill each page, the space is left only at the chapter's end
+        const c = best[st] + cap * cap * 20 + (rvG ? (last ? 0 : Math.max(cap - h, 0) * cap * 4) : Math.pow(Math.max(cap - h, 0), 2)) + (U[st].cb ? Math.pow(0.22 * cap, 2) : 0);  // splitting a box costs something  // fewest pages first, then the most even
         if (c < best[e]) { best[e] = c; prev[e] = st; }
       }
       const cuts = []; for (let e = n; e > 0; e = prev[e]) cuts.unshift([prev[e], e]);

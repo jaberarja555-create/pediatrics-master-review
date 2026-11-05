@@ -211,4 +211,10 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   Rapid Review go in `<table class="rvnums">` in the aside.
 - **Mnemonics:** standard memory aids in a `box mnem` (`<div class="mnl"><span><i>A</i>word</span>…`).
 - **No cramped half-width boxes**; give every page `h2.s` sections; photos ≤ ~200 px high.
+- **No crowded lines (owner):** a line or cell of several items joined by " · " becomes separate bullet lines (helper used for ch 1–3:
+  scratch split.py; label "X:" kept with a sub-list); a crowded two-column list becomes a full-width table (see ftt Management).
+- **Rapid Review fills its pages (owner):** pieces of 3 rows (build.py chapter_exam), paginate.js fills each RR page and leaves space only at
+  the chapter's end; joined pieces keep 0 gap (app.css vjs rules).
+- **Every hard word has a tap meaning (owner):** glossary now covers eponyms, organisms, drugs and clinical terms (~1,800 entries); after
+  writing a topic, list words with no meaning (wordfreq rarity scan) and add them.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.
