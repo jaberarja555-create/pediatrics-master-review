@@ -1,0 +1,222 @@
+[
+ [
+  "Rules",
+  "Two ways to calculate children's doses?",
+  "Weight (mg/kg) or body surface area (m²)."
+ ],
+ [
+  "Rules",
+  "Maximum dose for a child?",
+  "Never above the adult dose."
+ ],
+ [
+  "Rules",
+  "Weight estimate 1–10 years?",
+  "(Age + 4) × 2."
+ ],
+ [
+  "Rules",
+  "Why avoid aspirin in children?",
+  "Reye syndrome (except Kawasaki, ARF)."
+ ],
+ [
+  "Rules",
+  "Tetracyclines avoided under?",
+  "8 years (teeth)."
+ ],
+ [
+  "Antibiotics",
+  "Amoxicillin dose in pneumonia?",
+  "40–45 mg/kg 12-hourly."
+ ],
+ [
+  "Antibiotics",
+  "Ampicillin IV dose?",
+  "50 mg/kg 6-hourly."
+ ],
+ [
+  "Antibiotics",
+  "Gentamicin dose (child)?",
+  "7.5 mg/kg once daily."
+ ],
+ [
+  "Antibiotics",
+  "Ceftriaxone dose in meningitis?",
+  "100 mg/kg/day."
+ ],
+ [
+  "Antibiotics",
+  "Ceftriaxone contraindicated with?",
+  "IV calcium; jaundiced neonates."
+ ],
+ [
+  "Antibiotics",
+  "Benzathine penicillin dose < 30 kg?",
+  "600 000 units IM."
+ ],
+ [
+  "Antibiotics",
+  "Antibiotic for Staph aureus skin/bone?",
+  "Cloxacillin/flucloxacillin."
+ ],
+ [
+  "Antibiotics",
+  "Erythromycin risk in young infants?",
+  "Pyloric stenosis."
+ ],
+ [
+  "Antibiotics",
+  "Metronidazole dose?",
+  "7.5 mg/kg 8-hourly."
+ ],
+ [
+  "Antimalarials",
+  "Artesunate dose < 20 kg?",
+  "3 mg/kg at 0, 12, 24 h then daily."
+ ],
+ [
+  "Antimalarials",
+  "Quinine side effect?",
+  "Hypoglycaemia."
+ ],
+ [
+  "Antimalarials",
+  "Primaquine caution?",
+  "G6PD deficiency."
+ ],
+ [
+  "Antiparasitics",
+  "Albendazole dose ≥ 2 years?",
+  "400 mg once."
+ ],
+ [
+  "Antiparasitics",
+  "Praziquantel dose for schistosomiasis?",
+  "40 mg/kg once."
+ ],
+ [
+  "Analgesics",
+  "Paracetamol dose?",
+  "15 mg/kg 6-hourly."
+ ],
+ [
+  "Analgesics",
+  "Toxic paracetamol dose?",
+  "> 150 mg/kg."
+ ],
+ [
+  "Anticonvulsants",
+  "IV diazepam dose?",
+  "0.3 mg/kg."
+ ],
+ [
+  "Anticonvulsants",
+  "Phenytoin loading dose?",
+  "20 mg/kg IV over 20 min."
+ ],
+ [
+  "Anticonvulsants",
+  "Valproate risk under 2 years?",
+  "Hepatotoxicity."
+ ],
+ [
+  "Anticonvulsants",
+  "Carbamazepine worsens?",
+  "Absence seizures."
+ ],
+ [
+  "Respiratory",
+  "Nebulised salbutamol under 5 yr?",
+  "2.5 mg."
+ ],
+ [
+  "Respiratory",
+  "Prednisolone in asthma?",
+  "1–2 mg/kg/day for 3–5 days."
+ ],
+ [
+  "Respiratory",
+  "Dexamethasone dose in croup?",
+  "0.15–0.6 mg/kg once."
+ ],
+ [
+  "Respiratory",
+  "Magnesium sulphate in asthma?",
+  "40 mg/kg IV over 20 min."
+ ],
+ [
+  "Cardiac",
+  "Furosemide dose?",
+  "1–2 mg/kg."
+ ],
+ [
+  "Cardiac",
+  "Adenosine first dose?",
+  "0.1 mg/kg rapid IV."
+ ],
+ [
+  "Cardiac",
+  "Drug for duct-dependent CHD?",
+  "Prostaglandin E₁."
+ ],
+ [
+  "Cardiac",
+  "Propranolol avoided in?",
+  "Asthma."
+ ],
+ [
+  "Haematology",
+  "Iron dose?",
+  "3–6 mg/kg/day elemental."
+ ],
+ [
+  "Haematology",
+  "Packed cells volume?",
+  "10 mL/kg over 3–4 h."
+ ],
+ [
+  "Emergency",
+  "Adrenaline in cardiac arrest?",
+  "0.1 mL/kg of 1:10 000 (10 µg/kg)."
+ ],
+ [
+  "Emergency",
+  "Adrenaline in anaphylaxis?",
+  "0.01 mL/kg of 1:1000 IM (max 0.5 mL)."
+ ],
+ [
+  "Emergency",
+  "Dextrose for hypoglycaemia (child)?",
+  "10% dextrose 5 mL/kg."
+ ],
+ [
+  "Emergency",
+  "Calcium gluconate 10% (child)?",
+  "0.5 mL/kg IV slowly."
+ ],
+ [
+  "Emergency",
+  "Naloxone dose?",
+  "0.1 mg/kg."
+ ],
+ [
+  "Emergency",
+  "Mannitol dose?",
+  "0.5–1 g/kg over 20 min."
+ ],
+ [
+  "Endocrine",
+  "Insulin infusion in DKA?",
+  "0.05–0.1 unit/kg/hour, no bolus."
+ ],
+ [
+  "Endocrine",
+  "Levothyroxine in neonates?",
+  "10–15 µg/kg/day."
+ ],
+ [
+  "Endocrine",
+  "Carbimazole serious side effect?",
+  "Agranulocytosis."
+ ]
+]

@@ -683,3 +683,12 @@ RIG | Rabies immunoglobulin
 20WBCT | 20-minute whole blood clotting test
 NAC | N-acetylcysteine
 OP | Organophosphate
+ALL | Acute lymphoblastic leukaemia
+OHP | Hydroxyprogesterone (17-OHP: raised in CAH)
+MTB | Mycobacterium tuberculosis
+RIF | Rifampicin
+RHZ | Rifampicin + isoniazid + pyrazinamide
+RH | Rifampicin + isoniazid
+GIT | Gastrointestinal tract
+BSA | Body surface area
+VIP | Vasoactive intestinal peptide

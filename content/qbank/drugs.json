@@ -1,0 +1,128 @@
+[
+{
+"q": "The dose of paracetamol in children is:",
+"o": [
+"5 mg/kg 12-hourly",
+"10 mg/kg daily",
+"15 mg/kg 6-hourly",
+"30 mg/kg 6-hourly",
+"50 mg/kg 8-hourly"
+],
+"a": 2,
+"e": "15 mg/kg 6-hourly, max 60 mg/kg/day.",
+"k": "15 mg/kg 6-hourly",
+"s": "bank"
+},
+{
+"q": "Aspirin is used in children only for:",
+"o": [
+"Fever",
+"Pain",
+"Kawasaki disease and rheumatic fever",
+"Headache",
+"Teething"
+],
+"a": 2,
+"e": "Reye syndrome risk otherwise.",
+"k": "kawasaki",
+"s": "bank"
+},
+{
+"q": "Ceftriaxone should be avoided:",
+"o": [
+"In meningitis",
+"With IV calcium and in jaundiced neonates",
+"In typhoid",
+"In pneumonia",
+"In sepsis"
+],
+"a": 1,
+"e": "Precipitates with calcium; displaces bilirubin.",
+"k": "not with iv calcium",
+"s": "bank"
+},
+{
+"q": "The loading dose of phenytoin in status epilepticus is:",
+"o": [
+"5 mg/kg",
+"10 mg/kg",
+"20 mg/kg",
+"40 mg/kg",
+"100 mg/kg"
+],
+"a": 2,
+"e": "20 mg/kg IV over 20 min with ECG.",
+"k": "load 20 mg/kg iv over 20 min",
+"s": "bank"
+},
+{
+"q": "The dose of adrenaline in paediatric cardiac arrest is:",
+"o": [
+"0.01 mL/kg of 1:1000 IM",
+"0.1 mL/kg of 1:10 000 IV",
+"1 mL/kg of 1:10 000",
+"0.5 mL/kg of 1:1000 IV",
+"1 mg IV"
+],
+"a": 1,
+"e": "10 µg/kg IV/IO every 3–5 min.",
+"k": "0.1 ml/kg (10 µg/kg)",
+"s": "bank"
+},
+{
+"q": "A side effect of quinine is:",
+"o": [
+"Hyperglycaemia",
+"Hypoglycaemia",
+"Hyperkalaemia",
+"Gum hypertrophy",
+"Red man syndrome"
+],
+"a": 1,
+"e": "Quinine stimulates insulin release.",
+"k": "hypoglycaemia",
+"s": "bank"
+},
+{
+"q": "Valproate is particularly hepatotoxic in:",
+"o": [
+"Adolescents",
+"Children under 2 years",
+"Girls",
+"Obese children",
+"Asthmatics"
+],
+"a": 1,
+"e": "Risk highest under 2 years.",
+"k": "hepatotoxic (< 2 yr)",
+"s": "bank"
+},
+{
+"q": "Which antibiotic may cause pyloric stenosis in young infants?",
+"o": [
+"Amoxicillin",
+"Erythromycin",
+"Gentamicin",
+"Ceftriaxone",
+"Metronidazole"
+],
+"a": 1,
+"e": "Erythromycin (and azithromycin) in early infancy.",
+"k": "pyloric stenosis",
+"s": "bank"
+},
+{
+"q": "In DKA, insulin is given as:",
+"o": [
+"10 units IV bolus",
+"0.05–0.1 unit/kg/hour infusion without a bolus",
+"1 unit/kg SC",
+"0.5 unit/kg bolus then infusion",
+"Glargine once daily"
+],
+"a": 1,
+"e": "No bolus in children.",
+"k": "no bolus in dka",
+"s": "bank"
+}
+]

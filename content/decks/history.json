@@ -1,0 +1,122 @@
+[
+ [
+  "Order",
+  "Who usually gives the paediatric history?",
+  "The mother or carer (the child when old enough)."
+ ],
+ [
+  "Order",
+  "Parts unique to the paediatric history?",
+  "Perinatal, feeding, developmental and vaccination history."
+ ],
+ [
+  "Personal data",
+  "Why ask the address?",
+  "Endemic areas: malaria, kala-azar, schistosomiasis."
+ ],
+ [
+  "Chief complaint",
+  "How is the chief complaint written?",
+  "In the mother's words, with duration."
+ ],
+ [
+  "HPI",
+  "Points to analyse in each complaint?",
+  "Onset, course, character, aggravating/relieving, associated symptoms, treatment."
+ ],
+ [
+  "HPI",
+  "What else is asked in HPI?",
+  "Relevant negatives and impact on feeding, sleep, activity."
+ ],
+ [
+  "Perinatal",
+  "Antenatal questions?",
+  "ANC visits, illness, drugs, fever, rash, BP, diabetes."
+ ],
+ [
+  "Perinatal",
+  "Natal questions?",
+  "Gestation, place, mode of delivery, cried at once."
+ ],
+ [
+  "Perinatal",
+  "Postnatal questions?",
+  "Birth weight, NICU, jaundice, fits, cyanosis, feeding."
+ ],
+ [
+  "Nutrition",
+  "Feeding questions?",
+  "Exclusive breastfeeding, formula preparation, weaning age, current diet."
+ ],
+ [
+  "Nutrition",
+  "Method for current diet?",
+  "24-hour recall."
+ ],
+ [
+  "Development",
+  "Development history covers?",
+  "Gross motor, fine motor, speech, social, school, regression."
+ ],
+ [
+  "Vaccination",
+  "How is vaccination checked?",
+  "From the EPI card against the schedule."
+ ],
+ [
+  "Family",
+  "Key family history in Sudan?",
+  "Consanguinity, sibling deaths, sickle cell, G6PD, TB contact."
+ ],
+ [
+  "Family",
+  "How is family history shown?",
+  "A pedigree."
+ ],
+ [
+  "Social",
+  "Social history items?",
+  "Parents' education, income, crowding, water, latrine, smoking."
+ ],
+ [
+  "Summary",
+  "What follows the summary?",
+  "Provisional diagnosis and differentials with reasons."
+ ],
+ [
+  "Exam tip",
+  "Three things to mention in every case?",
+  "Vaccination, growth and development."
+ ],
+ [
+  "Arabic",
+  "\"Child\" in Sudanese Arabic?",
+  "الشافع"
+ ],
+ [
+  "Arabic",
+  "\"Fever\" in Sudanese Arabic?",
+  "السخانة"
+ ],
+ [
+  "Arabic",
+  "\"Vomiting\" in Sudanese Arabic?",
+  "الطراش"
+ ],
+ [
+  "Arabic",
+  "Asking about consanguinity?",
+  "إنتي وأبوهو قرايب؟"
+ ],
+ [
+  "Arabic",
+  "Asking for the vaccination card?",
+  "ممكن أشوف كرت التطعيم؟"
+ ],
+ [
+  "Arabic",
+  "Asking about cola-coloured urine?",
+  "لونو زي الشاي أو أحمر؟"
+ ]
+]
