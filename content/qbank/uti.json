@@ -1,0 +1,58 @@
+[
+{
+"q": "The most specific dipstick finding for UTI is:",
+"o": [
+"Protein",
+"Blood",
+"Nitrite",
+"Leucocyte esterase",
+"Glucose"
+],
+"a": 2,
+"e": "Nitrite.",
+"k": "nitrite (specific)",
+"s": "bank"
+},
+{
+"q": "The gold-standard investigation for vesicoureteric reflux is:",
+"o": [
+"Ultrasound",
+"DMSA",
+"MCUG",
+"IVU",
+"CT"
+],
+"a": 2,
+"e": "Micturating cystourethrogram.",
+"k": "mcug",
+"s": "bank"
+},
+{
+"q": "Renal scarring is best shown by:",
+"o": [
+"Ultrasound",
+"DMSA scan",
+"MCUG",
+"Plain X-ray",
+"Urine culture"
+],
+"a": 1,
+"e": "DMSA.",
+"k": "renal scarring",
+"s": "bank"
+},
+{
+"q": "UTI in a 2-month-old should be treated with:",
+"o": [
+"Oral nitrofurantoin 3 days",
+"IV ampicillin + gentamicin",
+"Oral trimethoprim",
+"No antibiotic",
+"Ciprofloxacin oral"
+],
+"a": 1,
+"e": "Under 3 months: IV.",
+"k": "< 3 months",
+"s": "bank"
+}
+]

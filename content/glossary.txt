@@ -485,3 +485,8 @@ chelation | Removal of excess iron by a drug that binds it
 petechiae | Pinpoint non-blanching bleeding spots in the skin
 purpura | Larger non-blanching bleeding patches in the skin
 reticulocyte | Young red cell; a raised count shows the marrow is responding
+proteinuria | Protein in the urine
+haematuria | Blood in the urine
+oliguria | Low urine output (< 1 mL/kg/h in infants, < 0.5 mL/kg/h in children)
+casts | Cylinders of cells or protein formed in the renal tubules, seen on urine microscopy
+schistocytes | Fragmented red cells, seen in microangiopathic haemolysis (HUS, DIC)
