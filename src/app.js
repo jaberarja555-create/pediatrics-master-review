@@ -30,7 +30,7 @@ function trialPost(start){if(SRV==null)return Promise.resolve(null);return fetch
 function choiceSnd(k){if(k==='trial')chime([523.3,659.3,784,1046.5,1318.5,1568],'triangle');else if(k==='paid')chime([392,523.3,659.3,784],'sine');else if(k==='code')chime([880,1174.7],'sine');else if(k==='ok')chime([523.3,784,1046.5,1568],'triangle');else chime([659.3,523.3],'sine')}
 function openingFx(msg){var d=$('opening');if(!d){d=document.createElement('div');d.id='opening';document.body.appendChild(d)}
   d.innerHTML='<img src="img/logo.webp" alt=""><b class="ar" dir="rtl">'+msg+'</b><i><span></span></i>';requestAnimationFrame(function(){d.classList.add('on')})}
-function startTrial(){var now=Date.now(),t={s:now,m:now};try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}
+function startTrial(){st('chz','1');var now=Date.now(),t={s:now,m:now};try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}
   if(SRV!=null)try{fetch(SRV.replace(/\/$/,'')+'/trial',{method:'POST',keepalive:true,cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({dev:DEV,start:now})}).catch(function(){})}catch(e){}
   choiceSnd('trial');$('sheet').hidden=true;openingFx('جارٍ فتح الكتاب كاملًا · '+trialDur());setTimeout(function(){location.reload()},900)}
 if(INTRIAL&&!TRIAL.r)trialPost(TRIAL.s).then(function(j){if(!j||!j.ok)return;TRIAL.r=1;if(j.start&&j.start<TRIAL.s){TRIAL.s=j.start;if(Date.now()>=TRIAL.s+TRIAL_MS)TRIAL.x=1}try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}if(TRIAL.x)location.reload()});
@@ -90,14 +90,14 @@ function openChoose(){
     '<button type="button" class="chc pd" id="chPaid"><i>'+ic2+'</i><span><b>الاشتراك في النسخة المدفوعة</b><small>'+(ACC.price?esc(ACC.price)+' · ':'')+'الكتاب كاملًا طوال الطبعة على جهازين، مع مزامنة ملاحظاتك.</small></span></button>'+
     '<button type="button" class="chc cd" id="chCode"><i>'+ic3+'</i><span><b>عندي كود تفعيل</b><small>اكتب الكود الذي وصلك في واتساب.</small></span></button>'+
     '<button type="button" class="chfree" id="chFree">متابعة بالنسخة المجانية: '+esc(ACC.free_label||'جزء من الكتاب')+'</button></div>');
-  $('chFree').onclick=function(){choiceSnd('free');$('sheet').hidden=true};
+  $('chFree').onclick=function(){choiceSnd('free');st('chz','1');setMust(false);$('sheet').hidden=true};
   if($('chTrial'))$('chTrial').onclick=function(){this.disabled=true;startTrial()};
   $('chPaid').onclick=function(){choiceSnd('paid');openSub()};$('chCode').onclick=function(){choiceSnd('code');openSub();setTimeout(function(){var x=$('actIn');if(x){x.scrollIntoView({block:'center'});x.focus()}},250)}}
 function openSub(code){if(!LOCKED&&!INTRIAL){openSheet('الاشتراك','<div class="ar" dir="rtl"><p class="lead">هذا الجهاز مفعّل والكتاب مفتوح كاملًا. شكرًا لك!</p>'+(st('code')?'<div class="devc"><span>كود التفعيل</span><b dir="ltr">'+esc(st('code'))+'</b></div>':'')+'</div>');return}
-  openSheet('الاشتراك في الكتاب',subHtml(code));
+  openSheet('الاشتراك في الكتاب',(TRIALNEW?'<button type="button" class="chback ar" dir="rtl" data-choose="1">→ الرجوع إلى الخيارات</button>':'')+subHtml(code));
   $('actGo').onclick=function(){activate($('actIn').value)};$('actIn').onkeydown=function(e){if(e.key==='Enter')activate(this.value)};
   if(code)activate(code)}
-document.addEventListener('click',function(e){if(e.target.closest('[data-trial]')){startTrial();return}if(e.target.closest('[data-sub]'))(TRIALNEW?openChoose:openSub)()});
+document.addEventListener('click',function(e){if(e.target.closest('[data-choose]')){choiceSnd('free');openChoose();return}if(e.target.closest('[data-trial]')){startTrial();return}if(e.target.closest('[data-sub]'))(TRIALNEW?openChoose:openSub)()});
 var TOPICS=META.topics, PAGES=META.pages, NP=PAGES.length;
 /* the student's own blank note pages (side-rail button): stored in prr-upg as id -> {a: key of the book page they follow, n: time made};
    they get their own keys (their id), so book page keys and everything saved on book pages stay the same */
@@ -376,7 +376,9 @@ if(LOCKED||INTRIAL){$('trialCard').hidden=false;var tcu=function(){$('trialCard'
 $('rrTool').onclick=function(){goPage(META.rr-1)};
 
 /* ---------- sheet: contents and highlights ---------- */
-function openSheet(title,html){$('sheetT').textContent=title;$('sheetBody').innerHTML=html;$('sheet').hidden=false}
+/* MUST (owner, Nov 2026): on the first opening the student has to pick one of the choices; the sheet cannot be closed until then */
+var MUST=false;function setMust(v){MUST=v;$('sheet').classList.toggle('must',v)}
+function openSheet(title,html){$('sheetT').textContent=title;$('sheetBody').innerHTML=html;$('sheet').hidden=false;$('sheet').classList.toggle('must',MUST)}
 function contentsHtml(){return META.contents.map(function(ch){
   return (ch.part?'<div class="partx">'+esc(ch.part)+'</div>':'')+'<div class="sh" style="margin:14px 0 4px"><h3><small>Chapter '+ch.no+'</small> · '+esc(ch.title)+'</h3></div>'+ch.topics.map(function(t){
     if(!t.p)return '<div class="trow soon c'+ch.no+'"><span class="n">'+esc(t.no)+'</span><span class="l">'+esc(t.title)+'<small>Coming soon</small></span><span class="p"></span></div>';
@@ -394,8 +396,8 @@ function hlHtml(){var notes=[],hls=[];PAGES.forEach(function(p,i){(HL[PKEY[i]]||
     (note?'<em class="hn">'+esc(x.h.n)+'</em><span class="hq">“'+esc(x.h.t)+'”</span>':'<span>'+esc(x.h.t)+'</span>'+(x.h.n?'<em class="hn">✎ note</em>':''))+'</span></button>'}).join(''):'<p class="empty">'+empty+'</p>')}
 document.addEventListener('click',function(e){var b=e.target.closest('[data-ht]');if(!b)return;HLTAB=b.dataset.ht;st('hltab',HLTAB);$('sheetBody').innerHTML=hlHtml()});
 if($('hlTool'))$('hlTool').onclick=function(){openSheet('Notes & highlights',hlHtml())};
-$('sheetX').onclick=function(){$('sheet').hidden=true};
-$('sheet').addEventListener('click',function(e){if(e.target===$('sheet'))$('sheet').hidden=true;var ri=e.target.closest('[data-pi]');if(ri){$('sheet').hidden=true;goIdx(+ri.dataset.pi);return}var r=e.target.closest('[data-p]');if(r){$('sheet').hidden=true;goPage(+r.dataset.p-1)}});
+$('sheetX').onclick=function(){if(MUST)return;$('sheet').hidden=true};
+$('sheet').addEventListener('click',function(e){if(e.target===$('sheet')&&!MUST)$('sheet').hidden=true;var ri=e.target.closest('[data-pi]');if(ri){$('sheet').hidden=true;goIdx(+ri.dataset.pi);return}var r=e.target.closest('[data-p]');if(r){$('sheet').hidden=true;goPage(+r.dataset.p-1)}});
 
 /* ---------- highlights ---------- */
 function textNodes(sec){var w=document.createTreeWalker(sec,NodeFilter.SHOW_TEXT,{acceptNode:function(n){return n.parentNode.closest('svg')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),a=[];while(w.nextNode())a.push(w.currentNode);return a}
@@ -1283,7 +1285,7 @@ function welcomeName(){var t=document.querySelector('#welc .wt');if(t)t.textCont
 /* start */
 GLAST=gsnap();updUR();
 refreshHome();
-if(LINKCODE&&(LOCKED||INTRIAL))openSub(LINKCODE);else if((TRIALNEW&&!st('chz'))||(TRIALEND&&!TRIAL.seen)){st('chz','1');if(TRIALEND){TRIAL.seen=1;try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}}setTimeout(openChoose,2900)}   // owner: on opening, choose the 24-hour trial or the paid version
+if(LINKCODE&&(LOCKED||INTRIAL))openSub(LINKCODE);else if((TRIALNEW&&!st('chz'))||(TRIALEND&&!TRIAL.seen)){if(TRIALNEW)setMust(true);if(TRIALEND){TRIAL.seen=1;try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}}setTimeout(openChoose,2900)}   // owner: on opening, choose the 24-hour trial or the paid version
 if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('sw.js').catch(function(){})}
 })();
 
