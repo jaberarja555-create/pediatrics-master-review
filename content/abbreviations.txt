@@ -569,3 +569,32 @@ RBBB | Right bundle branch block
 AV | Atrioventricular
 RA | Right atrium
 PGE₁ | Prostaglandin E₁
+SCD | Sickle cell disease
+AML | Acute myeloid leukaemia
+APL | Acute promyelocytic leukaemia
+SS | Sickle cell anaemia genotype (HbSS)
+HbA₂ | Haemoglobin A2
+RDW | Red cell distribution width
+ATRA | All-trans retinoic acid
+HPLC | High-performance liquid chromatography
+MCH | Mean corpuscular haemoglobin
+MCHC | Mean corpuscular haemoglobin concentration
+VMA | Vanillylmandelic acid
+HVA | Homovanillic acid
+RB1 | Retinoblastoma gene
+MLL | Mixed-lineage leukaemia gene
+EMA | Eosin-5-maleimide (binding test)
+TIBC | Total iron-binding capacity
+FO | Foramen ovale
+NAI | Non-accidental injury
+DDAVP | Desmopressin
+RICE | Rest, ice, compression, elevation
+PFA | Platelet function analyser
+MYC | MYC oncogene
+WAGR | Wilms tumour, aniridia, genitourinary anomalies, retardation
+MIBG | Meta-iodobenzylguanidine scan
+vWD | Von Willebrand disease
+HbF | Fetal haemoglobin
+HbS | Sickle haemoglobin
+TLS | Tumour lysis syndrome
+FN | Febrile neutropenia

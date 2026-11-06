@@ -476,3 +476,12 @@ chorea | Brief, irregular, purposeless involuntary movements
 tamponade | Compression of the heart by fluid in the pericardium
 pulsus paradoxus | Fall of systolic BP by more than 10 mmHg on inspiration
 clubbing | Loss of the nail-bed angle with bulbous fingertips
+dactylitis | Painful swelling of the fingers and toes (hand–foot syndrome in sickle cell disease)
+sequestration | Sudden pooling of blood in an enlarging spleen
+haemarthrosis | Bleeding into a joint
+leukocoria | White pupillary reflex
+blasts | Immature malignant white cells in leukaemia
+chelation | Removal of excess iron by a drug that binds it
+petechiae | Pinpoint non-blanching bleeding spots in the skin
+purpura | Larger non-blanching bleeding patches in the skin
+reticulocyte | Young red cell; a raised count shows the marrow is responding

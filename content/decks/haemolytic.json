@@ -1,0 +1,127 @@
+[
+ [
+  "Thal",
+  "Defect in thalassaemia?",
+  "Reduced globin chain production."
+ ],
+ [
+  "Thal",
+  "β-thal major onset?",
+  "6 months."
+ ],
+ [
+  "Thal",
+  "Bone changes?",
+  "Frontal bossing, maxillary overgrowth, hair-on-end skull."
+ ],
+ [
+  "Thal",
+  "Electrophoresis in β-thal major?",
+  "HbF very high, HbA low/absent."
+ ],
+ [
+  "Thal",
+  "β-thal trait marker?",
+  "HbA₂ > 3.5%."
+ ],
+ [
+  "Thal",
+  "Pre-transfusion Hb target?",
+  "9.5–10.5 g/dL."
+ ],
+ [
+  "Thal",
+  "Chelation start?",
+  "Ferritin > 1000."
+ ],
+ [
+  "Thal",
+  "Oral chelator?",
+  "Deferasirox."
+ ],
+ [
+  "Thal",
+  "Main cause of death?",
+  "Cardiac iron overload."
+ ],
+ [
+  "Thal",
+  "Iron overload endocrine effects?",
+  "Diabetes, hypogonadism, short stature."
+ ],
+ [
+  "Thal",
+  "Curative treatment?",
+  "Bone marrow transplant."
+ ],
+ [
+  "Thal",
+  "4-gene α-thalassaemia?",
+  "Hb Bart's hydrops fetalis."
+ ],
+ [
+  "G6PD",
+  "Inheritance?",
+  "X-linked recessive."
+ ],
+ [
+  "G6PD",
+  "Triggers?",
+  "Fava beans, infections, primaquine, sulphonamides, naphthalene."
+ ],
+ [
+  "G6PD",
+  "Urine in G6PD crisis?",
+  "Dark (haemoglobinuria)."
+ ],
+ [
+  "G6PD",
+  "Film findings?",
+  "Bite cells, Heinz bodies."
+ ],
+ [
+  "G6PD",
+  "G6PD assay during crisis?",
+  "May be falsely normal."
+ ],
+ [
+  "HS",
+  "Inheritance of spherocytosis?",
+  "Autosomal dominant."
+ ],
+ [
+  "HS",
+  "Protein defect?",
+  "Spectrin/ankyrin."
+ ],
+ [
+  "HS",
+  "Lab clues?",
+  "Spherocytes, ↑ MCHC, Coombs negative."
+ ],
+ [
+  "HS",
+  "Test?",
+  "EMA binding (osmotic fragility)."
+ ],
+ [
+  "HS",
+  "Treatment of severe HS?",
+  "Splenectomy after 6 years."
+ ],
+ [
+  "Haemolysis",
+  "Intravascular haemolysis signs?",
+  "Haemoglobinuria, ↓ haptoglobin."
+ ],
+ [
+  "Haemolysis",
+  "Extravascular signs?",
+  "Splenomegaly, jaundice, gallstones."
+ ],
+ [
+  "Haemolysis",
+  "Coombs-positive haemolysis?",
+  "Autoimmune or ABO/Rh."
+ ]
+]

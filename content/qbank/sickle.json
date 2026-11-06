@@ -1,0 +1,72 @@
+[
+{
+"q": "The diagnostic test for sickle cell disease is:",
+"o": [
+"Sickling test",
+"Blood film",
+"Hb electrophoresis",
+"Osmotic fragility",
+"Coombs test"
+],
+"a": 2,
+"e": "Electrophoresis/HPLC.",
+"k": "hb electrophoresis",
+"s": "bank"
+},
+{
+"q": "A child with SCD has severe anaemia with very low reticulocytes. Cause:",
+"o": [
+"Sequestration",
+"Haemolytic crisis",
+"Aplastic crisis (parvovirus)",
+"Vaso-occlusion",
+"Hypersplenism"
+],
+"a": 2,
+"e": "Parvovirus stops the marrow.",
+"k": "parvovirus b19",
+"s": "bank"
+},
+{
+"q": "Hydroxyurea benefits SCD by:",
+"o": [
+"Lowering WBC only",
+"Raising HbF",
+"Chelating iron",
+"Preventing infection",
+"Lowering platelets"
+],
+"a": 1,
+"e": "Raises fetal Hb.",
+"k": "raises hbf",
+"s": "bank"
+},
+{
+"q": "The commonest first presentation of SCD in infancy is:",
+"o": [
+"Stroke",
+"Dactylitis",
+"Gallstones",
+"Leg ulcers",
+"Priapism"
+],
+"a": 1,
+"e": "Hand–foot syndrome.",
+"k": "dactylitis",
+"s": "bank"
+},
+{
+"q": "Salmonella osteomyelitis is characteristic of:",
+"o": [
+"Thalassaemia",
+"Sickle cell disease",
+"Haemophilia",
+"ITP",
+"Spherocytosis"
+],
+"a": 1,
+"e": "Infarcted bone + gut organisms.",
+"k": "salmonella osteomyelitis",
+"s": "bank"
+}
+]

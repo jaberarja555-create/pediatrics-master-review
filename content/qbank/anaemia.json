@@ -1,0 +1,58 @@
+[
+{
+"q": "The best single test for iron deficiency is:",
+"o": [
+"Serum iron",
+"TIBC",
+"Serum ferritin",
+"MCV",
+"Hb electrophoresis"
+],
+"a": 2,
+"e": "Ferritin reflects stores.",
+"k": "best single test",
+"s": "bank"
+},
+{
+"q": "The first sign of response to oral iron is:",
+"o": [
+"Hb rise in 2 days",
+"Reticulocytosis in 5–10 days",
+"MCV rise in 1 week",
+"Ferritin rise in 3 days",
+"Platelet rise"
+],
+"a": 1,
+"e": "Retics rise first.",
+"k": "reticulocytes rise",
+"s": "bank"
+},
+{
+"q": "A 1-year-old fed only cow's milk since 6 months is pale. Most likely:",
+"o": [
+"Thalassaemia",
+"Iron deficiency anaemia",
+"Folate deficiency",
+"Sickle cell",
+"Leukaemia"
+],
+"a": 1,
+"e": "Cow's milk is iron-poor and causes GI loss.",
+"k": "cow's milk before 1 year",
+"s": "bank"
+},
+{
+"q": "Microcytosis with high RBC count, normal RDW and raised HbA₂ suggests:",
+"o": [
+"Iron deficiency",
+"β-thalassaemia trait",
+"Chronic disease",
+"Lead poisoning",
+"Sideroblastic anaemia"
+],
+"a": 1,
+"e": "Thal trait.",
+"k": "β-thalassaemia trait",
+"s": "bank"
+}
+]

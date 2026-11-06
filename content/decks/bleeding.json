@@ -1,0 +1,137 @@
+[
+ [
+  "Pattern",
+  "Platelet bleeding pattern?",
+  "Skin and mucosal."
+ ],
+ [
+  "Pattern",
+  "Factor deficiency pattern?",
+  "Deep: joints, muscles."
+ ],
+ [
+  "Tests",
+  "Isolated ↑ APTT?",
+  "Haemophilia A/B."
+ ],
+ [
+  "Tests",
+  "↑ PT predominantly?",
+  "Vitamin K deficiency, liver disease."
+ ],
+ [
+  "Tests",
+  "DIC labs?",
+  "↓ platelets, ↑ PT/APTT, ↓ fibrinogen, ↑ D-dimer."
+ ],
+ [
+  "ITP",
+  "Typical ITP child?",
+  "Well, 2–10 yr, after viral infection, petechiae."
+ ],
+ [
+  "ITP",
+  "Exam findings in ITP?",
+  "No pallor, nodes or spleen."
+ ],
+ [
+  "ITP",
+  "CBC in ITP?",
+  "Isolated thrombocytopenia."
+ ],
+ [
+  "ITP",
+  "Most children need?",
+  "Observation."
+ ],
+ [
+  "ITP",
+  "Recovery rate?",
+  "80% within 6 months."
+ ],
+ [
+  "ITP",
+  "Fastest platelet rise?",
+  "IVIG 0.8–1 g/kg."
+ ],
+ [
+  "ITP",
+  "Avoid?",
+  "Aspirin, NSAIDs, IM injections, contact sport."
+ ],
+ [
+  "ITP",
+  "Marrow when?",
+  "Atypical features or before steroids."
+ ],
+ [
+  "Haemophilia",
+  "Inheritance?",
+  "X-linked recessive."
+ ],
+ [
+  "Haemophilia",
+  "Haemophilia A factor?",
+  "VIII."
+ ],
+ [
+  "Haemophilia",
+  "Haemophilia B factor?",
+  "IX (Christmas disease)."
+ ],
+ [
+  "Haemophilia",
+  "Severe factor level?",
+  "< 1%."
+ ],
+ [
+  "Haemophilia",
+  "Commonest bleed?",
+  "Haemarthrosis (knee)."
+ ],
+ [
+  "Haemophilia",
+  "Factor VIII dose formula?",
+  "kg × % rise ÷ 2."
+ ],
+ [
+  "Haemophilia",
+  "Mild A treatment?",
+  "Desmopressin."
+ ],
+ [
+  "Haemophilia",
+  "Avoid?",
+  "IM injections, aspirin."
+ ],
+ [
+  "Haemophilia",
+  "Long-term complication?",
+  "Haemophilic arthropathy."
+ ],
+ [
+  "vWD",
+  "Commonest inherited bleeding disorder?",
+  "Von Willebrand disease."
+ ],
+ [
+  "vWD",
+  "vWD inheritance?",
+  "Autosomal dominant."
+ ],
+ [
+  "vWD",
+  "vWD features?",
+  "Epistaxis, menorrhagia, dental bleeding."
+ ],
+ [
+  "DIC",
+  "Causes of DIC?",
+  "Sepsis, malaria, shock, snake bite, APL."
+ ],
+ [
+  "DIC",
+  "Treatment?",
+  "Treat cause, FFP, platelets, cryoprecipitate."
+ ]
+]

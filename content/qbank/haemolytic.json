@@ -1,0 +1,58 @@
+[
+{
+"q": "The main cause of death in β-thalassaemia major on transfusion is:",
+"o": [
+"Infection",
+"Cardiac iron overload",
+"Stroke",
+"Liver failure",
+"Bleeding"
+],
+"a": 1,
+"e": "Iron cardiomyopathy.",
+"k": "heart failure and arrhythmia",
+"s": "bank"
+},
+{
+"q": "Heinz bodies and bite cells after fava beans suggest:",
+"o": [
+"Spherocytosis",
+"G6PD deficiency",
+"Thalassaemia",
+"Sickle cell",
+"PNH"
+],
+"a": 1,
+"e": "Oxidant haemolysis.",
+"k": "heinz bodies",
+"s": "bank"
+},
+{
+"q": "Hereditary spherocytosis is characterised by all EXCEPT:",
+"o": [
+"Spherocytes",
+"Raised MCHC",
+"Splenomegaly",
+"Positive direct Coombs test",
+"Gallstones"
+],
+"a": 3,
+"e": "Coombs negative.",
+"k": "coombs negative",
+"s": "bank"
+},
+{
+"q": "Hair-on-end skull X-ray is seen in:",
+"o": [
+"Rickets",
+"Thalassaemia major",
+"Hydrocephalus",
+"Osteogenesis imperfecta",
+"Craniosynostosis"
+],
+"a": 1,
+"e": "Marrow expansion.",
+"k": "hair-on-end",
+"s": "bank"
+}
+]

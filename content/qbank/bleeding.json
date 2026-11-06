@@ -1,0 +1,58 @@
+[
+{
+"q": "A well 4-year-old has petechiae after a cold; no organomegaly; platelets 15 000, Hb and WBC normal. Diagnosis:",
+"o": [
+"Leukaemia",
+"ITP",
+"Aplastic anaemia",
+"HSP",
+"Haemophilia"
+],
+"a": 1,
+"e": "Classic acute ITP.",
+"k": "isolated thrombocytopenia",
+"s": "bank"
+},
+{
+"q": "Haemophilia A is deficiency of:",
+"o": [
+"Factor VII",
+"Factor VIII",
+"Factor IX",
+"Factor XI",
+"vWF"
+],
+"a": 1,
+"e": "VIII.",
+"k": "factor viii",
+"s": "bank"
+},
+{
+"q": "Prolonged APTT with normal PT and platelets in a boy suggests:",
+"o": [
+"vWD",
+"Haemophilia",
+"Vitamin K deficiency",
+"ITP",
+"DIC"
+],
+"a": 1,
+"e": "Intrinsic pathway factor deficiency.",
+"k": "prolonged aptt",
+"s": "bank"
+},
+{
+"q": "The commonest inherited bleeding disorder is:",
+"o": [
+"Haemophilia A",
+"Haemophilia B",
+"Von Willebrand disease",
+"Factor VII deficiency",
+"Glanzmann"
+],
+"a": 2,
+"e": "vWD.",
+"k": "commonest inherited bleeding",
+"s": "bank"
+}
+]

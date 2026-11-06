@@ -1,0 +1,58 @@
+[
+{
+"q": "The commonest childhood malignancy is:",
+"o": [
+"Wilms tumour",
+"Neuroblastoma",
+"ALL",
+"Brain tumour",
+"Lymphoma"
+],
+"a": 2,
+"e": "ALL.",
+"k": "acute lymphoblastic leukaemia (all)",
+"s": "bank"
+},
+{
+"q": "A poor prognostic factor in ALL is:",
+"o": [
+"Age 3 years",
+"WBC 10 000",
+"Female",
+"WBC > 50 000",
+"B-cell type"
+],
+"a": 3,
+"e": "High WBC.",
+"k": "wbc > 50 000",
+"s": "bank"
+},
+{
+"q": "CNS prophylaxis in ALL is given by:",
+"o": [
+"IV vincristine",
+"Intrathecal methotrexate",
+"Oral steroid",
+"Allopurinol",
+"IV cytarabine only"
+],
+"a": 1,
+"e": "Intrathecal methotrexate.",
+"k": "intrathecal methotrexate",
+"s": "bank"
+},
+{
+"q": "Tumour lysis syndrome causes all EXCEPT:",
+"o": [
+"Hyperkalaemia",
+"Hyperphosphataemia",
+"Hypercalcaemia",
+"Hyperuricaemia",
+"AKI"
+],
+"a": 2,
+"e": "Calcium falls.",
+"k": "↑ uric acid, ↑ k, ↑ po₄, ↓ ca",
+"s": "bank"
+}
+]

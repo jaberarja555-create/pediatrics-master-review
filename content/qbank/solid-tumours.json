@@ -1,0 +1,58 @@
+[
+{
+"q": "A well 3-year-old has a smooth flank mass that does not cross the midline and hypertension. Diagnosis:",
+"o": [
+"Neuroblastoma",
+"Wilms tumour",
+"Hydronephrosis",
+"Lymphoma",
+"Hepatoblastoma"
+],
+"a": 1,
+"e": "Wilms.",
+"k": "does not cross the midline",
+"s": "bank"
+},
+{
+"q": "Raised urinary VMA suggests:",
+"o": [
+"Wilms",
+"Neuroblastoma",
+"Burkitt",
+"Retinoblastoma",
+"Hodgkin"
+],
+"a": 1,
+"e": "Catecholamine metabolites.",
+"k": "vma, hva",
+"s": "bank"
+},
+{
+"q": "The commonest presentation of retinoblastoma is:",
+"o": [
+"Proptosis",
+"Leukocoria",
+"Blindness",
+"Red eye",
+"Nystagmus"
+],
+"a": 1,
+"e": "White pupillary reflex.",
+"k": "leukocoria",
+"s": "bank"
+},
+{
+"q": "Endemic Burkitt lymphoma typically presents as:",
+"o": [
+"Cervical nodes",
+"Jaw mass",
+"Mediastinal mass",
+"Testicular mass",
+"Skin rash"
+],
+"a": 1,
+"e": "Jaw/orbit in African children.",
+"k": "jaw / orbital mass",
+"s": "bank"
+}
+]

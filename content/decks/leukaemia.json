@@ -1,0 +1,122 @@
+[
+ [
+  "Basics",
+  "Commonest childhood cancer?",
+  "Leukaemia (ALL)."
+ ],
+ [
+  "Basics",
+  "ALL proportion?",
+  "About 80%."
+ ],
+ [
+  "Basics",
+  "Peak age of ALL?",
+  "2–5 years."
+ ],
+ [
+  "Clinical",
+  "Marrow failure features?",
+  "Pallor, infection, bleeding."
+ ],
+ [
+  "Clinical",
+  "Infiltration features?",
+  "Bone pain, HSM, nodes, testes, CNS."
+ ],
+ [
+  "Clinical",
+  "T-cell ALL feature?",
+  "Mediastinal mass."
+ ],
+ [
+  "Diagnosis",
+  "Diagnostic test?",
+  "Bone marrow aspirate."
+ ],
+ [
+  "Diagnosis",
+  "Blast threshold?",
+  "> 20–25%."
+ ],
+ [
+  "Prognosis",
+  "Good prognosis age?",
+  "1–10 years."
+ ],
+ [
+  "Prognosis",
+  "Poor WBC?",
+  "> 50 000."
+ ],
+ [
+  "Prognosis",
+  "Poor cytogenetics?",
+  "t(9;22) Philadelphia."
+ ],
+ [
+  "Treatment",
+  "Induction drugs?",
+  "Steroid, vincristine, asparaginase."
+ ],
+ [
+  "Treatment",
+  "CNS prophylaxis?",
+  "Intrathecal methotrexate."
+ ],
+ [
+  "Treatment",
+  "Maintenance?",
+  "6-mercaptopurine + methotrexate."
+ ],
+ [
+  "Treatment",
+  "Total duration?",
+  "2–3 years."
+ ],
+ [
+  "Treatment",
+  "PCP prophylaxis?",
+  "Cotrimoxazole."
+ ],
+ [
+  "AML",
+  "AML clue?",
+  "Auer rods, gum hypertrophy."
+ ],
+ [
+  "AML",
+  "APL treatment?",
+  "All-trans retinoic acid."
+ ],
+ [
+  "AML",
+  "Down syndrome risk?",
+  "ALL and AML."
+ ],
+ [
+  "TLS",
+  "Tumour lysis labs?",
+  "↑ K, ↑ PO₄, ↑ urate, ↓ Ca."
+ ],
+ [
+  "TLS",
+  "Prevention?",
+  "Hyperhydration + allopurinol."
+ ],
+ [
+  "FN",
+  "Febrile neutropenia definition?",
+  "Fever + neutrophils < 500/µL."
+ ],
+ [
+  "FN",
+  "Antibiotics within?",
+  "1 hour."
+ ],
+ [
+  "FN",
+  "Empirical antibiotic?",
+  "Piperacillin–tazobactam or cefepime/ceftazidime."
+ ]
+]
