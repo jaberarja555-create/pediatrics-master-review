@@ -1,0 +1,127 @@
+[
+ [
+  "AFP",
+  "Define AFP.",
+  "Sudden flaccid weakness in a child < 15 years."
+ ],
+ [
+  "AFP",
+  "Commonest cause now?",
+  "Guillain–Barré syndrome."
+ ],
+ [
+  "AFP",
+  "Surveillance samples?",
+  "Two stools 24 h apart within 14 days."
+ ],
+ [
+  "GBS",
+  "Trigger?",
+  "Respiratory or GI infection (Campylobacter)."
+ ],
+ [
+  "GBS",
+  "Weakness pattern?",
+  "Symmetric ascending, areflexia."
+ ],
+ [
+  "GBS",
+  "CSF?",
+  "High protein, normal cells."
+ ],
+ [
+  "GBS",
+  "Main danger?",
+  "Respiratory failure."
+ ],
+ [
+  "GBS",
+  "Treatment?",
+  "IVIG 2 g/kg."
+ ],
+ [
+  "GBS",
+  "Steroids?",
+  "No."
+ ],
+ [
+  "GBS",
+  "Ventilate when VC?",
+  "< 15–20 mL/kg."
+ ],
+ [
+  "TM",
+  "Transverse myelitis clue?",
+  "Sensory level, urinary retention."
+ ],
+ [
+  "Polio",
+  "Polio clue?",
+  "Asymmetric, fever, normal sensation."
+ ],
+ [
+  "DMD",
+  "Inheritance?",
+  "X-linked recessive."
+ ],
+ [
+  "DMD",
+  "Protein?",
+  "Dystrophin absent."
+ ],
+ [
+  "DMD",
+  "Gowers' sign?",
+  "Climbs up legs to stand."
+ ],
+ [
+  "DMD",
+  "Calf sign?",
+  "Pseudohypertrophy."
+ ],
+ [
+  "DMD",
+  "Screening test?",
+  "CK (very high)."
+ ],
+ [
+  "DMD",
+  "Wheelchair by?",
+  "About 12 years."
+ ],
+ [
+  "DMD",
+  "Causes of death?",
+  "Respiratory failure, cardiomyopathy."
+ ],
+ [
+  "DMD",
+  "Drug slowing progression?",
+  "Corticosteroids."
+ ],
+ [
+  "Becker",
+  "Becker vs Duchenne?",
+  "Reduced dystrophin, later, milder."
+ ],
+ [
+  "Floppy",
+  "Central hypotonia causes?",
+  "HIE, Down, Prader–Willi, hypothyroidism."
+ ],
+ [
+  "Floppy",
+  "Peripheral hypotonia signs?",
+  "Marked weakness, absent reflexes, alert."
+ ],
+ [
+  "SMA",
+  "SMA gene?",
+  "SMN1."
+ ],
+ [
+  "SMA",
+  "SMA type 1 sign?",
+  "Tongue fasciculations."
+ ]
+]

@@ -1,0 +1,58 @@
+[
+{
+"q": "The commonest cause of congenital obstructive hydrocephalus is:",
+"o": [
+"Dandy–Walker",
+"Aqueduct stenosis",
+"Meningitis",
+"Tumour",
+"IVH"
+],
+"a": 1,
+"e": "Aqueduct stenosis.",
+"k": "aqueduct stenosis",
+"s": "bank"
+},
+{
+"q": "The commonest complication of a VP shunt is:",
+"o": [
+"Infection",
+"Blockage",
+"Over-drainage",
+"Migration",
+"Seizures"
+],
+"a": 1,
+"e": "Blockage.",
+"k": "commonest · features",
+"s": "bank"
+},
+{
+"q": "Folic acid dose for a woman on valproate planning pregnancy is:",
+"o": [
+"0.4 mg",
+"1 mg",
+"5 mg",
+"10 mg",
+"Not needed"
+],
+"a": 2,
+"e": "High-risk dose.",
+"k": "5 mg daily",
+"s": "bank"
+},
+{
+"q": "Myelomeningocele is commonly associated with:",
+"o": [
+"Chiari II malformation and hydrocephalus",
+"Down syndrome",
+"Cleft palate",
+"Duodenal atresia",
+"Turner"
+],
+"a": 0,
+"e": "80–90% hydrocephalus.",
+"k": "chiari ii",
+"s": "bank"
+}
+]

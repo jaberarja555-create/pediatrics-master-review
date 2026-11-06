@@ -1,0 +1,58 @@
+[
+{
+"q": "CSF in Guillain–Barré syndrome shows:",
+"o": [
+"High cells, low glucose",
+"High protein with normal cells",
+"Normal",
+"Blood",
+"Oligoclonal bands only"
+],
+"a": 1,
+"e": "Albuminocytological dissociation.",
+"k": "albuminocytological dissociation",
+"s": "bank"
+},
+{
+"q": "Treatment of Guillain–Barré syndrome is:",
+"o": [
+"Steroids",
+"IVIG",
+"Antibiotics",
+"Pyridostigmine",
+"Antivirals"
+],
+"a": 1,
+"e": "IVIG or plasmapheresis.",
+"k": "ivig 2 g/kg",
+"s": "bank"
+},
+{
+"q": "A boy with Gowers' sign and calf hypertrophy most likely has:",
+"o": [
+"SMA",
+"Duchenne muscular dystrophy",
+"Myasthenia",
+"CP",
+"GBS"
+],
+"a": 1,
+"e": "DMD.",
+"k": "gowers' sign",
+"s": "bank"
+},
+{
+"q": "Tongue fasciculations in a floppy alert infant suggest:",
+"o": [
+"Down syndrome",
+"SMA",
+"Hypothyroidism",
+"HIE",
+"Prader–Willi"
+],
+"a": 1,
+"e": "Anterior horn cell disease.",
+"k": "tongue fasciculation",
+"s": "bank"
+}
+]

@@ -490,3 +490,10 @@ haematuria | Blood in the urine
 oliguria | Low urine output (< 1 mL/kg/h in infants, < 0.5 mL/kg/h in children)
 casts | Cylinders of cells or protein formed in the renal tubules, seen on urine microscopy
 schistocytes | Fragmented red cells, seen in microangiopathic haemolysis (HUS, DIC)
+hypsarrhythmia | Chaotic high-voltage EEG pattern of infantile spasms
+areflexia | Absent tendon reflexes
+fasciculation | Visible twitching of muscle fibres, a sign of lower motor neurone disease
+spasticity | Velocity-dependent increase in muscle tone from an upper motor neurone lesion
+choreoathetosis | Mixed jerky and writhing involuntary movements
+papilloedema | Swelling of the optic disc from raised intracranial pressure
+Gowers' sign | Using the hands to climb up the legs when rising from the floor

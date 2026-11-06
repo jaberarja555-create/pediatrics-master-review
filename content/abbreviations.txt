@@ -618,3 +618,24 @@ FENa | Fractional excretion of sodium
 MAHA | Microangiopathic haemolytic anaemia
 CAKUT | Congenital anomalies of the kidney and urinary tract
 PUV | Posterior urethral valves
+VP | Ventriculoperitoneal (shunt)
+SMA | Spinal muscular atrophy
+PVL | Periventricular leukomalacia
+FS | Febrile seizure
+DMD | Duchenne muscular dystrophy
+AED | Antiepileptic drug
+SJS | Stevens–Johnson syndrome
+NTD | Neural tube defect
+VC | Vital capacity
+SMN1 | Survival motor neuron 1 gene
+ILAE | International League Against Epilepsy
+ACTH | Adrenocorticotropic hormone
+TS | Tuberous sclerosis
+GTCS | Generalised tonic–clonic seizure
+JME | Juvenile myoclonic epilepsy
+ETV | Endoscopic third ventriculostomy
+CIC | Clean intermittent catheterisation
+MMC | Myelomeningocele
+L5 | Fifth lumbar vertebra
+DTP | Diphtheria, tetanus, pertussis vaccine
+OT | Occupational therapy
