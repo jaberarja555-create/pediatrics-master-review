@@ -1550,7 +1550,7 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .lko b,.lko span{font-family:'Cairo',var(--sans)}
 /* question bank (owner, Nov 2026: organised as numbered steps, compact chapter grid, start button always in view) */
 .qbf{gap:8px;padding:14px 14px 16px}
-.qbl{align-items:center;justify-content:flex-start;gap:9px;margin-top:10px;font-size:13px;color:#e8eef8;letter-spacing:.3px}
+.qbl{align-items:center;justify-content:flex-start;gap:9px;margin-top:10px;font-size:13px;color:var(--fg);letter-spacing:.3px}
 .qbl:first-child{margin-top:0}
 .qbl em{margin-left:auto;font:600 12px var(--sans);font-style:normal;color:var(--muted);text-transform:none;letter-spacing:0;display:flex;align-items:center;gap:6px}
 .qbl .qno{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font:900 12px var(--sans);color:#0b2c3a;background:linear-gradient(145deg,#f3d98b,#c99a3b);letter-spacing:0}
@@ -1567,8 +1567,16 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .qbch .l{font:650 12px/1.2 var(--sans)}.qbch small{font-size:11px}
 .qbnq{display:flex;gap:6px}.qbnq button{flex:1;border:1.5px solid var(--line);border-radius:10px;padding:7px 0;font:800 13.5px var(--sans);font-variant-numeric:tabular-nums}
 .qbnq button.on{border-color:#d8b35c;background:rgba(216,179,92,.14);color:#f3d98b}
-.qbbar{position:sticky;bottom:0;z-index:3;margin:10px -2px 0;padding:10px 2px 12px;background:linear-gradient(to top,var(--bg,#0a1a24) 70%,transparent)}
+.qbbar{position:sticky;bottom:0;z-index:3;margin:10px -2px 0;padding:10px 2px 12px;background:linear-gradient(to top,var(--paper) 70%,transparent)}
 .qbbar .qbgo{height:auto;min-height:50px;padding:8px 14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
   background:linear-gradient(145deg,#f3d98b 0%,#c99a3b 100%);color:#0b2c3a;font:900 16px var(--sans);border:0;box-shadow:0 4px 14px rgba(0,0,0,.35)}
 .qbbar .qbgo small{font:700 11.5px var(--sans);opacity:.8}
 .qbn input{accent-color:#c99a3b}
+
+/* flashcards and question bank: day and eye-comfort looks (owner, Nov 2026); night = the dark app colours */
+#cards.sday,#qbank.sday{--paper:#f2f5fa;--card:#ffffff;--line:#d6dfec;--fg:#0b2c3a;--muted:#56627a;--rose-soft:#f6e6eb;--ink:#0b2c3a;color-scheme:light;background:var(--paper);color:var(--fg)}
+#cards.seye,#qbank.seye{--paper:#f3ead6;--card:#fbf5e7;--line:#e0d2b2;--fg:#3a2f1f;--muted:#6e5e44;--rose-soft:#f2e1cf;--ink:#3a2f1f;color-scheme:light;background:var(--paper);color:var(--fg)}
+:is(#cards,#qbank):is(.sday,.seye) .qbpool button.on span,:is(#cards,#qbank):is(.sday,.seye) .qbnq button.on{color:#8a6416}
+:is(#cards,#qbank):is(.sday,.seye) .qbpt{color:#a47a22}
+:is(#cards,#qbank):is(.sday,.seye) .chip.on{background:#0b2c3a;color:#fff;border-color:#0b2c3a}
+#cards.seye .chip.on,#qbank.seye .chip.on{background:#5a4526;border-color:#5a4526}

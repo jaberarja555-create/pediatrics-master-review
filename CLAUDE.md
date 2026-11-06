@@ -170,6 +170,8 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
 
 ## Subscription (free trial + activation codes)
 - **Bankak (owner, Nov 2026, all books):** account 4674587, name سعاد عبدالكريم (`access.bankak_account` / `bankak_name`).
+- **Flashcards and QBank looks (owner, Nov 2026):** the top-bar colour button also shows on Cards and QBank: day / eye comfort / night
+  (night = dark default), saved in `prr-smode`, separate from the reader's `prr-bmode` (classes `.sday`/`.seye` on #cards and #qbank).
 - **Question bank screen (owner):** four numbered steps (Mode · Questions · Chapters by part in a two-column grid · Number with 10/20/40/All),
   gold selection, sticky gold Start bar showing count and mode; re-render keeps the scroll position.
 - `book.json` → `access`: free topics (owner's model, from the obstetrics app: the first topic of each chapter; `free_label` is the short Arabic line shown instead of the topic list; the drugs chapter is not free) with ALL their flashcards / questions (`"all"`); a chapter whose topics are all free also has a free Rapid Review;

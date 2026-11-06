@@ -251,9 +251,14 @@ var BMODES={day:{l:'نهار',d:'صفحات بيضاء',i:'<circle cx="12" cy="1
   night:{l:'ليلي',d:'صفحات غامقة',i:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>'}};
 var BMODE=BMODES[st('bmode')]?st('bmode'):'day';
 function bmSvg(m){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+BMODES[m].i+'</svg>'}
-function setNight(){var r=$('reader');r.classList.toggle('night',BMODE==='night');r.classList.toggle('eye',BMODE==='eye');var b=$('themeBtn');b.innerHTML=bmSvg(BMODE);b.setAttribute('aria-label','Page colour: '+BMODE);b.title=BMODES[BMODE].l}setNight();
+/* flashcards and question bank have their own look (owner, Nov 2026): day, eye comfort or night (the dark default); saved in prr-smode */
+var SMODE=BMODES[st('smode')]?st('smode'):'night',CURV='home';
+function studyV(){return CURV==='cards'||CURV==='qbank'}
+function setNight(){var r=$('reader');r.classList.toggle('night',BMODE==='night');r.classList.toggle('eye',BMODE==='eye');
+  ['cards','qbank'].forEach(function(id){var v=$(id);if(v){v.classList.toggle('sday',SMODE==='day');v.classList.toggle('seye',SMODE==='eye')}});
+  var m=studyV()?SMODE:BMODE,b=$('themeBtn');b.innerHTML=bmSvg(m);b.setAttribute('aria-label','Colour: '+m);b.title=BMODES[m].l}setNight();
 var bmMenu=document.createElement('div');bmMenu.className='bmmenu';bmMenu.hidden=true;bmMenu.lang='ar';document.body.appendChild(bmMenu);
-function bmOpen(){bmMenu.innerHTML='<b>لون الصفحات</b>'+Object.keys(BMODES).map(function(m){return '<button type="button" data-bm="'+m+'" class="'+(m===BMODE?'cur':'')+'">'+bmSvg(m)+'<span>'+BMODES[m].l+'<small>'+BMODES[m].d+'</small></span></button>'}).join('');
+function bmOpen(){var sv=studyV(),cur=sv?SMODE:BMODE,SD={day:'خلفية فاتحة',eye:'لون دافئ مريح للعين',night:'خلفية غامقة'};bmMenu.innerHTML='<b>'+(sv?'لون الشاشة':'لون الصفحات')+'</b>'+Object.keys(BMODES).map(function(m){return '<button type="button" data-bm="'+m+'" class="'+(m===cur?'cur':'')+'">'+bmSvg(m)+'<span>'+BMODES[m].l+'<small>'+(sv?SD[m]:BMODES[m].d)+'</small></span></button>'}).join('');
   var r=$('themeBtn').getBoundingClientRect();bmMenu.style.top=(r.bottom+6)+'px';bmMenu.style.right=Math.max(8,innerWidth-r.right)+'px';bmMenu.hidden=false}
 /* Home day / night colours (owner, Nov 2026): sun/moon button in the top bar on Home, saved in prr-hmode */
 var HMODE=st('hmode')==='night'?'night':'day';
@@ -263,7 +268,7 @@ function setHm(){$('home').classList.toggle('dark',HMODE==='night');$('hmMode').
   $('hmMode').title=HMODE==='night'?'Day colours':'Night colours'}
 $('hmMode').onclick=function(){HMODE=HMODE==='night'?'day':'night';st('hmode',HMODE);setHm()};setHm();
 function toggleDark(){if(bmMenu.hidden)bmOpen();else bmMenu.hidden=true}
-bmMenu.addEventListener('click',function(e){var b=e.target.closest('[data-bm]');if(!b)return;BMODE=b.dataset.bm;st('bmode',BMODE);setNight();bmMenu.hidden=true});
+bmMenu.addEventListener('click',function(e){var b=e.target.closest('[data-bm]');if(!b)return;if(studyV()){SMODE=b.dataset.bm;st('smode',SMODE)}else{BMODE=b.dataset.bm;st('bmode',BMODE)}setNight();bmMenu.hidden=true});
 document.addEventListener('click',function(e){if(!bmMenu.hidden&&!e.target.closest('.bmmenu,#themeBtn'))bmMenu.hidden=true});
 /* hidden rail: its show button sits in the top bar (takes no room from the page and covers no text) */
 function setRail(off){$('rbar').classList.toggle('off',off);$('rbShow').hidden=!off||$('reader').hidden;st('rail',off?'off':'on');setTimeout(railSpace,off?0:60)}setRail(st('rail')==='off');
@@ -272,7 +277,7 @@ $('rbHide').onclick=function(){setRail(true)};$('rbShow').onclick=function(){set
 /* ---------- views ---------- */
 var views=['home','reader','cards','search','qbank','lectures'];
 function show(v){if(v!=='reader'&&typeof setImm==='function')setImm(false);views.forEach(function(x){$(x).hidden=x!==v});[].forEach.call($('tabs').children,function(b){b.classList.toggle('on',b.dataset.go===v)});
-  $('backBtn').hidden=v==='home';$('hmMode').hidden=v!=='home';$('themeBtn').hidden=v!=='reader';bmMenu.hidden=true;$('rbShow').hidden=v!=='reader'||!$('rbar').classList.contains('off');hideBar();
+  $('backBtn').hidden=v==='home';$('hmMode').hidden=v!=='home';$('themeBtn').hidden=!(v==='reader'||v==='cards'||v==='qbank');CURV=v;setNight();bmMenu.hidden=true;$('rbShow').hidden=v!=='reader'||!$('rbar').classList.contains('off');hideBar();
   if(v==='home'){$('subtitle').textContent=META.edition;refreshHome()}
   if(v==='cards'){$('subtitle').textContent='Flashcards';if(!started)startDeck(curDeck)}
   if(v==='search'){$('subtitle').textContent='Search the book';setTimeout(function(){$('q').focus()},50)}
