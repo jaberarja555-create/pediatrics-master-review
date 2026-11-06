@@ -503,3 +503,8 @@ thelarche | Onset of breast development
 menarche | First menstrual period
 virilisation | Development of male features from androgen excess
 ambiguous genitalia | External genitalia that are not clearly male or female
+non-disjunction | Failure of chromosomes to separate at cell division, giving an extra or missing chromosome
+consanguinity / consanguineous | Marriage between blood relatives (e.g. cousins)
+uveitis | Inflammation of the uveal tract of the eye
+angio-oedema | Swelling of the deep skin layers (lips, eyelids, tongue)
+anaphylaxis | Severe, life-threatening systemic allergic reaction

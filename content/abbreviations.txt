@@ -653,3 +653,25 @@ T3 | Triiodothyronine
 17-OHP | 17-hydroxyprogesterone
 G2 | Tanner genital stage 2
 BP3 | IGF binding protein 3
+AD | Autosomal dominant
+NBT | Nitroblue tetrazolium test
+DHR | Dihydrorhodamine test
+CGD | Chronic granulomatous disease
+RF | Rheumatoid factor
+IL | Interleukin
+CVID | Common variable immunodeficiency
+BMT | Bone marrow transplant
+CD8 | CD8 cytotoxic T lymphocytes
+CD19 | CD19 B lymphocytes
+CH50 | Total haemolytic complement
+CCP | Cyclic citrullinated peptide (antibody)
+DMARD | Disease-modifying antirheumatic drug
+SCFE | Slipped capital femoral epiphysis
+PKU | Phenylketonuria
+MELAS | Mitochondrial encephalopathy, lactic acidosis and stroke-like episodes
+CGG | Cytosine–guanine–guanine (repeat)
+PAPP-A | Pregnancy-associated plasma protein A
+NF1 | Neurofibromatosis type 1
+CVS | Chorionic villus sampling
+HAE | Hereditary angio-oedema
+dsDNA | Double-stranded DNA
