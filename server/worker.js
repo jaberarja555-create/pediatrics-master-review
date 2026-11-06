@@ -154,6 +154,15 @@ async function devOf(env, body) {
   if (!r.devices.find(x => x.dev === dev)) return { res: json({ ok: false, reason: 'reset' }) };
   return { code };
 }
+// POST /release { code, dev, token }: the student removes the code from this device himself (owner, Nov 2026), so the place
+// is free for another device. The device proves itself with its token, as for sync.
+async function release(req, env) {
+  const body = await req.json().catch(() => ({}));
+  const a = await devOf(env, body); if (a.res) return a.res;
+  const r = row(await one(env, a.code)), dev = norm(body.dev);
+  await setDevices(env, a.code, r.devices.filter(x => x.dev !== dev));
+  return json({ ok: true });
+}
 // POST /img { code, dev, token, op: 'put' | 'get' | 'list', id?, data? (JPEG as a data URL) }
 async function img(req, env) {
   const body = await req.json().catch(() => ({}));
@@ -210,6 +219,7 @@ export default {
       if (path === '/sync' && req.method === 'POST') return await sync(req, env);
       if (path === '/img' && req.method === 'POST') return await img(req, env);
       if (path === '/trial' && req.method === 'POST') return await trial(req, env);
+      if (path === '/release' && req.method === 'POST') return await release(req, env);
       if (path.startsWith('/api/')) return await api(req, env, path);
     } catch (e) { return json({ error: 'Server error: ' + e.message, reason: 'server' }, 500) }
     if (path === '/admin' || path === '/admin/') return new Response(PAGE(env, url.origin + '/'), { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });

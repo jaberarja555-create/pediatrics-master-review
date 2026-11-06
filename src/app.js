@@ -68,7 +68,7 @@ function subHtml(code){var wa=(ACC.whatsapp||'').replace(/[^0-9]/g,''),who=esc(A
   (wa?'<a class="btn wa" id="waBtn" href="https://wa.me/'+wa+'?text='+encodeURIComponent(msg)+'" target="_blank" rel="noopener">اضغط هنا لمراسلة '+who+' في واتساب</a>':'')+
   '<b class="ssth">عندك كود التفعيل؟</b>'+
   '<input id="actIn" class="actin" dir="ltr" placeholder="PMR-XXXX-XXXX" autocomplete="off" autocapitalize="characters" spellcheck="false" value="'+esc(code||'')+'"><button type="button" class="btn" id="actGo">تفعيل</button><p class="muted" id="actMsg"></p></div>'}
-var ACT_ERR={unknown:'هذا الكود غير صحيح. تأكد منه واكتبه كما وصلك.',off:'هذا الكود موقوف. تواصل مع '+(ACC.contact_name||'المؤلفين')+'.',full:'هذا الكود مفعّل على جهازين من قبل. إذا غيّرت جهازك فتواصل مع '+(ACC.contact_name||'المؤلفين')+'.',server:'حدثت مشكلة في الخادم. حاول مرة أخرى بعد قليل.',net:'لا يوجد اتصال بالإنترنت. التفعيل يحتاج إلى الإنترنت مرة واحدة فقط؛ تأكد من الاتصال وحاول مرة أخرى.',here:'التفعيل يعمل من رابط الكتاب الأصلي فقط.'};
+var ACT_ERR={unknown:'هذا الكود غير صحيح. تأكد منه واكتبه كما وصلك.',off:'هذا الكود موقوف. تواصل مع '+(ACC.contact_name||'المؤلفين')+'.',full:'هذا الكود مفعّل على جهازين من قبل. لتنقله إلى هذا الجهاز: افتح الكتاب في الجهاز القديم، ثم «الاشتراك» ← «إزالة الكود من هذا الجهاز». إذا فقدت الجهاز القديم فتواصل مع '+(ACC.contact_name||'المؤلفين')+'.',server:'حدثت مشكلة في الخادم. حاول مرة أخرى بعد قليل.',net:'لا يوجد اتصال بالإنترنت. التفعيل يحتاج إلى الإنترنت مرة واحدة فقط؛ تأكد من الاتصال وحاول مرة أخرى.',here:'التفعيل يعمل من رابط الكتاب الأصلي فقط.'};
 function activate(code){var msg=$('actMsg'),go=$('actGo');code=(code||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
   if(!/^PMR[A-Z0-9]{8}$/.test(code)){msg.textContent='يكون الكود بهذا الشكل: PMR-XXXX-XXXX';return}
   if(SRV==null){msg.textContent=ACT_ERR.here;return}
@@ -93,7 +93,22 @@ function openChoose(){
   $('chFree').onclick=function(){choiceSnd('free');st('chz','1');setMust(false);$('sheet').hidden=true};
   if($('chTrial'))$('chTrial').onclick=function(){this.disabled=true;startTrial()};
   $('chPaid').onclick=function(){choiceSnd('paid');openSub()};$('chCode').onclick=function(){choiceSnd('code');openSub();setTimeout(function(){var x=$('actIn');if(x){x.scrollIntoView({block:'center'});x.focus()}},250)}}
-function openSub(code){if(!LOCKED&&!INTRIAL){openSheet('الاشتراك','<div class="ar" dir="rtl"><p class="lead">هذا الجهاز مفعّل والكتاب مفتوح كاملًا. شكرًا لك!</p>'+(st('code')?'<div class="devc"><span>كود التفعيل</span><b dir="ltr">'+esc(st('code'))+'</b></div>':'')+'</div>');return}
+/* the student removes the code from this device himself (owner, Nov 2026): first tap asks to confirm, the second removes it
+   (after a last sync, so nothing is lost); the device then locks and the code can open another device */
+function releaseCode(){var b=$('relGo'),m=$('relMsg');
+  if(!b.dataset.sure){b.dataset.sure='1';b.textContent='تأكيد: أزل الكود من هذا الجهاز';b.classList.add('sure');m.textContent='سيُقفل الكتاب في هذا الجهاز، ويمكنك استعمال الكود في جهاز آخر.';return}
+  if(SRV==null){m.textContent='هذا يعمل من رابط الكتاب الأصلي فقط.';return}
+  if(navigator.onLine===false){m.textContent='يحتاج هذا إلى الإنترنت. تأكد من الاتصال وحاول مرة أخرى.';return}
+  b.disabled=true;m.textContent='جارٍ الحفظ والإزالة…';
+  (typeof syncNow==='function'?syncNow().catch(function(){}):Promise.resolve()).then(function(){
+    return fetch(SRV.replace(/\/$/,'')+'/release',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({code:st('code'),dev:DEV,token:st('act')})}).then(function(r){return r.json()})})
+  .then(function(j){if(!j||(!j.ok&&j.reason!=='reset'&&j.reason!=='unknown')){b.disabled=false;m.textContent='تعذّرت الإزالة. حاول مرة أخرى بعد قليل.';return}
+    choiceSnd('free');m.textContent='تمت إزالة الكود من هذا الجهاز.';setTimeout(relock,900)})
+  .catch(function(){b.disabled=false;m.textContent='لا يوجد اتصال بالإنترنت. حاول مرة أخرى.'})}
+function openSub(code){if(!LOCKED&&!INTRIAL){openSheet('الاشتراك','<div class="ar" dir="rtl"><p class="lead">هذا الجهاز مفعّل والكتاب مفتوح كاملًا. شكرًا لك!</p>'+(st('code')?'<div class="devc"><span>كود التفعيل</span><b dir="ltr">'+esc(st('code'))+'</b></div>'+
+    '<div class="relx"><b class="ssth">تغيير الجهاز</b><p class="muted">إذا أردت أن تنقل الكتاب إلى جهاز آخر، أزل الكود من هذا الجهاز أولًا، ثم اكتبه في الجهاز الجديد. ملاحظاتك وتظليلك وتقدّمك محفوظة مع الكود وتظهر في الجهاز الجديد.</p>'+
+    '<button type="button" class="btn relb" id="relGo">إزالة الكود من هذا الجهاز</button><p class="muted" id="relMsg"></p></div>':'')+'</div>');
+  if($('relGo'))$('relGo').onclick=releaseCode;return}
   openSheet('الاشتراك في الكتاب',(TRIALNEW?'<button type="button" class="chback ar" dir="rtl" data-choose="1">→ الرجوع إلى الخيارات</button>':'')+subHtml(code));
   $('actGo').onclick=function(){activate($('actIn').value)};$('actIn').onkeydown=function(e){if(e.key==='Enter')activate(this.value)};
   if(code)activate(code)}
@@ -372,7 +387,7 @@ function refreshHome(){
 $('pill').textContent=META.pill;
 $('contBtn').onclick=function(){goIdx(lastPage())};
 $('coverBtn').onclick=function(){goPage(0)};
-if(LOCKED||INTRIAL){$('trialCard').hidden=false;var tcu=function(){$('trialCard').querySelector('b').textContent=INTRIAL?'الفترة التجريبية · '+trialTxt():TRIALNEW?'جرّب الكتاب كله · '+trialDur()+' مجانًا':'النسخة المجانية';$('trialTxt').innerHTML=INTRIAL?'الكتاب كله مفتوح لك الآن. بعد انتهاء الفترة يبقى '+esc(ACC.free_label||'جزء من الكتاب')+' مفتوحًا.':TRIALNEW?'الكتاب كله مع كل الأدوات مجانًا، أو اشترك في النسخة المدفوعة.':freeMsg()+' اشترك لتفتح الكتاب كاملًا.';$('trialCard').querySelector('i').textContent=TRIALNEW?'اضغط هنا للاختيار':'اضغط هنا للاشتراك'};tcu();if(INTRIAL)setInterval(tcu,30000)}$('hmToc').onclick=function(){$('tocBtn').click()};
+if(LOCKED||INTRIAL){$('trialCard').hidden=false;var tcu=function(){$('trialCard').querySelector('b').textContent=INTRIAL?'الفترة التجريبية · '+trialTxt():TRIALNEW?'جرّب الكتاب كله · '+trialDur()+' مجانًا':'النسخة المجانية';$('trialTxt').innerHTML=INTRIAL?'الكتاب كله مفتوح لك الآن. بعد انتهاء الفترة يبقى '+esc(ACC.free_label||'جزء من الكتاب')+' مفتوحًا.':TRIALNEW?'الكتاب كله مع كل الأدوات مجانًا، أو اشترك في النسخة المدفوعة.':freeMsg()+' اشترك لتفتح الكتاب كاملًا.';$('trialCard').querySelector('i').textContent=TRIALNEW?'اضغط هنا للاختيار':'اضغط هنا للاشتراك'};tcu();if(INTRIAL)setInterval(tcu,30000)}else if(!REVIEW&&st('code')){$('trialCard').hidden=false;$('trialCard').classList.add('subd');$('trialCard').querySelector('b').textContent='أنت مشترك · الكتاب مفتوح كاملًا';$('trialTxt').innerHTML='الكود <bdi dir="ltr">'+esc(st('code'))+'</bdi> · لنقل الكتاب إلى جهاز آخر';$('trialCard').querySelector('i').textContent='إدارة الجهاز'}$('hmToc').onclick=function(){$('tocBtn').click()};
 $('rrTool').onclick=function(){goPage(META.rr-1)};
 
 /* ---------- sheet: contents and highlights ---------- */
@@ -988,7 +1003,7 @@ document.addEventListener('scroll',function(){if(tipFor)hideTip()},true);
 
 /* ---------- search ---------- */
 var TEXT=wraps.map(function(pw){return pw.textContent.replace(/\s+/g,' ')});
-$('qchips').innerHTML=META.chips.map(function(c){return '<button class="chip" type="button">'+esc(c)+'</button>'}).join('');
+$('qchips').innerHTML=META.chips.map(function(c){return '<button class="chip" type="button">'+esc(c)+'</button>'+'<button type="button" class="chip" data-sub="1">Device</button>'}).join('');
 $('qchips').onclick=function(e){var b=e.target.closest('.chip');if(b){$('q').value=b.textContent;runSearch()}};
 function runSearch(){var q=$('q').value.trim();var out=$('results');if(q.length<2){out.innerHTML='<p class="empty">Type at least 2 letters. Every page of the book is searched.</p>';return}
   var ql=q.toLowerCase(),hits=[];TEXT.forEach(function(t,i){var tl=t.toLowerCase(),k=tl.indexOf(ql),n=0;if(k<0)return;var c=k;while(c>=0){n++;c=tl.indexOf(ql,c+1)}

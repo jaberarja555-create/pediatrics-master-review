@@ -1639,3 +1639,8 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .chback{display:block;width:100%;margin:0 0 10px;padding:10px 12px;border-radius:12px;border:1px solid #e6c378;background:rgba(243,217,139,.12);color:inherit;font:700 14px/1.4 'Noto Sans Arabic',Inter,sans-serif;text-align:right;cursor:pointer}
 /* subscription price in gold (owner, Nov 2026: not red) */
 .subx .price,.subin .price{font-size:20px!important;color:#f3d98b!important;background:linear-gradient(120deg,rgba(201,154,59,.18),rgba(243,217,139,.10));border:1px solid #c99a3b;border-radius:14px;padding:8px 12px;text-shadow:0 1px 2px rgba(0,0,0,.25)}
+
+/* remove the code from this device (owner, Nov 2026) */
+.relx{margin-top:14px;padding-top:12px;border-top:1px solid rgba(201,154,59,.35)}
+.btn.relb{background:transparent!important;border:1.5px solid #c99a3b;color:#f3d98b!important;width:100%}
+.btn.relb.sure{background:linear-gradient(120deg,#c99a3b,#f3d98b)!important;color:#0e2547!important}
