@@ -256,8 +256,8 @@ The owner works from two Claude accounts (subscription limits). Both must contin
 - **Surgery** (`surgery-rapid-review`): branch `claude/surgery-rapid-review-app-eoho37` (Cloudflare Workers Builds deploy on push).
 - **Obstetrics** (`obstetrics-master-review`): branch `main` (GitHub Actions deploy on push).
 - Before starting in a new session: `git pull`, read this file, then `git log --oneline -15` to see the last work.
-- **Deploy secrets are not in git:** the other account's cloud environment needs CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID and
-  PMR_ADMIN_PASSWORD (same values as this account's environment) for `bash server/deploy.sh`; Obstetrics/Surgery deploy by themselves on push.
+- **Deploys:** all three books deploy by themselves on push (Pediatrics from `main` via Cloudflare Workers Builds). Only the fallback
+  `bash server/deploy.sh` needs CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID and PMR_ADMIN_PASSWORD in the session's environment.
 - **Review artifact:** https://claude.ai/artifact/TCV2sVb8tfxrEzcET5D1jX belongs to the first account; the other account cannot
   update it, so it publishes its own review copy (write its address here) and the owner uses whichever is newer.
 - **State at handover:** all 15 chapters are in the book; chapters 1–3 rewritten in the junior style with covers for 1–5;
