@@ -464,3 +464,9 @@ pyloromyotomy | Splitting the thickened pyloric muscle down to the mucosa
 steatorrhoea | Pale, bulky, greasy, offensive stools from fat malabsorption
 villous atrophy | Flattening of the small-bowel villi, as in coeliac disease
 posseting | Small effortless regurgitation of milk after feeds
+stridor | Harsh, mainly inspiratory noise from narrowing of the larynx or trachea
+wheeze | Musical, mainly expiratory noise from narrowed small airways
+empyema | Pus in the pleural space
+laryngomalacia | Floppy laryngeal tissue that collapses on inspiration in infants
+quinsy | Peritonsillar abscess
+spacer | Chamber attached to an inhaler so the child can breathe in the drug easily

@@ -1,0 +1,44 @@
+[
+{
+"q": "The commonest cause of bronchiolitis is:",
+"o": [
+"Adenovirus",
+"RSV",
+"Influenza",
+"Mycoplasma",
+"Parainfluenza"
+],
+"a": 1,
+"e": "RSV in 70–80%.",
+"k": "respiratory syncytial virus",
+"s": "bank"
+},
+{
+"q": "The main treatment of bronchiolitis is:",
+"o": [
+"Salbutamol",
+"Steroids",
+"Oxygen and feeding support",
+"Antibiotics",
+"Adrenaline"
+],
+"a": 2,
+"e": "Supportive.",
+"k": "supportive",
+"s": "bank"
+},
+{
+"q": "The first sign of bronchiolitis in a young preterm infant may be:",
+"o": [
+"Fever",
+"Apnoea",
+"Stridor",
+"Rash",
+"Vomiting"
+],
+"a": 1,
+"e": "Apnoea in young infants.",
+"k": "apnoea may be the first sign",
+"s": "bank"
+}
+]

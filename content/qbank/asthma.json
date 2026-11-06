@@ -1,0 +1,58 @@
+[
+{
+"q": "The most dangerous sign in acute asthma is:",
+"o": [
+"Loud wheeze",
+"Silent chest",
+"Cough",
+"Tachycardia 120",
+"RR 28"
+],
+"a": 1,
+"e": "Silent chest = little air movement.",
+"k": "silent chest",
+"s": "bank"
+},
+{
+"q": "The dose of IV magnesium sulphate in severe asthma is:",
+"o": [
+"4 mg/kg",
+"10 mg/kg",
+"40 mg/kg",
+"100 mg/kg",
+"200 mg/kg"
+],
+"a": 2,
+"e": "40 mg/kg over 20 min (max 2 g).",
+"k": "40 mg/kg iv",
+"s": "bank"
+},
+{
+"q": "The preventer of choice in persistent childhood asthma is:",
+"o": [
+"Oral prednisolone",
+"Inhaled corticosteroid",
+"Oral salbutamol",
+"Theophylline",
+"Antihistamine"
+],
+"a": 1,
+"e": "Low-dose ICS at step 2.",
+"k": "daily low-dose inhaled corticosteroid",
+"s": "bank"
+},
+{
+"q": "A child's asthma is poorly controlled. First check:",
+"o": [
+"Chest X-ray",
+"Inhaler technique",
+"IgE level",
+"Sweat test",
+"Spirometry"
+],
+"a": 1,
+"e": "Technique and adherence are the commonest problems.",
+"k": "inhaler technique",
+"s": "bank"
+}
+]

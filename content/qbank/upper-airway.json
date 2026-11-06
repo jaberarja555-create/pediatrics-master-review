@@ -1,0 +1,72 @@
+[
+{
+"q": "A 2-year-old has barking cough and stridor at night after a cold. Treatment:",
+"o": [
+"IV ceftriaxone",
+"Oral dexamethasone",
+"Salbutamol",
+"Immediate intubation",
+"Antihistamine"
+],
+"a": 1,
+"e": "Croup: steroid.",
+"k": "dexamethasone 0.15–0.6 mg/kg",
+"s": "bank"
+},
+{
+"q": "A toxic, drooling 4-year-old sitting forward with stridor. The first step is:",
+"o": [
+"Examine the throat",
+"Lateral neck X-ray",
+"Secure the airway with an anaesthetist",
+"Blood culture",
+"IV cannula at once"
+],
+"a": 2,
+"e": "Epiglottitis: do not upset; airway first.",
+"k": "airway first",
+"s": "bank"
+},
+{
+"q": "The commonest cause of stridor in a young infant since birth is:",
+"o": [
+"Subglottic stenosis",
+"Laryngomalacia",
+"Vocal cord palsy",
+"Vascular ring",
+"Croup"
+],
+"a": 1,
+"e": "Floppy larynx resolving by 2 years.",
+"k": "laryngomalacia",
+"s": "bank"
+},
+{
+"q": "A sudden cough while eating peanuts with right-sided wheeze. Next step:",
+"o": [
+"Salbutamol",
+"Antibiotics",
+"Rigid bronchoscopy",
+"Steroids",
+"Physiotherapy"
+],
+"a": 2,
+"e": "Foreign body removal.",
+"k": "rigid bronchoscopy",
+"s": "bank"
+},
+{
+"q": "Streptococcal tonsillitis is treated with penicillin for 10 days mainly to prevent:",
+"o": [
+"Quinsy",
+"Rheumatic fever",
+"PSGN",
+"Scarlet fever",
+"Otitis"
+],
+"a": 1,
+"e": "Eradication prevents rheumatic fever.",
+"k": "rheumatic fever",
+"s": "bank"
+}
+]

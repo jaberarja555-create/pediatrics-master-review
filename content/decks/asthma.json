@@ -1,0 +1,117 @@
+[
+ [
+  "Definition",
+  "Define asthma.",
+  "Chronic airway inflammation with reversible obstruction."
+ ],
+ [
+  "Diagnosis",
+  "Spirometry criterion?",
+  "FEV₁ rise ≥ 12% after salbutamol."
+ ],
+ [
+  "Diagnosis",
+  "Common triggers?",
+  "Viral infections, dust, smoke, cold, exercise."
+ ],
+ [
+  "Severity",
+  "Severe attack features?",
+  "Cannot complete sentences, SpO₂ < 92%, PEF 33–50%."
+ ],
+ [
+  "Severity",
+  "Life-threatening signs?",
+  "Silent chest, cyanosis, exhaustion, PEF < 33%."
+ ],
+ [
+  "Severity",
+  "Normal PaCO₂ in severe attack means?",
+  "Tiring: impending failure."
+ ],
+ [
+  "Acute",
+  "First treatment?",
+  "Oxygen + salbutamol."
+ ],
+ [
+  "Acute",
+  "Nebulised salbutamol dose?",
+  "2.5 mg < 5 yr; 5 mg ≥ 5 yr."
+ ],
+ [
+  "Acute",
+  "Ipratropium dose?",
+  "250 µg nebulised."
+ ],
+ [
+  "Acute",
+  "Oral steroid?",
+  "Prednisolone 1–2 mg/kg × 3–5 days."
+ ],
+ [
+  "Acute",
+  "IV steroid?",
+  "Hydrocortisone 4 mg/kg 6-hourly."
+ ],
+ [
+  "Acute",
+  "IV magnesium dose?",
+  "40 mg/kg over 20 min."
+ ],
+ [
+  "Acute",
+  "Aminophylline load?",
+  "5 mg/kg over 20 min."
+ ],
+ [
+  "Control",
+  "Controlled asthma?",
+  "Symptoms ≤ 2/week, no night waking, no limitation."
+ ],
+ [
+  "Control",
+  "Step 2 treatment?",
+  "Daily low-dose ICS."
+ ],
+ [
+  "Control",
+  "Step 3 (≥ 6 yr)?",
+  "Low-dose ICS + LABA."
+ ],
+ [
+  "Control",
+  "First check if poor control?",
+  "Inhaler technique and adherence."
+ ],
+ [
+  "Control",
+  "When step down?",
+  "After 3 months of control."
+ ],
+ [
+  "Device",
+  "Device < 4 years?",
+  "MDI + spacer + face mask."
+ ],
+ [
+  "Device",
+  "Alternative spacer?",
+  "500 mL plastic bottle."
+ ],
+ [
+  "Side effects",
+  "ICS side effects?",
+  "Thrush, dysphonia, slight growth slowing."
+ ],
+ [
+  "Side effects",
+  "Salbutamol side effects?",
+  "Tremor, tachycardia, hypokalaemia."
+ ],
+ [
+  "Education",
+  "Key education tool?",
+  "Written asthma action plan."
+ ]
+]

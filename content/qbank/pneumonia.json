@@ -1,0 +1,58 @@
+[
+{
+"q": "Fast breathing in an 8-month-old is defined as:",
+"o": [
+"≥ 40/min",
+"≥ 50/min",
+"≥ 60/min",
+"≥ 30/min",
+"≥ 70/min"
+],
+"a": 1,
+"e": "2–12 months: ≥ 50.",
+"k": "2–12 months",
+"s": "bank"
+},
+{
+"q": "A 2-year-old with cough, RR 46 and chest indrawing, able to drink, SpO₂ 95%. Treatment:",
+"o": [
+"IV ampicillin + gentamicin",
+"Oral amoxicillin at home",
+"No antibiotic",
+"Ceftriaxone IM",
+"Admit for oxygen"
+],
+"a": 1,
+"e": "Pneumonia without danger signs: oral amoxicillin.",
+"k": "oral amoxicillin 40 mg/kg",
+"s": "bank"
+},
+{
+"q": "Pneumonia with pneumatoceles after measles is most likely due to:",
+"o": [
+"Pneumococcus",
+"Staph. aureus",
+"Mycoplasma",
+"RSV",
+"Hib"
+],
+"a": 1,
+"e": "Staph: cysts, empyema, pneumothorax.",
+"k": "pneumatoceles",
+"s": "bank"
+},
+{
+"q": "Oxygen should be given to a child with pneumonia when SpO₂ is below:",
+"o": [
+"98%",
+"95%",
+"90%",
+"85%",
+"80%"
+],
+"a": 2,
+"e": "< 90%.",
+"k": "spo₂ < 90%",
+"s": "bank"
+}
+]

@@ -517,3 +517,19 @@ VACTERL | Vertebral, anal, cardiac, tracheo-oesophageal, renal and limb anomalie
 HAV | Hepatitis A virus
 HEV | Hepatitis E virus
 TBW | Total body water
+ICS | Inhaled corticosteroid
+RSV | Respiratory syncytial virus
+MDI | Metered-dose inhaler
+GABHS | Group A β-haemolytic Streptococcus
+AOM | Acute otitis media
+CSOM | Chronic suppurative otitis media
+PEF | Peak expiratory flow
+LABA | Long-acting β2-agonist
+VATS | Video-assisted thoracoscopic surgery
+FB | Foreign body
+CPR | Cardiopulmonary resuscitation
+MU | Million units
+OM | Otitis media
+FVC | Forced vital capacity
+FEV₁ | Forced expiratory volume in 1 second
+GINA | Global Initiative for Asthma
