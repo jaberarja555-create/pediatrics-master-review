@@ -1,0 +1,58 @@
+[
+{
+"q": "Wide fixed splitting of S2 suggests:",
+"o": [
+"VSD",
+"ASD",
+"PDA",
+"PS",
+"Coarctation"
+],
+"a": 1,
+"e": "ASD.",
+"k": "wide fixed splitting",
+"s": "bank"
+},
+{
+"q": "A continuous machinery murmur with bounding pulses suggests:",
+"o": [
+"VSD",
+"ASD",
+"PDA",
+"AS",
+"TOF"
+],
+"a": 2,
+"e": "PDA.",
+"k": "continuous \"machinery\" murmur",
+"s": "bank"
+},
+{
+"q": "Hypertension in the arms with weak delayed femoral pulses suggests:",
+"o": [
+"PDA",
+"Coarctation of the aorta",
+"Aortic stenosis",
+"Renal artery stenosis",
+"ASD"
+],
+"a": 1,
+"e": "Coarctation.",
+"k": "weak, delayed femoral pulses",
+"s": "bank"
+},
+{
+"q": "Regarding VSD, which is TRUE?",
+"o": [
+"Large defects have the loudest murmurs",
+"Small defects often close spontaneously",
+"It causes wide fixed S2",
+"Heart failure appears on day 1",
+"It is cyanotic"
+],
+"a": 1,
+"e": "30–50% of small VSDs close.",
+"k": "close spontaneously",
+"s": "bank"
+}
+]

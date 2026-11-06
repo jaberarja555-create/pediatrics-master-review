@@ -1,0 +1,112 @@
+[
+ [
+  "Fetal",
+  "Three fetal shunts?",
+  "Ductus venosus, foramen ovale, ductus arteriosus."
+ ],
+ [
+  "Fetal",
+  "Ductus venosus connects?",
+  "Umbilical vein to IVC (bypasses liver)."
+ ],
+ [
+  "Fetal",
+  "Ductus arteriosus connects?",
+  "Pulmonary artery to aorta."
+ ],
+ [
+  "Transition",
+  "Why does the foramen ovale close?",
+  "LA pressure rises above RA."
+ ],
+ [
+  "Transition",
+  "What closes the ductus?",
+  "Rising O₂ and falling prostaglandin E₂."
+ ],
+ [
+  "Transition",
+  "Functional ductal closure time?",
+  "12–72 h."
+ ],
+ [
+  "Transition",
+  "Why do VSD murmurs appear at 4–8 weeks?",
+  "Pulmonary resistance falls."
+ ],
+ [
+  "Duct",
+  "Drug to keep the duct open?",
+  "Prostaglandin E₁."
+ ],
+ [
+  "Duct",
+  "Drugs to close the duct?",
+  "Ibuprofen, indomethacin, paracetamol."
+ ],
+ [
+  "Duct",
+  "Duct-dependent systemic lesions?",
+  "HLHS, critical coarctation."
+ ],
+ [
+  "Murmur",
+  "Innocent murmur features?",
+  "Soft systolic, small area, changes with posture, well child."
+ ],
+ [
+  "Murmur",
+  "Any diastolic murmur is?",
+  "Pathological."
+ ],
+ [
+  "Murmur",
+  "Venous hum?",
+  "Continuous, below clavicle, disappears lying down."
+ ],
+ [
+  "Murmur",
+  "Still's murmur?",
+  "Vibratory musical systolic murmur, 3–6 yr."
+ ],
+ [
+  "CHD",
+  "Incidence of CHD?",
+  "8 per 1000."
+ ],
+ [
+  "CHD",
+  "Commonest CHD?",
+  "VSD."
+ ],
+ [
+  "CHD",
+  "CHD in Down syndrome?",
+  "AVSD."
+ ],
+ [
+  "CHD",
+  "CHD in Turner?",
+  "Coarctation."
+ ],
+ [
+  "CHD",
+  "CHD with congenital rubella?",
+  "PDA, pulmonary stenosis."
+ ],
+ [
+  "CHD",
+  "Maternal lupus causes?",
+  "Congenital heart block."
+ ],
+ [
+  "CHD",
+  "Maternal lithium causes?",
+  "Ebstein anomaly."
+ ],
+ [
+  "CHD",
+  "Hyperoxia test?",
+  "No PaO₂ rise on 100% O₂ = cardiac cyanosis."
+ ]
+]

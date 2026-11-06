@@ -1,0 +1,132 @@
+[
+ [
+  "VSD",
+  "Murmur of VSD?",
+  "Pansystolic at lower left sternal edge."
+ ],
+ [
+  "VSD",
+  "Small VSD murmur loudness?",
+  "Loud (small hole)."
+ ],
+ [
+  "VSD",
+  "Spontaneous closure of small VSD?",
+  "30–50%."
+ ],
+ [
+  "VSD",
+  "Large VSD presentation?",
+  "Heart failure at 4–8 weeks."
+ ],
+ [
+  "VSD",
+  "Timing of large VSD surgery?",
+  "3–6 months."
+ ],
+ [
+  "VSD",
+  "Eisenmenger syndrome?",
+  "Shunt reversal from fixed pulmonary hypertension."
+ ],
+ [
+  "ASD",
+  "Key sign of ASD?",
+  "Wide fixed split S2."
+ ],
+ [
+  "ASD",
+  "ASD murmur?",
+  "Ejection systolic, upper left sternal edge (pulmonary flow)."
+ ],
+ [
+  "ASD",
+  "ECG of secundum ASD?",
+  "RBBB, right axis."
+ ],
+ [
+  "ASD",
+  "Symptoms in childhood?",
+  "Usually none."
+ ],
+ [
+  "ASD",
+  "Treatment?",
+  "Device or surgical closure."
+ ],
+ [
+  "AVSD",
+  "AVSD components?",
+  "Primum ASD, inlet VSD, common AV valve."
+ ],
+ [
+  "AVSD",
+  "ECG of AVSD?",
+  "Superior (left) axis."
+ ],
+ [
+  "AVSD",
+  "Screen Down babies by?",
+  "Echocardiography."
+ ],
+ [
+  "PDA",
+  "PDA murmur?",
+  "Continuous machinery, left infraclavicular."
+ ],
+ [
+  "PDA",
+  "PDA pulses?",
+  "Bounding, wide pulse pressure."
+ ],
+ [
+  "PDA",
+  "PDA risk factors?",
+  "Prematurity, rubella."
+ ],
+ [
+  "PDA",
+  "Preterm PDA treatment?",
+  "Ibuprofen 10 then 5, 5 mg/kg."
+ ],
+ [
+  "Coarct",
+  "Coarctation signs?",
+  "Arm hypertension, weak delayed femorals."
+ ],
+ [
+  "Coarct",
+  "Coarctation associations?",
+  "Turner, bicuspid aortic valve."
+ ],
+ [
+  "Coarct",
+  "CXR sign (older)?",
+  "Rib notching."
+ ],
+ [
+  "Coarct",
+  "Neonatal critical coarctation?",
+  "Shock as duct closes: PGE₁."
+ ],
+ [
+  "Stenosis",
+  "PS association?",
+  "Noonan syndrome."
+ ],
+ [
+  "Stenosis",
+  "AS symptom?",
+  "Exercise syncope."
+ ],
+ [
+  "Stenosis",
+  "AS murmur radiation?",
+  "To the neck."
+ ],
+ [
+  "Stenosis",
+  "Treatment of PS?",
+  "Balloon valvuloplasty."
+ ]
+]

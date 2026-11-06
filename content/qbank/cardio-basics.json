@@ -1,0 +1,58 @@
+[
+{
+"q": "The drug used to keep the ductus arteriosus open is:",
+"o": [
+"Indomethacin",
+"Ibuprofen",
+"Prostaglandin E₁",
+"Digoxin",
+"Propranolol"
+],
+"a": 2,
+"e": "Alprostadil infusion.",
+"k": "prostaglandin e₁ (alprostadil)",
+"s": "bank"
+},
+{
+"q": "Which murmur is always pathological?",
+"o": [
+"Soft systolic changing with posture",
+"Venous hum",
+"Diastolic murmur",
+"Still's murmur",
+"Pulmonary flow murmur"
+],
+"a": 2,
+"e": "Diastolic murmurs are pathological.",
+"k": "innocent versus pathological",
+"s": "bank"
+},
+{
+"q": "The commonest congenital heart defect is:",
+"o": [
+"ASD",
+"VSD",
+"PDA",
+"TOF",
+"Coarctation"
+],
+"a": 1,
+"e": "VSD about 30%.",
+"k": "30%",
+"s": "bank"
+},
+{
+"q": "The heart defect most typical of Down syndrome is:",
+"o": [
+"TOF",
+"TGA",
+"AVSD",
+"Coarctation",
+"PS"
+],
+"a": 2,
+"e": "Endocardial cushion defect.",
+"k": "down: avsd",
+"s": "bank"
+}
+]

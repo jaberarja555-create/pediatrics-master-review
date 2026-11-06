@@ -1,0 +1,58 @@
+[
+{
+"q": "All are features of tetralogy of Fallot EXCEPT:",
+"o": [
+"VSD",
+"Pulmonary stenosis",
+"Overriding aorta",
+"Left ventricular hypertrophy",
+"Right ventricular hypertrophy"
+],
+"a": 3,
+"e": "RVH, not LVH.",
+"k": "right ventricular hypertrophy",
+"s": "bank"
+},
+{
+"q": "The first step in a hypercyanotic spell is:",
+"o": [
+"IV digoxin",
+"Knee–chest position and oxygen",
+"Furosemide",
+"Adrenaline",
+"Intubation"
+],
+"a": 1,
+"e": "Raises systemic resistance.",
+"k": "knee–chest position",
+"s": "bank"
+},
+{
+"q": "A deeply cyanosed newborn on day 1 with no murmur and 'egg on a string' CXR has:",
+"o": [
+"TOF",
+"TGA",
+"Tricuspid atresia",
+"TAPVR",
+"Truncus"
+],
+"a": 1,
+"e": "TGA.",
+"k": "egg on a string",
+"s": "bank"
+},
+{
+"q": "Which drug is contraindicated in TOF?",
+"o": [
+"Propranolol",
+"Morphine",
+"Digoxin",
+"Oxygen",
+"Bicarbonate"
+],
+"a": 2,
+"e": "Increases infundibular contraction.",
+"k": "digoxin is contraindicated",
+"s": "bank"
+}
+]

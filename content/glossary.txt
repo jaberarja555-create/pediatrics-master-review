@@ -470,3 +470,9 @@ empyema | Pus in the pleural space
 laryngomalacia | Floppy laryngeal tissue that collapses on inspiration in infants
 quinsy | Peritonsillar abscess
 spacer | Chamber attached to an inhaler so the child can breathe in the drug easily
+Eisenmenger syndrome | Reversal of a left-to-right shunt by fixed pulmonary hypertension, causing cyanosis
+vegetation | Mass of platelets, fibrin and bacteria on a heart valve in endocarditis
+chorea | Brief, irregular, purposeless involuntary movements
+tamponade | Compression of the heart by fluid in the pericardium
+pulsus paradoxus | Fall of systolic BP by more than 10 mmHg on inspiration
+clubbing | Loss of the nail-bed angle with bulbous fingertips

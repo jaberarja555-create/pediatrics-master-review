@@ -1,0 +1,58 @@
+[
+{
+"q": "Which of the following is a MAJOR Jones criterion?",
+"o": [
+"Fever",
+"Arthralgia",
+"Prolonged PR",
+"Erythema marginatum",
+"Raised ESR"
+],
+"a": 3,
+"e": "Erythema marginatum is major.",
+"k": "erythema marginatum",
+"s": "bank"
+},
+{
+"q": "The criterion that alone is sufficient to diagnose rheumatic fever is:",
+"o": [
+"Carditis",
+"Polyarthritis",
+"Sydenham chorea",
+"Nodules",
+"Raised ASO"
+],
+"a": 2,
+"e": "Chorea alone.",
+"k": "chorea alone",
+"s": "bank"
+},
+{
+"q": "The commonest valve lesion in childhood rheumatic heart disease is:",
+"o": [
+"Mitral stenosis",
+"Mitral regurgitation",
+"Aortic stenosis",
+"Tricuspid regurgitation",
+"Pulmonary stenosis"
+],
+"a": 1,
+"e": "MR.",
+"k": "commonest in children",
+"s": "bank"
+},
+{
+"q": "Secondary prophylaxis of rheumatic fever is with:",
+"o": [
+"Oral amoxicillin daily",
+"Benzathine penicillin every 3–4 weeks",
+"Aspirin",
+"Prednisolone",
+"Cotrimoxazole"
+],
+"a": 1,
+"e": "Benzathine penicillin G IM.",
+"k": "every 3–4 weeks",
+"s": "bank"
+}
+]

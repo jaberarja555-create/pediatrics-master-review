@@ -533,3 +533,39 @@ OM | Otitis media
 FVC | Forced vital capacity
 FEV₁ | Forced expiratory volume in 1 second
 GINA | Global Initiative for Asthma
+AVSD | Atrioventricular septal defect
+ASD | Atrial septal defect
+IE | Infective endocarditis
+ARF | Acute rheumatic fever
+RHD | Rheumatic heart disease
+SVT | Supraventricular tachycardia
+S1 | First heart sound
+S2 | Second heart sound
+S3 | Third heart sound (gallop)
+P2 | Pulmonary component of the second heart sound
+HLHS | Hypoplastic left heart syndrome
+ASO | Antistreptolysin O
+CTR | Cardiothoracic ratio
+TAPVR | Total anomalous pulmonary venous return
+LLSE | Lower left sternal edge
+AS | Aortic stenosis
+MS | Mitral stenosis
+GN | Glomerulonephritis
+WPW | Wolff–Parkinson–White syndrome
+RV | Right ventricle
+RVH | Right ventricular hypertrophy
+LVH | Left ventricular hypertrophy
+RVOT | Right ventricular outflow tract
+ESM | Ejection systolic murmur
+ALCAPA | Anomalous left coronary artery from the pulmonary artery
+BNP | B-type natriuretic peptide
+HOCM | Hypertrophic obstructive cardiomyopathy
+HCM | Hypertrophic cardiomyopathy
+DC | Direct current (cardioversion)
+PFO | Patent foramen ovale
+HACEK | Haemophilus, Aggregatibacter, Cardiobacterium, Eikenella, Kingella
+TOE | Transoesophageal echocardiography
+RBBB | Right bundle branch block
+AV | Atrioventricular
+RA | Right atrium
+PGE₁ | Prostaglandin E₁

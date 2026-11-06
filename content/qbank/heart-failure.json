@@ -1,0 +1,58 @@
+[
+{
+"q": "The best sign of heart failure in an infant is:",
+"o": [
+"Ankle oedema",
+"Raised JVP",
+"Hepatomegaly",
+"Basal crackles",
+"Clubbing"
+],
+"a": 2,
+"e": "Liver enlargement reflects venous congestion in infants.",
+"k": "hepatomegaly (best sign",
+"s": "bank"
+},
+{
+"q": "The commonest cause of heart failure at 6 weeks is:",
+"o": [
+"Rheumatic carditis",
+"Large VSD",
+"Myocarditis",
+"Anaemia",
+"Hypertension"
+],
+"a": 1,
+"e": "L→R shunt as pulmonary resistance falls.",
+"k": "large l → r shunts",
+"s": "bank"
+},
+{
+"q": "The first drug for SVT after vagal manoeuvres fail is:",
+"o": [
+"Digoxin",
+"Verapamil",
+"Adenosine",
+"Amiodarone",
+"Propranolol"
+],
+"a": 2,
+"e": "Adenosine 0.1 mg/kg rapid IV.",
+"k": "adenosine 0.1 mg/kg",
+"s": "bank"
+},
+{
+"q": "Digoxin toxicity is made worse by:",
+"o": [
+"Hyperkalaemia",
+"Hypokalaemia",
+"Hypernatraemia",
+"Hypoglycaemia",
+"Alkalosis only"
+],
+"a": 1,
+"e": "Low K increases toxicity.",
+"k": "worse with low k",
+"s": "bank"
+}
+]

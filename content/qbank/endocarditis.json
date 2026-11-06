@@ -1,0 +1,58 @@
+[
+{
+"q": "The commonest organism of subacute infective endocarditis is:",
+"o": [
+"Staph aureus",
+"Strep viridans",
+"Enterococcus",
+"Candida",
+"E. coli"
+],
+"a": 1,
+"e": "From teeth.",
+"k": "streptococcus viridans",
+"s": "bank"
+},
+{
+"q": "Tender nodules on the finger pulps in endocarditis are:",
+"o": [
+"Janeway lesions",
+"Osler nodes",
+"Roth spots",
+"Splinters",
+"Heberden nodes"
+],
+"a": 1,
+"e": "Osler nodes are tender.",
+"k": "osler nodes",
+"s": "bank"
+},
+{
+"q": "Beck's triad indicates:",
+"o": [
+"Myocarditis",
+"Cardiac tamponade",
+"Endocarditis",
+"Heart failure",
+"Pneumothorax"
+],
+"a": 1,
+"e": "Hypotension, raised JVP, muffled sounds.",
+"k": "beck's triad",
+"s": "bank"
+},
+{
+"q": "Sudden death on exercise in a teenager with family history suggests:",
+"o": [
+"Dilated cardiomyopathy",
+"Hypertrophic cardiomyopathy",
+"Myocarditis",
+"ASD",
+"Rheumatic fever"
+],
+"a": 1,
+"e": "HCM.",
+"k": "sudden death on exercise",
+"s": "bank"
+}
+]
