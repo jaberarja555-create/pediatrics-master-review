@@ -172,7 +172,7 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
   file is for). For each topic read every resource that covers it; put extracted text in `resources/text/` (not committed).
 
 ## Subscription (free trial + activation codes)
-- **24-hour trial (owner, 6 Nov 2026, as in Surgery; replaces the free first topics):** on opening, a device with no code chooses «النسخة التجريبية لمدة 24 ساعة» · «الاشتراك في النسخة المدفوعة» · «عندي كود تفعيل» (`openChoose`); the trial opens everything for `access.trial_hours` from that moment (`prr-trial`), then everything locks; Worker `POST /trial` keeps each device's first start. Price 15,000 SDG.
+- **Trial (owner, 6 Nov 2026, as in Surgery; changed the same day to 1 h, then the first topic of each chapter stays free; chooser has «متابعة بالنسخة المجانية»).** Older note: on opening, a device with no code chooses «النسخة التجريبية لمدة 24 ساعة» · «الاشتراك في النسخة المدفوعة» · «عندي كود تفعيل» (`openChoose`); the trial opens everything for `access.trial_hours` from that moment (`prr-trial`), then everything locks; Worker `POST /trial` keeps each device's first start. Price 15,000 SDG.
 - **Bankak (owner, Nov 2026, all books):** account 4674587, name سعاد عبدالكريم (`access.bankak_account` / `bankak_name`).
 - **Flashcards organised (owner, Nov 2026):** Today / All topics buttons, a horizontal chapter bar (short names, colour badge, known/total;
   `prr-fcch`), then the chosen chapter's topics plus «All of chapter N» (deck key `ch:N`). QBank chapter tiles use the short names on one line;

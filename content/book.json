@@ -684,7 +684,22 @@
   }
  ],
  "access": {
-  "free_topics": [],
+  "free_topics": [
+   "growth",
+   "feeding",
+   "newborn",
+   "fever",
+   "gastroenteritis",
+   "upper-airway",
+   "cardio-basics",
+   "anaemia",
+   "nephrotic",
+   "febrile-seizures",
+   "dm",
+   "genetics",
+   "etat",
+   "history"
+  ],
   "free_cards": "all",
   "free_questions": "all",
   "devices_per_student": 2,
@@ -701,7 +716,8 @@
    "y": "pZ_UOmnNSLGjMvlX2Bs5JqrDzlJP6TB6oVsHz4hymfQ",
    "crv": "P-256"
   },
-  "trial_hours": 24
+  "trial_hours": 1,
+  "free_label": "الموضوع الأول من كل فصل"
  },
  "contents_split": []
 }

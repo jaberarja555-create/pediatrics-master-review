@@ -1622,3 +1622,4 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .subx .chc.tr{margin-bottom:2px}
 .chz .sublogo{width:92px;height:92px;object-fit:contain;margin:0 auto -2px}
 .chz .lead{text-align:right}
+.chfree{background:none;border:0;color:inherit;opacity:.8;font:600 13.5px/1.5 "Noto Sans Arabic",var(--sans);text-decoration:underline;padding:4px;cursor:pointer}
