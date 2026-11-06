@@ -241,6 +241,8 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   characters, i.e. taller than a page); boxes may still break between blocks and inside lists.
 - **Paragraph stays with its table/list (owner):** a box never breaks right after a `<p>`; the move-up looks 6 boxes ahead; spare
   space on a mid-topic page is spread between its boxes (vj up to 56 px), never on a topic's last page.
+- **No repeated points in the Rapid Review (owner, Nov 2026):** a Key number (`numt` / `rvnums` row) that restates a Clue switch row, Formula or
+  Try it answer of the same topic was removed (68 rows). Do not add a Key number for a fact the side column already gives.
 - **Topic titles on one line (owner):** build.py gives titles over 32 characters a smaller font (min 16.5 pt) instead of wrapping.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.
 
