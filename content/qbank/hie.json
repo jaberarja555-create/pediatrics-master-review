@@ -1,0 +1,58 @@
+[
+{
+"q": "The drug of choice for neonatal seizures is:",
+"o": [
+"Diazepam",
+"Phenobarbitone",
+"Phenytoin",
+"Carbamazepine",
+"Valproate"
+],
+"a": 1,
+"e": "Phenobarbitone 20 mg/kg IV.",
+"k": "phenobarbitone 20 mg/kg iv",
+"s": "bank"
+},
+{
+"q": "A baby after asphyxia is hyperalert with dilated pupils and no seizures. Sarnat stage:",
+"o": [
+"Stage 1",
+"Stage 2",
+"Stage 3",
+"Not HIE",
+"Stage 4"
+],
+"a": 0,
+"e": "Stage 1: hyperalert, good outcome.",
+"k": "hyperalert",
+"s": "bank"
+},
+{
+"q": "Fluid intake on day 1 in a baby with HIE should be:",
+"o": [
+"Restricted to about 60 mL/kg/day",
+"150 mL/kg/day",
+"Free oral feeds",
+"200 mL/kg/day",
+"Nil for 5 days"
+],
+"a": 0,
+"e": "Restrict because of SIADH and AKI.",
+"k": "restrict to 60 ml/kg/day",
+"s": "bank"
+},
+{
+"q": "The first step in a newborn having a seizure, after ABC, is to check:",
+"o": [
+"EEG",
+"Blood glucose",
+"CT brain",
+"CSF",
+"Calcium only"
+],
+"a": 1,
+"e": "Correct hypoglycaemia before anticonvulsants.",
+"k": "check glucose",
+"s": "bank"
+}
+]

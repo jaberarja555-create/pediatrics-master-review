@@ -1,0 +1,58 @@
+[
+{
+"q": "Neonatal hypoglycaemia is defined as blood glucose below:",
+"o": [
+"1.5 mmol/L",
+"2.6 mmol/L",
+"3.5 mmol/L",
+"4 mmol/L",
+"5 mmol/L"
+],
+"a": 1,
+"e": "< 2.6 mmol/L (45 mg/dL).",
+"k": "2.6 mmol/l (45 mg/dl)",
+"s": "bank"
+},
+{
+"q": "All are problems of the infant of a diabetic mother EXCEPT:",
+"o": [
+"Hypoglycaemia",
+"Polycythaemia",
+"RDS",
+"Hypercalcaemia",
+"Hypertrophic cardiomyopathy"
+],
+"a": 3,
+"e": "IDM gets hypocalcaemia, not hypercalcaemia.",
+"k": "fetal hyperinsulinism",
+"s": "bank"
+},
+{
+"q": "The anomaly most specific for maternal diabetes is:",
+"o": [
+"Anencephaly",
+"Caudal regression syndrome",
+"Cleft lip",
+"Down syndrome",
+"Duodenal atresia"
+],
+"a": 1,
+"e": "Sacral agenesis is characteristic.",
+"k": "caudal regression",
+"s": "bank"
+},
+{
+"q": "A symptomatic hypoglycaemic newborn should receive:",
+"o": [
+"50% dextrose 1 mL/kg",
+"10% dextrose 2 mL/kg IV then infusion",
+"Oral sugar water only",
+"Glucagon first",
+"Hydrocortisone first"
+],
+"a": 1,
+"e": "Bolus then continuous infusion.",
+"k": "10% dextrose 2 ml/kg iv",
+"s": "bank"
+}
+]

@@ -102,7 +102,7 @@ def is_wide(body):
     first_row = re.search(r'<tr>(.*?)</tr>', body, re.S)
     cols = len(re.findall(r'<t[hd][ >]', first_row.group(1))) if first_row else 0
     return (cols >= 3 or len(text(body)) > 700 or
-            any(k in body for k in ('class="photos"', 'class="fig"', 'class="two"', 'class="ladder"')))
+            any(k in body for k in ('class="photos"', 'class="fig', 'class="two"', 'class="ladder"')))
 
 
 def auto_mosaic(main):

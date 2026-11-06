@@ -1,0 +1,72 @@
+[
+{
+"q": "Periventricular calcification and sensorineural deafness suggest:",
+"o": [
+"Toxoplasmosis",
+"Rubella",
+"CMV",
+"Syphilis",
+"HSV"
+],
+"a": 2,
+"e": "CMV: periventricular; toxo: diffuse.",
+"k": "periventricular calcification",
+"s": "bank"
+},
+{
+"q": "Congenital rubella classically causes all EXCEPT:",
+"o": [
+"Cataract",
+"Deafness",
+"PDA",
+"Hydrocephalus",
+"IUGR"
+],
+"a": 3,
+"e": "Hydrocephalus is toxoplasmosis.",
+"k": "cataract",
+"s": "bank"
+},
+{
+"q": "Snuffles and desquamation of palms and soles in a newborn suggest:",
+"o": [
+"CMV",
+"Congenital syphilis",
+"Toxoplasmosis",
+"Rubella",
+"Varicella"
+],
+"a": 1,
+"e": "Early congenital syphilis.",
+"k": "snuffles",
+"s": "bank"
+},
+{
+"q": "A newborn has an adducted, internally rotated arm with extended elbow; grasp present. Lesion:",
+"o": [
+"Klumpke's palsy C8–T1",
+"Erb's palsy C5–C6",
+"Radial nerve",
+"Fractured humerus",
+"Spinal cord"
+],
+"a": 1,
+"e": "Waiter's tip = Erb's palsy.",
+"k": "waiter's tip",
+"s": "bank"
+},
+{
+"q": "Neonatal tetanus is best prevented by:",
+"o": [
+"BCG at birth",
+"Tetanus toxoid to women of childbearing age",
+"Antibiotics to the baby",
+"HTIG to every newborn",
+"Vitamin K"
+],
+"a": 1,
+"e": "Maternal Td + clean cord care.",
+"k": "td to all women",
+"s": "bank"
+}
+]

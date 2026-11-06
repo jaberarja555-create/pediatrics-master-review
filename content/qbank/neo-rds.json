@@ -1,0 +1,58 @@
+[
+{
+"q": "The cause of hyaline membrane disease is:",
+"o": [
+"Meconium",
+"Retained lung fluid",
+"Surfactant deficiency",
+"Infection",
+"Pulmonary hypoplasia"
+],
+"a": 2,
+"e": "RDS results from surfactant deficiency.",
+"k": "surfactant deficiency",
+"s": "bank"
+},
+{
+"q": "A term baby born by elective CS has tachypnoea; CXR shows fluid in the fissures. Diagnosis:",
+"o": [
+"RDS",
+"TTN",
+"Meconium aspiration",
+"Pneumonia",
+"Pneumothorax"
+],
+"a": 1,
+"e": "TTN: delayed clearance of lung fluid; resolves in 1–3 days.",
+"k": "fluid in the fissures",
+"s": "bank"
+},
+{
+"q": "A baby who is cyanosed at rest but pink when crying most likely has:",
+"o": [
+"TGA",
+"Choanal atresia",
+"RDS",
+"Diaphragmatic hernia",
+"PPHN"
+],
+"a": 1,
+"e": "Crying opens the mouth airway in choanal atresia.",
+"k": "choanal atresia",
+"s": "bank"
+},
+{
+"q": "RDS occurs in a term infant of a diabetic mother because:",
+"o": [
+"Macrosomia",
+"Insulin delays surfactant production",
+"Hypoglycaemia",
+"Polycythaemia",
+"Cardiomyopathy"
+],
+"a": 1,
+"e": "Fetal hyperinsulinism delays surfactant maturation.",
+"k": "insulin delays surfactant",
+"s": "bank"
+}
+]

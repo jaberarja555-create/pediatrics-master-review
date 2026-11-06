@@ -1,0 +1,132 @@
+[
+ [
+  "Definition",
+  "EOS vs LOS cut-off?",
+  "72 hours."
+ ],
+ [
+  "Organisms",
+  "EOS organisms?",
+  "GBS, E. coli, Listeria."
+ ],
+ [
+  "Organisms",
+  "Hospital LOS organisms?",
+  "Klebsiella, Staph. aureus, CoNS."
+ ],
+ [
+  "Risk",
+  "Maternal risks for EOS?",
+  "PROM > 18 h, maternal fever, chorioamnionitis."
+ ],
+ [
+  "Risk",
+  "Neonatal risks for LOS?",
+  "Prematurity, lines, ventilation, poor hand hygiene."
+ ],
+ [
+  "Clinical",
+  "Earliest signs of sepsis?",
+  "Poor feeding and lethargy."
+ ],
+ [
+  "Clinical",
+  "Temperature in neonatal sepsis?",
+  "Fever or hypothermia."
+ ],
+ [
+  "Clinical",
+  "Meningitis signs in newborn?",
+  "Seizures, bulging fontanelle, high-pitched cry."
+ ],
+ [
+  "Local",
+  "Omphalitis needing systemic antibiotics?",
+  "Redness spreading to the skin."
+ ],
+ [
+  "Local",
+  "Gonococcal ophthalmia onset and drug?",
+  "Day 2–5; ceftriaxone 50 mg/kg IM once."
+ ],
+ [
+  "Local",
+  "Chlamydial conjunctivitis treatment?",
+  "Oral erythromycin 14 days."
+ ],
+ [
+  "Local",
+  "Oral thrush treatment?",
+  "Nystatin drops 6-hourly × 7 days."
+ ],
+ [
+  "Tests",
+  "Gold standard for sepsis?",
+  "Blood culture."
+ ],
+ [
+  "Tests",
+  "I : T ratio in sepsis?",
+  "> 0.2."
+ ],
+ [
+  "Tests",
+  "CSF WBC abnormal in newborn?",
+  "> 20–30/µL."
+ ],
+ [
+  "Tests",
+  "Role of serial CRP?",
+  "Two normal values help stop antibiotics."
+ ],
+ [
+  "Treatment",
+  "First-line antibiotics?",
+  "Ampicillin + gentamicin."
+ ],
+ [
+  "Treatment",
+  "Gentamicin dose (term)?",
+  "5 mg/kg IV once daily."
+ ],
+ [
+  "Treatment",
+  "Ampicillin dose week 1?",
+  "50 mg/kg IV 12-hourly."
+ ],
+ [
+  "Treatment",
+  "Meningitis regimen?",
+  "Cefotaxime + ampicillin."
+ ],
+ [
+  "Treatment",
+  "Why ampicillin in meningitis?",
+  "Covers Listeria."
+ ],
+ [
+  "Treatment",
+  "Duration for proven sepsis?",
+  "7–10 days."
+ ],
+ [
+  "Treatment",
+  "Duration for GBS meningitis?",
+  "14 days (21 for Gram-negative)."
+ ],
+ [
+  "Treatment",
+  "Culture-negative, well baby: stop at?",
+  "48–72 h."
+ ],
+ [
+  "Treatment",
+  "Shock bolus in newborn?",
+  "Normal saline 10 mL/kg."
+ ],
+ [
+  "Prevention",
+  "Most important prevention in nursery?",
+  "Hand washing."
+ ]
+]

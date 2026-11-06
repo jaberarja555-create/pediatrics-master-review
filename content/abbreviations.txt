@@ -413,3 +413,45 @@ PTT | Partial thromboplastin time
 UVB | Ultraviolet B light
 DHA | Docosahexaenoic acid (an omega-3 fatty acid)
 ReSoMal | Rehydration solution for malnutrition
+RDS | Respiratory distress syndrome
+IDM | Infant of a diabetic mother
+CPAP | Continuous positive airway pressure
+TTN | Transient tachypnoea of the newborn
+GBS | Group B streptococcus
+PDA | Patent ductus arteriosus
+SGA | Small for gestational age
+LGA | Large for gestational age
+KMC | Kangaroo mother care
+CS | Caesarean section
+GIR | Glucose infusion rate
+ROP | Retinopathy of prematurity
+PROM | Prelabour (premature) rupture of membranes
+EOS | Early-onset sepsis
+PCR | Polymerase chain reaction
+IVH | Intraventricular haemorrhage
+HBV | Hepatitis B virus
+HBB | Helping Babies Breathe
+LP | Lumbar puncture
+PPHN | Persistent pulmonary hypertension of the newborn
+NICU | Neonatal intensive care unit
+VLBW | Very low birth weight (< 1500 g)
+ELBW | Extremely low birth weight (< 1000 g)
+VZIG | Varicella-zoster immunoglobulin
+AZT | Zidovudine
+VDRL | Venereal Disease Research Laboratory test (syphilis)
+RPR | Rapid plasma reagin (syphilis test)
+TPHA | Treponema pallidum haemagglutination assay
+NLS | Newborn life support
+UVC | Umbilical venous catheter
+ET | Endotracheal
+NNJ | Neonatal jaundice
+BPD | Bronchopulmonary dysplasia
+ABC | Airway, breathing, circulation
+INSURE | Intubate, surfactant, extubate
+LISA | Less invasive surfactant administration
+VSD | Ventricular septal defect
+TGA | Transposition of the great arteries
+UDP | Uridine diphosphate
+CoNS | Coagulase-negative staphylococci
+DNA | Deoxyribonucleic acid
+I : T | Immature to total neutrophil ratio

@@ -436,3 +436,17 @@ bottom-shuffling / bottom-shuffler | Moving about on the bottom instead of crawl
 pincer grasp | Picking up a small object between the tips of the thumb and index finger
 toxoid | Inactivated bacterial toxin used as a vaccine
 cold chain | System that keeps vaccines at +2 to +8 °C from the factory to the child
+surfactant | Substance lining the alveoli that lowers surface tension and stops them collapsing
+kernicterus | Yellow staining and damage of the basal ganglia by unconjugated bilirubin
+cephalhaematoma | Bleeding under the periosteum of a skull bone, limited by the sutures
+caput succedaneum | Oedema of the scalp from pressure during labour, crossing the sutures
+apnoea | Pause in breathing of 20 seconds or more
+pneumatosis intestinalis | Gas in the wall of the bowel, the X-ray sign of NEC
+opisthotonus | Backward arching of the head, neck and spine from muscle spasm
+craniotabes | Soft skull bones that give like a ping-pong ball when pressed
+xerophthalmia | Dry eye disease caused by vitamin A deficiency
+oedema / edema | Swelling caused by fluid in the tissues
+jitteriness | Rhythmic tremor of a newborn that stops when the limb is held
+macrosomia | Birth weight above 4 kg
+polycythaemia | Venous haematocrit above 65% in a newborn
+chorioretinitis | Inflammation of the choroid and retina

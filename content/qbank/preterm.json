@@ -1,0 +1,58 @@
+[
+{
+"q": "Antenatal corticosteroids reduce all EXCEPT:",
+"o": [
+"RDS",
+"IVH",
+"NEC",
+"Neonatal death",
+"Neonatal jaundice"
+],
+"a": 4,
+"e": "Steroids reduce RDS, IVH, NEC and death.",
+"k": "antenatal corticosteroids",
+"s": "bank"
+},
+{
+"q": "The drug used for apnoea of prematurity is:",
+"o": [
+"Phenobarbitone",
+"Caffeine citrate",
+"Salbutamol",
+"Naloxone",
+"Dexamethasone"
+],
+"a": 1,
+"e": "Caffeine (or aminophylline) stimulates the respiratory centre.",
+"k": "caffeine citrate",
+"s": "bank"
+},
+{
+"q": "A 30-week baby on feeds develops distension and bloody stool; X-ray shows gas in the bowel wall. Diagnosis:",
+"o": [
+"Hirschsprung disease",
+"Malrotation",
+"Necrotising enterocolitis",
+"Meconium ileus",
+"Intussusception"
+],
+"a": 2,
+"e": "Pneumatosis intestinalis = NEC.",
+"k": "pneumatosis intestinalis",
+"s": "bank"
+},
+{
+"q": "Kangaroo mother care is suitable for:",
+"o": [
+"Any baby in shock",
+"Stable babies under 2 kg",
+"Babies on ventilators only",
+"Only term babies",
+"Babies with NEC"
+],
+"a": 1,
+"e": "Stable LBW babies benefit from continuous skin-to-skin care.",
+"k": "for stable babies",
+"s": "bank"
+}
+]

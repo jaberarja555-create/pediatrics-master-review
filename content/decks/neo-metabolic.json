@@ -1,0 +1,122 @@
+[
+ [
+  "Hypoglycaemia",
+  "Threshold of neonatal hypoglycaemia?",
+  "< 2.6 mmol/L (45 mg/dL)."
+ ],
+ [
+  "Hypoglycaemia",
+  "Babies at risk?",
+  "Preterm, SGA, IDM, sepsis, asphyxia, hypothermia."
+ ],
+ [
+  "Hypoglycaemia",
+  "Symptoms?",
+  "Jitteriness, poor feeding, apnoea, hypotonia, seizures."
+ ],
+ [
+  "Hypoglycaemia",
+  "Asymptomatic 2.0–2.6 management?",
+  "Feed and recheck in 30–60 min."
+ ],
+ [
+  "Hypoglycaemia",
+  "Symptomatic management?",
+  "10% dextrose 2 mL/kg IV, then infusion."
+ ],
+ [
+  "Hypoglycaemia",
+  "GIR formula?",
+  "% dextrose × mL/kg/day ÷ 144."
+ ],
+ [
+  "Hypoglycaemia",
+  "Normal GIR?",
+  "4–6 mg/kg/min."
+ ],
+ [
+  "Hypoglycaemia",
+  "Buccal gel dose?",
+  "40% dextrose gel 0.5 mL/kg."
+ ],
+ [
+  "Hypoglycaemia",
+  "Why no 50% dextrose?",
+  "Rebound hypoglycaemia, vein damage."
+ ],
+ [
+  "Hypoglycaemia",
+  "GIR > 8–10 suggests?",
+  "Hyperinsulinism."
+ ],
+ [
+  "Hypoglycaemia",
+  "Hypoglycaemia + macroglossia + omphalocele?",
+  "Beckwith–Wiedemann syndrome."
+ ],
+ [
+  "Hypoglycaemia",
+  "Hypoglycaemia + micropenis?",
+  "Hypopituitarism."
+ ],
+ [
+  "IDM",
+  "Mechanism of IDM problems?",
+  "Fetal hyperinsulinism from maternal hyperglycaemia."
+ ],
+ [
+  "IDM",
+  "Birth injuries in IDM?",
+  "Shoulder dystocia, Erb's palsy, fractured clavicle."
+ ],
+ [
+  "IDM",
+  "Respiratory problem in IDM?",
+  "RDS (delayed surfactant)."
+ ],
+ [
+  "IDM",
+  "Cardiac problem in IDM?",
+  "Transient hypertrophic septal cardiomyopathy."
+ ],
+ [
+  "IDM",
+  "Most specific anomaly?",
+  "Caudal regression syndrome."
+ ],
+ [
+  "IDM",
+  "Blood problem in IDM?",
+  "Polycythaemia."
+ ],
+ [
+  "IDM",
+  "Gut anomaly in IDM?",
+  "Small left colon syndrome."
+ ],
+ [
+  "IDM",
+  "Define macrosomia.",
+  "Birth weight > 4 kg."
+ ],
+ [
+  "Calcium",
+  "Neonatal hypocalcaemia?",
+  "Ca < 2 mmol/L."
+ ],
+ [
+  "Calcium",
+  "Cause of late hypocalcaemia?",
+  "High-phosphate cow's milk formula."
+ ],
+ [
+  "Polycythaemia",
+  "Define polycythaemia.",
+  "Venous Hct > 65%."
+ ],
+ [
+  "Polycythaemia",
+  "Treatment of symptomatic polycythaemia?",
+  "Partial exchange with saline."
+ ]
+]

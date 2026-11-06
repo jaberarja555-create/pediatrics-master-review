@@ -1,0 +1,58 @@
+[
+{
+"q": "The commonest organisms of early-onset neonatal sepsis are:",
+"o": [
+"Staph. aureus and CoNS",
+"GBS and E. coli",
+"Pseudomonas and Candida",
+"Klebsiella and Enterobacter",
+"H. influenzae and pneumococcus"
+],
+"a": 1,
+"e": "EOS comes from the maternal tract: GBS and E. coli.",
+"k": "gbs, e. coli",
+"s": "bank"
+},
+{
+"q": "First-line antibiotics for neonatal sepsis are:",
+"o": [
+"Ceftriaxone alone",
+"Ampicillin + gentamicin",
+"Vancomycin + meropenem",
+"Amoxicillin oral",
+"Ciprofloxacin"
+],
+"a": 1,
+"e": "WHO/Sudan first line: ampicillin + gentamicin.",
+"k": "first line (eos",
+"s": "bank"
+},
+{
+"q": "A 3-day-old has profuse purulent conjunctivitis with swollen lids. Best treatment:",
+"o": [
+"Chloramphenicol drops only",
+"Single IM ceftriaxone",
+"Oral erythromycin",
+"Saline wash only",
+"Gentamicin drops"
+],
+"a": 1,
+"e": "Gonococcal ophthalmia: ceftriaxone 50 mg/kg IM once.",
+"k": "gonococcal",
+"s": "bank"
+},
+{
+"q": "Ceftriaxone is avoided in jaundiced newborns because it:",
+"o": [
+"Is nephrotoxic",
+"Displaces bilirubin from albumin",
+"Causes ototoxicity",
+"Is not effective",
+"Causes NEC"
+],
+"a": 1,
+"e": "Displaced bilirubin raises kernicterus risk.",
+"k": "displaces bilirubin",
+"s": "bank"
+}
+]

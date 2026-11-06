@@ -1,0 +1,58 @@
+[
+{
+"q": "A term baby is not breathing after drying and stimulation. The next step is:",
+"o": [
+"Suction of the trachea",
+"Bag-and-mask ventilation with room air",
+"Oxygen by face mask",
+"Adrenaline",
+"Chest compressions"
+],
+"a": 1,
+"e": "Effective ventilation within the Golden Minute is the key step.",
+"k": "golden minute",
+"s": "bank"
+},
+{
+"q": "Chest compressions in a newborn are started when the heart rate is:",
+"o": [
+"< 120 after birth",
+"< 100 after 30 s of ventilation",
+"< 60 after 30 s of effective ventilation",
+"< 80 at any time",
+"Absent only"
+],
+"a": 2,
+"e": "HR < 60 despite effective ventilation.",
+"k": "two-thumb technique",
+"s": "bank"
+},
+{
+"q": "The ratio of compressions to ventilations in newborn resuscitation is:",
+"o": [
+"15:2",
+"30:2",
+"3:1",
+"5:1",
+"1:1"
+],
+"a": 2,
+"e": "3 compressions : 1 breath.",
+"k": "3 compressions : 1 breath",
+"s": "bank"
+},
+{
+"q": "The best indicator that ventilation is effective is:",
+"o": [
+"Pink colour",
+"Rising heart rate",
+"Crying",
+"Pupil size",
+"Muscle tone"
+],
+"a": 1,
+"e": "A rising HR shows effective ventilation.",
+"k": "rising heart rate",
+"s": "bank"
+}
+]

@@ -1,0 +1,72 @@
+[
+{
+"q": "Jaundice appearing in the first 24 hours of life is most likely due to:",
+"o": [
+"Physiological jaundice",
+"Breast-milk jaundice",
+"Haemolytic disease",
+"Biliary atresia",
+"Hypothyroidism"
+],
+"a": 2,
+"e": "Early jaundice is haemolytic until proved otherwise.",
+"k": "haemolysis until proved otherwise",
+"s": "bank"
+},
+{
+"q": "Phototherapy is contraindicated in:",
+"o": [
+"ABO incompatibility",
+"Preterm jaundice",
+"Conjugated hyperbilirubinaemia",
+"G6PD deficiency",
+"Breast-milk jaundice"
+],
+"a": 2,
+"e": "It causes bronze baby syndrome.",
+"k": "bronze baby syndrome",
+"s": "bank"
+},
+{
+"q": "A 5-week-old has jaundice, pale stools and dark urine. The most important diagnosis to exclude is:",
+"o": [
+"Breast-milk jaundice",
+"Gilbert syndrome",
+"Biliary atresia",
+"G6PD deficiency",
+"Physiological jaundice"
+],
+"a": 2,
+"e": "Kasai before 60 days improves outcome.",
+"k": "kasai portoenterostomy",
+"s": "bank"
+},
+{
+"q": "The volume of a double-volume exchange transfusion for a 3-kg baby is about:",
+"o": [
+"85 mL",
+"170 mL",
+"255 mL",
+"510 mL",
+"1000 mL"
+],
+"a": 3,
+"e": "2 × 85 × 3 = 510 mL.",
+"k": "2 × 85 ml/kg",
+"s": "bank"
+},
+{
+"q": "Regarding ABO incompatibility, which is TRUE?",
+"o": [
+"Mother is usually group A",
+"It never affects the first baby",
+"It is usually more severe than Rh disease",
+"The mother is group O and baby A or B",
+"Anti-D prevents it"
+],
+"a": 3,
+"e": "Mother O, baby A or B; can affect the first baby; usually mild.",
+"k": "mother o",
+"s": "bank"
+}
+]
