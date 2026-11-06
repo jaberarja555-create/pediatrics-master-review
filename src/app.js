@@ -14,10 +14,24 @@ var DEV=st('dev');if(!DEV||!/^[A-Z2-9]{4}-[A-Z2-9]{4}$/.test(DEV)){var AB='ABCDE
 /* an activation from before the PMR- codes (no code saved) cannot be switched off or synced: ask for a code once */
 if(st('act')&&!st('code')){try{localStorage.removeItem('prr-act')}catch(e){}}
 var REVIEW=!!META.review;   // review copy for the authors (PRR_REVIEW build): everything open, no activation
-var LOCKED=!REVIEW&&(!st('act')||!ACC.public_key);
+/* free trial (owner, Nov 2026): on opening, the student chooses «النسخة التجريبية لمدة 24 ساعة» or «الاشتراك في النسخة المدفوعة».
+   The trial opens the WHOLE book, cards, QBank and tools for ACC.trial_hours from the moment it is chosen, then everything locks
+   until a code is entered. prr-trial = {s: start, m: latest time seen, x: 1 when ended}; a clock turned back by more than
+   10 min ends it; the server keeps the first trial start of each device (/trial). */
+var TRIAL_MS=(+ACC.trial_hours||0)*3600e3,TRIAL=(function(){var t=null,now=Date.now();try{t=JSON.parse(localStorage.getItem('prr-trial')||'null')}catch(e){}
+  if(!t||!t.s)return null;if(now<t.m-6e5)t.x=1;t.m=Math.max(t.m,now);if(now>=t.s+TRIAL_MS)t.x=1;try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}return t})();
+function trialLeft(){return TRIAL_MS&&TRIAL&&!TRIAL.x?Math.max(0,TRIAL.s+TRIAL_MS-Date.now()):0}
+var INTRIAL=!REVIEW&&!!TRIAL_MS&&!st('act')&&trialLeft()>0,TRIALNEW=!REVIEW&&!!TRIAL_MS&&!st('act')&&!TRIAL,TRIALEND=!REVIEW&&!!TRIAL_MS&&!st('act')&&!!TRIAL&&!INTRIAL;
+var LOCKED=!REVIEW&&!INTRIAL&&(!st('act')||!ACC.public_key);
+if(TRIAL_MS&&LOCKED){FREE={};ACC.cards={};ACC.qs=[];ACC.free_chapters=[];ACC.free_names=[]}   // trial over: nothing stays open
+if(INTRIAL)setTimeout(function(){location.reload()},Math.min(trialLeft()+500,2e9));
+function trialPost(start){if(SRV==null)return Promise.resolve(null);return fetch(SRV.replace(/\/$/,'')+'/trial',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({dev:DEV,start:start||0})}).then(function(r){return r.json()}).catch(function(){return null})}
+function startTrial(){var now=Date.now(),t={s:now,m:now};try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}
+  var done=function(){location.reload()};trialPost(now).then(function(j){if(j&&j.ok&&j.start&&j.start<now){t.s=j.start;try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}}done()});setTimeout(done,2500)}
+if(INTRIAL&&!TRIAL.r)trialPost(TRIAL.s).then(function(j){if(!j||!j.ok)return;TRIAL.r=1;if(j.start&&j.start<TRIAL.s){TRIAL.s=j.start;if(Date.now()>=TRIAL.s+TRIAL_MS)TRIAL.x=1}try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}if(TRIAL.x)location.reload()});
 var SRV=ACC.server==='same'?(/^https?:$/.test(location.protocol)&&!/claude|localhost|127\.0/.test(location.hostname)?'':null):(ACC.server||null);
 var LINKCODE=(location.hash.match(/code=([A-Za-z0-9-]{11,16})/)||[])[1];if(LINKCODE){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}
-window.addEventListener('hashchange',function(){var m=location.hash.match(/code=([A-Za-z0-9-]{11,16})/);if(m){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}if(LOCKED)openSub(m[1])}});
+window.addEventListener('hashchange',function(){var m=location.hash.match(/code=([A-Za-z0-9-]{11,16})/);if(m){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}if(LOCKED||INTRIAL)openSub(m[1])}});
 function b64u(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';var b=atob(s),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u}
 /* activation: the student types the code (PMR-XXXX-XXXX); the server binds this device (max 2 per code) and returns
    a token = DEVICE.signature, checked here with the public key so the book also opens offline */
@@ -26,17 +40,19 @@ function checkCode(code){code=(code||'').replace(/\s+/g,'');var parts=code.split
   return crypto.subtle.importKey('jwk',ACC.public_key,{name:'ECDSA',namedCurve:'P-256'},false,['verify']).then(function(k){
     return crypto.subtle.verify({name:'ECDSA',hash:'SHA-256'},k,b64u(sig),new TextEncoder().encode('PMR|pediatrics|1|'+parts.join(',')))}).catch(function(){return false})}
 function relock(){try{localStorage.removeItem('prr-act');localStorage.removeItem('prr-code');localStorage.removeItem('prr-name')}catch(e){}location.reload()}
-if(!LOCKED&&!REVIEW)checkCode(st('act')).then(function(ok){if(!ok)return relock();
+if(!LOCKED&&!REVIEW&&!INTRIAL)checkCode(st('act')).then(function(ok){if(!ok)return relock();
   /* online check: the authors can switch a code off or reset its devices; offline the book stays open */
   if(SRV!=null&&st('code')&&navigator.onLine!==false)fetch(SRV.replace(/\/$/,'')+'/check?dev='+DEV+'&code='+encodeURIComponent(st('code')),{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){if(j&&j.ok===false&&j.reason!=='device')relock();else if(j&&j.ok&&typeof j.name==='string'&&j.name!==(st('name')||'')){st('name',j.name);welcomeName()}}).catch(function(){})});
 if(LOCKED){var fd={};Object.keys(ACC.cards||{}).forEach(function(id){if(DECKS[id])fd[id]={short:DECKS[id].short,cards:ACC.cards[id].map(function(j){return DECKS[id].cards[j]})}});DECKS=fd}
 function pageFree(i){var p=META.pages[i];if(!LOCKED||p.user||p.chcover)return true;if(/^(cover|authors|about|reviewers|howto|references|contents|abbr)/.test(p.id))return true;return p.ex?(ACC.free_chapters||[]).indexOf(p.ch)>=0:!!FREE[p.topic]}
+function trialTxt(){var ms=trialLeft(),h=Math.floor(ms/36e5),m=Math.floor(ms%36e5/6e4);return 'باقي '+(h?h+' ساعة و':'')+m+' دقيقة'}
+function freeMsg(){return TRIAL_MS?(TRIALNEW?'يمكنك أن تبدأ <b>النسخة التجريبية المجانية</b> لمدة '+(+ACC.trial_hours)+' ساعة: الكتاب كله مفتوح مع كل الأدوات.':INTRIAL?'أنت الآن في <b>الفترة التجريبية المجانية</b>: الكتاب كله مفتوح لمدة '+(+ACC.trial_hours)+' ساعة ('+trialTxt()+').':'انتهت <b>الفترة التجريبية المجانية</b> ('+(+ACC.trial_hours)+' ساعة) على هذا الجهاز.'):'النسخة المجانية تفتح لك <b>'+freeList()+'</b> مع بطاقاته وأسئلته.'}
 function freeList(){if(ACC.free_label)return '<b>'+ACC.free_label.replace(/([A-Za-z][A-Za-z ]*[A-Za-z])/g,'<span class="en">$1</span>')+'</b>';return (ACC.free_names||[]).map(function(n){return '<b class="en">'+esc(n)+'</b>'}).join('، ')}
 function E(t){return '<span class="en">'+t+'</span>'}
 function subHtml(code){var wa=(ACC.whatsapp||'').replace(/[^0-9]/g,''),who=esc(ACC.contact_name||'المؤلفين');
   var msg='السلام عليكم '+(ACC.contact_name||'')+'، أرغب في الاشتراك في كتاب Pediatrics Master Review.';
   return '<div class="subx ar" dir="rtl"><img class="sublogo" src="img/logo.webp" alt="">'+
-  '<p class="lead">النسخة المجانية تفتح لك <b>'+freeList()+'</b> مع بطاقاته وأسئلته. اشترك مرة واحدة لتفتح <b>الكتاب كاملًا</b>، وكل البطاقات، وبنك الأسئلة كاملًا، طوال هذه الطبعة.</p>'+
+  (TRIALNEW?'<button type="button" class="chc tr" data-trial="1"><span><b>جرّب أولًا: النسخة التجريبية لمدة '+(+ACC.trial_hours)+' ساعة</b><small>مجانًا، الكتاب كله مع كل الأدوات</small></span></button>':'')+'<p class="lead">'+freeMsg()+' اشترك مرة واحدة لتفتح <b>الكتاب كاملًا</b>، وكل البطاقات، وبنك الأسئلة كاملًا، طوال هذه الطبعة.</p>'+
   (ACC.price?'<div class="price">قيمة الاشتراك: '+esc(ACC.price)+'</div>':'')+
   '<b class="ssth">طريقة الاشتراك</b><ol class="sst">'+
   '<li><b>حوّل قيمة الاشتراك</b> عن طريق تطبيق بنكك'+(ACC.bankak_account?' إلى الحساب رقم <b class="sel" dir="ltr">'+esc(ACC.bankak_account)+'</b>'+(ACC.bankak_name?' باسم '+esc(ACC.bankak_name):''):'، وسنرسل لك رقم الحساب في واتساب')+'.</li>'+
@@ -57,11 +73,23 @@ function activate(code){var msg=$('actMsg'),go=$('actGo');code=(code||'').toUppe
       return checkCode(j.token).then(function(ok){if(!ok){go.disabled=false;msg.textContent=ACT_ERR.server;return}
         st('act',j.token);st('code',j.code);if(j.name)st('name',j.name);msg.textContent='تم التفعيل بنجاح! يُفتح الكتاب كاملًا الآن…';setTimeout(function(){location.reload()},700)})})
     .catch(function(){go.disabled=false;msg.textContent=ACT_ERR.net})}
-function openSub(code){if(!LOCKED){openSheet('الاشتراك','<div class="ar" dir="rtl"><p class="lead">هذا الجهاز مفعّل والكتاب مفتوح كاملًا. شكرًا لك!</p>'+(st('code')?'<div class="devc"><span>كود التفعيل</span><b dir="ltr">'+esc(st('code'))+'</b></div>':'')+'</div>');return}
+function openChoose(){
+  var ic1='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>',
+      ic2='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8l4 10h12l4-10-6 4-4-7-4 7z"/></svg>',
+      ic3='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2L20 3M16 7l3 3M14 9l2 2"/></svg>';
+  var h=+ACC.trial_hours||24;
+  openSheet('مرحبًا بك في الكتاب','<div class="chz ar" dir="rtl"><img class="sublogo" src="img/logo.webp" alt=""><p class="lead">اختر طريقة فتح الكتاب:</p>'+
+    (TRIALNEW?'<button type="button" class="chc tr" id="chTrial"><i>'+ic1+'</i><span><b>النسخة التجريبية لمدة '+h+' ساعة</b><small>مجانًا: الكتاب كله، البطاقات، بنك الأسئلة، المحاضرات وكل أدوات المذاكرة. تبدأ الساعات من لحظة الضغط.</small></span></button>'
+      :'<div class="chc tr off"><i>'+ic1+'</i><span><b>النسخة التجريبية'+(INTRIAL?': '+trialTxt():': انتهت')+'</b><small>'+(INTRIAL?'الكتاب كله مفتوح لك حتى نهاية الفترة.':'استُخدمت الفترة التجريبية على هذا الجهاز.')+'</small></span></div>')+
+    '<button type="button" class="chc pd" id="chPaid"><i>'+ic2+'</i><span><b>الاشتراك في النسخة المدفوعة</b><small>'+(ACC.price?esc(ACC.price)+' · ':'')+'الكتاب كاملًا طوال الطبعة على جهازين، مع مزامنة ملاحظاتك.</small></span></button>'+
+    '<button type="button" class="chc cd" id="chCode"><i>'+ic3+'</i><span><b>عندي كود تفعيل</b><small>اكتب الكود الذي وصلك في واتساب.</small></span></button></div>');
+  if($('chTrial'))$('chTrial').onclick=function(){this.disabled=true;this.querySelector('small').textContent='جارٍ فتح الكتاب…';startTrial()};
+  $('chPaid').onclick=function(){openSub()};$('chCode').onclick=function(){openSub();setTimeout(function(){var x=$('actIn');if(x){x.scrollIntoView({block:'center'});x.focus()}},250)}}
+function openSub(code){if(!LOCKED&&!INTRIAL){openSheet('الاشتراك','<div class="ar" dir="rtl"><p class="lead">هذا الجهاز مفعّل والكتاب مفتوح كاملًا. شكرًا لك!</p>'+(st('code')?'<div class="devc"><span>كود التفعيل</span><b dir="ltr">'+esc(st('code'))+'</b></div>':'')+'</div>');return}
   openSheet('الاشتراك في الكتاب',subHtml(code));
   $('actGo').onclick=function(){activate($('actIn').value)};$('actIn').onkeydown=function(e){if(e.key==='Enter')activate(this.value)};
   if(code)activate(code)}
-document.addEventListener('click',function(e){if(e.target.closest('[data-sub]'))openSub()});
+document.addEventListener('click',function(e){if(e.target.closest('[data-trial]')){startTrial();return}if(e.target.closest('[data-sub]'))(TRIALNEW?openChoose:openSub)()});
 var TOPICS=META.topics, PAGES=META.pages, NP=PAGES.length;
 /* the student's own blank note pages (side-rail button): stored in prr-upg as id -> {a: key of the book page they follow, n: time made};
    they get their own keys (their id), so book page keys and everything saved on book pages stay the same */
@@ -93,7 +121,7 @@ srcPages.forEach(function(sec,i){
   var pw=document.createElement('div');pw.className='pw';pw.dataset.i=i;
   var host=document.createElement('div');host.className='bk';host.appendChild(sec.cloneNode(true));
   pw.appendChild(host);pagesEl.appendChild(pw);wraps.push(pw)});
-if(LOCKED)wraps.forEach(function(pw,i){if(pageFree(i))return;pw.classList.add('lk');var o=document.createElement('div');o.className='lko';o.innerHTML='<div class="ar" dir="rtl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><b>هذه الصفحة للمشتركين</b><span>النسخة المجانية تفتح '+freeList()+'. اشترك لتفتح الكتاب كاملًا مع كل البطاقات وبنك الأسئلة.</span><button type="button" class="btn" data-sub="1">اضغط هنا للاشتراك</button></div>';pw.appendChild(o)});
+if(LOCKED)wraps.forEach(function(pw,i){if(pageFree(i))return;pw.classList.add('lk');var o=document.createElement('div');o.className='lko';o.innerHTML='<div class="ar" dir="rtl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><b>هذه الصفحة للمشتركين</b><span>'+freeMsg()+' اشترك لتفتح الكتاب كاملًا مع كل البطاقات وبنك الأسئلة.</span><button type="button" class="btn" data-sub="1">اضغط هنا للاشتراك</button></div>';pw.appendChild(o)});
 var cm=$('coverMini');cm.appendChild(srcPages[0].cloneNode(true));
 function fitCover(){var w=cm.parentNode.clientWidth||112;cm.style.transform='scale('+(w/816)+')'}fitCover();
 /* page size (side-rail panel): auto = page width up to the screen, 'width' = fill the screen width, 'page' = the whole page
@@ -336,7 +364,7 @@ function refreshHome(){
 $('pill').textContent=META.pill;
 $('contBtn').onclick=function(){goIdx(lastPage())};
 $('coverBtn').onclick=function(){goPage(0)};
-if(LOCKED){$('trialCard').hidden=false;$('trialTxt').innerHTML='النسخة المجانية تفتح '+freeList()+' مع بطاقاته وأسئلته. اشترك لتفتح الكتاب كاملًا.'}$('hmToc').onclick=function(){$('tocBtn').click()};
+if(LOCKED||INTRIAL){$('trialCard').hidden=false;var tcu=function(){$('trialCard').querySelector('b').textContent=INTRIAL?'الفترة التجريبية · '+trialTxt():TRIALNEW?'ابدأ النسخة التجريبية · '+(+ACC.trial_hours)+' ساعة':(TRIAL_MS?'انتهت الفترة التجريبية':'النسخة المجانية');$('trialTxt').innerHTML=INTRIAL?'الكتاب كله مفتوح لك الآن. بعد انتهاء الفترة يُقفل الكتاب حتى تشترك.':TRIALNEW?'الكتاب كله مجانًا مع كل الأدوات، أو اشترك في النسخة المدفوعة.':freeMsg()+' اشترك لتفتح الكتاب كاملًا.';$('trialCard').querySelector('i').textContent=TRIALNEW?'اضغط هنا للاختيار':'اضغط هنا للاشتراك'};tcu();if(INTRIAL)setInterval(tcu,30000)}$('hmToc').onclick=function(){$('tocBtn').click()};
 $('rrTool').onclick=function(){goPage(META.rr-1)};
 
 /* ---------- sheet: contents and highlights ---------- */
@@ -1045,7 +1073,7 @@ function qbStats(){var used=0,ok=0,m=0;QS.forEach(function(q){var u=QU[q.id];if(
 function renderQB(){if(CUR&&!CUR.done)return renderQ();$('subtitle').textContent='Question bank';
   var s=qbStats(),pool=poolQs(),max=pool.length,n=Math.min(qset.n,max);
   var h='<div class="qbst"><div><b>'+pct(s.ok,s.used)+'%</b><span>Correct</span></div><div><b>'+s.used+'<small> / '+QS.length+'</small></b><span>Used</span></div><div><b>'+(QS.length-s.used)+'</b><span>Unused</span></div><div><b>'+s.m+'</b><span>Marked</span></div></div>';
-  if(LOCKED)h+='<button type="button" class="trial ar" dir="rtl" data-sub="1"><b>النسخة المجانية · '+QS.length+' سؤال</b><span>اشترك لفتح بنك الأسئلة كاملًا</span><i>اضغط هنا للاشتراك</i></button>';
+  if(LOCKED)h+='<button type="button" class="trial ar" dir="rtl" data-sub="1"><b>'+(TRIAL_MS?(TRIALNEW?'جرّب بنك الأسئلة كاملًا مجانًا':'انتهت الفترة التجريبية'):'النسخة المجانية · '+QS.length+' سؤال')+'</b><span>'+(TRIALNEW?'النسخة التجريبية لمدة '+(+ACC.trial_hours)+' ساعة تفتح كل الأسئلة':'اشترك لفتح بنك الأسئلة كاملًا')+'</span><i>اضغط هنا للاشتراك</i></button>';
   var any=Object.keys(qset.ch).some(function(k){return qset.ch[k]}),nsel=qchs.filter(function(c){return qset.ch[c]}).length;
   function step(no,t,r){return '<div class="qbl"><span class="qno">'+no+'</span>'+t+(r?'<em>'+r+'</em>':'')+'</div>'}
   h+='<div class="sh"><h3>Create a test</h3></div><div class="qbf">';
@@ -1203,7 +1231,7 @@ function renderLect(){var rec=TOPICS.filter(function(t){return AUG[t.id]}).lengt
   META.contents.forEach(function(ch){var rows=ch.topics.filter(function(t){return t.p}).map(function(t){return lectRow(AUG[t.id],t,ch.no)});var ex=AUG['ex'+ch.no];if(ex)rows.push(lectRow(ex,null,ch.no));
     if(rows.length)h+='<div class="lch lc'+ch.no+'"><i></i>Chapter '+ch.no+' · '+esc(ch.title)+'</div>'+rows.join('')});
   if(haveBytes())h+='<button type="button" class="chip lforget" id="lcForget">Remove downloads from this phone · '+mb(haveBytes())+'</button>';
-  if(LOCKED)h+='<p class="muted" style="text-align:center;margin:0">النسخة المجانية تفتح محاضرات المواضيع المجانية فقط. اشترك لفتح كل المحاضرات.</p>';
+  if(LOCKED)h+='<p class="muted" style="text-align:center;margin:0">'+(TRIAL_MS?'المحاضرات مفتوحة في النسخة التجريبية وللمشتركين.':'النسخة المجانية تفتح محاضرات المواضيع المجانية فقط. اشترك لفتح كل المحاضرات.')+'</p>';
   $('lcWrap').innerHTML=h}
 function markRows(){[].forEach.call(document.querySelectorAll('#lcWrap .lr[data-g]'),function(r){var g=AUG[r.dataset.g],on=PL&&PL.g===g&&!aud.paused,b=r.querySelector('.pl');r.classList.toggle('cur',!!(PL&&PL.g===g));if(b)b.innerHTML=on?PAUSE_I:PLAY_I})}
 $('lcWrap').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
@@ -1247,7 +1275,7 @@ function welcomeName(){var t=document.querySelector('#welc .wt');if(t)t.textCont
 /* start */
 GLAST=gsnap();updUR();
 refreshHome();
-if(LINKCODE&&LOCKED)openSub(LINKCODE);
+if(LINKCODE&&(LOCKED||INTRIAL))openSub(LINKCODE);else if(TRIALNEW||TRIALEND)setTimeout(openChoose,2900);   // owner: on opening, choose the 24-hour trial or the paid version
 if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('sw.js').catch(function(){})}
 })();
 

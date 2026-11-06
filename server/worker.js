@@ -32,11 +32,12 @@ function kindOf(req) {
 const SCHEMA = 'CREATE TABLE IF NOT EXISTS codes (code TEXT PRIMARY KEY, note TEXT NOT NULL DEFAULT \'\', created TEXT NOT NULL, activated TEXT, active INTEGER NOT NULL DEFAULT 1, devices TEXT NOT NULL DEFAULT \'[]\')';
 const SYNC_SCHEMA = 'CREATE TABLE IF NOT EXISTS sync (code TEXT PRIMARY KEY, ver INTEGER NOT NULL, data TEXT NOT NULL, updated TEXT NOT NULL)';
 // pictures the students put on book pages (owner, Nov 2026): one row per picture, shared by the devices of a code
+const TRIAL_SCHEMA = 'CREATE TABLE IF NOT EXISTS trials (dev TEXT PRIMARY KEY, start INTEGER NOT NULL, created TEXT NOT NULL)';
 const IMG_SCHEMA = 'CREATE TABLE IF NOT EXISTS imgs (code TEXT NOT NULL, id TEXT NOT NULL, data TEXT NOT NULL, updated TEXT NOT NULL, PRIMARY KEY (code, id))';
 const IMG_MAX = 900000, IMG_COUNT = 300;
 export class CodesDB extends DurableObject {
   constructor(ctx, env) {
-    super(ctx, env); ctx.storage.sql.exec(SCHEMA); ctx.storage.sql.exec(SYNC_SCHEMA); ctx.storage.sql.exec(IMG_SCHEMA);
+    super(ctx, env); ctx.storage.sql.exec(SCHEMA); ctx.storage.sql.exec(SYNC_SCHEMA); ctx.storage.sql.exec(IMG_SCHEMA); ctx.storage.sql.exec(TRIAL_SCHEMA);
     // devices allowed for each code (added later: older stores get the column with the default of 2)
     const cols = ctx.storage.sql.exec('PRAGMA table_info(codes)').toArray().map(c => c.name);
     if (!cols.includes('maxdev')) ctx.storage.sql.exec('ALTER TABLE codes ADD COLUMN maxdev INTEGER NOT NULL DEFAULT ' + MAX_DEV);
@@ -173,6 +174,16 @@ async function img(req, env) {
   if (body.op === 'del') { await D.prepare('DELETE FROM imgs WHERE code = ? AND id = ?').bind(code, id).run(); return json({ ok: true }) }
   return json({ ok: false, reason: 'op' }, 400);
 }
+// POST /trial { dev, start }: the 24-hour free trial; the server keeps the FIRST start of each device and returns it
+async function trial(req, env) {
+  const body = await req.json().catch(() => ({}));
+  const dev = String(body.dev || ''); if (!/^[A-Z2-9]{4}-[A-Z2-9]{4}$/.test(dev)) return json({ ok: false, reason: 'dev' }, 400);
+  const t = Date.now(), start = Math.min(Math.max(parseInt(body.start, 10) || t, t - 30 * 864e5), t);
+  const D = await db(env);
+  await D.prepare('INSERT OR IGNORE INTO trials (dev, start, created) VALUES (?, ?, ?)').bind(dev, start, now()).run();
+  const r = await D.prepare('SELECT start FROM trials WHERE dev = ?').bind(dev).first();
+  return json({ ok: true, start: r ? r.start : start });
+}
 async function sync(req, env) {
   const body = await req.json().catch(() => ({}));
   const a = await devOf(env, body); if (a.res) return a.res;
@@ -198,6 +209,7 @@ export default {
       if (path === '/check') return await check(req, env, url);
       if (path === '/sync' && req.method === 'POST') return await sync(req, env);
       if (path === '/img' && req.method === 'POST') return await img(req, env);
+      if (path === '/trial' && req.method === 'POST') return await trial(req, env);
       if (path.startsWith('/api/')) return await api(req, env, path);
     } catch (e) { return json({ error: 'Server error: ' + e.message, reason: 'server' }, 500) }
     if (path === '/admin' || path === '/admin/') return new Response(PAGE(env, url.origin + '/'), { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });
