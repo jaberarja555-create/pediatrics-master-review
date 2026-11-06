@@ -1541,3 +1541,10 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .penfly .upc{display:flex;gap:6px;margin:6px 0 10px}.penfly .upc button{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:7px 4px;border-radius:10px;border:1px solid #ffffff33;background:#ffffff12;color:#fff;font:700 11.5px var(--sans)}
 .penfly .upc button.cur{border-color:#f3d98b;background:#f3d98b22}
 .pcd{display:block;width:26px;height:26px;border-radius:50%;border:1px solid #c99a3b}.pcd.pcw{background:#fff}.pcd.pcc{background:#f6eed8}.pcd.pcb{background:#dbe8f8}.upi.pcw{background-color:#fff}.upi.pcc{background-color:#fffdf7}.upi.pcb{background-color:#eef5fd}
+/* subscription sheet headings (owner: clear Arabic steps) */
+.subx .ssth{display:block;margin:4px 0 -2px;font:800 15px/1.4 'Cairo',var(--sans);color:var(--ha,#c99a3b)}
+.subx .muted{font-family:'Cairo',var(--sans);line-height:1.6}
+.subx .ar,.subx.ar .sst li,.subx.ar .muted{font-family:'Cairo',var(--sans)}
+/* the subscribe and activate buttons stand out (owner: clear "press here to subscribe") */
+.lko .btn,.subx #actGo{background:linear-gradient(145deg,#f3d98b 0%,#c99a3b 100%)!important;color:#0b2c3a!important;font:800 15px 'Cairo',var(--sans)!important;border:0!important;box-shadow:0 3px 10px rgba(201,154,59,.35)}
+.lko b,.lko span{font-family:'Cairo',var(--sans)}

@@ -170,7 +170,7 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
 
 ## Subscription (free trial + activation codes)
 - `book.json` → `access`: free topics (owner's model, from the obstetrics app: the first topic of each chapter; `free_label` is the short Arabic line shown instead of the topic list; the drugs chapter is not free) with ALL their flashcards / questions (`"all"`); a chapter whose topics are all free also has a free Rapid Review;
-  one code opens up to 2 devices (student sends both device codes), WhatsApp, price, Bankak account. Empty fields are hidden. Subscription text is in Sudanese Arabic (English terms kept).
+  one code opens up to 2 devices (student sends both device codes), WhatsApp, price, Bankak account. Empty fields are hidden. Subscription text is in clear Arabic (owner, Nov 2026: no English words that jumble the line; buttons say «اضغط هنا للاشتراك», «تفعيل»; numbered steps «طريقة الاشتراك»).
 - Online: `server/` = one Cloudflare Worker serving the book (docs/) + `/admin` control page + `/check`; see server/DEPLOY.md.
 - Codes work like Dr. Arja Master Note: the owner makes codes `PMR-XXXX-XXXX` on `/admin` (note = buyer's name/phone, Copy message for WhatsApp,
   Reset devices, Switch off/on, Delete). The student types the code in the app (or opens `<app url>#code=PMR-…`); the Worker's `/activate` binds the

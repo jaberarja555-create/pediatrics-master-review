@@ -33,28 +33,32 @@ if(LOCKED){var fd={};Object.keys(ACC.cards||{}).forEach(function(id){if(DECKS[id
 function pageFree(i){var p=META.pages[i];if(!LOCKED||p.user||p.chcover)return true;if(/^(cover|authors|about|reviewers|howto|references|contents|abbr)/.test(p.id))return true;return p.ex?(ACC.free_chapters||[]).indexOf(p.ch)>=0:!!FREE[p.topic]}
 function freeList(){if(ACC.free_label)return '<b>'+ACC.free_label.replace(/([A-Za-z][A-Za-z ]*[A-Za-z])/g,'<span class="en">$1</span>')+'</b>';return (ACC.free_names||[]).map(function(n){return '<b class="en">'+esc(n)+'</b>'}).join('، ')}
 function E(t){return '<span class="en">'+t+'</span>'}
-function subHtml(code){var wa=(ACC.whatsapp||'').replace(/[^0-9]/g,''),who=esc(ACC.contact_name||'');
-  var msg='السلام عليكم '+(ACC.contact_name||'')+'، داير أشترك في Pediatrics Master Review.';
-  return '<div class="subx ar" dir="rtl"><img class="sublogo" src="img/logo.webp" alt=""><p class="lead">الـ '+E('free trial')+' بيفتح ليك كاملين: '+freeList()+'، مع كل الـ '+E('flashcards')+' والـ '+E('QBank')+' بتاعتهم. لو اشتركت مرّة واحدة بيتفتح ليك <b>الكتاب كلّه</b>، وكل الـ '+E('flashcards')+'، والـ '+E('QBank')+' كامل، للطبعة دي كلّها.</p>'+
-  (ACC.price?'<div class="price">'+esc(ACC.price)+'</div>':'')+
-  '<ol class="sst"><li><b>حوّل المبلغ بـ بنكك</b>'+(ACC.bankak_account?': رقم الحساب <b class="sel en">'+esc(ACC.bankak_account)+'</b>'+(ACC.bankak_name?' ('+esc(ACC.bankak_name)+')':''):' (رقم الحساب بنرسله ليك في الواتساب)')+'.</li>'+
-  '<li><b>رسّل صورة الإشعار</b> واتساب لـ '+who+(ACC.whatsapp_local?' (<span class="en">'+esc(ACC.whatsapp_local)+'</span>)':'')+'.</li>'+
-  '<li>بنرسل ليك <b>'+E('activation code')+'</b>: اكتبه تحت ودوس '+E('Activate')+'. الكود الواحد بيفتح <b>جهازين</b> (الموبايل واللابتوب): اكتبه في كل جهاز.</li></ol>'+
-  (wa?'<a class="btn wa" id="waBtn" href="https://wa.me/'+wa+'?text='+encodeURIComponent(msg)+'" target="_blank" rel="noopener">رسّل واتساب لـ '+who+'</a>':'')+
-  '<input id="actIn" class="actin" dir="ltr" placeholder="PMR-XXXX-XXXX" autocomplete="off" autocapitalize="characters" spellcheck="false" value="'+esc(code||'')+'"><button type="button" class="btn" id="actGo">'+E('Activate')+'</button><p class="muted" id="actMsg"></p></div>'}
-var ACT_ERR={unknown:'الكود دا غلط. اتأكّد منه واكتبه تاني زي ما وصلك.',off:'الكود دا مقفول. كلّم '+(ACC.contact_name||'المؤلفين')+'.',full:'الكود دا اتفعّل في جهازين قبل كدا. لو غيّرت جهازك كلّم '+(ACC.contact_name||'المؤلفين')+'.',server:'في مشكلة في السيرفر. جرّب تاني بعد شويّة.',net:'ما في إنترنت. التفعيل محتاج نت مرّة واحدة بس، اتأكّد من النت وجرّب تاني.',here:'التفعيل بيشتغل من لينك الكتاب الأصلي بس.'};
+function subHtml(code){var wa=(ACC.whatsapp||'').replace(/[^0-9]/g,''),who=esc(ACC.contact_name||'المؤلفين');
+  var msg='السلام عليكم '+(ACC.contact_name||'')+'، أرغب في الاشتراك في كتاب Pediatrics Master Review.';
+  return '<div class="subx ar" dir="rtl"><img class="sublogo" src="img/logo.webp" alt="">'+
+  '<p class="lead">النسخة المجانية تفتح لك <b>'+freeList()+'</b> مع بطاقاته وأسئلته. اشترك مرة واحدة لتفتح <b>الكتاب كاملًا</b>، وكل البطاقات، وبنك الأسئلة كاملًا، طوال هذه الطبعة.</p>'+
+  (ACC.price?'<div class="price">قيمة الاشتراك: '+esc(ACC.price)+'</div>':'')+
+  '<b class="ssth">طريقة الاشتراك</b><ol class="sst">'+
+  '<li><b>حوّل قيمة الاشتراك</b> عن طريق تطبيق بنكك'+(ACC.bankak_account?' إلى الحساب رقم <b class="sel" dir="ltr">'+esc(ACC.bankak_account)+'</b>'+(ACC.bankak_name?' باسم '+esc(ACC.bankak_name):''):'، وسنرسل لك رقم الحساب في واتساب')+'.</li>'+
+  '<li><b>اضغط زر واتساب</b> في الأسفل، وأرسل صورة إشعار التحويل إلى '+who+(ACC.whatsapp_local?' على الرقم <b dir="ltr">'+esc(ACC.whatsapp_local)+'</b>':'')+'.</li>'+
+  '<li>سنرسل لك <b>كود التفعيل</b> في واتساب. اكتبه في الخانة أدناه واضغط <b>تفعيل</b>.</li></ol>'+
+  '<p class="muted">الكود الواحد يفتح <b>جهازين</b> (الهاتف والحاسوب مثلًا)، فاكتبه في كل جهاز. ويكفي الاتصال بالإنترنت مرة واحدة عند التفعيل.</p>'+
+  (wa?'<a class="btn wa" id="waBtn" href="https://wa.me/'+wa+'?text='+encodeURIComponent(msg)+'" target="_blank" rel="noopener">اضغط هنا لمراسلة '+who+' في واتساب</a>':'')+
+  '<b class="ssth">عندك كود التفعيل؟</b>'+
+  '<input id="actIn" class="actin" dir="ltr" placeholder="PMR-XXXX-XXXX" autocomplete="off" autocapitalize="characters" spellcheck="false" value="'+esc(code||'')+'"><button type="button" class="btn" id="actGo">تفعيل</button><p class="muted" id="actMsg"></p></div>'}
+var ACT_ERR={unknown:'هذا الكود غير صحيح. تأكد منه واكتبه كما وصلك.',off:'هذا الكود موقوف. تواصل مع '+(ACC.contact_name||'المؤلفين')+'.',full:'هذا الكود مفعّل على جهازين من قبل. إذا غيّرت جهازك فتواصل مع '+(ACC.contact_name||'المؤلفين')+'.',server:'حدثت مشكلة في الخادم. حاول مرة أخرى بعد قليل.',net:'لا يوجد اتصال بالإنترنت. التفعيل يحتاج إلى الإنترنت مرة واحدة فقط؛ تأكد من الاتصال وحاول مرة أخرى.',here:'التفعيل يعمل من رابط الكتاب الأصلي فقط.'};
 function activate(code){var msg=$('actMsg'),go=$('actGo');code=(code||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
-  if(!/^PMR[A-Z0-9]{8}$/.test(code)){msg.textContent='الكود بيكون زي كدا: PMR-XXXX-XXXX';return}
+  if(!/^PMR[A-Z0-9]{8}$/.test(code)){msg.textContent='يكون الكود بهذا الشكل: PMR-XXXX-XXXX';return}
   if(SRV==null){msg.textContent=ACT_ERR.here;return}
-  msg.textContent='لحظة…';go.disabled=true;
+  msg.textContent='جارٍ التفعيل…';go.disabled=true;
   fetch(SRV.replace(/\/$/,'')+'/activate',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({code:code,dev:DEV})})
     .then(function(r){return r.json()}).then(function(j){
       if(!j||!j.ok){go.disabled=false;msg.textContent=ACT_ERR[j&&j.reason]||ACT_ERR.server;return}
       return checkCode(j.token).then(function(ok){if(!ok){go.disabled=false;msg.textContent=ACT_ERR.server;return}
-        st('act',j.token);st('code',j.code);if(j.name)st('name',j.name);msg.textContent='تمام، اتفعّل! الكتاب كلّه بيفتح هسّي…';setTimeout(function(){location.reload()},700)})})
+        st('act',j.token);st('code',j.code);if(j.name)st('name',j.name);msg.textContent='تم التفعيل بنجاح! يُفتح الكتاب كاملًا الآن…';setTimeout(function(){location.reload()},700)})})
     .catch(function(){go.disabled=false;msg.textContent=ACT_ERR.net})}
-function openSub(code){if(!LOCKED){openSheet('الاشتراك','<div class="ar" dir="rtl"><p class="lead">الجهاز دا متفعّل والكتاب كلّه مفتوح. شكراً ليك!</p>'+(st('code')?'<div class="devc"><span>الـ '+E('activation code')+'</span><b dir="ltr">'+esc(st('code'))+'</b></div>':'')+'</div>');return}
-  openSheet('افتح الكتاب كامل',subHtml(code));
+function openSub(code){if(!LOCKED){openSheet('الاشتراك','<div class="ar" dir="rtl"><p class="lead">هذا الجهاز مفعّل والكتاب مفتوح كاملًا. شكرًا لك!</p>'+(st('code')?'<div class="devc"><span>كود التفعيل</span><b dir="ltr">'+esc(st('code'))+'</b></div>':'')+'</div>');return}
+  openSheet('الاشتراك في الكتاب',subHtml(code));
   $('actGo').onclick=function(){activate($('actIn').value)};$('actIn').onkeydown=function(e){if(e.key==='Enter')activate(this.value)};
   if(code)activate(code)}
 document.addEventListener('click',function(e){if(e.target.closest('[data-sub]'))openSub()});
@@ -89,7 +93,7 @@ srcPages.forEach(function(sec,i){
   var pw=document.createElement('div');pw.className='pw';pw.dataset.i=i;
   var host=document.createElement('div');host.className='bk';host.appendChild(sec.cloneNode(true));
   pw.appendChild(host);pagesEl.appendChild(pw);wraps.push(pw)});
-if(LOCKED)wraps.forEach(function(pw,i){if(pageFree(i))return;pw.classList.add('lk');var o=document.createElement('div');o.className='lko';o.innerHTML='<div class="ar" dir="rtl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><b>للمشتركين بس</b><span>الصفحة دي في الكتاب الكامل. الـ <span class="en">free trial</span> بيفتح '+freeList()+' كاملين.</span><button type="button" class="btn" data-sub="1">افتح الكتاب كامل</button></div>';pw.appendChild(o)});
+if(LOCKED)wraps.forEach(function(pw,i){if(pageFree(i))return;pw.classList.add('lk');var o=document.createElement('div');o.className='lko';o.innerHTML='<div class="ar" dir="rtl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><b>هذه الصفحة للمشتركين</b><span>النسخة المجانية تفتح '+freeList()+'. اشترك لتفتح الكتاب كاملًا مع كل البطاقات وبنك الأسئلة.</span><button type="button" class="btn" data-sub="1">اضغط هنا للاشتراك</button></div>';pw.appendChild(o)});
 var cm=$('coverMini');cm.appendChild(srcPages[0].cloneNode(true));
 function fitCover(){var w=cm.parentNode.clientWidth||112;cm.style.transform='scale('+(w/816)+')'}fitCover();
 /* page size (side-rail panel): auto = page width up to the screen, 'width' = fill the screen width, 'page' = the whole page
@@ -192,7 +196,7 @@ var actx=null;function chime(notes,type){try{actx=actx||new (window.AudioContext
   notes.forEach(function(f,i){var o=actx.createOscillator(),g=actx.createGain(),t=t0+i*.09;o.type=type;o.frequency.value=f;
     g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.18,t+.015);g.gain.exponentialRampToValueAtTime(.001,t+.55);o.connect(g);g.connect(actx.destination);o.start(t);o.stop(t+.6)})}catch(e){}}
 /* tapping the button opens a small panel with the three choices; each choice has its own sound */
-$('prBtn').onclick=function(e){e.stopPropagation();var c=currentPage();if(LOCKED&&!pageFree(c)){railTip('الصفحة دي للمشتركين: بعد الاشتراك تقدر تعلّمها قريتها أو أتقنتها');return}
+$('prBtn').onclick=function(e){e.stopPropagation();var c=currentPage();if(LOCKED&&!pageFree(c)){railTip('هذه الصفحة للمشتركين: بعد الاشتراك يمكنك تعليمها «قرأتها» أو «أتقنتها»');return}
   var f=$('penFly');if(!f.hidden&&f.dataset.k==='p'){penFly(false);return}f.dataset.k='p';var v=readSet[PKEY[c]]||0;
   f.innerHTML='<b>الصفحة دي</b>'+PRS.map(function(x,n){return '<button type="button" class="propt p'+n+(n===v?' cur':'')+'" data-pv="'+n+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">'+x[1]+'</svg>'+x[0]+'</button>'}).join('');flyAt(f,$('prBtn'))};
 function setProg(v){var c=currentPage(),k=PKEY[c];if(v)readSet[k]=v;else delete readSet[k];PROGU[k]=Date.now();saveRead();updPr(c);
@@ -327,8 +331,7 @@ function refreshHome(){
 $('pill').textContent=META.pill;
 $('contBtn').onclick=function(){goIdx(lastPage())};
 $('coverBtn').onclick=function(){goPage(0)};
-if(LOCKED){$('trialCard').hidden=false;$('trialTxt').innerHTML=freeList()+' كاملين، مع الـ <span class="en">flashcards</span> والـ <span class="en">QBank</span>'}
-$('hmCover').onclick=function(){goPage(0)};$('hmToc').onclick=function(){$('tocBtn').click()};
+if(LOCKED){$('trialCard').hidden=false;$('trialTxt').innerHTML='النسخة المجانية تفتح '+freeList()+' مع بطاقاته وأسئلته. اشترك لتفتح الكتاب كاملًا.'}$('hmToc').onclick=function(){$('tocBtn').click()};
 $('rrTool').onclick=function(){goPage(META.rr-1)};
 
 /* ---------- sheet: contents and highlights ---------- */
@@ -962,7 +965,7 @@ $('toolCards').textContent=deckIds.reduce(function(a,k){return a+DECKS[k].cards.
 function chips(){$('deckChips').innerHTML=['daily','all'].concat(deckIds).map(function(k){var lab,cnt;
   if(k==='daily'){var D=daily();lab='Today';cnt=D.done.length+'/'+D.keys.length}
   else if(k==='all'){lab='All topics';var a=0,b=0;deckIds.forEach(function(id){a+=deckKnown(id);b+=DECKS[id].cards.length});cnt=a+'/'+b}else{lab=DECKS[k].short;cnt=deckKnown(k)+'/'+DECKS[k].cards.length}
-  return '<button class="chip'+(k===curDeck?' on':'')+'" type="button" data-d="'+k+'">'+esc(lab)+'<small>'+cnt+'</small></button>'}).join('')+(LOCKED?'<button class="chip lkc" type="button" data-sub="1" dir="rtl">🔒 كل الـ flashcards: اشترك</button>':'')}
+  return '<button class="chip'+(k===curDeck?' on':'')+'" type="button" data-d="'+k+'">'+esc(lab)+'<small>'+cnt+'</small></button>'}).join('')+(LOCKED?'<button class="chip lkc" type="button" data-sub="1" dir="rtl">🔒 اشترك لفتح كل البطاقات</button>':'')}
 $('deckChips').onclick=function(e){var b=e.target.closest('.chip');if(b&&b.dataset.d){curDeck=b.dataset.d;startDeck(curDeck)}};
 function startDeck(k,all){started=true;
   if(k==='daily'){var D=daily();deck=[];total=D.keys.length;known=D.done.length;D.keys.forEach(function(key){if(D.done.indexOf(key)<0){var x=CBYK[key];deck.push({key:key,t:DECKS[x.id].short,cat:x.c[0],q:x.c[1],a:x.c[2]})}});chips();renderCard();return}
@@ -1022,7 +1025,7 @@ function qbStats(){var used=0,ok=0,m=0;QS.forEach(function(q){var u=QU[q.id];if(
 function renderQB(){if(CUR&&!CUR.done)return renderQ();$('subtitle').textContent='Question bank';
   var s=qbStats(),pool=poolQs(),max=pool.length,n=Math.min(qset.n,max);
   var h='<div class="qbst"><div><b>'+pct(s.ok,s.used)+'%</b><span>Correct</span></div><div><b>'+s.used+'<small> / '+QS.length+'</small></b><span>Used</span></div><div><b>'+(QS.length-s.used)+'</b><span>Unused</span></div><div><b>'+s.m+'</b><span>Marked</span></div></div>';
-  if(LOCKED)h+='<button type="button" class="trial ar" dir="rtl" data-sub="1"><b><span class="en">Free trial</span> · '+QS.length+' سؤال</b><span>اشترك عشان يتفتح ليك الـ <span class="en">QBank</span> كامل</span><i>اشترك</i></button>';
+  if(LOCKED)h+='<button type="button" class="trial ar" dir="rtl" data-sub="1"><b>النسخة المجانية · '+QS.length+' سؤال</b><span>اشترك لفتح بنك الأسئلة كاملًا</span><i>اضغط هنا للاشتراك</i></button>';
   h+='<div class="sh"><h3>Create a test</h3></div><div class="qbf">';
   h+='<div class="qbl">Mode</div><div class="seg" data-k="mode">'+[['tutor','Tutor','answer after each question'],['timed','Timed','answers at the end · 1 min 15 s each']].map(function(o){return '<button type="button" data-v="'+o[0]+'" class="'+(qset.mode===o[0]?'on':'')+'"><b>'+o[1]+'</b><span>'+o[2]+'</span></button>'}).join('')+'</div>';
   h+='<div class="qbl">Questions</div><div class="chips" data-k="pool">'+[['unused','Unused'],['incorrect','Incorrect'],['marked','Marked'],['all','All']].map(function(o){
@@ -1161,7 +1164,7 @@ $('lisBtn').onclick=function(){if($('reader').hidden){show('lectures');return}va
 function lectRow(g,t,c){if(!g)return '<div class="lr soon lc'+c+'"><span class="n">'+esc(t.no)+'</span><span class="l"><b>'+esc(t.title)+'</b><small>Recording soon</small></span><span class="tag">SOON</span></div>';
   var free=gFree(g),hv=gHave(g),dl=DLING[g.g],on=PL&&PL.g===g&&!aud.paused;
   return '<div class="lr lc'+c+(PL&&PL.g===g?' cur':'')+'" data-g="'+g.g+'"><span class="n">'+esc(g.no)+'</span><span class="l"><b>'+esc(g.title)+'</b><small>'+mins(g.sec)+' · '+g.parts.length+' page'+(g.parts.length>1?'s':'')+(g.parts.length<g.n?' of '+g.n:'')+' · '+mb(g.bytes)+(hv?' · downloaded ✓':dl?' · downloading…':'')+'</small></span>'+
-    (!free?'<button type="button" class="lk" data-sub="1" aria-label="Subscribers only">🔒</button>':
+    (!free?'<button type="button" class="lk" data-sub="1" aria-label="للمشتركين">🔒</button>':
      (hv||!window.caches?'':'<button type="button" class="dl" data-dl="'+g.g+'" aria-label="Download"'+(dl?' disabled':'')+'><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></button>')+
      '<button type="button" class="pl" data-pl="'+g.g+'" aria-label="Play">'+(on?PAUSE_I:PLAY_I)+'</button>')+'</div>'}
 function renderLect(){var rec=TOPICS.filter(function(t){return AUG[t.id]}).length,tot=0,all=0,need=0;AU.forEach(function(g){tot+=g.sec;if(gFree(g)){all+=g.bytes;g.parts.forEach(function(p){if(!HAVE[p.abs])need+=p[3]})}});
@@ -1172,7 +1175,7 @@ function renderLect(){var rec=TOPICS.filter(function(t){return AUG[t.id]}).lengt
   META.contents.forEach(function(ch){var rows=ch.topics.filter(function(t){return t.p}).map(function(t){return lectRow(AUG[t.id],t,ch.no)});var ex=AUG['ex'+ch.no];if(ex)rows.push(lectRow(ex,null,ch.no));
     if(rows.length)h+='<div class="lch lc'+ch.no+'"><i></i>Chapter '+ch.no+' · '+esc(ch.title)+'</div>'+rows.join('')});
   if(haveBytes())h+='<button type="button" class="chip lforget" id="lcForget">Remove downloads from this phone · '+mb(haveBytes())+'</button>';
-  if(LOCKED)h+='<p class="muted" style="text-align:center;margin:0">Free trial: lectures of the free topics. Subscribe to open them all.</p>';
+  if(LOCKED)h+='<p class="muted" style="text-align:center;margin:0">النسخة المجانية تفتح محاضرات المواضيع المجانية فقط. اشترك لفتح كل المحاضرات.</p>';
   $('lcWrap').innerHTML=h}
 function markRows(){[].forEach.call(document.querySelectorAll('#lcWrap .lr[data-g]'),function(r){var g=AUG[r.dataset.g],on=PL&&PL.g===g&&!aud.paused,b=r.querySelector('.pl');r.classList.toggle('cur',!!(PL&&PL.g===g));if(b)b.innerHTML=on?PAUSE_I:PLAY_I})}
 $('lcWrap').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;

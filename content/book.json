@@ -710,7 +710,7 @@
   "bankak_account": "",
   "bankak_name": "",
   "server": "same",
-  "free_label": "أول topic في كل chapter",
+  "free_label": "الموضوع الأول من كل فصل",
   "public_key": {
    "kty": "EC",
    "x": "Rs5DF-fMX-HKD_ohSU4NXNCkhzcCzAnMvB69ZwLcBqg",
