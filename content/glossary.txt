@@ -497,3 +497,9 @@ spasticity | Velocity-dependent increase in muscle tone from an upper motor neur
 choreoathetosis | Mixed jerky and writhing involuntary movements
 papilloedema | Swelling of the optic disc from raised intracranial pressure
 Gowers' sign | Using the hands to climb up the legs when rising from the floor
+Kussmaul breathing | Deep, sighing breathing of metabolic acidosis
+lipohypertrophy | Fatty lump at an overused insulin injection site
+thelarche | Onset of breast development
+menarche | First menstrual period
+virilisation | Development of male features from androgen excess
+ambiguous genitalia | External genitalia that are not clearly male or female

@@ -639,3 +639,17 @@ MMC | Myelomeningocele
 L5 | Fifth lumbar vertebra
 DTP | Diphtheria, tetanus, pertussis vaccine
 OT | Occupational therapy
+FSH | Follicle-stimulating hormone
+GnRH | Gonadotropin-releasing hormone
+FNA | Fine-needle aspiration
+IGF-1 | Insulin-like growth factor 1
+IGF | Insulin-like growth factor
+GAD | Glutamic acid decarboxylase (antibody)
+NPH | Neutral protamine Hagedorn (intermediate insulin)
+ISPAD | International Society for Pediatric and Adolescent Diabetes
+BSPED | British Society for Paediatric Endocrinology and Diabetes
+CH | Congenital hypothyroidism
+T3 | Triiodothyronine
+17-OHP | 17-hydroxyprogesterone
+G2 | Tanner genital stage 2
+BP3 | IGF binding protein 3

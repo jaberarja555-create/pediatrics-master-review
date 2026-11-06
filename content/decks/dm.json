@@ -1,0 +1,127 @@
+[
+ [
+  "Basics",
+  "Cause of type 1 DM?",
+  "Autoimmune β-cell destruction."
+ ],
+ [
+  "Basics",
+  "Peaks?",
+  "5–7 years and puberty."
+ ],
+ [
+  "Clinical",
+  "Classic symptoms?",
+  "Polyuria, polydipsia, weight loss, enuresis."
+ ],
+ [
+  "Clinical",
+  "DKA signs?",
+  "Kussmaul breathing, acetone breath, vomiting, abdominal pain."
+ ],
+ [
+  "Diagnosis",
+  "Random glucose criterion?",
+  "≥ 11.1 mmol/L with symptoms."
+ ],
+ [
+  "Diagnosis",
+  "Fasting glucose criterion?",
+  "≥ 7.0 mmol/L."
+ ],
+ [
+  "Diagnosis",
+  "HbA1c criterion?",
+  "≥ 6.5%."
+ ],
+ [
+  "Insulin",
+  "Total daily dose pre-pubertal?",
+  "0.7–1 U/kg/day."
+ ],
+ [
+  "Insulin",
+  "Premixed regimen split?",
+  "⅔ morning, ⅓ evening."
+ ],
+ [
+  "Insulin",
+  "Lumps at injection site?",
+  "Lipohypertrophy."
+ ],
+ [
+  "Insulin",
+  "HbA1c target?",
+  "< 7%."
+ ],
+ [
+  "Hypo",
+  "Hypoglycaemia level?",
+  "< 3.9 mmol/L."
+ ],
+ [
+  "Hypo",
+  "Conscious hypo treatment?",
+  "15 g fast sugar, recheck 15 min."
+ ],
+ [
+  "Hypo",
+  "Unconscious hypo treatment?",
+  "Glucagon IM or 10% dextrose 2 mL/kg."
+ ],
+ [
+  "DKA",
+  "DKA criteria?",
+  "Glucose > 11, pH < 7.3 or HCO₃ < 15, ketones."
+ ],
+ [
+  "DKA",
+  "Severe DKA?",
+  "pH < 7.1."
+ ],
+ [
+  "DKA",
+  "Fluid deficit replaced over?",
+  "48 hours."
+ ],
+ [
+  "DKA",
+  "Insulin start?",
+  "1–2 h after fluids, 0.05–0.1 U/kg/h, no bolus."
+ ],
+ [
+  "DKA",
+  "Potassium in fluids?",
+  "40 mmol/L KCl."
+ ],
+ [
+  "DKA",
+  "When add dextrose?",
+  "Glucose < 14–17 mmol/L."
+ ],
+ [
+  "DKA",
+  "Bicarbonate?",
+  "Not used routinely."
+ ],
+ [
+  "DKA",
+  "Main cause of death?",
+  "Cerebral oedema."
+ ],
+ [
+  "DKA",
+  "Cerebral oedema signs?",
+  "Headache, bradycardia, hypertension, confusion."
+ ],
+ [
+  "DKA",
+  "Cerebral oedema treatment?",
+  "Mannitol 0.5–1 g/kg or 3% saline."
+ ],
+ [
+  "DKA",
+  "Corrected Na formula?",
+  "Na + 0.3 × (glucose − 5.5)."
+ ]
+]

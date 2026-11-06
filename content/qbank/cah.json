@@ -1,0 +1,44 @@
+[
+{
+"q": "The commonest enzyme deficiency in CAH is:",
+"o": [
+"11β-hydroxylase",
+"17α-hydroxylase",
+"21-hydroxylase",
+"3β-HSD",
+"Aromatase"
+],
+"a": 2,
+"e": "90–95%.",
+"k": "21-hydroxylase",
+"s": "bank"
+},
+{
+"q": "A 2-week-old boy with vomiting, shock, Na 122, K 7.4. Most likely:",
+"o": [
+"Pyloric stenosis",
+"CAH (salt wasting)",
+"Gastroenteritis",
+"Sepsis only",
+"Malrotation"
+],
+"a": 1,
+"e": "Salt-wasting CAH.",
+"k": "salt-wasting crisis",
+"s": "bank"
+},
+{
+"q": "The diagnostic test for 21-hydroxylase deficiency is:",
+"o": [
+"Cortisol",
+"17-OHP",
+"ACTH",
+"Testosterone",
+"Renin"
+],
+"a": 1,
+"e": "↑ 17-hydroxyprogesterone.",
+"k": "17-hydroxyprogesterone",
+"s": "bank"
+}
+]
