@@ -560,13 +560,16 @@ def build():
     def js_json(o):
         return json.dumps(o, ensure_ascii=False).replace('</', '<\\/')
 
-    page = (SRC / 'shell.html').read_text()
-    for k, v in {'CSS': css, 'CHAPTER_CSS': chapter_css_all, 'JS': (SRC / 'app.js').read_text(),
+    def render(meta):
+      page = (SRC / 'shell.html').read_text()
+      for k, v in {'CSS': css, 'CHAPTER_CSS': chapter_css_all, 'JS': (SRC / 'app.js').read_text(),
                  'PAGES': ''.join(html_pages), 'META': js_json(meta), 'DECKS': js_json(decks), 'QBANK': js_json(qbank),
                  'TITLE': f'{book["subject"]} Master Review', 'SUBJECT': book['subject'], 'EDITION': book['edition'],
                  'SERIES': book['series'], 'BLURB': book['blurb'],
                  'SEARCH_PLACEHOLDER': book.get('search_placeholder', 'Search the book')}.items():
         page = page.replace('{{' + k + '}}', v)
+      return page
+    page = render(meta)
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / 'index.html').write_text(page)
@@ -576,9 +579,8 @@ def build():
         shutil.copytree(CONTENT / 'audio', OUT / 'audio', dirs_exist_ok=True, ignore=shutil.ignore_patterns('*.json'))
     for f in ('manifest.json', 'sw.js'):
         shutil.copy(SRC / f, OUT / f)
-    # Copy for a claude.ai Artifact preview: the host adds the doctype/html/head/body skeleton itself.
-    art = re.sub(r'<!doctype html>\s*<html[^>]*><head>\s*<meta charset="utf-8">\s*<meta name="viewport"[^>]*>\s*', '', page)
-    art = art.replace('</head><body>', '').replace('</body></html>', '')
+    # Authors' review copy for the claude.ai Artifact: a full HTML document with the whole book open (meta review).
+    art = render({**meta, 'review': True})
     if not os.environ.get('SRR_OUT'):
         (ROOT / 'artifact').mkdir(exist_ok=True)
         (ROOT / 'artifact' / 'index.html').write_text(art)

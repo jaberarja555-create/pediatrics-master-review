@@ -13,7 +13,7 @@ var ACC=META.access||{},FREE={};(ACC.free_topics||[]).forEach(function(t){FREE[t
 var DEV=st('dev');if(!DEV||!/^[A-Z2-9]{4}-[A-Z2-9]{4}$/.test(DEV)){var AB='ABCDEFGHJKLMNPQRSTUVWXYZ23456789',r=new Uint8Array(8);crypto.getRandomValues(r);DEV='';for(var i=0;i<8;i++){DEV+=AB[r[i]%32];if(i===3)DEV+='-'}st('dev',DEV)}
 /* an activation from before the PMR- codes (no code saved) cannot be switched off or synced: ask for a code once */
 if(st('act')&&!st('code')){try{localStorage.removeItem('prr-act')}catch(e){}}
-var LOCKED=!st('act')||!ACC.public_key;
+var LOCKED=!META.review&&(!st('act')||!ACC.public_key);
 var SRV=ACC.server==='same'?(/^https?:$/.test(location.protocol)&&!/claude|localhost|127\.0/.test(location.hostname)?'':null):(ACC.server||null);
 var LINKCODE=(location.hash.match(/code=([A-Za-z0-9-]{11,16})/)||[])[1];if(LINKCODE){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}
 window.addEventListener('hashchange',function(){var m=location.hash.match(/code=([A-Za-z0-9-]{11,16})/);if(m){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}if(LOCKED)openSub(m[1])}});
