@@ -1276,16 +1276,17 @@ function smApply(sm){var ch=false;Object.keys(SM).forEach(function(n){var m=sm[n
 /* Welcome card on opening the app (owner, Nov 2026): "Welcome, Doctor"; a subscribed student sees their name, signed with their code */
 function welcomeTitle(){var n=(!LOCKED&&st('code')&&st('name'))||'';if(!n)return 'Welcome, Doctor';return 'Welcome, '+(/^(dr\.?|doctor|د\.?|دكتور)\s/i.test(n)?n:'Dr. '+n)}
 function welcomeName(){var t=document.querySelector('#welc .wt');if(t)t.textContent=welcomeTitle()}
-(function(){var code=!LOCKED&&st('code');var w=document.createElement('div');w.id='welc';w.setAttribute('role','dialog');
+(function(){if((TRIALNEW&&!st('chz'))||(TRIALEND&&TRIAL&&!TRIAL.seen))return;   // owner: when the opening choice is due it shows at once, without the welcome card
+  var code=!LOCKED&&st('code');var w=document.createElement('div');w.id='welc';w.setAttribute('role','dialog');
   w.innerHTML='<div class="wcard"><img src="img/logo.webp" alt=""><div class="wt" dir="auto"></div>'+
     (code?'<div class="wsig"><span class="wln"></span><span class="wc">Code <b dir="ltr">'+esc(code)+'</b></span></div>':'<div class="ws">Pediatrics Master Review · 1st edition</div>')+'</div>';
   document.body.appendChild(w);welcomeName();
   function close(){if(!w.parentNode)return;w.classList.add('out');setTimeout(function(){if(w.parentNode)w.parentNode.removeChild(w)},450)}
-  w.addEventListener('click',close);setTimeout(close,2600)})();
+  w.addEventListener('click',close);setTimeout(close,1500)})();
 /* start */
 GLAST=gsnap();updUR();
 refreshHome();
-if(LINKCODE&&(LOCKED||INTRIAL))openSub(LINKCODE);else if((TRIALNEW&&!st('chz'))||(TRIALEND&&!TRIAL.seen)){if(TRIALNEW)setMust(true);if(TRIALEND){TRIAL.seen=1;try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}}setTimeout(openChoose,2900)}   // owner: on opening, choose the 24-hour trial or the paid version
+if(LINKCODE&&(LOCKED||INTRIAL))openSub(LINKCODE);else if((TRIALNEW&&!st('chz'))||(TRIALEND&&!TRIAL.seen)){if(TRIALNEW)setMust(true);if(TRIALEND){TRIAL.seen=1;try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}}setTimeout(openChoose,250)}   // owner: on opening, choose the 24-hour trial or the paid version
 if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('sw.js').catch(function(){})}
 })();
 
