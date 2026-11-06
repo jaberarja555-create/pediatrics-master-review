@@ -1,0 +1,58 @@
+[
+{
+"q": "The best test in the first week of typhoid fever is:",
+"o": [
+"Widal",
+"Stool culture",
+"Blood culture",
+"Urine culture",
+"Serology"
+],
+"a": 2,
+"e": "Blood culture is positive early.",
+"k": "test of choice in week 1",
+"s": "bank"
+},
+{
+"q": "Typhoid perforation typically occurs:",
+"o": [
+"Day 2",
+"Week 1",
+"Week 3",
+"Week 6",
+"After recovery"
+],
+"a": 2,
+"e": "Week 3, terminal ileum.",
+"k": "intestinal perforation",
+"s": "bank"
+},
+{
+"q": "Brucellosis in a 6-year-old is treated with:",
+"o": [
+"Doxycycline alone",
+"Cotrimoxazole + rifampicin for 6 weeks",
+"Ceftriaxone 7 days",
+"Azithromycin 5 days",
+"Penicillin"
+],
+"a": 1,
+"e": "Avoid doxycycline < 8 years; two drugs 6 weeks.",
+"k": "< 8 years",
+"s": "bank"
+},
+{
+"q": "The commonest source of brucellosis is:",
+"o": [
+"Mosquito",
+"Raw milk",
+"Contaminated water",
+"Sandfly",
+"Person to person"
+],
+"a": 1,
+"e": "Unboiled milk and dairy.",
+"k": "raw (unboiled) milk",
+"s": "bank"
+}
+]

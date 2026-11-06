@@ -450,3 +450,12 @@ jitteriness | Rhythmic tremor of a newborn that stops when the limb is held
 macrosomia | Birth weight above 4 kg
 polycythaemia | Venous haematocrit above 65% in a newborn
 chorioretinitis | Inflammation of the choroid and retina
+hypnozoite | Dormant liver stage of P. vivax and P. ovale that causes relapse
+hyperparasitaemia | More than 10% of red cells infected by malaria parasites
+pseudomembrane | Grey adherent membrane on the tonsils and pharynx in diphtheria
+paroxysm / paroxysmal | Sudden attack, as of coughing in pertussis
+cercariae | Free-swimming larvae of schistosomes that penetrate the skin
+Koplik spots | Small white spots on the buccal mucosa, pathognomonic of measles
+hypergammaglobulinaemia | Raised immunoglobulin (gamma globulin) in the blood
+gibbus | Sharp angular bend of the spine from a collapsed vertebra (Pott's disease)
+trismus | Spasm of the jaw muscles; difficulty opening the mouth

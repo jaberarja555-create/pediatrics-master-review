@@ -1,0 +1,72 @@
+[
+{
+"q": "CSF with lymphocytes, very high protein and low glucose after 3 weeks of illness suggests:",
+"o": [
+"Bacterial meningitis",
+"Viral meningitis",
+"TB meningitis",
+"Normal CSF",
+"Encephalitis"
+],
+"a": 2,
+"e": "TB meningitis: lymphocytic, high protein, low glucose.",
+"k": "tuberculous",
+"s": "bank"
+},
+{
+"q": "Empirical treatment of meningitis in a 2-month-old should include ampicillin to cover:",
+"o": [
+"Pneumococcus",
+"Meningococcus",
+"Listeria",
+"Hib",
+"Staph. aureus"
+],
+"a": 2,
+"e": "Cephalosporins do not cover Listeria.",
+"k": "listeria",
+"s": "bank"
+},
+{
+"q": "The commonest long-term complication of bacterial meningitis is:",
+"o": [
+"Epilepsy",
+"Hydrocephalus",
+"Sensorineural deafness",
+"Blindness",
+"Learning difficulty"
+],
+"a": 2,
+"e": "Hearing test before discharge.",
+"k": "sensorineural deafness",
+"s": "bank"
+},
+{
+"q": "Contacts of meningococcal meningitis should receive:",
+"o": [
+"Penicillin",
+"Rifampicin",
+"Amoxicillin",
+"Vaccination only",
+"Nothing"
+],
+"a": 1,
+"e": "Rifampicin 2 days (or ciprofloxacin).",
+"k": "chemoprophylaxis",
+"s": "bank"
+},
+{
+"q": "LP should be delayed in a child with meningitis who has:",
+"o": [
+"Fever",
+"Neck stiffness",
+"Unequal pupils and deep coma",
+"Vomiting",
+"Headache"
+],
+"a": 2,
+"e": "Signs of raised ICP risk herniation.",
+"k": "contraindications to lp",
+"s": "bank"
+}
+]

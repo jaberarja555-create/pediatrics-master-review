@@ -1,0 +1,122 @@
+[
+ [
+  "Organisms",
+  "Neonatal meningitis organisms?",
+  "GBS, E. coli, Listeria."
+ ],
+ [
+  "Organisms",
+  "Commonest after 3 months?",
+  "Pneumococcus, meningococcus (Hib if unvaccinated)."
+ ],
+ [
+  "Organisms",
+  "Meningitis belt season?",
+  "Dry season, December–June."
+ ],
+ [
+  "Clinical",
+  "Is neck stiffness reliable in infants?",
+  "No; often absent."
+ ],
+ [
+  "Clinical",
+  "Infant signs of meningitis?",
+  "Bulging fontanelle, poor feeding, seizures, high-pitched cry."
+ ],
+ [
+  "Clinical",
+  "Kernig's sign?",
+  "Pain on extending the knee with hip flexed."
+ ],
+ [
+  "Clinical",
+  "Brudzinski's sign?",
+  "Neck flexion causes hip flexion."
+ ],
+ [
+  "CSF",
+  "Bacterial CSF?",
+  "Turbid, ↑ neutrophils, ↑ protein, ↓ glucose."
+ ],
+ [
+  "CSF",
+  "Viral CSF?",
+  "Lymphocytes, normal glucose."
+ ],
+ [
+  "CSF",
+  "TB CSF?",
+  "Lymphocytes, very high protein, low glucose, cobweb clot."
+ ],
+ [
+  "CSF",
+  "Normal CSF : blood glucose?",
+  "> 0.6."
+ ],
+ [
+  "LP",
+  "Contraindications to LP?",
+  "Raised ICP, shock, coagulopathy, purpura, skin infection."
+ ],
+ [
+  "Treatment",
+  "Empirical antibiotic > 1 month?",
+  "Ceftriaxone 100 mg/kg/day."
+ ],
+ [
+  "Treatment",
+  "Add what under 3 months?",
+  "Ampicillin (Listeria)."
+ ],
+ [
+  "Treatment",
+  "Meningococcal treatment duration?",
+  "5–7 days."
+ ],
+ [
+  "Treatment",
+  "Pneumococcal duration?",
+  "10–14 days."
+ ],
+ [
+  "Treatment",
+  "Dexamethasone dose and aim?",
+  "0.15 mg/kg 6-hourly; reduces deafness."
+ ],
+ [
+  "Treatment",
+  "Prophylaxis for meningococcal contacts?",
+  "Rifampicin 10 mg/kg 12-hourly × 2 days."
+ ],
+ [
+  "Complications",
+  "Commonest sequel?",
+  "Sensorineural deafness."
+ ],
+ [
+  "Complications",
+  "Persistent fever and bulging AF in Hib?",
+  "Subdural effusion."
+ ],
+ [
+  "Complications",
+  "Hyponatraemia in meningitis?",
+  "SIADH."
+ ],
+ [
+  "Complications",
+  "Adrenal haemorrhage with meningococcaemia?",
+  "Waterhouse–Friderichsen syndrome."
+ ],
+ [
+  "Encephalitis",
+  "Encephalitis vs meningitis?",
+  "Encephalitis alters consciousness/behaviour."
+ ],
+ [
+  "Encephalitis",
+  "Commonest treatable encephalitis?",
+  "HSV: IV aciclovir."
+ ]
+]

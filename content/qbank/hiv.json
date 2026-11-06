@@ -1,0 +1,58 @@
+[
+{
+"q": "HIV infection in a 9-month-old exposed infant is diagnosed by:",
+"o": [
+"Rapid antibody test",
+"ELISA",
+"HIV DNA PCR",
+"CD4 count",
+"Western blot"
+],
+"a": 2,
+"e": "Antibody tests detect maternal antibody until 18 months.",
+"k": "hiv dna pcr",
+"s": "bank"
+},
+{
+"q": "An HIV-exposed infant should start cotrimoxazole prophylaxis at:",
+"o": [
+"Birth",
+"6 weeks",
+"6 months",
+"1 year",
+"Only if positive"
+],
+"a": 1,
+"e": "From 6 weeks.",
+"k": "from 6 weeks",
+"s": "bank"
+},
+{
+"q": "A 3-month-old HIV-exposed infant has severe hypoxia with few chest signs. Likely cause:",
+"o": [
+"RSV",
+"PCP",
+"TB",
+"Staph pneumonia",
+"LIP"
+],
+"a": 1,
+"e": "PCP peaks at 2–6 months.",
+"k": "pneumocystis",
+"s": "bank"
+},
+{
+"q": "ART in an HIV-positive child should start:",
+"o": [
+"When CD4 < 15%",
+"At stage 4 only",
+"Immediately",
+"After 2 years",
+"After TB is excluded only"
+],
+"a": 2,
+"e": "Test and treat.",
+"k": "treat all",
+"s": "bank"
+}
+]

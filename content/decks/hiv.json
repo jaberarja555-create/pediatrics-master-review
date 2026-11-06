@@ -1,0 +1,112 @@
+[
+ [
+  "Transmission",
+  "Main route in children?",
+  "Mother-to-child."
+ ],
+ [
+  "Transmission",
+  "MTCT risk without intervention?",
+  "30–40%."
+ ],
+ [
+  "PMTCT",
+  "Mother's ART?",
+  "Lifelong TDF + 3TC + DTG."
+ ],
+ [
+  "PMTCT",
+  "Feeding advice for HIV mother on ART?",
+  "Exclusive breastfeeding 6 months."
+ ],
+ [
+  "PMTCT",
+  "Infant prophylaxis?",
+  "Nevirapine 6 weeks (12 + AZT if high risk)."
+ ],
+ [
+  "PMTCT",
+  "Cotrimoxazole starts at?",
+  "6 weeks."
+ ],
+ [
+  "Diagnosis",
+  "Test < 18 months?",
+  "HIV DNA PCR."
+ ],
+ [
+  "Diagnosis",
+  "Why not antibody test < 18 months?",
+  "Maternal antibodies."
+ ],
+ [
+  "Diagnosis",
+  "When first DNA PCR?",
+  "6 weeks."
+ ],
+ [
+  "Suspect",
+  "Clinical clues of HIV?",
+  "Persistent thrush, FTT, parotid swelling, recurrent infections."
+ ],
+ [
+  "ART",
+  "When to start ART?",
+  "Immediately in all."
+ ],
+ [
+  "ART",
+  "First-line paediatric ART?",
+  "ABC + 3TC + DTG."
+ ],
+ [
+  "ART",
+  "Monitoring of ART?",
+  "Viral load."
+ ],
+ [
+  "OI",
+  "PCP typical age?",
+  "2–6 months."
+ ],
+ [
+  "OI",
+  "PCP features?",
+  "Severe hypoxia, few chest signs."
+ ],
+ [
+  "OI",
+  "PCP treatment?",
+  "High-dose cotrimoxazole 21 days + prednisolone."
+ ],
+ [
+  "OI",
+  "Cotrimoxazole prophylaxis dose?",
+  "5 mg/kg TMP daily."
+ ],
+ [
+  "OI",
+  "LIP features?",
+  "Clubbing, parotids, reticulonodular CXR."
+ ],
+ [
+  "OI",
+  "Commonest OI in Sudan?",
+  "TB."
+ ],
+ [
+  "OI",
+  "TB and HIV together: order?",
+  "TB treatment first, ART within 2–8 weeks."
+ ],
+ [
+  "IRIS",
+  "What is IRIS?",
+  "Worsening of hidden infection after starting ART."
+ ],
+ [
+  "Vaccines",
+  "BCG in HIV?",
+  "Not if symptomatic."
+ ]
+]

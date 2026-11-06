@@ -1,0 +1,132 @@
+[
+ [
+  "Basics",
+  "Source of TB in children?",
+  "Adult household contact with smear-positive TB."
+ ],
+ [
+  "Basics",
+  "High-risk children?",
+  "< 5 years, HIV, malnutrition."
+ ],
+ [
+  "Forms",
+  "Primary complex?",
+  "Lung focus + hilar nodes."
+ ],
+ [
+  "Forms",
+  "Commonest extrapulmonary TB?",
+  "Cervical lymphadenitis."
+ ],
+ [
+  "Forms",
+  "Miliary TB CXR?",
+  "Millet-seed nodules."
+ ],
+ [
+  "Forms",
+  "TB meningitis features?",
+  "Subacute; personality change, VI palsy, hydrocephalus."
+ ],
+ [
+  "Forms",
+  "Pott's disease?",
+  "Spinal TB: gibbus, paraplegia."
+ ],
+ [
+  "Diagnosis",
+  "Most important clue?",
+  "Contact history."
+ ],
+ [
+  "Diagnosis",
+  "Positive Mantoux?",
+  "≥ 10 mm (≥ 5 if HIV/SAM)."
+ ],
+ [
+  "Diagnosis",
+  "Read Mantoux at?",
+  "48–72 hours."
+ ],
+ [
+  "Diagnosis",
+  "Causes of false-negative Mantoux?",
+  "SAM, HIV, measles, miliary TB, steroids."
+ ],
+ [
+  "Diagnosis",
+  "Sample in a young child?",
+  "Gastric aspirate for GeneXpert."
+ ],
+ [
+  "Diagnosis",
+  "What does GeneXpert detect?",
+  "MTB and rifampicin resistance."
+ ],
+ [
+  "Drugs",
+  "Isoniazid dose?",
+  "10 mg/kg/day."
+ ],
+ [
+  "Drugs",
+  "Rifampicin dose?",
+  "15 mg/kg/day."
+ ],
+ [
+  "Drugs",
+  "Pyrazinamide dose?",
+  "35 mg/kg/day."
+ ],
+ [
+  "Drugs",
+  "Ethambutol dose?",
+  "20 mg/kg/day."
+ ],
+ [
+  "Drugs",
+  "Isoniazid side effects?",
+  "Hepatitis, peripheral neuropathy."
+ ],
+ [
+  "Drugs",
+  "Rifampicin harmless effect?",
+  "Orange urine and tears."
+ ],
+ [
+  "Drugs",
+  "Ethambutol side effect?",
+  "Optic neuritis."
+ ],
+ [
+  "Regimens",
+  "Non-severe pulmonary TB regimen?",
+  "2HRZ + 2HR (4 months)."
+ ],
+ [
+  "Regimens",
+  "Standard regimen?",
+  "2HRZE + 4HR."
+ ],
+ [
+  "Regimens",
+  "TB meningitis regimen?",
+  "2HRZE + 10HR + prednisolone."
+ ],
+ [
+  "Regimens",
+  "Steroid indications in TB?",
+  "Meningitis, pericarditis, airway compression."
+ ],
+ [
+  "Prevention",
+  "IPT for whom?",
+  "Contacts < 5 years and HIV children."
+ ],
+ [
+  "Prevention",
+  "IPT regimen?",
+  "Isoniazid 10 mg/kg × 6 months."
+ ]
+]

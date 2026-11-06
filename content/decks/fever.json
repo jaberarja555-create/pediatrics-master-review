@@ -1,0 +1,107 @@
+[
+ [
+  "Definition",
+  "Define fever.",
+  "Core temperature ≥ 38 °C."
+ ],
+ [
+  "Definition",
+  "Define hyperpyrexia.",
+  "> 41 °C."
+ ],
+ [
+  "Measure",
+  "Thermometer under 4 weeks?",
+  "Axillary electronic."
+ ],
+ [
+  "IMCI",
+  "IMCI general danger signs?",
+  "Unable to drink, vomits everything, convulsions, lethargic/unconscious."
+ ],
+ [
+  "IMCI",
+  "Test in every febrile child in Sudan?",
+  "Malaria RDT or blood film."
+ ],
+ [
+  "IMCI",
+  "Fever for how long needs referral?",
+  "≥ 7 days."
+ ],
+ [
+  "Risk",
+  "Febrile infant < 3 months is?",
+  "High risk."
+ ],
+ [
+  "Risk",
+  "Fever + non-blanching rash?",
+  "Meningococcal sepsis: ceftriaxone now."
+ ],
+ [
+  "Treatment",
+  "Paracetamol dose?",
+  "15 mg/kg 6-hourly."
+ ],
+ [
+  "Treatment",
+  "Ibuprofen dose?",
+  "5–10 mg/kg 8-hourly."
+ ],
+ [
+  "Treatment",
+  "Why no aspirin?",
+  "Reye syndrome."
+ ],
+ [
+  "Treatment",
+  "Do antipyretics prevent febrile fits?",
+  "No."
+ ],
+ [
+  "No focus",
+  "Fever < 1 month without focus?",
+  "Admit, full septic screen, IV antibiotics."
+ ],
+ [
+  "No focus",
+  "Commonest hidden bacterial infection?",
+  "UTI."
+ ],
+ [
+  "PUO",
+  "Define PUO in children.",
+  "Fever > 2 weeks without cause after initial tests."
+ ],
+ [
+  "PUO",
+  "Commonest cause group?",
+  "Infections."
+ ],
+ [
+  "PUO",
+  "Sudanese infections causing PUO?",
+  "Typhoid, TB, brucella, kala-azar, malaria, abscess."
+ ],
+ [
+  "PUO",
+  "Non-infective causes of PUO?",
+  "Systemic JIA, SLE, Kawasaki, leukaemia, lymphoma."
+ ],
+ [
+  "PUO",
+  "Why avoid blind steroids in PUO?",
+  "They mask leukaemia, TB."
+ ],
+ [
+  "PUO",
+  "Fever + huge spleen + pancytopenia in Sudan?",
+  "Kala-azar."
+ ],
+ [
+  "PUO",
+  "Key invasive test in PUO?",
+  "Bone marrow aspirate (and culture)."
+ ]
+]

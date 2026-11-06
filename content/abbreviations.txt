@@ -455,3 +455,44 @@ UDP | Uridine diphosphate
 CoNS | Coagulase-negative staphylococci
 DNA | Deoxyribonucleic acid
 I : T | Immature to total neutrophil ratio
+PUO | Pyrexia of unknown origin
+PCP | Pneumocystis jirovecii pneumonia
+RDT | Rapid diagnostic test
+MTCT | Mother-to-child transmission
+PMTCT | Prevention of mother-to-child transmission
+DTG | Dolutegravir
+TDF | Tenofovir
+3TC | Lamivudine
+NVP | Nevirapine
+TMP | Trimethoprim
+ACT | Artemisinin-based combination therapy
+SSPE | Subacute sclerosing panencephalitis
+PKDL | Post-kala-azar dermal leishmaniasis
+PM | Paromomycin
+VL | Visceral leishmaniasis
+IPT | Isoniazid preventive therapy
+LIP | Lymphoid interstitial pneumonitis
+IRIS | Immune reconstitution inflammatory syndrome
+LD | Leishman–Donovan (bodies)
+QT | QT interval on the ECG
+HSM | Hepatosplenomegaly
+JIA | Juvenile idiopathic arthritis
+VZV | Varicella-zoster virus
+PSGN | Post-streptococcal glomerulonephritis
+EV71 | Enterovirus 71
+OI | Opportunistic infection
+CD4 | CD4 T-helper lymphocyte count
+TCV | Typhoid conjugate vaccine
+SAT | Standard (tube) agglutination test
+ELISA | Enzyme-linked immunosorbent assay
+TST | Tuberculin skin test (Mantoux)
+TU | Tuberculin units
+PPD | Purified protein derivative (tuberculin)
+NTP | National TB Programme
+DOTS | Directly observed treatment, short course
+HRZ | Isoniazid, rifampicin, pyrazinamide
+LLIN | Long-lasting insecticidal net
+SP | Sulfadoxine–pyrimethamine
+IPTp | Intermittent preventive treatment of malaria in pregnancy
+HRP2 | Histidine-rich protein 2 (malaria antigen)
+HHV-6 | Human herpesvirus 6

@@ -1,0 +1,58 @@
+[
+{
+"q": "A 6-week-old has a temperature of 38.5 °C with no focus. Best management:",
+"o": [
+"Paracetamol and review tomorrow",
+"Oral amoxicillin at home",
+"Admission, septic screen and IV antibiotics",
+"Malaria RDT only",
+"Tepid sponging"
+],
+"a": 2,
+"e": "Febrile infants < 3 months are high risk.",
+"k": "age < 3 months with ≥ 38",
+"s": "bank"
+},
+{
+"q": "Aspirin is avoided in febrile children because of:",
+"o": [
+"Gastric ulcer",
+"Reye syndrome",
+"Renal failure",
+"Bleeding",
+"Allergy"
+],
+"a": 1,
+"e": "Reye syndrome: encephalopathy and liver failure.",
+"k": "reye syndrome",
+"s": "bank"
+},
+{
+"q": "The commonest group of causes of PUO in children is:",
+"o": [
+"Malignancy",
+"Connective tissue disease",
+"Infection",
+"Drug fever",
+"Factitious"
+],
+"a": 2,
+"e": "About half are infections.",
+"k": "infection (≈ 50%)",
+"s": "bank"
+},
+{
+"q": "The commonest hidden bacterial infection in a febrile toddler without focus is:",
+"o": [
+"Pneumonia",
+"Otitis media",
+"UTI",
+"Meningitis",
+"Osteomyelitis"
+],
+"a": 2,
+"e": "Always check urine.",
+"k": "hidden bacterial infection",
+"s": "bank"
+}
+]

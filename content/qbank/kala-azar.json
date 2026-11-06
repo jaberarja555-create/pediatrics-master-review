@@ -1,0 +1,58 @@
+[
+{
+"q": "The vector of visceral leishmaniasis in Sudan is:",
+"o": [
+"Anopheles",
+"Sandfly",
+"Tsetse fly",
+"Blackfly",
+"Snail"
+],
+"a": 1,
+"e": "Phlebotomus orientalis.",
+"k": "sandfly",
+"s": "bank"
+},
+{
+"q": "First-line treatment of primary kala-azar in Sudan is:",
+"o": [
+"AmBisome",
+"SSG + paromomycin 17 days",
+"Miltefosine",
+"Chloroquine",
+"Pentamidine"
+],
+"a": 1,
+"e": "SSG 20 + PM 15 mg/kg/day for 17 days.",
+"k": "ssg + pm for 17 days",
+"s": "bank"
+},
+{
+"q": "The most sensitive aspirate for diagnosing kala-azar is:",
+"o": [
+"Lymph node",
+"Bone marrow",
+"Spleen",
+"Liver",
+"Skin"
+],
+"a": 2,
+"e": "Splenic aspirate > 95%.",
+"k": "splenic aspirate",
+"s": "bank"
+},
+{
+"q": "The main toxicity of SSG is:",
+"o": [
+"Ototoxicity",
+"Cardiotoxicity",
+"Optic neuritis",
+"Peripheral neuropathy",
+"Hypoglycaemia"
+],
+"a": 1,
+"e": "QT prolongation, arrhythmia.",
+"k": "cardiotoxicity",
+"s": "bank"
+}
+]

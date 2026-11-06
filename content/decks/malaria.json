@@ -1,0 +1,137 @@
+[
+ [
+  "Basics",
+  "Vector of malaria?",
+  "Female Anopheles mosquito."
+ ],
+ [
+  "Basics",
+  "Species causing most deaths?",
+  "P. falciparum."
+ ],
+ [
+  "Basics",
+  "Species with relapses?",
+  "P. vivax and P. ovale (hypnozoites)."
+ ],
+ [
+  "Basics",
+  "Malaria season in Sudan?",
+  "After the rains, July–November."
+ ],
+ [
+  "Severe",
+  "Define cerebral malaria.",
+  "Coma (Blantyre ≤ 2) or ≥ 2 convulsions/24 h."
+ ],
+ [
+  "Severe",
+  "Severe malarial anaemia Hb?",
+  "< 5 g/dL."
+ ],
+ [
+  "Severe",
+  "Hypoglycaemia in severe malaria?",
+  "< 2.2 mmol/L."
+ ],
+ [
+  "Severe",
+  "Hyperparasitaemia?",
+  "> 10%."
+ ],
+ [
+  "Severe",
+  "Blackwater fever?",
+  "Haemoglobinuria from intravascular haemolysis."
+ ],
+ [
+  "Diagnosis",
+  "Gold standard?",
+  "Thick and thin blood film."
+ ],
+ [
+  "Diagnosis",
+  "Thick vs thin film?",
+  "Thick detects; thin identifies species and %."
+ ],
+ [
+  "Diagnosis",
+  "RDT stays positive after cure for?",
+  "2–4 weeks."
+ ],
+ [
+  "Treatment",
+  "Drug of choice for severe malaria?",
+  "IV/IM artesunate."
+ ],
+ [
+  "Treatment",
+  "Artesunate dose < 20 kg?",
+  "3 mg/kg."
+ ],
+ [
+  "Treatment",
+  "Artesunate dose ≥ 20 kg?",
+  "2.4 mg/kg."
+ ],
+ [
+  "Treatment",
+  "Artesunate timing?",
+  "0, 12, 24 h then daily."
+ ],
+ [
+  "Treatment",
+  "After IV artesunate?",
+  "Full 3-day oral ACT."
+ ],
+ [
+  "Treatment",
+  "Quinine loading dose?",
+  "20 mg/kg over 4 h."
+ ],
+ [
+  "Treatment",
+  "Main side effect of quinine?",
+  "Hypoglycaemia."
+ ],
+ [
+  "Treatment",
+  "Pre-referral drug?",
+  "Rectal artesunate 10 mg/kg."
+ ],
+ [
+  "Treatment",
+  "First-line for uncomplicated falciparum in Sudan?",
+  "Artemether–lumefantrine × 3 days."
+ ],
+ [
+  "Treatment",
+  "Drug against vivax hypnozoites?",
+  "Primaquine 0.25 mg/kg × 14 days."
+ ],
+ [
+  "Treatment",
+  "Check before primaquine?",
+  "G6PD."
+ ],
+ [
+  "Support",
+  "Hypoglycaemia treatment in malaria?",
+  "10% dextrose 5 mL/kg IV."
+ ],
+ [
+  "Support",
+  "Transfusion threshold?",
+  "Hb < 4, or < 6 with distress."
+ ],
+ [
+  "Support",
+  "Are steroids used in cerebral malaria?",
+  "No."
+ ],
+ [
+  "Prevention",
+  "Main preventive measure?",
+  "Insecticide-treated nets."
+ ]
+]

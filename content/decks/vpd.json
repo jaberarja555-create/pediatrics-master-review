@@ -1,0 +1,122 @@
+[
+ [
+  "Diphtheria",
+  "Organism?",
+  "Corynebacterium diphtheriae (toxin)."
+ ],
+ [
+  "Diphtheria",
+  "Membrane features?",
+  "Grey, adherent, bleeds when removed."
+ ],
+ [
+  "Diphtheria",
+  "Bull neck?",
+  "Massive cervical nodes and oedema."
+ ],
+ [
+  "Diphtheria",
+  "Early toxic complication?",
+  "Myocarditis (week 1–2)."
+ ],
+ [
+  "Diphtheria",
+  "Neurological complication?",
+  "Palatal palsy (nasal speech)."
+ ],
+ [
+  "Diphtheria",
+  "Key treatment?",
+  "Diphtheria antitoxin + penicillin/erythromycin."
+ ],
+ [
+  "Pertussis",
+  "Organism?",
+  "Bordetella pertussis."
+ ],
+ [
+  "Pertussis",
+  "Most infectious stage?",
+  "Catarrhal."
+ ],
+ [
+  "Pertussis",
+  "Paroxysmal features?",
+  "Paroxysmal cough, whoop, post-tussive vomiting."
+ ],
+ [
+  "Pertussis",
+  "Young infants present with?",
+  "Apnoea and cyanosis."
+ ],
+ [
+  "Pertussis",
+  "Typical blood finding?",
+  "Marked lymphocytosis."
+ ],
+ [
+  "Pertussis",
+  "Commonest cause of death?",
+  "Pneumonia."
+ ],
+ [
+  "Pertussis",
+  "Antibiotic?",
+  "Azithromycin 5 days."
+ ],
+ [
+  "Pertussis",
+  "Does antibiotic shorten cough?",
+  "No; reduces infectivity."
+ ],
+ [
+  "Tetanus",
+  "First sign?",
+  "Trismus."
+ ],
+ [
+  "Tetanus",
+  "Toxin action?",
+  "Blocks inhibitory neurones."
+ ],
+ [
+  "Tetanus",
+  "Treatment?",
+  "HTIG, metronidazole, diazepam, quiet room."
+ ],
+ [
+  "Tetanus",
+  "Immunity after tetanus?",
+  "None; vaccinate."
+ ],
+ [
+  "Polio",
+  "Cells damaged?",
+  "Anterior horn cells."
+ ],
+ [
+  "Polio",
+  "% paralytic?",
+  "< 1%."
+ ],
+ [
+  "Polio",
+  "Paralysis type?",
+  "Asymmetric flaccid, no sensory loss."
+ ],
+ [
+  "Polio",
+  "AFP surveillance?",
+  "Report every AFP < 15 yr; 2 stools in 14 days."
+ ],
+ [
+  "Polio",
+  "Commonest cause of AFP now?",
+  "Guillain–Barré syndrome."
+ ],
+ [
+  "Polio",
+  "Why avoid IM injections?",
+  "Provoke paralysis."
+ ]
+]

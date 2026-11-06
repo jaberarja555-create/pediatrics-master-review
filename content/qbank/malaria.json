@@ -1,0 +1,72 @@
+[
+{
+"q": "The drug of choice for severe falciparum malaria in a child is:",
+"o": [
+"Chloroquine",
+"Oral artemether–lumefantrine",
+"IV artesunate",
+"Primaquine",
+"Doxycycline"
+],
+"a": 2,
+"e": "IV/IM artesunate reduces mortality versus quinine.",
+"k": "iv (or im) artesunate",
+"s": "bank"
+},
+{
+"q": "A child on IV quinine becomes drowsy and sweaty. Check first:",
+"o": [
+"Sodium",
+"Blood glucose",
+"Calcium",
+"ECG",
+"Haemoglobin"
+],
+"a": 1,
+"e": "Quinine stimulates insulin → hypoglycaemia.",
+"k": "cinchonism",
+"s": "bank"
+},
+{
+"q": "The drug that prevents relapse of vivax malaria is:",
+"o": [
+"Artesunate",
+"Primaquine",
+"Quinine",
+"Lumefantrine",
+"Chloroquine"
+],
+"a": 1,
+"e": "Primaquine kills hypnozoites (check G6PD).",
+"k": "hypnozoites",
+"s": "bank"
+},
+{
+"q": "All are features of severe malaria EXCEPT:",
+"o": [
+"Hb 4 g/dL",
+"Two convulsions in 24 h",
+"Glucose 1.8 mmol/L",
+"Temperature 39 °C alone",
+"Prostration"
+],
+"a": 3,
+"e": "Fever alone is not a severity criterion.",
+"k": "severe malaria (who)",
+"s": "bank"
+},
+{
+"q": "The gold-standard diagnosis of malaria is:",
+"o": [
+"RDT",
+"Blood film microscopy",
+"Widal",
+"PCR only",
+"Splenic aspirate"
+],
+"a": 1,
+"e": "Thick and thin films.",
+"k": "thick blood film",
+"s": "bank"
+}
+]

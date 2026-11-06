@@ -1,0 +1,72 @@
+[
+{
+"q": "The worm that causes iron deficiency anaemia is:",
+"o": [
+"Ascaris",
+"Enterobius",
+"Hookworm",
+"Trichuris",
+"H. nana"
+],
+"a": 2,
+"e": "Hookworm sucks blood.",
+"k": "iron deficiency anaemia (blood loss)",
+"s": "bank"
+},
+{
+"q": "Terminal haematuria in a boy who swims in canals suggests:",
+"o": [
+"S. mansoni",
+"S. haematobium",
+"UTI",
+"Renal stone",
+"Wilms tumour"
+],
+"a": 1,
+"e": "Urinary schistosomiasis.",
+"k": "terminal haematuria",
+"s": "bank"
+},
+{
+"q": "Haematemesis with a huge spleen and normal liver function in a child from Gezira suggests:",
+"o": [
+"Cirrhosis",
+"Kala-azar",
+"Schistosomal periportal fibrosis",
+"Leukaemia",
+"Peptic ulcer"
+],
+"a": 2,
+"e": "S. mansoni causes presinusoidal portal hypertension.",
+"k": "periportal (symmers') fibrosis",
+"s": "bank"
+},
+{
+"q": "The drug of choice for schistosomiasis is:",
+"o": [
+"Albendazole",
+"Praziquantel",
+"Metronidazole",
+"Ivermectin",
+"Mebendazole"
+],
+"a": 1,
+"e": "40 mg/kg once.",
+"k": "praziquantel 40 mg/kg",
+"s": "bank"
+},
+{
+"q": "Night-time perianal itching in a child is most likely due to:",
+"o": [
+"Ascaris",
+"Enterobius",
+"Giardia",
+"Hookworm",
+"Amoeba"
+],
+"a": 1,
+"e": "Pinworm; sellotape test.",
+"k": "perianal itching at night",
+"s": "bank"
+}
+]

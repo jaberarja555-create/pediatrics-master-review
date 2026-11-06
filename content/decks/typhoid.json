@@ -1,0 +1,122 @@
+[
+ [
+  "Typhoid",
+  "Organism?",
+  "Salmonella Typhi."
+ ],
+ [
+  "Typhoid",
+  "Route?",
+  "Faeco-oral."
+ ],
+ [
+  "Typhoid",
+  "Week 1 features?",
+  "Step-ladder fever, headache, constipation, relative bradycardia."
+ ],
+ [
+  "Typhoid",
+  "Week 2 features?",
+  "Toxic, rose spots, splenomegaly, coated tongue."
+ ],
+ [
+  "Typhoid",
+  "Week 3 complications?",
+  "Perforation and GI bleeding."
+ ],
+ [
+  "Typhoid",
+  "Site of perforation?",
+  "Terminal ileum."
+ ],
+ [
+  "Typhoid",
+  "Test in week 1?",
+  "Blood culture."
+ ],
+ [
+  "Typhoid",
+  "Most sensitive culture?",
+  "Bone marrow."
+ ],
+ [
+  "Typhoid",
+  "Problem with Widal?",
+  "False positives; needs 4-fold rise."
+ ],
+ [
+  "Typhoid",
+  "CBC in typhoid?",
+  "Leucopenia."
+ ],
+ [
+  "Typhoid",
+  "First-choice oral treatment?",
+  "Azithromycin 10–20 mg/kg × 7 days."
+ ],
+ [
+  "Typhoid",
+  "Severe typhoid treatment?",
+  "Ceftriaxone IV 10–14 days."
+ ],
+ [
+  "Typhoid",
+  "Steroid indication?",
+  "Encephalopathy or shock."
+ ],
+ [
+  "Typhoid",
+  "Fever clearance time?",
+  "4–7 days."
+ ],
+ [
+  "Typhoid",
+  "Carriers harbour bacteria in?",
+  "Gallbladder."
+ ],
+ [
+  "Brucella",
+  "Source?",
+  "Raw milk, infected animals."
+ ],
+ [
+  "Brucella",
+  "Commonest species?",
+  "B. melitensis."
+ ],
+ [
+  "Brucella",
+  "Features?",
+  "Fever, sweats, arthralgia, sacroiliitis, HSM."
+ ],
+ [
+  "Brucella",
+  "Main cause of death?",
+  "Endocarditis."
+ ],
+ [
+  "Brucella",
+  "Positive agglutination?",
+  "≥ 1:160."
+ ],
+ [
+  "Brucella",
+  "Treatment < 8 years?",
+  "Cotrimoxazole + rifampicin × 6 weeks."
+ ],
+ [
+  "Brucella",
+  "Treatment ≥ 8 years?",
+  "Doxycycline + rifampicin × 6 weeks."
+ ],
+ [
+  "Brucella",
+  "Why no doxycycline < 8?",
+  "Tooth staining."
+ ],
+ [
+  "Brucella",
+  "Prevention?",
+  "Boil milk."
+ ]
+]

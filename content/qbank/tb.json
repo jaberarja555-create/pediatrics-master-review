@@ -1,0 +1,72 @@
+[
+{
+"q": "The anti-TB drug that causes optic neuritis is:",
+"o": [
+"Isoniazid",
+"Rifampicin",
+"Pyrazinamide",
+"Ethambutol",
+"Streptomycin"
+],
+"a": 3,
+"e": "Ethambutol (colour vision).",
+"k": "optic neuritis",
+"s": "bank"
+},
+{
+"q": "The best sample for diagnosing TB in a 2-year-old is:",
+"o": [
+"Sputum",
+"Early morning gastric aspirate",
+"Urine",
+"Blood culture",
+"Throat swab"
+],
+"a": 1,
+"e": "Young children swallow sputum.",
+"k": "gastric aspirate",
+"s": "bank"
+},
+{
+"q": "A Mantoux test is considered positive in an HIV-positive child at:",
+"o": [
+"≥ 2 mm",
+"≥ 5 mm",
+"≥ 10 mm",
+"≥ 15 mm",
+"≥ 20 mm"
+],
+"a": 1,
+"e": "≥ 5 mm in HIV or SAM.",
+"k": "≥ 5 mm if hiv",
+"s": "bank"
+},
+{
+"q": "Treatment duration for TB meningitis is:",
+"o": [
+"4 months",
+"6 months",
+"9 months",
+"12 months",
+"24 months"
+],
+"a": 3,
+"e": "2HRZE + 10HR.",
+"k": "10 hr (total 12 months)",
+"s": "bank"
+},
+{
+"q": "The commonest extrapulmonary TB in children is:",
+"o": [
+"Miliary",
+"Meningitis",
+"Cervical lymphadenitis",
+"Spinal",
+"Abdominal"
+],
+"a": 2,
+"e": "Painless cervical nodes.",
+"k": "commonest extrapulmonary",
+"s": "bank"
+}
+]

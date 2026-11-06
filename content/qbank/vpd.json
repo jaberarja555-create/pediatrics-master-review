@@ -1,0 +1,58 @@
+[
+{
+"q": "A grey membrane over the tonsils that bleeds on removal with a bull neck suggests:",
+"o": [
+"Infectious mononucleosis",
+"Streptococcal tonsillitis",
+"Diphtheria",
+"Candida",
+"Vincent's angina"
+],
+"a": 2,
+"e": "Diphtheria; give antitoxin.",
+"k": "bull neck",
+"s": "bank"
+},
+{
+"q": "The most infectious stage of pertussis is:",
+"o": [
+"Catarrhal",
+"Paroxysmal",
+"Convalescent",
+"Incubation",
+"After antibiotics"
+],
+"a": 0,
+"e": "Catarrhal stage.",
+"k": "most infectious stage",
+"s": "bank"
+},
+{
+"q": "The typical blood finding in pertussis is:",
+"o": [
+"Neutrophilia",
+"Eosinophilia",
+"Marked lymphocytosis",
+"Pancytopenia",
+"Thrombocytopenia"
+],
+"a": 2,
+"e": "Lymphocytosis > 15 000.",
+"k": "marked lymphocytosis",
+"s": "bank"
+},
+{
+"q": "Paralytic polio is characterised by:",
+"o": [
+"Symmetric ascending weakness",
+"Sensory loss",
+"Asymmetric flaccid paralysis with intact sensation",
+"Upper motor neurone signs",
+"Bladder involvement"
+],
+"a": 2,
+"e": "Anterior horn cell disease.",
+"k": "acute asymmetric flaccid paralysis",
+"s": "bank"
+}
+]

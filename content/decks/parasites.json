@@ -1,0 +1,137 @@
+[
+ [
+  "Ascaris",
+  "Ascaris complications?",
+  "Bowel obstruction, biliary colic, Löffler syndrome."
+ ],
+ [
+  "Ascaris",
+  "Löffler syndrome?",
+  "Cough, wheeze, eosinophilia from migrating larvae."
+ ],
+ [
+  "Hookworm",
+  "Hookworm entry?",
+  "Larvae through bare feet."
+ ],
+ [
+  "Hookworm",
+  "Main effect?",
+  "Iron deficiency anaemia."
+ ],
+ [
+  "Enterobius",
+  "Symptom?",
+  "Night perianal itch."
+ ],
+ [
+  "Enterobius",
+  "Diagnosis?",
+  "Sellotape test."
+ ],
+ [
+  "Enterobius",
+  "Treatment?",
+  "Albendazole to family, repeat in 2 weeks."
+ ],
+ [
+  "Drugs",
+  "Albendazole dose ≥ 2 yr?",
+  "400 mg once."
+ ],
+ [
+  "Drugs",
+  "Albendazole at 1–2 yr?",
+  "200 mg once."
+ ],
+ [
+  "Drugs",
+  "Routine deworming?",
+  "Every 6 months from 1 year."
+ ],
+ [
+  "H. nana",
+  "Commonest tapeworm in Sudanese children?",
+  "Hymenolepis nana."
+ ],
+ [
+  "H. nana",
+  "Treatment?",
+  "Praziquantel 25 mg/kg."
+ ],
+ [
+  "Giardia",
+  "Giardia features?",
+  "Chronic diarrhoea, steatorrhoea, bloating, FTT."
+ ],
+ [
+  "Giardia",
+  "Treatment?",
+  "Metronidazole or tinidazole."
+ ],
+ [
+  "Amoeba",
+  "Amoebic dysentery stool?",
+  "Trophozoites with ingested RBCs."
+ ],
+ [
+  "Amoeba",
+  "Amoebic liver abscess pus?",
+  "Anchovy sauce."
+ ],
+ [
+  "Amoeba",
+  "Treatment?",
+  "Metronidazole then diloxanide."
+ ],
+ [
+  "Schisto",
+  "How is schistosomiasis caught?",
+  "Skin contact with fresh water cercariae."
+ ],
+ [
+  "Schisto",
+  "S. haematobium symptom?",
+  "Terminal haematuria."
+ ],
+ [
+  "Schisto",
+  "Urine sample timing?",
+  "Midday."
+ ],
+ [
+  "Schisto",
+  "S. haematobium egg?",
+  "Terminal spine."
+ ],
+ [
+  "Schisto",
+  "S. mansoni egg?",
+  "Lateral spine."
+ ],
+ [
+  "Schisto",
+  "S. mansoni chronic complication?",
+  "Periportal fibrosis, portal hypertension."
+ ],
+ [
+  "Schisto",
+  "Liver function in Symmers' fibrosis?",
+  "Normal."
+ ],
+ [
+  "Schisto",
+  "Treatment?",
+  "Praziquantel 40 mg/kg once."
+ ],
+ [
+  "Schisto",
+  "Bladder cancer type?",
+  "Squamous cell carcinoma."
+ ],
+ [
+  "Schisto",
+  "Katayama fever?",
+  "Acute fever, urticaria, eosinophilia."
+ ]
+]

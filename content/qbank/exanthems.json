@@ -1,0 +1,72 @@
+[
+{
+"q": "The pathognomonic sign of measles is:",
+"o": [
+"Maculopapular rash",
+"Koplik spots",
+"Conjunctivitis",
+"High fever",
+"Cough"
+],
+"a": 1,
+"e": "Koplik spots appear before the rash.",
+"k": "koplik spots",
+"s": "bank"
+},
+{
+"q": "The commonest cause of death in measles is:",
+"o": [
+"Encephalitis",
+"Pneumonia",
+"Diarrhoea",
+"SSPE",
+"Myocarditis"
+],
+"a": 1,
+"e": "Pneumonia.",
+"k": "commonest cause of death",
+"s": "bank"
+},
+{
+"q": "A 1-year-old has high fever for 3 days then a rash as the fever falls. Diagnosis:",
+"o": [
+"Measles",
+"Rubella",
+"Roseola infantum",
+"Scarlet fever",
+"Kawasaki"
+],
+"a": 2,
+"e": "HHV-6.",
+"k": "rash appears as the fever falls",
+"s": "bank"
+},
+{
+"q": "A child with sickle cell anaemia develops a slapped-cheek rash and sudden anaemia with low reticulocytes. Cause:",
+"o": [
+"Measles",
+"Parvovirus B19",
+"EBV",
+"Rubella",
+"HHV-6"
+],
+"a": 1,
+"e": "Parvovirus B19 aplastic crisis.",
+"k": "aplastic crisis",
+"s": "bank"
+},
+{
+"q": "Vesicles in different stages, mainly on the trunk and scalp, suggest:",
+"o": [
+"Smallpox",
+"Chickenpox",
+"Hand, foot and mouth",
+"Impetigo",
+"Scabies"
+],
+"a": 1,
+"e": "Varicella: crops in all stages, centripetal.",
+"k": "all stages together",
+"s": "bank"
+}
+]
