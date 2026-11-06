@@ -243,3 +243,19 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   space on a mid-topic page is spread between its boxes (vj up to 56 px), never on a topic's last page.
 - **Topic titles on one line (owner):** build.py gives titles over 32 characters a smaller font (min 16.5 pt) instead of wrapping.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.
+
+## Handover between the owner's two Claude accounts (Nov 6 2026)
+The owner works from two Claude accounts (subscription limits). Both must continue from the SAME code:
+- **Pediatrics:** the working branch is `claude/confident-turing-evm4gu`; `main` is kept equal to it (other account: start from `main`
+  or that branch, pull first, and push back to both). Branches `chapters` and the old `main` were merged in (chapters 9–15, reader tools).
+- **Surgery** (`surgery-rapid-review`): branch `claude/surgery-rapid-review-app-eoho37` (Cloudflare Workers Builds deploy on push).
+- **Obstetrics** (`obstetrics-master-review`): branch `main` (GitHub Actions deploy on push).
+- Before starting in a new session: `git pull`, read this file, then `git log --oneline -15` to see the last work.
+- **Deploy secrets are not in git:** the other account's cloud environment needs CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID and
+  PMR_ADMIN_PASSWORD (same values as this account's environment) for `bash server/deploy.sh`; Obstetrics/Surgery deploy by themselves on push.
+- **Review artifact:** https://claude.ai/artifact/TCV2sVb8tfxrEzcET5D1jX belongs to the first account; the other account cannot
+  update it, so it publishes its own review copy (write its address here) and the owner uses whichever is newer.
+- **State at handover:** all 15 chapters are in the book; chapters 1–3 rewritten in the junior style with covers for 1–5;
+  subscription texts in Arabic, Bankak, QBank in steps, flashcards by chapter, day/eye/night looks (ported to Surgery and Obstetrics).
+  **Next:** junior-style rewrite of chapter 4 onward (one chapter at a time, owner reviews each), pictures for chapters 9–15
+  (resources/pictures-needed.md), remaining mid-topic gaps (`node tools/blockers.js`).
