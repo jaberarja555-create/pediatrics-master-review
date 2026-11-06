@@ -140,7 +140,7 @@ const MARGIN = 42, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
           while (R.length) {
             if (h + U[R[0]].h <= capOf(P.length)) { h += U[R[0]].h; rs.push(...U[R.shift()].rows); continue; }
             let moved = false;
-            for (let a = 1; a < Math.min(R.length, 4); a++) {
+            for (let a = 1; a < Math.min(R.length, 7); a++) {
               const u = U[R[a]];
               if (u.cb || u.rv || u.title) continue;
               let e = a + 1, hh = u.h; while (e < R.length && U[R[e]].cb) { hh += U[R[e]].h; e++; }   // a split box moves up whole
@@ -159,7 +159,7 @@ const MARGIN = 42, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
         P[bi].push(...nu.rows); F[bi] -= nu.h;
       }
       if (!ok) continue;
-      P.forEach((p, i) => { pages.push(p); fills.push(Math.max(0, Math.round(F[i]))); });
+      P.forEach((p, i) => { pages.push(p); fills.push(i === P.length - 1 ? 0 : Math.max(0, Math.round(F[i]))); });  // the last page of a topic is not spread
       break;
       }
     }

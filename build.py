@@ -251,7 +251,7 @@ def split_box(body, rows_per=1, min_chars=50):
     # a page may break between row groups of a table or list, and between the blocks of a box (owner: fill the page);
     # never before a picture, and never right after a short lead-in line (it stays with what it introduces)
     def lead_in(pc):
-        return pc.lstrip().startswith(('<p', '<b', '<div class="small"')) and len(text(pc)) < 200
+        return pc.lstrip().startswith(('<p', '<b', '<div class="small"'))   # owner: a paragraph always stays with the table or list it introduces
     merged = []
     for k, (tk, pc) in enumerate(pieces):
         prev = pieces[k - 1] if k else None
@@ -703,7 +703,7 @@ def build():
                                for i, a in enumerate(stream))
             fills = plan.get('fills') or []
             k_ = len(paged_keys := [x for x in paged if x[0] != 'cover' and x[5] == key])
-            vj = min(26, int(max(0, fills[k_] - 20) * .75 / max(1, len(rows) - 1))) if k_ < len(fills) and not MEASURE else 0
+            vj = min(56, int(max(0, fills[k_] - 20) * .9 / max(1, len(rows) - 1))) if k_ < len(fills) and not MEASURE else 0
             if vj > 1:  # spread the page's spare height evenly between its rows (no empty block at the bottom)
                 body = f'<div class="vj" style="--vj:{vj}px"></div>' + body
             paged.append((ch, first[4], sub, body, pno, key, {stream[i][4]['id'] for row in rows for i in row if stream[i][3] != 'Rapid Review'}))
