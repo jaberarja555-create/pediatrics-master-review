@@ -459,3 +459,8 @@ Koplik spots | Small white spots on the buccal mucosa, pathognomonic of measles
 hypergammaglobulinaemia | Raised immunoglobulin (gamma globulin) in the blood
 gibbus | Sharp angular bend of the spine from a collapsed vertebra (Pott's disease)
 trismus | Spasm of the jaw muscles; difficulty opening the mouth
+intussusception | Telescoping of one segment of bowel into the next
+pyloromyotomy | Splitting the thickened pyloric muscle down to the mucosa
+steatorrhoea | Pale, bulky, greasy, offensive stools from fat malabsorption
+villous atrophy | Flattening of the small-bowel villi, as in coeliac disease
+posseting | Small effortless regurgitation of milk after feeds

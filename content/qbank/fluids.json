@@ -1,0 +1,58 @@
+[
+{
+"q": "Daily maintenance fluid for a 25-kg child is:",
+"o": [
+"1250 mL",
+"1500 mL",
+"1600 mL",
+"2000 mL",
+"2500 mL"
+],
+"a": 2,
+"e": "1000 + 500 + 5×20 = 1600 mL.",
+"k": "1600 ml/day",
+"s": "bank"
+},
+{
+"q": "The first treatment of hyperkalaemia with ECG changes is:",
+"o": [
+"Furosemide",
+"IV calcium gluconate",
+"Resonium",
+"Dialysis",
+"Bicarbonate"
+],
+"a": 1,
+"e": "Calcium stabilises the myocardium.",
+"k": "calcium gluconate 10%",
+"s": "bank"
+},
+{
+"q": "The ECG sign of hypokalaemia is:",
+"o": [
+"Peaked T waves",
+"U waves",
+"Wide QRS",
+"Short QT",
+"Delta wave"
+],
+"a": 1,
+"e": "Flat T and U waves.",
+"k": "u waves",
+"s": "bank"
+},
+{
+"q": "Hypotonic maintenance fluids in sick children risk:",
+"o": [
+"Hypernatraemia",
+"Hyponatraemia",
+"Hyperkalaemia",
+"Alkalosis",
+"Hypercalcaemia"
+],
+"a": 1,
+"e": "ADH is raised in illness.",
+"k": "hospital-acquired",
+"s": "bank"
+}
+]

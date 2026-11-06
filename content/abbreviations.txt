@@ -496,3 +496,24 @@ SP | Sulfadoxine–pyrimethamine
 IPTp | Intermittent preventive treatment of malaria in pregnancy
 HRP2 | Histidine-rich protein 2 (malaria antigen)
 HHV-6 | Human herpesvirus 6
+GOR | Gastro-oesophageal reflux
+CMPA | Cow's milk protein allergy
+RNA | Ribonucleic acid
+EHEC | Enterohaemorrhagic E. coli
+ETEC | Enterotoxigenic E. coli
+EIEC | Enteroinvasive E. coli
+HUS | Haemolytic uraemic syndrome
+SGLT1 | Sodium–glucose co-transporter 1
+RUQ | Right upper quadrant
+ALT | Alanine aminotransferase
+AST | Aspartate aminotransferase
+KF | Kayser–Fleischer (rings)
+HLA | Human leucocyte antigen
+ETAT | Emergency Triage Assessment and Treatment
+QRS | QRS complex of the ECG
+HSP | Henoch–Schönlein purpura
+TOF | Tracheo-oesophageal fistula (or tetralogy of Fallot, by context)
+VACTERL | Vertebral, anal, cardiac, tracheo-oesophageal, renal and limb anomalies
+HAV | Hepatitis A virus
+HEV | Hepatitis E virus
+TBW | Total body water

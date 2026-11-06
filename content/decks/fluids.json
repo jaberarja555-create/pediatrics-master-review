@@ -1,0 +1,132 @@
+[
+ [
+  "Body water",
+  "TBW of a term newborn?",
+  "About 75%."
+ ],
+ [
+  "Urine",
+  "Oliguria in infants?",
+  "< 1 mL/kg/h."
+ ],
+ [
+  "Maintenance",
+  "Holliday–Segar rule?",
+  "100 / 50 / 20 mL/kg/day."
+ ],
+ [
+  "Maintenance",
+  "Hourly rule?",
+  "4 / 2 / 1 mL/kg/h."
+ ],
+ [
+  "Maintenance",
+  "Maintenance for 25 kg?",
+  "1600 mL/day."
+ ],
+ [
+  "Maintenance",
+  "Maintenance fluid type?",
+  "Isotonic (0.9% saline + 5% dextrose)."
+ ],
+ [
+  "Maintenance",
+  "KCl added to maintenance?",
+  "20 mmol/L once passing urine."
+ ],
+ [
+  "Maintenance",
+  "Why avoid hypotonic fluids?",
+  "Hyponatraemia (raised ADH)."
+ ],
+ [
+  "Maintenance",
+  "Neonatal day-1 fluid?",
+  "10% dextrose."
+ ],
+ [
+  "Restriction",
+  "When restrict to ⅔?",
+  "SIADH, meningitis, raised ICP, AKI, heart failure."
+ ],
+ [
+  "Deficit",
+  "Deficit formula?",
+  "% dehydration × weight × 10 mL."
+ ],
+ [
+  "Deficit",
+  "Deficit over how long?",
+  "24 h (48 h if hypernatraemic)."
+ ],
+ [
+  "Na",
+  "Normal sodium?",
+  "135–145 mmol/L."
+ ],
+ [
+  "Na",
+  "Causes of hyponatraemia?",
+  "Water replacement, SIADH, hypotonic fluids, CAH."
+ ],
+ [
+  "Na",
+  "Treatment of hyponatraemic seizures?",
+  "3% saline 3–5 mL/kg."
+ ],
+ [
+  "Na",
+  "Max rise of Na per day?",
+  "8–10 mmol/L."
+ ],
+ [
+  "Na",
+  "Causes of hypernatraemia?",
+  "Concentrated feeds, poor breastfeeding, DI."
+ ],
+ [
+  "K",
+  "Normal potassium?",
+  "3.5–5.5 mmol/L."
+ ],
+ [
+  "K",
+  "Causes of hypokalaemia?",
+  "Diarrhoea, vomiting, diuretics, insulin, SAM."
+ ],
+ [
+  "K",
+  "ECG of hypokalaemia?",
+  "Flat T, U waves."
+ ],
+ [
+  "K",
+  "Max IV K rate?",
+  "0.5 mmol/kg/h."
+ ],
+ [
+  "K",
+  "Max peripheral K concentration?",
+  "40 mmol/L."
+ ],
+ [
+  "K",
+  "ECG of hyperkalaemia?",
+  "Peaked T, wide QRS."
+ ],
+ [
+  "K",
+  "First drug in hyperkalaemia?",
+  "IV calcium gluconate."
+ ],
+ [
+  "K",
+  "Drugs that shift K into cells?",
+  "Salbutamol, insulin + dextrose."
+ ],
+ [
+  "K",
+  "Newborn with low Na, high K?",
+  "Salt-wasting CAH."
+ ]
+]

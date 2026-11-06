@@ -1,0 +1,58 @@
+[
+{
+"q": "Which hepatitis virus most often becomes chronic when acquired at birth?",
+"o": [
+"Hepatitis A",
+"Hepatitis B",
+"Hepatitis E",
+"Hepatitis D alone",
+"CMV"
+],
+"a": 1,
+"e": "90% chronicity at birth.",
+"k": "90% if infected at birth",
+"s": "bank"
+},
+{
+"q": "The best marker of severity in acute hepatitis is:",
+"o": [
+"ALT",
+"Bilirubin",
+"PT/INR",
+"Albumin",
+"ALP"
+],
+"a": 2,
+"e": "Synthetic function reflects severity.",
+"k": "pt/inr",
+"s": "bank"
+},
+{
+"q": "HBsAg negative, anti-HBs positive, anti-HBc negative means:",
+"o": [
+"Acute infection",
+"Chronic infection",
+"Vaccinated",
+"Recovered infection",
+"Window period"
+],
+"a": 2,
+"e": "Vaccine gives anti-HBs only.",
+"k": "immunity",
+"s": "bank"
+},
+{
+"q": "The commonest cause of portal hypertension in children is:",
+"o": [
+"Cirrhosis",
+"Portal vein thrombosis",
+"Budd–Chiari",
+"Schistosomiasis",
+"Wilson disease"
+],
+"a": 1,
+"e": "Extrahepatic portal vein obstruction.",
+"k": "portal vein thrombosis",
+"s": "bank"
+}
+]

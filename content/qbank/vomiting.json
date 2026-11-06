@@ -1,0 +1,72 @@
+[
+{
+"q": "The biochemical abnormality in pyloric stenosis is:",
+"o": [
+"Hyperchloraemic acidosis",
+"Hypochloraemic hypokalaemic alkalosis",
+"Hyperkalaemic acidosis",
+"Respiratory alkalosis",
+"Normal electrolytes"
+],
+"a": 1,
+"e": "Loss of HCl.",
+"k": "hypochloraemic hypokalaemic metabolic alkalosis",
+"s": "bank"
+},
+{
+"q": "A 9-month-old has paroxysmal screaming, pallor and redcurrant jelly stool. Diagnosis:",
+"o": [
+"Gastroenteritis",
+"Intussusception",
+"Meckel's diverticulum",
+"Volvulus",
+"Pyloric stenosis"
+],
+"a": 1,
+"e": "Classic intussusception.",
+"k": "redcurrant jelly",
+"s": "bank"
+},
+{
+"q": "Bilious vomiting in a newborn requires urgent exclusion of:",
+"o": [
+"GOR",
+"Pyloric stenosis",
+"Malrotation with volvulus",
+"Overfeeding",
+"CMPA"
+],
+"a": 2,
+"e": "Bowel can die within hours.",
+"k": "malrotation with volvulus",
+"s": "bank"
+},
+{
+"q": "A 'double bubble' on abdominal X-ray suggests:",
+"o": [
+"Pyloric stenosis",
+"Duodenal atresia",
+"Hirschsprung",
+"Jejunal atresia",
+"Meconium ileus"
+],
+"a": 1,
+"e": "Duodenal atresia (Down syndrome).",
+"k": "double bubble",
+"s": "bank"
+},
+{
+"q": "The first step in managing pyloric stenosis is:",
+"o": [
+"Immediate pyloromyotomy",
+"Correction of fluids and electrolytes",
+"Barium meal",
+"Omeprazole",
+"Erythromycin"
+],
+"a": 1,
+"e": "Not an emergency operation.",
+"k": "correct fluids and electrolytes first",
+"s": "bank"
+}
+]

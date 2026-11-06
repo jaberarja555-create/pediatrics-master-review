@@ -1,0 +1,58 @@
+[
+{
+"q": "The gold-standard test for coeliac disease is:",
+"o": [
+"Anti-tTG IgA",
+"Small bowel biopsy",
+"Stool fat",
+"Sweat test",
+"Xylose test"
+],
+"a": 1,
+"e": "Duodenal biopsy shows villous atrophy.",
+"k": "gold standard",
+"s": "bank"
+},
+{
+"q": "Which cereal is safe in coeliac disease?",
+"o": [
+"Wheat",
+"Barley",
+"Rye",
+"Rice",
+"Semolina"
+],
+"a": 3,
+"e": "Rice, maize, millet and sorghum are gluten-free.",
+"k": "rice, maize, millet",
+"s": "bank"
+},
+{
+"q": "Persistent diarrhoea is defined as diarrhoea lasting:",
+"o": [
+"≥ 3 days",
+"≥ 7 days",
+"≥ 14 days",
+"≥ 30 days",
+"≥ 3 months"
+],
+"a": 2,
+"e": "≥ 14 days.",
+"k": "14 days or more",
+"s": "bank"
+},
+{
+"q": "The formula of choice for cow's milk protein allergy is:",
+"o": [
+"Soya formula",
+"Goat's milk",
+"Extensively hydrolysed formula",
+"Lactose-free cow's milk formula",
+"Full-cream milk"
+],
+"a": 2,
+"e": "Extensively hydrolysed (amino acid if severe).",
+"k": "extensively hydrolysed formula",
+"s": "bank"
+}
+]

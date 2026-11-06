@@ -1,0 +1,142 @@
+[
+ [
+  "Definition",
+  "Define diarrhoea.",
+  "≥ 3 loose/watery stools in 24 h."
+ ],
+ [
+  "Definition",
+  "Define dysentery.",
+  "Diarrhoea with visible blood."
+ ],
+ [
+  "Causes",
+  "Commonest cause in infants?",
+  "Rotavirus."
+ ],
+ [
+  "Causes",
+  "Commonest cause of dysentery?",
+  "Shigella."
+ ],
+ [
+  "Causes",
+  "Rice-water stool in an outbreak?",
+  "Cholera."
+ ],
+ [
+  "Causes",
+  "Bloody diarrhoea followed by HUS?",
+  "EHEC (E. coli O157)."
+ ],
+ [
+  "Assessment",
+  "Signs of some dehydration?",
+  "Restless, sunken eyes, drinks eagerly, slow skin pinch (≥ 2)."
+ ],
+ [
+  "Assessment",
+  "Signs of severe dehydration?",
+  "Lethargic, sunken eyes, drinks poorly, very slow skin pinch (≥ 2)."
+ ],
+ [
+  "Assessment",
+  "Weight loss in severe dehydration?",
+  "> 10%."
+ ],
+ [
+  "Plan A",
+  "ORS after each stool < 2 years?",
+  "50–100 mL."
+ ],
+ [
+  "Plan A",
+  "ORS after each stool 2–10 years?",
+  "100–200 mL."
+ ],
+ [
+  "Plan A",
+  "Zinc dose ≥ 6 months?",
+  "20 mg/day for 10–14 days."
+ ],
+ [
+  "Plan B",
+  "Plan B volume and time?",
+  "ORS 75 mL/kg over 4 h."
+ ],
+ [
+  "Plan B",
+  "Vomiting during Plan B?",
+  "Wait 10 min, continue slowly."
+ ],
+ [
+  "Plan C",
+  "Plan C fluid?",
+  "Ringer's lactate (or normal saline), 100 mL/kg."
+ ],
+ [
+  "Plan C",
+  "Plan C infant timing?",
+  "30 mL/kg in 1 h, 70 mL/kg in 5 h."
+ ],
+ [
+  "Plan C",
+  "Plan C child timing?",
+  "30 mL/kg in 30 min, 70 mL/kg in 2½ h."
+ ],
+ [
+  "Plan C",
+  "No IV access in severe dehydration?",
+  "NG ORS 20 mL/kg/h × 6 h."
+ ],
+ [
+  "Antibiotics",
+  "Shigella treatment?",
+  "Ciprofloxacin 15 mg/kg 12-hourly × 3 days."
+ ],
+ [
+  "Antibiotics",
+  "Antibiotic for severe cholera?",
+  "Azithromycin 20 mg/kg once."
+ ],
+ [
+  "Antibiotics",
+  "Are antidiarrhoeals used?",
+  "No."
+ ],
+ [
+  "ORS",
+  "Na in low-osmolarity ORS?",
+  "75 mmol/L."
+ ],
+ [
+  "ORS",
+  "Osmolarity of ORS?",
+  "245 mOsm/L."
+ ],
+ [
+  "ORS",
+  "Mechanism of ORS?",
+  "Sodium–glucose co-transport (SGLT1)."
+ ],
+ [
+  "Na",
+  "Commonest type of dehydration?",
+  "Isonatraemic."
+ ],
+ [
+  "Na",
+  "Hypernatraemic dehydration signs?",
+  "Doughy skin, irritability, high-pitched cry."
+ ],
+ [
+  "Na",
+  "Danger of rapid correction of hypernatraemia?",
+  "Cerebral oedema."
+ ],
+ [
+  "Prevention",
+  "Key preventive measures?",
+  "Breastfeeding, hand washing, safe water, rotavirus and measles vaccines."
+ ]
+]

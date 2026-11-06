@@ -1,0 +1,72 @@
+[
+{
+"q": "A 2-year-old with diarrhoea is restless, has sunken eyes, drinks eagerly and skin pinch goes back slowly. Treatment:",
+"o": [
+"Plan A",
+"Plan B: ORS 75 mL/kg over 4 h",
+"Plan C IV fluids",
+"Antibiotics",
+"NPO"
+],
+"a": 1,
+"e": "Some dehydration = Plan B.",
+"k": "ors 75 ml/kg over 4 hours",
+"s": "bank"
+},
+{
+"q": "In Plan C for an infant, the first 30 mL/kg is given over:",
+"o": [
+"15 minutes",
+"30 minutes",
+"1 hour",
+"2 hours",
+"5 hours"
+],
+"a": 2,
+"e": "Infants: 1 h then 70 mL/kg over 5 h.",
+"k": "infants (< 12 months)",
+"s": "bank"
+},
+{
+"q": "The sodium content of WHO low-osmolarity ORS is:",
+"o": [
+"45 mmol/L",
+"60 mmol/L",
+"75 mmol/L",
+"90 mmol/L",
+"120 mmol/L"
+],
+"a": 2,
+"e": "75 mmol/L Na, 75 glucose, 245 mOsm/L.",
+"k": "low-osmolarity ors (who)",
+"s": "bank"
+},
+{
+"q": "The antibiotic of choice for Shigella dysentery in Sudan is:",
+"o": [
+"Amoxicillin",
+"Metronidazole",
+"Ciprofloxacin",
+"Cotrimoxazole",
+"Chloramphenicol"
+],
+"a": 2,
+"e": "Ciprofloxacin 3 days.",
+"k": "ciprofloxacin 15 mg/kg",
+"s": "bank"
+},
+{
+"q": "Rapid correction of hypernatraemic dehydration causes:",
+"o": [
+"Central pontine myelinolysis",
+"Cerebral oedema",
+"Hypokalaemia",
+"Heart failure",
+"Hypoglycaemia"
+],
+"a": 1,
+"e": "Water moves into brain cells.",
+"k": "cerebral oedema",
+"s": "bank"
+}
+]
