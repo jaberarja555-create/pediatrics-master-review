@@ -25,8 +25,14 @@ var INTRIAL=!REVIEW&&!!TRIAL_MS&&!st('act')&&trialLeft()>0,TRIALNEW=!REVIEW&&!!T
 var LOCKED=!REVIEW&&!INTRIAL&&(!st('act')||!ACC.public_key);
 if(INTRIAL)setTimeout(function(){location.reload()},Math.min(trialLeft()+500,2e9));
 function trialPost(start){if(SRV==null)return Promise.resolve(null);return fetch(SRV.replace(/\/$/,'')+'/trial',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({dev:DEV,start:start||0})}).then(function(r){return r.json()}).catch(function(){return null})}
+/* opening the book (owner, Nov 2026: it was slow): the choice is saved at once, the server is told in the background (the first
+   start is reconciled on the next launch) and the app reloads after a short animation with its own sound */
+function choiceSnd(k){if(k==='trial')chime([523.3,659.3,784,1046.5,1318.5,1568],'triangle');else if(k==='paid')chime([392,523.3,659.3,784],'sine');else if(k==='code')chime([880,1174.7],'sine');else if(k==='ok')chime([523.3,784,1046.5,1568],'triangle');else chime([659.3,523.3],'sine')}
+function openingFx(msg){var d=$('opening');if(!d){d=document.createElement('div');d.id='opening';document.body.appendChild(d)}
+  d.innerHTML='<img src="img/logo.webp" alt=""><b class="ar" dir="rtl">'+msg+'</b><i><span></span></i>';requestAnimationFrame(function(){d.classList.add('on')})}
 function startTrial(){var now=Date.now(),t={s:now,m:now};try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}
-  var done=function(){location.reload()};trialPost(now).then(function(j){if(j&&j.ok&&j.start&&j.start<now){t.s=j.start;try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}}done()});setTimeout(done,2500)}
+  if(SRV!=null)try{fetch(SRV.replace(/\/$/,'')+'/trial',{method:'POST',keepalive:true,cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({dev:DEV,start:now})}).catch(function(){})}catch(e){}
+  choiceSnd('trial');$('sheet').hidden=true;openingFx('جارٍ فتح الكتاب كاملًا · '+trialDur());setTimeout(function(){location.reload()},900)}
 if(INTRIAL&&!TRIAL.r)trialPost(TRIAL.s).then(function(j){if(!j||!j.ok)return;TRIAL.r=1;if(j.start&&j.start<TRIAL.s){TRIAL.s=j.start;if(Date.now()>=TRIAL.s+TRIAL_MS)TRIAL.x=1}try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}if(TRIAL.x)location.reload()});
 var SRV=ACC.server==='same'?(/^https?:$/.test(location.protocol)&&!/claude|localhost|127\.0/.test(location.hostname)?'':null):(ACC.server||null);
 var LINKCODE=(location.hash.match(/code=([A-Za-z0-9-]{11,16})/)||[])[1];if(LINKCODE){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}
@@ -71,7 +77,7 @@ function activate(code){var msg=$('actMsg'),go=$('actGo');code=(code||'').toUppe
     .then(function(r){return r.json()}).then(function(j){
       if(!j||!j.ok){go.disabled=false;msg.textContent=ACT_ERR[j&&j.reason]||ACT_ERR.server;return}
       return checkCode(j.token).then(function(ok){if(!ok){go.disabled=false;msg.textContent=ACT_ERR.server;return}
-        st('act',j.token);st('code',j.code);if(j.name)st('name',j.name);msg.textContent='تم التفعيل بنجاح! يُفتح الكتاب كاملًا الآن…';setTimeout(function(){location.reload()},700)})})
+        st('act',j.token);st('code',j.code);if(j.name)st('name',j.name);msg.textContent='تم التفعيل بنجاح! يُفتح الكتاب كاملًا الآن…';choiceSnd('ok');$('sheet').hidden=true;openingFx('تم التفعيل · جارٍ فتح الكتاب كاملًا');setTimeout(function(){location.reload()},1000)})})
     .catch(function(){go.disabled=false;msg.textContent=ACT_ERR.net})}
 function openChoose(){
   var ic1='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>',
@@ -84,9 +90,9 @@ function openChoose(){
     '<button type="button" class="chc pd" id="chPaid"><i>'+ic2+'</i><span><b>الاشتراك في النسخة المدفوعة</b><small>'+(ACC.price?esc(ACC.price)+' · ':'')+'الكتاب كاملًا طوال الطبعة على جهازين، مع مزامنة ملاحظاتك.</small></span></button>'+
     '<button type="button" class="chc cd" id="chCode"><i>'+ic3+'</i><span><b>عندي كود تفعيل</b><small>اكتب الكود الذي وصلك في واتساب.</small></span></button>'+
     '<button type="button" class="chfree" id="chFree">متابعة بالنسخة المجانية: '+esc(ACC.free_label||'جزء من الكتاب')+'</button></div>');
-  $('chFree').onclick=function(){$('sheet').hidden=true};
-  if($('chTrial'))$('chTrial').onclick=function(){this.disabled=true;this.querySelector('small').textContent='جارٍ فتح الكتاب…';startTrial()};
-  $('chPaid').onclick=function(){openSub()};$('chCode').onclick=function(){openSub();setTimeout(function(){var x=$('actIn');if(x){x.scrollIntoView({block:'center'});x.focus()}},250)}}
+  $('chFree').onclick=function(){choiceSnd('free');$('sheet').hidden=true};
+  if($('chTrial'))$('chTrial').onclick=function(){this.disabled=true;startTrial()};
+  $('chPaid').onclick=function(){choiceSnd('paid');openSub()};$('chCode').onclick=function(){choiceSnd('code');openSub();setTimeout(function(){var x=$('actIn');if(x){x.scrollIntoView({block:'center'});x.focus()}},250)}}
 function openSub(code){if(!LOCKED&&!INTRIAL){openSheet('الاشتراك','<div class="ar" dir="rtl"><p class="lead">هذا الجهاز مفعّل والكتاب مفتوح كاملًا. شكرًا لك!</p>'+(st('code')?'<div class="devc"><span>كود التفعيل</span><b dir="ltr">'+esc(st('code'))+'</b></div>':'')+'</div>');return}
   openSheet('الاشتراك في الكتاب',subHtml(code));
   $('actGo').onclick=function(){activate($('actIn').value)};$('actIn').onkeydown=function(e){if(e.key==='Enter')activate(this.value)};
