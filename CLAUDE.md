@@ -169,6 +169,9 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
   file is for). For each topic read every resource that covers it; put extracted text in `resources/text/` (not committed).
 
 ## Subscription (free trial + activation codes)
+- **Bankak (owner, Nov 2026, all books):** account 4674587, name سعاد عبدالكريم (`access.bankak_account` / `bankak_name`).
+- **Question bank screen (owner):** four numbered steps (Mode · Questions · Chapters by part in a two-column grid · Number with 10/20/40/All),
+  gold selection, sticky gold Start bar showing count and mode; re-render keeps the scroll position.
 - `book.json` → `access`: free topics (owner's model, from the obstetrics app: the first topic of each chapter; `free_label` is the short Arabic line shown instead of the topic list; the drugs chapter is not free) with ALL their flashcards / questions (`"all"`); a chapter whose topics are all free also has a free Rapid Review;
   one code opens up to 2 devices (student sends both device codes), WhatsApp, price, Bankak account. Empty fields are hidden. Subscription text is in clear Arabic (owner, Nov 2026: no English words that jumble the line; buttons say «اضغط هنا للاشتراك», «تفعيل»; numbered steps «طريقة الاشتراك»).
 - Online: `server/` = one Cloudflare Worker serving the book (docs/) + `/admin` control page + `/check`; see server/DEPLOY.md.

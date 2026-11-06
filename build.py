@@ -761,7 +761,11 @@ def build():
     # Question bank: content/qbank/<topic>.json → [[topic, stem, options, answer, explanation, page, source]]
     page_text = [re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', h))).lower() for h in html_pages]
     pidx = {p['id']: i for i, p in enumerate(meta_pages)}
-    qbank = {'topics': [], 'qs': []}
+    qbank = {'topics': [], 'qs': [], 'parts': []}
+    for c in book['chapters']:   # question bank screen groups the chapters by part
+        if c.get('part') or not qbank['parts']:
+            qbank['parts'].append([c.get('part') or '', []])
+        qbank['parts'][-1][1].append(c['no'])
     for ch, t, src in written:
         f = CONTENT / 'qbank' / f'{t["id"]}.json'
         if not f.exists():

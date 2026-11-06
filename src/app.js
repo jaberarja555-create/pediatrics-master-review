@@ -1026,24 +1026,30 @@ function renderQB(){if(CUR&&!CUR.done)return renderQ();$('subtitle').textContent
   var s=qbStats(),pool=poolQs(),max=pool.length,n=Math.min(qset.n,max);
   var h='<div class="qbst"><div><b>'+pct(s.ok,s.used)+'%</b><span>Correct</span></div><div><b>'+s.used+'<small> / '+QS.length+'</small></b><span>Used</span></div><div><b>'+(QS.length-s.used)+'</b><span>Unused</span></div><div><b>'+s.m+'</b><span>Marked</span></div></div>';
   if(LOCKED)h+='<button type="button" class="trial ar" dir="rtl" data-sub="1"><b>النسخة المجانية · '+QS.length+' سؤال</b><span>اشترك لفتح بنك الأسئلة كاملًا</span><i>اضغط هنا للاشتراك</i></button>';
+  var any=Object.keys(qset.ch).some(function(k){return qset.ch[k]}),nsel=qchs.filter(function(c){return qset.ch[c]}).length;
+  function step(no,t,r){return '<div class="qbl"><span class="qno">'+no+'</span>'+t+(r?'<em>'+r+'</em>':'')+'</div>'}
   h+='<div class="sh"><h3>Create a test</h3></div><div class="qbf">';
-  h+='<div class="qbl">Mode</div><div class="seg" data-k="mode">'+[['tutor','Tutor','answer after each question'],['timed','Timed','answers at the end · 1 min 15 s each']].map(function(o){return '<button type="button" data-v="'+o[0]+'" class="'+(qset.mode===o[0]?'on':'')+'"><b>'+o[1]+'</b><span>'+o[2]+'</span></button>'}).join('')+'</div>';
-  h+='<div class="qbl">Questions</div><div class="chips" data-k="pool">'+[['unused','Unused'],['incorrect','Incorrect'],['marked','Marked'],['all','All']].map(function(o){
-    var c=QS.filter(function(q){return inPool(q,o[0])}).length;return '<button type="button" class="chip'+(qset.pool===o[0]?' on':'')+'" data-v="'+o[0]+'">'+o[1]+'<small>'+c+'</small></button>'}).join('')+'</div>';
-  var any=Object.keys(qset.ch).some(function(k){return qset.ch[k]});
-  h+='<div class="qbl">Chapters <span>'+(any?'':'all chapters')+'</span></div><div class="qbch">'+qchs.map(function(n){var c=QS.filter(function(q){return QTOP[q[0]].ch===n}).length;
-    return '<button type="button" class="qx'+n+(qset.ch[n]?' on':'')+'" data-ch="'+n+'"><span class="n">'+n+'</span><span class="l">'+esc(chTitle(n))+'</span><small>'+c+'</small></button>'}).join('')+'</div>';
-  h+='<div class="qbl">Number of questions <span>'+max+' available</span></div><div class="qbn"><input type="range" id="qbN" min="1" max="'+Math.max(1,Math.min(max,100))+'" value="'+Math.max(1,n)+'"'+(max?'':' disabled')+'><b id="qbNv">'+n+'</b></div>';
-  h+='<button class="btn qbgo" type="button" id="qbGo"'+(max?'':' disabled')+'>'+(max?'Start test':'No questions match')+'</button></div>';
+  h+=step(1,'Mode')+'<div class="seg" data-k="mode">'+[['tutor','Tutor','see the answer after each question'],['timed','Timed','like the exam · 1 min 15 s each']].map(function(o){return '<button type="button" data-v="'+o[0]+'" class="'+(qset.mode===o[0]?'on':'')+'"><b>'+o[1]+'</b><span>'+o[2]+'</span></button>'}).join('')+'</div>';
+  h+=step(2,'Questions')+'<div class="qbpool" data-k="pool">'+[['unused','Unused'],['incorrect','Incorrect'],['marked','Marked'],['all','All']].map(function(o){
+    var c=QS.filter(function(q){return inPool(q,o[0])}).length;return '<button type="button" class="'+(qset.pool===o[0]?'on':'')+'" data-v="'+o[0]+'"><b>'+c+'</b><span>'+o[1]+'</span></button>'}).join('')+'</div>';
+  h+=step(3,'Chapters',any?nsel+' selected · <button type="button" class="qblink" id="qbAll">clear</button>':'all chapters')+'<div class="qbparts">'+(QB.parts||[['',qchs]]).map(function(p){
+    var cs=p[1].filter(function(n){return qchs.indexOf(n)>=0});if(!cs.length)return '';
+    return (p[0]?'<div class="qbpt">'+esc(p[0])+'</div>':'')+'<div class="qbch">'+cs.map(function(n){var c=QS.filter(function(q){return QTOP[q[0]].ch===n}).length;
+      return '<button type="button" class="qx'+n+(qset.ch[n]?' on':'')+'" data-ch="'+n+'"><span class="n">'+n+'</span><span class="l">'+esc(chTitle(n))+'</span><small>'+c+'</small></button>'}).join('')+'</div>'}).join('')+'</div>';
+  h+=step(4,'Number of questions',max+' available')+'<div class="qbnq">'+[10,20,40,max].filter(function(v,ix,a){return v>0&&v<=max&&a.indexOf(v)===ix}).map(function(v){return '<button type="button" data-qn="'+v+'" class="'+(n===v?'on':'')+'">'+(v===max&&v>40?'All '+v:v)+'</button>'}).join('')+'</div>'+
+    '<div class="qbn"><input type="range" id="qbN" min="1" max="'+Math.max(1,Math.min(max,100))+'" value="'+Math.max(1,n)+'"'+(max?'':' disabled')+'><b id="qbNv">'+n+'</b></div></div>';
+  h+='<div class="qbbar"><button class="btn qbgo" type="button" id="qbGo"'+(max?'':' disabled')+'>'+(max?'Start test<small id="qbGoS">'+n+' questions · '+(qset.mode==='timed'?'Timed':'Tutor')+'</small>':'No questions match')+'</button></div>';
   if(QT.length){h+='<div class="sh"><h3>Previous tests</h3><span>Tap to review</span></div><div class="qbprev">'+QT.slice().reverse().map(function(t,i){var j=QT.length-1-i,sc=pct(t.ok,t.ids.length);
     return '<button type="button" data-t="'+j+'"><span class="sc '+(sc>=70?'g':sc>=50?'m':'b')+'">'+sc+'%</span><span class="l"><b>'+t.ok+' / '+t.ids.length+' correct</b><small>'+(t.mode==='timed'?'Timed':'Tutor')+' · '+new Date(t.d).toLocaleDateString(undefined,{day:'numeric',month:'short'})+'</small></span><span class="go">›</span></button>'}).join('')+'</div>'+
     '<button class="chip qbreset" type="button" id="qbReset">Reset all question-bank progress</button>'}
-  $('qbWrap').innerHTML=h;$('qbWrap').scrollTop=0}
-$('qbWrap').addEventListener('input',function(e){if(e.target.id==='qbN'){qset.n=+e.target.value;$('qbNv').textContent=e.target.value;saveQB()}});
+  var qk=$('qbank'),qy=qk?qk.scrollTop:0;$('qbWrap').innerHTML=h;if(qk)qk.scrollTop=renderQB.keep?qy:0;renderQB.keep=0}
+$('qbWrap').addEventListener('input',function(e){if(e.target.id==='qbN'){qset.n=+e.target.value;$('qbNv').textContent=e.target.value;var gs=$('qbGoS');if(gs)gs.textContent=e.target.value+' questions · '+(qset.mode==='timed'?'Timed':'Tutor');[].forEach.call($('qbWrap').querySelectorAll('[data-qn]'),function(x){x.classList.toggle('on',+x.dataset.qn===qset.n)});saveQB()}});
 $('qbWrap').addEventListener('click',function(e){var b=e.target.closest('button');if(!b||!$('qbWrap').contains(b))return;
   var g=b.parentNode.dataset&&b.parentNode.dataset.k;
-  if(g&&b.dataset.v){qset[g]=b.dataset.v;saveQB();renderQB();return}
-  if(b.dataset.ch){qset.ch[b.dataset.ch]=!qset.ch[b.dataset.ch];saveQB();renderQB();return}
+  if(g&&b.dataset.v){qset[g]=b.dataset.v;saveQB();renderQB.keep=1;renderQB();return}
+  if(b.dataset.ch){qset.ch[b.dataset.ch]=!qset.ch[b.dataset.ch];saveQB();renderQB.keep=1;renderQB();return}
+  if(b.dataset.qn){qset.n=+b.dataset.qn;saveQB();renderQB.keep=1;renderQB();return}
+  if(b.id==='qbAll'){qset.ch={};saveQB();renderQB.keep=1;renderQB();return}
   if(b.id==='qbGo'){startTest();return}
   if(b.dataset.t){var t=QT[+b.dataset.t];CUR={ids:t.ids,ans:t.ans,mode:t.mode,i:0,done:true,review:+b.dataset.t};renderQ();return}
   if(b.id==='qbReset'){ask('Clear all answers, marks and previous tests?','Reset',function(){QU={};QT=[];CUR=null;saveQB();renderQB()});return}
