@@ -1283,7 +1283,7 @@ function welcomeName(){var t=document.querySelector('#welc .wt');if(t)t.textCont
 /* start */
 GLAST=gsnap();updUR();
 refreshHome();
-if(LINKCODE&&(LOCKED||INTRIAL))openSub(LINKCODE);else if(TRIALNEW||(TRIALEND&&!TRIAL.seen)){if(TRIALEND){TRIAL.seen=1;try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}}setTimeout(openChoose,2900)}   // owner: on opening, choose the 24-hour trial or the paid version
+if(LINKCODE&&(LOCKED||INTRIAL))openSub(LINKCODE);else if((TRIALNEW&&!st('chz'))||(TRIALEND&&!TRIAL.seen)){st('chz','1');if(TRIALEND){TRIAL.seen=1;try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}}setTimeout(openChoose,2900)}   // owner: on opening, choose the 24-hour trial or the paid version
 if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('sw.js').catch(function(){})}
 })();
 
