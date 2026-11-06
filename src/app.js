@@ -967,14 +967,28 @@ function cardKey(id,c){var s=c[1],h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charC
 var curDeck='all',deck=[],total=0,known=0,started=false;
 var deckIds=Object.keys(DECKS);
 $('toolCards').textContent=deckIds.reduce(function(a,k){return a+DECKS[k].cards.length},0)+' cards · '+deckIds.length+' topic'+(deckIds.length===1?'':'s');
-function chips(){$('deckChips').innerHTML=['daily','all'].concat(deckIds).map(function(k){var lab,cnt;
-  if(k==='daily'){var D=daily();lab='Today';cnt=D.done.length+'/'+D.keys.length}
-  else if(k==='all'){lab='All topics';var a=0,b=0;deckIds.forEach(function(id){a+=deckKnown(id);b+=DECKS[id].cards.length});cnt=a+'/'+b}else{lab=DECKS[k].short;cnt=deckKnown(k)+'/'+DECKS[k].cards.length}
-  return '<button class="chip'+(k===curDeck?' on':'')+'" type="button" data-d="'+k+'">'+esc(lab)+'<small>'+cnt+'</small></button>'}).join('')+(LOCKED?'<button class="chip lkc" type="button" data-sub="1" dir="rtl">🔒 اشترك لفتح كل البطاقات</button>':'')}
-$('deckChips').onclick=function(e){var b=e.target.closest('.chip');if(b&&b.dataset.d){curDeck=b.dataset.d;startDeck(curDeck)}};
+/* flashcards (owner, Nov 2026): Today and All on top, then a chapter bar, then the topics of the chosen chapter only */
+var DCH={};(META.topics||[]).forEach(function(t){DCH[t.id]=t.ch});
+var fcChs=[];META.contents.forEach(function(c){if(deckIds.some(function(id){return DCH[id]===c.no}))fcChs.push(c)});
+var FCH=+st('fcch')||(fcChs[0]&&fcChs[0].no)||1;
+function chDecks(n){return deckIds.filter(function(id){return DCH[id]===n})}
+function kn(ids){var a=0,b=0;ids.forEach(function(id){a+=deckKnown(id);b+=DECKS[id].cards.length});return [a,b]}
+function chips(){if(/^ch:/.test(curDeck))FCH=+curDeck.slice(3);else if(DCH[curDeck])FCH=DCH[curDeck];
+  var D=daily(),A=kn(deckIds),C=kn(chDecks(FCH)),cur=fcChs.filter(function(c){return c.no===FCH})[0];
+  var h='<div class="fctop"><button type="button" data-d="daily" class="'+(curDeck==='daily'?'on':'')+'"><b>Today</b><small>'+D.done.length+' / '+D.keys.length+' cards</small></button>'+
+    '<button type="button" data-d="all" class="'+(curDeck==='all'?'on':'')+'"><b>All topics</b><small>'+A[0]+' / '+A[1]+' known</small></button></div>';
+  h+='<div class="fclab">Chapters</div><div class="fcchs">'+fcChs.map(function(c){var k=kn(chDecks(c.no));
+    return '<button type="button" data-fch="'+c.no+'" class="'+(c.no===FCH?'on':'')+'" style="--qc:'+c.color+'"><span class="n">'+c.no+'</span><span class="l">'+esc(c.short||c.title)+'</span><small>'+k[0]+'/'+k[1]+'</small></button>'}).join('')+'</div>';
+  h+='<div class="fclab">'+esc(cur?cur.title:'')+'</div><div class="chips fctops"><button class="chip'+(curDeck==='ch:'+FCH?' on':'')+'" type="button" data-d="ch:'+FCH+'">All of chapter '+FCH+'<small>'+C[0]+'/'+C[1]+'</small></button>'+
+    chDecks(FCH).map(function(k){return '<button class="chip'+(k===curDeck?' on':'')+'" type="button" data-d="'+k+'">'+esc(DECKS[k].short)+'<small>'+deckKnown(k)+'/'+DECKS[k].cards.length+'</small></button>'}).join('')+'</div>'+
+    (LOCKED?'<button class="chip lkc" type="button" data-sub="1" dir="rtl">🔒 اشترك لفتح كل البطاقات</button>':'');
+  $('deckChips').innerHTML=h;var on=$('deckChips').querySelector('.fcchs .on');if(on&&on.scrollIntoView)try{on.scrollIntoView({block:'nearest',inline:'center'})}catch(e){}}
+$('deckChips').onclick=function(e){var b=e.target.closest('button');if(!b)return;
+  if(b.dataset.fch){FCH=+b.dataset.fch;st('fcch',FCH);curDeck='ch:'+FCH;startDeck(curDeck);return}
+  if(b.dataset.d){curDeck=b.dataset.d;if(/^ch:/.test(curDeck)||DCH[curDeck])st('fcch',/^ch:/.test(curDeck)?curDeck.slice(3):DCH[curDeck]);startDeck(curDeck)}};
 function startDeck(k,all){started=true;
   if(k==='daily'){var D=daily();deck=[];total=D.keys.length;known=D.done.length;D.keys.forEach(function(key){if(D.done.indexOf(key)<0){var x=CBYK[key];deck.push({key:key,t:DECKS[x.id].short,cat:x.c[0],q:x.c[1],a:x.c[2]})}});chips();renderCard();return}
-  var src=k==='all'?deckIds:[k];deck=[];total=0;known=0;
+  var src=k==='all'?deckIds:/^ch:/.test(k)?chDecks(+k.slice(3)):[k];deck=[];total=0;known=0;
   src.forEach(function(id){DECKS[id].cards.forEach(function(c){var key=cardKey(id,c);total++;if(KNOWN[key]&&!all){known++;return}deck.push({key:key,t:DECKS[id].short,cat:c[0],q:c[1],a:c[2]})})});
   if(all)known=0;
   for(var i=deck.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=deck[i];deck[i]=deck[j];deck[j]=x}chips();renderCard()}
@@ -984,7 +998,7 @@ function renderCard(){$('fcProg').style.width=(total?known/total*100:0)+'%';$('f
     $('fcMore').onclick=function(){curDeck='all';startDeck('all')};return}
   if(!deck.length){$('fcLeft').textContent='';$('fcStage').innerHTML='<div class="done"><b>Deck finished</b><span class="muted">All '+total+' cards are marked as known. They stay known next time you open the app.</span><button class="btn" type="button" id="fcAll">Study all cards again</button><button class="chip" type="button" id="fcReset">Reset progress for this deck</button></div>';
     $('fcAll').onclick=function(){startDeck(curDeck,true)};
-    $('fcReset').onclick=function(){var src=curDeck==='all'?deckIds:[curDeck];src.forEach(function(id){DECKS[id].cards.forEach(function(c){delete KNOWN[cardKey(id,c)]})});saveKnown();startDeck(curDeck)};return}
+    $('fcReset').onclick=function(){var src=curDeck==='all'?deckIds:/^ch:/.test(curDeck)?chDecks(+curDeck.slice(3)):[curDeck];src.forEach(function(id){DECKS[id].cards.forEach(function(c){delete KNOWN[cardKey(id,c)]})});saveKnown();startDeck(curDeck)};return}
   var c=deck[0];$('fcLeft').textContent=deck.length+' left';
   $('fcStage').innerHTML='<button class="fc" type="button" id="fcCard" aria-label="Flip card"><div class="in"><div class="face q"><span class="k">'+esc(c.t)+' · '+esc(c.cat)+'</span><div class="tx">'+esc(c.q)+'</div></div><div class="face a"><span class="k">Answer</span><div class="tx">'+esc(c.a)+'</div></div></div></button><p class="fhint" style="margin-top:10px">Tap the card to see the answer</p><div class="fact" style="margin-top:12px"><button class="ag" type="button" id="fcNo">Again</button><button class="gd" type="button" id="fcYes">Knew it</button></div>';
   [].forEach.call($('fcCard').querySelectorAll('.tx'),function(x){termify(x)});$('fcCard').onclick=function(){this.classList.toggle('flip')};
@@ -1022,6 +1036,7 @@ function saveQB(){stj('qb',QU);stj('qbtests',QT);stj('qbcur',CUR);stj('qbset',qs
 var L='ABCDE';
 if($('toolQb'))$('toolQb').textContent=QS.length+' MCQs with explanations';
 var qchs=[];QB.topics.forEach(function(t){if(qchs.indexOf(t.ch)<0)qchs.push(t.ch)});
+function chShort(n){var c=META.contents.filter(function(x){return x.no===n})[0];return c?(c.short||c.title):'Chapter '+n}
 function chTitle(n){var c=META.contents.filter(function(x){return x.no===n})[0];return c?c.title:'Chapter '+n}
 function inPool(q,pool){var u=QU[q.id];if(pool==='unused')return !u||u.c===undefined;if(pool==='incorrect')return u&&u.c===0;if(pool==='marked')return u&&u.m;return true}
 function poolQs(){var any=Object.keys(qset.ch).some(function(k){return qset.ch[k]});
@@ -1037,10 +1052,11 @@ function renderQB(){if(CUR&&!CUR.done)return renderQ();$('subtitle').textContent
   h+=step(1,'Mode')+'<div class="seg" data-k="mode">'+[['tutor','Tutor','see the answer after each question'],['timed','Timed','like the exam · 1 min 15 s each']].map(function(o){return '<button type="button" data-v="'+o[0]+'" class="'+(qset.mode===o[0]?'on':'')+'"><b>'+o[1]+'</b><span>'+o[2]+'</span></button>'}).join('')+'</div>';
   h+=step(2,'Questions')+'<div class="qbpool" data-k="pool">'+[['unused','Unused'],['incorrect','Incorrect'],['marked','Marked'],['all','All']].map(function(o){
     var c=QS.filter(function(q){return inPool(q,o[0])}).length;return '<button type="button" class="'+(qset.pool===o[0]?'on':'')+'" data-v="'+o[0]+'"><b>'+c+'</b><span>'+o[1]+'</span></button>'}).join('')+'</div>';
-  h+=step(3,'Chapters',any?nsel+' selected · <button type="button" class="qblink" id="qbAll">clear</button>':'all chapters')+'<div class="qbparts">'+(QB.parts||[['',qchs]]).map(function(p){
+  h+=step(3,'Chapters',any?nsel+' selected · <button type="button" class="qblink" id="qbAll">clear</button>':'all chapters')+'<div class="qbparts">'+(function(ps){var o=[];ps.forEach(function(p){var l=o[o.length-1];if(p[1].length===1&&l&&l.one){l[0]+=' · '+chShort(p[1][0]);l[1]=l[1].concat(p[1])}else{var q=[p[1].length===1?chShort(p[1][0]):p[0],p[1].slice()];q.one=p[1].length===1;o.push(q)}});return o})(QB.parts||[['',qchs]]).map(function(p){
     var cs=p[1].filter(function(n){return qchs.indexOf(n)>=0});if(!cs.length)return '';
-    return (p[0]?'<div class="qbpt">'+esc(p[0])+'</div>':'')+'<div class="qbch">'+cs.map(function(n){var c=QS.filter(function(q){return QTOP[q[0]].ch===n}).length;
-      return '<button type="button" class="qx'+n+(qset.ch[n]?' on':'')+'" data-ch="'+n+'"><span class="n">'+n+'</span><span class="l">'+esc(chTitle(n))+'</span><small>'+c+'</small></button>'}).join('')+'</div>'}).join('')+'</div>';
+    var allOn=cs.every(function(n){return qset.ch[n]}),pc=cs.reduce(function(a,n){return a+QS.filter(function(q){return QTOP[q[0]].ch===n}).length},0);
+    return '<button type="button" class="qbpt'+(allOn?' on':'')+'" data-part="'+cs.join(',')+'"><span>'+esc(p[0]||'Chapters')+'</span><small>'+pc+' questions · '+(allOn?'selected':'select all')+'</small></button><div class="qbch">'+cs.map(function(n){var c=QS.filter(function(q){return QTOP[q[0]].ch===n}).length;
+      return '<button type="button" class="qx'+n+(qset.ch[n]?' on':'')+'" data-ch="'+n+'" title="'+esc(chTitle(n))+'"><span class="n">'+n+'</span><span class="l">'+esc(chShort(n))+'</span><small>'+c+'</small></button>'}).join('')+'</div>'}).join('')+'</div>';
   h+=step(4,'Number of questions',max+' available')+'<div class="qbnq">'+[10,20,40,max].filter(function(v,ix,a){return v>0&&v<=max&&a.indexOf(v)===ix}).map(function(v){return '<button type="button" data-qn="'+v+'" class="'+(n===v?'on':'')+'">'+(v===max&&v>40?'All '+v:v)+'</button>'}).join('')+'</div>'+
     '<div class="qbn"><input type="range" id="qbN" min="1" max="'+Math.max(1,Math.min(max,100))+'" value="'+Math.max(1,n)+'"'+(max?'':' disabled')+'><b id="qbNv">'+n+'</b></div></div>';
   h+='<div class="qbbar"><button class="btn qbgo" type="button" id="qbGo"'+(max?'':' disabled')+'>'+(max?'Start test<small id="qbGoS">'+n+' questions · '+(qset.mode==='timed'?'Timed':'Tutor')+'</small>':'No questions match')+'</button></div>';
@@ -1055,6 +1071,7 @@ $('qbWrap').addEventListener('click',function(e){var b=e.target.closest('button'
   if(b.dataset.ch){qset.ch[b.dataset.ch]=!qset.ch[b.dataset.ch];saveQB();renderQB.keep=1;renderQB();return}
   if(b.dataset.qn){qset.n=+b.dataset.qn;saveQB();renderQB.keep=1;renderQB();return}
   if(b.id==='qbAll'){qset.ch={};saveQB();renderQB.keep=1;renderQB();return}
+  if(b.dataset.part){var ns=b.dataset.part.split(','),on=ns.every(function(n){return qset.ch[n]});ns.forEach(function(n){qset.ch[n]=!on});saveQB();renderQB.keep=1;renderQB();return}
   if(b.id==='qbGo'){startTest();return}
   if(b.dataset.t){var t=QT[+b.dataset.t];CUR={ids:t.ids,ans:t.ans,mode:t.mode,i:0,done:true,review:+b.dataset.t};renderQ();return}
   if(b.id==='qbReset'){ask('Clear all answers, marks and previous tests?','Reset',function(){QU={};QT=[];CUR=null;saveQB();renderQB()});return}

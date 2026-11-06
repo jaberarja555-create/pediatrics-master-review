@@ -1580,3 +1580,22 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 :is(#cards,#qbank):is(.sday,.seye) .qbpt{color:#a47a22}
 :is(#cards,#qbank):is(.sday,.seye) .chip.on{background:#0b2c3a;color:#fff;border-color:#0b2c3a}
 #cards.seye .chip.on,#qbank.seye .chip.on{background:#5a4526;border-color:#5a4526}
+/* question bank: part heading selects its chapters; tiles of one shape */
+.qbpt{display:flex;align-items:baseline;justify-content:space-between;width:100%;margin:6px 0 0;padding:2px 2px;border:0;background:none;text-align:left;font:800 10.5px var(--sans);letter-spacing:1.2px;text-transform:uppercase;color:#d8b35c}
+.qbpt small{font:650 11px var(--sans);letter-spacing:0;text-transform:none;color:var(--muted)}.qbpt.on small{color:#d8b35c}
+.qbch button{min-height:40px;grid-template-columns:24px 1fr auto}
+.qbch .l{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:700 13px/1.2 var(--sans)}
+/* flashcards organised (owner, Nov 2026): Today / All, a chapter bar, then the chapter's topics */
+#deckChips{display:block}
+.fctop{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fctop button{border:1.5px solid var(--line);background:var(--card);border-radius:13px;padding:9px 12px;text-align:left;display:flex;flex-direction:column;gap:1px}
+.fctop b{font:800 15px var(--sans)}.fctop small{font:600 12px var(--sans);color:var(--muted)}
+.fctop button.on{border-color:#d8b35c;background:rgba(216,179,92,.14)}
+.fclab{margin:12px 2px 6px;font:800 11px var(--sans);letter-spacing:1.1px;text-transform:uppercase;color:#d8b35c}
+.fcchs{display:flex;gap:6px;overflow-x:auto;padding:0 0 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.fcchs::-webkit-scrollbar{display:none}
+.fcchs button{flex:none;display:flex;align-items:center;gap:7px;padding:6px 10px 6px 6px;border:1.5px solid var(--line);border-radius:11px;background:var(--card)}
+.fcchs .n{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font:900 11px var(--sans);color:#fff;background:var(--qc)}
+.fcchs .l{font:700 13px var(--sans);white-space:nowrap}.fcchs small{font:650 11px var(--sans);color:var(--muted)}
+.fcchs button.on{border-color:var(--qc);background:color-mix(in srgb,var(--qc) 16%,var(--card))}
+.fctops{margin-bottom:4px}
+:is(#cards,#qbank):is(.sday,.seye) .fclab,:is(#cards,#qbank):is(.sday,.seye) .qbpt{color:#a47a22}

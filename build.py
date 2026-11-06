@@ -825,7 +825,7 @@ def build():
         'tnos': {t['no']: [t['id'], t['p']] for t in topics_meta if t.get('p')},
         # 'terms': abbreviations + glossary, shown on hover / tap (app.js termify)
         'pill': f'{len(topics_meta)} topic{"s" * (len(topics_meta) != 1)} · {len(meta_pages)} pages',
-        'contents': [{'no': ch['no'], 'title': text(ch['title']), 'part': ch.get('part', ''), 'color': ch['color'],
+        'contents': [{'no': ch['no'], 'title': text(ch['title']), 'short': ch.get('short') or text(ch['title']), 'part': ch.get('part', ''), 'color': ch['color'],
                       'topics': [{'id': t['id'], 'no': t['no'], 'title': text(t['title']), 'sub': text(t.get('sub', '')),
                                   'p': t.get('p')} for t in ch['topics']]} for ch in book['chapters']],
     }

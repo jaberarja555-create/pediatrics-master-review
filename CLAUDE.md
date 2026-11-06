@@ -170,6 +170,9 @@ About 25–40 cards per topic, one fact per card, answers one or two lines.
 
 ## Subscription (free trial + activation codes)
 - **Bankak (owner, Nov 2026, all books):** account 4674587, name سعاد عبدالكريم (`access.bankak_account` / `bankak_name`).
+- **Flashcards organised (owner, Nov 2026):** Today / All topics buttons, a horizontal chapter bar (short names, colour badge, known/total;
+  `prr-fcch`), then the chosen chapter's topics plus «All of chapter N» (deck key `ch:N`). QBank chapter tiles use the short names on one line;
+  a part heading selects all its chapters; single-chapter parts share one group.
 - **Flashcards and QBank looks (owner, Nov 2026):** the top-bar colour button also shows on Cards and QBank: day / eye comfort / night
   (night = dark default), saved in `prr-smode`, separate from the reader's `prr-bmode` (classes `.sday`/`.seye` on #cards and #qbank).
 - **Question bank screen (owner):** four numbered steps (Mode · Questions · Chapters by part in a two-column grid · Number with 10/20/40/All),
