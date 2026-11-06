@@ -1,0 +1,58 @@
+[
+{
+"q": "Which is an ETAT emergency sign?",
+"o": [
+"Fever 39 °C",
+"Cold hands with CRT > 3 s and weak fast pulse",
+"Age 6 weeks",
+"Mild pallor",
+"Cough"
+],
+"a": 1,
+"e": "Shock signs.",
+"k": "cold hands + crt",
+"s": "bank"
+},
+{
+"q": "In a child with shock (no SAM), the initial fluid bolus is:",
+"o": [
+"5 mL/kg",
+"10–20 mL/kg",
+"40 mL/kg",
+"60 mL/kg",
+"100 mL/kg"
+],
+"a": 1,
+"e": "10–20 mL/kg and reassess.",
+"k": "10–20 ml/kg rapidly",
+"s": "bank"
+},
+{
+"q": "The compression-to-ventilation ratio for paediatric CPR by health workers is:",
+"o": [
+"30:2",
+"15:2",
+"5:1",
+"3:1",
+"10:1"
+],
+"a": 1,
+"e": "15:2.",
+"k": "15 compressions : 2 breaths",
+"s": "bank"
+},
+{
+"q": "The commonest arrest rhythm in children is:",
+"o": [
+"VF",
+"Pulseless VT",
+"Asystole/PEA",
+"SVT",
+"AF"
+],
+"a": 2,
+"e": "Hypoxic arrest.",
+"k": "non-shockable",
+"s": "bank"
+}
+]

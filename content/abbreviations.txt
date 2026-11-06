@@ -675,3 +675,11 @@ NF1 | Neurofibromatosis type 1
 CVS | Chorionic villus sampling
 HAE | Hereditary angio-oedema
 dsDNA | Double-stranded DNA
+ABCD | Airway, breathing, circulation, coma/convulsion, dehydration
+PEA | Pulseless electrical activity
+VT | Ventricular tachycardia
+PAPP | Pregnancy-associated plasma protein (PAPP-A)
+RIG | Rabies immunoglobulin
+20WBCT | 20-minute whole blood clotting test
+NAC | N-acetylcysteine
+OP | Organophosphate

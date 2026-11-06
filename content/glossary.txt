@@ -508,3 +508,8 @@ consanguinity / consanguineous | Marriage between blood relatives (e.g. cousins)
 uveitis | Inflammation of the uveal tract of the eye
 angio-oedema | Swelling of the deep skin layers (lips, eyelids, tongue)
 anaphylaxis | Severe, life-threatening systemic allergic reaction
+triage | Sorting patients by urgency on arrival
+intraosseous | Into the bone marrow cavity, used for emergency fluids and drugs
+miosis | Constricted (pinpoint) pupils
+envenoming | Poisoning by venom from a bite or sting
+antivenom | Antibodies that neutralise snake or scorpion venom
