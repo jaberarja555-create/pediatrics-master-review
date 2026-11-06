@@ -1,9 +1,11 @@
 # Deploy (for the next Claude session)
 
-**Automatic deploys (as in Surgery Master Review):** in Cloudflare, Workers & Pages → pediatrics-master-review → Settings →
-Builds, connect this GitHub repo (branch `claude/confident-turing-evm4gu`, root directory `/`, deploy command `npx wrangler deploy`;
-the root `wrangler.toml` points to `server/worker.js` and `docs/`). After that every push deploys the live book: commit the rebuilt
-`docs/` and push. Secrets (PRIVATE_KEY, ADMIN_PASSWORD) stay in Cloudflare. Until it is connected, use `bash server/deploy.sh`.
+**Automatic deploys (owner, 6 Nov 2026: like Surgery and Obstetrics, from either Claude account):** in Cloudflare, Workers & Pages →
+pediatrics-master-review → Settings → Build → Connect this GitHub repo: production branch `main`, root directory `/`, build command
+empty, deploy command `npx wrangler deploy` (the root `wrangler.toml` points to `server/worker.js` and `docs/`). After that every push
+to `main` puts the live book online: rebuild (`node tools/pack.js` or `python3 build.py`), commit `docs/`, push to `main` (and to
+`claude/confident-turing-evm4gu`, kept equal). Secrets (PRIVATE_KEY, ADMIN_PASSWORD) stay in Cloudflare. `bash server/deploy.sh` is
+only for a first setup or if the connection is lost.
 
 How subscription works (like Dr. Arja Master Note): the authors make codes `PMR-XXXX-XXXX` on `/admin` and send
 one to each buyer on WhatsApp ("Copy message"). The student types it in the app (or opens `<book>#code=PMR-…`);

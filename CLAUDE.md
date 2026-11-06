@@ -8,6 +8,9 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
 
 ## Owner's workflow
 - The owner sends resources (PDFs, notes, MCQs) chapter by chapter; they go in `resources/`.
+- **Deploys by itself (owner, 6 Nov 2026, as in Surgery/Obstetrics):** Cloudflare Workers Builds deploys every push to `main` (server/DEPLOY.md).
+  So after every change: rebuild, commit `docs/`, push to `main` and to `claude/confident-turing-evm4gu` (from either account). If the
+  Cloudflare connection is not there (live book unchanged a few minutes after a push), fall back to the line below.
 - When the owner writes **"deployment"**: rebuild and put the live book online with `bash server/deploy.sh`
   (needs CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID and PMR_ADMIN_PASSWORD — or SMR_ADMIN_PASSWORD — in the
   environment), then commit and push to GitHub.
