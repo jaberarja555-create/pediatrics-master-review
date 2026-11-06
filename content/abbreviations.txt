@@ -408,3 +408,100 @@ TIF | Thalassaemia International Federation
 VMA | Vanillylmandelic acid (urine catecholamine metabolite)
 VWF | Von Willebrand factor
 WAGR | Wilms tumour, Aniridia, Genitourinary anomalies, Retardation
+CRT | Capillary refill time
+SMA | Spinal muscular atrophy
+ANC | Antenatal care
+AR | Autosomal recessive
+WHZ | Weight-for-height Z-score
+VVM | Vaccine vial monitor
+RFT | Renal function tests
+T4 | Thyroxine
+HAZ | Height-for-age Z-score
+VDRL | Venereal Disease Research Laboratory test (syphilis)
+NNJ | Neonatal jaundice
+CoNS | Coagulase-negative staphylococci
+HSM | Hepatosplenomegaly
+PSGN | Post-streptococcal glomerulonephritis
+PPD | Purified protein derivative (tuberculin)
+HHV-6 | Human herpesvirus 6
+EHEC | Enterohaemorrhagic E. coli
+MU | Million units
+S2 | Second heart sound
+HOCM | Hypertrophic obstructive cardiomyopathy
+NAI | Non-accidental injury
+vWD | Von Willebrand disease
+VUR | Vesicoureteric reflux
+MCUG | Micturating cystourethrogram
+GFR | Glomerular filtration rate
+FSGS | Focal segmental glomerulosclerosis
+UPCR | Urine protein : creatinine ratio
+MPGN | Membranoproliferative glomerulonephritis
+PUJ | Pelviureteric junction
+CFU | Colony-forming units
+ATN | Acute tubular necrosis
+EM | Electron microscopy
+RPGN | Rapidly progressive glomerulonephritis
+MMF | Mycophenolate mofetil
+FENa | Fractional excretion of sodium
+MAHA | Microangiopathic haemolytic anaemia
+CAKUT | Congenital anomalies of the kidney and urinary tract
+PUV | Posterior urethral valves
+VP | Ventriculoperitoneal (shunt)
+FS | Febrile seizure
+DMD | Duchenne muscular dystrophy
+AED | Antiepileptic drug
+SJS | Stevens–Johnson syndrome
+NTD | Neural tube defect
+VC | Vital capacity
+SMN1 | Survival motor neuron 1 gene
+ACTH | Adrenocorticotropic hormone
+TS | Tuberous sclerosis
+GTCS | Generalised tonic–clonic seizure
+JME | Juvenile myoclonic epilepsy
+ETV | Endoscopic third ventriculostomy
+CIC | Clean intermittent catheterisation
+MMC | Myelomeningocele
+L5 | Fifth lumbar vertebra
+DTP | Diphtheria, tetanus, pertussis vaccine
+OT | Occupational therapy
+FSH | Follicle-stimulating hormone
+GnRH | Gonadotropin-releasing hormone
+GAD | Glutamic acid decarboxylase (antibody)
+NPH | Neutral protamine Hagedorn (intermediate insulin)
+ISPAD | International Society for Pediatric and Adolescent Diabetes
+BSPED | British Society for Paediatric Endocrinology and Diabetes
+CH | Congenital hypothyroidism
+T3 | Triiodothyronine
+17-OHP | 17-hydroxyprogesterone
+G2 | Tanner genital stage 2
+BP3 | IGF binding protein 3
+AD | Autosomal dominant
+NBT | Nitroblue tetrazolium test
+DHR | Dihydrorhodamine test
+CGD | Chronic granulomatous disease
+RF | Rheumatoid factor
+IL | Interleukin
+CVID | Common variable immunodeficiency
+BMT | Bone marrow transplant
+CD8 | CD8 cytotoxic T lymphocytes
+CD19 | CD19 B lymphocytes
+CH50 | Total haemolytic complement
+CCP | Cyclic citrullinated peptide (antibody)
+DMARD | Disease-modifying antirheumatic drug
+SCFE | Slipped capital femoral epiphysis
+MELAS | Mitochondrial encephalopathy, lactic acidosis and stroke-like episodes
+CGG | Cytosine–guanine–guanine (repeat)
+PAPP-A | Pregnancy-associated plasma protein A
+CVS | Chorionic villus sampling
+HAE | Hereditary angio-oedema
+dsDNA | Double-stranded DNA
+ABCD | Airway, breathing, circulation, coma/convulsion, dehydration
+PEA | Pulseless electrical activity
+VT | Ventricular tachycardia
+RIG | Rabies immunoglobulin
+20WBCT | 20-minute whole blood clotting test
+NAC | N-acetylcysteine
+OP | Organophosphate
+OHP | Hydroxyprogesterone (17-OHP: raised in CAH)
+GIT | Gastrointestinal tract
+BSA | Body surface area

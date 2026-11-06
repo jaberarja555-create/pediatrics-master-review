@@ -1,0 +1,58 @@
+[
+{
+"q": "Precocious puberty in girls is defined as signs before:",
+"o": [
+"6 years",
+"7 years",
+"8 years",
+"9 years",
+"10 years"
+],
+"a": 2,
+"e": "Before 8 in girls, 9 in boys.",
+"k": "before 8 years in girls",
+"s": "bank"
+},
+{
+"q": "The first sign of puberty in boys is:",
+"o": [
+"Pubic hair",
+"Voice change",
+"Testicular enlargement",
+"Penile growth",
+"Growth spurt"
+],
+"a": 2,
+"e": "≥ 4 mL.",
+"k": "testicular enlargement",
+"s": "bank"
+},
+{
+"q": "Central precocious puberty in a boy requires:",
+"o": [
+"Reassurance",
+"MRI brain",
+"Karyotype",
+"Pelvic US",
+"Thyroid scan"
+],
+"a": 1,
+"e": "CNS lesion common in boys.",
+"k": "mri brain",
+"s": "bank"
+},
+{
+"q": "Delayed puberty with anosmia suggests:",
+"o": [
+"Turner",
+"Klinefelter",
+"Kallmann syndrome",
+"Constitutional delay",
+"Hypothyroidism"
+],
+"a": 2,
+"e": "GnRH deficiency + anosmia.",
+"k": "kallmann",
+"s": "bank"
+}
+]

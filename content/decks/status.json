@@ -1,0 +1,97 @@
+[
+ [
+  "Status",
+  "Operational definition?",
+  "Seizure ≥ 5 minutes."
+ ],
+ [
+  "Status",
+  "Common causes in Sudan?",
+  "Febrile seizure, cerebral malaria, meningitis, hypoglycaemia."
+ ],
+ [
+  "Protocol",
+  "First step after ABC?",
+  "Check glucose."
+ ],
+ [
+  "Protocol",
+  "IV diazepam dose?",
+  "0.3 mg/kg (max 10 mg)."
+ ],
+ [
+  "Protocol",
+  "Rectal diazepam?",
+  "0.5 mg/kg."
+ ],
+ [
+  "Protocol",
+  "Buccal midazolam?",
+  "0.3 mg/kg."
+ ],
+ [
+  "Protocol",
+  "Max benzodiazepine doses?",
+  "Two."
+ ],
+ [
+  "Protocol",
+  "Second-line drugs?",
+  "Phenytoin or phenobarbitone 20 mg/kg."
+ ],
+ [
+  "Protocol",
+  "Phenytoin precautions?",
+  "ECG; not in dextrose."
+ ],
+ [
+  "Protocol",
+  "Refractory status?",
+  "ICU: thiopental or midazolam infusion."
+ ],
+ [
+  "Coma",
+  "Coma by GCS?",
+  "≤ 8."
+ ],
+ [
+  "Coma",
+  "Blantyre score in cerebral malaria?",
+  "≤ 2."
+ ],
+ [
+  "Coma",
+  "Coma + pinpoint pupils + secretions?",
+  "Organophosphate poisoning."
+ ],
+ [
+  "Coma",
+  "Coma + retinal haemorrhages in infant?",
+  "Non-accidental injury."
+ ],
+ [
+  "ICP",
+  "Signs of raised ICP?",
+  "Falling GCS, unequal pupils, posturing, papilloedema."
+ ],
+ [
+  "ICP",
+  "Cushing triad?",
+  "Bradycardia, hypertension, irregular breathing."
+ ],
+ [
+  "ICP",
+  "Position?",
+  "Head up 30°."
+ ],
+ [
+  "ICP",
+  "Mannitol dose?",
+  "0.5–1 g/kg."
+ ],
+ [
+  "ICP",
+  "LP in raised ICP?",
+  "No."
+ ]
+]

@@ -202,6 +202,11 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
 - **Review copy:** `artifact/index.html` has meta `review: true` (whole book open).
 - **Deploy:** `bash server/deploy.sh` on "deployment"; or connect Cloudflare Workers Builds to this branch (server/DEPLOY.md).
 
+- **Second account's work (Nov 6 2026):** the owner's other account wrote chapters 1–15 on branch `chapters` and ported reader tools on
+  `main`, both from the first upload. This branch took chapters 9–15 (topics, decks, qbank, pediatric abbreviations/glossary, resources/
+  pictures-needed.md) from `chapters` and kept its own chapters 1–8; the app was brought to surgery-rapid-review 54e5033 by a three-way merge
+  (welcome card, pressure pen, stylus mode, marker, highlighter styles, pictures on pages, blank pages in 3 kinds/colours, roomier boxes).
+
 ### Writing style for junior clinical students (owner, Nov 2026; apply chapter by chapter, owner reviews each)
 - Each topic opens with a 2–3 sentence introduction (what it is, why it happens, why it matters), formal textbook register.
 - Explain the **why** in a short clause after key facts; short complete sentences instead of fragments.

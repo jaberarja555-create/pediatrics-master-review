@@ -1,0 +1,72 @@
+[
+{
+"q": "Which part of the history is specific to paediatrics?",
+"o": [
+"Presenting complaint",
+"Perinatal history",
+"Drug history",
+"Systemic review",
+"Social history"
+],
+"a": 1,
+"e": "Perinatal, feeding, developmental and vaccination histories are specific to children.",
+"k": "perinatal history",
+"s": "bank"
+},
+{
+"q": "The chief complaint should be recorded:",
+"o": [
+"In medical terms only",
+"In the mother's words with duration",
+"As a diagnosis",
+"Without duration",
+"After the examination"
+],
+"a": 1,
+"e": "Use the informant's words and the duration.",
+"k": "in the mother's words",
+"s": "bank"
+},
+{
+"q": "Asking about the place of residence in Sudan helps mainly to suspect:",
+"o": [
+"Asthma",
+"Endemic infections such as malaria and kala-azar",
+"Congenital heart disease",
+"Epilepsy",
+"Diabetes"
+],
+"a": 1,
+"e": "Endemic areas matter.",
+"k": "kala-azar",
+"s": "bank"
+},
+{
+"q": "Which question is part of the natal history?",
+"o": [
+"Weaning age",
+"Did the baby cry at once?",
+"Milestones",
+"Consanguinity",
+"Crowding"
+],
+"a": 1,
+"e": "Natal: gestation, place, mode, cried at once.",
+"k": "cried at once",
+"s": "bank"
+},
+{
+"q": "In every paediatric case presentation the examiner expects comment on:",
+"o": [
+"Blood group",
+"Vaccination, growth and development",
+"Parents' religion",
+"Previous X-rays",
+"Dental history only"
+],
+"a": 1,
+"e": "These are marked in every case.",
+"k": "growth and development",
+"s": "bank"
+}
+]

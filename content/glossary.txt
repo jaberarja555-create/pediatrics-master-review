@@ -1839,3 +1839,24 @@ inactivated vaccine / inactivated | Vaccine of killed organisms or their parts (
 conjugation / conjugated vaccine | Joining bilirubin to glucuronic acid in the liver / polysaccharide joined to a protein so infants respond
 retardation / growth retardation | Slowing (growth retardation)
 vaso-occlusive crisis / vaso-occlusive | Painful crisis of sickle cell disease: sickled cells block small vessels (bones, chest, abdomen)
+bottom-shuffling / bottom-shuffler | Moving about on the bottom instead of crawling; a normal variant that delays walking
+pincer grasp | Picking up a small object between the tips of the thumb and index finger
+pseudomembrane | Grey adherent membrane on the tonsils and pharynx in diphtheria
+posseting | Small effortless regurgitation of milk after feeds
+casts | Cylinders of cells or protein formed in the renal tubules, seen on urine microscopy
+schistocytes | Fragmented red cells, seen in microangiopathic haemolysis (HUS, DIC)
+hypsarrhythmia | Chaotic high-voltage EEG pattern of infantile spasms
+areflexia | Absent tendon reflexes
+Gowers' sign | Using the hands to climb up the legs when rising from the floor
+lipohypertrophy | Fatty lump at an overused insulin injection site
+thelarche | Onset of breast development
+menarche | First menstrual period
+virilisation | Development of male features from androgen excess
+ambiguous genitalia | External genitalia that are not clearly male or female
+non-disjunction | Failure of chromosomes to separate at cell division, giving an extra or missing chromosome
+angio-oedema | Swelling of the deep skin layers (lips, eyelids, tongue)
+triage | Sorting patients by urgency on arrival
+intraosseous | Into the bone marrow cavity, used for emergency fluids and drugs
+miosis | Constricted (pinpoint) pupils
+envenoming | Poisoning by venom from a bite or sting
+antivenom | Antibodies that neutralise snake or scorpion venom

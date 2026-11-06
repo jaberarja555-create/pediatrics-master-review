@@ -1,0 +1,122 @@
+[
+ [
+  "Triage",
+  "What is ETAT?",
+  "WHO Emergency Triage Assessment and Treatment."
+ ],
+ [
+  "Triage",
+  "When is triage done?",
+  "On arrival, before registration."
+ ],
+ [
+  "Triage",
+  "Three triage groups?",
+  "Emergency, priority, non-urgent (queue)."
+ ],
+ [
+  "Emergency",
+  "Emergency signs?",
+  "Airway/breathing problems, shock, coma, convulsing, severe dehydration."
+ ],
+ [
+  "Emergency",
+  "ETAT shock signs?",
+  "Cold hands, CRT > 3 s, weak fast pulse."
+ ],
+ [
+  "Emergency",
+  "AVPU coma level?",
+  "P or U."
+ ],
+ [
+  "Priority",
+  "Tiny baby?",
+  "< 2 months."
+ ],
+ [
+  "Priority",
+  "Priority signs examples?",
+  "Trauma, pallor, poisoning, pain, burns, oedema, wasting."
+ ],
+ [
+  "Treatment",
+  "Fluid bolus without SAM?",
+  "10–20 mL/kg crystalloid."
+ ],
+ [
+  "Treatment",
+  "Shock in SAM?",
+  "15 mL/kg over 1 h."
+ ],
+ [
+  "Treatment",
+  "Dextrose for hypoglycaemia?",
+  "10% dextrose 5 mL/kg."
+ ],
+ [
+  "Treatment",
+  "Convulsing child?",
+  "Rectal diazepam 0.5 mg/kg."
+ ],
+ [
+  "Shock",
+  "Commonest shock type?",
+  "Hypovolaemic."
+ ],
+ [
+  "Shock",
+  "Cardiogenic shock clues?",
+  "Big liver, gallop, crackles."
+ ],
+ [
+  "Shock",
+  "Septic shock antibiotics?",
+  "Ceftriaxone within 1 hour."
+ ],
+ [
+  "Shock",
+  "Inotrope in cold septic shock?",
+  "Adrenaline."
+ ],
+ [
+  "Shock",
+  "No IV access in 90 s?",
+  "Intraosseous."
+ ],
+ [
+  "CPR",
+  "Rescue breaths first?",
+  "5."
+ ],
+ [
+  "CPR",
+  "Compression ratio?",
+  "15 : 2."
+ ],
+ [
+  "CPR",
+  "Rate?",
+  "100–120/min."
+ ],
+ [
+  "CPR",
+  "Commonest arrest rhythm?",
+  "Asystole/PEA."
+ ],
+ [
+  "CPR",
+  "Adrenaline dose in arrest?",
+  "10 µg/kg (0.1 mL/kg 1:10 000)."
+ ],
+ [
+  "CPR",
+  "Defibrillation energy?",
+  "4 J/kg."
+ ],
+ [
+  "CPR",
+  "Reversible causes?",
+  "4 Hs and 4 Ts."
+ ]
+]

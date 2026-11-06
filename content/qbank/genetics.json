@@ -1,0 +1,58 @@
+[
+{
+"q": "The commonest heart defect in Down syndrome is:",
+"o": [
+"VSD",
+"AVSD",
+"TOF",
+"PDA",
+"ASD"
+],
+"a": 1,
+"e": "AVSD.",
+"k": "congenital heart disease",
+"s": "bank"
+},
+{
+"q": "Overlapping fingers and rocker-bottom feet suggest:",
+"o": [
+"Down",
+"Edwards",
+"Patau",
+"Turner",
+"Noonan"
+],
+"a": 1,
+"e": "Trisomy 18.",
+"k": "rocker-bottom feet",
+"s": "bank"
+},
+{
+"q": "A tall boy with small testes and gynaecomastia has:",
+"o": [
+"Turner",
+"Fragile X",
+"Klinefelter",
+"Marfan",
+"Noonan"
+],
+"a": 2,
+"e": "47,XXY.",
+"k": "small firm testes",
+"s": "bank"
+},
+{
+"q": "Haemophilia is inherited as:",
+"o": [
+"Autosomal dominant",
+"Autosomal recessive",
+"X-linked recessive",
+"Mitochondrial",
+"X-linked dominant"
+],
+"a": 2,
+"e": "X-linked recessive.",
+"k": "haemophilia a/b",
+"s": "bank"
+}
+]

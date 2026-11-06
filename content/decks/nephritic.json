@@ -1,0 +1,117 @@
+[
+ [
+  "PSGN",
+  "Nephritic features?",
+  "Haematuria, oedema, hypertension, oliguria."
+ ],
+ [
+  "PSGN",
+  "Urine colour?",
+  "Cola/smoky."
+ ],
+ [
+  "PSGN",
+  "Urine microscopy?",
+  "RBC casts."
+ ],
+ [
+  "PSGN",
+  "Latency after throat infection?",
+  "1–2 weeks."
+ ],
+ [
+  "PSGN",
+  "Latency after skin infection?",
+  "3–6 weeks."
+ ],
+ [
+  "PSGN",
+  "Complement?",
+  "Low C3, normal by 6–8 weeks."
+ ],
+ [
+  "PSGN",
+  "Skin strep marker?",
+  "Anti-DNase B."
+ ],
+ [
+  "PSGN",
+  "Throat strep marker?",
+  "ASO."
+ ],
+ [
+  "PSGN",
+  "Fluid restriction?",
+  "400 mL/m²/day + urine output."
+ ],
+ [
+  "PSGN",
+  "Diuretic?",
+  "Furosemide 1–2 mg/kg."
+ ],
+ [
+  "PSGN",
+  "Antihypertensive?",
+  "Nifedipine or amlodipine."
+ ],
+ [
+  "PSGN",
+  "Serious complications?",
+  "Hypertensive encephalopathy, AKI, pulmonary oedema."
+ ],
+ [
+  "PSGN",
+  "Prognosis?",
+  "> 95% full recovery."
+ ],
+ [
+  "PSGN",
+  "C3 low after 8 weeks?",
+  "Biopsy (MPGN/lupus)."
+ ],
+ [
+  "IgA",
+  "Haematuria during sore throat?",
+  "IgA nephropathy."
+ ],
+ [
+  "Alport",
+  "Haematuria + deafness + family history?",
+  "Alport syndrome."
+ ],
+ [
+  "HSP",
+  "HSP rash site?",
+  "Buttocks and extensor legs."
+ ],
+ [
+  "HSP",
+  "Platelets in HSP?",
+  "Normal."
+ ],
+ [
+  "HSP",
+  "HSP gut complication?",
+  "Intussusception."
+ ],
+ [
+  "HSP",
+  "HSP renal involvement?",
+  "30–50%."
+ ],
+ [
+  "HSP",
+  "HSP follow-up?",
+  "Urine and BP for 6–12 months."
+ ],
+ [
+  "Haematuria",
+  "Glomerular haematuria clues?",
+  "Cola urine, casts, dysmorphic RBCs."
+ ],
+ [
+  "Haematuria",
+  "Dipstick blood + but no RBCs?",
+  "Haemoglobinuria or myoglobinuria."
+ ]
+]

@@ -1,0 +1,127 @@
+[
+ [
+  "AKI",
+  "Definition?",
+  "Creatinine ≥ 1.5× baseline or urine < 0.5 mL/kg/h for 6 h."
+ ],
+ [
+  "AKI",
+  "Commonest type?",
+  "Pre-renal."
+ ],
+ [
+  "AKI",
+  "Pre-renal urine?",
+  "Na < 20, FENa < 1%."
+ ],
+ [
+  "AKI",
+  "ATN urine?",
+  "Na > 40, FENa > 2%, casts."
+ ],
+ [
+  "AKI",
+  "Post-renal cause in boys?",
+  "Posterior urethral valves."
+ ],
+ [
+  "AKI",
+  "First step if hypovolaemic?",
+  "Saline bolus 10–20 mL/kg."
+ ],
+ [
+  "AKI",
+  "Maintenance fluid?",
+  "Insensible 400 mL/m² + output."
+ ],
+ [
+  "AKI",
+  "Dialysis indications?",
+  "Refractory K, overload, acidosis, uraemia."
+ ],
+ [
+  "AKI",
+  "Common dialysis method in Sudan?",
+  "Peritoneal dialysis."
+ ],
+ [
+  "HUS",
+  "HUS triad?",
+  "MAHA, thrombocytopenia, AKI."
+ ],
+ [
+  "HUS",
+  "Cause?",
+  "Shiga toxin E. coli O157."
+ ],
+ [
+  "HUS",
+  "Film?",
+  "Schistocytes."
+ ],
+ [
+  "HUS",
+  "Coombs?",
+  "Negative."
+ ],
+ [
+  "HUS",
+  "Avoid?",
+  "Antibiotics and antidiarrhoeals."
+ ],
+ [
+  "CKD",
+  "CKD definition?",
+  "Damage or GFR < 60 for > 3 months."
+ ],
+ [
+  "CKD",
+  "Commonest cause in children?",
+  "Congenital anomalies (CAKUT)."
+ ],
+ [
+  "CKD",
+  "Schwartz formula?",
+  "36.5 × height ÷ creatinine (µmol/L)."
+ ],
+ [
+  "CKD",
+  "CKD features?",
+  "Growth failure, anaemia, osteodystrophy, hypertension."
+ ],
+ [
+  "CKD",
+  "Anaemia treatment?",
+  "Erythropoietin + iron."
+ ],
+ [
+  "CKD",
+  "Bone treatment?",
+  "Phosphate binders + alfacalcidol."
+ ],
+ [
+  "CKD",
+  "Drug to slow progression?",
+  "ACE inhibitor."
+ ],
+ [
+  "CKD",
+  "Best renal replacement?",
+  "Transplantation."
+ ],
+ [
+  "HTN",
+  "Hypertension definition?",
+  "≥ 95th centile on 3 occasions."
+ ],
+ [
+  "HTN",
+  "Commonest cause in children?",
+  "Renal disease."
+ ],
+ [
+  "HTN",
+  "Emergency BP reduction?",
+  "≤ 25% in 8 h."
+ ]
+]

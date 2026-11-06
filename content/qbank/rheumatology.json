@@ -1,0 +1,58 @@
+[
+{
+"q": "The most important complication of Kawasaki disease is:",
+"o": [
+"Arthritis",
+"Coronary artery aneurysm",
+"Nephritis",
+"Uveitis",
+"Hepatitis"
+],
+"a": 1,
+"e": "Echo needed.",
+"k": "coronary artery aneurysms",
+"s": "bank"
+},
+{
+"q": "Treatment of Kawasaki disease is:",
+"o": [
+"Steroids alone",
+"IVIG + aspirin",
+"Penicillin",
+"NSAID alone",
+"Methotrexate"
+],
+"a": 1,
+"e": "IVIG within 10 days.",
+"k": "ivig 2 g/kg",
+"s": "bank"
+},
+{
+"q": "A 3-year-old girl with a swollen knee for 2 months and positive ANA is at risk of:",
+"o": [
+"Carditis",
+"Silent uveitis",
+"Nephritis",
+"Pericarditis",
+"Stroke"
+],
+"a": 1,
+"e": "Slit-lamp screening.",
+"k": "chronic anterior uveitis",
+"s": "bank"
+},
+{
+"q": "The commonest cause of limp in a well 5-year-old after a viral illness is:",
+"o": [
+"Septic arthritis",
+"Perthes",
+"Transient synovitis",
+"JIA",
+"SCFE"
+],
+"a": 2,
+"e": "Self-limiting.",
+"k": "transient synovitis",
+"s": "bank"
+}
+]

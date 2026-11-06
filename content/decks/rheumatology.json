@@ -1,0 +1,132 @@
+[
+ [
+  "JIA",
+  "JIA definition?",
+  "Arthritis < 16 yr lasting > 6 weeks, other causes excluded."
+ ],
+ [
+  "JIA",
+  "Commonest subtype?",
+  "Oligoarticular."
+ ],
+ [
+  "JIA",
+  "Oligo-JIA eye risk?",
+  "Chronic anterior uveitis."
+ ],
+ [
+  "JIA",
+  "Eye screening?",
+  "Slit-lamp every 3–6 months."
+ ],
+ [
+  "JIA",
+  "Systemic JIA fever?",
+  "Quotidian (daily spikes)."
+ ],
+ [
+  "JIA",
+  "Systemic JIA rash?",
+  "Salmon-pink evanescent."
+ ],
+ [
+  "JIA",
+  "Systemic JIA complication?",
+  "Macrophage activation syndrome."
+ ],
+ [
+  "JIA",
+  "Enthesitis-related JIA?",
+  "Older boys, HLA-B27."
+ ],
+ [
+  "JIA",
+  "First DMARD?",
+  "Methotrexate weekly."
+ ],
+ [
+  "Limp",
+  "Commonest limp 3–10 yr?",
+  "Transient synovitis."
+ ],
+ [
+  "Limp",
+  "Perthes disease?",
+  "Avascular femoral head, boys 4–8."
+ ],
+ [
+  "Limp",
+  "SCFE?",
+  "Obese adolescent, knee pain."
+ ],
+ [
+  "Limp",
+  "Septic arthritis treatment?",
+  "Aspiration/washout + IV antibiotics."
+ ],
+ [
+  "Limp",
+  "Kocher criteria?",
+  "Fever, non-weight-bearing, ESR > 40, WBC > 12 000."
+ ],
+ [
+  "Kawasaki",
+  "Diagnosis?",
+  "Fever ≥ 5 days + 4 of 5 criteria."
+ ],
+ [
+  "Kawasaki",
+  "Criteria?",
+  "Eyes, mouth, hands/feet, rash, node."
+ ],
+ [
+  "Kawasaki",
+  "Main complication?",
+  "Coronary aneurysm."
+ ],
+ [
+  "Kawasaki",
+  "Treatment?",
+  "IVIG 2 g/kg + aspirin."
+ ],
+ [
+  "Kawasaki",
+  "Treat within?",
+  "10 days."
+ ],
+ [
+  "Kawasaki",
+  "Platelets?",
+  "High in week 2–3."
+ ],
+ [
+  "Kawasaki",
+  "Low-dose aspirin duration?",
+  "6–8 weeks."
+ ],
+ [
+  "SLE",
+  "Typical patient?",
+  "Adolescent girl."
+ ],
+ [
+  "SLE",
+  "Specific antibody?",
+  "Anti-dsDNA, anti-Sm."
+ ],
+ [
+  "SLE",
+  "Complement?",
+  "Low C3/C4."
+ ],
+ [
+  "SLE",
+  "Drug for all patients?",
+  "Hydroxychloroquine."
+ ],
+ [
+  "SLE",
+  "Neonatal lupus heart sign?",
+  "Congenital heart block."
+ ]
+]

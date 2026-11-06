@@ -6,6 +6,7 @@ import { DurableObject } from 'cloudflare:workers';
 //         /api/*           control API (Authorization: Bearer <ADMIN_PASSWORD>)
 //         POST /activate   public: { code, dev } → signed token for this device
 //         GET  /check      public: is this code still on for this device?
+//         POST /img        device of a code: { code, dev, token, op: put|get|list|del, id, data } → the students' pictures on pages
 //         POST /sync       device of a code: { code, dev, token, ver?, data? } → highlights and notes shared by the code's devices
 //         anything else    the book app (static files from docs/)
 const MSG = 'PMR|pediatrics|1|', MAX_DEV = 2, DEV_LIMIT = 10;   // default devices per code · highest the control page allows
@@ -18,6 +19,8 @@ const b64u = buf => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\
 const norm = v => String(v || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
 const fmt = c => c.slice(0, 3) + '-' + c.slice(3, 7) + '-' + c.slice(7);   // PMRABCD2345 → PMR-ABCD-2345
 const now = () => new Date().toISOString();
+// the student's name for the app's welcome: the code's note without phone numbers ("Ahmed Ali · 0912 345 678" → "Ahmed Ali")
+const nameOf = note => String(note || '').replace(/\+?\d[\d\s-]{5,}\d/g, '').replace(/[·|,;:\/\-–]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 40);
 function newCode() { const r = new Uint8Array(8); crypto.getRandomValues(r); return 'PMR' + [...r].map(x => AB[x % 32]).join('') }
 function kindOf(req) {
   const ua = req.headers.get('user-agent') || '';
@@ -28,9 +31,12 @@ function kindOf(req) {
 // db(env) gives the rest of this file a small D1-style API (prepare → bind → run / first / all) on top of it.
 const SCHEMA = 'CREATE TABLE IF NOT EXISTS codes (code TEXT PRIMARY KEY, note TEXT NOT NULL DEFAULT \'\', created TEXT NOT NULL, activated TEXT, active INTEGER NOT NULL DEFAULT 1, devices TEXT NOT NULL DEFAULT \'[]\')';
 const SYNC_SCHEMA = 'CREATE TABLE IF NOT EXISTS sync (code TEXT PRIMARY KEY, ver INTEGER NOT NULL, data TEXT NOT NULL, updated TEXT NOT NULL)';
+// pictures the students put on book pages (owner, Nov 2026): one row per picture, shared by the devices of a code
+const IMG_SCHEMA = 'CREATE TABLE IF NOT EXISTS imgs (code TEXT NOT NULL, id TEXT NOT NULL, data TEXT NOT NULL, updated TEXT NOT NULL, PRIMARY KEY (code, id))';
+const IMG_MAX = 900000, IMG_COUNT = 300;
 export class CodesDB extends DurableObject {
   constructor(ctx, env) {
-    super(ctx, env); ctx.storage.sql.exec(SCHEMA); ctx.storage.sql.exec(SYNC_SCHEMA);
+    super(ctx, env); ctx.storage.sql.exec(SCHEMA); ctx.storage.sql.exec(SYNC_SCHEMA); ctx.storage.sql.exec(IMG_SCHEMA);
     // devices allowed for each code (added later: older stores get the column with the default of 2)
     const cols = ctx.storage.sql.exec('PRAGMA table_info(codes)').toArray().map(c => c.name);
     if (!cols.includes('maxdev')) ctx.storage.sql.exec('ALTER TABLE codes ADD COLUMN maxdev INTEGER NOT NULL DEFAULT ' + MAX_DEV);
@@ -88,7 +94,7 @@ async function api(req, env, path) {
   if (m[2] === 'reset') await D.prepare('UPDATE codes SET devices = \'[]\', activated = NULL WHERE code = ?').bind(code).run();
   if (m[2] === 'max') await D.prepare('UPDATE codes SET maxdev = ? WHERE code = ?').bind(devLimit(body.max), code).run();
   if (m[2] === 'note') await D.prepare('UPDATE codes SET note = ? WHERE code = ?').bind(String(body.note || '').trim().slice(0, 200), code).run();
-  if (m[2] === 'delete') { await D.prepare('DELETE FROM codes WHERE code = ?').bind(code).run(); await D.prepare('DELETE FROM sync WHERE code = ?').bind(code).run() }
+  if (m[2] === 'delete') { await D.prepare('DELETE FROM codes WHERE code = ?').bind(code).run(); await D.prepare('DELETE FROM sync WHERE code = ?').bind(code).run(); await D.prepare('DELETE FROM imgs WHERE code = ?').bind(code).run() }
   return json({ codes: await all(env) });
 }
 
@@ -107,7 +113,7 @@ async function activate(req, env) {
   else if (r.devices.length >= r.max) return json({ ok: false, reason: 'full' });
   else r.devices.push({ dev, kind: kindOf(req), first: t, last: t });
   await (await db(env)).prepare('UPDATE codes SET devices = ?, activated = COALESCE(activated, ?) WHERE code = ?').bind(JSON.stringify(r.devices), t, code).run();
-  return json({ ok: true, code: r.code, token: await sign(env, dev) });
+  return json({ ok: true, code: r.code, name: nameOf(r.note), token: await sign(env, dev) });
 }
 
 // The app asks this when online. A code that is switched off, deleted or reset locks the device again.
@@ -120,7 +126,7 @@ async function check(req, env, url) {
   const d = r.devices.find(x => x.dev === dev);
   if (!d) return json({ ok: false, reason: 'reset' });
   if (Date.now() - Date.parse(d.last) > 3600e3) { d.last = now(); d.kind = kindOf(req); await setDevices(env, code, r.devices) }
-  return json({ ok: true });
+  return json({ ok: true, name: nameOf(r.note) });
 }
 
 // Highlights and notes, shared by the devices of one code. The device proves itself with its signed token.
@@ -136,15 +142,41 @@ async function tokenOk(env, dev, token) {
     return await crypto.subtle.verify({ name: 'ECDSA', hash: 'SHA-256' }, key, raw, new TextEncoder().encode(MSG + dev));
   } catch (e) { return false }
 }
+// a device of an active code, proved by its signed token: returns the code, or the refusal to send back
+async function devOf(env, body) {
+  const code = norm(body.code), dev = norm(body.dev);
+  if (!DEV.test(dev) || !CODE.test(code)) return { res: json({ ok: false, reason: 'device' }, 400) };
+  if (!await tokenOk(env, dev, body.token)) return { res: json({ ok: false, reason: 'token' }, 403) };
+  const r = row(await one(env, code));
+  if (!r) return { res: json({ ok: false, reason: 'unknown' }) };
+  if (!r.on) return { res: json({ ok: false, reason: 'off' }) };
+  if (!r.devices.find(x => x.dev === dev)) return { res: json({ ok: false, reason: 'reset' }) };
+  return { code };
+}
+// POST /img { code, dev, token, op: 'put' | 'get' | 'list', id?, data? (JPEG as a data URL) }
+async function img(req, env) {
+  const body = await req.json().catch(() => ({}));
+  const a = await devOf(env, body); if (a.res) return a.res;
+  const code = a.code, id = String(body.id || ''), D = await db(env);
+  if (body.op === 'list') return json({ ok: true, ids: (await D.prepare('SELECT id FROM imgs WHERE code = ?').bind(code).all()).results.map(r => r.id) });
+  if (!/^im[a-z0-9]{6,24}$/.test(id)) return json({ ok: false, reason: 'id' }, 400);
+  if (body.op === 'get') { const r = await D.prepare('SELECT data FROM imgs WHERE code = ? AND id = ?').bind(code, id).first(); return json(r ? { ok: true, data: r.data } : { ok: false, reason: 'none' }) }
+  if (body.op === 'put') {
+    const data = String(body.data || '');
+    if (!/^data:image\/(jpeg|png|webp);base64,/.test(data)) return json({ ok: false, reason: 'type' }, 400);
+    if (data.length > IMG_MAX) return json({ ok: false, reason: 'big' }, 413);
+    const n = await D.prepare('SELECT COUNT(*) AS n FROM imgs WHERE code = ?').bind(code).first();
+    if (n && n.n >= IMG_COUNT) return json({ ok: false, reason: 'full' }, 413);
+    await D.prepare('INSERT OR REPLACE INTO imgs (code, id, data, updated) VALUES (?, ?, ?, ?)').bind(code, id, data, now()).run();
+    return json({ ok: true });
+  }
+  if (body.op === 'del') { await D.prepare('DELETE FROM imgs WHERE code = ? AND id = ?').bind(code, id).run(); return json({ ok: true }) }
+  return json({ ok: false, reason: 'op' }, 400);
+}
 async function sync(req, env) {
   const body = await req.json().catch(() => ({}));
-  const code = norm(body.code), dev = norm(body.dev);
-  if (!DEV.test(dev) || !CODE.test(code)) return json({ ok: false, reason: 'device' }, 400);
-  if (!await tokenOk(env, dev, body.token)) return json({ ok: false, reason: 'token' }, 403);
-  const r = row(await one(env, code));
-  if (!r) return json({ ok: false, reason: 'unknown' });
-  if (!r.on) return json({ ok: false, reason: 'off' });
-  if (!r.devices.find(x => x.dev === dev)) return json({ ok: false, reason: 'reset' });
+  const a = await devOf(env, body); if (a.res) return a.res;
+  const code = a.code;
   const D = await db(env), cur = await D.prepare('SELECT ver, data FROM sync WHERE code = ?').bind(code).first();
   const ver = cur ? cur.ver : 0, data = cur ? JSON.parse(cur.data) : null;
   if (body.data === undefined) return json({ ok: true, ver, data });
@@ -165,6 +197,7 @@ export default {
       if (path === '/activate' && req.method === 'POST') return await activate(req, env);
       if (path === '/check') return await check(req, env, url);
       if (path === '/sync' && req.method === 'POST') return await sync(req, env);
+      if (path === '/img' && req.method === 'POST') return await img(req, env);
       if (path.startsWith('/api/')) return await api(req, env, path);
     } catch (e) { return json({ error: 'Server error: ' + e.message, reason: 'server' }, 500) }
     if (path === '/admin' || path === '/admin/') return new Response(PAGE(env, url.origin + '/'), { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });

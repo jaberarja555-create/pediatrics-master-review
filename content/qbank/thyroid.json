@@ -1,0 +1,44 @@
+[
+{
+"q": "The screening test for congenital hypothyroidism is:",
+"o": [
+"T3",
+"Free T4",
+"Heel-prick TSH",
+"Thyroid scan",
+"Antibodies"
+],
+"a": 2,
+"e": "TSH on day 2–5.",
+"k": "heel-prick",
+"s": "bank"
+},
+{
+"q": "All are features of congenital hypothyroidism EXCEPT:",
+"o": [
+"Prolonged jaundice",
+"Large tongue",
+"Umbilical hernia",
+"Diarrhoea",
+"Large anterior fontanelle"
+],
+"a": 3,
+"e": "Constipation, not diarrhoea.",
+"k": "constipation",
+"s": "bank"
+},
+{
+"q": "A serious side effect of carbimazole is:",
+"o": [
+"Hepatitis",
+"Agranulocytosis",
+"Hypertension",
+"Hyperglycaemia",
+"Gum hypertrophy"
+],
+"a": 1,
+"e": "Sore throat + fever: check CBC.",
+"k": "agranulocytosis",
+"s": "bank"
+}
+]

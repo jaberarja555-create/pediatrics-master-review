@@ -1,3 +1,13 @@
+/* Inter shipped with the book (tools/fonts.py): same text metrics on every device, also offline */
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:block;src:url(img/fonts/inter-400.woff) format('woff')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:block;src:url(img/fonts/inter-500.woff) format('woff')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:block;src:url(img/fonts/inter-600.woff) format('woff')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:block;src:url(img/fonts/inter-700.woff) format('woff')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:block;src:url(img/fonts/inter-800.woff) format('woff')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:900;font-display:block;src:url(img/fonts/inter-900.woff) format('woff')}
+@font-face{font-family:'Inter';font-style:italic;font-weight:400;font-display:block;src:url(img/fonts/inter-400i.woff) format('woff')}
+@font-face{font-family:'Inter';font-style:italic;font-weight:600;font-display:block;src:url(img/fonts/inter-600i.woff) format('woff')}
+@font-face{font-family:'Inter';font-style:italic;font-weight:700;font-display:block;src:url(img/fonts/inter-700i.woff) format('woff')}
 /* App UI: dark top bar, scrolling view, bottom tabs; the reader shows fixed book pages scaled to width. */
 :root{
   --ink:#0b2c3a; --paper:#f2f5fa; --card:#ffffff; --line:#dbe3ef; --fg:#0b2c3a; --muted:#56627a;
@@ -62,6 +72,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--rose-hi);outlin
 #pages{min-width:100%;width:max-content;box-sizing:border-box;padding:10px 8px 96px;display:flex;flex-direction:column;align-items:center;gap:10px}
 .pw{position:relative;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.35);flex:none;overflow:hidden}
 .pw>.bk{position:absolute;left:0;top:0;width:816px;height:1152px;transform-origin:0 0}
+.pw>.bk{--paper:#f2f5fa;--card:#fff;--line:#dbe3ef;--fg:#0e2547;--muted:#56627a;--rose-soft:#f6e6eb;color-scheme:light}   /* book pages always use the light palette (the app is dark); night look = filter */
 .night .pw{filter:invert(.9) hue-rotate(180deg)}
 .night .pw img{filter:invert(1) hue-rotate(180deg)}
 .eye .pw{filter:sepia(.35) saturate(1.15) brightness(.95)}   /* eye comfort: warm paper, less blue light */
@@ -412,7 +423,10 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .hlbar .txt:hover{background:#ffffff14}
 .hlbar .lbl{color:#b5ccd2;font:700 11px var(--sans);letter-spacing:1px;text-transform:uppercase;padding:0 4px}
 .bk mark.uhl{mix-blend-mode:multiply;border-radius:2px;color:inherit;padding:0}
-.bk mark.uhl.y{background:#fde047}.bk mark.uhl.g{background:#86efac}.bk mark.uhl.p{background:#f9a8d4}.bk mark.uhl.b{background:#93c5fd}
+.bk mark.uhl.uhl,.penfly mark.uhl{--hc:#fde047;background:var(--hc);font-weight:inherit;border-radius:3px;padding:1px 1px;margin:0 -1px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.bk mark.uhl.y,.penfly mark.uhl.y{--hc:#fde047}.bk mark.uhl.g,.penfly mark.uhl.g{--hc:#86efac}.bk mark.uhl.p,.penfly mark.uhl.p{--hc:#f9a8d4}.bk mark.uhl.b,.penfly mark.uhl.b{--hc:#93c5fd}.bk mark.uhl.o,.penfly mark.uhl.o{--hc:#fdba74}.bk mark.uhl.v,.penfly mark.uhl.v{--hc:#c4b5fd}
+.bk mark.uhl.hs2,.penfly mark.uhl.hs2{background:linear-gradient(transparent 50%,var(--hc) 50%,var(--hc) 92%,transparent 92%)}
+.penfly .hst{display:flex;gap:6px;margin:8px 0 2px}.penfly .hst button{flex:1;display:flex;align-items:center;gap:6px;justify-content:center;padding:7px 6px;border-radius:9px;border:1px solid #ffffff33;background:#ffffff12;color:#fff;font-size:12px}.penfly .hst button.cur{border-color:#f3d98b;background:#f3d98b22}.penfly .hst mark{color:#0e2547;font-weight:800;padding:0 3px;mix-blend-mode:normal;background-color:#fff0}.penfly .hst mark:not(.hs2){background:var(--hc)}
 .bk mark.uhl.sel{outline:2px solid #e11d48;outline-offset:1px}
 .hli{display:grid;grid-template-columns:6px 1fr;gap:12px;padding:12px 4px;border-bottom:1px solid var(--line);text-align:left;width:100%}
 .hli i{border-radius:3px}.hli i.y{background:#facc15}.hli i.g{background:#4ade80}.hli i.p{background:#f472b6}.hli i.b{background:#60a5fa}
@@ -763,6 +777,8 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 /* topic cross-links inside the book pages */
 .bk a.xr{color:#1d4f91;text-decoration:none;cursor:pointer}
 .bk a.xr b,.bk a.xr strong{color:inherit}
+/* topic links on dark backgrounds (dark ladder steps, navy boxes): keep the light text colour, gold underline */
+.bk .st.dark a.xr,.bk .st.dark a.xr *,.bk [style*="background:var(--ink)"] a.xr,.bk .formula a.xr,.bk th a.xr,.bk .mn a.xr,.bk .ans a.xr,.bk .tabh a.xr{color:inherit;border-bottom:1px dotted var(--hi)}
 /* notes on selected text */
 .bk mark.uhl.n{background:rgba(253,224,71,.38)}
 .bk mark.uhl.hasn{cursor:pointer}
@@ -908,7 +924,7 @@ p.sub { font-family:'Inter',sans-serif; font-size:11pt; font-weight:800; color:v
 .penfly .zb{width:40px;height:36px;border-radius:18px;background:#ffffff14;color:#fff;font:800 20px/1 var(--sans)}.penfly .zb:hover{background:#ffffff26}
 /* drawing pen */
 .pw svg.ink{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
-.pw svg.ink polyline{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.pw svg.ink polyline,.pw svg.ink path:not(.fl){fill:none;stroke-linecap:round;stroke-linejoin:round}.pw svg.ink path.fl{stroke:none}.pw svg.ink path.mk{stroke-opacity:.5;mix-blend-mode:multiply;stroke-linecap:round}
 .inkon .pw{touch-action:none;cursor:crosshair;-webkit-user-select:none;user-select:none}.inkon .pw>.bk{pointer-events:none}
 .rbar #inkBtn svg .ink{stroke:#f87171}.rbar #inkBtn[data-ic="k"] svg .ink{stroke:#e5e7eb}.rbar #inkBtn[data-ic="b"] svg .ink{stroke:#60a5fa}.rbar #inkBtn[data-ic="o"] svg .ink{stroke:#fb923c}
 .rbar #inkBtn.on{background:#f3d98b26;color:#f3d98b;box-shadow:inset 0 0 0 1.5px #f3d98b}
@@ -1420,7 +1436,8 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .box.mnem { background:linear-gradient(90deg,#fbf3df 0,#fffaf0 100%); border-left:4px solid #c99a3b; }
 .box.mnem .bh { color:#8a6416; }
 .mnl { display:flex; flex-wrap:wrap; gap:4px 12px; }
-.mnl span { display:inline-flex; align-items:center; gap:5px; font-size:8.6pt; line-height:1.3; }
+.mnl > span { display:inline-flex; align-items:center; gap:5px; font-size:8.6pt; line-height:1.3; }
+.mnl .mw { display:block; }
 .mnl i { font-style:normal; min-width:17px; padding:1px 5px; border-radius:4px; background:#0e2547; color:#f3d58a; font:800 8.4pt Inter; text-align:center; }
 .box.mnem .mnn { margin:4px 0 0; font-size:8.5pt; }
 .night .pw .box.mnem { background:#fbf3df; }
@@ -1464,3 +1481,63 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .chcov.many .cvr span { font-size:7.6pt; line-height:1.25; }
 .chcov.many .cvimg { height:262px; } .chcov.many .cvin { top:728px; }
 .chcov.many .cvr { padding:4px 2px; } .chcov.many .cvin { top:722px; }
+/* welcome card on opening (owner, Nov 2026) */
+#welc{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(9,22,44,.55);backdrop-filter:blur(3px);animation:wIn .35s ease both;cursor:pointer}
+#welc.out{animation:wOut .45s ease both}
+#welc .wcard{width:min(320px,84vw);padding:26px 22px 22px;border-radius:20px;text-align:center;background:linear-gradient(160deg,#123063,#0b1f42);border:1px solid rgba(230,195,120,.55);box-shadow:0 18px 50px rgba(0,0,0,.45);color:#fff;animation:wPop .5s cubic-bezier(.2,.9,.3,1.2) both}
+#welc img{width:96px;height:96px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.45))}
+#welc .wt{margin:12px 0 4px;font:700 22px/1.25 'Source Serif 4',Georgia,serif;color:#f3d98b}
+#welc .ws{font:500 12px/1.4 'Inter',sans-serif;color:#c9d6ee;letter-spacing:.3px}
+#welc .wsig{margin-top:10px;display:flex;flex-direction:column;align-items:center;gap:6px}
+#welc .wln{display:block;width:62%;height:1px;background:linear-gradient(90deg,transparent,#e6c378,transparent)}
+#welc .wc{font:500 12px/1 'Inter',sans-serif;color:#c9d6ee;letter-spacing:.4px}
+#welc .wc b{color:#fff;font-weight:700;letter-spacing:1px}
+@keyframes wIn{from{opacity:0}to{opacity:1}}@keyframes wOut{to{opacity:0;visibility:hidden}}@keyframes wPop{from{transform:scale(.9);opacity:0}to{transform:none;opacity:1}}
+
+/* owner (Nov 2026): text inside the boxes was too tight; give it room (topic pages only, not the Rapid Review) */
+.page.mz .mb:not(.rv) .mc { padding: 9px 13px 10px; line-height: 1.5; }
+.page.mz .mb:not(.rv) .mc li { margin: 3.5px 0; }
+.page.mz .mb:not(.rv) .mc ul.b, .page.mz .mb:not(.rv) .mc ol { padding-left: 18px; }
+.page.mz .mb:not(.rv) .mc table.t { margin: 4px 0 6px; }
+.page.mz .mb:not(.rv) .mc table.t td { padding: 6px 9px; line-height: 1.45; }
+.page.mz .mb:not(.rv) .mc table.t th { padding: 6px 9px; }
+.page.mz .mb:not(.rv) .mc p { margin-bottom: 6px; }
+.page.mz .mb:not(.rv) .mc .two { gap: 16px; }
+.page.mz .mb:not(.rv) .mc .box { padding: 8px 12px; margin: 7px 0; }
+.page.mz .mb:not(.rv) .mc .box p, .page.mz .mb:not(.rv) .mc .box li { line-height: 1.5; }
+.page.mz .mb:not(.rv) .mc ol.steps li { margin: 4px 0; }
+.page.mz .mb:not(.rv) .mc .ladder { margin: 6px 0; }
+.page.mz .mb:not(.rv) .mc .mnl { gap: 6px 12px; }
+
+/* spare room used inside the boxes (app.js fillPage sets --ft from 0 to 2.2): bigger, airier boxes */
+.page.mz.fill .mb:not(.rv) .mc{padding:calc(9px + var(--ft,0)*7px) calc(13px + var(--ft,0)*5px);line-height:calc(1.5 + var(--ft,0)*.17);font-size:calc(9.1pt * (1 + var(--ft,0)*.05))}
+.page.mz.fill .mb:not(.rv) .mc :is(p,li,td,th,div,span){line-height:inherit}
+.page.mz.fill .mb:not(.rv) .mc table.t{font-size:calc(8.9pt * (1 + var(--ft,0)*.05))}
+.page.mz.fill .mb:not(.rv) .mc .box{font-size:calc(9.1pt * (1 + var(--ft,0)*.05));padding:calc(8px + var(--ft,0)*5px) calc(12px + var(--ft,0)*3px)}
+.page.mz.fill .mb:not(.rv) .mh{padding-top:calc(4px + var(--ft,0)*3px);padding-bottom:calc(3px + var(--ft,0)*3px)}
+.page.mz.fill .mb:not(.rv) .mc table.t td{padding-top:calc(6px + var(--ft,0)*5px);padding-bottom:calc(6px + var(--ft,0)*5px)}
+.page.mz.fill .mb:not(.rv) .mc li{margin:calc(3.5px + var(--ft,0)*3px) 0}
+.page.mz.fill .mb:not(.rv) .mc .ladder .st{padding-top:calc(6px + var(--ft,0)*4px);padding-bottom:calc(6px + var(--ft,0)*4px)}
+.page.mz.fill .mzm > *:not(:last-child){margin-bottom:calc(10px + var(--vj,0px)*.4 + var(--ft,0)*6px) !important}
+
+.penfly .dot[data-pc="o"],.hlbar .dot[data-cc="o"],.hlbar .dot[data-c="o"]{background:#fdba74}
+.penfly .dot[data-pc="v"],.hlbar .dot[data-cc="v"],.hlbar .dot[data-c="v"]{background:#c4b5fd}
+.hlbar .dot{width:26px;height:26px}.penfly .pdots{display:flex;flex-wrap:wrap;gap:7px;justify-content:center}.penfly .pdots .dot{flex:none;width:28px;height:28px}
+.night .pw svg.ink image{filter:invert(1) hue-rotate(180deg)}
+.inkbar.imb{bottom:calc(env(safe-area-inset-bottom,0px) + 72px);z-index:7}
+.inkbar.imb button{width:auto;min-width:44px;padding:0 6px}
+#inkBar button{width:clamp(34px,10vw,44px)}#inkBar button.ix{width:30px}
+
+.txsel .pw{touch-action:none}
+.page.upage.ls0 .upl{background:none}
+.page.upage.ls2 .upl{background:repeating-linear-gradient(to bottom,transparent 0,transparent 47px,#c9d4e5 47px,#c9d4e5 48px)}
+.penfly .upk{display:flex;gap:6px;margin:6px 0 4px}.penfly .upk button{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;padding:8px 4px;border-radius:10px;border:1px solid #ffffff33;background:#ffffff12;color:#fff;font:700 11.5px var(--sans)}
+.penfly .upk button:active{background:#f3d98b33}
+.upi{display:block;width:34px;height:44px;border-radius:3px;background-color:#fffdf7;border:1px solid #c99a3b}
+.upi.ls1{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 5px,#9fb0c8 5px,#9fb0c8 6px)}
+.upi.ls2{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 9px,#9fb0c8 9px,#9fb0c8 10px)}
+.penfly .isz.mks button i{width:22px;border-radius:3px;opacity:.85}
+.page.upage.pcw{background:#ffffff}.page.upage.pcc{background:#fffdf7}.page.upage.pcb{background:#eef5fd}
+.penfly .upc{display:flex;gap:6px;margin:6px 0 10px}.penfly .upc button{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:7px 4px;border-radius:10px;border:1px solid #ffffff33;background:#ffffff12;color:#fff;font:700 11.5px var(--sans)}
+.penfly .upc button.cur{border-color:#f3d98b;background:#f3d98b22}
+.pcd{display:block;width:26px;height:26px;border-radius:50%;border:1px solid #c99a3b}.pcd.pcw{background:#fff}.pcd.pcc{background:#f6eed8}.pcd.pcb{background:#dbe8f8}.upi.pcw{background-color:#fff}.upi.pcc{background-color:#fffdf7}.upi.pcb{background-color:#eef5fd}

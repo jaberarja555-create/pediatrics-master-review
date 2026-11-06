@@ -1,0 +1,58 @@
+[
+{
+"q": "The first action in a convulsing child after ABC is:",
+"o": [
+"Phenytoin",
+"Check glucose",
+"CT scan",
+"Lumbar puncture",
+"EEG"
+],
+"a": 1,
+"e": "Hypoglycaemia is easy to treat.",
+"k": "check glucose",
+"s": "bank"
+},
+{
+"q": "The dose of rectal diazepam in status epilepticus is:",
+"o": [
+"0.1 mg/kg",
+"0.3 mg/kg",
+"0.5 mg/kg",
+"1 mg/kg",
+"2 mg/kg"
+],
+"a": 2,
+"e": "0.5 mg/kg.",
+"k": "0.5 mg/kg rectally",
+"s": "bank"
+},
+{
+"q": "After two doses of benzodiazepine the next drug is:",
+"o": [
+"Third diazepam dose",
+"Phenytoin 20 mg/kg IV",
+"Carbamazepine",
+"Paracetamol",
+"Mannitol"
+],
+"a": 1,
+"e": "Second line.",
+"k": "phenytoin 20 mg/kg iv",
+"s": "bank"
+},
+{
+"q": "Cushing triad includes all EXCEPT:",
+"o": [
+"Bradycardia",
+"Hypertension",
+"Irregular breathing",
+"Tachycardia",
+"Raised ICP present"
+],
+"a": 3,
+"e": "Bradycardia, not tachycardia.",
+"k": "cushing triad",
+"s": "bank"
+}
+]

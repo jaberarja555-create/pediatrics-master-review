@@ -1,0 +1,58 @@
+[
+{
+"q": "In PSGN, serum C3 is:",
+"o": [
+"Raised",
+"Low, returning to normal by 6–8 weeks",
+"Always normal",
+"Low permanently",
+"Absent"
+],
+"a": 1,
+"e": "Transiently low.",
+"k": "c3 normal by 8 weeks",
+"s": "bank"
+},
+{
+"q": "Haematuria 1–2 days after a sore throat suggests:",
+"o": [
+"PSGN",
+"IgA nephropathy",
+"HSP",
+"Alport",
+"UTI"
+],
+"a": 1,
+"e": "Synpharyngitic.",
+"k": "iga nephropathy",
+"s": "bank"
+},
+{
+"q": "Purpura on buttocks with normal platelets and abdominal pain suggests:",
+"o": [
+"ITP",
+"HSP",
+"Meningococcaemia",
+"Leukaemia",
+"DIC"
+],
+"a": 1,
+"e": "IgA vasculitis.",
+"k": "palpable purpura",
+"s": "bank"
+},
+{
+"q": "The best marker of a preceding streptococcal skin infection is:",
+"o": [
+"ASO",
+"Anti-DNase B",
+"CRP",
+"C3",
+"ANA"
+],
+"a": 1,
+"e": "ASO is weak after skin infection.",
+"k": "anti-dnase b",
+"s": "bank"
+}
+]

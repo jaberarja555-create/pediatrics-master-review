@@ -1,0 +1,58 @@
+[
+{
+"q": "The triad of HUS includes all EXCEPT:",
+"o": [
+"Microangiopathic haemolytic anaemia",
+"Thrombocytopenia",
+"AKI",
+"Prolonged PT",
+"Schistocytes"
+],
+"a": 3,
+"e": "Clotting is normal in HUS.",
+"k": "normal clotting",
+"s": "bank"
+},
+{
+"q": "Urine Na < 20 mmol/L and FENa < 1% in oliguria indicates:",
+"o": [
+"ATN",
+"Pre-renal AKI",
+"Post-renal",
+"GN",
+"CKD"
+],
+"a": 1,
+"e": "Pre-renal.",
+"k": "fena < 1%",
+"s": "bank"
+},
+{
+"q": "The commonest cause of CKD in children is:",
+"o": [
+"Diabetes",
+"Hypertension",
+"Congenital anomalies of the urinary tract",
+"SLE",
+"PSGN"
+],
+"a": 2,
+"e": "CAKUT.",
+"k": "congenital anomalies",
+"s": "bank"
+},
+{
+"q": "An indication for dialysis is:",
+"o": [
+"Creatinine 120",
+"Refractory hyperkalaemia",
+"Mild oedema",
+"Haematuria",
+"Proteinuria"
+],
+"a": 1,
+"e": "Hyperkalaemia not responding.",
+"k": "refractory hyperkalaemia",
+"s": "bank"
+}
+]

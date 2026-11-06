@@ -1,0 +1,58 @@
+[
+{
+"q": "A simple febrile seizure is characterised by all EXCEPT:",
+"o": [
+"Generalised",
+"Duration < 15 minutes",
+"Single in 24 h",
+"Focal features",
+"Age 6 months–5 years"
+],
+"a": 3,
+"e": "Focal = complex.",
+"k": "generalised tonic",
+"s": "bank"
+},
+{
+"q": "The recurrence risk after a first febrile seizure is about:",
+"o": [
+"5%",
+"10%",
+"30%",
+"60%",
+"90%"
+],
+"a": 2,
+"e": "About one third.",
+"k": "recurrence",
+"s": "bank"
+},
+{
+"q": "Lumbar puncture is most strongly indicated after a febrile seizure in:",
+"o": [
+"A 3-year-old with otitis",
+"A 9-month-old on antibiotics",
+"A 4-year-old with roseola",
+"A 2-year-old with tonsillitis",
+"A child with family history"
+],
+"a": 1,
+"e": "Young age and antibiotics mask meningitis.",
+"k": "on antibiotics",
+"s": "bank"
+},
+{
+"q": "Long-term prophylaxis after a simple febrile seizure is:",
+"o": [
+"Valproate",
+"Phenobarbitone",
+"Not recommended",
+"Paracetamol regularly",
+"Carbamazepine"
+],
+"a": 2,
+"e": "No long-term AED.",
+"k": "no long-term anticonvulsants",
+"s": "bank"
+}
+]

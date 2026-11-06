@@ -1,0 +1,58 @@
+[
+{
+"q": "The commonest cause of death in children with DKA is:",
+"o": [
+"Hypoglycaemia",
+"Hypokalaemia",
+"Cerebral oedema",
+"Shock",
+"Sepsis"
+],
+"a": 2,
+"e": "Cerebral oedema.",
+"k": "cerebral oedema",
+"s": "bank"
+},
+{
+"q": "In DKA, insulin infusion should start:",
+"o": [
+"Immediately as an IV bolus",
+"1–2 h after starting fluids, no bolus",
+"After glucose normalises",
+"Only if pH < 7.0",
+"Subcutaneously"
+],
+"a": 1,
+"e": "Reduces cerebral oedema risk.",
+"k": "no insulin bolus",
+"s": "bank"
+},
+{
+"q": "Potassium in DKA fluids is given because:",
+"o": [
+"Serum K is always low",
+"Insulin drives K into cells and body K is depleted",
+"It lowers glucose",
+"It prevents cerebral oedema",
+"It corrects acidosis"
+],
+"a": 1,
+"e": "Total body K is low.",
+"k": "total body k is low",
+"s": "bank"
+},
+{
+"q": "The diagnostic random plasma glucose with symptoms is:",
+"o": [
+"≥ 7.8 mmol/L",
+"≥ 11.1 mmol/L",
+"≥ 6.1 mmol/L",
+"≥ 15 mmol/L",
+"≥ 5.5 mmol/L"
+],
+"a": 1,
+"e": "200 mg/dL.",
+"k": "11.1 mmol/l",
+"s": "bank"
+}
+]

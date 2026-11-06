@@ -1,0 +1,44 @@
+[
+{
+"q": "The commonest type of cerebral palsy is:",
+"o": [
+"Ataxic",
+"Dyskinetic",
+"Spastic",
+"Hypotonic",
+"Mixed"
+],
+"a": 2,
+"e": "≈ 80%.",
+"k": "spastic (≈ 80%)",
+"s": "bank"
+},
+{
+"q": "Choreoathetoid CP with deafness follows:",
+"o": [
+"HIE",
+"Kernicterus",
+"Meningitis",
+"Prematurity",
+"Rubella"
+],
+"a": 1,
+"e": "Basal ganglia damage.",
+"k": "kernicterus",
+"s": "bank"
+},
+{
+"q": "Spastic diplegia is typical of:",
+"o": [
+"Kernicterus",
+"Preterm babies with PVL",
+"Term HIE",
+"Meningitis",
+"Genetic"
+],
+"a": 1,
+"e": "Legs > arms.",
+"k": "diplegia",
+"s": "bank"
+}
+]
