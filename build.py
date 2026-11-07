@@ -681,6 +681,9 @@ def build():
     for ch, stream, key in chapters:
         if key.startswith('rr') and rr_first is None:
             rr_first = pno
+            if (CONTENT / 'img' / 'rrcover.jpg').exists():  # owner (Nov 2026): a cover page opens the Rapid Review
+                paged.append(('rrcover', ch, pno))
+                pno += 1
         if key.startswith('ch') and (CONTENT / 'img' / f'chcover_{ch["no"]}.jpg').exists():  # owner (Nov 2026): chapter opening cover
             ch['_cover'] = pno
             paged.append(('cover', ch, pno))
@@ -712,7 +715,7 @@ def build():
                                          for tk in dict.fromkeys(re.findall(r'data-tk="(\w+)"', a[1])) if tk in MTK) + '</div>'
                                for i, a in enumerate(stream))
             fills = plan.get('fills') or []
-            k_ = len(paged_keys := [x for x in paged if x[0] != 'cover' and x[5] == key])
+            k_ = len(paged_keys := [x for x in paged if x[0] not in ('cover', 'rrcover') and x[5] == key])
             vj = min(56, int(max(0, fills[k_] - 20) * .9 / max(1, len(rows) - 1))) if k_ < len(fills) and not MEASURE else 0
             if vj > 1:  # spread the page's spare height evenly between its rows (no empty block at the bottom)
                 body = f'<div class="vj" style="--vj:{vj}px"></div>' + body
@@ -742,6 +745,12 @@ def build():
     html_pages += contents_pages(book, rr_first)
     topic_pages = {}
     for item in paged:
+        if item[0] == 'rrcover':
+            _, ch, n = item
+            html_pages.append(f'<section class="page rrcov" id="p{n}" data-id="p{n}" style="overflow:hidden"><div class="covbg" style="background-image:url(img/rrcover.jpg)"></div>'
+                              f'<img class="covimg" src="img/rrcover.jpg" alt="Rapid Review"></section>\n')
+            meta_pages.append({'id': f'p{n}', 'label': 'Rapid Review', 'ch': ch['no'], 'chcover': 1})
+            continue
         if item[0] == 'cover':
             _, ch, n = item
             html_pages.append(chapter_cover(book, ch, n))
