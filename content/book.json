@@ -773,7 +773,8 @@
      "sub": "Use · dose per kg · frequency · duration · side effects"
     }
    ],
-   "part": "Drugs & Doses"
+   "part": "Drugs & Doses",
+   "poster": "drcover.jpg"
   }
  ],
  "access": {

@@ -1744,3 +1744,22 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .rq .rqs { padding:7px 15px 6px; }
 .rq .rqh { padding:6px 13px; }
 .rq .rqf.rqt { padding:7px 15px 8px; }
+
+/* Drug section (owner, 7 Nov 2026, as in the Obstetrics book): one whole card per drug under a coloured band per group */
+.dgb { display:flex; align-items:center; gap:10px; margin:0; padding:8px 13px; border-radius:9px; color:#fff; font:800 12pt/1.25 Inter,sans-serif; background:linear-gradient(100deg,var(--ch-dark) 0,var(--ch) 70%,var(--ch-mid) 100%); }
+.dgb > span { flex:none; display:grid; place-items:center; width:25px; height:25px; border-radius:6px; background:rgba(255,255,255,.18); font-size:10pt; }
+.dgb .ab, .dgb .gl, .dgb .df { color:inherit !important; border-bottom-color:rgba(255,255,255,.5) !important; }
+.dk { border:1px solid var(--ch-line); border-left:4px solid var(--ch); border-radius:8px; overflow:hidden; background:#fff; width:100%; }
+.dk .dkh { display:flex; align-items:baseline; gap:10px; padding:6px 13px; background:var(--ch-tint-2); border-bottom:1px solid var(--ch-line); }
+.dk .dkh b { font:800 10.8pt/1.25 Inter,sans-serif; color:var(--ch-dark); flex:none; max-width:55%; }
+.dk .dkh i { font:italic 500 8.6pt/1.35 Inter,sans-serif; color:#55606a; }
+.dk .dkg { display:grid; grid-template-columns:38% 62%; }
+.dk .dkf { padding:6px 13px 7px; font-size:9pt; line-height:1.5; }
+.dk .dkf:nth-child(odd) { border-right:1px solid #edf0f2; }
+.dk .dkf.dkfw { grid-column:1 / -1; border-right:0; border-top:1px solid #edf0f2; }
+.dk .dkf h5 { margin:0 0 1px; font:800 7pt Inter,sans-serif; letter-spacing:.9px; text-transform:uppercase; color:var(--ch-dark,var(--ch)); }
+.dk .dkd { background:#fbfcfd; }
+.dk .dkw h5, .dk .dkfw h5 { color:#b4532a; }
+.dk .dose { background:none; padding:0; font-weight:700; color:#0e2547; }
+.mzm .dk .dkh { padding-top:calc(6px + var(--rqx,0px)); padding-bottom:calc(6px + var(--rqx,0px)); }
+.mzm .dk .dkf { padding-top:calc(6px + var(--rqx,0px)); padding-bottom:calc(7px + var(--rqx,0px)); }

@@ -285,7 +285,7 @@ function decorate(i){var pw=wraps[i];if(!pw||pw.dataset.dec)return;pw.dataset.de
   termify(sec);fillPage(sec)}
 /* owner (Nov 2026): when a page has spare room at the bottom, spread it inside the page (roomier table rows and list items,
    then wider gaps between the boxes) instead of leaving the content packed at the top */
-function fillPage(sec){var m=sec.querySelector('.mzm'),ft=sec.querySelector('.ftr');if(!m||!ft||sec.classList.contains('ex'))return;
+function fillPage(sec){var m=sec.querySelector('.mzm'),ft=sec.querySelector('.ftr');if(!m||!ft||sec.classList.contains('ex')||m.querySelector('.dk'))return;
   // owner (Nov 2026): use spare room INSIDE the boxes (more line spacing, padding, bigger rows), not as gaps between boxes
   function free(){var sc=sec.getBoundingClientRect().height/sec.offsetHeight||1,b=0;[].forEach.call(m.children,function(c){var r=c.getBoundingClientRect();if(r.height)b=Math.max(b,r.bottom)});return (ft.getBoundingClientRect().top-b)/sc}
   if(free()<80)return;
@@ -387,8 +387,9 @@ function refreshHome(){
 $('pill').textContent=META.pill;
 $('contBtn').onclick=function(){goIdx(lastPage())};
 $('coverBtn').onclick=function(){goPage(0)};
-if(LOCKED||INTRIAL){$('trialCard').hidden=false;var tcu=function(){$('trialCard').querySelector('b').textContent=INTRIAL?'الفترة التجريبية · '+trialTxt():TRIALNEW?'جرّب الكتاب كله · '+trialDur()+' مجانًا':'النسخة المجانية';$('trialTxt').innerHTML=INTRIAL?'الكتاب كله مفتوح لك الآن. بعد انتهاء الفترة يبقى '+esc(ACC.free_label||'جزء من الكتاب')+' مفتوحًا.':TRIALNEW?'الكتاب كله مع كل الأدوات مجانًا، أو اشترك في النسخة المدفوعة.':freeMsg()+' اشترك لتفتح الكتاب كاملًا.';$('trialCard').querySelector('i').textContent=TRIALNEW?'اضغط هنا للاختيار':'اضغط هنا للاشتراك'};tcu();if(INTRIAL)setInterval(tcu,30000)}else if(!REVIEW&&st('code')){var pg=$('prog');if(pg){pg.parentNode.insertBefore($('trialCard'),pg.nextSibling);$('trialCard').style.marginTop='16px'}$('trialCard').hidden=false;$('trialCard').classList.add('subd');$('trialCard').querySelector('b').textContent='أنت مشترك · الكتاب مفتوح كاملًا';$('trialTxt').innerHTML='الكود <bdi dir="ltr">'+esc(st('code'))+'</bdi> · لنقل الكتاب إلى جهاز آخر';$('trialCard').querySelector('i').textContent='إدارة الجهاز'}$('hmToc').onclick=function(){$('tocBtn').click()};
+if(LOCKED||INTRIAL){$('trialCard').hidden=false;var tcu=function(){$('trialCard').querySelector('b').textContent=INTRIAL?'الفترة التجريبية · '+trialTxt():TRIALNEW?'جرّب الكتاب كله · '+trialDur()+' مجانًا':'النسخة المجانية';$('trialTxt').innerHTML=INTRIAL?'الكتاب كله مفتوح لك الآن. بعد انتهاء الفترة يبقى '+esc(ACC.free_label||'جزء من الكتاب')+' مفتوحًا.':TRIALNEW?'الكتاب كله مع كل الأدوات مجانًا، أو اشترك في النسخة المدفوعة.':freeMsg()+' اشترك لتفتح الكتاب كاملًا.';$('trialCard').querySelector('i').textContent=TRIALNEW?'اضغط هنا للاختيار':'اضغط هنا للاشتراك'};tcu();if(INTRIAL)setInterval(tcu,30000)}else if(!REVIEW&&st('code')){var pg=$('prog');if(pg){pg.parentNode.insertBefore($('trialCard'),pg.nextSibling);$('trialCard').style.marginTop='16px'}$('trialCard').hidden=false;$('trialCard').classList.add('subd');$('trialCard').querySelector('b').textContent='أنت مشترك · الكتاب مفتوح كاملًا';$('trialTxt').innerHTML='الكود <bdi dir="ltr">'+esc(st('code'))+'</bdi> · لنقل الكتاب إلى جهاز آخر';$('trialCard').querySelector('i').textContent='إدارة الجهاز'}if($('hmToc'))$('hmToc').onclick=function(){$('tocBtn').click()};
 $('rrTool').onclick=function(){goPage(META.rr-1)};
+if($('drTool')){if(META.dr)$('drTool').onclick=function(){goPage(META.dr-1)};else $('drTool').hidden=true}
 
 /* ---------- sheet: contents and highlights ---------- */
 /* MUST (owner, Nov 2026): on the first opening the student has to pick one of the choices; the sheet cannot be closed until then */
@@ -996,8 +997,8 @@ TM.gl.forEach(function(r,i){r[0].forEach(function(f){TGL[gnorm(f)]=i})});
 function alts(keys,fn){return keys.sort(function(a,b){return b.length-a.length}).map(fn).join('|')}
 var AB_RE=Object.keys(TAB).length?new RegExp('(^|[^A-Za-z0-9])('+alts(Object.keys(TAB),rx)+')(s?)(?![A-Za-z0-9₀-₉⁺⁻])','g'):null;
 var GL_RE=Object.keys(TGL).length?new RegExp('(^|[^A-Za-z])('+alts(Object.keys(TGL),function(f){return rx(f).replace(/'/g,"['’]").replace(/-/g,'[-–]').replace(/ /g,'\\s+')})+')((?:e?s)?)(?![A-Za-z])','gi'):null;
-var TSKIP='svg,script,style,.gt,.ftr,h1,.kicker,.toc-h,.mzh,.chcov,a,input,textarea';
-var TSKIP_AB='script,style,.gt,.ftr,h1,.kicker,.toc-h,.mzh,.chcov,a,input,textarea,svg .nogt';
+var TSKIP='svg,script,style,.gt,.ftr,h1,.kicker,.toc-h,.mzh,.chcov,a,input,textarea,.dgb';
+var TSKIP_AB='script,style,.gt,.ftr,h1,.kicker,.toc-h,.mzh,.chcov,a,input,textarea,svg .nogt,.dgb';
 function termText(root,skip){var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){return n.parentNode.closest(skip)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),a=[];while(w.nextNode())a.push(w.currentNode);return a}
 var TSC=0;function termPass(root,skip,re,key,seen){if(!re)return;termText(root,skip).forEach(function(n){var t=n.nodeValue,m,last=0,frag=null;re.lastIndex=0;
   while((m=re.exec(t))){var k=key(m[2]);

@@ -1,0 +1,671 @@
+{
+ "intro": "<p>Children's doses are calculated by <b>weight (mg/kg)</b> or, for some drugs (chemotherapy, steroids), by <b>body surface area (m²)</b>, and must <b>never exceed the adult dose</b>. Always write the dose, route, frequency and duration, and check the weight. The doses below are those used in Sudanese hospitals and WHO paediatric guidelines.</p>\n<h2 class=\"s\">Prescribing rules</h2>\n<div class=\"two\">\n<div><ul class=\"b\"><li>Weigh every child · if no scale: weight ≈ (age + 4) × 2 (1–10 yr)</li><li>BSA (m²) = √(height cm × weight kg ÷ 3600)</li><li>Neonates: longer intervals (immature kidneys and liver)</li></ul></div>\n<div><ul class=\"b\"><li>Prefer <b>oral</b> syrups/dispersible tablets when the child can swallow · avoid IM in bleeding disorders and polio</li><li>Avoid in children: <b>aspirin</b> (Reye; except Kawasaki, ARF), <b>tetracyclines</b> &lt; 8 yr, <b>ceftriaxone</b> in jaundiced neonates, codeine</li></ul></div>\n</div>",
+ "groups": [
+  {
+   "title": "Penicillins and cephalosporins",
+   "heads": [
+    "Drug (mechanism)",
+    "Main uses · duration",
+    "Dose",
+    "Side effects · cautions"
+   ],
+   "drugs": [
+    {
+     "name": "Amoxicillin",
+     "mech": "β-lactam: cell wall",
+     "use": "Pneumonia (5 d), AOM (5 d), UTI, sinusitis, H. pylori",
+     "dose": "<span class=\"dose\">25 mg/kg 12-hourly</span> (40–45 mg/kg 12-hourly in pneumonia/AOM)",
+     "side": "Rash (EBV), diarrhoea · penicillin allergy"
+    },
+    {
+     "name": "Ampicillin",
+     "mech": "",
+     "use": "Neonatal sepsis, severe pneumonia, meningitis (&lt; 3 mo, Listeria)",
+     "dose": "<span class=\"dose\">50 mg/kg IV 6-hourly</span> (12-hourly week 1 neonates)",
+     "side": "As amoxicillin"
+    },
+    {
+     "name": "Benzylpenicillin",
+     "mech": "",
+     "use": "Pneumococcus, meningococcus, syphilis, tetanus",
+     "dose": "<span class=\"dose\">50 000 U/kg IV 6-hourly</span>",
+     "side": "Allergy, seizures at very high doses"
+    },
+    {
+     "name": "Benzathine penicillin",
+     "mech": "",
+     "use": "Strep tonsillitis, <b>rheumatic fever prophylaxis</b> (3–4-weekly)",
+     "dose": "<span class=\"dose\">600 000 U IM</span> (&lt; 30 kg) · 1.2 MU (≥ 30 kg)",
+     "side": "Painful injection, anaphylaxis"
+    },
+    {
+     "name": "Cloxacillin / flucloxacillin",
+     "mech": "",
+     "use": "<b>Staph aureus</b>: skin, bone, joint, empyema",
+     "dose": "<span class=\"dose\">25–50 mg/kg 6-hourly</span> IV/oral",
+     "side": "Phlebitis, cholestasis"
+    },
+    {
+     "name": "Co-amoxiclav",
+     "mech": "",
+     "use": "Bites, sinusitis, AOM failure, UTI",
+     "dose": "<span class=\"dose\">15–25 mg/kg (amoxicillin) 8–12-hourly</span>",
+     "side": "Diarrhoea, cholestatic jaundice"
+    },
+    {
+     "name": "Ceftriaxone",
+     "mech": "3rd gen",
+     "use": "<b>Meningitis</b> (100 mg/kg/d), sepsis, severe pneumonia, typhoid, gonococcal ophthalmia",
+     "dose": "<span class=\"dose\">50–80 mg/kg once daily</span> IV/IM",
+     "side": "Not with IV calcium; avoid in jaundiced neonates; biliary sludge"
+    },
+    {
+     "name": "Cefotaxime",
+     "mech": "",
+     "use": "Neonatal meningitis/sepsis",
+     "dose": "<span class=\"dose\">50 mg/kg 6–12-hourly</span>",
+     "side": "Safe in neonates"
+    },
+    {
+     "name": "Cefixime",
+     "mech": "oral",
+     "use": "Typhoid, UTI",
+     "dose": "<span class=\"dose\">8–10 mg/kg/day</span> in 1–2 doses",
+     "side": "Diarrhoea"
+    }
+   ]
+  },
+  {
+   "title": "Other antibiotics",
+   "heads": [
+    "Drug (mechanism)",
+    "Main uses · duration",
+    "Dose",
+    "Side effects · cautions"
+   ],
+   "drugs": [
+    {
+     "name": "Gentamicin",
+     "mech": "aminoglycoside: 30S",
+     "use": "Neonatal sepsis, severe pneumonia, UTI, SAM",
+     "dose": "<span class=\"dose\">7.5 mg/kg once daily</span> (5 mg/kg neonates)",
+     "side": "<b>Ototoxic, nephrotoxic</b> · levels if prolonged"
+    },
+    {
+     "name": "Azithromycin",
+     "mech": "macrolide: 50S",
+     "use": "Typhoid (7 d), pertussis (5 d), Mycoplasma, trachoma, cholera",
+     "dose": "<span class=\"dose\">10–20 mg/kg once daily</span>",
+     "side": "GI upset, QT prolongation"
+    },
+    {
+     "name": "Erythromycin",
+     "mech": "",
+     "use": "Chlamydia conjunctivitis/pneumonia (14 d), RF prophylaxis (allergy)",
+     "dose": "<span class=\"dose\">12.5 mg/kg 6-hourly</span>",
+     "side": "Vomiting, <b>pyloric stenosis</b> in young infants"
+    },
+    {
+     "name": "Ciprofloxacin",
+     "mech": "quinolone: DNA gyrase",
+     "use": "<b>Shigella</b> (3 d), typhoid, Pseudomonas",
+     "dose": "<span class=\"dose\">15 mg/kg 12-hourly</span>",
+     "side": "Arthropathy (short courses safe), tendon, QT"
+    },
+    {
+     "name": "Cotrimoxazole",
+     "mech": "folate antagonist",
+     "use": "<b>PCP</b> treatment (20 mg/kg TMP/d) and prophylaxis (HIV, ALL), UTI, brucella",
+     "dose": "Prophylaxis <span class=\"dose\">5 mg/kg TMP daily</span>",
+     "side": "Rash (SJS), marrow suppression, <b>G6PD haemolysis</b>, kernicterus (neonates)"
+    },
+    {
+     "name": "Metronidazole",
+     "mech": "",
+     "use": "Giardia, amoeba, anaerobes, tetanus, NEC",
+     "dose": "<span class=\"dose\">7.5 mg/kg 8-hourly</span>",
+     "side": "Metallic taste, nausea, dark urine"
+    },
+    {
+     "name": "Vancomycin",
+     "mech": "",
+     "use": "MRSA, CoNS (lines)",
+     "dose": "<span class=\"dose\">15 mg/kg 6-hourly IV</span> (slowly)",
+     "side": "Red man syndrome, nephrotoxic"
+    },
+    {
+     "name": "Meropenem",
+     "mech": "",
+     "use": "Resistant gram-negatives, hospital sepsis, febrile neutropenia",
+     "dose": "<span class=\"dose\">20 mg/kg 8-hourly</span> (40 in meningitis)",
+     "side": "Seizures (rare), resistance"
+    }
+   ]
+  },
+  {
+   "title": "Antimalarials",
+   "heads": [
+    "Drug",
+    "Use",
+    "Dose",
+    "Side effects"
+   ],
+   "drugs": [
+    {
+     "name": "Artesunate IV/IM",
+     "mech": "",
+     "use": "<b>Severe malaria</b>",
+     "dose": "<span class=\"dose\">3 mg/kg</span> (&lt; 20 kg) / <span class=\"dose\">2.4 mg/kg</span> (≥ 20 kg) at 0, 12, 24 h then daily",
+     "side": "Delayed haemolysis (week 1–4)"
+    },
+    {
+     "name": "Artemether–lumefantrine",
+     "mech": "",
+     "use": "Uncomplicated falciparum (first line Sudan)",
+     "dose": "6 doses over 3 days by weight band, with milk/fat",
+     "side": "GI upset, dizziness"
+    },
+    {
+     "name": "Quinine IV",
+     "mech": "",
+     "use": "Severe malaria (alternative)",
+     "dose": "<span class=\"dose\">20 mg/kg load</span>, then <span class=\"dose\">10 mg/kg 8-hourly</span> in 5% dextrose",
+     "side": "<b>Hypoglycaemia</b>, cinchonism (tinnitus), arrhythmia"
+    },
+    {
+     "name": "Primaquine",
+     "mech": "",
+     "use": "Vivax radical cure",
+     "dose": "<span class=\"dose\">0.25 mg/kg daily × 14 d</span>",
+     "side": "<b>Haemolysis in G6PD</b> · not &lt; 6 months, pregnancy"
+    }
+   ]
+  },
+  {
+   "title": "Antiparasitics",
+   "heads": [
+    "Drug",
+    "Use",
+    "Dose"
+   ],
+   "drugs": [
+    {
+     "name": "Albendazole",
+     "mech": "",
+     "use": "Ascaris, hookworm, pinworm, routine deworming",
+     "dose": "<span class=\"dose\">400 mg once</span> (200 mg at 1–2 yr)",
+     "side": ""
+    },
+    {
+     "name": "Praziquantel",
+     "mech": "",
+     "use": "Schistosomiasis (40 mg/kg once), H. nana (25 mg/kg)",
+     "dose": "With food · ≥ 4 years (or by height)",
+     "side": ""
+    },
+    {
+     "name": "SSG + paromomycin",
+     "mech": "",
+     "use": "Kala-azar (17 days)",
+     "dose": "<span class=\"dose\">20 mg/kg + 15 mg/kg daily</span> · ECG (SSG cardiotoxic)",
+     "side": ""
+    }
+   ]
+  },
+  {
+   "title": "Analgesics and antipyretics",
+   "heads": [
+    "Drug",
+    "Use",
+    "Dose",
+    "Side effects · cautions"
+   ],
+   "drugs": [
+    {
+     "name": "Paracetamol",
+     "mech": "",
+     "use": "Fever, pain",
+     "dose": "<span class=\"dose\">15 mg/kg 6-hourly</span> (max 60 mg/kg/day; 4 doses)",
+     "side": "Liver failure in overdose (&gt; 150 mg/kg)"
+    },
+    {
+     "name": "Ibuprofen",
+     "mech": "NSAID",
+     "use": "Pain, fever, inflammation, PDA closure (preterm)",
+     "dose": "<span class=\"dose\">5–10 mg/kg 8-hourly</span>",
+     "side": "Gastritis, AKI · avoid in dehydration, varicella, bleeding, severe asthma"
+    },
+    {
+     "name": "Morphine",
+     "mech": "opioid",
+     "use": "Severe pain (sickle crisis, burns), tet spells",
+     "dose": "<span class=\"dose\">0.1–0.2 mg/kg IV/SC 4-hourly</span>",
+     "side": "<b>Respiratory depression</b> (naloxone), constipation"
+    },
+    {
+     "name": "Aspirin",
+     "mech": "",
+     "use": "Only <b>Kawasaki</b>, <b>rheumatic fever</b>",
+     "dose": "30–50 then 3–5 mg/kg/day (Kawasaki)",
+     "side": "<b>Reye syndrome</b>, bleeding"
+    }
+   ]
+  },
+  {
+   "title": "Anticonvulsants",
+   "heads": [
+    "Drug",
+    "Use",
+    "Dose",
+    "Side effects"
+   ],
+   "drugs": [
+    {
+     "name": "Diazepam",
+     "mech": "GABA-A",
+     "use": "Acute seizure",
+     "dose": "<span class=\"dose\">0.3 mg/kg IV</span> · <span class=\"dose\">0.5 mg/kg rectal</span> (max 10 mg)",
+     "side": "Respiratory depression"
+    },
+    {
+     "name": "Midazolam",
+     "mech": "",
+     "use": "Acute seizure (buccal), refractory status",
+     "dose": "<span class=\"dose\">0.3 mg/kg buccal</span> · 0.15 mg/kg IV",
+     "side": "Respiratory depression"
+    },
+    {
+     "name": "Phenobarbitone",
+     "mech": "",
+     "use": "Neonatal seizures, status, epilepsy",
+     "dose": "Load <span class=\"dose\">20 mg/kg IV</span> · maintenance 3–5 mg/kg/day",
+     "side": "Sedation, hyperactivity"
+    },
+    {
+     "name": "Phenytoin",
+     "mech": "Na-channel",
+     "use": "Status, focal seizures",
+     "dose": "Load <span class=\"dose\">20 mg/kg IV over 20 min</span> (saline, ECG)",
+     "side": "Arrhythmia, gum hypertrophy, hirsutism, ataxia"
+    },
+    {
+     "name": "Sodium valproate",
+     "mech": "",
+     "use": "Generalised, absence, myoclonic",
+     "dose": "<span class=\"dose\">20–40 mg/kg/day</span> in 2 doses",
+     "side": "Hepatotoxic (&lt; 2 yr), teratogenic, weight gain"
+    },
+    {
+     "name": "Carbamazepine",
+     "mech": "",
+     "use": "Focal seizures",
+     "dose": "<span class=\"dose\">10–20 mg/kg/day</span>",
+     "side": "Rash/SJS, hyponatraemia · worsens absence"
+    }
+   ]
+  },
+  {
+   "title": "Respiratory drugs",
+   "heads": [
+    "Drug",
+    "Use",
+    "Dose",
+    "Side effects"
+   ],
+   "drugs": [
+    {
+     "name": "Salbutamol",
+     "mech": "β₂-agonist",
+     "use": "Asthma, wheeze",
+     "dose": "Nebulised <span class=\"dose\">2.5 mg (&lt; 5 yr) / 5 mg</span> · MDI 2–10 puffs",
+     "side": "Tremor, tachycardia, <b>hypokalaemia</b>"
+    },
+    {
+     "name": "Ipratropium",
+     "mech": "",
+     "use": "Severe asthma (with salbutamol)",
+     "dose": "<span class=\"dose\">250 µg nebulised</span>",
+     "side": "Dry mouth"
+    },
+    {
+     "name": "Prednisolone",
+     "mech": "",
+     "use": "Asthma (3–5 d), nephrotic, croup alternative",
+     "dose": "<span class=\"dose\">1–2 mg/kg/day</span> (asthma) · 60 mg/m² (nephrotic)",
+     "side": "Long-term: growth, Cushing, BP, infection"
+    },
+    {
+     "name": "Dexamethasone",
+     "mech": "",
+     "use": "<b>Croup</b>, meningitis (0.15 mg/kg 6-hourly), cerebral oedema (tumour)",
+     "dose": "<span class=\"dose\">0.15–0.6 mg/kg once</span> (croup)",
+     "side": "Hyperglycaemia"
+    },
+    {
+     "name": "Beclomethasone / budesonide",
+     "mech": "ICS",
+     "use": "Asthma prevention",
+     "dose": "<span class=\"dose\">100–200 µg/day</span> (low dose)",
+     "side": "Thrush, dysphonia"
+    },
+    {
+     "name": "Magnesium sulphate",
+     "mech": "",
+     "use": "Severe asthma",
+     "dose": "<span class=\"dose\">40 mg/kg IV over 20 min</span>",
+     "side": "Hypotension, flushing"
+    },
+    {
+     "name": "Caffeine citrate",
+     "mech": "",
+     "use": "Apnoea of prematurity",
+     "dose": "20 mg/kg load, 5–10 mg/kg daily",
+     "side": "Tachycardia, feed intolerance"
+    }
+   ]
+  },
+  {
+   "title": "Cardiac drugs",
+   "heads": [
+    "Drug",
+    "Use",
+    "Dose",
+    "Side effects · cautions"
+   ],
+   "drugs": [
+    {
+     "name": "Furosemide",
+     "mech": "loop diuretic",
+     "use": "Heart failure, oedema, AKI fluid overload",
+     "dose": "<span class=\"dose\">1–2 mg/kg</span> 8–24-hourly",
+     "side": "<b>Hypokalaemia</b>, dehydration, ototoxic (fast IV) · not in SAM oedema"
+    },
+    {
+     "name": "Spironolactone",
+     "mech": "",
+     "use": "With furosemide (K-sparing)",
+     "dose": "<span class=\"dose\">1 mg/kg 12-hourly</span>",
+     "side": "Hyperkalaemia"
+    },
+    {
+     "name": "Captopril",
+     "mech": "ACE inhibitor",
+     "use": "Heart failure, hypertension, proteinuria",
+     "dose": "<span class=\"dose\">0.1 mg/kg test</span>, up to 1 mg/kg 8-hourly",
+     "side": "Hypotension, ↑ K, AKI · not in AS/coarctation"
+    },
+    {
+     "name": "Digoxin",
+     "mech": "",
+     "use": "Heart failure, some SVT",
+     "dose": "<span class=\"dose\">5 µg/kg 12-hourly</span>",
+     "side": "Toxicity: vomiting, bradycardia, arrhythmia (low K) · not in TOF/HOCM"
+    },
+    {
+     "name": "Propranolol",
+     "mech": "β-blocker",
+     "use": "Tet spells, thyrotoxicosis, haemangioma, portal hypertension",
+     "dose": "<span class=\"dose\">0.1 mg/kg IV</span> (spell) · 0.5–1 mg/kg oral 8-hourly",
+     "side": "Bronchospasm (avoid in asthma), hypoglycaemia"
+    },
+    {
+     "name": "Adenosine",
+     "mech": "",
+     "use": "SVT",
+     "dose": "<span class=\"dose\">0.1 mg/kg rapid IV</span>, then 0.2, 0.3",
+     "side": "Brief asystole, flushing"
+    },
+    {
+     "name": "Prostaglandin E₁",
+     "mech": "",
+     "use": "Duct-dependent CHD",
+     "dose": "<span class=\"dose\">5–10 ng/kg/min</span>",
+     "side": "Apnoea, fever"
+    },
+    {
+     "name": "Nifedipine / amlodipine",
+     "mech": "",
+     "use": "Hypertension (PSGN)",
+     "dose": "0.25–0.5 mg/kg (nifedipine) · 0.1–0.2 mg/kg/day (amlodipine)",
+     "side": "Flushing, oedema"
+    }
+   ]
+  },
+  {
+   "title": "GI, nutrition and haematology",
+   "heads": [
+    "Drug",
+    "Use",
+    "Dose",
+    "Notes"
+   ],
+   "drugs": [
+    {
+     "name": "ORS",
+     "mech": "low osmolarity",
+     "use": "Dehydration",
+     "dose": "Plan B <span class=\"dose\">75 mL/kg over 4 h</span>",
+     "side": "Na 75 mmol/L"
+    },
+    {
+     "name": "Zinc",
+     "mech": "",
+     "use": "Diarrhoea",
+     "dose": "<span class=\"dose\">10 mg</span> (&lt; 6 mo) / <span class=\"dose\">20 mg</span> daily × 10–14 d",
+     "side": "Shortens and prevents diarrhoea"
+    },
+    {
+     "name": "Omeprazole",
+     "mech": "",
+     "use": "GORD, ulcer",
+     "dose": "<span class=\"dose\">1 mg/kg/day</span>",
+     "side": "—"
+    },
+    {
+     "name": "Lactulose",
+     "mech": "",
+     "use": "Constipation, hepatic encephalopathy",
+     "dose": "<span class=\"dose\">0.5–1 mL/kg</span> 1–2 times daily",
+     "side": "Bloating"
+    },
+    {
+     "name": "Iron",
+     "mech": "elemental",
+     "use": "Iron deficiency",
+     "dose": "<span class=\"dose\">3–6 mg/kg/day</span> × 3 months after Hb normal",
+     "side": "Black stool, constipation · not in SAM stabilisation"
+    },
+    {
+     "name": "Folic acid",
+     "mech": "",
+     "use": "Haemolytic anaemia, SAM, megaloblastic",
+     "dose": "<span class=\"dose\">1–5 mg daily</span>",
+     "side": "—"
+    },
+    {
+     "name": "Vitamin A",
+     "mech": "",
+     "use": "Measles, xerophthalmia, SAM, prophylaxis",
+     "dose": "50 000 / 100 000 / 200 000 IU by age",
+     "side": "Raised ICP in excess"
+    },
+    {
+     "name": "Vitamin D",
+     "mech": "",
+     "use": "Rickets / prevention",
+     "dose": "<span class=\"dose\">2000–6000 IU/day × 3 mo</span> · 400 IU/day prevention",
+     "side": "Hypercalcaemia"
+    },
+    {
+     "name": "Vitamin K",
+     "mech": "",
+     "use": "Newborn prophylaxis, VKDB",
+     "dose": "<span class=\"dose\">1 mg IM</span> at birth",
+     "side": "—"
+    },
+    {
+     "name": "Hydroxyurea",
+     "mech": "",
+     "use": "Sickle cell disease",
+     "dose": "<span class=\"dose\">15–20 mg/kg/day</span> (up to 35)",
+     "side": "Neutropenia (monitor CBC)"
+    },
+    {
+     "name": "Penicillin V",
+     "mech": "",
+     "use": "SCD and asplenia prophylaxis",
+     "dose": "62.5 / 125 / 250 mg 12-hourly by age",
+     "side": "To at least 5 years"
+    },
+    {
+     "name": "Blood transfusion",
+     "mech": "",
+     "use": "Severe anaemia",
+     "dose": "<span class=\"dose\">Whole blood 20 mL/kg</span> · packed cells 10 mL/kg over 3–4 h",
+     "side": "Overload: furosemide · SAM: 10 mL/kg over 3 h"
+    }
+   ]
+  },
+  {
+   "title": "Resuscitation and emergency drugs",
+   "heads": [
+    "Drug",
+    "Indication",
+    "Dose",
+    "Notes"
+   ],
+   "drugs": [
+    {
+     "name": "Adrenaline 1:10 000",
+     "mech": "",
+     "use": "Cardiac arrest",
+     "dose": "<span class=\"dose\">0.1 mL/kg (10 µg/kg) IV/IO</span> every 3–5 min",
+     "side": "Neonate: 0.1–0.3 mL/kg"
+    },
+    {
+     "name": "Adrenaline 1:1000",
+     "mech": "",
+     "use": "<b>Anaphylaxis</b> (IM) · croup (nebulised)",
+     "dose": "<span class=\"dose\">0.01 mL/kg IM</span> (max 0.5) · 0.5 mL/kg neb (max 5 mL)",
+     "side": "Repeat every 5 min"
+    },
+    {
+     "name": "10% dextrose",
+     "mech": "",
+     "use": "Hypoglycaemia",
+     "dose": "<span class=\"dose\">2 mL/kg</span> (neonate) · <span class=\"dose\">5 mL/kg</span> (child)",
+     "side": "Never 50% in children"
+    },
+    {
+     "name": "Crystalloid",
+     "mech": "NS / RL",
+     "use": "Shock",
+     "dose": "<span class=\"dose\">10–20 mL/kg</span> bolus",
+     "side": "SAM: 15 mL/kg over 1 h"
+    },
+    {
+     "name": "10% calcium gluconate",
+     "mech": "",
+     "use": "Hypocalcaemia, hyperkalaemia",
+     "dose": "<span class=\"dose\">0.5 mL/kg</span> (child) · 2 mL/kg (neonate) IV slowly",
+     "side": "ECG; not with ceftriaxone"
+    },
+    {
+     "name": "Sodium bicarbonate 8.4%",
+     "mech": "",
+     "use": "Severe acidosis in arrest, hyperkalaemia, TCA poisoning",
+     "dose": "<span class=\"dose\">1 mL/kg</span> (diluted for neonates)",
+     "side": "Not in DKA routinely"
+    },
+    {
+     "name": "Atropine",
+     "mech": "",
+     "use": "Bradycardia, <b>organophosphates</b>",
+     "dose": "<span class=\"dose\">0.02 mg/kg</span> (OP: 0.02–0.05, double until dry)",
+     "side": "—"
+    },
+    {
+     "name": "Naloxone",
+     "mech": "",
+     "use": "Opioid overdose",
+     "dose": "<span class=\"dose\">0.1 mg/kg</span> IV/IM",
+     "side": "Short-acting: repeat"
+    },
+    {
+     "name": "Mannitol 20%",
+     "mech": "",
+     "use": "Raised ICP, cerebral oedema (DKA)",
+     "dose": "<span class=\"dose\">0.5–1 g/kg</span> over 20 min",
+     "side": "Or 3% saline 3–5 mL/kg"
+    },
+    {
+     "name": "Hydrocortisone",
+     "mech": "",
+     "use": "Adrenal crisis, anaphylaxis, severe asthma",
+     "dose": "<span class=\"dose\">4 mg/kg IV</span> (crisis: 25/50/100 mg)",
+     "side": "—"
+    },
+    {
+     "name": "Amiodarone",
+     "mech": "",
+     "use": "VF/pulseless VT",
+     "dose": "<span class=\"dose\">5 mg/kg</span>",
+     "side": "After 3rd shock"
+    }
+   ]
+  },
+  {
+   "title": "Endocrine",
+   "heads": [
+    "Drug",
+    "Use",
+    "Dose",
+    "Notes"
+   ],
+   "drugs": [
+    {
+     "name": "Insulin",
+     "mech": "regular",
+     "use": "DKA infusion · daily insulin",
+     "dose": "<span class=\"dose\">0.05–0.1 U/kg/h</span> (DKA) · 0.7–1 U/kg/day total",
+     "side": "No bolus in DKA · hypoglycaemia, hypokalaemia"
+    },
+    {
+     "name": "Glucagon",
+     "mech": "",
+     "use": "Severe hypoglycaemia (DM)",
+     "dose": "<span class=\"dose\">0.5 mg</span> (&lt; 25 kg) / 1 mg IM",
+     "side": "—"
+    },
+    {
+     "name": "Levothyroxine",
+     "mech": "",
+     "use": "Hypothyroidism",
+     "dose": "<span class=\"dose\">10–15 µg/kg/day</span> (neonate)",
+     "side": "Start within 2 weeks"
+    },
+    {
+     "name": "Carbimazole",
+     "mech": "",
+     "use": "Graves disease",
+     "dose": "<span class=\"dose\">0.25–1 mg/kg/day</span>",
+     "side": "Agranulocytosis"
+    },
+    {
+     "name": "Fludrocortisone",
+     "mech": "",
+     "use": "Salt-wasting CAH",
+     "dose": "<span class=\"dose\">0.05–0.2 mg/day</span>",
+     "side": "With hydrocortisone 10–15 mg/m²/day"
+    },
+    {
+     "name": "Desmopressin",
+     "mech": "",
+     "use": "Central DI, nocturnal enuresis, mild haemophilia/vWD",
+     "dose": "Oral or intranasal",
+     "side": "Hyponatraemia (restrict water)"
+    }
+   ]
+  }
+ ]
+}

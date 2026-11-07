@@ -110,6 +110,30 @@ def is_wide(body):
             any(k in body for k in ('class="photos"', 'class="fig"', 'class="two"', 'class="ladder"')))
 
 
+DRUG_COL = [9, 2, 5, 7, 3, 10, 6, 8, 4, 14, 12]
+
+
+def drug_atoms(sub0):
+    """Drug section (owner, 7 Nov 2026, as in the Obstetrics book): content/drugs.json → the opening text, then one whole card per
+    drug (name, mechanism, use, dose, side effects) under a coloured band per group. Each group starts on its own page
+    (kind 'gtitle' starts a new segment in paginate.js); a card is never split."""
+    D = json.loads((CONTENT / 'drugs.json').read_text())
+    atoms = [(k, h, w, sub0) for k, h, w in auto_mosaic(D['intro'])]
+    for gi, g in enumerate(D['groups']):
+        c = DRUG_COL[gi % len(DRUG_COL)]
+        lab = [re.sub(r'^Drug.*', '', x) for x in g['heads']] + ['', '', '', '']
+        band = f'<div class="dgb rqc{c}"><span>{gi + 1}</span>{g["title"]}</div>'
+        for k, d in enumerate(g['drugs']):
+            side = f'<div class="dkf dkw"><h5>{lab[3] or "Side effects"}</h5>{d["side"]}</div>' if d['side'].strip() not in ('', '—', '-') else ''
+            card = (f'<div class="dk rqc{c}"><div class="dkh"><b>{d["name"]}</b>' + (f'<i>{d["mech"]}</i>' if d['mech'] else '') + '</div>'
+                    f'<div class="dkg"><div class="dkf"><h5>{lab[1] or "Use"}</h5>{d["use"]}</div><div class="dkf dkd"><h5>Dose</h5>{d["dose"]}</div>'
+                    + (f'<div class="dkf dkfw">{side[side.index(">") + 1:]}' if side else '') + '</div></div>')
+            if k == 0:
+                atoms.append(('raw' if gi == 0 else 'gtitle', band, True, g['title']))
+            atoms.append(('box', card, True, g['title']))
+    return atoms
+
+
 def auto_mosaic(main):
     """Old two-column page → atoms: ('raw', html) blocks and ('box', html, wide) section boxes."""
     intro, secs = split_sections(main)
@@ -406,8 +430,8 @@ def top_blocks(body):
 def mosaic_page(book, ch, sub, body, pno, pid, orig='', t=None):
     """New book layout (owner, Oct 2026): full-width rows of coloured boxes, written directly in the topic file
     as <page sub="..." layout="mosaic"> with .mrow rows and .mb boxes."""
-    m = re.match(r'<div class="vj" style="--vj:(\d+)px"></div>', body)
-    vj = f' vjs" style="--vj:{m.group(1)}px' if m else ''
+    m = re.match(r'<div class="vj" style="([^"]*)"></div>', body)
+    vj = f' vjs" style="{m.group(1)}' if m else ''
     body = body[m.end():] if m else body
     return (f'<section class="page mz c{ch["no"]}" id="p{pno}" data-id="{pid}" data-orig="{orig or pid}">'
             # running head (owner, Nov 2026, as in the Pediatrics app): same side on every page, topic named in bold
@@ -661,6 +685,8 @@ def build():
                 exam_parts(side, ex)
                 got = [('row' if r.startswith('<div class="m') else 'raw', r, True) for r in top_blocks(main)] if hand else auto_mosaic(main.strip())
                 atoms += [(k, h, w, sub) for k, h, w in got]
+            if t['id'] == 'drugs' and (CONTENT / 'drugs.json').exists():
+                atoms = drug_atoms(pages[0][0])
             if ex['numbers']:
                 nr, half = ex['numbers'], -(-len(ex['numbers']) // 2)
                 tables = ''.join(f'<table class="numt">{"".join(nr[i:i + half])}</table>' for i in (0, half) if nr[i:i + half])
@@ -700,7 +726,7 @@ def build():
         out = []
         for row in rows:
             items = [stream[i] for i in row]
-            if len(items) == 1 and items[0][0] in ('title', 'raw', 'row'):
+            if len(items) == 1 and items[0][0] in ('title', 'raw', 'row', 'gtitle'):
                 out.append(items[0][1])
             else:
                 out.append(f'<div class="mrow{" c1" if len(items) == 1 else ""}">{"".join(x[1] for x in items)}</div>')
@@ -722,7 +748,11 @@ def build():
             if (CONTENT / 'img' / 'rrcover.jpg').exists():  # owner (Nov 2026): a cover page opens the Rapid Review
                 paged.append(('rrcover', ch, pno))
                 pno += 1
-        if key.startswith('ch') and (CONTENT / 'img' / f'chcover_{ch["no"]}.jpg').exists():  # owner (Nov 2026): chapter opening cover
+        if key.startswith('ch') and ch.get('poster') and (CONTENT / 'img' / ch['poster']).exists():  # owner (Nov 2026): a full poster opens the chapter
+            ch['_cover'] = pno
+            paged.append(('poster', ch, pno))
+            pno += 1
+        elif key.startswith('ch') and (CONTENT / 'img' / f'chcover_{ch["no"]}.jpg').exists():  # owner (Nov 2026): chapter opening cover
             ch['_cover'] = pno
             paged.append(('cover', ch, pno))
             pno += 1
@@ -753,10 +783,18 @@ def build():
                                          for tk in dict.fromkeys(re.findall(r'data-tk="(\w+)"', a[1])) if tk in MTK) + '</div>'
                                for i, a in enumerate(stream))
             fills = plan.get('fills') or []
-            k_ = len(paged_keys := [x for x in paged if x[0] not in ('cover', 'rrcover') and x[5] == key])
+            k_ = len(paged_keys := [x for x in paged if x[0] not in ('cover', 'rrcover', 'poster') and x[5] == key])
             vj = min(56, int(max(0, fills[k_] - 20) * .9 / max(1, len(rows) - 1))) if k_ < len(fills) and not MEASURE else 0
-            if vj > 1:  # spread the page's spare height evenly between its rows (no empty block at the bottom)
-                body = f'<div class="vj" style="--vj:{vj}px"></div>' + body
+            rqx = 0
+            if '<div class="dk ' in body and k_ < len(fills) and fills[k_] and not MEASURE:
+                # drug pages (owner, 7 Nov 2026): the spare height goes between the cards and then into roomier cards
+                spare = fills[k_] + 5
+                vj = min(30, int(spare * .3 / max(1, len(rows) - 1)))
+                left = spare - vj * max(0, len(rows) - 1)
+                slots = body.count('class="dkf') + body.count('class="dkh')
+                rqx = min(14, round(left / max(1, 2 * slots), 1))
+            if vj > 1 or rqx > 0:  # spread the page's spare height evenly between its rows (no empty block at the bottom)
+                body = f'<div class="vj" style="--vj:{vj}px;--rqx:{rqx}px"></div>' + body
             pch = T2CH.get(next((stream[i][4]['id'] for row in rows for i in row if stream[i][0] != 'title'), ''), ch) if key == 'rr' else ch
             paged.append((pch, first[4], sub, body, pno, key, {stream[i][4]['id'] for row in rows for i in row if stream[i][3] != 'Rapid Review'}))
             pno += 1
@@ -789,6 +827,12 @@ def build():
             html_pages.append(f'<section class="page rrcov" id="p{n}" data-id="p{n}" style="overflow:hidden"><div class="covbg" style="background-image:url(img/rrcover.jpg)"></div>'
                               f'<img class="covimg" src="img/rrcover.jpg" alt="Rapid Review"></section>\n')
             meta_pages.append({'id': f'p{n}', 'label': 'Rapid Review', 'ch': ch['no'], 'chcover': 1})
+            continue
+        if item[0] == 'poster':
+            _, ch, n = item
+            html_pages.append(f'<section class="page rrcov" id="p{n}" data-id="p{n}" style="overflow:hidden"><div class="covbg" style="background-image:url(img/{ch["poster"]})"></div>'
+                              f'<img class="covimg" src="img/{ch["poster"]}" alt="{text(ch["title"])}"></section>\n')
+            meta_pages.append({'id': f'p{n}', 'label': f'Chapter {ch["no"]} · {text(ch["title"])}', 'ch': ch['no'], 'chcover': 1})
             continue
         if item[0] == 'cover':
             _, ch, n = item
@@ -876,7 +920,7 @@ def build():
         'access': access, 'terms': terms(),
         'review': bool(os.environ.get('PRR_REVIEW')),  # authors' review copy: whole book open (never for docs/)
         'audio': audio_meta(meta_pages, topics_meta, book),
-        'edition': book['edition'], 'pages': meta_pages, 'topics': topics_meta, 'rr': rr_first,
+        'edition': book['edition'], 'pages': meta_pages, 'topics': topics_meta, 'rr': rr_first, 'dr': next((c['_cover'] for c in book['chapters'] if c.get('poster') and c.get('_cover')), 0),
         'chips': book.get('search_chips', []),
         # cross-links (content/links.json): [phrase, topic id, first page]; topic numbers like (6.2) link too
         'xref': [[ph, tid, tp[tid]['p'], tp[tid]['no']] for tid, phs in xref.items() if tid in tp for ph in phs],

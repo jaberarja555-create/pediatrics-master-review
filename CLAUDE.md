@@ -258,6 +258,13 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
 - **Chapter 15 (was 14) OSCE rewritten (7 Nov 2026)** as 12 topics (history, osce-hx-newborn, osce-hx-child, osce-growth, osce-resp, osce-cvs, osce-abdomen (owner: each system its own topic), osce-neuro, osce-newborn, osce-dehydration, osce-counsel, osce-data) from resources/osce (Shendi checklists, Ebedya, lil); Arabic history questions in Sudanese colloquial with no label; old `examination`/`osce` topics removed.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.
 
+## Drug section (owner, 7 Nov 2026, as in the Obstetrics book)
+Chapter 16 opens with the owner's poster `content/img/drcover.jpg` (book.json chapter key `poster`; build.py page kind 'poster', meta `dr`).
+The drugs topic is built from `content/drugs.json` (intro + 11 groups of drugs: name, mechanism, use, dose, side effects; labels from the old
+table heads) by build.py `drug_atoms`: one whole card (`.dk`) per drug under a coloured band (`.dgb`, kind 'gtitle'). paginate.js keeps a group on
+one page when it fits, starts a bigger group on a new page and shares its cards evenly; build.py spreads spare height (`--vj`, `--rqx`).
+Home study tools as in Obstetrics: Question bank, Flashcards, Lectures, Rapid review, Pediatric drugs (`drTool` → META.dr), My notes.
+
 ## Handover between the owner's two Claude accounts (Nov 6 2026)
 The owner works from two Claude accounts (subscription limits). Both must continue from the SAME code:
 - **Pediatrics:** the working branch is `claude/confident-turing-evm4gu`; `main` is kept equal to it (other account: start from `main`

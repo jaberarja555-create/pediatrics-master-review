@@ -109,12 +109,15 @@ const MARGIN = 42, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
       if (isTitle) seg++;
       const h = opt.h + (A[i].k === 'rvt' && !A[i].rc ? GAP : 0) - (A[i].k === 'cbox' || A[i].rc ? A[i].js : 0);
       if (A[i].k === 'raw' && !isTitle) { glue = glue ? { rows: [...glue.rows, opt.row], h: glue.h + h } : { rows: [opt.row], h }; continue; }
-      const u = { rows: [opt.row], h, title: isTitle, rv: A[i].k === 'rvt', cb: A[i].k === 'cbox', seg: Math.max(seg, 0) };
+      const u = { rows: [opt.row], h, title: isTitle, rv: A[i].k === 'rvt', cb: A[i].k === 'cbox', gt: A[i].k === 'gtitle', seg: Math.max(seg, 0) };
       if (glue && !isTitle && glue.h + u.h <= cap - ch.cont) { u.rows = [...glue.rows, ...u.rows]; u.h += glue.h; glue = null; }
       else if (glue) { units.push({ rows: glue.rows, h: glue.h, seg: isTitle ? Math.max(seg - 1, 0) : u.seg }); glue = null; }
       units.push(u);
     }
     if (glue) units.push({ rows: glue.rows, h: glue.h, seg: Math.max(seg, 0) });
+    // drug groups (owner, 7 Nov 2026): a group band carries the height of its whole group, so a group starts on a new page
+    // unless all of it fits in the space left (no group leaves one or two cards on the next page)
+    for (let i = 0; i < units.length; i++) if (units[i].gt) { let g = units[i].h; for (let j = i + 1; j < units.length && !units[j].gt && !units[j].title; j++) g += units[j].h; units[i].gh = g; }
     if (process.env.DBG === key) console.log(cap, ch.cont, JSON.stringify(units.map(u => [u.seg, u.rows.flat().join(','), Math.round(u.h), u.cb ? 'c' + Math.round(A[u.rows[0][0]].js) : ''])));
     // 2) per topic, choose the page breaks that leave the most even pages (least sum of squared gaps): no nearly empty last page
     const fills = [];
@@ -137,17 +140,42 @@ const MARGIN = 42, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
       // that fits (up to 3 boxes ahead) moves up into the gap; space is left only at the topic's end
       const FIX = (() => { try { return JSON.parse(fs.readFileSync(path.join(__dirname, 'content', 'capfix.json'), 'utf8')); } catch (e) { return {}; } })();
       const capOf = (pi) => cap - ((FIX[key] || {})[pages.length + pi] || 0);
-      const P = [], F = []; {
+      const P = [], F = [];
+      if (U.some(u => u.gt)) {   // drug groups (owner, 7 Nov 2026): a group stays on one page when it fits; a bigger group starts a
+        // new page and its cards are shared evenly over its pages; a small group joins the page before it only when all of it fits
+        const G = []; U.forEach(u => { if (u.gt || !G.length) G.push([]); G[G.length - 1].push(u); });
+        let cur = null, used = 0;
+        const open = () => { P.push([]); F.push(0); cur = P.length - 1; used = P.length === 1 ? 0 : cont; };
+        const put = (u) => { P[cur].push(...u.rows); used += u.h; F[cur] = cap - used; };
+        for (const g of G) {
+          const T = g.reduce((a, u) => a + u.h, 0);
+          if (cur !== null && used + T <= cap) { g.forEach(put); continue; }
+          if (T <= cap - cont || cur === null) { open(); if (T <= cap - used) { g.forEach(put); continue; } }
+          else open();
+          // big group: fewest pages, then the most even
+          let k = 1, ok = false;
+          for (; k < 12 && !ok; k++) { let pg = 1, hh = used; ok = true;
+            for (const u of g) { if (hh + u.h > cap) { pg++; hh = cont; } hh += u.h; } if (pg <= k) { ok = true; break; } ok = false; }
+          const target = T / k; let acc = 0, pi = 0;
+          g.forEach((u, idx) => {
+            const left = g.length - idx;
+            if (used + u.h > cap || (pi < k - 1 && acc + u.h / 2 > target * (pi + 1) && P[cur].length)) { open(); pi++; }
+            put(u); acc += u.h;
+          });
+        }
+      } else {
         const R = U.map((u, i) => i);
         while (R.length) {
           const first = R[0]; let h = (P.length === 0 ? 0 : cont) - (U[first].rv ? GAP : 0) + (U[first].cb ? CONT_TOP : 0) + U[first].h;
           if (h > cap) report.push(`${key} a box is taller than a page`);
           const rs = [...U[first].rows]; R.shift();
           while (R.length) {
+            if (U[R[0]].gt && h + U[R[0]].gh > capOf(P.length)) break;
             if (h + U[R[0]].h <= capOf(P.length)) { h += U[R[0]].h; rs.push(...U[R.shift()].rows); continue; }
             let moved = false;
             for (let a = 1; a < Math.min(R.length, 7); a++) {
               const u = U[R[a]];
+              if (u.gt) break;
               if (u.cb || u.rv || u.title) continue;
               let e = a + 1, hh = u.h; while (e < R.length && U[R[e]].cb) { hh += U[R[e]].h; e++; }   // a split box moves up whole
               if (h + hh > capOf(P.length)) continue;
