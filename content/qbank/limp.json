@@ -1,0 +1,142 @@
+[
+ {
+  "q": "A 2-year-old has fever of 39.4 °C, refuses to stand and holds the right hip flexed and externally rotated. WBC is 18 000/mm³ and ESR 65 mm/h. The most appropriate next step is:",
+  "o": [
+   "Oral ibuprofen and review in 48 hours",
+   "Ultrasound-guided hip aspiration and surgical drainage with IV antibiotics",
+   "X-ray of the pelvis and discharge",
+   "MRI of the hip next week",
+   "Skin traction for two weeks"
+  ],
+  "a": 1,
+  "e": "All four Kocher criteria are present: septic arthritis is very likely; the hip is aspirated and washed out, and IV antibiotics are started.",
+  "k": "kocher criteria",
+  "s": "new"
+ },
+ {
+  "q": "The commonest organism causing septic arthritis in children of all ages is:",
+  "o": [
+   "Streptococcus pneumoniae",
+   "Kingella kingae",
+   "Staphylococcus aureus",
+   "Salmonella",
+   "Haemophilus influenzae type b"
+  ],
+  "a": 2,
+  "e": "Staph aureus is commonest at all ages; Kingella in under-4s; Salmonella in sickle cell disease.",
+  "k": "staphylococcus aureus",
+  "s": "new"
+ },
+ {
+  "q": "A 6-year-old boy has limped for 2 days, one week after a cold. He is afebrile, playful and bears weight. Hip rotation is mildly painful; WBC and ESR are normal. The most likely diagnosis is:",
+  "o": [
+   "Septic arthritis",
+   "Perthes disease",
+   "Transient synovitis",
+   "Slipped capital femoral epiphysis",
+   "Juvenile idiopathic arthritis"
+  ],
+  "a": 2,
+  "e": "A well child after a viral illness, bearing weight, with normal markers: transient synovitis.",
+  "k": "transient synovitis",
+  "s": "bank"
+ },
+ {
+  "q": "A 13-year-old obese boy has had knee pain and a limp for 3 weeks. When the hip is flexed, the leg rolls into external rotation. The best investigation is:",
+  "o": [
+   "Knee MRI",
+   "X-ray of both hips including frog-leg lateral views",
+   "Joint aspiration of the knee",
+   "Bone scan",
+   "Serum ASO titre"
+  ],
+  "a": 1,
+  "e": "Classic SCFE: hip pain referred to the knee; frog-leg lateral views show the slip.",
+  "k": "frog-leg lateral",
+  "s": "new"
+ },
+ {
+  "q": "In Perthes disease, which hip movements are limited first?",
+  "o": [
+   "Flexion and extension",
+   "Adduction and external rotation",
+   "Abduction and internal rotation",
+   "Extension only",
+   "No movement is limited"
+  ],
+  "a": 2,
+  "e": "Avascular necrosis of the femoral head limits abduction and internal rotation.",
+  "k": "abduction and internal rotation",
+  "s": "new"
+ },
+ {
+  "q": "Acute osteomyelitis in a child with sickle cell disease is characteristically caused by:",
+  "o": [
+   "Pseudomonas",
+   "Salmonella",
+   "Streptococcus pyogenes",
+   "Mycobacterium tuberculosis",
+   "Brucella"
+  ],
+  "a": 1,
+  "e": "Salmonella is the classic organism in sickle cell disease; ceftriaxone covers it.",
+  "k": "salmonella",
+  "s": "new"
+ },
+ {
+  "q": "In acute osteomyelitis, the plain X-ray usually becomes abnormal after:",
+  "o": [
+   "24 hours",
+   "3 days",
+   "10–14 days",
+   "6 weeks",
+   "3 months"
+  ],
+  "a": 2,
+  "e": "Periosteal reaction appears after 10–14 days; MRI is the best early test.",
+  "k": "10–14 days",
+  "s": "new"
+ },
+ {
+  "q": "All of the following are features of growing pains EXCEPT:",
+  "o": [
+   "Bilateral leg pain",
+   "Pain in the evening or at night",
+   "Relieved by massage",
+   "Limp in the morning",
+   "Normal examination"
+  ],
+  "a": 3,
+  "e": "A limp, morning pain or one-sided pain are red flags that exclude growing pains.",
+  "k": "growing pains",
+  "s": "new"
+ },
+ {
+  "q": "A 9-year-old has a painful swollen knee 2 weeks after bloody diarrhoea. Joint fluid is sterile. The diagnosis is:",
+  "o": [
+   "Septic arthritis",
+   "Reactive arthritis",
+   "Rheumatic fever",
+   "Oligoarticular JIA",
+   "Haemarthrosis"
+  ],
+  "a": 1,
+  "e": "Sterile arthritis 1–4 weeks after a gut infection is reactive arthritis.",
+  "k": "reactive arthritis",
+  "s": "new"
+ },
+ {
+  "q": "A child treated for septic arthritis still has fever and a rising CRP after 72 hours of IV antibiotics. The next step is:",
+  "o": [
+   "Stop antibiotics",
+   "Add oral steroids",
+   "Repeat imaging and re-drain the joint, review the culture",
+   "Switch to oral antibiotics",
+   "Discharge home"
+  ],
+  "a": 2,
+  "e": "Persistent fever means undrained pus, adjacent osteomyelitis or a resistant organism.",
+  "k": "failure",
+  "s": "new"
+ }
+]

@@ -507,3 +507,15 @@ GIT | Gastrointestinal tract
 BSA | Body surface area
 Qp:Qs | ratio of pulmonary to systemic blood flow
 UMN | Upper motor neurone
+ILAR | International League of Associations for Rheumatology (classification of JIA)
+ANCA | Antineutrophil cytoplasmic antibody (c-ANCA: granulomatosis with polyangiitis)
+FMF | Familial Mediterranean fever
+MEFV | The gene of familial Mediterranean fever (codes for pyrin)
+PFAPA | Periodic fever, aphthous stomatitis, pharyngitis and cervical adenitis
+MIS-C | Multisystem inflammatory syndrome in children (after COVID-19)
+JDM | Juvenile dermatomyositis
+SSA / SSB | Ro and La antigens; anti-Ro (SSA) and anti-La (SSB) antibodies cause neonatal lupus
+TMJ | Temporomandibular (jaw) joint
+EMG | Electromyography: recording of the electrical activity of muscle
+anti-Sm | Anti-Smith antibody: the most specific antibody for SLE
+anti-CCP | Anti-cyclic citrullinated peptide antibody (poor-prognosis rheumatoid arthritis)

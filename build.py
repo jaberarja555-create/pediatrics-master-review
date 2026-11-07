@@ -452,7 +452,7 @@ def contents_pages(book, rr_page):
         html_ = (f'{part}<div class="tch c{ch["no"]}{"" if w else " soon"}"><div class="tbh"{dp}>{bg}<small>Chapter {ch["no"]}</small>'
                  f'<b>{ch["title"]}</b><span class="tpg">{nt} topic{"s" * (nt > 1)} · {rng}</span></div>'
                  f'<div class="tcg">{cells}</div></div>')
-        blocks.append((74 + 28 * (-(-nt // 3) - 1) + (26 if part else 0), html_))
+        blocks.append((70 + 26 * (-(-nt // 3) - 1) + (26 if part else 0), html_))
     rr = (f'<div class="trr"><div class="tc" data-p="{rr_page}"><i>RR</i><span>Rapid review · every clue → answer, '
           f'key numbers and test-yourself questions, chapter by chapter</span><em>{rr_page}</em></div></div>')
     blocks.append((56, rr))

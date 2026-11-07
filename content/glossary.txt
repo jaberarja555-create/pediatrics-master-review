@@ -2279,3 +2279,33 @@ spotter / spotters | OSCE station showing a picture, X-ray or instrument to name
 haematological | Related to the blood and blood-forming organs
 pulsation / pulsations | Visible beating movement of the heart or a vessel
 suppository | A drug in a small solid form given into the rectum
+heliotrope rash | Violet discoloration and swelling of the upper eyelids: sign of dermatomyositis
+Gottron papules / Gottron's papules | Red scaly papules over the knuckles, elbows and knees: sign of dermatomyositis
+iridocyclitis | Inflammation of the iris and ciliary body (anterior uveitis)
+micrognathia | Small lower jaw
+sequestrum | A piece of dead bone separated from living bone in chronic osteomyelitis
+Kingella kingae | Gram-negative bacterium causing bone and joint infection in children under 4; hard to culture
+Takayasu arteritis | Large-vessel vasculitis of the aorta and its branches (absent arm pulses), mostly in young females
+livedo reticularis | Net-like purple mottling of the skin
+mononeuritis / mononeuritis multiplex | Damage to one or several separate peripheral nerves, typical of vasculitis
+amyloidosis / AA amyloidosis | Deposits of abnormal protein (amyloid) in organs; AA amyloid follows chronic inflammation and damages the kidneys
+pyrin | Protein made by the MEFV gene that controls inflammation; faulty in familial Mediterranean fever
+triamcinolone / triamcinolone hexacetonide | Long-acting steroid injected into an inflamed joint
+anakinra | Biological drug blocking interleukin-1 (systemic JIA, macrophage activation syndrome)
+tocilizumab | Biological drug blocking interleukin-6 (systemic JIA)
+adalimumab | Biological anti-TNF antibody used in JIA and uveitis
+mycophenolate / mycophenolate mofetil | Immunosuppressive drug used in lupus nephritis
+Libman–Sacks endocarditis | Sterile wart-like vegetations on heart valves in SLE
+Raynaud phenomenon | Fingers turn white, then blue, then red on cold exposure (vasospasm)
+aldolase | Muscle enzyme raised in myositis
+antiphospholipid antibodies | Antibodies (anticardiolipin, lupus anticoagulant) that cause arterial and venous thrombosis
+anti-histone antibodies | Antibodies typical of drug-induced lupus
+vasculopathy | Disease of the blood vessel wall
+polyarteritis nodosa | Necrotising vasculitis of medium-sized arteries with microaneurysms
+toddler's fracture | Spiral fracture of the tibia in a toddler after a minor twisting fall
+growing pains | Benign bilateral evening leg pains of children with a normal examination
+transient synovitis / toxic synovitis | Self-limiting inflammation of the hip lining after a viral illness in children 3–10 years
+autoinflammatory | Inflammation switched on by the innate immune system without autoantibodies (e.g. familial Mediterranean fever)
+procainamide | Antiarrhythmic drug that can cause drug-induced lupus
+minocycline | Tetracycline antibiotic (acne) that can cause drug-induced lupus
+macrophage activation syndrome | Life-threatening flare of systemic JIA with fever, falling blood counts and very high ferritin

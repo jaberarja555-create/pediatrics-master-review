@@ -1,58 +1,142 @@
 [
-{
-"q": "The most important complication of Kawasaki disease is:",
-"o": [
-"Arthritis",
-"Coronary artery aneurysm",
-"Nephritis",
-"Uveitis",
-"Hepatitis"
-],
-"a": 1,
-"e": "Echo needed.",
-"k": "coronary artery aneurysms",
-"s": "bank"
-},
-{
-"q": "Treatment of Kawasaki disease is:",
-"o": [
-"Steroids alone",
-"IVIG + aspirin",
-"Penicillin",
-"NSAID alone",
-"Methotrexate"
-],
-"a": 1,
-"e": "IVIG within 10 days.",
-"k": "ivig 2 g/kg",
-"s": "bank"
-},
-{
-"q": "A 3-year-old girl with a swollen knee for 2 months and positive ANA is at risk of:",
-"o": [
-"Carditis",
-"Silent uveitis",
-"Nephritis",
-"Pericarditis",
-"Stroke"
-],
-"a": 1,
-"e": "Slit-lamp screening.",
-"k": "chronic anterior uveitis",
-"s": "bank"
-},
-{
-"q": "The commonest cause of limp in a well 5-year-old after a viral illness is:",
-"o": [
-"Septic arthritis",
-"Perthes",
-"Transient synovitis",
-"JIA",
-"SCFE"
-],
-"a": 2,
-"e": "Self-limiting.",
-"k": "transient synovitis",
-"s": "bank"
-}
+ {
+  "q": "A 3-year-old girl has had a swollen right knee for 2 months. She is well; ANA is positive. The most important screening for her is:",
+  "o": [
+   "Echocardiogram",
+   "Slit-lamp eye examination every 3 months",
+   "Renal biopsy",
+   "Bone marrow",
+   "Hearing test"
+  ],
+  "a": 1,
+  "e": "ANA-positive oligoarticular JIA carries a high risk of silent chronic anterior uveitis.",
+  "k": "slit-lamp",
+  "s": "bank"
+ },
+ {
+  "q": "The minimum duration of arthritis required to diagnose JIA is:",
+  "o": [
+   "1 week",
+   "2 weeks",
+   "6 weeks",
+   "3 months",
+   "6 months"
+  ],
+  "a": 2,
+  "e": "JIA: onset before 16 years, arthritis ≥ 6 weeks, other causes excluded.",
+  "k": "6 weeks",
+  "s": "new"
+ },
+ {
+  "q": "The commonest subtype of JIA is:",
+  "o": [
+   "Systemic",
+   "Polyarticular RF-positive",
+   "Oligoarticular",
+   "Enthesitis-related",
+   "Psoriatic"
+  ],
+  "a": 2,
+  "e": "Oligoarticular JIA accounts for about half of cases.",
+  "k": "oligoarticular (about 50%",
+  "s": "new"
+ },
+ {
+  "q": "A 4-year-old has had daily fever spikes for 3 weeks, a salmon-pink rash that appears with the fever, hepatosplenomegaly and swollen knees. Before diagnosing systemic JIA the most important test is:",
+  "o": [
+   "ANA",
+   "Rheumatoid factor",
+   "Blood film and bone marrow to exclude leukaemia",
+   "HLA-B27",
+   "Slit-lamp examination"
+  ],
+  "a": 2,
+  "e": "Leukaemia, kala-azar and TB mimic systemic JIA; steroids may mask leukaemia.",
+  "k": "blood film",
+  "s": "new"
+ },
+ {
+  "q": "All of the following are causes of hepatomegaly EXCEPT:",
+  "o": [
+   "Glycogen storage disease type 1",
+   "Systemic juvenile idiopathic arthritis",
+   "Galactosaemia",
+   "Heart failure",
+   "Physiological jaundice of the newborn"
+  ],
+  "a": 4,
+  "e": "Systemic JIA causes hepatosplenomegaly; physiological jaundice does not cause hepatomegaly.",
+  "k": "hepatosplenomegaly",
+  "s": "bank"
+ },
+ {
+  "q": "A child with systemic JIA has persistent fever, falling ESR, platelets 60 000/mm³ and ferritin 15 000 ng/mL. The diagnosis is:",
+  "o": [
+   "Remission",
+   "Macrophage activation syndrome",
+   "Amyloidosis",
+   "Methotrexate toxicity",
+   "Uveitis"
+  ],
+  "a": 1,
+  "e": "MAS: fever with falling ESR and blood counts and very high ferritin; treat with IV methylprednisolone.",
+  "k": "macrophage activation syndrome",
+  "s": "new"
+ },
+ {
+  "q": "The first-line disease-modifying drug in JIA is:",
+  "o": [
+   "Hydroxychloroquine",
+   "Methotrexate once weekly",
+   "Cyclophosphamide",
+   "Etanercept",
+   "Prednisolone"
+  ],
+  "a": 1,
+  "e": "Methotrexate 10–15 mg/m² once weekly with folic acid.",
+  "k": "methotrexate",
+  "s": "new"
+ },
+ {
+  "q": "The treatment of choice for a single swollen knee in oligoarticular JIA is:",
+  "o": [
+   "Oral prednisolone",
+   "Intra-articular triamcinolone hexacetonide",
+   "IV cyclophosphamide",
+   "Knee replacement",
+   "Long-term antibiotics"
+  ],
+  "a": 1,
+  "e": "Intra-articular steroid injection is the treatment of choice in oligoarticular disease.",
+  "k": "triamcinolone",
+  "s": "new"
+ },
+ {
+  "q": "A boy of 12 years with heel pain, low back stiffness and a painful red eye most likely has JIA associated with:",
+  "o": [
+   "ANA",
+   "Rheumatoid factor",
+   "HLA-B27",
+   "Anti-dsDNA",
+   "ASO"
+  ],
+  "a": 2,
+  "e": "Enthesitis-related arthritis: older boys, HLA-B27, acute anterior uveitis.",
+  "k": "hla-b27",
+  "s": "new"
+ },
+ {
+  "q": "A child with JIA of the left knee has a longer left leg. This is due to:",
+  "o": [
+   "Septic arthritis",
+   "Overgrowth from inflammation near the growth plate",
+   "Steroid treatment",
+   "Rickets",
+   "Perthes disease"
+  ],
+  "a": 1,
+  "e": "Inflammation increases blood flow to the growth plate, giving leg-length discrepancy.",
+  "k": "leg-length discrepancy",
+  "s": "new"
+ }
 ]

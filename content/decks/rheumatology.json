@@ -1,132 +1,187 @@
 [
  [
-  "JIA",
-  "JIA definition?",
-  "Arthritis < 16 yr lasting > 6 weeks, other causes excluded."
+  "Definition",
+  "Definition of JIA?",
+  "Arthritis starting before 16 years, lasting ≥ 6 weeks, other causes excluded."
  ],
  [
-  "JIA",
-  "Commonest subtype?",
-  "Oligoarticular."
+  "Definition",
+  "When does a joint have arthritis?",
+  "Swelling, or two of: limited movement, pain on movement, warmth."
  ],
  [
-  "JIA",
-  "Oligo-JIA eye risk?",
-  "Chronic anterior uveitis."
+  "Definition",
+  "How do young children with arthritis usually present?",
+  "Limp, morning stiffness or not using a limb (rarely pain)."
  ],
  [
-  "JIA",
-  "Eye screening?",
-  "Slit-lamp every 3–6 months."
+  "Subtypes",
+  "Commonest subtype of JIA?",
+  "Oligoarticular (about 50%)."
  ],
  [
-  "JIA",
-  "Systemic JIA fever?",
-  "Quotidian (daily spikes)."
+  "Subtypes",
+  "Number of joints in oligoarticular JIA?",
+  "1–4 joints in the first 6 months."
  ],
  [
-  "JIA",
-  "Systemic JIA rash?",
-  "Salmon-pink evanescent."
+  "Subtypes",
+  "Typical child with oligoarticular JIA?",
+  "Girl 1–5 years, knee or ankle, ANA positive."
  ],
  [
-  "JIA",
-  "Systemic JIA complication?",
-  "Macrophage activation syndrome."
+  "Subtypes",
+  "What is extended oligoarticular JIA?",
+  "Oligoarticular disease that reaches ≥ 5 joints after 6 months."
  ],
  [
-  "JIA",
-  "Enthesitis-related JIA?",
-  "Older boys, HLA-B27."
+  "Subtypes",
+  "Joint rarely involved in oligoarticular JIA?",
+  "The hip."
  ],
  [
-  "JIA",
-  "First DMARD?",
-  "Methotrexate weekly."
+  "Subtypes",
+  "Number of joints in polyarticular JIA?",
+  "5 or more."
  ],
  [
-  "Limp",
-  "Commonest limp 3–10 yr?",
-  "Transient synovitis."
+  "Subtypes",
+  "JIA subtype with the worst joint outcome?",
+  "Polyarticular RF-positive (adolescent girls)."
  ],
  [
-  "Limp",
-  "Perthes disease?",
-  "Avascular femoral head, boys 4–8."
+  "Subtypes",
+  "Fever pattern of systemic JIA?",
+  "Quotidian: one or two spikes a day, normal between, for ≥ 2 weeks."
  ],
  [
-  "Limp",
-  "SCFE?",
-  "Obese adolescent, knee pain."
+  "Subtypes",
+  "Rash of systemic JIA?",
+  "Evanescent salmon-pink rash that comes with the fever."
  ],
  [
-  "Limp",
-  "Septic arthritis treatment?",
-  "Aspiration/washout + IV antibiotics."
+  "Subtypes",
+  "Other features of systemic JIA?",
+  "Hepatosplenomegaly, lymphadenopathy, serositis."
  ],
  [
-  "Limp",
-  "Kocher criteria?",
-  "Fever, non-weight-bearing, ESR > 40, WBC > 12 000."
+  "Subtypes",
+  "Genetic marker of enthesitis-related arthritis?",
+  "HLA-B27."
  ],
  [
-  "Kawasaki",
-  "Diagnosis?",
-  "Fever ≥ 5 days + 4 of 5 criteria."
+  "Subtypes",
+  "Typical child with enthesitis-related arthritis?",
+  "Boy over 6 years with heel pain, back stiffness, painful red eye."
  ],
  [
-  "Kawasaki",
-  "Criteria?",
-  "Eyes, mouth, hands/feet, rash, node."
+  "Subtypes",
+  "Features of psoriatic JIA?",
+  "Dactylitis, nail pitting, psoriasis in self or first-degree relative."
  ],
  [
-  "Kawasaki",
-  "Main complication?",
-  "Coronary aneurysm."
+  "Diagnosis",
+  "Is there a diagnostic test for JIA?",
+  "No; it is a clinical diagnosis of exclusion."
  ],
  [
-  "Kawasaki",
-  "Treatment?",
-  "IVIG 2 g/kg + aspirin."
+  "Diagnosis",
+  "What must be excluded before diagnosing systemic JIA?",
+  "Leukaemia (blood film, marrow), kala-azar, TB, SLE."
  ],
  [
-  "Kawasaki",
-  "Treat within?",
-  "10 days."
+  "Diagnosis",
+  "Use of ANA in JIA?",
+  "Predicts uveitis risk."
  ],
  [
-  "Kawasaki",
-  "Platelets?",
-  "High in week 2–3."
+  "Diagnosis",
+  "Use of RF and anti-CCP in JIA?",
+  "Identify the polyarticular form with poor prognosis."
  ],
  [
-  "Kawasaki",
-  "Low-dose aspirin duration?",
-  "6–8 weeks."
+  "Diagnosis",
+  "Does a negative ANA or RF exclude JIA?",
+  "No."
  ],
  [
-  "SLE",
-  "Typical patient?",
-  "Adolescent girl."
+  "Complications",
+  "Silent eye complication of JIA?",
+  "Chronic anterior uveitis (iridocyclitis)."
  ],
  [
-  "SLE",
-  "Specific antibody?",
-  "Anti-dsDNA, anti-Sm."
+  "Complications",
+  "Eye screening in ANA-positive oligoarticular JIA?",
+  "Slit-lamp examination every 3 months."
  ],
  [
-  "SLE",
-  "Complement?",
-  "Low C3/C4."
+  "Complications",
+  "Cause of leg-length discrepancy in knee JIA?",
+  "Overgrowth of the inflamed knee."
  ],
  [
-  "SLE",
-  "Drug for all patients?",
-  "Hydroxychloroquine."
+  "Complications",
+  "Effect of jaw (TMJ) involvement in JIA?",
+  "Micrognathia."
  ],
  [
-  "SLE",
-  "Neonatal lupus heart sign?",
-  "Congenital heart block."
+  "Complications",
+  "Late renal complication of uncontrolled JIA?",
+  "Amyloidosis (nephrotic syndrome)."
+ ],
+ [
+  "MAS",
+  "What is macrophage activation syndrome?",
+  "Life-threatening flare of systemic JIA with consumption of blood cells."
+ ],
+ [
+  "MAS",
+  "ESR in macrophage activation syndrome?",
+  "Falls (fibrinogen consumed) while fever persists."
+ ],
+ [
+  "MAS",
+  "Laboratory picture of MAS?",
+  "Falling platelets and WBC, very high ferritin, high triglycerides, low fibrinogen."
+ ],
+ [
+  "MAS",
+  "Treatment of MAS?",
+  "IV methylprednisolone with ciclosporin or anakinra."
+ ],
+ [
+  "Treatment",
+  "First step for pain and stiffness in JIA?",
+  "NSAIDs (ibuprofen or naproxen)."
+ ],
+ [
+  "Treatment",
+  "Treatment of choice for oligoarticular JIA?",
+  "Intra-articular triamcinolone hexacetonide."
+ ],
+ [
+  "Treatment",
+  "First-line DMARD in JIA and its dose?",
+  "Methotrexate 10–15 mg/m² once weekly + folic acid."
+ ],
+ [
+  "Treatment",
+  "Monitoring on methotrexate?",
+  "CBC and liver tests every 1–3 months."
+ ],
+ [
+  "Treatment",
+  "Biological agents for systemic JIA?",
+  "Anti-IL-6 (tocilizumab) and anti-IL-1 (anakinra)."
+ ],
+ [
+  "Treatment",
+  "When are oral steroids used in JIA?",
+  "Systemic JIA with serositis or MAS, or a short bridge."
+ ],
+ [
+  "Treatment",
+  "When to step up to a biological agent?",
+  "Active joints after 3 months of adequate methotrexate."
  ]
 ]

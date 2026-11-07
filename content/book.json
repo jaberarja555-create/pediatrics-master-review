@@ -597,11 +597,32 @@
    "color": "#546e7a",
    "topics": [
     {
-     "id": "rheumatology",
+     "id": "limp",
      "no": "13.1",
-     "title": "Juvenile Arthritis & Kawasaki Disease",
-     "short": "Rheumatology",
-     "sub": "JIA · Kawasaki · SLE"
+     "title": "Joint Pain & the Limping Child",
+     "short": "Limp",
+     "sub": "Septic arthritis · transient synovitis · Perthes · SCFE"
+    },
+    {
+     "id": "rheumatology",
+     "no": "13.2",
+     "title": "Juvenile Idiopathic Arthritis",
+     "short": "JIA",
+     "sub": "Subtypes · uveitis · methotrexate"
+    },
+    {
+     "id": "sle",
+     "no": "13.3",
+     "title": "SLE & Juvenile Dermatomyositis",
+     "short": "SLE",
+     "sub": "Lupus nephritis · neonatal lupus · JDM"
+    },
+    {
+     "id": "kawasaki",
+     "no": "13.4",
+     "title": "Kawasaki Disease, Vasculitis & Periodic Fever",
+     "short": "Kawasaki",
+     "sub": "IVIG + aspirin · vasculitis · FMF"
     }
    ]
   },
@@ -769,7 +790,7 @@
    "febrile-seizures",
    "dm",
    "genetics",
-   "rheumatology",
+   "limp",
    "etat",
    "history"
   ],
