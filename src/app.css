@@ -1447,7 +1447,7 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 
 /* owner's emblem (Nov 2026): app icon, top bar, front-matter headers, chapter covers, Rapid Review banner, subscription */
 .bar .blogo{width:34px;height:34px;flex:none;margin-right:9px;border-radius:50%;box-shadow:0 0 0 1px rgba(230,195,120,.35)}
-.toc-h::after{content:'';position:absolute;right:16px;top:50%;width:76px;height:76px;transform:translateY(-50%);background:url(img/logo.webp) center/contain no-repeat;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+.toc-h::after{content:'';position:absolute;right:16px;top:50%;width:76px;height:76px;transform:translateY(-50%);background:url(img/logo2.webp) center/contain no-repeat;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
 .page:has(.toc.ccg) .toc-h::after,.page.tocp .toc-h::after{width:62px;height:62px}
 .mz h1.mzt.rrh .rrlogo{width:54px;height:54px;margin:-6px 12px -6px -4px;flex:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
 .chcov .cvseal{position:absolute;top:52px;left:46px;width:150px;height:150px;z-index:2;filter:drop-shadow(0 4px 12px rgba(0,0,0,.4))}

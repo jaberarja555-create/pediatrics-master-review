@@ -434,7 +434,7 @@ def chapter_cover(book, ch, pno):
             f'<div class="cvtag">A concise revision guide for medical students · {book["edition"]}</div></div>'
             f'<div class="cvhead"><div class="cvno"><span>Part {PARTS[part_no - 1]} · {part}</span><b>Chapter {ch["no"]}</b></div>'
             f'<h1 class="cvt">{ch["title"]}</h1></div>'
-            f'<img class="cvseal" src="img/logo.webp" alt=""><div class="cvbody"><div class="cvimg" style="height:{cover_h(ch["no"])}px"><img src="img/chcover_{ch["no"]}.jpg" alt=""></div>'
+            f'<img class="cvseal" src="img/logo2.webp" alt=""><div class="cvbody"><div class="cvimg" style="height:{cover_h(ch["no"])}px"><img src="img/chcover_{ch["no"]}.jpg" alt=""></div>'
             f'<div class="cvin"><h3>In this chapter</h3>{rows}</div></div>'
             f'<div class="cvbot"><span>Pediatrics Master Review</span><i></i><span>{book["edition"]}</span></div></section>\n')
 
@@ -650,7 +650,7 @@ def build():
         tps = [a[4] for a in stream if a[0] == 'title']
         exam = [(x, t) for t in tps for x in chapter_exam(t)]
         if exam:
-            head = ('<h1 class="mzt rrh"><img class="rrlogo" src="img/logo.webp" alt="">Rapid Review<small>Every clue, formula and question, chapter by chapter</small></h1>'
+            head = ('<h1 class="mzt rrh"><img class="rrlogo" src="img/logo2.webp" alt="">Rapid Review<small>Every clue, formula and question, chapter by chapter</small></h1>'
                     if not rr_streams else '') + f'<h2 class="rrc"><span class="no">{ch["no"]}</span>{ch["title"]}</h2>'
             rs = [('title', head, True, 'Rapid Review', tps[0])]
             rs.extend(('rvt', r, w, 'Rapid Review', t) for (r, w), t in exam)

@@ -29,7 +29,7 @@ function trialPost(start){if(SRV==null)return Promise.resolve(null);return fetch
    start is reconciled on the next launch) and the app reloads after a short animation with its own sound */
 function choiceSnd(k){if(k==='trial')chime([523.3,659.3,784,1046.5,1318.5,1568],'triangle');else if(k==='paid')chime([392,523.3,659.3,784],'sine');else if(k==='code')chime([880,1174.7],'sine');else if(k==='ok')chime([523.3,784,1046.5,1568],'triangle');else chime([659.3,523.3],'sine')}
 function openingFx(msg){var d=$('opening');if(!d){d=document.createElement('div');d.id='opening';document.body.appendChild(d)}
-  d.innerHTML='<img src="img/logo.webp" alt=""><b class="ar" dir="rtl">'+msg+'</b><i><span></span></i>';requestAnimationFrame(function(){d.classList.add('on')})}
+  d.innerHTML='<img src="img/logo2.webp" alt=""><b class="ar" dir="rtl">'+msg+'</b><i><span></span></i>';requestAnimationFrame(function(){d.classList.add('on')})}
 function startTrial(){st('chz','1');var now=Date.now(),t={s:now,m:now};try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}
   if(SRV!=null)try{fetch(SRV.replace(/\/$/,'')+'/trial',{method:'POST',keepalive:true,cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({dev:DEV,start:now})}).catch(function(){})}catch(e){}
   choiceSnd('trial');$('sheet').hidden=true;openingFx('جارٍ فتح الكتاب كاملًا · '+trialDur());setTimeout(function(){location.reload()},900)}
@@ -57,7 +57,7 @@ function freeList(){if(ACC.free_label)return '<b>'+ACC.free_label.replace(/([A-Z
 function E(t){return '<span class="en">'+t+'</span>'}
 function subHtml(code){var wa=(ACC.whatsapp||'').replace(/[^0-9]/g,''),who=esc(ACC.contact_name||'المؤلفين');
   var msg='السلام عليكم '+(ACC.contact_name||'')+'، أرغب في الاشتراك في كتاب Pediatrics Master Review.';
-  return '<div class="subx ar" dir="rtl"><img class="sublogo" src="img/logo.webp" alt="">'+
+  return '<div class="subx ar" dir="rtl"><img class="sublogo" src="img/logo2.webp" alt="">'+
   (TRIALNEW?'<button type="button" class="chc tr" data-trial="1"><span><b>جرّب أولًا: النسخة التجريبية لمدة '+trialDur()+'</b><small>مجانًا، الكتاب كله مع كل الأدوات</small></span></button>':'')+'<p class="lead">'+freeMsg()+' اشترك مرة واحدة لتفتح <b>الكتاب كاملًا</b>، وكل البطاقات، وبنك الأسئلة كاملًا، طوال هذه الطبعة.</p>'+
   (ACC.price?'<div class="price">قيمة الاشتراك: '+esc(ACC.price)+'</div>':'')+
   '<b class="ssth">طريقة الاشتراك</b><ol class="sst">'+
@@ -84,7 +84,7 @@ function openChoose(){
       ic2='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8l4 10h12l4-10-6 4-4-7-4 7z"/></svg>',
       ic3='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2L20 3M16 7l3 3M14 9l2 2"/></svg>';
   
-  openSheet('مرحبًا بك في الكتاب','<div class="chz ar" dir="rtl"><img class="sublogo" src="img/logo.webp" alt=""><p class="lead">اختر طريقة فتح الكتاب:</p>'+
+  openSheet('مرحبًا بك في الكتاب','<div class="chz ar" dir="rtl"><img class="sublogo" src="img/logo2.webp" alt=""><p class="lead">اختر طريقة فتح الكتاب:</p>'+
     (TRIALNEW?'<button type="button" class="chc tr" id="chTrial"><i>'+ic1+'</i><span><b>النسخة التجريبية لمدة '+trialDur()+'</b><small>مجانًا: الكتاب كله، البطاقات، بنك الأسئلة، المحاضرات وكل أدوات المذاكرة. يبدأ الوقت من لحظة الضغط، وبعده يبقى '+esc(ACC.free_label||'جزء من الكتاب')+' مفتوحًا.</small></span></button>'
       :'<div class="chc tr off"><i>'+ic1+'</i><span><b>النسخة التجريبية'+(INTRIAL?': '+trialTxt():': انتهت')+'</b><small>'+(INTRIAL?'الكتاب كله مفتوح لك حتى نهاية الفترة.':'استُخدمت الفترة التجريبية على هذا الجهاز، ويبقى '+esc(ACC.free_label||'جزء من الكتاب')+' مفتوحًا.')+'</small></span></div>')+
     '<button type="button" class="chc pd" id="chPaid"><i>'+ic2+'</i><span><b>الاشتراك في النسخة المدفوعة</b><small>'+(ACC.price?esc(ACC.price)+' · ':'')+'الكتاب كاملًا طوال الطبعة على جهازين، مع مزامنة ملاحظاتك.</small></span></button>'+
@@ -1320,7 +1320,7 @@ function welcomeTitle(){var n=(!LOCKED&&st('code')&&st('name'))||'';if(!n)return
 function welcomeName(){var t=document.querySelector('#welc .wt');if(t)t.textContent=welcomeTitle()}
 (function(){if((TRIALNEW&&!st('chz'))||(TRIALEND&&TRIAL&&!TRIAL.seen))return;   // owner: when the opening choice is due it shows at once, without the welcome card
   var code=!LOCKED&&st('code');var w=document.createElement('div');w.id='welc';w.setAttribute('role','dialog');
-  w.innerHTML='<div class="wcard"><img src="img/logo.webp" alt=""><div class="wt" dir="auto"></div>'+
+  w.innerHTML='<div class="wcard"><img src="img/logo2.webp" alt=""><div class="wt" dir="auto"></div>'+
     (code?'<div class="wsig"><span class="wln"></span><span class="wc">Code <b dir="ltr">'+esc(code)+'</b></span></div>':'<div class="ws">Pediatrics Master Review · 1st edition</div>')+'</div>';
   document.body.appendChild(w);welcomeName();
   function close(){if(!w.parentNode)return;w.classList.add('out');setTimeout(function(){if(w.parentNode)w.parentNode.removeChild(w)},450)}
