@@ -399,7 +399,7 @@
   },
   {
    "no": 8,
-   "title": "Haematology & Oncology",
+   "title": "Haematology",
    "short": "Haematology",
    "tab": "Blood",
    "color": "#8e2c6b",
@@ -445,6 +445,13 @@
      "title": "Lymphoma & Solid Tumours",
      "short": "Tumours",
      "sub": "Burkitt · Wilms · neuroblastoma · retinoblastoma"
+    },
+    {
+     "id": "immunodeficiency",
+     "no": "8.7",
+     "title": "Immunodeficiency & Allergy",
+     "short": "Immunity",
+     "sub": "When to suspect · anaphylaxis"
     }
    ]
   },
@@ -568,7 +575,7 @@
   },
   {
    "no": 12,
-   "title": "Genetics, Immunity & Rheumatology",
+   "title": "Genetics & Rheumatology",
    "short": "Genetics",
    "tab": "Genetics",
    "color": "#00897b",
@@ -581,15 +588,8 @@
      "sub": "Down · Turner · Klinefelter · inheritance patterns"
     },
     {
-     "id": "immunodeficiency",
-     "no": "12.2",
-     "title": "Immunodeficiency & Allergy",
-     "short": "Immunity",
-     "sub": "When to suspect · anaphylaxis"
-    },
-    {
      "id": "rheumatology",
-     "no": "12.3",
+     "no": "12.2",
      "title": "Juvenile Arthritis & Kawasaki Disease",
      "short": "Rheumatology",
      "sub": "JIA · Kawasaki · SLE"

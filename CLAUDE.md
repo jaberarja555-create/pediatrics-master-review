@@ -203,7 +203,8 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   not written yet are shown dimmed without a page number). **Every new app feature must be added to the how-to pages.**
 - **Chapter covers:** a chapter opens with a cover page when `content/img/chcover_<no>.jpg` exists (owner's illustration).
 - **Emblem:** `content/img/logo.webp` (round seal) and icons `icon.png`, `icon-192.png`, `apple-touch-icon.png`. The current Pediatrics seal
-  is a stand-in drawn in the series style; replace it with the owner's own emblem when he sends it.
+  is the owner's seal (7 Nov 2026), cut from his chapter mock-ups and recoloured teal-navy + gold to match this book. Chapter covers 6–10 (Respiratory, Cardiology, Haematology, Nephrology, Neurology) from his mock-ups: three panels recomposed (900×450; 9–10 at 900×360 with a shorter picture box, app.css `.chcov.c9/.c10`) with a light grade toward the chapter colour.
+- **Chapter 8 is "Haematology"** (owner, 7 Nov 2026) and holds Immunodeficiency & Allergy as 8.7 (moved from chapter 12, now "Genetics & Rheumatology", 12.1–12.2).
 - **Home:** light design (series logo, cover card, Continue button, part photo banners, study tools, daily cards, progress tiles,
   day/night button). **Reader:** tools bar along the top; Contents and Listen in the bottom bar; blank note pages (صفحة); highlights re-anchor
   after a re-layout; tap the page number to go to a page; scrolling down hides the bars (a tap brings them back).

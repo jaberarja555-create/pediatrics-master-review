@@ -1685,3 +1685,7 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .tdi.soon{opacity:.45;cursor:default}
 .tdrr{margin-top:8px;border-top:1px solid rgba(255,255,255,.1);border-radius:0;padding-top:12px}
 .tdrr.cur .tdt{color:#f3d98b}
+/* chapters with more than 5 topics: a taller picture so the cover has no empty lower third (owner, 7 Nov 2026) */
+.chcov.many .cvimg { height:360px; } .chcov.many .cvin { top:830px; }
+.chcov.many:has(.cvin > :nth-child(8)) .cvimg { height:290px; } .chcov.many:has(.cvin > :nth-child(8)) .cvin { top:758px; }
+.chcov.c9 .cvimg, .chcov.c10 .cvimg { height:282px; } .chcov.c9 .cvin, .chcov.c10 .cvin { top:774px; }
