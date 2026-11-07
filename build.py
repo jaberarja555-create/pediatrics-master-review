@@ -802,8 +802,8 @@ def build():
 
     meta_pages = [{'id': 'cover', 'label': 'Cover'}]
     meta_pages += [{'id': f'contents-{i + 1}', 'label': 'Contents'} for i in range(n_contents)]
-    html_pages = [f'<section class="page" id="p1" data-id="cover"><div class="covbg" style="background-image:url(img/cover3.jpg)"></div>'
-                  f'<img class="covimg" src="img/cover3.jpg" alt="{book["subject"]} Master Review, {book["edition"]}, cover"></section>\n']
+    html_pages = [f'<section class="page" id="p1" data-id="cover"><div class="covbg" style="background-image:url(img/cover4.jpg)"></div>'
+                  f'<img class="covimg" src="img/cover4.jpg" alt="{book["subject"]} Master Review, {book["edition"]}, cover"></section>\n']
     if authors:
         meta_pages.insert(1, {'id': 'authors', 'label': 'About the authors'})
         html_pages.append(f'<section class="page ab" id="p2" data-id="authors" dir="rtl" lang="ar">{authors}{footer(book)}</section>\n')

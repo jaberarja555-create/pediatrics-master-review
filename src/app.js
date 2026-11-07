@@ -392,7 +392,7 @@ function refreshHome(){
 }
 $('pill').textContent=META.pill;
 $('contBtn').onclick=function(){goIdx(lastPage())};
-$('coverBtn').onclick=function(){goPage(0)};
+$('coverBtn').onclick=function(){goPage(0)};if($('hmCover')){$('hmCover').onclick=function(){goPage(0)};$('hmCover').style.cursor='pointer'}
 if(LOCKED||INTRIAL){$('trialCard').hidden=false;var tcu=function(){$('trialCard').querySelector('b').textContent=INTRIAL?'الفترة التجريبية · '+trialTxt():TRIALNEW?'جرّب الكتاب كله · '+trialDur()+' مجانًا':'النسخة المجانية';$('trialTxt').innerHTML=INTRIAL?'الكتاب كله مفتوح لك الآن. بعد انتهاء الفترة يبقى '+esc(ACC.free_label||'جزء من الكتاب')+' مفتوحًا.':TRIALNEW?'الكتاب كله مع كل الأدوات مجانًا، أو اشترك في النسخة المدفوعة.':freeMsg()+' اشترك لتفتح الكتاب كاملًا.';$('trialCard').querySelector('i').textContent=TRIALNEW?'اضغط هنا للاختيار':'اضغط هنا للاشتراك'};tcu();if(INTRIAL)setInterval(tcu,30000)}else if(!REVIEW&&st('code')){var pg=$('prog');if(pg){pg.parentNode.insertBefore($('trialCard'),pg.nextSibling);$('trialCard').style.marginTop='16px'}$('trialCard').hidden=false;$('trialCard').classList.add('subd');$('trialCard').querySelector('b').textContent='أنت مشترك · الكتاب مفتوح كاملًا';$('trialTxt').innerHTML='الكود <bdi dir="ltr">'+esc(st('code'))+'</bdi> · لنقل الكتاب إلى جهاز آخر';$('trialCard').querySelector('i').textContent='إدارة الجهاز'}if($('hmToc'))$('hmToc').onclick=function(){$('tocBtn').click()};
 $('rrTool').onclick=function(){goPage(META.rr-1)};
 if($('drTool')){if(META.dr)$('drTool').onclick=function(){goPage(META.dr-1)};else $('drTool').hidden=true}
