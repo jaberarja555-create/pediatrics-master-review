@@ -1,0 +1,34 @@
+{
+"sc": [
+"Diarrhoea 2 weeks ago, symmetric ascending weakness, areflexia, high CSF protein → <b>Guillain–Barré: IVIG, watch breathing</b>",
+"Boy 4 years, waddling, falls, Gowers sign, big calves, CK 15 000 → <b>Duchenne: genetic test</b>",
+"Floppy alert infant, tongue fasciculations, no reflexes → <b>SMA type 1</b>"
+],
+"f": [
+[
+"AFP",
+"Any child <b>< 15 yr</b> with sudden flaccid weakness: <b>notify + 2 stool samples</b> · polio (asymmetric), GBS, transverse myelitis, injection neuritis"
+],
+[
+"GBS",
+"After infection <b>1–3 wk</b> · ascending, <b>areflexia</b> · CSF: high protein, normal cells · <b>IVIG 2 g/kg</b> · ICU if vital capacity < 15–20 ml/kg"
+],
+[
+"Polio vs GBS",
+"Polio: fever, asymmetric, no sensory loss, CSF cells · GBS: symmetric, sensory symptoms · cord: <b>sensory level + urinary retention</b>"
+],
+[
+"Duchenne",
+"X-linked, boys · Gowers sign, calf pseudohypertrophy · <b>CK 10–100 ×</b> · loses walking ~12 yr · steroids · Becker milder"
+],
+[
+"Floppy infant",
+"Central (Down, HIE, hypothyroidism: alert-poor, reflexes present) · peripheral (<b>SMA</b>, myopathy: alert, weak, areflexic)"
+],
+[
+"Complications",
+"Respiratory failure (GBS, DMD) · cardiomyopathy (DMD) · scoliosis, contractures"
+]
+],
+"trap": "GBS child who <b>cannot count to 20 in one breath</b> → ICU · foot drop after a buttock injection = <b>sciatic nerve injury</b> · a third of DMD cases are new mutations"
+}

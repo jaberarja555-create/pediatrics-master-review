@@ -1,0 +1,34 @@
+{
+"sc": [
+"Cold hands, capillary refill > 3 s, weak fast pulse → <b>Shock: fluid bolus now</b>",
+"Shock, fever and purpura → <b>Meningococcal sepsis: ceftriaxone</b>",
+"Shock with big liver, gallop, crackles, worse after a bolus → <b>Stop fluids: inotropes</b>"
+],
+"f": [
+[
+"Triage (ETAT)",
+"<b>Emergency</b> (ABCD signs: treat now) · <b>priority</b> (tiny baby < 2 mo, high fever, trauma, pallor, poisoning, pain, restless, referral, malnutrition, burns, oedema) · queue"
+],
+[
+"ABCD",
+"<b>A</b>irway · <b>B</b>reathing (cyanosis, severe distress) · <b>C</b>irculation (cold hands + CRT > 3 s + weak fast pulse) · <b>C</b>oma, <b>C</b>onvulsions · <b>D</b>ehydration (severe)"
+],
+[
+"Emergency treatment",
+"Airway, oxygen · shock: <b>10–20 ml/kg</b> saline/RL (SAM: 15 ml/kg over 1 h) · glucose <b>10% dextrose 5 ml/kg</b> · fits: rectal diazepam 0.5 mg/kg"
+],
+[
+"Septic shock",
+"Antibiotics within <b>1 hour</b> · reassess after each bolus · fluid-refractory: adrenaline/noradrenaline"
+],
+[
+"Life support",
+"Commonest arrest rhythm: <b>asystole/PEA</b> (hypoxic) · 5 rescue breaths, <b>15 : 2</b>, 100–120/min · adrenaline <b>10 µg/kg</b> · VF: <b>4 J/kg</b>"
+],
+[
+"Access",
+"No IV in 90 s → <b>intraosseous</b> (proximal tibia)"
+]
+],
+"trap": "Shocked child with <b>SAM</b>: slower, smaller fluid (heart failure risk) · fitting child with no glucometer → <b>give dextrose</b> · AVPU = P or U means coma"
+}

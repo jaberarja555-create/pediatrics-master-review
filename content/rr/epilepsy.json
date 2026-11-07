@@ -1,0 +1,34 @@
+{
+"sc": [
+"7-year-old girl, brief stares many times a day, no post-ictal phase, 3 Hz spike-wave → <b>Absence epilepsy: ethosuximide/valproate</b>",
+"Infant with clusters of jerks on waking, ash-leaf spots → <b>West syndrome (tuberous sclerosis)</b>",
+"Toddler turns blue and limp after crying → <b>Breath-holding spell (not epilepsy)</b>"
+],
+"f": [
+[
+"Definition",
+"<b>≥ 2 unprovoked seizures > 24 h apart</b> (or one with high recurrence risk)"
+],
+[
+"Syndromes",
+"<b>West</b> (3–12 mo, spasms, hypsarrhythmia) · <b>absence</b> (3 Hz) · <b>juvenile myoclonic</b> (morning jerks, teen) · <b>Rolandic</b> (night face twitching)"
+],
+[
+"Investigations",
+"<b>EEG</b> · MRI if focal or abnormal exam · glucose, calcium · ECG for faints"
+],
+[
+"Drugs",
+"Generalised: <b>valproate 20–40 mg/kg/day</b> · focal: <b>carbamazepine 10–20 mg/kg/day</b> · phenobarbitone 3–5 · West: ACTH/vigabatrin"
+],
+[
+"Side effects",
+"Phenytoin: <b>gum hypertrophy</b>, hirsutism · carbamazepine: hyponatraemia, rash · valproate: <b>liver failure</b> (< 2 yr), weight gain · phenobarbitone: hyperactivity"
+],
+[
+"Stopping",
+"After <b>2 years</b> seizure-free, taper slowly"
+]
+],
+"trap": "<b>Carbamazepine worsens absence</b> and myoclonic seizures · breath-holding spells and syncope are <b>not</b> epilepsy · valproate in girls: teratogenic"
+}

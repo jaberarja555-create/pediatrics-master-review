@@ -1,0 +1,34 @@
+{
+"sc": [
+"Well 3-year-old, cold 2 weeks ago, sudden petechiae, platelets 15, Hb and WBC normal → <b>ITP: observe if only skin bleeding</b>",
+"Boy, bleeding after circumcision, swollen knee after a fall, long APTT → <b>Haemophilia: factor VIII/IX assay</b>",
+"Teenage girl with heavy periods and nosebleeds, mother the same → <b>Von Willebrand disease</b>"
+],
+"f": [
+[
+"Pattern of bleeding",
+"<b>Petechiae, gums, nose</b> = platelets · <b>joints and muscles</b> = clotting factors"
+],
+[
+"Screening tests",
+"CBC + <b>film</b>, PT, APTT · long APTT alone: haemophilia · long PT + APTT: vitamin K, liver, DIC · low platelets: ITP, leukaemia, DIC"
+],
+[
+"ITP",
+"Post-viral, well child, isolated low platelets · <b>80% recover</b> · skin only: <b>observe</b> · mucosal bleeding: prednisolone 2–4 mg/kg 5–7 days or <b>IVIG 0.8–1 g/kg</b>"
+],
+[
+"Haemophilia",
+"X-linked, boys · A: factor VIII, B: IX · severe < 1% · replace factor (joint 40–60%, head <b>80–100%</b>) · mild A: desmopressin"
+],
+[
+"Other",
+"vWD: long bleeding time, desmopressin · <b>DIC</b>: septic, low fibrinogen · HSP: purpura with <b>normal platelets</b> · Wiskott–Aldrich: eczema, small platelets"
+],
+[
+"Key numbers",
+"Spontaneous bleeding when platelets <b>< 20 × 10⁹/L</b> · chronic ITP > 12 months"
+]
+],
+"trap": "Low platelets with <b>big spleen, pallor, nodes or bone pain</b> is not ITP: bone marrow first · head injury in haemophilia: <b>factor first, then CT</b> · always ask if the bruises fit the story"
+}

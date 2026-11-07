@@ -1,0 +1,34 @@
+{
+"sc": [
+"2-month-old sweats and stops during feeds, fast breathing, big tender liver → <b>Large left-to-right shunt</b>",
+"Heart failure in the first week with weak femoral pulses → <b>Duct-dependent left lesion: PGE1</b>",
+"Pale irritable infant, HR 260, narrow QRS, no P waves → <b>SVT: ice to face, then adenosine</b>"
+],
+"f": [
+[
+"Causes by age",
+"First week: duct-dependent left lesions · <b>6–8 weeks</b>: large VSD/PDA/AVSD · older: myocarditis, <b>rheumatic</b>, <b>anaemia</b>, hypertension (PSGN)"
+],
+[
+"Key symptoms",
+"<b>Poor feeding with sweating and breathlessness</b> · poor weight gain · cough, wheeze"
+],
+[
+"Key signs",
+"Tachycardia, tachypnoea, gallop · <b>enlarged tender liver</b> (most reliable) · cardiomegaly · oedema is late in infants"
+],
+[
+"Treatment",
+"Sit up, oxygen · <b>furosemide 1 mg/kg</b> · captopril · digoxin · NG feeds · fluids ⅔ maintenance · treat the cause"
+],
+[
+"SVT",
+"HR <b>220–300</b>, fixed · vagal (ice) → <b>adenosine 0.1 then 0.2 mg/kg</b> · shock → <b>synchronised DC 1 J/kg</b> · WPW: short PR, delta wave"
+],
+[
+"Drug problems",
+"Furosemide → <b>low K</b> → digoxin toxicity (vomiting, bradycardia): stop, check K"
+]
+],
+"trap": "The earliest sign in infants is <b>poor feeding with sweating</b>, not leg oedema · anaemic heart failure: <b>slow packed cells</b> with furosemide · heart failure + high BP + haematuria → PSGN"
+}

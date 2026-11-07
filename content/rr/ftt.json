@@ -1,0 +1,34 @@
+{
+"sc": [
+"Underweight infant, normal examination, poor home, gains fast in hospital → <b>Non-organic FTT</b>",
+"FTT, bulky foul stools after starting wheat, wasted buttocks → <b>Coeliac disease</b>",
+"Short child, both parents short, normal velocity, bone age = age → <b>Familial short stature</b>"
+],
+"f": [
+[
+"Definition",
+"FTT: weight below the <b>3rd centile</b> or crossing <b>2 major centile lines</b> downward · usually under 2 years"
+],
+[
+"Causes",
+"Commonest: <b>inadequate intake</b> (undernutrition) · organic: coeliac, CF, CHD, renal (RTA), kala-azar, HIV, TB"
+],
+[
+"Investigations",
+"Guided by history and examination · CBC, urine, stool · <b>anti-tTG IgA</b> (coeliac) · sweat chloride (CF) · HIV test"
+],
+[
+"Treatment",
+"Feeding counselling, 100–120 kcal/kg/day plus catch-up · treat the cause · deworm (albendazole 400 mg, 200 mg at 1–2 yr)"
+],
+[
+"Short stature",
+"Familial (bone age = age) · constitutional delay (bone age delayed, late puberty, normal final height) · short + overweight = endocrine"
+],
+[
+"Endocrine tests",
+"Thyroid function first · GH: IGF-1 + two stimulation tests (peak < 10 ng/mL) · short girl: <b>karyotype</b> (Turner)"
+]
+],
+"trap": "Breastfeeding does not cause FTT (poor technique does) · tests are chosen by the findings, <b>not a routine panel</b> · Marfan = tall, not short · check thyroid before GH tests"
+}

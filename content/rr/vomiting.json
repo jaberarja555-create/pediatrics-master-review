@@ -1,0 +1,34 @@
+{
+"sc": [
+"First-born boy, 5 weeks, projectile non-bilious vomiting, hungry, olive mass → <b>Pyloric stenosis</b>",
+"Green vomit in a 3-day-old → <b>Malrotation with volvulus until proven otherwise</b>",
+"Bilious vomiting from birth, double bubble, Down syndrome → <b>Duodenal atresia</b>"
+],
+"f": [
+[
+"Reflux (GOR)",
+"Effortless spitting, happy, gaining weight → <b>reassure</b> · peaks 4 months, gone by 12–18 months · GORD: arching, refusing feeds, poor gain"
+],
+[
+"Pyloric stenosis",
+"<b>2–8 weeks</b>, boys 4 : 1 · projectile, non-bilious · visible peristalsis, olive mass · ultrasound: muscle ≥ 3 mm, canal ≥ 15 mm"
+],
+[
+"Pyloric: blood",
+"<b>Hypochloraemic hypokalaemic metabolic alkalosis</b> · correct fluids and K first → <b>Ramstedt pyloromyotomy</b>"
+],
+[
+"Malrotation",
+"Bilious vomiting · <b>upper GI contrast</b> · volvulus (distension, blood PR) → emergency laparotomy"
+],
+[
+"Bilious vomiting: first steps",
+"<b>Nil by mouth</b>, NG tube on free drainage, IV fluids, surgical review"
+],
+[
+"Other causes",
+"Sepsis, UTI, meningitis · raised ICP · CAH · overfeeding · intussusception · inborn errors"
+]
+],
+"trap": "Pyloric stenosis gives <b>alkalosis with low K</b>; acidosis with <b>high K</b> in a vomiting infant = salt-losing <b>CAH</b> · bilious vomiting is surgical until proven otherwise · reflux infants sleep <b>on the back</b>"
+}

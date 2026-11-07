@@ -1,0 +1,34 @@
+{
+"sc": [
+"Farm child, sweating, drooling, pinpoint pupils, wet chest, bradycardia → <b>Organophosphate: atropine until dry</b>",
+"Child drank kerosene → <b>Never induce vomiting (aspiration pneumonitis)</b>",
+"Huge swollen face and neck, dark urine after hair dye → <b>PPD poisoning: secure the airway</b>"
+],
+"f": [
+[
+"General management",
+"ABC · decontaminate · <b>activated charcoal 1 g/kg within 1 h</b> (not for iron, alcohol, kerosene, corrosives) · antidote · supportive"
+],
+[
+"Paracetamol",
+"Toxic <b>> 150 mg/kg</b> · level at 4 h · <b>N-acetylcysteine</b>"
+],
+[
+"Iron",
+"Toxic <b>> 60 mg/kg</b> elemental · vomiting, bloody diarrhoea, shock, liver failure · <b>desferrioxamine</b>"
+],
+[
+"Organophosphate",
+"SLUDGE + <b>bradycardia, pinpoint pupils</b> · <b>atropine 0.02–0.05 mg/kg</b>, double every 5 min until the chest is dry · pralidoxime"
+],
+[
+"Other antidotes",
+"Opioid: <b>naloxone 0.1 mg/kg</b> · benzodiazepine: flumazenil (care) · digoxin: Fab · CO: oxygen"
+],
+[
+"Kerosene / corrosives",
+"No vomiting, no charcoal, no lavage · kerosene: watch for <b>pneumonitis</b> · PPD (hair dye): airway, then renal failure"
+]
+],
+"trap": "Never induce vomiting after <b>kerosene or corrosives</b> · charcoal does <b>not</b> bind iron · atropine end point is a <b>dry chest</b>, not pupil size"
+}

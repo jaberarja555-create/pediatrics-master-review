@@ -1,0 +1,34 @@
+{
+"sc": [
+"HIV-exposed infant at 6 weeks → <b>HIV DNA PCR + start cotrimoxazole</b>",
+"HIV-exposed infant 2–6 months, severe hypoxia, few chest signs → <b>PCP: high-dose cotrimoxazole + steroid</b>",
+"HIV-positive child with parotid swelling, clubbing, nodes → <b>LIP</b>"
+],
+"f": [
+[
+"Key features",
+"Failure to thrive · recurrent or severe infections · persistent oral thrush · chronic diarrhoea · lymphadenopathy, parotid swelling"
+],
+[
+"Diagnosis",
+"Under 18 months: <b>PCR</b> (maternal antibody lasts up to 18 months) · over 18 months: <b>antibody (rapid) tests</b>"
+],
+[
+"PMTCT",
+"Mother on ART · infant: <b>nevirapine 6 weeks</b> (low risk) or AZT + NVP (high risk) · transmission < 2%"
+],
+[
+"Treatment",
+"Start ART <b>at once, whatever the CD4</b> · first line: <b>dolutegravir + abacavir + lamivudine</b> · cotrimoxazole prophylaxis"
+],
+[
+"Monitoring",
+"<b>Viral load</b> is the best test · failure: check <b>adherence</b> first"
+],
+[
+"Opportunistic infections",
+"PCP (2–6 months) · TB · candida · cryptosporidium · CMV"
+]
+],
+"trap": "A positive antibody test at 9 months may be <b>maternal antibody</b>: PCR is needed · abacavir hypersensitivity: stop and <b>never restart</b> · treatment failure is usually poor adherence"
+}

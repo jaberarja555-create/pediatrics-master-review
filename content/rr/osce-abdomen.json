@@ -1,0 +1,34 @@
+{
+"sc": [
+"Child from Gedaref, long fever, wasting, huge spleen, pancytopenia → <b>Kala-azar: rK39</b>",
+"Firm spleen, haematemesis, normal liver function → <b>Portal hypertension (schistosomiasis)</b>",
+"Ballotable flank mass in a well toddler → <b>Wilms tumour (do not press hard)</b>"
+],
+"f": [
+[
+"Sequence",
+"Expose nipples to knees (privacy) · look (distension, veins, cautery marks) · palpate gently from the RIF · liver, spleen, kidneys · percuss (shifting dullness) · auscultate · hernial orifices, genitalia"
+],
+[
+"Spleen vs kidney",
+"Spleen: <b>cannot get above it, notch</b>, moves toward RIF, dull · kidney: ballotable, resonant band, can get above"
+],
+[
+"Splenomegaly causes",
+"<b>Kala-azar</b>, malaria · thalassaemia, sickle (young) · portal hypertension · leukaemia · EBV"
+],
+[
+"Hepatomegaly causes",
+"<b>Heart failure</b> (tender) · hepatitis · thalassaemia · storage disease · malignancy"
+],
+[
+"Investigations",
+"CBC + <b>film</b>, retics · LFT · ultrasound · rK39 · Hb electrophoresis · bone marrow"
+],
+[
+"Examiner marks",
+"Ask about pain first · watch the face · measure organs from the costal margin in cm"
+]
+],
+"trap": "<b>Cautery marks</b> over the left upper abdomen = long-standing splenomegaly · never press hard on a suspected Wilms tumour · visible waves left to right in a vomiting infant = pyloric stenosis"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"Girl, breech, positive Ortolani, asymmetric thigh folds → <b>DDH: hip ultrasound</b>",
+"Apnoeic newborn, HR 80 after drying and stimulation → <b>Bag-and-mask ventilation</b>",
+"Breath sounds on the right only after intubation → <b>Tube in the right main bronchus: pull back</b>"
+],
+"f": [
+[
+"Newborn examination",
+"Head to toe: fontanelles, palate, <b>red reflex</b>, heart, femoral pulses, abdomen, genitalia, anus, <b>hips</b>, spine, reflexes"
+],
+[
+"Abnormal findings",
+"Absent red reflex · frothy saliva (oesophageal atresia) · no meconium 48 h · Erb palsy · sacral dimple · undescended testes"
+],
+[
+"Resuscitation",
+"Dry, warm, stimulate · <b>ventilate by 60 s</b> · HR < 60 after 30 s good ventilation → <b>compressions 3 : 1</b> · adrenaline via umbilical vein"
+],
+[
+"Tube",
+"Size: 3.0 mm for 1.5 kg · depth at lip: <b>weight (kg) + 6 cm</b> · check chest rise and both sides"
+],
+[
+"Scalp",
+"Caput crosses sutures · cephalhaematoma does not"
+],
+[
+"Examiner marks",
+"Hand hygiene, warm hands · explain to the mother · examine hips last (baby cries)"
+]
+],
+"trap": "Diaphragmatic hernia: <b>no bag-and-mask</b>, intubate · air entry over the stomach with no chest rise = <b>oesophageal tube</b> · start term resuscitation in <b>room air</b>"
+}

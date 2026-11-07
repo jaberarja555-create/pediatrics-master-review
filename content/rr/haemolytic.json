@@ -1,0 +1,34 @@
+{
+"sc": [
+"9-month-old, increasing pallor, huge spleen, frontal bossing, target cells, HbF 90% → <b>β-thalassaemia major</b>",
+"Boy, 2 days after eating fava beans, sudden pallor, cola-coloured urine, bite cells → <b>G6PD deficiency</b>",
+"Father had splenectomy, child with jaundice, splenomegaly, spherocytes, Coombs negative → <b>Hereditary spherocytosis</b>"
+],
+"f": [
+[
+"Chronic haemolysis",
+"Pallor, <b>jaundice, splenomegaly</b>, gallstones · high retics, high unconjugated bilirubin, high LDH · crises: aplastic, haemolytic, sequestration"
+],
+[
+"Investigations",
+"CBC, <b>retics, film</b>, bilirubin · <b>direct Coombs</b> (immune) · <b>Hb electrophoresis</b> · G6PD assay · EMA test (spherocytosis)"
+],
+[
+"β-thalassaemia major",
+"Presents <b>6–12 months</b> · hair-on-end skull · HbF high · <b>transfuse</b> to pre-Hb 9.5–10.5 · chelate when <b>ferritin > 1000</b> (deferasirox)"
+],
+[
+"Thalassaemia trait",
+"Microcytosis, high RBC count, <b>normal ferritin</b> · <b>HbA2 > 3.5%</b> · no iron"
+],
+[
+"G6PD and AIHA",
+"G6PD: avoid fava beans, primaquine, sulfonamides · AIHA: Coombs +, spherocytes → <b>prednisolone</b> · cold: mycoplasma"
+],
+[
+"Complications",
+"<b>Iron overload</b> (heart, liver, puberty) · hypersplenism · gallstones · infections after splenectomy"
+]
+],
+"trap": "<b>Never give iron</b> in thalassaemia major (ferritin high) · spherocytes in HS <b>and</b> AIHA: the Coombs test separates them · no splenectomy before <b>5–6 years</b>"
+}

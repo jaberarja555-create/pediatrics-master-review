@@ -1,0 +1,34 @@
+{
+"sc": [
+"Preterm, grunting within 4 h, ground-glass lungs with air bronchograms → <b>RDS</b>",
+"Term baby after elective caesarean, mild tachypnoea, fluid in the fissure, gone in 48 h → <b>TTN</b>",
+"Distress at birth, scaphoid abdomen, heart sounds on the right → <b>Congenital diaphragmatic hernia</b>"
+],
+"f": [
+[
+"Key signs",
+"Tachypnoea <b>> 60</b>/min · grunting · nasal flaring · chest indrawing · cyanosis"
+],
+[
+"Causes",
+"Preterm: <b>RDS</b> · term: <b>TTN</b> (commonest) · post-term: meconium aspiration · pneumonia/sepsis · pneumothorax · CDH · cyanotic heart disease"
+],
+[
+"Investigations",
+"Chest X-ray · blood gas · SpO2 pre- and post-ductal · blood culture · hyperoxia test (heart vs lung)"
+],
+[
+"Treatment of RDS",
+"Prevention: <b>antenatal steroids</b> · <b>CPAP</b> first · <b>surfactant</b> (poractant 200 mg/kg) · target SpO2 90–94%"
+],
+[
+"Other treatments",
+"Tension pneumothorax: needle · CDH: intubate + NGT · PPHN: inhaled nitric oxide · duct-dependent heart: <b>prostaglandin E1</b>"
+],
+[
+"Complications",
+"Pneumothorax · BPD · PPHN · IVH · PDA"
+]
+],
+"trap": "Apnoea in a <b>term</b> baby is never apnoea of prematurity: look for sepsis, seizures, hypoglycaemia · acrocyanosis with a pink tongue is normal · prostaglandin E1 can cause <b>apnoea</b>"
+}

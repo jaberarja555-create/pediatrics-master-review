@@ -1,0 +1,34 @@
+{
+"sc": [
+"Cough > 2 weeks, weight loss, adult TB contact, hilar nodes on X-ray → <b>Pulmonary TB: treat</b>",
+"Painless matted neck nodes with discharge → <b>TB lymphadenitis (scrofula)</b>",
+"Back gibbus and weak legs → <b>Pott disease (spinal TB)</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Cough > 2 weeks · fever · weight loss or failure to thrive · night sweats · <b>contact with an adult with TB</b>"
+],
+[
+"Forms",
+"Primary complex (Ghon focus + hilar nodes) · <b>miliary</b> · TB meningitis · lymph nodes · spine, bones, abdomen"
+],
+[
+"Investigations",
+"<b>Xpert MTB/RIF Ultra</b> (sputum, gastric aspirate, stool) · chest X-ray · Mantoux <b>≥ 10 mm</b> (≥ 5 in HIV/SAM) · miliary → LP"
+],
+[
+"Treatment",
+"Non-severe: <b>2HRZ(E)/2HR</b> (4 months) · standard: 2HRZE/4HR · meningitis/bone: 12 months + <b>steroid</b> (meningitis)"
+],
+[
+"Drug doses (mg/kg/day)",
+"H <b>10</b> · R <b>15</b> · Z <b>35</b> · E <b>20</b> · pyridoxine with isoniazid"
+],
+[
+"Prevention",
+"BCG (protects against <b>meningitis and miliary TB</b>) · contacts < 5 yr: exclude TB → preventive <b>3HR</b>"
+]
+],
+"trap": "A negative Mantoux does <b>not</b> exclude TB (SAM, HIV, miliary) · exclude active TB before preventive treatment · orange urine on rifampicin is harmless · ethambutol → optic neuritis"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"Mother with mastitis asks to stop breastfeeding → <b>Continue + flucloxacillin</b>",
+"Newborn bleeding on day 3, no vitamin K at birth, breastfed → <b>Haemorrhagic disease of the newborn</b>",
+"12-month-old on whole cow's milk since 6 months, pale → <b>Iron deficiency anaemia</b>"
+],
+"f": [
+[
+"Recommendations",
+"Breastfeed within <b>1 hour</b> · exclusive to <b>6 months</b> · complementary food from 6 months · continue to <b>2 years</b> or more"
+],
+[
+"Good attachment",
+"Chin touches the breast · mouth wide open · lower lip turned out · more areola above than below"
+],
+[
+"Enough milk",
+"Best sign: <b>adequate weight gain</b> · ≥ 6 wet nappies a day · ≥ 8 feeds in 24 hours"
+],
+[
+"Breast milk",
+"Colostrum: more IgA and protein · <b>hindmilk: more fat</b> · low in vitamin K and D · lactoferrin binds iron (bacteriostatic)"
+],
+[
+"Do not breastfeed",
+"Infant with <b>galactosaemia</b> · mother on chemotherapy or radioactive drugs · (HIV: breastfeed on ART as per national policy)"
+],
+[
+"Formula",
+"150 ml/kg/day · cow's milk protein allergy: <b>extensively hydrolysed formula</b> · no whole cow's milk or honey before 1 year"
+]
+],
+"trap": "Active TB in the mother is <b>not</b> a reason to stop: breastfeed, give the baby isoniazid · goat's milk → folate/B12 deficiency · concentrated formula → hypernatraemic dehydration · honey → botulism"
+}

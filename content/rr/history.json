@@ -1,0 +1,34 @@
+{
+"sc": [
+"Delayed cry at birth, admitted to the nursery → <b>Ask about HIE and cerebral palsy</b>",
+"Parents are cousins, a sibling died of a similar illness → <b>Autosomal recessive disorder</b>",
+"An adult at home with a chronic cough → <b>TB contact</b>"
+],
+"f": [
+[
+"Order of the history",
+"Personal data · <b>complaint with duration</b> · HPI · systemic review · <b>birth</b> · <b>feeding</b> · <b>immunization</b> · <b>development</b> · past, drugs, family, social"
+],
+[
+"Birth history",
+"Pregnancy (fever, rash, diabetes, drugs) · gestation, mode of delivery · <b>cried at birth?</b> · weight · nursery admission, jaundice"
+],
+[
+"Key questions",
+"Consanguinity, sibling deaths · residence (kala-azar, malaria) · TB contact · <b>EPI card</b> · regression of skills"
+],
+[
+"Summary",
+"Age, sex, residence · complaints with durations · key positives and negatives · <b>provisional diagnosis</b> + differential with reasons"
+],
+[
+"Problem list (long case)",
+"Medical · nutritional · developmental · social"
+],
+[
+"Examiner marks",
+"Greeting, consent · open questions · <b>growth, immunization, development</b> in every history · thank the mother"
+]
+],
+"trap": "<b>Leading questions</b> lose marks: ask open questions first · always state growth, immunization and development · end by thanking the mother and inviting her questions"
+}

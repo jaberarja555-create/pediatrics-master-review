@@ -1,0 +1,34 @@
+{
+"sc": [
+"Toddler after toilet training, hard painful stools, withholding, meconium on day 1 → <b>Functional constipation</b>",
+"Boy, meconium after 48 h, distension, explosive stool after PR → <b>Hirschsprung disease</b>",
+"Constipation, prolonged jaundice, umbilical hernia, big tongue → <b>Congenital hypothyroidism</b>"
+],
+"f": [
+[
+"Functional constipation",
+"Commonest · < 3 stools/week, hard painful stools, withholding, <b>soiling (overflow)</b> · full rectum"
+],
+[
+"Organic causes",
+"Hirschsprung · <b>hypothyroidism</b> · hypercalcaemia · spinal cord lesion (sacral tuft) · anal anomalies · lead"
+],
+[
+"Treatment",
+"<b>PEG</b> first line: disimpaction 1–1.5 g/kg/day, maintenance 0.4 g/kg/day for <b>≥ 2 months</b> · fibre, fluids, toilet routine, rewards"
+],
+[
+"Hirschsprung",
+"Absent ganglion cells · delayed meconium (> 48 h), distension, <b>empty rectum</b> · Down syndrome · boys 4 : 1"
+],
+[
+"Hirschsprung: tests",
+"<b>Rectal suction biopsy</b> (gold standard) · contrast enema (transition zone) · surgery: pull-through"
+],
+[
+"Complication",
+"<b>Hirschsprung enterocolitis</b>: fever, explosive foul diarrhoea → emergency"
+]
+],
+"trap": "Soiling in a 6-year-old with a full rectum is <b>overflow</b>, not diarrhoea · Hirschsprung has an <b>empty</b> rectum · delayed meconium + CF history → <b>meconium ileus</b>"
+}

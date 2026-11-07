@@ -1,0 +1,34 @@
+{
+"sc": [
+"Vaccines at birth in the EPI → <b>BCG + OPV 0</b> (+ hepatitis B birth dose)",
+"Infant with intussusception a week after a vaccine → <b>Rotavirus vaccine</b>",
+"Infant, painless axillary node 2 months after BCG, well → <b>BCG adenitis</b>"
+],
+"f": [
+[
+"EPI schedule",
+"Birth: BCG, OPV0 · <b>6, 10, 14 wk</b>: OPV + pentavalent + PCV (rotavirus 6, 10 wk; IPV 14 wk) · <b>9 mo</b>: measles (MR) 1 + MenA · 18 mo: MR 2"
+],
+[
+"Live vaccines",
+"<b>BCG, OPV, measles/MR/MMR, rotavirus</b>, yellow fever, varicella · pertussis, IPV, hep B, Hib, PCV, tetanus = not live"
+],
+[
+"Routes",
+"BCG <b>intradermal</b> · measles <b>subcutaneous</b> · OPV and rotavirus oral · others IM"
+],
+[
+"Contraindications",
+"Anaphylaxis to a previous dose · live vaccines in <b>SCID</b>, chemotherapy, high-dose steroids · encephalopathy within 7 days of pertussis"
+],
+[
+"Not contraindications",
+"Mild diarrhoea or cold, antibiotics, prematurity (vaccinate by <b>chronological age</b>), malnutrition, HIV without severe disease, egg allergy for MMR"
+],
+[
+"Key numbers",
+"Storage <b>2–8 °C</b> · minimum interval 4 weeks · measles vaccine within <b>72 h</b> of exposure · HBIG + vaccine within 12 h for HBsAg+ mother"
+]
+],
+"trap": "Pertussis is <b>killed</b>, not live · a missed dose: continue, <b>never restart</b> · no BCG scar: repeat only if BCG is not recorded · anaphylaxis: <b>adrenaline 0.01 mg/kg IM</b>"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"Preterm on feeds, distension, bilious vomiting, bloody stool, gas in the bowel wall → <b>NEC</b>",
+"Preterm on ventilator, bounding pulses, continuous murmur → <b>PDA</b>",
+"Term baby 2.2 kg below the 10th centile, jittery at 6 h → <b>SGA with hypoglycaemia</b>"
+],
+"f": [
+[
+"Definitions",
+"Preterm <b>< 37 wk</b> · extremely preterm < 28 wk · post-term ≥ 42 wk · macrosomia > 4 kg · SGA < 10th centile"
+],
+[
+"Problems of the preterm",
+"RDS · apnoea · hypothermia · hypoglycaemia · jaundice · IVH (first 72 h) · NEC · sepsis · PDA · ROP · BPD"
+],
+[
+"Care",
+"<b>Kangaroo mother care</b> (< 2000 g) · mother's own milk · warmth · caffeine for apnoea · ROP screening"
+],
+[
+"NEC",
+"X-ray: <b>pneumatosis intestinalis</b> · stop feeds, NG decompression, IV antibiotics · free air → laparotomy"
+],
+[
+"SGA / IUGR",
+"Asymmetrical (placental insufficiency, head spared) · symmetrical (congenital infection, chromosomal) · risks: hypoglycaemia, polycythaemia"
+],
+[
+"Key numbers",
+"Antenatal steroids <b>24–34 wk</b> · caffeine loading <b>20 mg/kg</b> · apnoea ≥ <b>20 s</b> · full feeds 150 ml/kg/day"
+]
+],
+"trap": "A term baby of 2.2 kg is <b>SGA, not preterm</b> · both SGA and large IDM babies get hypoglycaemia (different reasons) · former 26-week baby on oxygen at 36 weeks → <b>BPD</b>"
+}

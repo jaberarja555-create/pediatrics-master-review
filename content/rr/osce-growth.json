@@ -1,0 +1,34 @@
+{
+"sc": [
+"Height crossing centiles down, weight kept, delayed bone age → <b>Hypothyroidism or GH deficiency</b>",
+"Short boy, normal velocity, father had late puberty, delayed bone age → <b>Constitutional delay: reassure</b>",
+"Copies a circle but not a cross → <b>Developmental age 3 years</b>"
+],
+"f": [
+[
+"General examination",
+"Look: distress, dysmorphism, pallor, jaundice, <b>cyanosis</b> (tongue), clubbing, oedema, lymph nodes, BCG scar, hydration"
+],
+[
+"Vital signs",
+"HR, RR, temperature, <b>CRT</b> (> 3 s = poor perfusion), SpO2 · minimum systolic BP <b>70 + 2 × age</b>"
+],
+[
+"Growth",
+"Weight, length (<b>lying < 2 yr</b>), OFC, MUAC · plot on WHO chart · <b>corrected age</b> for preterm until 2 yr"
+],
+[
+"Short stature",
+"Height < <b>−2 SD</b> · familial (bone age = age) · constitutional · endocrine (short, overweight) · chronic disease (short, thin) · Turner"
+],
+[
+"Development",
+"Assess all 4 fields · speech delay only: <b>hearing first</b> · global delay: look for a cause"
+],
+[
+"Red flags",
+"No social smile at 8 wk · not walking or no words at <b>18 months</b> · hand preference < 18 months"
+]
+],
+"trap": "Do not plot a preterm on actual age · do not measure an 18-month-old <b>standing</b> · acrocyanosis with a pink tongue is <b>normal</b> in a newborn"
+}

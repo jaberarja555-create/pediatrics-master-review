@@ -1,0 +1,34 @@
+{
+"sc": [
+"Fever, cough, coryza, conjunctivitis, Koplik spots, rash from the face down on day 4 → <b>Measles</b>",
+"Infant, 3 days of high fever, rash appears as the fever falls → <b>Roseola (HHV-6)</b>",
+"Sore throat, sandpaper rash, circumoral pallor, strawberry tongue → <b>Scarlet fever</b>"
+],
+"f": [
+[
+"Measles",
+"Prodrome 3–4 days (<b>3 Cs</b>) → <b>Koplik spots</b> (pathognomonic) → rash from face downward · infectious 4 days before to 4 days after the rash"
+],
+[
+"Measles complications",
+"<b>Pneumonia</b> (commonest cause of death) · otitis · diarrhoea · encephalitis · corneal ulcer · <b>SSPE</b> 7–10 years later"
+],
+[
+"Measles treatment",
+"<b>Vitamin A day 1 and 2</b> · supportive · treat complications · MR vaccine at 9 and 18 months"
+],
+[
+"Other rashes",
+"Chickenpox: itchy vesicles <b>in crops, all stages</b> · parvovirus: slapped cheeks, lacy rash · rubella: post-auricular nodes"
+],
+[
+"Mumps and EBV",
+"Mumps: parotitis, orchitis, meningitis · EBV: tonsillitis, <b>splenomegaly, atypical lymphocytes</b>"
+],
+[
+"Treatment of scarlet fever",
+"<b>Penicillin for 10 days</b> (prevents rheumatic fever)"
+]
+],
+"trap": "\"Tonsillitis\" + rash after <b>amoxicillin</b> = infectious mononucleosis, not allergy · sickle cell child with sudden anaemia and <b>low retics</b> → parvovirus aplastic crisis · fever persisting after the measles rash → complication"
+}

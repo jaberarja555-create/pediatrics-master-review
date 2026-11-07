@@ -1,0 +1,34 @@
+{
+"sc": [
+"Breastfed toddler, no vitamin D drops, kept indoors, bowed legs, wide wrists → <b>Nutritional rickets</b>",
+"4-month-old with soft skull bones that yield like a ping-pong ball → <b>Craniotabes (early rickets)</b>",
+"Rickets, low phosphate, normal PTH, father affected → <b>X-linked hypophosphataemic rickets</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Delayed sitting and walking · bone pain, irritability · sweating of the head · late teeth · infant: hypocalcaemic seizures or tetany"
+],
+[
+"Key signs",
+"<b>Craniotabes</b>, large late fontanelle, frontal bossing · <b>rachitic rosary</b>, Harrison sulcus · wide wrists · bow legs or knock knees"
+],
+[
+"Investigations",
+"Ca normal/low · <b>phosphate low</b> · <b>ALP high</b> · PTH high · 25(OH)D < 30 nmol/L · <b>wrist X-ray</b>: cupping, fraying, wide growth plate"
+],
+[
+"Differential",
+"Vitamin D-dependent rickets · X-linked hypophosphataemia · renal osteodystrophy (CKD, high phosphate) · scurvy"
+],
+[
+"Treatment",
+"<b>Vitamin D 2000–6000 IU/day × 12 weeks</b> (or single stoss dose) + calcium 500 mg/day · tetany: 10% Ca gluconate 0.5 ml/kg IV"
+],
+[
+"Monitoring",
+"ALP falls · X-ray healing line in <b>2–4 weeks</b> · not healing → look for non-nutritional rickets"
+]
+],
+"trap": "Bow legs appear only <b>after walking</b>; in a young infant look for craniotabes · rickets gives a <b>large</b> fontanelle, never microcephaly · <b>high phosphate</b> points to CKD, not nutritional rickets"
+}

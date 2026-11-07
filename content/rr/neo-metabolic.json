@@ -1,0 +1,34 @@
+{
+"sc": [
+"Large plethoric baby, jittery at 2 hours, low glucose → <b>IDM hypoglycaemia (hyperinsulinism)</b>",
+"Home birth, no vitamin K, breastfed, melaena on day 3, PT long, platelets normal → <b>Vitamin K deficiency bleeding</b>",
+"Hypocalcaemia with cleft palate and heart defect → <b>DiGeorge syndrome</b>"
+],
+"f": [
+[
+"Infant of diabetic mother",
+"Macrosomia, shoulder dystocia · <b>hypoglycaemia</b>, hypocalcaemia · RDS · polycythaemia · HCM (thick septum) · <b>caudal regression</b> (most specific)"
+],
+[
+"Hypoglycaemia",
+"Treat if <b>< 2.6 mmol/L</b> · well baby: feed + dextrose gel 0.5 ml/kg · symptomatic: <b>10% glucose 2 ml/kg IV</b> then infusion"
+],
+[
+"Hypocalcaemia",
+"Total Ca < 2 mmol/L · jittery, tetany, seizures · <b>10% calcium gluconate 2 ml/kg slow IV</b> · not responding → magnesium"
+],
+[
+"Polycythaemia",
+"Haematocrit > 65% · SGA, IDM, delayed clamping · plethora, lethargy, hypoglycaemia · symptomatic: <b>partial exchange with saline</b>"
+],
+[
+"Vitamin K bleeding",
+"Early (maternal drugs) · classic <b>day 2–7</b> · late (breastfed, cholestasis) · <b>vitamin K 1 mg IV</b> + FFP 10–15 ml/kg if severe"
+],
+[
+"Key numbers",
+"Physiological anaemia lowest at <b>8–12 weeks</b> · glucose infusion > 8 mg/kg/min = hyperinsulinism (diazoxide)"
+]
+],
+"trap": "Jittery newborn: <b>glucose first</b>, then calcium · vomited blood with <b>adult Hb on Apt test</b> = swallowed maternal blood · factors II, VII, IX, X are vitamin K-dependent"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"Well 5-year-old with fever, soft musical systolic murmur that changes with posture → <b>Still's murmur: reassure</b>",
+"Well newborn, sudden cyanosis or shock on day 2–5 → <b>Duct closing: start PGE1</b>",
+"Mother with lupus, newborn heart rate 50 → <b>Congenital complete heart block</b>"
+],
+"f": [
+[
+"Fetal circulation",
+"3 shunts: <b>ductus venosus, foramen ovale, ductus arteriosus</b> · duct closes functionally in <b>1–3 days</b> (PGE1 keeps it open, ibuprofen closes it)"
+],
+[
+"Innocent murmur",
+"Soft, systolic, short, changes with posture · <b>normal S2</b>, no thrill, well child · venous hum disappears lying down"
+],
+[
+"Pathological murmur",
+"Diastolic, pansystolic, loud (≥ 3/6), thrill · abnormal S2 · symptoms (poor feeding, sweating, cyanosis)"
+],
+[
+"Key examination signs",
+"<b>Wide fixed split S2</b> = ASD · single S2 = TOF, TGA · <b>radio-femoral delay</b> = coarctation · collapsing pulse = PDA/AR"
+],
+[
+"Investigations",
+"<b>Echocardiography</b> (best) · ECG · chest X-ray (boot heart = TOF, egg-on-side = TGA) · SpO2 screen < 95% → echo"
+],
+[
+"Commonest lesions",
+"Commonest CHD: <b>VSD</b> · cyanotic at birth: <b>TGA</b> · cyanotic after infancy: <b>TOF</b> · Down syndrome: <b>AVSD</b>"
+]
+],
+"trap": "Cyanotic infants are often <b>not distressed</b> in proportion (TOF); breathless infants with plethoric lungs have a <b>left-to-right shunt</b> · a murmur in a febrile child: re-examine when afebrile"
+}

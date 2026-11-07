@@ -1,0 +1,34 @@
+{
+"sc": [
+"Fever 39 °C, loin pain, nitrite and leucocytes positive → <b>Pyelonephritis: antibiotics 7–10 days</b>",
+"Febrile infant, no focus, malaria negative → <b>Urine culture</b>",
+"Boy with UTI and a poor urinary stream → <b>Posterior urethral valves</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Infants: <b>fever, vomiting, poor feeding, irritability</b> · older: dysuria, frequency, wetting, loin pain"
+],
+[
+"Causes",
+"<b>E. coli (~80%)</b> · Proteus (stones, alkaline urine) · risk: VUR, obstruction (PUV), constipation, poor hygiene"
+],
+[
+"Diagnosis",
+"Clean catch / catheter / suprapubic · <b>culture > 10⁵ CFU/ml</b> (any growth on suprapubic) · dipstick nitrite + leucocytes"
+],
+[
+"Treatment",
+"Cystitis: oral <b>3 days</b> · pyelonephritis: <b>7–10 days</b> (IV ceftriaxone if unwell, then oral) · treat constipation"
+],
+[
+"Imaging",
+"<b>Ultrasound</b> (obstruction) · <b>MCUG</b> (VUR) · <b>DMSA</b> at 4–6 months (scars) · atypical or recurrent UTI"
+],
+[
+"Complications",
+"Renal scarring → <b>hypertension, CKD</b> · siblings: VUR in 30% · prophylaxis: trimethoprim 2 mg/kg at night"
+]
+],
+"trap": "A positive <b>bag sample</b> with mixed growth is contamination: repeat clean · antenatal bilateral hydronephrosis in a boy → <b>PUV</b> · test the urine of every febrile infant without a focus"
+}

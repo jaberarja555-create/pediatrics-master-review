@@ -1,0 +1,34 @@
+{
+"sc": [
+"Child with VSD or RHD and dental caries, fever 2 weeks, splenomegaly, new murmur, haematuria → <b>Infective endocarditis</b>",
+"Infant a week after a cold, tachycardia out of proportion to fever, gallop, no murmur → <b>Coxsackie B myocarditis</b>",
+"Chest pain better on sitting forward, rub → <b>Pericarditis</b>"
+],
+"f": [
+[
+"IE features",
+"Prolonged fever, pallor, splenomegaly · <b>new or changing murmur</b> · splinter haemorrhages, <b>Osler nodes</b> (tender), Janeway lesions (painless) · haematuria"
+],
+[
+"IE organisms",
+"<b>Strep viridans</b> (commonest, dental) · <b>Staph aureus</b> (surgery, lines) · HACEK"
+],
+[
+"IE investigations",
+"<b>3 blood cultures</b> from separate sites before antibiotics · <b>echocardiography</b> (vegetations) · ESR, CRP, urine"
+],
+[
+"IE treatment",
+"IV <b>penicillin + gentamicin</b> (strep) or cloxacillin (staph) for <b>4–6 weeks</b> · prophylaxis: amoxicillin 50 mg/kg before dental work in high-risk"
+],
+[
+"Myocarditis / pericarditis",
+"Myocarditis: heart failure <b>without a murmur</b>, soft sounds, high troponin · pericarditis: rub · <b>tamponade</b>: muffled sounds, pulsus paradoxus → pericardiocentesis"
+],
+[
+"Cardiomyopathy",
+"HCM: collapse during sport, family history of sudden death · dilated: post-myocarditis"
+]
+],
+"trap": "Secundum ASD almost <b>never</b> gets endocarditis · myocarditis has <b>no significant murmur</b> (a loud murmur = structural disease) · digoxin is used with great care in myocarditis"
+}

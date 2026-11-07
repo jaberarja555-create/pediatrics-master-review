@@ -1,0 +1,34 @@
+{
+"sc": [
+"Fever in a malaria area, positive RDT, no danger signs → <b>Oral artemether–lumefantrine</b>",
+"Positive film, coma or convulsions, Hb < 5 g/dL → <b>Severe malaria: IV artesunate</b>",
+"Child treated for malaria, dark urine a few days later → <b>Blackwater fever (haemolysis)</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Fever, chills, sweats, headache, vomiting · severe: prostration, convulsions, breathing difficulty, dark urine"
+],
+[
+"Key signs",
+"Pallor, splenomegaly, jaundice · severe: coma, acidotic breathing, shock, bleeding"
+],
+[
+"Investigations",
+"<b>Thick and thin film</b> = gold standard · RDT (HRP2 stays positive, cannot follow response) · Hb · <b>glucose</b>"
+],
+[
+"Severe malaria (any one)",
+"Impaired consciousness, prostration, convulsions · Hb <b>< 5</b> g/dL · glucose <b>< 2.2</b> mmol/L · acidosis · shock · jaundice · parasitaemia > 10%"
+],
+[
+"Treatment",
+"Uncomplicated: <b>artemether–lumefantrine</b> 3 days · severe: <b>IV artesunate 3 mg/kg</b> (< 20 kg) at 0, 12, 24 h then daily · rectal 10 mg/kg before referral"
+],
+[
+"Complications",
+"Cerebral malaria · severe anaemia (<b>transfuse</b>) · hypoglycaemia · acidosis · AKI · blackwater fever"
+]
+],
+"trap": "Treat malaria only after a <b>positive test</b> · comatose child: <b>check glucose first</b> · vivax/ovale relapse: primaquine (check <b>G6PD</b>) · sickle cell <b>trait</b> protects; sickle cell disease does not"
+}

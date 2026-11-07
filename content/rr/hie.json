@@ -1,0 +1,34 @@
+{
+"sc": [
+"Difficult delivery, cord pH 6.9, lethargic, hypotonic, seizures → <b>Moderate HIE (Sarnat 2)</b>",
+"Lip smacking, cycling, apnoea that does not stop when the limb is held → <b>Subtle seizure</b>",
+"Jittery infant of a diabetic mother at 2 hours → <b>Hypoglycaemia</b>"
+],
+"f": [
+[
+"Diagnosis of asphyxia",
+"Cord pH <b>< 7.0</b> · Apgar <b>≤ 5 at 10 min</b> · encephalopathy · multi-organ injury"
+],
+[
+"Sarnat stages",
+"1 mild: hyperalert, jittery, normal by 24 h · 2 moderate: lethargic, hypotonia, <b>seizures</b> · 3 severe: coma, flaccid, absent reflexes"
+],
+[
+"Treatment of HIE",
+"Supportive: ventilation, glucose, <b>restrict fluids</b> (SIADH, ATN), treat seizures · <b>cooling to 33.5 °C for 72 h</b> if ≥ 36 wk, moderate/severe, < 6 h"
+],
+[
+"Neonatal seizures",
+"Commonest cause <b>HIE</b> · commonest type <b>subtle</b> · first test: <b>blood glucose</b>, then calcium, magnesium, sepsis"
+],
+[
+"Seizure drugs",
+"<b>Phenobarbital</b> first line · then phenytoin/levetiracetam · resistant: <b>pyridoxine 100 mg IV</b> · glucose or Ca 10% 2 ml/kg"
+],
+[
+"Complications",
+"Cerebral palsy (quadriplegic, dyskinetic) · epilepsy · deafness · best predictor: <b>MRI in 1–2 weeks</b>"
+]
+],
+"trap": "Jitteriness <b>stops when the limb is held</b>, a seizure does not · do not cool mild HIE · a febrile asphyxiated baby must be <b>cooled to normal</b>: fever worsens brain injury"
+}

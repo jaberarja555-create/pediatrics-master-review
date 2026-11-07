@@ -1,0 +1,34 @@
+{
+"sc": [
+"Diarrhoea since wheat started, distended abdomen, wasted buttocks, high tTG-IgA → <b>Coeliac disease</b>",
+"Thriving toddler, loose stools with peas and carrots → <b>Toddler's diarrhoea</b>",
+"Teenager with weight loss, perianal fistula, short stature → <b>Crohn disease</b>"
+],
+"f": [
+[
+"Definitions",
+"Persistent: diarrhoea <b>≥ 14 days</b> · chronic: <b>> 4 weeks</b>"
+],
+[
+"Causes",
+"Post-infectious <b>lactose intolerance</b> · cow's milk protein allergy · giardia · <b>coeliac</b> · CF · IBD · toddler's diarrhoea · HIV"
+],
+[
+"Investigations",
+"Stool microscopy, <b>pH (< 5.5) and reducing substances</b> · <b>tTG-IgA + total IgA</b> · sweat test · CBC, albumin"
+],
+[
+"Coeliac disease",
+"Diarrhoea, FTT, iron deficiency not responding to iron · tTG-IgA ≥ 10 × normal or duodenal biopsy · <b>gluten-free diet for life</b> (rice and maize safe)"
+],
+[
+"Treatment",
+"IMCI: continue feeding, reduce animal milk, zinc, vitamin A · lactose intolerance: lactose-free 2–4 wk · CMPA: <b>extensively hydrolysed formula</b>"
+],
+[
+"IBD",
+"Crohn: fistula, growth failure, exclusive enteral nutrition 6–8 wk · ulcerative colitis: bloody diarrhoea, rectum always involved"
+]
+],
+"trap": "Lactose intolerance is a <b>sugar enzyme</b> problem; cow's milk allergy is a <b>protein immune</b> reaction · IgA deficiency gives a <b>false-negative</b> tTG-IgA · rotavirus causes acute, not chronic, diarrhoea"
+}

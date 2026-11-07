@@ -1,0 +1,34 @@
+{
+"sc": [
+"Infant blue after crying, squats when older, boot-shaped heart, oligaemic lungs → <b>Tetralogy of Fallot</b>",
+"IDM, deep cyanosis on day 1, no murmur, egg-on-side heart → <b>TGA: PGE1, septostomy, arterial switch</b>",
+"TOF infant: deeper cyanosis, fast breathing, murmur disappears → <b>Hypercyanotic spell</b>"
+],
+"f": [
+[
+"Key signs",
+"<b>Central cyanosis</b> (deoxy Hb > 5 g/dL) · clubbing · single S2 · squatting · polycythaemia"
+],
+[
+"TOF",
+"VSD, overriding aorta, <b>RVOT obstruction</b>, RVH · ejection murmur upper left sternal edge · repair at 4–6 months · <b>propranolol</b> prevents spells"
+],
+[
+"Tet spell",
+"Peak <b>2–4 months</b> · <b>knee–chest position</b>, oxygen, <b>morphine 0.1 mg/kg</b>, fluids, propranolol/phenylephrine · avoid digoxin"
+],
+[
+"TGA",
+"Commonest cyanosis <b>at birth</b> · no murmur · <b>PGE1</b> → balloon septostomy → <b>arterial switch at 2–3 weeks</b>"
+],
+[
+"Other lesions",
+"Tricuspid atresia (left axis) · Ebstein (lithium, huge RA) · TAPVR (snowman) · pulmonary atresia"
+],
+[
+"Complications",
+"<b>Brain abscess</b> (fever, headache, hemiparesis) · stroke (polycythaemia) · endocarditis · iron deficiency"
+]
+],
+"trap": "TGA with intact septum has <b>no murmur</b> · in a tet spell the murmur <b>softens</b> (less flow) · <b>hyperoxia test</b>: PaO2 stays low in 100% O2 = heart cause · PGE1 can cause apnoea"
+}

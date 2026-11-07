@@ -1,0 +1,34 @@
+{
+"sc": [
+"18-month-old drinking 1 litre of cow's milk a day, pallor, pica, low MCV, low ferritin → <b>Iron deficiency: oral iron</b>",
+"Pallor, purpura, bone pain, big liver and spleen → <b>Acute leukaemia: bone marrow</b>",
+"Infant of a vegan mother, macrocytic anaemia, regression → <b>Vitamin B12 deficiency</b>"
+],
+"f": [
+[
+"Classification (MCV)",
+"<b>Microcytic</b>: iron deficiency, thalassaemia, chronic disease, lead · <b>normocytic</b>: haemolysis, bleeding, marrow failure · <b>macrocytic</b>: B12, folate"
+],
+[
+"Key signs",
+"Pallor (palms, conjunctiva), koilonychia · <b>jaundice + spleen</b> = haemolysis · purpura, fever = marrow failure or leukaemia"
+],
+[
+"Investigations",
+"<b>CBC, MCV, blood film, reticulocytes</b> first · <b>ferritin</b> (iron stores) · haemolysis screen · bone marrow if pancytopenia"
+],
+[
+"Iron deficiency",
+"Low ferritin, high TIBC · cause: diet (milk), worms, blood loss · <b>elemental iron 3–6 mg/kg/day</b>, continue <b>3 months after Hb normal</b>"
+],
+[
+"Transfusion",
+"Consider if Hb < 7 g/dL with symptoms · always if <b>< 4 g/dL</b> or heart failure · slow, packed cells"
+],
+[
+"Marrow failure",
+"Aplastic (drugs, hepatitis; stem cell transplant) · Fanconi (absent thumbs, short) · Diamond–Blackfan (red cell aplasia) · TEC (recovers)"
+]
+],
+"trap": "A transfusion does <b>not</b> refill iron stores: still give 3 months of iron · pancytopenia → <b>bone marrow</b> (aplastic vs leukaemia vs kala-azar) · Hb lowest at 8–12 weeks is physiological"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"Infant with fever and a bulging fontanelle → <b>Meningitis: LP</b>",
+"CSF lymphocytes, very high protein, low glucose, slow onset → <b>TB meningitis</b>",
+"Fever, behaviour change, temporal lobe changes on imaging → <b>HSV encephalitis: IV aciclovir</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Fever, headache, vomiting, irritability, poor feeding, convulsions, drowsiness"
+],
+[
+"Key signs",
+"Neck stiffness, <b>Kernig and Brudzinski</b> · infant: <b>bulging fontanelle</b> · purpuric rash (meningococcus)"
+],
+[
+"Causes",
+"Neonate: GBS, E. coli, Listeria · after 1 month: <b>pneumococcus</b>, meningococcus (epidemics), Hib"
+],
+[
+"CSF",
+"Bacterial: turbid, <b>neutrophils</b>, high protein, <b>low glucose</b> · viral: lymphocytes, normal glucose · TB: lymphocytes, very high protein, low glucose"
+],
+[
+"Treatment",
+"<b>Ceftriaxone 100 mg/kg/day</b> IV · < 3 months add <b>ampicillin</b> · dexamethasone with the first dose · contacts: ciprofloxacin"
+],
+[
+"Complications",
+"<b>Sensorineural deafness</b> (hearing test) · subdural effusion · hydrocephalus · seizures · SIADH · brain abscess"
+]
+],
+"trap": "Raised ICP or shock: <b>do not delay antibiotics</b> for the LP (blood culture, give ceftriaxone, LP later) · persistent fever on day 5 → subdural effusion"
+}

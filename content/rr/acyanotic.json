@@ -1,0 +1,34 @@
+{
+"sc": [
+"6-week-old, sweating and breathless on feeds, pansystolic murmur, big liver → <b>Large VSD with heart failure</b>",
+"Well school child, soft ejection murmur, wide fixed split S2 → <b>Secundum ASD</b>",
+"Child with headache, high BP in the arms, weak delayed femoral pulses → <b>Coarctation of the aorta</b>"
+],
+"f": [
+[
+"VSD",
+"Commonest CHD (30%) · pansystolic murmur lower left sternal edge · <b>small = loud</b>, often closes · large: heart failure at 6–8 weeks"
+],
+[
+"ASD",
+"Ejection murmur upper left sternal edge (flow) · <b>wide fixed split S2</b> · primum: left axis deviation · device closure"
+],
+[
+"PDA",
+"Preterm, rubella · <b>continuous machinery murmur</b> below left clavicle · bounding pulses · ibuprofen (preterm) or device closure"
+],
+[
+"Coarctation",
+"Weak, <b>delayed femorals</b>, high BP in arms · rib notching · Turner · neonatal shock when duct closes → <b>PGE1</b>"
+],
+[
+"Treatment of large shunts",
+"<b>Furosemide + captopril</b>, NG feeds · surgery for large VSD at <b>3–6 months</b>"
+],
+[
+"Complications",
+"Heart failure · <b>Eisenmenger</b> (reversed shunt, cyanosis, softer murmur) · infective endocarditis"
+]
+],
+"trap": "In VSD the <b>smallest</b> defects make the <b>loudest</b> murmurs; a murmur getting <b>softer</b> with a loud P2 = pulmonary hypertension · ASD murmur is a flow murmur, not across the defect"
+}

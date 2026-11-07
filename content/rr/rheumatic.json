@@ -1,0 +1,34 @@
+{
+"sc": [
+"10-year-old, sore throat 3 weeks ago, flitting arthritis of large joints, apical pansystolic murmur → <b>ARF with carditis</b>",
+"Girl with clumsy jerky movements, emotional, normal ESR → <b>Sydenham chorea</b>",
+"RHD child with a new murmur and 2 weeks of fever → <b>Infective endocarditis: 3 blood cultures</b>"
+],
+"f": [
+[
+"Major criteria",
+"<b>Carditis</b> · arthritis (poly, mono or polyarthralgia in high-risk areas) · <b>chorea</b> · erythema marginatum · subcutaneous nodules"
+],
+[
+"Minor criteria",
+"Fever ≥ 38 °C · ESR ≥ 30 / CRP ≥ 3 · <b>prolonged PR</b> · monoarthralgia · plus evidence of strep (<b>ASO</b>, anti-DNase B)"
+],
+[
+"Investigations",
+"ASO · ESR/CRP · ECG (PR) · <b>echocardiography with Doppler</b> (best for carditis) · throat swab"
+],
+[
+"Treatment",
+"<b>Penicillin</b> (eradicate strep) · <b>aspirin 50–80 mg/kg/day</b> (arthritis responds in 48 h) · severe carditis: <b>prednisolone 2 mg/kg/day</b> · chorea: haloperidol"
+],
+[
+"Secondary prophylaxis",
+"<b>Benzathine penicillin every 4 weeks</b> (600 000 U < 27 kg, 1.2 MU ≥ 27 kg) · 5 yr/to 21 yr without carditis, 10 yr/to 40 yr with RHD"
+],
+[
+"RHD",
+"<b>Mitral regurgitation</b> (commonest) · mitral stenosis (opening snap, diastolic rumble) · aortic regurgitation · balloon valvotomy for MS"
+]
+],
+"trap": "Fever, ESR and prolonged PR are <b>minor</b>, not major · arthralgia cannot count as minor when arthritis is major · chorea may come <b>alone, months later</b> with normal ESR · Carey Coombs = mid-diastolic murmur of acute carditis"
+}

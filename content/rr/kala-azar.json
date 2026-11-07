@@ -1,0 +1,34 @@
+{
+"sc": [
+"Child from Gedaref, fever 1 month, huge spleen, pancytopenia → <b>Kala-azar: rK39 test</b>",
+"Papules around the mouth months after kala-azar treatment → <b>PKDL</b>",
+"Kala-azar with HIV or severe disease → <b>Liposomal amphotericin B</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Prolonged fever (> 2 weeks) · wasting · abdominal swelling · bleeding (nose, gums)"
+],
+[
+"Key signs",
+"<b>Massive splenomegaly</b> · hepatomegaly · pallor · wasting · lymph nodes · darkened skin"
+],
+[
+"Investigations",
+"<b>rK39 RDT</b> (first) · DAT · <b>splenic aspirate</b> (LD bodies, most sensitive ~95%) · pancytopenia, high globulins"
+],
+[
+"Treatment (East Africa)",
+"<b>SSG 20 mg/kg/day + paromomycin for 17 days</b> · or paromomycin + miltefosine 14 days · severe/HIV: liposomal amphotericin B"
+],
+[
+"Monitoring",
+"Fever settles, spleen shrinks, Hb and weight rise · relapse: <b>tissue aspirate</b> (serology stays positive) · SSG: ECG"
+],
+[
+"Complications",
+"Bleeding · secondary infection (pneumonia, TB) · <b>PKDL</b> · death if untreated"
+]
+],
+"trap": "Serology stays positive after cure: use <b>aspirate</b> for relapse · fever + huge spleen + pancytopenia also = <b>leukaemia</b>: look at the film · SSG needs ECG monitoring"
+}

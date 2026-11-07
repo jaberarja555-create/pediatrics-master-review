@@ -1,0 +1,34 @@
+{
+"sc": [
+"Unvaccinated child, grey membrane that bleeds when removed, bull neck → <b>Diphtheria: antitoxin + penicillin</b>",
+"2-month-old with coughing spells and apnoea, no whoop → <b>Pertussis: admit</b>",
+"Unvaccinated child, fever, asymmetric flaccid leg weakness, normal sensation → <b>Polio (AFP)</b>"
+],
+"f": [
+[
+"Diphtheria",
+"Membrane, bull neck · death from <b>myocarditis</b> · palatal palsy (nasal regurgitation) at 3 weeks · <b>antitoxin early</b> + penicillin 14 days"
+],
+[
+"Pertussis",
+"Catarrhal → <b>paroxysmal cough with whoop</b>, vomiting after cough · <b>lymphocytosis</b> · infants: apnoea · <b>azithromycin 5 days</b>"
+],
+[
+"Tetanus",
+"Lockjaw, spasms, <b>fully conscious</b> · tetanus immunoglobulin 500 IU · <b>metronidazole</b> · diazepam · vaccinate after recovery"
+],
+[
+"Polio / AFP",
+"Any child < 15 yr with sudden flaccid weakness: <b>notify + 2 stool samples</b> · polio: asymmetric, no sensory loss"
+],
+[
+"Differential",
+"Diphtheria vs <b>EBV</b> (splenomegaly, atypical lymphs) · polio vs <b>Guillain–Barré</b> (symmetric, ascending, high CSF protein)"
+],
+[
+"Prevention",
+"Pentavalent at 6, 10, 14 wk · OPV/IPV · Td to mothers (neonatal tetanus)"
+]
+],
+"trap": "Main cause of death in diphtheria is <b>myocarditis</b>, not the airway · infants with pertussis may only have <b>apnoea</b> · recovery from tetanus does <b>not</b> give immunity"
+}

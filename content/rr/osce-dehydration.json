@@ -1,0 +1,34 @@
+{
+"sc": [
+"Lethargic, cannot drink, skin pinch 3 seconds → <b>Severe dehydration: Plan C</b>",
+"Restless, irritable, drinks eagerly, slow skin pinch → <b>Some dehydration: Plan B (ORS 75 ml/kg in 4 h)</b>",
+"Bilateral pitting oedema, flaky-paint skin, sparse pale hair, apathy → <b>SAM with oedema</b>"
+],
+"f": [
+[
+"Dehydration signs",
+"General condition · eyes · drinking · <b>skin pinch</b> · two signs in the same row decide the class"
+],
+[
+"Plan C",
+"Ringer lactate <b>100 ml/kg</b>: infant 30 ml/kg in 1 h + 70 in 5 h · improving: urine, stronger pulse → ORS"
+],
+[
+"Malnutrition assessment",
+"<b>MUAC</b>, weight-for-height, <b>bilateral oedema</b> (3 s thumb pressure) · appetite test · complications"
+],
+[
+"SAM forms",
+"With oedema: flaky skin, flag sign, apathy, big liver · without oedema: old-man face, baggy pants · stunting: low height-for-age"
+],
+[
+"SAM fluids",
+"<b>ReSoMal 5 ml/kg every 30 min</b> (no ORS, no Plan C) · shock: IV 15 ml/kg over 1 h · overload: stop"
+],
+[
+"Warning signs",
+"Puffy eyelids = overhydration · faster breathing + bigger liver in SAM = <b>fluid overload</b>"
+]
+],
+"trap": "Standard ORS and Plan C are <b>not</b> used in SAM · a wasted child with slow skin pinch but <b>no diarrhoea</b> has wasting, not dehydration · weak distended abdomen after diarrhoea = hypokalaemia"
+}

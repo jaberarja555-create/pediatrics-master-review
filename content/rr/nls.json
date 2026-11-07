@@ -1,0 +1,34 @@
+{
+"sc": [
+"Baby not breathing after drying and stimulation → <b>Bag-and-mask ventilation within the golden minute</b>",
+"HR 50 after 30 s of effective ventilation → <b>Chest compressions 3 : 1</b>",
+"Sudden deterioration on bag ventilation, one side silent → <b>Pneumothorax: needle decompression</b>"
+],
+"f": [
+[
+"Golden minute",
+"Dry, keep warm, clear airway only if blocked, rub back · not breathing or <b>HR < 100</b> → ventilate by <b>60 seconds</b>"
+],
+[
+"Ventilation",
+"Most important step: <b>effective ventilation</b> · start in <b>room air (21%)</b> at term · chest not rising: reposition, check seal, ↑ pressure, airway device"
+],
+[
+"Compressions",
+"<b>HR < 60</b> after 30 s of good ventilation · two-thumb technique, <b>3 : 1</b> with ventilation · switch to 100% oxygen"
+],
+[
+"Drugs",
+"<b>Adrenaline 10–30 µg/kg IV</b> via umbilical vein if HR < 60 despite compressions · volume: saline or O-neg blood <b>10 ml/kg</b>"
+],
+[
+"Apgar",
+"Heart rate, breathing, tone, reflex, colour · at <b>1 and 5 min</b> · do not wait for the score to start resuscitation"
+],
+[
+"Key numbers",
+"Delayed cord clamping <b>≥ 60 s</b> · SpO2 85–95% at 10 min · no HR after 20 min: consider stopping"
+]
+],
+"trap": "Meconium: <b>no routine tracheal suction</b>; non-vigorous baby → ventilate · diaphragmatic hernia: <b>intubate, no bag-mask</b> · SpO2 70% at 3 min is normal"
+}

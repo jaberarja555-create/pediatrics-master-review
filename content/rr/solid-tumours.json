@@ -1,0 +1,34 @@
+{
+"sc": [
+"Well 3-year-old, smooth flank mass not crossing the midline, haematuria, high BP → <b>Wilms tumour</b>",
+"Ill 18-month-old, hard abdominal mass crossing the midline, raccoon eyes → <b>Neuroblastoma</b>",
+"6-year-old, fast-growing jaw swelling, loose teeth, starry-sky biopsy → <b>Burkitt lymphoma</b>"
+],
+"f": [
+[
+"Warning signs",
+"White pupil (<b>retinoblastoma</b>) · unexplained mass · morning headache with vomiting · bone pain at night · node > 2 cm or > 4–6 weeks"
+],
+[
+"Wilms vs neuroblastoma",
+"Wilms: <b>3–4 yr</b>, well, smooth, does not cross midline, cure ~90% · neuroblastoma: <b>< 2 yr</b>, ill, crosses midline, <b>urine VMA/HVA</b>, MIBG"
+],
+[
+"Lymphoma",
+"Hodgkin: teenager, rubbery nodes, B symptoms, <b>Reed–Sternberg cells</b> · Burkitt: jaw (endemic) or abdomen, very fast, tumour lysis"
+],
+[
+"Brain and eye",
+"Medulloblastoma: truncal ataxia · craniopharyngioma: bitemporal hemianopia, short, polyuria · retinoblastoma: RB1, bilateral = heritable"
+],
+[
+"Investigations",
+"<b>Excision biopsy</b> of a node · ultrasound then <b>CT</b> (chest for Wilms metastases: lungs) · MRI brain · AFP (hepatoblastoma)"
+],
+[
+"Bone",
+"Ewing: fever, onion-skin X-ray · osteosarcoma: knee, sunburst"
+]
+],
+"trap": "Raccoon eyes in a toddler with an abdominal mass = <b>metastatic neuroblastoma</b>, not abuse · mediastinal mass: keep the child <b>sitting up, no sedation</b> · dancing eyes = opsoclonus–myoclonus (neuroblastoma)"
+}

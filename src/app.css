@@ -1700,3 +1700,23 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 /* Rapid Review cover (owner, Nov 2026): the whole picture shows, centred, blurred copy behind it */
 .page.rrcov { background:#0b1a2e; }
 .page.rrcov .covimg { height:auto; width:816px; top:50%; bottom:auto; transform:translate(-50%,-50%); }
+/* Rapid Review exam recap card (owner, 7 Nov 2026): one card per topic, the same order every time */
+.mb.rv.rq { padding:0 !important; border:1px solid var(--ch-line, #d5dde1) !important; border-radius:9px !important; overflow:hidden; background:#fff !important; box-shadow:none !important; }
+.rq .rqh { display:flex; align-items:center; gap:8px; padding:5px 10px; background:var(--ch-wash, #f3f6f7); border-bottom:1.5px solid var(--ch); font:800 10.5pt/1.25 Inter, sans-serif; color:#0e2547; }
+.rq .rqh .rvn { background:var(--ch); color:#fff; border-radius:5px; padding:1px 7px; font-size:8.5pt; }
+.rq .rqs { padding:5px 12px 4px; border-bottom:1px solid #e3e8eb; }
+.rq .rqs div { display:flex; gap:7px; font-size:8.7pt; line-height:1.42; padding:1.5px 0; }
+.rq .rqs div::before { content:"▸"; color:var(--ch); font-weight:800; flex:none; }
+.rq .rqs b, .rq .rqf b { color:#0e2547; }
+.rq .rqg { display:grid; grid-template-columns:1fr 1fr; }
+.rq .rqf { padding:4px 12px 5px; border-bottom:1px solid #eef1f3; font-size:8.6pt; line-height:1.4; }
+.rq .rqg .rqf:nth-child(odd) { border-right:1px solid #eef1f3; }
+.rq .rqg .rqf.rqw { grid-column:1 / -1; border-right:0; }
+.rq .rqf h5 { margin:0 0 1px; font:800 6.8pt Inter, sans-serif; letter-spacing:1px; text-transform:uppercase; color:var(--ch-dark, var(--ch)); }
+.rq .rqf.rqn h5 { color:#a07a1f; }
+.rq .rqf.rqt { background:#fff6f4; border-bottom:0; }
+.rq .rqf.rqt h5 { color:#c0392b; }
+/* recap card text a little larger for phones */
+.rq .rqs div { font-size:9.4pt; } .rq .rqf { font-size:9.2pt; } .rq .rqf h5 { font-size:7.2pt; } .rq .rqh { font-size:11pt; }
+.rq .rqs div { display:block; position:relative; padding-left:14px; }
+.rq .rqs div::before { position:absolute; left:0; top:1.5px; }

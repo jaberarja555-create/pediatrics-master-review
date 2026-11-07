@@ -1,0 +1,34 @@
+{
+"sc": [
+"Irritable child who drinks eagerly, sunken eyes, slow skin pinch → <b>Some dehydration: Plan B (ORS)</b>",
+"Lethargic child, cannot drink, skin pinch very slow → <b>Severe dehydration: Plan C</b>",
+"Bloody diarrhoea, then pallor and little urine a week later → <b>HUS (E. coli O157)</b>"
+],
+"f": [
+[
+"Causes",
+"Commonest: <b>rotavirus</b> (watery, vomiting, < 2 yr) · cholera (rice-water) · Shigella (blood, fever, convulsion) · amoeba · Campylobacter"
+],
+[
+"Dehydration (IMCI)",
+"Two signs needed · <b>some</b>: restless/irritable, sunken eyes, drinks eagerly, pinch slow · <b>severe</b>: lethargic, cannot drink, pinch very slow (> 2 s)"
+],
+[
+"Plan B",
+"ORS <b>75 ml/kg over 4 hours</b> · vomiting: wait 10 min, give slowly · reassess"
+],
+[
+"Plan C",
+"<b>Ringer lactate 100 ml/kg</b>: infant 30 ml/kg in 1 h + 70 ml/kg in 5 h · child 30 in ½ h + 70 in 2½ h · no IV: ORS by NGT 20 ml/kg/h"
+],
+[
+"Home treatment (Plan A)",
+"Extra fluid · <b>zinc 10–14 days</b> (10 mg < 6 mo, 20 mg ≥ 6 mo) · continue feeding/breastfeeding · when to return"
+],
+[
+"Antibiotics",
+"<b>Dysentery: ciprofloxacin 15 mg/kg 12-hourly × 3 days</b> · cholera: azithromycin single dose · watery diarrhoea: <b>no antibiotic</b>"
+]
+],
+"trap": "Commonest cause is <b>viral</b> (rotavirus), not bacterial · shock means <b>severe</b> dehydration · doughy skin and marked irritability → <b>hypernatraemic</b> dehydration · convulsion in a malnourished child → check <b>glucose</b>"
+}

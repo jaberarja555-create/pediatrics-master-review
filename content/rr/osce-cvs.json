@@ -1,0 +1,34 @@
+{
+"sc": [
+"Radio-femoral delay, high BP in the arms → <b>Coarctation: echo</b>",
+"Collapsing pulse, continuous murmur below the left clavicle → <b>PDA</b>",
+"Down syndrome infant with heart failure and a murmur → <b>AVSD: echo</b>"
+],
+"f": [
+[
+"Sequence",
+"General (cyanosis, clubbing, dysmorphism, distress) · pulses (rate, rhythm, <b>femorals</b>) · BP · precordium: inspection, <b>apex</b>, thrills, heaves · auscultation · liver, lungs"
+],
+[
+"Murmur description",
+"Timing · site · grade (1–6) · radiation · S2 · innocent vs pathological"
+],
+[
+"Key findings",
+"Wide fixed split S2 = <b>ASD</b> · pansystolic LLSE = <b>VSD</b> · continuous = PDA · ejection + single S2 + cyanosis = <b>TOF</b>"
+],
+[
+"Heart failure signs",
+"Tachycardia, tachypnoea, gallop, <b>enlarged tender liver</b> (most useful in infants)"
+],
+[
+"Investigations",
+"<b>Echocardiography</b> · ECG · chest X-ray · SpO2"
+],
+[
+"Examiner marks",
+"Feel <b>femoral pulses</b> in every child · count the RR · check the liver"
+]
+],
+"trap": "Leg oedema is <b>not</b> an early sign of heart failure in infants · a soft murmur in a well febrile child may be innocent: re-examine"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"Turbid CSF, many neutrophils, high protein, low glucose → <b>Bacterial meningitis: ceftriaxone</b>",
+"Boot-shaped heart with oligaemic lungs → <b>Tetralogy of Fallot</b>",
+"Bilious vomiting from day 1, Down syndrome, double bubble → <b>Duodenal atresia: surgery</b>"
+],
+"f": [
+[
+"CSF",
+"Bacterial: neutrophils, high protein, <b>low glucose</b> · viral: lymphocytes, normal glucose · <b>TB: lymphocytes, very high protein, low glucose, cobweb</b>"
+],
+[
+"Blood and urine",
+"Microcytic + target cells, normal RDW → thalassaemia · RBC casts + low C3 → PSGN · pancytopenia → marrow"
+],
+[
+"X-rays",
+"Boot heart = TOF · egg-on-side = TGA · <b>thumb sign</b> = epiglottitis · cupped frayed metaphyses = <b>rickets</b> · double bubble = duodenal atresia"
+],
+[
+"Spotters",
+"Phototherapy · intraosseous needle · MUAC tape (yellow = MAM) · <b>VVM darker square = discard</b> · NG tube length: nose → ear → xiphisternum"
+],
+[
+"Clinical photos",
+"Chickenpox (crops) · dactylitis (sickle) · <b>Bitot spot</b> (vitamin A) · measles (Koplik, rash from behind the ears)"
+],
+[
+"Presenting an X-ray",
+"Type and view · patient details · quality (rotation, inspiration, exposure) · findings · conclusion"
+]
+],
+"trap": "A VVM square <b>darker</b> than the circle means the vaccine is spoiled · measles: always give <b>vitamin A</b> · present films in a fixed order"
+}

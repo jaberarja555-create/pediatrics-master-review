@@ -1,0 +1,34 @@
+{
+"sc": [
+"Bite on the foot in a field, swelling, gum bleeding, 20WBCT not clotted → <b>Viper: polyvalent antivenom</b>",
+"Bite, ptosis, drooling, weak breathing → <b>Cobra (neurotoxic): ventilate + antivenom</b>",
+"Child stung at night, sweating, vomiting, frothy sputum, cold hands → <b>Scorpion pulmonary oedema: antivenom, prazosin, ICU</b>"
+],
+"f": [
+[
+"First aid",
+"Reassure, <b>immobilise</b> the limb, remove rings · <b>no</b> tourniquet, cutting, sucking or herbal remedies · go to hospital"
+],
+[
+"Assessment",
+"Local swelling · bleeding · <b>20-minute whole blood clotting test</b> · ptosis, breathing · urine (dark) · observe ≥ <b>24 h</b>"
+],
+[
+"Antivenom",
+"Indications: <b>incoagulable blood</b>, neurotoxicity, rapidly spreading swelling, shock · <b>child dose = adult dose</b> · repeat at 6 h if still incoagulable"
+],
+[
+"Scorpion",
+"Grade I: pain → local anaesthetic · severe: sweating, vomiting, priapism, <b>pulmonary oedema</b> → antivenom, <b>prazosin 30 µg/kg</b>"
+],
+[
+"Dog bite / rabies",
+"Wash 15 min · category III (deep, bleeding, face): <b>vaccine + RIG</b> · vaccine days <b>0, 3, 7, 14</b> · observe the dog 10 days"
+],
+[
+"Complications",
+"Bleeding, AKI · respiratory paralysis · compartment syndrome · tetanus · rabies (fatal once symptoms)"
+]
+],
+"trap": "The antivenom dose is the <b>same for a child as an adult</b> · a clotted 20WBCT at 24 h and no swelling = <b>dry bite</b> · fear of water after a dog bite = rabies"
+}

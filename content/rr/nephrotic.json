@@ -1,0 +1,34 @@
+{
+"sc": [
+"Boy 4 years, puffy eyes, proteinuria 4+, albumin 15, normal BP, C3 and creatinine → <b>Minimal change: steroids, no biopsy</b>",
+"Still proteinuric after 6 weeks of steroids → <b>Steroid-resistant: biopsy (FSGS)</b>",
+"Nephrotic child on steroids with fever, abdominal pain, tender ascites → <b>Pneumococcal peritonitis: IV ceftriaxone</b>"
+],
+"f": [
+[
+"Definition",
+"<b>Heavy proteinuria</b> (≥ 3+, UPCR > 200 mg/mmol) + <b>albumin < 25 g/L</b> + oedema (± high cholesterol)"
+],
+[
+"Key features",
+"Periorbital then generalised oedema, ascites · <b>normal BP</b>, no haematuria (minimal change) · peak age <b>2–6 yr</b>"
+],
+[
+"Investigations",
+"Urine dipstick and UPCR · albumin, cholesterol · creatinine · <b>C3</b> · HBsAg, HIV · biopsy only if atypical or resistant"
+],
+[
+"Treatment",
+"<b>Prednisolone 60 mg/m²/day × 4–6 wk</b>, then 40 mg/m² alternate days × 4–6 wk · salt restriction · albumin 20% 0.5–1 g/kg only if hypovolaemic"
+],
+[
+"Response",
+"Remission: dipstick negative <b>3 days</b> · ~90% steroid-sensitive · frequent relapses: levamisole · resistant → biopsy"
+],
+[
+"Complications",
+"<b>Infection</b> (peritonitis) · <b>thrombosis</b> (cerebral venous) · hypovolaemia (abdominal pain, cold hands, high Hct) · steroid side effects"
+]
+],
+"trap": "Haematuria, hypertension or <b>low C3</b> = not minimal change: biopsy · nephrotic in a <b>3-month-old</b> = congenital · oedema with low albumin but <b>no proteinuria</b> = kwashiorkor or gut loss"
+}

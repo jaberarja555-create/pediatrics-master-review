@@ -1,0 +1,33 @@
+{
+"sc": [
+"Fever 6 days, red eyes, cracked lips, swollen hands, one neck node → <b>Kawasaki disease</b>",
+"Arab boy, repeated 2-day attacks of fever and abdominal pain, well between → <b>FMF</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Fever ≥ 5 days, very irritable child · FMF: fever with abdominal pain, chest pain, swollen joint"
+],
+[
+"Key signs",
+"Non-purulent red eyes, red cracked lips, strawberry tongue, swollen hands then peeling, rash, neck node"
+],
+[
+"Diagnosis",
+"Fever <b>≥ 5 d + 4 of 5</b> features · infants: incomplete form"
+],
+[
+"Investigations",
+"ESR/CRP ↑ · platelets ↑ in weeks 2–3 · sterile pyuria · <b>echo</b> at diagnosis, 2 and 6 wk"
+],
+[
+"Treatment",
+"<b>IVIG 2 g/kg + aspirin</b> within 10 days · FMF: <b>colchicine for life</b>"
+],
+[
+"Complications",
+"<b>Coronary aneurysm</b> (25% untreated, < 5% treated) · FMF: amyloidosis"
+]
+],
+"trap": "Scarlet fever also has a strawberry tongue but has exudate and <b>no red eyes</b> · infants: highest aneurysm risk · live vaccines wait <b>11 months</b> after IVIG"
+}

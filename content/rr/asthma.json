@@ -1,0 +1,34 @@
+{
+"sc": [
+"School child, recurrent wheeze, night cough, wheeze on running, eczema → <b>Asthma: spirometry</b>",
+"Asthmatic child, drowsy, silent chest, SpO2 < 92% → <b>Life-threatening attack: PICU</b>",
+"Asthmatic on ICS with white plaques in the mouth → <b>Oral thrush: spacer + rinse</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Recurrent wheeze, cough at <b>night</b> and with exercise, chest tightness · triggers: colds, dust, smoke, cold air"
+],
+[
+"Diagnosis",
+"Spirometry: <b>FEV1 rise ≥ 12%</b> after salbutamol · FEV1/FVC < 0.9 · possible from 5–6 years"
+],
+[
+"Long-term treatment",
+"Reliever <b>salbutamol</b> · controller <b>inhaled corticosteroid</b> · step up: LABA, montelukast · step down after <b>3 months</b> of control"
+],
+[
+"Devices",
+"< 4 yr: <b>MDI + spacer + face mask</b> · older: spacer + mouthpiece · always check <b>technique and adherence</b> first"
+],
+[
+"Acute attack",
+"Oxygen (SpO2 94–98%) · salbutamol + ipratropium · <b>prednisolone 1–2 mg/kg</b> 3–5 days · severe: <b>IV MgSO4 40 mg/kg</b> (max 2 g)"
+],
+[
+"Severity",
+"Life-threatening: <b>silent chest</b>, cyanosis, drowsy, SpO2 < 92% · normal or <b>rising PaCO2</b> = tiring"
+]
+],
+"trap": "A normal chest between attacks does <b>not</b> exclude asthma · <b>clubbing</b> is not asthma (think CF) · a silent chest is <b>danger</b>, not improvement"
+}

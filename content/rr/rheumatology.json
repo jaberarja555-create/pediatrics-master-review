@@ -1,0 +1,33 @@
+{
+"sc": [
+"Girl 3 yr, one swollen knee for 2 months, ANA positive → <b>Oligoarticular JIA</b>",
+"Daily fever spikes for weeks, salmon rash with the fever, big liver and spleen → <b>Systemic JIA</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Morning stiffness, limp · young children rarely complain of pain · systemic: daily fever, rash"
+],
+[
+"Key signs",
+"Swollen joint, ↓ movement, warmth · systemic: hepatosplenomegaly, nodes, serositis"
+],
+[
+"Diagnosis",
+"Onset <b>< 16 yr</b>, arthritis <b>≥ 6 wk</b>, other causes excluded; clinical, no test proves it"
+],
+[
+"Investigations",
+"<b>Blood film</b> (exclude leukaemia) · ESR/CRP · ANA (uveitis risk) · RF, anti-CCP (prognosis)"
+],
+[
+"Treatment",
+"NSAID → intra-articular steroid (oligo) → <b>methotrexate once weekly</b> + folic acid → biologic"
+],
+[
+"Complications",
+"<b>Silent uveitis</b> (slit lamp every 3 mo) · leg-length difference · macrophage activation syndrome"
+]
+],
+"trap": "Systemic JIA: <b>blood film first</b>, steroids hide leukaemia · monoarthritis of the hip is septic or TB, not JIA · a negative ANA or RF does not exclude JIA"
+}

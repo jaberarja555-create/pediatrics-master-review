@@ -1,0 +1,34 @@
+{
+"sc": [
+"Prolonged jaundice, constipation, big tongue, umbilical hernia, large fontanelle, high TSH → <b>Congenital hypothyroidism: levothyroxine now</b>",
+"Short overweight girl, slow growth, goitre → <b>Hashimoto thyroiditis</b>",
+"Teen girl, weight loss, tremor, goitre with bruit, exophthalmos, low TSH → <b>Graves: carbimazole + propranolol</b>"
+],
+"f": [
+[
+"Congenital hypothyroidism",
+"<b>1 : 2000–4000</b> · dysgenesis 85% · newborn screening TSH · prolonged jaundice, constipation, hypotonia, big tongue, hernia"
+],
+[
+"Treatment",
+"<b>Levothyroxine 10–15 µg/kg/day</b>, start <b>by 2 weeks</b> (intellect depends on it) · follow TSH and T4"
+],
+[
+"Acquired hypothyroidism",
+"<b>Hashimoto</b> (girls, goitre) · slowing growth, delayed bone age, weight gain · check in Down syndrome"
+],
+[
+"Hyperthyroidism",
+"Graves: weight loss, tremor, goitre with bruit, eye signs · low TSH, <b>TRAb +</b> · <b>carbimazole 0.25–1 mg/kg/day</b> for 2–3 yr"
+],
+[
+"Carbimazole warning",
+"Sore throat and fever → <b>agranulocytosis</b>: stop, CBC"
+],
+[
+"Goitre",
+"Iodine deficiency (endemic cretinism) · Hashimoto · solitary nodule → <b>ultrasound + FNA</b>"
+]
+],
+"trap": "Do not wait for the result to start treatment when the clinical picture is clear · newborn of a Graves mother → <b>neonatal thyrotoxicosis</b> · absent knee epiphysis on X-ray = congenital hypothyroidism"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"7-year-old boy, testes 8 ml, growth spurt, high LH → <b>Central precocious puberty: MRI brain</b>",
+"Girl 18 months, breast buds only, normal growth → <b>Premature thelarche: reassure</b>",
+"Polyuria, thirst, Na 152, dilute urine, concentrates after DDAVP → <b>Central DI: desmopressin</b>"
+],
+"f": [
+[
+"Normal puberty",
+"Girls: <b>breast</b> first, menarche 2–2.5 yr later · boys: <b>testes ≥ 4 ml</b> first · Tanner stages"
+],
+[
+"Precocious",
+"Girls <b>< 8</b>, boys <b>< 9 yr</b> · central (high LH: girls idiopathic, boys <b>CNS lesion</b>) · peripheral (CAH, McCune–Albright, tumours)"
+],
+[
+"Delayed",
+"No puberty by <b>13 (girls), 14 (boys)</b> · constitutional delay (commonest) · Turner, Klinefelter, Kallmann (anosmia), chronic disease"
+],
+[
+"GH deficiency",
+"Short, chubby, slow velocity, normal proportions · neonatal hypoglycaemia, micropenis · <b>2 failed stimulation tests</b> · daily GH"
+],
+[
+"Craniopharyngioma",
+"Short stature, <b>bitemporal hemianopia</b>, headache, DI · calcified suprasellar mass"
+],
+[
+"Diabetes insipidus",
+"Polyuria, high Na, urine < 300 mOsm/kg · water deprivation → <b>DDAVP</b>: concentrates = central, does not = nephrogenic"
+]
+],
+"trap": "Precocious puberty in a <b>boy</b> → MRI brain (CNS cause more likely) · large penis with <b>small testes</b> = peripheral (CAH) · urine concentrates on water deprivation = psychogenic polydipsia"
+}

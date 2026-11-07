@@ -1,0 +1,34 @@
+{
+"sc": [
+"MUAC 11 cm, visible ribs, no oedema, alert, eats RUTF → <b>SAM without oedema: OTP at home</b>",
+"Bilateral pitting oedema, apathy, flaky-paint skin, flag sign → <b>SAM with oedema (kwashiorkor)</b>",
+"Child with SAM, 34.5 °C, lethargic, glucose 2.5 mmol/L → <b>Complicated SAM: admit</b>"
+],
+"f": [
+[
+"Diagnosis (6–59 mo)",
+"<b>MUAC < 11.5 cm</b> or <b>WFH < −3 SD</b> or <b>bilateral pitting oedema</b> · MAM: MUAC 11.5–12.4 cm"
+],
+[
+"Where to treat",
+"Alert, passes appetite test, no complication: <b>OTP (RUTF at home)</b> · failed appetite test, oedema +++, complication: <b>stabilisation centre</b>"
+],
+[
+"10 steps (inpatient)",
+"Treat/prevent <b>hypoglycaemia, hypothermia, dehydration</b> · correct electrolytes · <b>antibiotics for all</b> · micronutrients · F-75 → F-100/RUTF · stimulation"
+],
+[
+"Treatment details",
+"Dehydration: <b>ReSoMal</b> slowly (not ORS) · shock: IV 15 ml/kg over 1 h · antibiotics: amoxicillin, or IV ampicillin + gentamicin if sick · <b>no iron</b> in stabilisation"
+],
+[
+"Complications",
+"<b>Infection</b> (commonest cause of death, often without fever) · hypoglycaemia · hypothermia · heart failure, <b>refeeding syndrome</b>"
+],
+[
+"Key numbers",
+"F-75 <b>130 ml/kg/day</b> · RUTF 200 kcal/kg/day (500 kcal sachet) · target gain > 10 g/kg/day · cured: MUAC ≥ 12.5 cm on 2 visits"
+]
+],
+"trap": "Oedema hides weight loss · standard ORS is <b>not</b> used (too much sodium) · no diuretics for the oedema · a pulse rise of 25/min in transition warns of <b>heart failure</b>: reduce the feed"
+}

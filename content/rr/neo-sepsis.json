@@ -1,0 +1,34 @@
+{
+"sc": [
+"Membranes ruptured > 18 h, maternal fever, day-1 poor feeding and distress → <b>Early-onset sepsis (GBS)</b>",
+"Day-10 vesicles and seizures, mother had genital sores → <b>Neonatal herpes: IV aciclovir</b>",
+"Home delivery, stops sucking on day 6, spasms, opisthotonus, alert → <b>Neonatal tetanus</b>"
+],
+"f": [
+[
+"Key signs",
+"Poor feeding, lethargy, <b>temperature instability</b> (often hypothermia), apnoea, RD, jaundice, bulging fontanelle"
+],
+[
+"Early vs late",
+"<b>< 72 h</b>: GBS, E. coli, Listeria (from mother) · <b>> 72 h</b>: staph (lines), gram-negatives, hospital"
+],
+[
+"Investigations",
+"<b>Blood culture</b> (best) · CBC, CRP · <b>LP</b> · urine (late onset) · chest X-ray"
+],
+[
+"Treatment",
+"<b>Ampicillin + gentamicin</b> ≥ 10 days · meningitis: <b>cefotaxime</b> ≥ 3 weeks · avoid ceftriaxone in jaundice"
+],
+[
+"Congenital infections",
+"CMV (commonest, periventricular calcification, deafness) · toxoplasma (hydrocephalus, diffuse calcification) · rubella (cataract, deafness, PDA) · syphilis (snuffles, rash on palms)"
+],
+[
+"Local infections",
+"Gonococcal eye <b>day 2–5</b>: ceftriaxone · chlamydia day 5–14: erythromycin · omphalitis: IV cloxacillin + gentamicin"
+]
+],
+"trap": "Septic newborns are often <b>hypothermic, not febrile</b> · calcification around the ventricles = <b>CMV</b>, scattered = toxoplasma · neonatal tetanus: baby stays <b>alert</b> between spasms"
+}

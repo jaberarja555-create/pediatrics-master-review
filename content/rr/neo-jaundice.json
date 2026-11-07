@@ -1,0 +1,34 @@
+{
+"sc": [
+"Jaundice at 12 hours of age → <b>Pathological: haemolysis until proved otherwise</b>",
+"Jaundice at 3 weeks, pale stools, dark urine → <b>Biliary atresia</b>",
+"Thriving breastfed baby, jaundice from day 7 to week 8 → <b>Breast milk jaundice: continue breastfeeding</b>"
+],
+"f": [
+[
+"Physiological",
+"Appears <b>day 2–3</b>, peaks day 3–4, unconjugated, term peak < 12 mg/dL, gone by 2 weeks (3 weeks preterm)"
+],
+[
+"Pathological",
+"Onset <b>< 24 h</b> · rises > 5 mg/dL/day · conjugated > 1–2 mg/dL · lasts > 2 weeks · baby unwell"
+],
+[
+"Causes",
+"Haemolysis: <b>ABO</b>, Rh, G6PD, spherocytosis · sepsis · cephalhaematoma · hypothyroidism · conjugated: <b>biliary atresia</b>, hepatitis"
+],
+[
+"Investigations",
+"Total + <b>conjugated (split) bilirubin</b> · blood groups of mother and baby · <b>direct Coombs</b> · Hb, film, retics · G6PD · TSH"
+],
+[
+"Treatment",
+"<b>Phototherapy</b> (460–490 nm) above the line · <b>exchange transfusion</b> (2 × 85 ml/kg) if above exchange line or signs of encephalopathy · IVIG 0.5–1 g/kg in isoimmune"
+],
+[
+"Complications",
+"<b>Kernicterus</b> (basal ganglia): lethargy, high-pitched cry, arching → athetoid CP, deafness, upward gaze palsy"
+]
+],
+"trap": "Jaundice in the first 24 h is <b>never physiological</b> · conjugated jaundice is never normal: refer at once (Kasai <b>before 60 days</b>) · phototherapy in cholestasis → bronze baby"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"Hypotonic newborn, upslanting eyes, single palmar crease, AVSD → <b>Down syndrome</b>",
+"Short girl, webbed neck, wide-spaced nipples, no puberty, coarctation → <b>Turner syndrome (45,X)</b>",
+"Tall boy, small testes, gynaecomastia → <b>Klinefelter (47,XXY)</b>"
+],
+"f": [
+[
+"Down syndrome",
+"<b>1 : 700</b> births · non-disjunction 94% (↑ maternal age) · translocation 4% (karyotype the parents) · mosaic 2%"
+],
+[
+"Down: problems",
+"CHD <b>40–50%</b> (AVSD, VSD) · duodenal atresia, Hirschsprung · hypothyroidism · leukaemia · atlanto-axial instability · early Alzheimer"
+],
+[
+"Other trisomies",
+"<b>Edwards (T18)</b>: clenched fists, overlapping fingers, rocker-bottom feet · <b>Patau (T13)</b>: cleft lip, polydactyly, small eyes"
+],
+[
+"Inheritance",
+"AD: <b>50%</b> risk each child · AR: <b>25%</b> (consanguinity) · X-linked recessive: boys affected, carrier mothers"
+],
+[
+"Other syndromes",
+"Fragile X (big ears, large testes) · tuberous sclerosis (ash-leaf spots, spasms) · DiGeorge (TOF, hypocalcaemia, infections) · Prader–Willi (floppy, then obese)"
+],
+[
+"Prenatal diagnosis",
+"Combined test (NT + PAPP-A + β-hCG) 11–14 wk · CVS 11–14 wk · amniocentesis 15+ wk"
+]
+],
+"trap": "Down syndrome in a <b>young mother</b> with a previous affected child → think <b>translocation</b>: karyotype both parents · NF1 needs <b>≥ 6</b> café-au-lait spots"
+}

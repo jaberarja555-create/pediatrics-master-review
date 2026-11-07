@@ -320,9 +320,25 @@ def rv_rows(ex):
     return rows
 
 
+def rq_card(t, d):
+    """Exam recap card of one topic (owner, 7 Nov 2026): exam scenarios, then key symptoms / signs, diagnosis,
+    investigations, differential, treatment, complications, key numbers in two columns, then the exam traps.
+    Written in content/rr/<topic>.json: {"sc": [...], "f": [[label, html], ...], "trap": html}."""
+    sc = ''.join(f'<div>{x}</div>' for x in d.get('sc', []))
+    fs = [f for f in d.get('f', []) if f[1]]
+    cells = ''.join(f'<div class="rqf{" rqn" if lab == "Key numbers" else ""}{" rqw" if i == len(fs) - 1 and len(fs) % 2 else ""}"><h5>{lab}</h5>{v}</div>'
+                    for i, (lab, v) in enumerate(fs))
+    trap = f'<div class="rqf rqt"><h5>Exam traps</h5>{d["trap"]}</div>' if d.get('trap') else ''
+    return (f'<div class="mb rv rq"><div class="rqh"><span class="rvn">{t["no"]}</span>{t["title"]}</div>'
+            f'<div class="rqs">{sc}</div><div class="rqg">{cells}</div>{trap}</div>')
+
+
 def chapter_exam(t):
     """Rapid Review block of one topic (owner, Nov 2026): one clear table, clue or question → answer;
     the old per-chapter Exam corner (clue switch, formulas, test yourself) now lives here, at the end of the book."""
+    f = CONTENT / 'rr' / f'{t["id"]}.json'
+    if f.exists():   # owner (7 Nov 2026): the new exam recap card replaces the clue table
+        return [(rq_card(t, json.loads(f.read_text())), True)]
     rows = rv_rows(t['_exam'])
     if not rows:
         return []
@@ -463,8 +479,8 @@ def contents_pages(book, rr_page):
                  f'<b>{ch["title"]}</b><span class="tpg">{nt} topic{"s" * (nt > 1)} · {rng}</span></div>'
                  f'<div class="tcg">{cells}</div></div>')
         blocks.append((70 + 26 * (-(-nt // 3) - 1) + (26 if part else 0), html_))
-    rr = (f'<div class="trr"><div class="tc" data-p="{rr_page}"><i>RR</i><span>Rapid review · every clue → answer, '
-          f'key numbers and test-yourself questions, chapter by chapter</span><em>{rr_page}</em></div></div>')
+    rr = (f'<div class="trr"><div class="tc" data-p="{rr_page}"><i>RR</i><span>Rapid review · exam recap of every topic: scenarios, '
+          f'signs, investigations, treatment and exam traps</span><em>{rr_page}</em></div></div>')
     blocks.append((56, rr))
     run, cut = 0, len(blocks)
     for k, (h, _) in enumerate(blocks):  # fill the first page, the rest go on the second
@@ -650,7 +666,7 @@ def build():
         tps = [a[4] for a in stream if a[0] == 'title']
         exam = [(x, t) for t in tps for x in chapter_exam(t)]
         if exam:
-            head = ('<h1 class="mzt rrh"><img class="rrlogo" src="img/logo2.webp" alt="">Rapid Review<small>Every clue, formula and question, chapter by chapter</small></h1>'
+            head = ('<h1 class="mzt rrh"><img class="rrlogo" src="img/logo2.webp" alt="">Rapid Review<small>Exam recap of every topic, chapter by chapter</small></h1>'
                     if not rr_streams else '') + f'<h2 class="rrc"><span class="no">{ch["no"]}</span>{ch["title"]}</h2>'
             rs = [('title', head, True, 'Rapid Review', tps[0])]
             rs.extend(('rvt', r, w, 'Rapid Review', t) for (r, w), t in exam)

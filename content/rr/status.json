@@ -1,0 +1,34 @@
+{
+"sc": [
+"Fitting child stops breathing after 3 doses of diazepam → <b>Benzodiazepine respiratory depression</b>",
+"Status with fever, malaria positive → <b>Cerebral malaria: artesunate</b>",
+"Falling GCS, one dilated pupil, bradycardia, hypertension → <b>Raised ICP: mannitol, head up</b>"
+],
+"f": [
+[
+"Definition",
+"Seizure <b>≥ 5 min</b>, or repeated without recovery"
+],
+[
+"Protocol",
+"ABC, oxygen, <b>glucose</b> · benzodiazepine (IV diazepam 0.3 mg/kg, rectal 0.5, buccal midazolam 0.3) · <b>max 2 doses</b> · then phenytoin or phenobarbitone <b>20 mg/kg</b> · then ICU"
+],
+[
+"Coma assessment",
+"AVPU · <b>GCS ≤ 8</b> = protect airway · Blantyre score (cerebral malaria) · pupils, posture"
+],
+[
+"Causes of coma",
+"<b>Cerebral malaria</b> · meningitis/encephalitis · hypoglycaemia · DKA · poisoning (organophosphate) · head injury · hypertensive encephalopathy"
+],
+[
+"Raised ICP",
+"Cushing triad: <b>bradycardia, hypertension</b>, irregular breathing · head up <b>30°</b> · <b>mannitol 0.5–1 g/kg</b> · avoid LP"
+],
+[
+"Investigations",
+"Glucose · malaria test · electrolytes, Ca · blood culture · LP when safe · CT if focal or trauma"
+]
+],
+"trap": "No more than <b>2 benzodiazepine doses</b> · pinpoint pupils, sweating, salivation = <b>organophosphate</b> · coma + retinal haemorrhages in an infant = <b>non-accidental injury</b>"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"Infant 3–6 months in winter, cold for 2 days, then fast breathing, poor feeding, wheeze, fine crackles → <b>Bronchiolitis (RSV)</b>",
+"6-week-old ex-preterm with a cold, then pauses in breathing → <b>RSV apnoea: admit, monitor</b>",
+"Toddler with wheeze only with colds, well between, no atopy → <b>Viral-induced wheeze</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Coryza, cough, fast breathing, poor feeding · young infants: <b>apnoea</b>"
+],
+[
+"Key signs",
+"Hyperinflation · <b>fine crackles</b> · wheeze · chest indrawing · hypoxia"
+],
+[
+"Investigations",
+"Clinical diagnosis · <b>pulse oximetry</b> · X-ray only if severe or doubt"
+],
+[
+"Treatment",
+"<b>Supportive</b>: oxygen if SpO2 <b>< 90%</b>, NG feeds, nasal suction · <b>no salbutamol, no steroids, no antibiotics</b>"
+],
+[
+"Prevention",
+"Nirsevimab or palivizumab (high-risk) · maternal RSV vaccine from 28 weeks"
+],
+[
+"Wheeze: other causes",
+"Asthma (atopy) · <b>heart failure</b> (big liver, murmur) · CF (poor growth) · reflux aspiration · <b>foreign body</b> (one side)"
+]
+],
+"trap": "Bronchiolitis is <b>RSV</b>; croup is parainfluenza · salbutamol and steroids do <b>not</b> help bronchiolitis · severe adenovirus bronchiolitis → bronchiolitis obliterans"
+}

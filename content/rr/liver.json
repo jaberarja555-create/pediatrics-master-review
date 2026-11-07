@@ -1,0 +1,34 @@
+{
+"sc": [
+"School child, fever and anorexia, then jaundice, tender liver, ALT in thousands → <b>Hepatitis A: anti-HAV IgM</b>",
+"Teenager with liver disease, tremor, Kayser–Fleischer rings → <b>Wilson disease</b>",
+"Vomiting and coma after aspirin in varicella, no jaundice → <b>Reye syndrome</b>"
+],
+"f": [
+[
+"Hepatitis A and E",
+"Faeco-oral · <b>never chronic</b> · anti-HAV IgM · supportive · hepatitis E kills <b>pregnant women</b>"
+],
+[
+"Hepatitis B serology",
+"HBsAg = infection (> 6 months = chronic) · anti-HBc IgM = acute · <b>anti-HBs alone = vaccinated</b>"
+],
+[
+"Hepatitis B prevention",
+"Baby of HBsAg+ mother: <b>HBIG + vaccine within 12–24 h</b>, then breastfeed · birth infection → 90% chronic"
+],
+[
+"Hepatitis C and D",
+"C: highest chronic rate, direct-acting antivirals 12 weeks · D needs HBsAg"
+],
+[
+"Acute liver failure",
+"<b>INR ≥ 2</b> (≥ 1.5 with encephalopathy) · confusion · falling ALT is a bad sign · ICU, avoid sedatives"
+],
+[
+"Chronic liver disease",
+"Wilson (low caeruloplasmin, penicillamine) · schistosomal portal hypertension (<b>normal liver tests</b>) · bleeding varices: band ligation"
+]
+],
+"trap": "<b>PT/INR</b> is the best test of liver injury severity, not ALT · no aspirin for children with viral illness (<b>Reye</b>) · hepatitis A and E never become chronic"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"4-year-old, pallor, petechiae, bone pain, limp, hepatosplenomegaly, blasts on the film → <b>ALL: bone marrow aspirate</b>",
+"Adolescent boy, high WBC, mediastinal mass, stridor → <b>T-cell ALL</b>",
+"Day 2 of chemotherapy, high K, phosphate and uric acid, low Ca → <b>Tumour lysis syndrome</b>"
+],
+"f": [
+[
+"Key symptoms",
+"Pallor, fatigue · fever, infections · <b>bruising, bleeding</b> · <b>bone pain, limp</b> · weight loss"
+],
+[
+"Key signs",
+"Pallor, petechiae · <b>hepatosplenomegaly</b> · lymphadenopathy · testicular swelling · mediastinal mass (T-cell)"
+],
+[
+"Investigations",
+"CBC + <b>film</b> (blasts) · <b>bone marrow aspirate</b> with immunophenotyping (≥ 25% blasts) · CSF · uric acid, K, phosphate, Ca"
+],
+[
+"Differential",
+"<b>Aplastic anaemia</b> · <b>kala-azar</b> · ITP · systemic JIA · EBV · neuroblastoma"
+],
+[
+"Treatment of ALL",
+"Induction → consolidation → maintenance, total <b>2–3 years</b> · CNS prophylaxis · cure <b>~90%</b> · AML: Auer rods, gum hypertrophy"
+],
+[
+"Emergencies",
+"<b>Febrile neutropenia</b> (< 0.5): antibiotics within <b>1 hour</b> · tumour lysis: fluids, <b>rasburicase</b> · hyperleukocytosis · mediastinal mass: no sedation"
+]
+],
+"trap": "Do not give <b>steroids</b> before the diagnosis (they mask ALL) · best prognostic factor = <b>response to induction (MRD)</b> · Down syndrome newborn blasts may be <b>transient</b>"
+}

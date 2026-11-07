@@ -1,0 +1,34 @@
+{
+"sc": [
+"Newborn lost 8% of birth weight by day 3, feeding well → <b>Physiological: reassure</b>",
+"Short and overweight, delayed bone age → <b>Endocrine cause</b> (hypothyroidism, GH deficiency)",
+"Head crossing centiles upward, bulging fontanelle, sunset eyes → <b>Hydrocephalus: cranial ultrasound</b>"
+],
+"f": [
+[
+"Weight",
+"Birth weight <b>doubles at 4–5 months</b>, triples at 1 year · 1–6 yr: <b>age × 2 + 8</b> kg"
+],
+[
+"Height",
+"Length 50 cm at birth, 75 cm at 1 yr · 2–12 yr: <b>age × 5 + 80</b> cm · < 4 cm/yr before puberty is abnormal"
+],
+[
+"Head and fontanelle",
+"OFC 35 cm at birth, +12 cm in year 1 · anterior fontanelle closes <b>12–18 months</b>; late: rickets, hypothyroidism"
+],
+[
+"Growth indicators",
+"<b>Weight-for-height</b> = wasting (acute) · <b>height-for-age</b> = stunting (chronic) · weight-for-age = underweight"
+],
+[
+"Bone age",
+"X-ray of the <b>left hand and wrist</b> · delayed: constitutional delay, hypothyroidism, GH deficiency · advanced: precocious puberty, CAH"
+],
+[
+"Key numbers",
+"SAM: <b>MUAC < 11.5 cm</b> or WFH < −3 SD or bilateral oedema · MAM: MUAC 11.5–12.4 cm"
+]
+],
+"trap": "Birth weight does <b>not</b> double by 1 year (it triples) · a child who stays on a low centile is growing normally: the <b>curve</b>, not one reading, matters · weight falls first in undernutrition, height later"
+}

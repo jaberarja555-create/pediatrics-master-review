@@ -1,0 +1,34 @@
+{
+"sc": [
+"Recurrent night cough and wheeze, triggers, eczema → <b>Bronchial asthma</b>",
+"Puffy eyes, cola-coloured urine, sore throat 2 weeks before → <b>Post-streptococcal GN</b>",
+"Boy with a swollen knee after a fall, bleeding after circumcision, maternal uncle affected → <b>Haemophilia A</b>"
+],
+"f": [
+[
+"Cough: ask",
+"Duration · nocturnal · wheeze · choking · whoop · TB contact · fever, weight loss · atopy"
+],
+[
+"Convulsion: ask",
+"Fever · duration, type, focal · recovery · number · family history · head injury · development"
+],
+[
+"Bleeding: ask",
+"Site (skin vs joints) · after circumcision, injections · family (males on mother's side) · drugs"
+],
+[
+"Pallor: ask",
+"Diet (cow's milk, soil eating) · jaundice, dark urine · bleeding · transfusions · family"
+],
+[
+"Swelling / urine: ask",
+"Onset, distribution · urine colour and amount · sore throat, skin sores · canal swimming"
+],
+[
+"Investigations",
+"Bleeding: CBC, film, <b>PT, APTT</b>, factor assays · oedema: urine protein, albumin, C3"
+]
+],
+"trap": "Breath-holding attacks are <b>not</b> seizures · simple febrile convulsion: generalised, < 15 min, once, 6 mo–5 yr · dark urine after fava beans = <b>G6PD</b>"
+}

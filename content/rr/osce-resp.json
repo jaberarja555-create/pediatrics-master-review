@@ -1,0 +1,34 @@
+{
+"sc": [
+"Dull percussion with bronchial breathing → <b>Lobar pneumonia</b>",
+"Trachea shifted away, stony dull, absent breath sounds → <b>Pleural effusion</b>",
+"Clubbing with a chronic productive cough → <b>Bronchiectasis or CF</b>"
+],
+"f": [
+[
+"Sequence",
+"Introduce, consent, expose · general look · hands (clubbing), <b>RR</b>, SpO2 · inspection · palpation (<b>trachea</b>, expansion) · percussion · auscultation · back"
+],
+[
+"Key findings",
+"Consolidation: dull, bronchial breathing, crackles · effusion: <b>stony dull</b>, trachea away · collapse: trachea <b>towards</b> · wheeze: asthma, bronchiolitis"
+],
+[
+"Distress",
+"Nasal flaring, grunting, <b>chest indrawing</b>, head bobbing, tracheal tug"
+],
+[
+"Presentation",
+"Positive findings first, then relevant negatives, then the likely diagnosis"
+],
+[
+"Investigations",
+"Chest X-ray · SpO2 · CBC · sputum/gastric aspirate (TB) · sweat test (CF)"
+],
+[
+"Examiner marks",
+"Count RR for a full minute · warm hands · examine the back · ENT in every chest station"
+]
+],
+"trap": "Fast breathing is the best sign of pneumonia in young children · trachea <b>towards</b> the dull side = collapse, <b>away</b> = effusion"
+}

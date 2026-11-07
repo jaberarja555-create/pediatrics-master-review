@@ -1,0 +1,34 @@
+{
+"sc": [
+"Boy with infections from 6 months, recurrent pneumonia and otitis, no tonsils, very low IgG → <b>Bruton agammaglobulinaemia: IVIG</b>",
+"Severe thrush, PCP, diarrhoea at 3 months, lymphopenia → <b>SCID</b>",
+"Minutes after peanuts: stridor, wheeze, urticaria, shock → <b>Anaphylaxis: IM adrenaline now</b>"
+],
+"f": [
+[
+"Warning signs",
+"≥ 2 serious infections a year · <b>unusual organisms</b> · infections that fail to clear · FTT · persistent thrush after 1 yr · family history, consanguinity"
+],
+[
+"Patterns",
+"Antibody: bacterial chest infections <b>after 6 months</b> · T-cell: viruses, fungi, PCP · phagocyte: abscesses (CGD) · complement: <b>Neisseria</b> · spleen: encapsulated"
+],
+[
+"Investigations",
+"CBC + film (lymphopenia) · <b>HIV test</b> · immunoglobulins · lymphocyte subsets · NBT/DHR (CGD) · complement"
+],
+[
+"Treatment",
+"Antibody defects: <b>IVIG</b> · SCID: no live vaccines, stem cell transplant · prophylactic antibiotics · secondary causes: SAM, HIV"
+],
+[
+"Anaphylaxis",
+"<b>Adrenaline 0.01 mg/kg IM</b> (max 0.5 ml of 1:1000), repeat every <b>5 min</b> · fluids 20 ml/kg · then antihistamine, steroid · observe <b>6–12 h</b>"
+],
+[
+"Allergy",
+"Urticaria · hereditary angio-oedema (no hives, C1 inhibitor) · atopic march: eczema → asthma → rhinitis"
+]
+],
+"trap": "Commonest causes of immunodeficiency are <b>secondary</b> (malnutrition, HIV) · first drug in anaphylaxis is <b>IM adrenaline</b>, not an antihistamine · watch for <b>biphasic</b> reaction at 6 h · disseminated BCG → SCID"
+}

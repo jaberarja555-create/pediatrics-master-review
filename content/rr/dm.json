@@ -1,0 +1,34 @@
+{
+"sc": [
+"8-year-old, new bedwetting, thirst, weight loss, glucose 18, ketonuria → <b>Type 1 DM: insulin</b>",
+"\"Gastroenteritis\" with deep sighing breathing → <b>DKA: check glucose</b>",
+"DKA child 6 h into treatment: headache, HR 60, rising BP → <b>Cerebral oedema: mannitol</b>"
+],
+"f": [
+[
+"Key symptoms",
+"<b>Polyuria, polydipsia</b>, weight loss, new <b>bedwetting</b>, tiredness · DKA: vomiting, abdominal pain, <b>Kussmaul breathing</b>"
+],
+[
+"Diagnosis",
+"Fasting glucose <b>≥ 7.0</b> · random ≥ 11.1 with symptoms · HbA1c ≥ 6.5% · DKA: glucose > 11, <b>pH < 7.3</b> or HCO3 < 15, ketones"
+],
+[
+"Insulin",
+"Total <b>0.7–1 U/kg/day</b> (basal-bolus or twice daily mix) · HbA1c target <b>< 7%</b> · honeymoon phase: needs fall"
+],
+[
+"DKA treatment",
+"Shock only: 10 ml/kg bolus · deficit over <b>48 h</b> · <b>insulin 0.05–0.1 U/kg/h</b> after 1 h of fluids · <b>KCl 40 mmol/L</b> · add dextrose when glucose <b>< 14–17</b>"
+],
+[
+"Monitoring DKA",
+"Hourly glucose, neuro obs · electrolytes 2–4-hourly · glucose fall 3–5 mmol/L/h · acidosis clears slower than glucose"
+],
+[
+"Complications",
+"<b>Cerebral oedema</b> (4–12 h: headache, bradycardia) → mannitol 0.5–1 g/kg · <b>hypokalaemia</b> · hypoglycaemia · lipohypertrophy"
+]
+],
+"trap": "Cerebral oedema is the <b>main cause of death</b> in DKA · glucose falling but still acidotic → <b>add dextrose, keep insulin</b> · never stop basal insulin when the child is sick"
+}

@@ -1,0 +1,34 @@
+{
+"sc": [
+"Impetigo 3 weeks ago, cola urine, puffy eyes, BP 150/100, low C3 → <b>Post-streptococcal GN</b>",
+"6-year-old after a cold, purpura on buttocks and legs, knee pain, colic, normal platelets → <b>HSP (IgA vasculitis)</b>",
+"Haematuria during a sore throat (1–2 days) → <b>IgA nephropathy</b>"
+],
+"f": [
+[
+"Nephritic picture",
+"<b>Haematuria</b> (cola urine, RBC casts) · <b>hypertension</b> · oedema · oliguria · mild proteinuria"
+],
+[
+"PSGN",
+"<b>1–2 wk</b> after throat, <b>3–6 wk</b> after skin infection · <b>low C3</b> (normal by 6–8 wk) · ASO / anti-DNase B high"
+],
+[
+"Treatment",
+"<b>Fluid and salt restriction</b> (insensible 400 ml/m² + output) · <b>furosemide</b> · antihypertensives · penicillin · recovery > 95%"
+],
+[
+"HSP",
+"Age 3–10 · <b>palpable purpura</b> buttocks/legs, arthritis, abdominal pain, nephritis (30–50%) · <b>normal platelets</b> · urine and BP for 6–12 months"
+],
+[
+"Haematuria causes",
+"PSGN · IgA · HSP · <b>schistosomiasis</b> (terminal, canal swimming) · UTI · stones · Alport (deafness) · haemoglobinuria (G6PD)"
+],
+[
+"Complications",
+"<b>Hypertensive encephalopathy</b> (headache, fits) · pulmonary oedema · AKI · HSP: <b>intussusception</b>"
+]
+],
+"trap": "C3 still low at <b>12 weeks</b> → MPGN or lupus: biopsy · purpura <b>with low platelets</b> is ITP or leukaemia, not HSP · red urine with dipstick blood but <b>no RBCs</b> = haemoglobinuria"
+}

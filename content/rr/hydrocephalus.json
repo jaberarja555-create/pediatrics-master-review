@@ -1,0 +1,34 @@
+{
+"sc": [
+"OFC crossing centiles, tense fontanelle, wide sutures, sunset eyes → <b>Hydrocephalus: ultrasound, VP shunt</b>",
+"Child with a VP shunt: vomiting, headache, drowsy → <b>Shunt blockage</b>",
+"Lumbosacral sac with cord, flaccid legs, patulous anus → <b>Myelomeningocele</b>"
+],
+"f": [
+[
+"Types",
+"Obstructive (aqueduct stenosis, tumour, Chiari) · <b>communicating</b> (after <b>TB or bacterial meningitis</b>, haemorrhage)"
+],
+[
+"Key signs",
+"Big head crossing centiles · bulging fontanelle · wide sutures · <b>sunset eyes</b> · older: headache, vomiting, papilloedema"
+],
+[
+"Investigations",
+"<b>Cranial ultrasound</b> (open fontanelle) · CT/MRI · toxoplasma, CMV if congenital"
+],
+[
+"Treatment",
+"<b>VP shunt</b> · endoscopic third ventriculostomy · shunt problems: blockage, <b>infection (first 6 months)</b>"
+],
+[
+"Neural tube defects",
+"Occulta (hair tuft) · meningocele (CSF only) · <b>myelomeningocele</b> (cord: paralysis, bladder, bowel, <b>hydrocephalus 80–90%</b>) · close in 48–72 h"
+],
+[
+"Prevention",
+"<b>Folic acid 0.4 mg/day</b> before conception · <b>5 mg</b> if previous NTD or on valproate"
+]
+],
+"trap": "Big head with <b>normal ventricles</b> and a big-headed parent = familial macrocephaly · hydrocephalus + chorioretinitis + calcification = <b>toxoplasmosis</b> · raised maternal AFP → scan for NTD"
+}

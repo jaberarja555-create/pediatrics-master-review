@@ -1,0 +1,34 @@
+{
+"sc": [
+"Recurrent chest infections, clubbing, oily foul stools, salty skin → <b>Cystic fibrosis: sweat test</b>",
+"Toddler eating peanuts, sudden choking, one-sided wheeze → <b>Foreign body: rigid bronchoscopy</b>",
+"Wet cough from birth, ear infections, heart on the right → <b>Kartagener syndrome</b>"
+],
+"f": [
+[
+"CF features",
+"Meconium ileus (10–20%) · <b>recurrent chest infections</b>, clubbing · steatorrhoea, FTT · salt loss (hyponatraemic alkalosis in summer) · nasal polyps"
+],
+[
+"CF diagnosis",
+"<b>Sweat chloride ≥ 60 mmol/L</b> · newborn screening (IRT) · genetics · AR: <b>25%</b> risk to each sibling"
+],
+[
+"CF treatment",
+"Physiotherapy · <b>pancreatic enzymes</b>, high-calorie diet, vitamins A, D, E, K · antibiotics (<b>Pseudomonas</b>: ceftazidime + tobramycin) · extra salt"
+],
+[
+"Foreign body",
+"Choking, then cough and <b>one-sided wheeze</b> · expiratory X-ray: hyperlucent lung (air trapping) · <b>rigid bronchoscopy</b>"
+],
+[
+"Choking (BLS)",
+"Infant: <b>5 back blows, 5 chest thrusts</b> · child: back blows, abdominal thrusts · effective cough: encourage, watch"
+],
+[
+"Bronchiectasis",
+"Chronic wet cough, clubbing · <b>HRCT</b> · causes: CF, PCD, post-infection, foreign body"
+]
+],
+"trap": "A <b>normal chest X-ray</b> does not exclude a foreign body: bronchoscopy · one-sided wheeze in a toddler = foreign body until proved otherwise · no blind finger sweeps in a choking child"
+}

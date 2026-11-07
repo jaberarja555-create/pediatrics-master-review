@@ -1,0 +1,34 @@
+{
+"sc": [
+"3-week-old with 38.2 °C who looks well → <b>Admit: full septic screen + IV antibiotics</b>",
+"18-month-old, fever, no focus, well → <b>Urine dipstick and culture (UTI)</b>",
+"Fever with a non-blanching rash → <b>Meningococcal sepsis: ceftriaxone now</b>"
+],
+"f": [
+[
+"Definition",
+"Fever ≥ <b>38 °C</b> · FUO: fever > 2–3 weeks with no cause after 1 week of tests"
+],
+[
+"Danger signs (IMCI)",
+"Cannot drink or breastfeed · vomits everything · convulsions · lethargic or unconscious · stiff neck"
+],
+[
+"Assessment",
+"Age < <b>3 months</b> = high risk · look for a focus: ears, throat, chest, urine, skin, joints, neck stiffness · malaria test in endemic areas"
+],
+[
+"Prolonged fever",
+"Common infections (UTI, TB) · malaria · <b>typhoid, brucellosis, kala-azar</b> · Kawasaki · JIA · <b>leukaemia</b>"
+],
+[
+"Treatment",
+"<b>Paracetamol 15 mg/kg</b> 6-hourly · ibuprofen 10 mg/kg 6–8-hourly · treat the cause"
+],
+[
+"Monitoring",
+"Reassess the child, not the thermometer: activity, feeding, perfusion · a well-looking child after paracetamol is reassuring"
+]
+],
+"trap": "<b>Aspirin</b> is not used for fever (Reye syndrome) · fever + hepatosplenomegaly + pancytopenia in an endemic area → <b>kala-azar</b> (and leukaemia) · do not give steroids \"to bring the fever down\""
+}

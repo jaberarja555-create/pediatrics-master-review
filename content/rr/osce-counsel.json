@@ -1,0 +1,34 @@
+{
+"sc": [
+"Mother delays a vaccine because the child has a cold → <b>Vaccinate today</b>",
+"Mother puts a spoon in the mouth during a fit → <b>Wrong: nothing in the mouth</b>",
+"Mother stops insulin because the child is vomiting → <b>Wrong: continue insulin, come to hospital</b>"
+],
+"f": [
+[
+"Counselling frame",
+"Introduce · <b>ask what she knows</b> · explain in simple words · advise · <b>check understanding</b> · questions · follow-up"
+],
+[
+"Febrile convulsion",
+"On the side, safe place, <b>nothing in the mouth</b>, time it · > 5 min: rectal diazepam, hospital · recurrence ~1 in 3 · lukewarm sponging only"
+],
+[
+"Diabetes",
+"Never stop insulin when sick · hypo: sugar by mouth then snack · unconscious: <b>glucagon IM</b> · rotate sites (lipohypertrophy)"
+],
+[
+"ORS",
+"<b>One packet in 1 litre</b> of clean water · use within 24 h · give after each stool"
+],
+[
+"Immunization",
+"Mild illness is not a contraindication · missed doses: continue, never restart · BCG sore heals into a scar"
+],
+[
+"Breaking news",
+"Quiet room, both parents · simple words, pauses · not her fault (Down syndrome) · plan and support"
+]
+],
+"trap": "Antipyretics do <b>not</b> prevent febrile convulsions · never stop antiepileptics suddenly · half a litre per ORS packet is <b>too concentrated</b> (hypernatraemia)"
+}

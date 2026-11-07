@@ -1,0 +1,34 @@
+{
+"sc": [
+"18-month-old, fever 39.5 °C, generalised fit 3 minutes, once, alert in 30 min, otitis → <b>Simple febrile seizure: treat cause, reassure</b>",
+"Febrile fit at 9 months, already on amoxicillin → <b>LP: masked meningitis</b>",
+"Fever, fit and persisting coma, malaria positive → <b>Cerebral malaria, not FS</b>"
+],
+"f": [
+[
+"Definition",
+"Seizure with fever in a child <b>6 months – 5 years</b> without CNS infection or previous afebrile seizures"
+],
+[
+"Simple vs complex",
+"Simple: generalised, <b>< 15 min</b>, once in 24 h · complex: focal, prolonged, repeated, Todd paresis"
+],
+[
+"Assessment",
+"Find the <b>source of fever</b> · malaria test · <b>LP</b> if meningitis signs, <b>< 12 months</b>, or on antibiotics · EEG/imaging not routine"
+],
+[
+"Treatment",
+"Fit > 5 min: <b>rectal diazepam 0.5 mg/kg</b> or buccal midazolam · treat the cause · antipyretics for comfort"
+],
+[
+"Prognosis",
+"Recurrence ~30% · epilepsy <b>1–2%</b> after simple FS · no brain damage"
+],
+[
+"Parent advice",
+"Place on the side, nothing in the mouth, time it · antipyretics do <b>not</b> prevent recurrence"
+]
+],
+"trap": "A fit with fever at <b>7 years</b> is not a febrile seizure · antipyretics do not prevent febrile seizures · prophylactic anticonvulsants are <b>not</b> given for simple FS"
+}

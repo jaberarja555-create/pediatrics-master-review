@@ -1,0 +1,34 @@
+{
+"sc": [
+"Oliguria after diarrhoea, urine Na 10 → <b>Pre-renal AKI: give fluid</b>",
+"Bloody diarrhoea last week, pallor, schistocytes, low platelets, oliguria → <b>HUS: supportive, dialysis</b>",
+"Short pale boy, polyuria, rickets, acidosis, small kidneys on US → <b>CKD (congenital cause)</b>"
+],
+"f": [
+[
+"AKI definition",
+"Creatinine <b>1.5 ×</b> baseline or urine <b>< 0.5 ml/kg/h for 6 h</b>"
+],
+[
+"AKI causes",
+"Pre-renal (dehydration, shock: FENa < 1%) · renal (ATN, <b>HUS</b>, GN, G6PD haemoglobinuria) · post-renal (PUV, stones)"
+],
+[
+"AKI management",
+"Fluid challenge if dry · then <b>fluids = insensible (400 ml/m²) + output</b> · treat high K · avoid nephrotoxins · dialysis indications"
+],
+[
+"Dialysis indications",
+"<b>K > 6.5–7</b> · fluid overload / pulmonary oedema · severe acidosis · uraemic encephalopathy · anuria"
+],
+[
+"CKD",
+"> 3 months · causes: <b>congenital</b> (CAKUT, PUV), GN · anaemia (<b>erythropoietin</b>), renal osteodystrophy, growth failure, acidosis"
+],
+[
+"Hypertension",
+"BP <b>≥ 95th centile</b> · renal commonest · coarctation (weak femorals) · phaeochromocytoma · emergency: lower ≤ 25% in 8 h"
+]
+],
+"trap": "Anaemia + low platelets + AKI with <b>prolonged PT</b> = DIC, not HUS · in AKI give <b>less</b> fluid, not more · HUS follows <b>E. coli O157</b> bloody diarrhoea"
+}

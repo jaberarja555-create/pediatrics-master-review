@@ -1,0 +1,33 @@
+{
+"sc": [
+"Teenage girl, malar rash, joint pains, proteinuria, low C3 → <b>Lupus nephritis</b>",
+"Girl 7 yr, cannot climb stairs, violet eyelids, papules on the knuckles → <b>Dermatomyositis</b>"
+],
+"f": [
+[
+"Key symptoms",
+"SLE: fever, fatigue, joint pains, photosensitivity, mouth ulcers · JDM: weakness on stairs, rash"
+],
+[
+"Key signs",
+"Malar rash sparing the nasolabial folds · oedema, ↑ BP (nephritis) · JDM: heliotrope rash, Gottron papules, Gowers sign"
+],
+[
+"Investigations",
+"ANA = best screen · <b>anti-Sm</b> most specific · anti-dsDNA + low C3/C4 = activity · urine every visit · JDM: CK, thigh MRI"
+],
+[
+"Treatment",
+"<b>Hydroxychloroquine for all</b> · prednisolone · severe nephritis: IV methylprednisolone + MMF or cyclophosphamide · JDM: steroid + methotrexate"
+],
+[
+"Complications",
+"Lupus nephritis (main cause of death) · infection · thrombosis · JDM: calcinosis, aspiration"
+],
+[
+"Key numbers",
+"Hydroxychloroquine <b>5 mg/kg/day</b> · girls <b>9 : 1</b> after puberty"
+]
+],
+"trap": "Neonatal lupus: <b>heart block is permanent</b>, the rash goes · lupus + fever + high CRP → infection · JDM in children is <b>not</b> linked to cancer"
+}

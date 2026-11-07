@@ -1,0 +1,34 @@
+{
+"sc": [
+"Boy 2 weeks, vomiting, shock, Na 120, K 7.5, low glucose → <b>Salt-wasting CAH: saline, dextrose, hydrocortisone</b>",
+"Ambiguous genitalia with a uterus on ultrasound → <b>46,XX CAH (virilised girl)</b>",
+"Shock after stopping long-term steroids suddenly → <b>Adrenal crisis: hydrocortisone</b>"
+],
+"f": [
+[
+"Cause",
+"<b>21-hydroxylase deficiency (90–95%)</b> · AR (25% recurrence) · low cortisol and aldosterone, <b>high androgens</b>"
+],
+[
+"Forms",
+"<b>Salt-wasting (~75%)</b>: crisis at 1–3 wk · simple virilising · non-classic (early puberty, hirsutism)"
+],
+[
+"Key signs",
+"Girls: <b>ambiguous genitalia</b> · boys: normal at birth, then vomiting, dehydration, shock · later: fast growth, advanced bone age"
+],
+[
+"Investigations",
+"<b>17-OHP high</b> · <b>Na low, K high</b>, glucose low, acidosis · karyotype, pelvic ultrasound · renin high"
+],
+[
+"Crisis treatment",
+"<b>0.9% saline</b> 20 ml/kg · dextrose · <b>hydrocortisone 50–100 mg/m²</b> IV · treat high K"
+],
+[
+"Long-term",
+"Hydrocortisone <b>10–15 mg/m²/day</b> + <b>fludrocortisone</b> + salt (infants) · <b>double/triple dose when ill</b> · surgery for genitalia"
+]
+],
+"trap": "Vomiting infant: <b>low K + alkalosis = pyloric stenosis</b>; <b>high K + low Na + acidosis = CAH</b> · fast growth with advanced bone age = under-treatment"
+}

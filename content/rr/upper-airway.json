@@ -1,0 +1,34 @@
+{
+"sc": [
+"Toddler after a cold, barking cough, hoarse voice, worse at night → <b>Croup: dexamethasone</b>",
+"Unvaccinated child, high fever, drooling, muffled voice, sits forward → <b>Epiglottitis: secure the airway</b>",
+"Infant after a cold, ear pulling, red bulging drum → <b>Otitis media: amoxicillin 5 days</b>"
+],
+"f": [
+[
+"Croup",
+"<b>Parainfluenza</b> · 6 months–6 years · dexamethasone <b>0.15 mg/kg</b> single dose · stridor at rest: <b>nebulised adrenaline 0.5 ml/kg</b> 1:1000"
+],
+[
+"Tonsillitis",
+"Fever, exudate, tender nodes, <b>no cough</b> → strep · <b>penicillin/amoxicillin 10 days</b> (within 9 days prevents rheumatic fever)"
+],
+[
+"Otitis media",
+"S. pneumoniae · amoxicillin 5 days · glue ear: speech delay, flat tympanogram → grommets · mastoiditis → IV antibiotics"
+],
+[
+"Stridor: causes",
+"Croup · epiglottitis · <b>foreign body</b> · anaphylaxis · bacterial tracheitis · laryngomalacia (from birth) · subglottic stenosis"
+],
+[
+"Complications",
+"Peritonsillar abscess (trismus, uvula deviated) · mastoiditis · rheumatic fever · post-strep GN"
+],
+[
+"Key numbers",
+"Colds <b>6–8/year</b> in a young child · ear discharge > 14 days = chronic · cold > 10 days → sinusitis"
+]
+],
+"trap": "Most sore throats are <b>viral</b> · amoxicillin in glandular fever → <b>rash</b> · a croup child who becomes <b>quiet</b> may be tiring · epiglottitis: <b>do not examine the throat</b> or lie the child down"
+}

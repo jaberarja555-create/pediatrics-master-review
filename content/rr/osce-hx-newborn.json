@@ -1,0 +1,34 @@
+{
+"sc": [
+"Jaundice in the first 24 h, mother group O, positive Coombs → <b>Haemolytic disease of the newborn</b>",
+"Membranes ruptured > 18 h, poor suck and low temperature on day 2 → <b>Neonatal sepsis: septic screen, ampicillin + gentamicin</b>",
+"Early stop of breastfeeding, diluted bottle feeds, repeated diarrhoea → <b>Feeding–infection cycle (malnutrition)</b>"
+],
+"f": [
+[
+"Neonatal jaundice: ask",
+"Day of onset · stool and urine colour · feeding · blood groups · siblings with jaundice · drugs, fava (G6PD)"
+],
+[
+"Neonatal sepsis: ask",
+"Rupture of membranes, maternal fever · prematurity · poor suck, lethargy, temperature, fits"
+],
+[
+"SAM: ask",
+"Feeding history · diarrhoea, cough, TB contact · oedema onset · appetite · HIV · immunization"
+],
+[
+"Diarrhoea: ask",
+"Frequency, <b>blood</b>, duration · vomiting · drinking and passing urine · feeding · contacts, water source"
+],
+[
+"Investigations",
+"Jaundice: <b>total + direct bilirubin, groups, Coombs</b>, CBC, retics · sepsis: blood culture, CBC, CRP, LP"
+],
+[
+"Next step",
+"Classify dehydration → <b>Plan A, B or C</b> · bloody diarrhoea: ciprofloxacin"
+]
+],
+"trap": "Jaundice in the first day is never physiological · pale stools with jaundice at 3 weeks = <b>biliary atresia</b>: urgent · a septic newborn is often <b>hypothermic</b>"
+}

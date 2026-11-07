@@ -1,0 +1,34 @@
+{
+"sc": [
+"Child from Kordofan, jaundice since 7 months, painful swollen hands and feet → <b>HbSS: Hb electrophoresis</b>",
+"2-year-old with HbSS, sudden pallor, fast pulse, spleen suddenly large → <b>Splenic sequestration: urgent transfusion</b>",
+"HbSS with fever, chest pain, new infiltrate → <b>Acute chest syndrome</b>"
+],
+"f": [
+[
+"Key features",
+"<b>Dactylitis</b> (first sign, 6 months–2 yr) · painful crises · anaemia, jaundice · infections (hyposplenism) · stroke"
+],
+[
+"Diagnosis",
+"<b>Hb electrophoresis (HPLC)</b> · sickling test (screen only) · film: sickle cells, <b>Howell–Jolly bodies</b> (autosplenectomy by 5–6 yr)"
+],
+[
+"Acute complications",
+"Painful crisis · <b>acute chest syndrome</b> · <b>stroke</b> · splenic sequestration · <b>aplastic crisis</b> (parvovirus, low retics) · sepsis · priapism"
+],
+[
+"Acute treatment",
+"Pain: fluids, analgesia, <b>morphine 0.1 mg/kg</b> · fever ≥ 38.5 °C: <b>IV ceftriaxone</b> · sequestration: transfuse 5–10 ml/kg · stroke: <b>exchange transfusion</b> (HbS < 30%)"
+],
+[
+"Comprehensive care",
+"<b>Penicillin to 5 years</b>, vaccines (pneumococcal), <b>folic acid</b> · <b>hydroxyurea from 9 months</b> (20 mg/kg/day) · yearly TCD 2–16 yr"
+],
+[
+"Chronic complications",
+"Avascular necrosis of the hip · nephropathy (enuresis) · gallstones · leg ulcers · osteomyelitis (<b>Salmonella</b>)"
+]
+],
+"trap": "An uncomplicated painful crisis is <b>not</b> an indication for transfusion · aplastic crisis: pallor <b>without more jaundice</b>, low retics · sickle cell <b>trait</b> is symptom-free and protects against malaria"
+}

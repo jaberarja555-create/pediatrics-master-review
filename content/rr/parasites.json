@@ -1,0 +1,34 @@
+{
+"sc": [
+"Night perianal itching in a 5-year-old → <b>Enterobius: sticky tape test</b>",
+"Barefoot child, pallor, microcytic anaemia, eosinophilia → <b>Hookworm: albendazole + iron</b>",
+"Schoolboy who swims in canals, terminal haematuria → <b>S. haematobium: praziquantel</b>"
+],
+"f": [
+[
+"Worms",
+"Ascaris: Löffler syndrome, bowel obstruction · hookworm: iron deficiency · Enterobius: perianal itch · Trichuris: rectal prolapse"
+],
+[
+"Worm treatment",
+"<b>Albendazole 400 mg</b> single dose (200 mg at 12–23 months) · pinworm: repeat after <b>2 weeks</b>, treat family"
+],
+[
+"Protozoa",
+"Giardia: greasy diarrhoea, FTT · amoeba: bloody diarrhoea, <b>liver abscess</b> · both: <b>metronidazole</b>"
+],
+[
+"Schistosomiasis",
+"S. haematobium: <b>terminal haematuria</b>, terminal spine in urine · S. mansoni: lateral spine in stool, periportal fibrosis, big spleen · <b>praziquantel</b>"
+],
+[
+"Hydatid",
+"Liver/lung cyst with daughter cysts, dog contact · <b>albendazole + surgery</b>"
+],
+[
+"Investigations",
+"Stool for ova (3 samples) · <b>midday urine</b> (haematobium) · eosinophilia · ultrasound (liver, bladder)"
+]
+],
+"trap": "Haematuria in a schoolboy who swims in canals is <b>S. haematobium</b> until proved otherwise · S. mansoni portal hypertension has <b>normal liver tests</b>"
+}

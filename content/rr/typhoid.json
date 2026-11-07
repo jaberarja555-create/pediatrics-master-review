@@ -1,0 +1,34 @@
+{
+"sc": [
+"Step-ladder fever for 2 weeks, relative bradycardia, coated tongue, soft spleen → <b>Typhoid: blood culture</b>",
+"Typhoid in week 3 with sudden abdominal pain and rigidity → <b>Ileal perforation: surgery</b>",
+"Prolonged fever, sweats, joint pain, raw goat milk → <b>Brucellosis</b>"
+],
+"f": [
+[
+"Typhoid features",
+"Fever, headache, abdominal pain, constipation or diarrhoea · relative bradycardia · rose spots · splenomegaly · leucopenia"
+],
+[
+"Typhoid tests",
+"<b>Blood culture</b> (week 1) · bone marrow culture (most sensitive) · Widal is unreliable"
+],
+[
+"Typhoid treatment",
+"Uncomplicated: <b>azithromycin 20 mg/kg once daily × 7 days</b> · severe: <b>IV ceftriaxone</b> 80 mg/kg/day"
+],
+[
+"Typhoid complications",
+"Week 3: <b>ileal perforation</b>, GI bleeding · encephalopathy · myocarditis · chronic carrier (<b>gallbladder</b>)"
+],
+[
+"Brucellosis",
+"Fever, sweats, arthralgia, <b>sacroiliitis</b>, hepatosplenomegaly · agglutination <b>≥ 1:160</b> · death from endocarditis"
+],
+[
+"Brucella treatment",
+"<b>Two drugs for 6 weeks</b>: < 8 yr rifampicin + cotrimoxazole · ≥ 8 yr doxycycline + rifampicin"
+]
+],
+"trap": "Brucellosis with <b>one drug or a short course</b> relapses · doxycycline is avoided under 8 years · prevention: boil or pasteurise milk"
+}
