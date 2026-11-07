@@ -1651,3 +1651,37 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 /* Arabic in the book pages (OSCE history tables): the shipped Cairo font, larger and clear (owner, Nov 2026: it looked small and blurry) */
 .bk [dir=rtl],.page [dir=rtl]{font-family:'Cairo','Inter',sans-serif;font-size:10.4pt;line-height:1.75;font-weight:500;color:#1c1917;letter-spacing:0}
 .bk th[dir=rtl],.bk th[style*="text-align:right"]{font-family:'Cairo','Inter',sans-serif;font-size:9.6pt;font-weight:700}
+
+/* Contents side panel (owner, Nov 2026: like Adobe Reader) */
+.tocdr{position:fixed;inset:0;z-index:900;background:rgba(5,12,28,0);transition:background .22s}
+.tocdr.on{background:rgba(5,12,28,.5)}
+.tocdr[hidden]{display:none}
+.tdin0{position:absolute;top:0;bottom:0;left:0;width:min(88vw,400px);background:#0f2340;color:#eef2fa;display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .22s ease-out;box-shadow:6px 0 24px rgba(0,0,0,.35);padding-top:env(safe-area-inset-top)}
+.tocdr.on .tdin0{transform:none}
+.tdh{display:flex;align-items:center;gap:10px;padding:14px 14px 12px 18px;border-bottom:1px solid rgba(243,217,139,.25)}
+.tdh b{font:900 15px Inter,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#f3d98b}
+.tdh span{font:600 12.5px Inter,sans-serif;opacity:.7;margin-left:auto}
+.tdh button{width:36px;height:36px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:transparent;color:inherit;font-size:16px;cursor:pointer}
+.tdbody{flex:1;overflow-y:auto;padding:6px 8px 30px;overscroll-behavior:contain}
+.tdpart{font:800 10.5px Inter,sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:#d9b45a;padding:14px 10px 6px}
+.tdch{border-radius:12px;margin:2px 0}
+.tdch.cur{background:rgba(255,255,255,.05)}
+.tdhd,.tdrr{display:flex;align-items:center;gap:10px;width:100%;padding:9px 8px;border:0;background:transparent;color:inherit;text-align:left;cursor:pointer;border-radius:12px}
+.tdhd:active,.tdrr:active,.tdi:active{background:rgba(255,255,255,.08)}
+.tdn{flex:none;width:32px;height:32px;border-radius:9px;background:var(--tc,#1f4e8c);color:#fff;display:flex;align-items:center;justify-content:center;font:900 13.5px Inter,sans-serif;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+.tdrr .tdn{background:linear-gradient(135deg,#c99a3b,#f3d98b);color:#0e2547;font-size:11px}
+.tdt{flex:1;min-width:0;font:750 14px/1.3 Inter,sans-serif}
+.tdt small{display:block;font:500 11.5px Inter,sans-serif;opacity:.65;margin-top:2px}
+.tdv{flex:none;width:18px;height:18px;opacity:.6;transition:transform .2s}
+.tdch.open .tdv{transform:rotate(90deg)}
+.tdls{display:none;padding:0 0 6px 14px;margin-left:23px;border-left:2px solid rgba(243,217,139,.35)}
+.tdch.open .tdls{display:block}
+.tdi{display:grid;grid-template-columns:34px 1fr auto;gap:8px;align-items:center;width:100%;padding:7px 8px;border:0;background:transparent;color:inherit;text-align:left;cursor:pointer;border-radius:9px;font:600 13px/1.3 Inter,sans-serif}
+.tdin{font:800 10.5px Inter,sans-serif;color:#fff;background:var(--tc,#1f4e8c);border-radius:5px;padding:3px 0;text-align:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+.tdp{font:700 11.5px Inter,sans-serif;opacity:.6;font-variant-numeric:tabular-nums}
+.tdp.ok{color:#7ddc9a;opacity:1}
+.tdi.cur{background:rgba(243,217,139,.14);box-shadow:inset 3px 0 0 #f3d98b}
+.tdi.cur .tdl{color:#f3d98b}
+.tdi.soon{opacity:.45;cursor:default}
+.tdrr{margin-top:8px;border-top:1px solid rgba(255,255,255,.1);border-radius:0;padding-top:12px}
+.tdrr.cur .tdt{color:#f3d98b}
