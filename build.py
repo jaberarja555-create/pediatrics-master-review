@@ -410,6 +410,16 @@ LOGO = ('<svg viewBox="0 0 64 46" aria-hidden="true"><g fill="none" stroke-linec
 PARTS = 'I II III IV V'.split()
 
 
+def cover_h(no, width=704):
+    """Height at which the chapter picture shows whole across the cover width (the picture box never grows taller)."""
+    try:
+        from PIL import Image
+        w, h = Image.open(CONTENT / 'img' / f'chcover_{no}.jpg').size
+        return min(380, round(width * h / w))
+    except Exception:
+        return 350
+
+
 def chapter_cover(book, ch, pno):
     """Opening page of a chapter (owner, Nov 2026): book title band, chapter number and title, picture
     (content/img/chcover_<no>.jpg), the chapter's topics with their pages, series band."""
@@ -424,8 +434,8 @@ def chapter_cover(book, ch, pno):
             f'<div class="cvtag">A concise revision guide for medical students · {book["edition"]}</div></div>'
             f'<div class="cvhead"><div class="cvno"><span>Part {PARTS[part_no - 1]} · {part}</span><b>Chapter {ch["no"]}</b></div>'
             f'<h1 class="cvt">{ch["title"]}</h1></div>'
-            f'<img class="cvseal" src="img/logo.webp" alt=""><div class="cvimg"><img src="img/chcover_{ch["no"]}.jpg" alt=""></div>'
-            f'<div class="cvin"><h3>In this chapter</h3>{rows}</div>'
+            f'<img class="cvseal" src="img/logo.webp" alt=""><div class="cvbody"><div class="cvimg" style="height:{cover_h(ch["no"])}px"><img src="img/chcover_{ch["no"]}.jpg" alt=""></div>'
+            f'<div class="cvin"><h3>In this chapter</h3>{rows}</div></div>'
             f'<div class="cvbot"><span>Pediatrics Master Review</span><i></i><span>{book["edition"]}</span></div></section>\n')
 
 

@@ -1686,13 +1686,14 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .tdrr{margin-top:8px;border-top:1px solid rgba(255,255,255,.1);border-radius:0;padding-top:12px}
 .tdrr.cur .tdt{color:#f3d98b}
 /* chapters with more than 5 topics: a taller picture so the cover has no empty lower third (owner, 7 Nov 2026) */
-.chcov.many .cvimg { height:360px; } .chcov.many .cvin { top:830px; }
-.chcov.many:has(.cvin > :nth-child(8)) .cvimg { height:290px; } .chcov.many:has(.cvin > :nth-child(8)) .cvin { top:758px; }
-.chcov.c10 .cvimg, .chcov.c11 .cvimg { height:282px; } .chcov.c10 .cvin, .chcov.c11 .cvin { top:774px; }
 /* 16 chapters (owner, 7 Nov 2026: Genetics and Rheumatology as their own chapters): a little tighter so the contents stays on 2 pages */
 .tbh { height:30px; } .tch { margin-bottom:6px; } .tcg { gap:3px 5px; padding:4px 6px; } .tc { min-height:24px; }
-.chcov.c12 .cvimg, .chcov.c13 .cvimg { height:240px; } .chcov.c12 .cvin, .chcov.c13 .cvin { top:732px; }
-.chcov.c15 .cvimg { height:235px !important; } .chcov.c15 .cvin { top:727px !important; }
-.chcov.c14 .cvimg { height:235px; } .chcov.c14 .cvin { top:727px; }
 /* 87 topics: contents rows a little tighter so page 2 keeps the Rapid review row above the footer */
 .tch { margin-bottom:5px; } .tcg { padding:3px 6px; gap:3px 5px; } .tc { min-height:22px; padding-top:1px; padding-bottom:1px; } .tbh { height:28px; }
+/* Chapter covers (owner, 7 Nov 2026: the topic list must never run under the footer): the picture and the list share the space
+   between the title and the footer; the list keeps its full height, the picture shrinks if needed (never taller than its own shape) */
+.chcov .cvbody { position:absolute; top:446px; bottom:62px; left:56px; right:56px; display:flex; flex-direction:column; justify-content:space-evenly; gap:24px; }
+.chcov .cvbody .cvimg { position:relative; top:auto; left:auto; right:auto; flex:0 1 auto; min-height:150px; }
+.chcov .cvbody .cvin { position:relative; top:auto !important; left:auto; right:auto; flex:none; }
+.chcov.many .cvbody .cvin { align-items:center; row-gap:0; }
+.chcov.many .cvr span { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
