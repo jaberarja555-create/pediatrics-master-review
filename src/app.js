@@ -29,7 +29,7 @@ function trialPost(start){if(SRV==null)return Promise.resolve(null);return fetch
    start is reconciled on the next launch) and the app reloads after a short animation with its own sound */
 function choiceSnd(k){if(k==='trial')chime([523.3,659.3,784,1046.5,1318.5,1568],'triangle');else if(k==='paid')chime([392,523.3,659.3,784],'sine');else if(k==='code')chime([880,1174.7],'sine');else if(k==='ok')chime([523.3,784,1046.5,1568],'triangle');else chime([659.3,523.3],'sine')}
 function openingFx(msg){var d=$('opening');if(!d){d=document.createElement('div');d.id='opening';document.body.appendChild(d)}
-  d.innerHTML='<img src="img/logo2.webp" alt=""><b class="ar" dir="rtl">'+msg+'</b><i><span></span></i>';requestAnimationFrame(function(){d.classList.add('on')})}
+  d.innerHTML='<img src="img/logo3.webp" alt=""><b class="ar" dir="rtl">'+msg+'</b><i><span></span></i>';requestAnimationFrame(function(){d.classList.add('on')})}
 function startTrial(){st('chz','1');var now=Date.now(),t={s:now,m:now};try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}
   if(SRV!=null)try{fetch(SRV.replace(/\/$/,'')+'/trial',{method:'POST',keepalive:true,cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({dev:DEV,start:now})}).catch(function(){})}catch(e){}
   choiceSnd('trial');$('sheet').hidden=true;openingFx('جارٍ فتح الكتاب كاملًا · '+trialDur());setTimeout(function(){location.reload()},900)}
@@ -57,7 +57,7 @@ function freeList(){if(ACC.free_label)return '<b>'+ACC.free_label.replace(/([A-Z
 function E(t){return '<span class="en">'+t+'</span>'}
 function subHtml(code){var wa=(ACC.whatsapp||'').replace(/[^0-9]/g,''),who=esc(ACC.contact_name||'المؤلفين');
   var msg='السلام عليكم '+(ACC.contact_name||'')+'، أرغب في الاشتراك في كتاب Pediatrics Master Review.';
-  return '<div class="subx ar" dir="rtl"><img class="sublogo" src="img/logo2.webp" alt="">'+
+  return '<div class="subx ar" dir="rtl"><img class="sublogo" src="img/logo3.webp" alt="">'+
   (TRIALNEW?'<button type="button" class="chc tr" data-trial="1"><span><b>جرّب أولًا: النسخة التجريبية لمدة '+trialDur()+'</b><small>مجانًا، الكتاب كله مع كل الأدوات</small></span></button>':'')+'<p class="lead">'+freeMsg()+' اشترك مرة واحدة لتفتح <b>الكتاب كاملًا</b>، وكل البطاقات، وبنك الأسئلة كاملًا، طوال هذه الطبعة.</p>'+
   (ACC.price?'<div class="price">قيمة الاشتراك: '+esc(ACC.price)+'</div>':'')+
   '<b class="ssth">طريقة الاشتراك</b><ol class="sst">'+
@@ -84,7 +84,7 @@ function openChoose(){
       ic2='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8l4 10h12l4-10-6 4-4-7-4 7z"/></svg>',
       ic3='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2L20 3M16 7l3 3M14 9l2 2"/></svg>';
   
-  openSheet('مرحبًا بك في الكتاب','<div class="chz ar" dir="rtl"><img class="sublogo" src="img/logo2.webp" alt=""><p class="lead">اختر طريقة فتح الكتاب:</p>'+
+  openSheet('مرحبًا بك في الكتاب','<div class="chz ar" dir="rtl"><img class="sublogo" src="img/logo3.webp" alt=""><p class="lead">اختر طريقة فتح الكتاب:</p>'+
     (TRIALNEW?'<button type="button" class="chc tr" id="chTrial"><i>'+ic1+'</i><span><b>النسخة التجريبية لمدة '+trialDur()+'</b><small>مجانًا: الكتاب كله، البطاقات، بنك الأسئلة، المحاضرات وكل أدوات المذاكرة. يبدأ الوقت من لحظة الضغط، وبعده يبقى '+esc(ACC.free_label||'جزء من الكتاب')+' مفتوحًا.</small></span></button>'
       :'<div class="chc tr off"><i>'+ic1+'</i><span><b>النسخة التجريبية'+(INTRIAL?': '+trialTxt():': انتهت')+'</b><small>'+(INTRIAL?'الكتاب كله مفتوح لك حتى نهاية الفترة.':'استُخدمت الفترة التجريبية على هذا الجهاز، ويبقى '+esc(ACC.free_label||'جزء من الكتاب')+' مفتوحًا.')+'</small></span></div>')+
     '<button type="button" class="chc pd" id="chPaid"><i>'+ic2+'</i><span><b>الاشتراك في النسخة المدفوعة</b><small>'+(ACC.price?esc(ACC.price)+' · ':'')+'الكتاب كاملًا طوال الطبعة على جهازين، مع مزامنة ملاحظاتك.</small></span></button>'+
@@ -354,9 +354,15 @@ function refreshHome(){
   var tc=0,tk=0;deckIds.forEach(function(id){tc+=DECKS[id].cards.length;tk+=deckKnown(id)});
   var nh=0;Object.keys(HL).forEach(function(k){HL[k].forEach(function(h){if(h.c!=='n')nh++})});
   var done=TOPICS.filter(function(t){return topicRead(t)===t.pages.length}).length;
-  function tile(k,n,of,cls,showPct){var v=pct(n,of);return '<div class="pt '+cls+'"><b>'+(showPct?v+'<small>%</small>':n+'<small> / '+of+'</small>')+'</b><span>'+k+'</span>'+(showPct?'<em>'+n+' / '+of+'</em>':'')+'<div class="pbar"><i style="width:'+v+'%"></i></div></div>'}
-  $('prog').innerHTML='<div class="pts">'+tile('Pages read',tr,tp,'pdone',1)+tile('Pages mastered',tm,tp,'pmast',1)+tile('Flashcards known',tk,tc,'pcard',1)+tile('Topics finished',done,TOPICS.length,'ptop',0)+'</div>'+
-    '<p class="prhint" dir="rtl" lang="ar">علّم كل صفحة بزر التقدّم في القارئ: ضغطة = <b class="c1">قريتها</b>، ضغطة تانية = <b class="c2">أتقنتها</b>، والتالتة بترجعها <b class="c0">ما قريتها</b>.</p>';
+  // Your progress (owner, 8 Nov 2026, as in Obstetrics): glowing gold ring for pages read, a line that follows the progress,
+  // three small rings and the progress chips; every label short so it fits any phone
+  var rv=pct(tr,tp),C=2*Math.PI*44,c2=2*Math.PI*16;
+  var msg=rv>=100?'Book complete ★':rv>=75?'Almost there':rv>=50?'More than half way':rv>=25?'Keep going':rv>0?'A good start':'Mark your first page';
+  function mini(cls,k,n,of){var v=pct(n,of);return '<div class="pgm '+cls+'"><span class="mr"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" class="bg"/>'+(v?'<circle cx="20" cy="20" r="16" class="fg" stroke-dasharray="'+(c2*v/100).toFixed(1)+' '+c2.toFixed(1)+'"/>':'')+'</svg><b>'+v+'<small>%</small></b></span><span class="mk">'+k+'</span><em>'+n+' / '+of+'</em></div>'}
+  $('prog').innerHTML='<div class="pgc"><div class="pgtop"><div class="pgring"><svg viewBox="0 0 100 100"><defs><linearGradient id="pgG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe7a6"/><stop offset=".55" stop-color="#e8c66e"/><stop offset="1" stop-color="#b8862b"/></linearGradient></defs><circle cx="50" cy="50" r="44" class="bg"/>'+(rv?'<circle cx="50" cy="50" r="44" class="fg" stroke-dasharray="'+(C*rv/100).toFixed(1)+' '+C.toFixed(1)+'"/>':'')+'</svg><div class="pgv"><b>'+rv+'<small>%</small></b></div></div>'+
+    '<div class="pgtx"><span class="pgey">Pages read</span><b>'+tr+' <small>of '+tp+'</small></b><span class="pgmsg">'+msg+'</span></div></div>'+
+    '<div class="pgms">'+mini('pmast','Mastered',tm,tp)+mini('pcard','Flashcards',tk,tc)+mini('ptop','Topics',done,TOPICS.length)+'</div>'+
+    '<div class="prhint" dir="rtl" lang="ar"><span>علّم صفحاتك من زر التقدّم:</span><span class="pgch"><b class="c1">قريتها</b><b class="c2">أتقنتها</b><b class="c0">ما قريتها</b></span></div></div>';
   // Home: parts → chapter cards (tap to open) → topic rows with progress
   var tById={};TOPICS.forEach(function(t){tById[t.id]=t});
   var cur=(PAGES[lastPage()]||{}).topic, curCh=cur&&tById[cur]?tById[cur].ch:null;
@@ -376,7 +382,7 @@ function refreshHome(){
           return '<button class="htp" type="button" data-p="'+t.p+'"><span class="tn">'+esc(t.no)+'</span><span class="tl">'+esc(t.title)+'<small>'+esc(t.sub)+'</small>'+(LOCKED&&!FREE[t.id]?'':tprog(rr,mm,nn))+'</span>'+(LOCKED&&!FREE[t.id]?'<span class="pc lkd" title="Subscribers only">🔒</span>':(LOCKED?'<span class="pc free">FREE</span>':(mm===nn?'<span class="pc ms" title="Mastered">★</span>':'<span class="pc'+(rr===nn?' ok':'')+'">'+(rr===nn?'✓':pct(rr,nn)+'%')+'</span>')))+'</button>'}).join('')+soonRows+
         '</details>'}).join('');
     if(!nt)return '';
-    return '<details class="hpt"'+(curIn?' open':'')+'><summary class="shine" style="background-image:linear-gradient(90deg,rgba(6,27,36,.62) 0,rgba(6,27,36,.22) 42%,rgba(6,27,36,0) 62%),url(img/'+PIMG[pi]+'.jpg),linear-gradient(120deg,#08232f 0,'+(PCLR[pi]||'#13606b')+' 100%)">'+
+    return '<details class="hpt"'+(curIn?' open':'')+'><summary class="shine" style="background-image:linear-gradient(90deg,rgba(6,27,36,.62) 0,rgba(6,27,36,.22) 42%,rgba(6,27,36,0) 62%),url(img/'+PIMG[pi]+'.jpg),linear-gradient(120deg,#082f1d 0,'+(PCLR[pi]||'#136b42')+' 100%)">'+
       '<span class="pk">Part '+['I','II','III','IV','V','VI','VII','VIII'][pi]+'</span><b class="gtx">'+esc(pt.name)+'</b><small>'+pt.chs.length+' chapter'+(pt.chs.length>1?'s':'')+' · '+nt+' topic'+(nt>1?'s':'')+' · '+pct(pr,pn)+'% done</small>'+
       '<span class="hx">›</span><span class="tbar"><i style="width:'+pct(pr,pn)+'%"></i></span></summary><div class="hpb">'+inner+'</div></details>'}).join('');
   if(deckIds.length)refreshDaily();else $('dailyBtn').hidden=true;
@@ -412,7 +418,7 @@ function tocDrawer(){var cur=tocCur(),cs=META.contents,curCh=null,curT=null;
   var h='',lastPart='';
   cs.forEach(function(ch,k){var ps=ch.topics.filter(function(t){return t.p}).map(function(t){return t.p}),a=ps.length?Math.min.apply(null,ps):0,
       nx=cs.slice(k+1).map(function(c){var q=c.topics.filter(function(t){return t.p}).map(function(t){return t.p});return q.length?Math.min.apply(null,q):0}).filter(Boolean)[0],
-      b=nx?nx-1:(META.rr?META.rr-1:0),open=!!TDOPEN[ch.no],col=ch.color||'#1f4e8c';
+      b=nx?nx-1:(META.rr?META.rr-1:0),open=!!TDOPEN[ch.no],col=ch.color||'#1f8c59';
     if(ch.part&&ch.part!==lastPart){lastPart=ch.part;h+='<div class="tdpart">'+esc(ch.part)+'</div>'}
     h+='<div class="tdch'+(open?' open':'')+(ch.no===curCh?' cur':'')+'" style="--tc:'+col+'"><button type="button" class="tdhd" data-tch="'+ch.no+'"><span class="tdn">'+ch.no+'</span><span class="tdt">'+esc(ch.title)+
       '<small>'+ch.topics.length+' topic'+(ch.topics.length===1?'':'s')+(a?' · p '+a+(b>a?'–'+b:''):'')+'</small></span><svg class="tdv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button><div class="tdls">'+
@@ -480,7 +486,7 @@ var HCOL=['y','g','b','p','o','v'],HST=+st('hst')===2?2:1,PCOL=HCOL.indexOf(st('
 /* the note pen works the same way: with it on, the text you select (or swipe / long-press) opens the note box at once.
    Only one pen is on at a time. */
 /* underline: a third quick tool like the highlighter; it saves into the same highlights list with colours ur/uk/ub/uo */
-var UCOLS=['ur','uk','ub','uo'],UHEX={ur:'#dc2626',uk:'#111827',ub:'#1d4ed8',uo:'#ea580c'},UCOL=UCOLS.indexOf(st('ucol'))>=0?st('ucol'):'ur',UW=Math.max(1,Math.min(3,+st('uw')||2)),UPEN=st('upen')==='1'&&!PEN&&!NPEN;
+var UCOLS=['ur','uk','ub','uo'],UHEX={ur:'#dc2626',uk:'#11271d',ub:'#1d4ed8',uo:'#ea580c'},UCOL=UCOLS.indexOf(st('ucol'))>=0?st('ucol'):'ur',UW=Math.max(1,Math.min(3,+st('uw')||2)),UPEN=st('upen')==='1'&&!PEN&&!NPEN;
 function isU(c){return c&&c.charAt(0)==='u'}
 function penOn(){return PEN||NPEN||UPEN}
 /* a touch selection longer than a few lines is not marked at once (owner, Nov 2026: a scroll could mark a whole page): the colour bar asks first */
@@ -565,7 +571,7 @@ pagesEl.addEventListener('pointercancel',function(){penDrag=null});
    Strokes are saved per page key in prr-ink as SVG points in page units (816 × 1152), so they scale with zoom.
    With the pen on: one finger / the mouse draws, two fingers scroll; links and words on the page do not react. */
 var IMGU={},IMS=null,IDBP=null,imgAt0=null;   // pictures on pages (see the صورة block below)
-var INK=stj('ink')||{},IHEX={r:'#dc2626',k:'#111827',b:'#1d4ed8',o:'#ea580c',g:'#15803d',v:'#7c3aed',y:'#facc15'},ICOLS=['k','b','r','g','v','o','y'],ICOL=ICOLS.indexOf(st('icol'))>=0?st('icol'):'r',INKON=false,ISZ=[1.6,2.6,4,6,9,13],ISI=Math.max(1,Math.min(6,+st('isz')||2)),inkS=null,inkPts={},inkPan=null;
+var INK=stj('ink')||{},IHEX={r:'#dc2626',k:'#11271d',b:'#1d4ed8',o:'#ea580c',g:'#15803d',v:'#7c3aed',y:'#facc15'},ICOLS=['k','b','r','g','v','o','y'],ICOL=ICOLS.indexOf(st('icol'))>=0?st('icol'):'r',INKON=false,ISZ=[1.6,2.6,4,6,9,13],ISI=Math.max(1,Math.min(6,+st('isz')||2)),inkS=null,inkPts={},inkPan=null;
 /* each stroke has an id and u (time drawn); undo / clear leave tombstones in prr-inkdel so sync never brings a stroke back */
 var INKDEL=stj('inkdel')||{};function rid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
 (function(){var ch=false;Object.keys(INK).forEach(function(k){INK[k].forEach(function(x){if(!x.id){x.id=rid();x.u=0;ch=true}})});if(ch)stj('ink',INK)})();
@@ -577,7 +583,7 @@ function inkSvg(pw,make){var svg=pw.querySelector('svg.ink');if(!svg&&make){svg=
 /* item types: pen (t missing: free line), 'a' arrow, 'u' underline (straight, level), 't' text box */
 var TFS=[10,12,15,19,23];   // text box sizes in page units (book text ≈ 13); size 2 = book text
 function tfs(fs){var i=[14,18,24,30,38].indexOf(fs);return i>=0?TFS[i]:fs||TFS[1]}   // boxes made with the old, bigger sizes shrink too
-function inkEl(x){var c=IHEX[x.c]||'#111827',w=x.w||3;if(x.t==='i')return imgEl(x);
+function inkEl(x){var c=IHEX[x.c]||'#11271d',w=x.w||3;if(x.t==='i')return imgEl(x);
   if(x.t==='t'){var fs=tfs(x.fs);return '<text data-id="'+x.id+'" x="'+x.x+'" y="'+x.y+'" font-size="'+fs+'" fill="'+c+'" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-weight="600">'+String(x.txt||'').split('\n').map(function(l,n){return '<tspan x="'+x.x+'" dy="'+(n?Math.round(fs*1.25):0)+'">'+(esc(l)||' ')+'</tspan>'}).join('')+'</text>'}
   if(x.t==='a'){var q=x.p.split(' ').map(function(v){return v.split(',').map(Number)}),a=q[0],b=q[q.length-1],g=Math.atan2(b[1]-a[1],b[0]-a[0]),h=10+w*2.2,
       L=[b[0]-h*Math.cos(g-.45),b[1]-h*Math.sin(g-.45)],R=[b[0]-h*Math.cos(g+.45),b[1]-h*Math.sin(g+.45)],e=[b[0]-h*.7*Math.cos(g),b[1]-h*.7*Math.sin(g)],f=function(v){return v.map(function(n){return Math.round(n*10)/10}).join(',')};
@@ -1321,7 +1327,7 @@ function welcomeTitle(){var n=(!LOCKED&&st('code')&&st('name'))||'';if(!n)return
 function welcomeName(){var t=document.querySelector('#welc .wt');if(t)t.textContent=welcomeTitle()}
 (function(){if((TRIALNEW&&!st('chz'))||(TRIALEND&&TRIAL&&!TRIAL.seen))return;   // owner: when the opening choice is due it shows at once, without the welcome card
   var code=!LOCKED&&st('code');var w=document.createElement('div');w.id='welc';w.setAttribute('role','dialog');
-  w.innerHTML='<div class="wcard"><img src="img/logo2.webp" alt=""><div class="wt" dir="auto"></div>'+
+  w.innerHTML='<div class="wcard"><img src="img/logo3.webp" alt=""><div class="wt" dir="auto"></div>'+
     (code?'<div class="wsig"><span class="wln"></span><span class="wc">Code <b dir="ltr">'+esc(code)+'</b></span></div>':'<div class="ws">Pediatrics Master Review · 1st edition</div>')+'</div>';
   document.body.appendChild(w);welcomeName();
   function close(){if(!w.parentNode)return;w.classList.add('out');setTimeout(function(){if(w.parentNode)w.parentNode.removeChild(w)},450)}

@@ -489,7 +489,7 @@ def chapter_cover(book, ch, pno):
             f'<div class="cvtag">A concise revision guide for medical students · {book["edition"]}</div></div>'
             f'<div class="cvhead"><div class="cvno"><span>Part {PARTS[part_no - 1]} · {part}</span><b>Chapter {ch["no"]}</b></div>'
             f'<h1 class="cvt">{ch["title"]}</h1></div>'
-            f'<img class="cvseal" src="img/logo2.webp" alt=""><div class="cvbody"><div class="cvimg" style="height:{cover_h(ch["no"])}px"><img src="img/chcover_{ch["no"]}.jpg" alt=""></div>'
+            f'<img class="cvseal" src="img/logo3.webp" alt=""><div class="cvbody"><div class="cvimg" style="height:{cover_h(ch["no"])}px"><img src="img/chcover_{ch["no"]}.jpg" alt=""></div>'
             f'<div class="cvin"><h3>In this chapter</h3>{rows}</div></div>'
             f'<div class="cvbot"><span>Pediatrics Master Review</span><i></i><span>{book["edition"]}</span></div></section>\n')
 
@@ -709,7 +709,7 @@ def build():
             t['_ch'] = ch['no']
         exam = [(x, t) for t in tps for x in chapter_exam(t)]
         if exam:
-            head = ('<h1 class="mzt rrh"><img class="rrlogo" src="img/logo2.webp" alt="">Rapid Review<small>Exam recap of every topic, chapter by chapter</small></h1>'
+            head = ('<h1 class="mzt rrh"><img class="rrlogo" src="img/logo3.webp" alt="">Rapid Review<small>Exam recap of every topic, chapter by chapter</small></h1>'
                     if not rr_streams else '') + f'<h2 class="rrc rqc{ch["no"]}"><span class="no">{ch["no"]}</span>{ch["title"]}</h2>'
             rs = [('title', head, True, 'Rapid Review', tps[0])]
             rs.extend(('rvt', r, w, 'Rapid Review', t) for (r, w), t in exam)
@@ -802,8 +802,8 @@ def build():
 
     meta_pages = [{'id': 'cover', 'label': 'Cover'}]
     meta_pages += [{'id': f'contents-{i + 1}', 'label': 'Contents'} for i in range(n_contents)]
-    html_pages = [f'<section class="page" id="p1" data-id="cover"><div class="covbg" style="background-image:url(img/cover2.webp)"></div>'
-                  f'<img class="covimg" src="img/cover2.webp" alt="{book["subject"]} Master Review, {book["edition"]}, cover"></section>\n']
+    html_pages = [f'<section class="page" id="p1" data-id="cover"><div class="covbg" style="background-image:url(img/cover3.jpg)"></div>'
+                  f'<img class="covimg" src="img/cover3.jpg" alt="{book["subject"]} Master Review, {book["edition"]}, cover"></section>\n']
     if authors:
         meta_pages.insert(1, {'id': 'authors', 'label': 'About the authors'})
         html_pages.append(f'<section class="page ab" id="p2" data-id="authors" dir="rtl" lang="ar">{authors}{footer(book)}</section>\n')
