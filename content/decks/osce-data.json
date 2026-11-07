@@ -1,0 +1,162 @@
+[
+ [
+  "CSF",
+  "Normal CSF white cells?",
+  "≤ 5 lymphocytes/mm³."
+ ],
+ [
+  "CSF",
+  "Normal CSF protein?",
+  "0.15–0.4 g/L."
+ ],
+ [
+  "CSF",
+  "Normal CSF : blood glucose?",
+  "About two-thirds."
+ ],
+ [
+  "CSF",
+  "Bacterial meningitis CSF?",
+  "Turbid, many neutrophils, high protein, low glucose (< 0.4), Gram stain positive."
+ ],
+ [
+  "CSF",
+  "Viral meningitis CSF?",
+  "Clear, lymphocytes, normal glucose, normal or slightly high protein."
+ ],
+ [
+  "CSF",
+  "TB meningitis CSF?",
+  "Lymphocytes, very high protein, low glucose, cobweb clot, ZN stain."
+ ],
+ [
+  "CSF",
+  "Uniform red cells with xanthochromia?",
+  "Subarachnoid haemorrhage (not a traumatic tap)."
+ ],
+ [
+  "CBC",
+  "Low MCV, high RDW, low ferritin?",
+  "Iron deficiency anaemia."
+ ],
+ [
+  "CBC",
+  "Very low MCV, normal RDW, target cells?",
+  "Thalassaemia."
+ ],
+ [
+  "CBC",
+  "High reticulocytes and bilirubin with anaemia?",
+  "Haemolysis."
+ ],
+ [
+  "CBC",
+  "Pancytopenia, huge spleen, fever?",
+  "Kala-azar."
+ ],
+ [
+  "CBC",
+  "Blasts in the film?",
+  "Acute leukaemia: bone marrow."
+ ],
+ [
+  "CBC",
+  "High eosinophils?",
+  "Parasites or allergy."
+ ],
+ [
+  "Urine",
+  "Nephrotic urine?",
+  "Protein +++ (> 40 mg/m²/h), little blood."
+ ],
+ [
+  "Urine",
+  "Nephritic urine?",
+  "Red cells and red cell casts, some protein; low C3, high ASO."
+ ],
+ [
+  "Urine",
+  "UTI urine?",
+  "Pus cells, nitrites, positive culture."
+ ],
+ [
+  "X-ray",
+  "Boot-shaped heart?",
+  "Tetralogy of Fallot."
+ ],
+ [
+  "X-ray",
+  "Egg on its side?",
+  "Transposition of the great arteries."
+ ],
+ [
+  "X-ray",
+  "Snowman heart?",
+  "TAPVR."
+ ],
+ [
+  "X-ray",
+  "Steeple sign?",
+  "Croup."
+ ],
+ [
+  "X-ray",
+  "Thumb sign?",
+  "Epiglottitis."
+ ],
+ [
+  "X-ray",
+  "Double bubble?",
+  "Duodenal atresia."
+ ],
+ [
+  "X-ray",
+  "Cupping and fraying of metaphyses?",
+  "Rickets."
+ ],
+ [
+  "X-ray",
+  "Order to present an X-ray?",
+  "Type and view, patient, quality, findings, diagnosis, next test."
+ ],
+ [
+  "Instruments",
+  "NG tube length?",
+  "Nose → ear lobe → xiphisternum."
+ ],
+ [
+  "Instruments",
+  "Intraosseous site?",
+  "Proximal tibia, 1–2 cm below the tuberosity, medial surface."
+ ],
+ [
+  "Instruments",
+  "Nasal prong oxygen flow?",
+  "1–2 L/min (0.5–1 L/min in neonates)."
+ ],
+ [
+  "Instruments",
+  "Phototherapy light and care?",
+  "Blue light 430–490 nm, eyes covered, extra fluids."
+ ],
+ [
+  "Instruments",
+  "VVM: discard when?",
+  "When the square is as dark as or darker than the circle."
+ ],
+ [
+  "Instruments",
+  "Energy in F-75, F-100, RUTF?",
+  "75 and 100 kcal per 100 ml; RUTF 500 kcal per sachet."
+ ],
+ [
+  "Spotters",
+  "How is a Mantoux test read?",
+  "Induration (not redness) across the forearm at 48–72 hours."
+ ],
+ [
+  "Spotters",
+  "Where are Koplik spots?",
+  "Buccal mucosa opposite the lower molars."
+ ]
+]

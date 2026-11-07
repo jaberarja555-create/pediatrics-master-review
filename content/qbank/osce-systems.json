@@ -1,0 +1,114 @@
+[
+ {
+  "q": "A child has a central trachea, dull percussion and bronchial breathing at the right base. The diagnosis is:",
+  "o": [
+   "Pleural effusion",
+   "Pneumothorax",
+   "Consolidation",
+   "Collapse",
+   "Asthma"
+  ],
+  "a": 2,
+  "e": "Dullness with bronchial breathing and a central trachea = consolidation.",
+  "k": "consolidation",
+  "s": "new"
+ },
+ {
+  "q": "Trachea pushed away, stony dull percussion and absent breath sounds indicate:",
+  "o": [
+   "Consolidation",
+   "Pleural effusion",
+   "Collapse",
+   "Bronchiolitis",
+   "Pneumothorax"
+  ],
+  "a": 1,
+  "e": "Stony dullness with absent breath sounds and mediastinal shift away = effusion.",
+  "k": "stony dull",
+  "s": "new"
+ },
+ {
+  "q": "The most useful sign of heart failure in an infant is:",
+  "o": [
+   "Ankle oedema",
+   "Raised JVP",
+   "Enlarged tender liver",
+   "Basal crackles",
+   "Clubbing"
+  ],
+  "a": 2,
+  "e": "Hepatomegaly is the most reliable sign in infants; oedema is late.",
+  "k": "tender enlarged liver",
+  "s": "new"
+ },
+ {
+  "q": "Wide fixed splitting of the second heart sound is typical of:",
+  "o": [
+   "VSD",
+   "PDA",
+   "Secundum ASD",
+   "Tetralogy of Fallot",
+   "Coarctation"
+  ],
+  "a": 2,
+  "e": "Secundum ASD gives wide fixed splitting and a soft pulmonary ejection murmur.",
+  "k": "wide fixed splitting",
+  "s": "new"
+ },
+ {
+  "q": "A child has a collapsing pulse and a continuous murmur below the left clavicle. The diagnosis is:",
+  "o": [
+   "VSD",
+   "ASD",
+   "PDA",
+   "Aortic stenosis",
+   "Coarctation"
+  ],
+  "a": 2,
+  "e": "PDA: machinery murmur below the left clavicle, collapsing pulse, wide pulse pressure.",
+  "k": "collapsing",
+  "s": "new"
+ },
+ {
+  "q": "All are features of an innocent murmur EXCEPT:",
+  "o": [
+   "Soft",
+   "Systolic",
+   "Varies with posture",
+   "Thrill",
+   "Normal heart sounds"
+  ],
+  "a": 3,
+  "e": "A thrill means a pathological murmur.",
+  "k": "innocent murmur",
+  "s": "new"
+ },
+ {
+  "q": "Which feature distinguishes the spleen from an enlarged left kidney?",
+  "o": [
+   "Ballotable",
+   "Can get above it",
+   "Resonant on percussion",
+   "Notch present",
+   "Moves little with breathing"
+  ],
+  "a": 3,
+  "e": "The spleen has a notch, cannot be got above, is dull and moves towards the right iliac fossa.",
+  "k": "notch",
+  "s": "new"
+ },
+ {
+  "q": "A child from Gedaref has fever for 2 months, wasting and a spleen crossing the midline. The best diagnostic test is:",
+  "o": [
+   "Blood film for malaria",
+   "rK39 test",
+   "Widal test",
+   "Hb electrophoresis",
+   "Stool for ova"
+  ],
+  "a": 1,
+  "e": "Kala-azar is confirmed by the rK39 test (or bone marrow/splenic aspirate).",
+  "k": "rK39 test",
+  "s": "new"
+ }
+]

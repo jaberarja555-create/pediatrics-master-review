@@ -1,0 +1,128 @@
+[
+ {
+  "q": "The first step after the greeting in a counselling station is to:",
+  "o": [
+   "Explain the disease",
+   "Give a leaflet",
+   "Ask what the mother already knows",
+   "Prescribe treatment",
+   "Arrange follow-up"
+  ],
+  "a": 2,
+  "e": "Find out what she knows and fears first, then build on it.",
+  "k": "what she already knows",
+  "s": "new"
+ },
+ {
+  "q": "A mother delays her baby's vaccines because of a mild cold. The best advice is:",
+  "o": [
+   "Wait 2 weeks",
+   "Wait until the cold resolves",
+   "Vaccinate today",
+   "Give only OPV",
+   "Give antibiotics first"
+  ],
+  "a": 2,
+  "e": "Mild illness is not a contraindication; vaccinate today.",
+  "k": "not a reason to delay",
+  "s": "new"
+ },
+ {
+  "q": "Which vaccines are given at 9 months in the EPI schedule?",
+  "o": [
+   "BCG and OPV",
+   "Pentavalent 3 and IPV",
+   "Measles–rubella 1 and meningococcal A",
+   "Rotavirus 2",
+   "Measles–rubella 2 only"
+  ],
+  "a": 2,
+  "e": "9 months: MR 1, meningococcal A, and yellow fever in states at risk.",
+  "k": "9 months",
+  "s": "new"
+ },
+ {
+  "q": "All are correct advice for a febrile convulsion EXCEPT:",
+  "o": [
+   "Lay the child on the side",
+   "Put a spoon in the mouth",
+   "Time the fit",
+   "Tepid sponging for fever",
+   "Rectal diazepam if > 5 minutes"
+  ],
+  "a": 1,
+  "e": "Nothing is put in the mouth during a fit.",
+  "k": "nothing in the mouth",
+  "s": "new"
+ },
+ {
+  "q": "The risk of another febrile convulsion after the first is about:",
+  "o": [
+   "1%",
+   "5%",
+   "1 in 3",
+   "2 in 3",
+   "100%"
+  ],
+  "a": 2,
+  "e": "About 30% have a recurrence; epilepsy is rare.",
+  "k": "1 in 3",
+  "s": "new"
+ },
+ {
+  "q": "A child with epilepsy has been fit-free for 6 months and the mother stopped the drug. The advice is:",
+  "o": [
+   "Good, no more drugs",
+   "Restart; never stop suddenly",
+   "Halve the dose",
+   "Change the drug",
+   "Give only at night"
+  ],
+  "a": 1,
+  "e": "Stopping suddenly risks recurrence and status epilepticus; stop gradually after 2 seizure-free years.",
+  "k": "never stop suddenly",
+  "s": "new"
+ },
+ {
+  "q": "Spare insulin vials at home should be stored:",
+  "o": [
+   "In the freezer",
+   "In the fridge",
+   "In direct sunlight",
+   "In a car",
+   "Anywhere at room temperature for months"
+  ],
+  "a": 1,
+  "e": "In the fridge, not the freezer; the vial in use can stay at room temperature up to 4 weeks.",
+  "k": "fridge",
+  "s": "new"
+ },
+ {
+  "q": "A diabetic child is vomiting and the mother stopped insulin. The correct advice is:",
+  "o": [
+   "Correct, stop insulin when not eating",
+   "Continue insulin and come to hospital",
+   "Give double insulin",
+   "Give oral hypoglycaemics",
+   "Give only fluids"
+  ],
+  "a": 1,
+  "e": "Sick-day rule: never stop insulin; vomiting may be DKA.",
+  "k": "sick days",
+  "s": "new"
+ },
+ {
+  "q": "How many breaths should a child take after each puff through a spacer?",
+  "o": [
+   "1",
+   "2",
+   "5–6",
+   "10–15",
+   "20"
+  ],
+  "a": 2,
+  "e": "One puff, then 5–6 normal breaths (or one deep breath held 10 seconds).",
+  "k": "5–6 normal breaths",
+  "s": "new"
+ }
+]

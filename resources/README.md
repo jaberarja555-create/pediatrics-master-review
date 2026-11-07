@@ -32,4 +32,16 @@ Files the owner sends for the book. Extracted text goes in `resources/text/` (no
 | `pediatrics-common-mcqs-med06.pdf` | Pediatrics Common MCQs, 5th year (MED 06), 76 pages, by system with answer keys and "Repeated Qs". | QBank; exam focus for every chapter. |
 | `pediatrics-osce-notes.pdf` | OSCE / Pediatrics notes, 38 pages: previous-year stations, approach, history and examination schemes. | Chapter 14 (OSCE). |
 | `شيت عبيدية - pediatrics.docx` | Shendi OSCE sheet (Dr. Ahmed Obaidia, batch 2005): focus histories (malnutrition …), examination, procedures, counselling, data interpretation. | Chapter 14 (OSCE). |
+
+### OSCE resources (`resources/osce/`, Nov 2026)
+| File | What it is | Used for |
+|---|---|---|
+| `CHECK_LISTS.pdf`, `CHECK_LISTS_2.pdf`, `CHECK_LISTS_P.docx` | Shendi marking sheets for 17 stations (histories, examinations, counselling) | Order of every station in chapter 14 |
+| `Ebedya_Pediatrics.pdf` | Shendi OSCE sheet: focus histories, examination, procedures, counselling, data (CSF) | Chapter 14 |
+| `lil.pdf` | OSCE notes with previous-year stations | Choice of stations (14.4 short stature, 14.10 data) |
+| `Pediatric_History_Sheet.pdf`, `PEDIATRIC_History_Taking.pdf`, `Pediatric_history.pdf`, `focus_history.doc`, `focus_sheet.docx` | History-taking schemes and the focused-history protocol | 14.1 |
+| `Hx_neonatal_jaundice.pdf`, `NS.pdf`, `Hx_of_cough.pdf`, `hx_asthma.doc`, `febrile_convulsion.pdf` | Focused histories and counselling | 14.2, 14.3, 14.9 |
+| `Congenital_heart_disease.pdf` | CHD notes | 7.2–7.3 additions (Qp:Qs, PDA ligation, spell prevention), 14.5 |
+| `CP.pdf` | Cerebral palsy notes | 14.6 |
+
 - Chapter 8 (Haematology & Oncology) was written from: Asma Hadida (haematology, oncology), Kibreet Notes (part 4) and Kibreet B (oncology), Aljazeera (haemoglobinopathies, ITP, haemophilia), Osman cases 8–10, OSCE notes (anaemia history/exam), Obaidia sheet, MED06 MCQs (haematology), Izzat Shendi cases and the cases discussion (leukaemia, SCD, neuroblastoma), Baby Nelson special (haematology–oncology), Case Files (cases 13, 19, 33, 37).

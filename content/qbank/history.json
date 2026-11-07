@@ -1,72 +1,114 @@
 [
-{
-"q": "Which part of the history is specific to paediatrics?",
-"o": [
-"Presenting complaint",
-"Perinatal history",
-"Drug history",
-"Systemic review",
-"Social history"
-],
-"a": 1,
-"e": "Perinatal, feeding, developmental and vaccination histories are specific to children.",
-"k": "perinatal history",
-"s": "bank"
-},
-{
-"q": "The chief complaint should be recorded:",
-"o": [
-"In medical terms only",
-"In the mother's words with duration",
-"As a diagnosis",
-"Without duration",
-"After the examination"
-],
-"a": 1,
-"e": "Use the informant's words and the duration.",
-"k": "in the mother's words",
-"s": "bank"
-},
-{
-"q": "Asking about the place of residence in Sudan helps mainly to suspect:",
-"o": [
-"Asthma",
-"Endemic infections such as malaria and kala-azar",
-"Congenital heart disease",
-"Epilepsy",
-"Diabetes"
-],
-"a": 1,
-"e": "Endemic areas matter.",
-"k": "kala-azar",
-"s": "bank"
-},
-{
-"q": "Which question is part of the natal history?",
-"o": [
-"Weaning age",
-"Did the baby cry at once?",
-"Milestones",
-"Consanguinity",
-"Crowding"
-],
-"a": 1,
-"e": "Natal: gestation, place, mode, cried at once.",
-"k": "cried at once",
-"s": "bank"
-},
-{
-"q": "In every paediatric case presentation the examiner expects comment on:",
-"o": [
-"Blood group",
-"Vaccination, growth and development",
-"Parents' religion",
-"Previous X-rays",
-"Dental history only"
-],
-"a": 1,
-"e": "These are marked in every case.",
-"k": "growth and development",
-"s": "bank"
-}
+ {
+  "q": "Which is NOT one of the parts that make the history specifically paediatric?",
+  "o": [
+   "Birth history",
+   "Nutritional history",
+   "Immunization history",
+   "Developmental history",
+   "Occupational history"
+  ],
+  "a": 4,
+  "e": "Birth, nutrition, immunization and development are the paediatric parts; occupation applies to the parents' social history.",
+  "k": "immunization and developmental",
+  "s": "new"
+ },
+ {
+  "q": "A mother says her 2-year-old has had fever. Which is the best first question?",
+  "o": [
+   "Was the fever high?",
+   "Did he have rigors?",
+   "Tell me about the fever",
+   "Did you give paracetamol?",
+   "Was it at night?"
+  ],
+  "a": 2,
+  "e": "Start with open questions and let the mother tell the story; closed questions come later.",
+  "k": "open questions",
+  "s": "new"
+ },
+ {
+  "q": "Where is a known diagnosis of sickle cell anaemia written in the history?",
+  "o": [
+   "In the past history only",
+   "In the family history",
+   "Before the presenting complaints",
+   "In the systemic review",
+   "At the end of the summary"
+  ],
+  "a": 2,
+  "e": "A known chronic disease is stated first: 'a known case of … now presenting with …'.",
+  "k": "a known disease is stated first",
+  "s": "new"
+ },
+ {
+  "q": "Which birth-history detail most strongly suggests a risk of early neonatal sepsis?",
+  "o": [
+   "Caesarean section for breech",
+   "Birth weight 3.4 kg",
+   "Prolonged rupture of membranes",
+   "Maternal age 30 years",
+   "Delivery in hospital"
+  ],
+  "a": 2,
+  "e": "Prolonged rupture of membranes (> 18 hours) allows ascending infection.",
+  "k": "prolonged rupture of membranes",
+  "s": "new"
+ },
+ {
+  "q": "Which is the best way to record a child's present diet?",
+  "o": [
+   "Ask whether the child eats well",
+   "Weigh the child",
+   "24-hour dietary recall",
+   "Ask about food allergy",
+   "Ask the weaning age"
+  ],
+  "a": 2,
+  "e": "A 24-hour recall gives type, amount and frequency of meals.",
+  "k": "24-hour recall",
+  "s": "new"
+ },
+ {
+  "q": "A mother says her child has lost the words and walking he had learned. This suggests:",
+  "o": [
+   "Cerebral palsy",
+   "Normal variation",
+   "A progressive (degenerative) disease",
+   "Hearing loss",
+   "Autism only"
+  ],
+  "a": 2,
+  "e": "Regression means a progressive neurological disease; cerebral palsy is non-progressive.",
+  "k": "regression",
+  "s": "new"
+ },
+ {
+  "q": "The summary at the end of a history station should contain all EXCEPT:",
+  "o": [
+   "Age and sex",
+   "Complaints with durations",
+   "Key positive findings",
+   "Important negatives",
+   "The whole systemic review"
+  ],
+  "a": 4,
+  "e": "The summary gives only the facts that support the diagnosis, not the whole history.",
+  "k": "model summary",
+  "s": "new"
+ },
+ {
+  "q": "In the long case, the problem list is given in which order?",
+  "o": [
+   "Social, medical, developmental, nutritional",
+   "Medical, nutritional, developmental, social",
+   "Nutritional, medical, social, developmental",
+   "Developmental, social, medical, nutritional",
+   "Medical only"
+  ],
+  "a": 1,
+  "e": "Medical, nutritional, developmental and social problems, each answered by the plan.",
+  "k": "problem list",
+  "s": "new"
+ }
 ]

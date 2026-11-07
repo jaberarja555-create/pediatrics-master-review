@@ -1,0 +1,147 @@
+[
+ [
+  "Assessment",
+  "How many signs place a child in a dehydration class?",
+  "Two or more signs in the same row."
+ ],
+ [
+  "Assessment",
+  "Signs of severe dehydration?",
+  "Lethargic or unconscious, sunken eyes, drinks poorly or not at all, skin pinch very slow (> 2 s)."
+ ],
+ [
+  "Assessment",
+  "Signs of some dehydration?",
+  "Restless and irritable, sunken eyes, drinks eagerly, skin pinch slow."
+ ],
+ [
+  "Assessment",
+  "Where is the skin pinch done?",
+  "Abdomen, halfway between the umbilicus and the side, in the long axis, held 1 second."
+ ],
+ [
+  "Assessment",
+  "What does 'drinks eagerly' mean?",
+  "Thirst: a sign of some dehydration."
+ ],
+ [
+  "Assessment",
+  "Doughy skin, very irritable, high-pitched cry?",
+  "Hypernatraemic dehydration."
+ ],
+ [
+  "Plans",
+  "Plan A ORS after each stool?",
+  "50–100 ml under 2 years; 100–200 ml at 2 years or more."
+ ],
+ [
+  "Plans",
+  "Plan B?",
+  "ORS 75 ml/kg over 4 hours, by cup and spoon, then reassess."
+ ],
+ [
+  "Plans",
+  "Vomiting during ORS?",
+  "Wait 10 minutes, then continue more slowly."
+ ],
+ [
+  "Plans",
+  "Plan C fluid?",
+  "Ringer lactate 100 ml/kg IV."
+ ],
+ [
+  "Plans",
+  "Plan C under 12 months?",
+  "30 ml/kg in 1 hour, then 70 ml/kg in 5 hours."
+ ],
+ [
+  "Plans",
+  "Plan C at 12 months or older?",
+  "30 ml/kg in 30 minutes, then 70 ml/kg in 2½ hours."
+ ],
+ [
+  "Monitoring",
+  "First signs that rehydration works?",
+  "Stronger pulse, better consciousness, passing urine."
+ ],
+ [
+  "Monitoring",
+  "Signs of overhydration?",
+  "Puffy eyelids, fast breathing, crackles."
+ ],
+ [
+  "Complications",
+  "Complications of dehydration?",
+  "Shock, AKI, metabolic acidosis, hypokalaemia, sodium disorders with fits, hypoglycaemia, DIC."
+ ],
+ [
+  "SAM",
+  "SAM criteria (6–59 months)?",
+  "MUAC < 11.5 cm, WFH < −3 SD, or bilateral pitting oedema."
+ ],
+ [
+  "SAM",
+  "MAM MUAC range?",
+  "11.5 to < 12.5 cm."
+ ],
+ [
+  "SAM",
+  "Oedema grades?",
+  "+ feet; ++ feet and legs; +++ generalised including the face."
+ ],
+ [
+  "SAM",
+  "Flag sign?",
+  "Bands of light and dark hair."
+ ],
+ [
+  "SAM",
+  "Sites of wasting?",
+  "Buttocks (baggy pants), inner thighs, below the scapulae, upper arms."
+ ],
+ [
+  "SAM",
+  "Skin sign of SAM with oedema?",
+  "Flaky-paint dermatosis."
+ ],
+ [
+  "SAM",
+  "Eye signs of vitamin A deficiency?",
+  "Bitot's spots, corneal xerosis, keratomalacia."
+ ],
+ [
+  "SAM",
+  "Old-man face suggests?",
+  "SAM without oedema (marasmus)."
+ ],
+ [
+  "SAM dehydration",
+  "Why are dehydration signs unreliable in SAM?",
+  "Loss of fat makes the skin pinch slow and the eyes sunken without dehydration."
+ ],
+ [
+  "SAM dehydration",
+  "How is dehydration diagnosed in SAM?",
+  "Recent watery diarrhoea, recent change in the eyes, thirst, reduced urine."
+ ],
+ [
+  "SAM dehydration",
+  "Rehydration fluid in SAM?",
+  "ReSoMal 5 ml/kg every 30 min for 2 h, then 5–10 ml/kg/h."
+ ],
+ [
+  "SAM dehydration",
+  "Only indication for IV fluid in SAM?",
+  "Shock: 15 ml/kg over 1 hour, then reassess."
+ ],
+ [
+  "SAM dehydration",
+  "Why not standard ORS or Plan C in SAM?",
+  "The sodium load and fast fluid cause heart failure."
+ ],
+ [
+  "SAM dehydration",
+  "Stop ReSoMal when?",
+  "No longer thirsty and passing urine, or signs of overload (faster pulse and breathing, big liver, puffy eyelids)."
+ ]
+]

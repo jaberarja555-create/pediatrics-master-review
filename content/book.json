@@ -647,21 +647,70 @@
      "no": "14.1",
      "title": "Pediatric History Taking",
      "short": "History",
-     "sub": "English and Arabic · the long case"
+     "sub": "Order of the history · Arabic questions · the summary"
     },
     {
-     "id": "examination",
+     "id": "osce-hx-newborn",
      "no": "14.2",
-     "title": "Pediatric Examination",
-     "short": "Examination",
-     "sub": "General and systemic examination"
+     "title": "Focused Histories: Newborn & Infant",
+     "short": "Newborn histories",
+     "sub": "Neonatal jaundice · neonatal sepsis · malnutrition · diarrhoea"
     },
     {
-     "id": "osce",
+     "id": "osce-hx-child",
      "no": "14.3",
-     "title": "OSCE Stations",
-     "short": "OSCE",
-     "sub": "Growth chart · milestones · ORS · instruments · spotters"
+     "title": "Focused Histories: Common Complaints",
+     "short": "Child histories",
+     "sub": "Cough · convulsions · bleeding · pallor · swelling · joints"
+    },
+    {
+     "id": "osce-growth",
+     "no": "14.4",
+     "title": "General Examination, Growth & Development",
+     "short": "General & growth",
+     "sub": "Vital signs · anthropometry · growth chart · short stature · development"
+    },
+    {
+     "id": "osce-systems",
+     "no": "14.5",
+     "title": "Respiratory, Cardiac & Abdominal Examination",
+     "short": "Systems",
+     "sub": "Respiratory · cardiovascular · abdomen and hepatosplenomegaly"
+    },
+    {
+     "id": "osce-neuro",
+     "no": "14.6",
+     "title": "Nervous System & Special Examinations",
+     "short": "Neuro & special",
+     "sub": "Limbs · cerebral palsy · hydrocephalus · rickets · Down syndrome · anaemia"
+    },
+    {
+     "id": "osce-newborn",
+     "no": "14.7",
+     "title": "Newborn Examination & Neonatal Resuscitation",
+     "short": "Newborn",
+     "sub": "Newborn check · resuscitation on the manikin · intubation"
+    },
+    {
+     "id": "osce-dehydration",
+     "no": "14.8",
+     "title": "Dehydration & Malnutrition Assessment",
+     "short": "Dehydration & SAM",
+     "sub": "Signs of dehydration · Plans A–C · examination in SAM"
+    },
+    {
+     "id": "osce-counsel",
+     "no": "14.9",
+     "title": "Counselling Stations",
+     "short": "Counselling",
+     "sub": "Immunization · febrile convulsion · epilepsy · diabetes · Down syndrome · asthma · ORS"
+    },
+    {
+     "id": "osce-data",
+     "no": "14.10",
+     "title": "Data Interpretation & Spotters",
+     "short": "Data & spotters",
+     "sub": "CSF · blood counts · X-rays · instruments · pictures"
     }
    ]
   },

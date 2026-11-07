@@ -1357,7 +1357,7 @@ decompensation / decompensated | Failure of the body's compensation (e.g. fallin
 deoxygenated | Low in oxygen (venous blood)
 diazoxide | Drug that blocks insulin release; used in hyperinsulinism
 dilatation | Widening
-diplegia | Weakness of both legs more than arms (preterm cerebral palsy)
+diplegia / diplegic | Weakness of both legs more than arms (preterm cerebral palsy)
 quadriplegia / quadriplegic | Weakness of all four limbs
 paraplegia | Weakness of both legs (spinal cord lesion)
 dispersible | Tablet that dissolves in water (dispersible amoxicillin, zinc)
@@ -2032,7 +2032,7 @@ Kallmann syndrome / Kallmann | Delayed puberty with loss of the sense of smell (
 salicylate / salicylates | Aspirin and related drugs; overdose causes fast breathing, tinnitus and acidosis
 polydipsia | Excessive thirst and drinking
 acanthosis nigricans / acanthosis / nigricans | Dark, velvety skin on the neck and axillae: a sign of insulin resistance (type 2 diabetes, obesity)
-post-ictal | The drowsy period after a seizure
+post-ictal / postictal | The drowsy period after a seizure
 povidone-iodine | Iodine antiseptic for skin and wounds
 bronchopulmonary | Chronic lung disease of preterm babies after ventilation and oxygen
 nodosum | Tender red nodules on the shins (TB, streptococcal infection, IBD)
@@ -2252,3 +2252,30 @@ Aspergillus | Mould causing allergic or invasive lung infection
 callus | New bone forming around a healing fracture (multiple calluses of different ages = non-accidental injury)
 flexion | Bending of a joint
 ganglion / ganglia | A group of nerve cells (basal ganglia), or a cystic swelling near a joint
+auscultation | Listening to the sounds of the body (heart, lungs, bowel) with a stethoscope
+Cushing's syndrome / Cushing's | Excess cortisol (usually from long steroid treatment): moon face, central obesity, striae, poor growth, high BP
+Ziehl–Neelsen stain / Ziehl–Neelsen | Acid-fast stain that shows TB bacilli as red rods
+manikin | A life-size model of a baby or child used to practise resuscitation and procedures
+bimanual / bimanually | Palpation with both hands, one behind the flank and one in front (to feel the kidney)
+cautery | Traditional burning of the skin with a hot iron over a painful or swollen part; the scars point to a long illness
+pes cavus / cavus | High-arched foot, seen in long-standing nerve or muscle disease
+circumduction / circumduction gait | Swinging the stiff leg outwards in a half circle while walking (hemiplegia)
+depigmented | Lighter in colour than normal from loss of pigment
+dermatome | The area of skin supplied by one spinal nerve root
+facies | The typical facial appearance of a disease or syndrome
+fundoscopy | Looking at the retina and optic disc with an ophthalmoscope
+mid-clavicular line | Vertical line through the middle of the clavicle, used to measure the liver
+patency / patent | Being open (e.g. a patent anus or nostril)
+rhizotomy / selective dorsal rhizotomy | Operation cutting some sensory nerve roots of the spinal cord to reduce leg spasticity in cerebral palsy
+sternotomy | Surgical opening through the breastbone (midline scar of heart surgery)
+sunsetting / sunsetting eyes | Eyes deviated downwards with the white sclera seen above the iris (raised pressure in hydrocephalus)
+Toxocara / toxocara | Dog and cat roundworm; its larvae cause eosinophilia, liver and eye disease in children
+vallecula | The groove between the base of the tongue and the epiglottis, where the laryngoscope tip sits
+vesicular / vesicular breath sounds | Normal soft breath sounds, longer in inspiration than expiration
+xanthochromia | Yellow colour of the CSF from broken-down blood (subarachnoid haemorrhage)
+zeer | Clay pot cooler: one pot inside another with wet sand between, used to keep insulin cool without a fridge
+overhydration | Too much fluid given: puffy eyelids, fast breathing, crackles, enlarged liver
+spotter / spotters | OSCE station showing a picture, X-ray or instrument to name and discuss
+haematological | Related to the blood and blood-forming organs
+pulsation / pulsations | Visible beating movement of the heart or a vessel
+suppository | A drug in a small solid form given into the rectum

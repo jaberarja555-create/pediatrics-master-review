@@ -1,0 +1,128 @@
+[
+ {
+  "q": "A newborn has a scalp swelling that does not cross the suture lines. The diagnosis is:",
+  "o": [
+   "Caput succedaneum",
+   "Cephalhaematoma",
+   "Subgaleal haemorrhage",
+   "Encephalocele",
+   "Moulding"
+  ],
+  "a": 1,
+  "e": "Cephalhaematoma is subperiosteal blood limited by the sutures.",
+  "k": "cephalhaematoma",
+  "s": "new"
+ },
+ {
+  "q": "An absent red reflex at the newborn check needs:",
+  "o": [
+   "Review at 6 weeks",
+   "Urgent ophthalmology review",
+   "Eye drops",
+   "Phototherapy",
+   "Reassurance"
+  ],
+  "a": 1,
+  "e": "Cataract or retinoblastoma must be excluded urgently.",
+  "k": "red reflex",
+  "s": "new"
+ },
+ {
+  "q": "The Ortolani test:",
+  "o": [
+   "Dislocates an unstable hip",
+   "Relocates a dislocated hip",
+   "Tests the knee",
+   "Tests femoral pulses",
+   "Tests the Moro reflex"
+  ],
+  "a": 1,
+  "e": "Ortolani relocates a dislocated hip with a clunk; Barlow dislocates an unstable one.",
+  "k": "Ortolani",
+  "s": "new"
+ },
+ {
+  "q": "A newborn is not breathing after drying and stimulation. HR is 80/min. The next step is:",
+  "o": [
+   "Chest compressions",
+   "Adrenaline",
+   "Bag-and-mask ventilation",
+   "Naloxone",
+   "Wait for the 5-minute Apgar"
+  ],
+  "a": 2,
+  "e": "Not breathing or HR < 100/min → bag-and-mask ventilation.",
+  "k": "bag-and-mask ventilation",
+  "s": "new"
+ },
+ {
+  "q": "Chest compressions in the newborn are started when the heart rate is:",
+  "o": [
+   "< 100/min",
+   "< 80/min",
+   "< 60/min after 30 s of good ventilation",
+   "< 40/min at once",
+   "Absent only"
+  ],
+  "a": 2,
+  "e": "Compressions start when HR stays < 60/min despite 30 s of effective ventilation.",
+  "k": "hr < 60/min",
+  "s": "new"
+ },
+ {
+  "q": "The ratio of compressions to breaths in newborn resuscitation is:",
+  "o": [
+   "15 : 2",
+   "30 : 2",
+   "3 : 1",
+   "5 : 1",
+   "1 : 1"
+  ],
+  "a": 2,
+  "e": "3 : 1, giving 90 compressions and 30 breaths per minute.",
+  "k": "3 compressions to 1 breath",
+  "s": "new"
+ },
+ {
+  "q": "The endotracheal tube size for a 2.5 kg baby is:",
+  "o": [
+   "2.0 mm",
+   "2.5 mm",
+   "3.0 mm",
+   "3.5 mm",
+   "4.5 mm"
+  ],
+  "a": 3,
+  "e": "2–3 kg (34–38 weeks): 3.5 mm.",
+  "k": "3.5 mm",
+  "s": "new"
+ },
+ {
+  "q": "After intubation, breath sounds are heard only on the right. The action is:",
+  "o": [
+   "Remove the tube",
+   "Push it further",
+   "Pull it back slightly",
+   "Give adrenaline",
+   "Insert a chest drain"
+  ],
+  "a": 2,
+  "e": "The tube is in the right main bronchus: withdraw it until both sides are heard.",
+  "k": "right main bronchus",
+  "s": "new"
+ },
+ {
+  "q": "Bag-and-mask ventilation should be avoided in a baby with:",
+  "o": [
+   "Meconium-stained liquor",
+   "Prematurity",
+   "Congenital diaphragmatic hernia",
+   "Cleft lip",
+   "Jaundice"
+  ],
+  "a": 2,
+  "e": "Bagging inflates the bowel in the chest; intubate instead.",
+  "k": "diaphragmatic hernia",
+  "s": "new"
+ }
+]

@@ -1,0 +1,128 @@
+[
+ {
+  "q": "A 2-year-old has a sudden cough and choking while eating peanuts. The best next step is:",
+  "o": [
+   "Salbutamol nebuliser",
+   "Chest physiotherapy",
+   "Bronchoscopy",
+   "Oral antibiotics",
+   "Observation at home"
+  ],
+  "a": 2,
+  "e": "A sudden choking cough suggests an inhaled foreign body: bronchoscopy removes it.",
+  "k": "foreign body",
+  "s": "new"
+ },
+ {
+  "q": "Which history point marks an asthmatic child at the highest risk of a fatal attack?",
+  "o": [
+   "Night cough twice a month",
+   "Previous admission to intensive care",
+   "Eczema",
+   "Exercise-induced wheeze",
+   "A sibling with asthma"
+  ],
+  "a": 1,
+  "e": "A previous intensive care admission or ventilation marks a high-risk asthmatic.",
+  "k": "intensive care",
+  "s": "new"
+ },
+ {
+  "q": "All are features of a simple febrile convulsion EXCEPT:",
+  "o": [
+   "Age 6 months to 5 years",
+   "Generalised seizure",
+   "Duration under 15 minutes",
+   "Focal onset",
+   "Full recovery"
+  ],
+  "a": 3,
+  "e": "Focal onset makes a febrile convulsion complex.",
+  "k": "simple febrile convulsion",
+  "s": "new"
+ },
+ {
+  "q": "A 9-month-old has fever and a 3-minute generalised fit. Which test is strongly considered?",
+  "o": [
+   "EEG",
+   "CT head",
+   "Lumbar puncture",
+   "Skull X-ray",
+   "Serum calcium only"
+  ],
+  "a": 2,
+  "e": "Under 12 months, signs of meningitis are unreliable, so a lumbar puncture is strongly considered.",
+  "k": "lumbar puncture",
+  "s": "new"
+ },
+ {
+  "q": "A boy bleeds into his knee after a fall and bled after circumcision; his maternal uncle is affected. The test most likely abnormal is:",
+  "o": [
+   "Platelet count",
+   "Bleeding time",
+   "PT only",
+   "APTT",
+   "Fibrinogen"
+  ],
+  "a": 3,
+  "e": "Haemophilia A or B prolongs the APTT with a normal platelet count and PT.",
+  "k": "APTT",
+  "s": "new"
+ },
+ {
+  "q": "Which bleeding pattern suggests a platelet disorder?",
+  "o": [
+   "Haemarthrosis",
+   "Muscle haematoma",
+   "Petechiae and gum bleeding",
+   "Delayed bleeding after surgery",
+   "Retroperitoneal bleeding"
+  ],
+  "a": 2,
+  "e": "Skin and mucosal bleeding (petechiae, purpura, gum and nose bleeding) points to platelets.",
+  "k": "skin and mucosa",
+  "s": "new"
+ },
+ {
+  "q": "A child has puffy eyes in the morning and cola-coloured urine 2 weeks after a sore throat. The diagnosis is:",
+  "o": [
+   "Nephrotic syndrome",
+   "Post-streptococcal glomerulonephritis",
+   "Urinary tract infection",
+   "Schistosomiasis",
+   "G6PD deficiency"
+  ],
+  "a": 1,
+  "e": "Oedema, haematuria and a preceding streptococcal infection = PSGN.",
+  "k": "post-streptococcal glomerulonephritis",
+  "s": "new"
+ },
+ {
+  "q": "Red urine at the end of urination in a boy who swims in canals suggests:",
+  "o": [
+   "Wilms tumour",
+   "Schistosoma haematobium",
+   "Glomerulonephritis",
+   "Stones",
+   "Haemophilia"
+  ],
+  "a": 1,
+  "e": "Terminal haematuria after canal water contact is urinary schistosomiasis: praziquantel.",
+  "k": "schistosomiasis",
+  "s": "new"
+ },
+ {
+  "q": "Secondary prophylaxis after rheumatic fever is:",
+  "o": [
+   "Amoxicillin for 10 days",
+   "Benzathine penicillin every 4 weeks",
+   "Aspirin daily",
+   "Prednisolone",
+   "Erythromycin for one week"
+  ],
+  "a": 1,
+  "e": "Benzathine penicillin G IM every 4 weeks (every 3 weeks in high risk).",
+  "k": "benzathine penicillin",
+  "s": "new"
+ }
+]

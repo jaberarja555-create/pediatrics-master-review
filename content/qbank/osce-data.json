@@ -1,0 +1,128 @@
+[
+ {
+  "q": "CSF: turbid, 2,000 cells/mm³ mostly neutrophils, protein high, glucose ratio 0.2. The diagnosis is:",
+  "o": [
+   "Viral meningitis",
+   "TB meningitis",
+   "Bacterial meningitis",
+   "Normal CSF",
+   "Subarachnoid haemorrhage"
+  ],
+  "a": 2,
+  "e": "Neutrophils, high protein and low glucose = bacterial meningitis.",
+  "k": "bacterial meningitis",
+  "s": "new"
+ },
+ {
+  "q": "CSF: clear with a cobweb clot, 200 lymphocytes, very high protein, low glucose. The diagnosis is:",
+  "o": [
+   "Bacterial meningitis",
+   "TB meningitis",
+   "Viral meningitis",
+   "Normal",
+   "Brain abscess"
+  ],
+  "a": 1,
+  "e": "Lymphocytes with very high protein and low glucose suggest TB meningitis.",
+  "k": "cobweb clot",
+  "s": "new"
+ },
+ {
+  "q": "The normal CSF to blood glucose ratio is about:",
+  "o": [
+   "0.1",
+   "0.3",
+   "2/3",
+   "1.5",
+   "2"
+  ],
+  "a": 2,
+  "e": "About two-thirds; a ratio < 0.4 suggests bacterial infection.",
+  "k": "about 2/3",
+  "s": "new"
+ },
+ {
+  "q": "Low Hb, very low MCV, normal RDW and target cells suggest:",
+  "o": [
+   "Iron deficiency",
+   "Thalassaemia",
+   "Vitamin B12 deficiency",
+   "Aplastic anaemia",
+   "Lead poisoning only"
+  ],
+  "a": 1,
+  "e": "Thalassaemia: very low MCV with a normal RDW and target cells; confirm by Hb electrophoresis.",
+  "k": "thalassaemia",
+  "s": "new"
+ },
+ {
+  "q": "Urine: red cell casts with low C3 and raised ASO titre indicate:",
+  "o": [
+   "Nephrotic syndrome",
+   "UTI",
+   "Post-streptococcal glomerulonephritis",
+   "Schistosomiasis",
+   "Stones"
+  ],
+  "a": 2,
+  "e": "Red cell casts with low C3 after streptococcal infection = PSGN.",
+  "k": "red cell casts",
+  "s": "new"
+ },
+ {
+  "q": "A cyanosed infant's chest X-ray shows a boot-shaped heart with oligaemic lungs. The diagnosis is:",
+  "o": [
+   "TGA",
+   "Tetralogy of Fallot",
+   "TAPVR",
+   "VSD",
+   "PDA"
+  ],
+  "a": 1,
+  "e": "Boot-shaped heart with dark lung fields = tetralogy of Fallot.",
+  "k": "boot-shaped heart",
+  "s": "new"
+ },
+ {
+  "q": "The double bubble sign on an abdominal X-ray indicates:",
+  "o": [
+   "Pyloric stenosis",
+   "Duodenal atresia",
+   "Hirschsprung disease",
+   "Intussusception",
+   "Malrotation always"
+  ],
+  "a": 1,
+  "e": "Gas in the stomach and duodenum with no distal gas = duodenal atresia (often Down syndrome).",
+  "k": "double bubble",
+  "s": "new"
+ },
+ {
+  "q": "The intraosseous needle in a child is inserted into the:",
+  "o": [
+   "Distal femur only",
+   "Proximal tibia, medial surface",
+   "Sternum",
+   "Iliac crest",
+   "Humeral head only"
+  ],
+  "a": 1,
+  "e": "Proximal tibia, 1–2 cm below the tuberosity, on the flat medial surface.",
+  "k": "proximal tibia",
+  "s": "new"
+ },
+ {
+  "q": "A vaccine vial monitor shows the inner square darker than the circle. The action is:",
+  "o": [
+   "Use it first",
+   "Use within a week",
+   "Discard the vial",
+   "Shake the vial",
+   "Store in the freezer"
+  ],
+  "a": 2,
+  "e": "Square as dark as or darker than the circle: discard.",
+  "k": "discard",
+  "s": "new"
+ }
+]

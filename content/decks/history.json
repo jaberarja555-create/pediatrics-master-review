@@ -1,122 +1,142 @@
 [
  [
-  "Order",
-  "Who usually gives the paediatric history?",
-  "The mother or carer (the child when old enough)."
+  "Starting",
+  "Which three steps start every history station and carry marks?",
+  "Greeting the mother, introducing yourself and taking permission."
+ ],
+ [
+  "Starting",
+  "Which kind of questions is used first in a history?",
+  "Open questions; closed questions later to fill the gaps."
+ ],
+ [
+  "Starting",
+  "Which two questions should you ask yourself before taking the history?",
+  "What is the differential diagnosis, and which part of the history decides between them?"
  ],
  [
   "Order",
-  "Parts unique to the paediatric history?",
-  "Perinatal, feeding, developmental and vaccination history."
+  "Which four parts make the history paediatric?",
+  "Birth, nutritional, immunization and developmental history."
  ],
  [
   "Personal data",
-  "Why ask the address?",
-  "Endemic areas: malaria, kala-azar, schistosomiasis."
+  "Why is the residence asked?",
+  "Endemic diseases: malaria, kala-azar, schistosomiasis."
  ],
  [
-  "Chief complaint",
-  "How is the chief complaint written?",
-  "In the mother's words, with duration."
+  "Presenting complaint",
+  "How is each presenting complaint written?",
+  "In the mother's words, in chronological order, with its duration."
  ],
  [
-  "HPI",
-  "Points to analyse in each complaint?",
-  "Onset, course, character, aggravating/relieving, associated symptoms, treatment."
+  "Presenting complaint",
+  "Where is a known chronic disease stated?",
+  "Before the complaints: \"a known case of … now presenting with …\"."
  ],
  [
-  "HPI",
-  "What else is asked in HPI?",
-  "Relevant negatives and impact on feeding, sleep, activity."
- ],
- [
-  "Perinatal",
-  "Antenatal questions?",
-  "ANC visits, illness, drugs, fever, rash, BP, diabetes."
- ],
- [
-  "Perinatal",
-  "Natal questions?",
-  "Gestation, place, mode of delivery, cried at once."
- ],
- [
-  "Perinatal",
-  "Postnatal questions?",
-  "Birth weight, NICU, jaundice, fits, cyanosis, feeding."
- ],
- [
-  "Nutrition",
-  "Feeding questions?",
-  "Exclusive breastfeeding, formula preparation, weaning age, current diet."
- ],
- [
-  "Nutrition",
-  "Method for current diet?",
-  "24-hour recall."
- ],
- [
-  "Development",
-  "Development history covers?",
-  "Gross motor, fine motor, speech, social, school, regression."
- ],
- [
-  "Vaccination",
-  "How is vaccination checked?",
-  "From the EPI card against the schedule."
+  "Present illness",
+  "What is asked after analysing each complaint?",
+  "Relevant negatives, treatment received, complications and effect on feeding, sleep and school."
  ],
  [
   "Family",
-  "Key family history in Sudan?",
-  "Consanguinity, sibling deaths, sickle cell, G6PD, TB contact."
- ],
- [
-  "Family",
-  "How is family history shown?",
-  "A pedigree."
+  "Which family questions are always asked?",
+  "Consanguinity, siblings' health and deaths, similar illness, inherited disease and contact with a chronic cough."
  ],
  [
   "Social",
-  "Social history items?",
-  "Parents' education, income, crowding, water, latrine, smoking."
+  "Which social points are asked?",
+  "Parents' education, occupation and income; housing, crowding, water, latrine, animals; smoking at home."
  ],
  [
-  "Summary",
-  "What follows the summary?",
-  "Provisional diagnosis and differentials with reasons."
+  "Drugs",
+  "Which drug points are asked?",
+  "Current drugs and doses, drug allergy and traditional remedies (cautery, herbs)."
  ],
  [
-  "Exam tip",
-  "Three things to mention in every case?",
-  "Vaccination, growth and development."
+  "Immunization",
+  "Best way to check the immunization status?",
+  "Look at the EPI card (and the BCG scar)."
+ ],
+ [
+  "Birth",
+  "Three parts of the birth history?",
+  "Antenatal, natal and postnatal."
+ ],
+ [
+  "Birth",
+  "Which natal detail is a risk for neonatal sepsis?",
+  "Prolonged rupture of membranes."
+ ],
+ [
+  "Birth",
+  "Which postnatal question points to birth asphyxia?",
+  "Did the baby cry immediately or need resuscitation?"
+ ],
+ [
+  "Birth",
+  "Antenatal fever with rash suggests what?",
+  "A congenital (TORCH) infection."
+ ],
+ [
+  "Nutrition",
+  "Why ask how formula is prepared?",
+  "Over-diluted feeds cause undernutrition."
+ ],
+ [
+  "Nutrition",
+  "Best way to record the present diet?",
+  "A 24-hour recall of type, amount and frequency of meals."
+ ],
+ [
+  "Nutrition",
+  "At what age should weaning start?",
+  "6 months."
+ ],
+ [
+  "Development",
+  "Which developmental finding points away from cerebral palsy?",
+  "Regression (loss of skills already gained): a progressive disease."
  ],
  [
   "Arabic",
-  "\"Child\" in Sudanese Arabic?",
-  "الشافع"
- ],
- [
-  "Arabic",
-  "\"Fever\" in Sudanese Arabic?",
-  "السخانة"
- ],
- [
-  "Arabic",
-  "\"Vomiting\" in Sudanese Arabic?",
-  "الطراش"
- ],
- [
-  "Arabic",
-  "Asking about consanguinity?",
+  "Ask about consanguinity in Arabic.",
   "إنتي وأبوهو قرايب؟"
  ],
  [
   "Arabic",
-  "Asking for the vaccination card?",
-  "ممكن أشوف كرت التطعيم؟"
+  "Ask whether the baby cried at birth in Arabic.",
+  "الشافع بكى طوالي بعد الولادة؟"
  ],
  [
   "Arabic",
-  "Asking about cola-coloured urine?",
-  "لونو زي الشاي أو أحمر؟"
+  "\"الطراش أخضر\" suggests what?",
+  "Bilious vomiting: intestinal obstruction."
+ ],
+ [
+  "Arabic",
+  "\"البراز أبيض والبول غامق\" suggests what?",
+  "Obstructive (conjugated) jaundice."
+ ],
+ [
+  "Summary",
+  "What does a good summary contain?",
+  "Age, sex (residence), complaints with durations, key positives and important negatives."
+ ],
+ [
+  "Summary",
+  "How is each differential diagnosis presented?",
+  "With one reason for and one against."
+ ],
+ [
+  "Long case",
+  "Order of the problem list in the long case?",
+  "Medical, nutritional, developmental and social problems."
+ ],
+ [
+  "Exam trap",
+  "Why do leading questions lose marks?",
+  "They suggest the answer; open questions give reliable information."
  ]
 ]

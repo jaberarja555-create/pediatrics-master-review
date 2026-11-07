@@ -1,0 +1,128 @@
+[
+ {
+  "q": "A child with diarrhoea is irritable, drinks eagerly and the skin pinch goes back slowly. The classification is:",
+  "o": [
+   "No dehydration",
+   "Some dehydration",
+   "Severe dehydration",
+   "Shock",
+   "Hypernatraemia"
+  ],
+  "a": 1,
+  "e": "Two signs of the middle row = some dehydration: Plan B.",
+  "k": "some dehydration",
+  "s": "new"
+ },
+ {
+  "q": "Plan B for a 10 kg child is ORS:",
+  "o": [
+   "200 ml in 1 hour",
+   "500 ml in 2 hours",
+   "750 ml over 4 hours",
+   "1000 ml over 6 hours",
+   "Only after each stool"
+  ],
+  "a": 2,
+  "e": "Plan B: 75 ml/kg over 4 hours = 750 ml.",
+  "k": "75 ml/kg over 4 hours",
+  "s": "new"
+ },
+ {
+  "q": "Plan C for a 6-month-old starts with Ringer lactate:",
+  "o": [
+   "30 ml/kg in 30 minutes",
+   "30 ml/kg in 1 hour",
+   "20 ml/kg in 15 minutes",
+   "70 ml/kg in 1 hour",
+   "10 ml/kg in 1 hour"
+  ],
+  "a": 1,
+  "e": "Under 12 months: 30 ml/kg in 1 hour, then 70 ml/kg in 5 hours.",
+  "k": "30 ml/kg in",
+  "s": "new"
+ },
+ {
+  "q": "Where is the skin pinch done in the IMCI assessment?",
+  "o": [
+   "Back of the hand",
+   "Forehead",
+   "Abdomen, halfway between umbilicus and side",
+   "Thigh",
+   "Chest wall in every child"
+  ],
+  "a": 2,
+  "e": "Abdomen, halfway between the umbilicus and the side, in the long axis of the body.",
+  "k": "halfway between the umbilicus",
+  "s": "new"
+ },
+ {
+  "q": "A child on Plan C develops puffy eyelids and fast breathing. The action is:",
+  "o": [
+   "Speed up the drip",
+   "Give furosemide and continue",
+   "Slow or stop the fluid",
+   "Change to 0.9% saline",
+   "Add potassium"
+  ],
+  "a": 2,
+  "e": "These are signs of overhydration: slow or stop the fluid and reassess.",
+  "k": "overhydration",
+  "s": "new"
+ },
+ {
+  "q": "A 2-year-old has MUAC 13 cm and bilateral pitting oedema of the feet. The classification is:",
+  "o": [
+   "Normal",
+   "MAM",
+   "SAM with oedema",
+   "SAM without oedema",
+   "Kwashiorkor excluded"
+  ],
+  "a": 2,
+  "e": "Bilateral pitting oedema makes the diagnosis SAM whatever the MUAC.",
+  "k": "bilateral pitting",
+  "s": "new"
+ },
+ {
+  "q": "Which rehydration solution is used for a dehydrated child with SAM?",
+  "o": [
+   "Standard ORS",
+   "Ringer lactate 100 ml/kg",
+   "ReSoMal",
+   "5% dextrose",
+   "0.9% saline 20 ml/kg"
+  ],
+  "a": 2,
+  "e": "ReSoMal (less sodium, more potassium) given slowly by mouth or NGT.",
+  "k": "ReSoMal",
+  "s": "new"
+ },
+ {
+  "q": "The only indication for IV fluids in a child with SAM is:",
+  "o": [
+   "Some dehydration",
+   "Vomiting once",
+   "Shock",
+   "Oedema",
+   "Hypoglycaemia"
+  ],
+  "a": 2,
+  "e": "IV fluid (15 ml/kg over 1 hour) is given only for shock.",
+  "k": "only for shock",
+  "s": "new"
+ },
+ {
+  "q": "All are signs of SAM with oedema EXCEPT:",
+  "o": [
+   "Flaky-paint dermatosis",
+   "Moon face",
+   "Apathy",
+   "Enlarged fatty liver",
+   "Old-man face"
+  ],
+  "a": 4,
+  "e": "An old-man face is typical of SAM without oedema (marasmus).",
+  "k": "old-man face",
+  "s": "new"
+ }
+]

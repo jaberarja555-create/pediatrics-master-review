@@ -505,3 +505,5 @@ OP | Organophosphate
 OHP | Hydroxyprogesterone (17-OHP: raised in CAH)
 GIT | Gastrointestinal tract
 BSA | Body surface area
+Qp:Qs | ratio of pulmonary to systemic blood flow
+UMN | Upper motor neurone

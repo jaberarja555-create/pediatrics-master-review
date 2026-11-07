@@ -1,0 +1,147 @@
+[
+ [
+  "Respiratory",
+  "Signs of respiratory distress on inspection?",
+  "Nasal flaring, grunting, head nodding, recession (subcostal, intercostal, suprasternal)."
+ ],
+ [
+  "Respiratory",
+  "Where is chest expansion checked?",
+  "At three levels, comparing both sides."
+ ],
+ [
+  "Respiratory",
+  "Percussion in pleural effusion?",
+  "Stony dull."
+ ],
+ [
+  "Respiratory",
+  "Consolidation signs?",
+  "Central trachea, dull percussion, bronchial breathing, crackles."
+ ],
+ [
+  "Respiratory",
+  "Trachea in lung collapse?",
+  "Pulled towards the affected side."
+ ],
+ [
+  "Respiratory",
+  "Trachea in effusion or pneumothorax?",
+  "Pushed away."
+ ],
+ [
+  "Respiratory",
+  "What is offered at the end?",
+  "Examination of the back and ear, nose and throat."
+ ],
+ [
+  "CVS",
+  "Why feel radial and femoral pulses together?",
+  "To detect radio-femoral delay of coarctation."
+ ],
+ [
+  "CVS",
+  "Collapsing pulse in a child suggests?",
+  "PDA."
+ ],
+ [
+  "CVS",
+  "Parasternal heave means?",
+  "Right ventricular hypertrophy."
+ ],
+ [
+  "CVS",
+  "Palpable P2 means?",
+  "Pulmonary hypertension."
+ ],
+ [
+  "CVS",
+  "Most useful sign of heart failure in an infant?",
+  "An enlarged tender liver."
+ ],
+ [
+  "CVS",
+  "VSD murmur?",
+  "Pansystolic at the lower left sternal edge."
+ ],
+ [
+  "CVS",
+  "ASD sign?",
+  "Wide fixed splitting of S2 with a soft ejection murmur upper left sternal edge."
+ ],
+ [
+  "CVS",
+  "PDA murmur?",
+  "Continuous machinery murmur below the left clavicle."
+ ],
+ [
+  "CVS",
+  "Coarctation murmur site?",
+  "Between the scapulae."
+ ],
+ [
+  "CVS",
+  "S2 in tetralogy of Fallot?",
+  "Single."
+ ],
+ [
+  "CVS",
+  "Features of an innocent murmur?",
+  "Soft systolic, no thrill, varies with posture, well child, normal heart sounds."
+ ],
+ [
+  "CVS",
+  "Left lateral thoracotomy scar suggests?",
+  "PDA ligation, coarctation repair or a shunt."
+ ],
+ [
+  "Abdomen",
+  "Position for the abdominal examination?",
+  "Lying flat with arms by the sides (infant on the mother's lap)."
+ ],
+ [
+  "Abdomen",
+  "Where does deep palpation start?",
+  "In the right iliac fossa."
+ ],
+ [
+  "Abdomen",
+  "Normal liver edge in infants?",
+  "Up to 2 cm below the costal margin."
+ ],
+ [
+  "Abdomen",
+  "Spleen versus kidney: three differences?",
+  "Spleen: cannot get above it, notch, dull, not ballotable; kidney: ballotable, resonant."
+ ],
+ [
+  "Abdomen",
+  "Signs of ascites?",
+  "Shifting dullness; fluid thrill if tense."
+ ],
+ [
+  "Abdomen",
+  "What do cautery marks over the abdomen suggest?",
+  "A long-standing illness (e.g. splenomegaly) treated traditionally."
+ ],
+ [
+  "Abdomen",
+  "Ballotable flank mass in a well toddler?",
+  "Wilms tumour (do not palpate hard)."
+ ],
+ [
+  "HSM",
+  "Huge spleen, fever, wasting, from Gedaref?",
+  "Kala-azar: rK39 test."
+ ],
+ [
+  "HSM",
+  "Firm spleen with haematemesis and normal liver function?",
+  "Portal hypertension (schistosomiasis)."
+ ],
+ [
+  "HSM",
+  "First test in hepatosplenomegaly?",
+  "CBC with a blood film."
+ ]
+]
