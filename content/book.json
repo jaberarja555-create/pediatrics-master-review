@@ -671,43 +671,57 @@
      "sub": "Vital signs · anthropometry · growth chart · short stature · development"
     },
     {
-     "id": "osce-systems",
-     "no": "14.5",
-     "title": "Respiratory, Cardiac & Abdominal Examination",
-     "short": "Systems",
-     "sub": "Respiratory · cardiovascular · abdomen and hepatosplenomegaly"
+     "id": "osce-resp",
+     "title": "Respiratory System Examination",
+     "short": "Respiratory",
+     "sub": "Steps · findings · model presentation",
+     "no": "14.5"
+    },
+    {
+     "id": "osce-cvs",
+     "title": "Cardiovascular System Examination",
+     "short": "Cardiovascular",
+     "sub": "Pulses · precordium · murmurs of common lesions",
+     "no": "14.6"
+    },
+    {
+     "id": "osce-abdomen",
+     "title": "Abdominal Examination",
+     "short": "Abdomen",
+     "sub": "Liver and spleen · spleen or kidney · hepatosplenomegaly",
+     "no": "14.7"
     },
     {
      "id": "osce-neuro",
-     "no": "14.6",
+     "no": "14.8",
      "title": "Nervous System & Special Examinations",
      "short": "Neuro & special",
      "sub": "Limbs · cerebral palsy · hydrocephalus · rickets · Down syndrome · anaemia"
     },
     {
      "id": "osce-newborn",
-     "no": "14.7",
+     "no": "14.9",
      "title": "Newborn Examination & Neonatal Resuscitation",
      "short": "Newborn",
      "sub": "Newborn check · resuscitation on the manikin · intubation"
     },
     {
      "id": "osce-dehydration",
-     "no": "14.8",
+     "no": "14.10",
      "title": "Dehydration & Malnutrition Assessment",
      "short": "Dehydration & SAM",
      "sub": "Signs of dehydration · Plans A–C · examination in SAM"
     },
     {
      "id": "osce-counsel",
-     "no": "14.9",
+     "no": "14.11",
      "title": "Counselling Stations",
      "short": "Counselling",
      "sub": "Immunization · febrile convulsion · epilepsy · diabetes · Down syndrome · asthma · ORS"
     },
     {
      "id": "osce-data",
-     "no": "14.10",
+     "no": "14.12",
      "title": "Data Interpretation & Spotters",
      "short": "Data & spotters",
      "sub": "CSF · blood counts · X-rays · instruments · pictures"

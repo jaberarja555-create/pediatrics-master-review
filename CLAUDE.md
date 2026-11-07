@@ -252,7 +252,7 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   added ~390 glossary entries; repeat the scan after new content. **Arabic** in book pages uses the shipped Cairo font (`content/img/fonts/cairo-arabic-*.woff2`,
   10.4 pt); Inter WOFFs are shipped there too. The OSCE chapter (14) will be rewritten for Sudan exams from the owner's coming resources.
 - **Topic titles on one line (owner):** build.py gives titles over 32 characters a smaller font (min 16.5 pt) instead of wrapping.
-- **Chapter 14 OSCE rewritten (7 Nov 2026)** as 10 topics (history, osce-hx-newborn, osce-hx-child, osce-growth, osce-systems, osce-neuro, osce-newborn, osce-dehydration, osce-counsel, osce-data) from resources/osce (Shendi checklists, Ebedya, lil); Arabic history questions in Sudanese colloquial with no label; old `examination`/`osce` topics removed.
+- **Chapter 14 OSCE rewritten (7 Nov 2026)** as 12 topics (history, osce-hx-newborn, osce-hx-child, osce-growth, osce-resp, osce-cvs, osce-abdomen (owner: each system its own topic), osce-neuro, osce-newborn, osce-dehydration, osce-counsel, osce-data) from resources/osce (Shendi checklists, Ebedya, lil); Arabic history questions in Sudanese colloquial with no label; old `examination`/`osce` topics removed.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.
 
 ## Handover between the owner's two Claude accounts (Nov 6 2026)
