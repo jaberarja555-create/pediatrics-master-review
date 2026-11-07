@@ -1737,3 +1737,10 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .rq.rqm > .rqg .rqf { border-bottom:0; }
 .rq.rqa > .rqs { border-bottom:0; }
 .rq.rqm > .rqt { border-top:1px solid #f3dcd6; }
+.rq.rqa > .rqg { border-top:1px solid #eef1f3; } .rq.rqa > .rqg .rqf { border-bottom:0; } .rq.rqa > .rqt { border-top:1px solid #f3dcd6; }
+/* owner (7 Nov 2026): cards whole, two to a page where possible; still roomy */
+.rq .rqs div { font-size:9.1pt; line-height:1.5; padding:2px 0 2px 15px; }
+.rq .rqf { font-size:8.9pt; line-height:1.5; padding:6px 15px 7px; }
+.rq .rqs { padding:7px 15px 6px; }
+.rq .rqh { padding:6px 13px; }
+.rq .rqf.rqt { padding:7px 15px 8px; }

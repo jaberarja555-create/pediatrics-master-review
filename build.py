@@ -337,6 +337,8 @@ def rq_card(t, d):
     parts += [f'<div class="rqg">{r}</div>' for r in rows]
     if d.get('trap'):   # the traps stay with the last row, never alone at the top of a page
         parts[-1] += f'<div class="rqf rqt"><h5>Exam traps</h5>{d["trap"]}</div>'
+    if os.environ.get('RQ_SPLIT') != '1':   # owner (7 Nov 2026): a card is not broken across pages
+        return [(f'<div class="mb rv rq rqa rqz rqc{t["_ch"]}">{"".join(parts)}</div>', True)]
     out = []
     for k, x in enumerate(parts):
         cls = ('mb rv rq rqa' if k == 0 else 'mb rv rvc rq rqm') + f' rqc{t["_ch"]}'
