@@ -399,7 +399,7 @@ function contentsHtml(){return META.contents.map(function(ch){
     if(!t.p)return '<div class="trow soon c'+ch.no+'"><span class="n">'+esc(t.no)+'</span><span class="l">'+esc(t.title)+'<small>Coming soon</small></span><span class="p"></span></div>';
     var tt=TOPICS.filter(function(x){return x.id===t.id})[0],ok=tt&&topicRead(tt)===tt.pages.length;
     return '<button class="trow c'+ch.no+'" type="button" data-p="'+t.p+'"><span class="n">'+esc(t.no)+'</span><span class="l">'+esc(t.title)+'<small>'+esc(t.sub||'')+'</small></span><span class="p'+(ok?' ok':'')+'">'+(ok?'✓ ':'')+'p '+t.p+'</span></button>'}).join('')}).join('')+
-  '<button class="trow rr" type="button" data-p="'+META.rr+'"><span class="n">RR</span><span class="l">Rapid review<small>Every clue → answer</small></span><span class="p">p '+META.rr+'</span></button>'}
+  '<button class="trow rr" type="button" data-p="'+META.rr+'"><span class="n">RR</span><span class="l">Rapid review<small>Exam recap card of every topic</small></span><span class="p">p '+META.rr+'</span></button>'}
 /* Contents as a side panel, like the bookmarks panel of Adobe Reader (owner, Nov 2026): chapters in their colours, tap a chapter
    to open its topics, tap a topic to go there; the chapter and topic being read are open and marked */
 var TDOPEN={};
@@ -418,7 +418,7 @@ function tocDrawer(){var cur=tocCur(),cs=META.contents,curCh=null,curT=null;
       ch.topics.map(function(t){if(!t.p)return '<div class="tdi soon"><span class="tdin">'+esc(t.no)+'</span><span class="tdl">'+esc(t.title)+'</span><span class="tdp">soon</span></div>';
         var tt=TOPICS.filter(function(x){return x.id===t.id})[0],ok=tt&&topicRead(tt)===tt.pages.length;
         return '<button type="button" class="tdi'+(t.id===curT?' cur':'')+'" data-tp="'+t.p+'"><span class="tdin">'+esc(t.no)+'</span><span class="tdl">'+esc(t.title)+'</span><span class="tdp'+(ok?' ok':'')+'">'+(ok?'✓ ':'')+t.p+'</span></button>'}).join('')+'</div></div>'});
-  if(META.rr)h+='<button type="button" class="tdrr'+(cur>=META.rr?' cur':'')+'" data-tp="'+META.rr+'"><span class="tdn">RR</span><span class="tdt">Rapid review<small>Every clue → answer · p '+META.rr+'</small></span></button>';
+  if(META.rr)h+='<button type="button" class="tdrr'+(cur>=META.rr?' cur':'')+'" data-tp="'+META.rr+'"><span class="tdn">RR</span><span class="tdt">Rapid review<small>Exam recap of every topic · p '+META.rr+'</small></span></button>';
   var d=$('tocDr');if(!d){d=document.createElement('div');d.id='tocDr';d.className='tocdr';d.hidden=true;document.body.appendChild(d);
     d.addEventListener('click',function(e){if(e.target===d||e.target.closest('#tdX')){closeToc();return}
       var c=e.target.closest('[data-tch]');if(c){var n=c.dataset.tch,box=c.parentNode;TDOPEN[n]=TDOPEN[n]?0:1;box.classList.toggle('open',!!TDOPEN[n]);return}
