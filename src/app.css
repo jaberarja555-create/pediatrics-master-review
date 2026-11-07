@@ -1688,4 +1688,6 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 /* chapters with more than 5 topics: a taller picture so the cover has no empty lower third (owner, 7 Nov 2026) */
 .chcov.many .cvimg { height:360px; } .chcov.many .cvin { top:830px; }
 .chcov.many:has(.cvin > :nth-child(8)) .cvimg { height:290px; } .chcov.many:has(.cvin > :nth-child(8)) .cvin { top:758px; }
-.chcov.c9 .cvimg, .chcov.c10 .cvimg { height:282px; } .chcov.c9 .cvin, .chcov.c10 .cvin { top:774px; }
+.chcov.c10 .cvimg, .chcov.c11 .cvimg { height:282px; } .chcov.c10 .cvin, .chcov.c11 .cvin { top:774px; }
+/* 16 chapters (owner, 7 Nov 2026: Genetics and Rheumatology as their own chapters): a little tighter so the contents stays on 2 pages */
+.tbh { height:30px; } .tch { margin-bottom:6px; } .tcg { gap:3px 5px; padding:4px 6px; } .tc { min-height:24px; }

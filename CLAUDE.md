@@ -28,7 +28,7 @@ with the owner's obstetrics app as a second reference. Theme: the cover's dark t
   the pictures needed for each chapter with exact search specs). No credits/licence text on the pages.
 - Never delete or shorten content just to make a page fit. Each chapter has its own colour (book.json).
 - Flashcards ("how it is asked" Q&A) live in the Cards decks, not in the chapter. OSCE (history and examination,
-  English and Arabic) is its own chapter (14). Drugs & doses is chapter 15 (use, mechanism, dose per kg,
+  English and Arabic) is its own chapter (15). Drugs & doses is chapter 16 (use, mechanism, dose per kg,
   frequency, duration, side effects, contraindications).
 - The chapter list in book.json is a draft made before the resources arrived: adjust it to the resources.
 - Contents lists every planned topic; a topic without `content/topics/<id>.html` shows without a page number
@@ -203,8 +203,8 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   not written yet are shown dimmed without a page number). **Every new app feature must be added to the how-to pages.**
 - **Chapter covers:** a chapter opens with a cover page when `content/img/chcover_<no>.jpg` exists (owner's illustration).
 - **Emblem:** `content/img/logo.webp` (round seal) and icons `icon.png`, `icon-192.png`, `apple-touch-icon.png`. The current Pediatrics seal
-  is the owner's seal (7 Nov 2026), cut from his chapter mock-ups and recoloured teal-navy + gold to match this book. Chapter covers 6–10 (Respiratory, Cardiology, Haematology, Nephrology, Neurology) from his mock-ups: three panels recomposed (900×450; 9–10 at 900×360 with a shorter picture box, app.css `.chcov.c9/.c10`) with a light grade toward the chapter colour.
-- **Chapter 8 is "Haematology"** (owner, 7 Nov 2026) and holds Immunodeficiency & Allergy as 8.7 (moved from chapter 12, now "Genetics & Rheumatology", 12.1–12.2).
+  is the owner's seal (7 Nov 2026), cut from his chapter mock-ups and recoloured teal-navy + gold to match this book. Chapter covers 7–11 (Respiratory, Cardiology, Haematology, Nephrology, Neurology) from his mock-ups: three panels recomposed (900×450; 9–10 at 900×360 with a shorter picture box, app.css `.chcov.c10/.c11`) with a light grade toward the chapter colour.
+- **16 chapters (owner, 7 Nov 2026):** Genetics is its own chapter 4 at the end of Part I (topic 4.1); the systems chapters moved up one (5 Infectious … 12 Endocrinology); chapter 9 is "Haematology" and holds Immunodeficiency & Allergy as 9.7; chapter 13 is Rheumatology (13.1, free as the first topic); 14 Emergencies, 15 OSCE, 16 Drugs. Cover pictures were renamed with the chapters (chcover_<new no>.jpg).
 - **Home:** light design (series logo, cover card, Continue button, part photo banners, study tools, daily cards, progress tiles,
   day/night button). **Reader:** tools bar along the top; Contents and Listen in the bottom bar; blank note pages (صفحة); highlights re-anchor
   after a re-layout; tap the page number to go to a page; scrolling down hides the bars (a tap brings them back).
@@ -251,9 +251,9 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
 - **Tap meanings in every box (owner, 7 Nov 2026):** a glossary word is explained once per box (`.box`, `.mb`, flashcard face, QBank), not once per page
   (app.js termPass `TSC`), so a word in a later box on the same page still has its meaning. A whole-book scan (unmarked words, wordfreq zipf < 2.6)
   added ~390 glossary entries; repeat the scan after new content. **Arabic** in book pages uses the shipped Cairo font (`content/img/fonts/cairo-arabic-*.woff2`,
-  10.4 pt); Inter WOFFs are shipped there too. The OSCE chapter (14) will be rewritten for Sudan exams from the owner's coming resources.
+  10.4 pt); Inter WOFFs are shipped there too. The OSCE chapter (15) will be rewritten for Sudan exams from the owner's coming resources.
 - **Topic titles on one line (owner):** build.py gives titles over 32 characters a smaller font (min 16.5 pt) instead of wrapping.
-- **Chapter 14 OSCE rewritten (7 Nov 2026)** as 12 topics (history, osce-hx-newborn, osce-hx-child, osce-growth, osce-resp, osce-cvs, osce-abdomen (owner: each system its own topic), osce-neuro, osce-newborn, osce-dehydration, osce-counsel, osce-data) from resources/osce (Shendi checklists, Ebedya, lil); Arabic history questions in Sudanese colloquial with no label; old `examination`/`osce` topics removed.
+- **Chapter 15 (was 14) OSCE rewritten (7 Nov 2026)** as 12 topics (history, osce-hx-newborn, osce-hx-child, osce-growth, osce-resp, osce-cvs, osce-abdomen (owner: each system its own topic), osce-neuro, osce-newborn, osce-dehydration, osce-counsel, osce-data) from resources/osce (Shendi checklists, Ebedya, lil); Arabic history questions in Sudanese colloquial with no label; old `examination`/`osce` topics removed.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.
 
 ## Handover between the owner's two Claude accounts (Nov 6 2026)

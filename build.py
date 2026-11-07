@@ -400,8 +400,8 @@ def topic_page(book, ch, t, sub, main, side, pno, pid):
             f'{tabs(book, ch, pno)}{footer(book)}</section>\n')
 
 
-CH_IMG = {1: 'growth_chart', 2: 'sam_oedema', 3: 'neo-jaundice_phototherapy', 4: 'malaria_film', 5: 'gastroenteritis_sunken_eyes',
-          6: 'pneumonia_consolidation', 7: 'cyanotic_tof_heart', 8: 'sickle_film'}  # faded picture at the right end of each chapter band in the contents  # faded picture at the right end of each chapter band in the contents
+CH_IMG = {1: 'growth_chart', 2: 'sam_oedema', 3: 'neo-jaundice_phototherapy', 5: 'malaria_film', 6: 'gastroenteritis_sunken_eyes',
+          7: 'pneumonia_consolidation', 8: 'cyanotic_tof_heart', 9: 'sickle_film'}  # faded picture at the right end of each chapter band in the contents  # faded picture at the right end of each chapter band in the contents
 N_CONTENTS = 2
 LOGO = ('<svg viewBox="0 0 64 46" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round">'
         '<path d="M31 41C24 35 14 33 5 34V9C14 8 24 10 31 16" stroke="#fff" stroke-width="3.6"/><path d="M33 41C40 35 50 33 59 34V9C50 8 40 10 33 16" stroke="#fff" stroke-width="3.6"/>'
@@ -452,7 +452,7 @@ def contents_pages(book, rr_page):
         html_ = (f'{part}<div class="tch c{ch["no"]}{"" if w else " soon"}"><div class="tbh"{dp}>{bg}<small>Chapter {ch["no"]}</small>'
                  f'<b>{ch["title"]}</b><span class="tpg">{nt} topic{"s" * (nt > 1)} · {rng}</span></div>'
                  f'<div class="tcg">{cells}</div></div>')
-        blocks.append((80 + 32 * (-(-nt // 3) - 1) + (26 if part else 0), html_))
+        blocks.append((74 + 28 * (-(-nt // 3) - 1) + (26 if part else 0), html_))
     rr = (f'<div class="trr"><div class="tc" data-p="{rr_page}"><i>RR</i><span>Rapid review · every clue → answer, '
           f'key numbers and test-yourself questions, chapter by chapter</span><em>{rr_page}</em></div></div>')
     blocks.append((56, rr))

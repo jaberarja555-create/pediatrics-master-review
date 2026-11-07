@@ -166,6 +166,22 @@
   },
   {
    "no": 4,
+   "title": "Genetics",
+   "short": "Genetics",
+   "tab": "Genetics",
+   "color": "#00897b",
+   "topics": [
+    {
+     "id": "genetics",
+     "no": "4.1",
+     "title": "Chromosomal Disorders & Inheritance",
+     "short": "Genetics",
+     "sub": "Down · Turner · Klinefelter · inheritance patterns"
+    }
+   ]
+  },
+  {
+   "no": 5,
    "title": "Infectious Diseases",
    "short": "Infections",
    "tab": "Infection",
@@ -174,70 +190,70 @@
    "topics": [
     {
      "id": "fever",
-     "no": "4.1",
+     "no": "5.1",
      "title": "The Febrile Child",
      "short": "Fever",
      "sub": "Fever without focus · prolonged fever"
     },
     {
      "id": "malaria",
-     "no": "4.2",
+     "no": "5.2",
      "title": "Malaria",
      "short": "Malaria",
      "sub": "Severe malaria · artesunate · ACT"
     },
     {
      "id": "meningitis",
-     "no": "4.3",
+     "no": "5.3",
      "title": "Meningitis & Encephalitis",
      "short": "Meningitis",
      "sub": "CSF findings · antibiotics · complications"
     },
     {
      "id": "exanthems",
-     "no": "4.4",
+     "no": "5.4",
      "title": "Measles & Childhood Rashes",
      "short": "Rashes",
      "sub": "Measles · chickenpox · scarlet fever · mumps · EBV"
     },
     {
      "id": "tb",
-     "no": "4.5",
+     "no": "5.5",
      "title": "Tuberculosis",
      "short": "TB",
      "sub": "Diagnosis in children · regimens · BCG"
     },
     {
      "id": "hiv",
-     "no": "4.6",
+     "no": "5.6",
      "title": "HIV in Children",
      "short": "HIV",
      "sub": "PMTCT · diagnosis · ART"
     },
     {
      "id": "kala-azar",
-     "no": "4.7",
+     "no": "5.7",
      "title": "Visceral Leishmaniasis (Kala-azar)",
      "short": "Kala-azar",
      "sub": "Diagnosis · paromomycin · miltefosine · SSG"
     },
     {
      "id": "typhoid",
-     "no": "4.8",
+     "no": "5.8",
      "title": "Typhoid & Brucellosis",
      "short": "Typhoid",
      "sub": "Enteric fever · brucella"
     },
     {
      "id": "vpd",
-     "no": "4.9",
+     "no": "5.9",
      "title": "Diphtheria, Pertussis, Tetanus & Polio",
      "short": "Vaccine-preventable",
      "sub": "Clinical clues · treatment · prevention"
     },
     {
      "id": "parasites",
-     "no": "4.10",
+     "no": "5.10",
      "title": "Intestinal Worms, Schistosomiasis & Hydatid",
      "short": "Parasites",
      "sub": "Ascaris · hookworm · giardia · amoeba · bilharzia"
@@ -245,7 +261,7 @@
    ]
   },
   {
-   "no": 5,
+   "no": 6,
    "title": "Gastroenterology & Hepatology",
    "short": "GIT",
    "tab": "GIT",
@@ -253,49 +269,49 @@
    "topics": [
     {
      "id": "gastroenteritis",
-     "no": "5.1",
+     "no": "6.1",
      "title": "Acute Gastroenteritis & Dehydration",
      "short": "Diarrhoea",
      "sub": "Causes · assessing dehydration · Plans A, B, C · ORS · zinc · dysentery"
     },
     {
      "id": "fluids",
-     "no": "5.2",
+     "no": "6.2",
      "title": "Fluids & Electrolytes in Children",
      "short": "Fluids",
      "sub": "Maintenance · deficit · sodium and potassium disorders"
     },
     {
      "id": "chronic-diarrhoea",
-     "no": "5.3",
+     "no": "6.3",
      "title": "Persistent & Chronic Diarrhoea",
      "short": "Chronic diarrhoea",
      "sub": "Persistent diarrhoea · malabsorption · coeliac disease · lactose intolerance · cow's milk protein allergy"
     },
     {
      "id": "vomiting",
-     "no": "5.4",
+     "no": "6.4",
      "title": "The Vomiting Infant",
      "short": "Vomiting",
      "sub": "GORD · pyloric stenosis · malrotation and volvulus"
     },
     {
      "id": "abdomen",
-     "no": "5.5",
+     "no": "6.5",
      "title": "Abdominal Pain & Gastrointestinal Bleeding",
      "short": "Abdominal pain",
      "sub": "Intussusception · appendicitis · Meckel diverticulum · recurrent abdominal pain"
     },
     {
      "id": "constipation",
-     "no": "5.6",
+     "no": "6.6",
      "title": "Constipation & Hirschsprung Disease",
      "short": "Constipation",
      "sub": "Functional constipation · Hirschsprung disease · anal fissure"
     },
     {
      "id": "liver",
-     "no": "5.7",
+     "no": "6.7",
      "title": "Viral Hepatitis & Liver Disease",
      "short": "Liver",
      "sub": "Hepatitis A, B, C, E · acute liver failure · chronic liver disease · Wilson disease"
@@ -303,7 +319,7 @@
    ]
   },
   {
-   "no": 6,
+   "no": 7,
    "title": "Respiratory System",
    "short": "Respiratory",
    "tab": "Chest",
@@ -311,35 +327,35 @@
    "topics": [
     {
      "id": "upper-airway",
-     "no": "6.1",
+     "no": "7.1",
      "title": "Upper Airway Infections & Stridor",
      "short": "Upper airway",
      "sub": "Common cold · tonsillitis · otitis media · croup · epiglottitis"
     },
     {
      "id": "pneumonia",
-     "no": "6.2",
+     "no": "7.2",
      "title": "Pneumonia",
      "short": "Pneumonia",
      "sub": "WHO classification · antibiotics · empyema"
     },
     {
      "id": "bronchiolitis",
-     "no": "6.3",
+     "no": "7.3",
      "title": "Bronchiolitis & the Wheezy Infant",
      "short": "Bronchiolitis",
      "sub": "RSV · supportive care · causes of wheeze"
     },
     {
      "id": "asthma",
-     "no": "6.4",
+     "no": "7.4",
      "title": "Asthma",
      "short": "Asthma",
      "sub": "Acute attack · stepwise control (GINA)"
     },
     {
      "id": "cystic-fibrosis",
-     "no": "6.5",
+     "no": "7.5",
      "title": "Cystic Fibrosis, Foreign Body & Chronic Lung Disease",
      "short": "CF & chronic lung",
      "sub": "Sweat test · inhaled foreign body · bronchiectasis"
@@ -347,7 +363,7 @@
    ]
   },
   {
-   "no": 7,
+   "no": 8,
    "title": "Cardiology",
    "short": "Cardiology",
    "tab": "Heart",
@@ -355,42 +371,42 @@
    "topics": [
     {
      "id": "cardio-basics",
-     "no": "7.1",
+     "no": "8.1",
      "title": "Fetal Circulation & Heart Murmurs",
      "short": "Murmurs",
      "sub": "Transition at birth · innocent vs pathological"
     },
     {
      "id": "acyanotic",
-     "no": "7.2",
+     "no": "8.2",
      "title": "Acyanotic Congenital Heart Disease",
      "short": "Acyanotic CHD",
      "sub": "VSD · ASD · PDA · coarctation"
     },
     {
      "id": "cyanotic",
-     "no": "7.3",
+     "no": "8.3",
      "title": "Cyanotic Congenital Heart Disease",
      "short": "Cyanotic CHD",
      "sub": "Tetralogy of Fallot · TGA · hypercyanotic spells"
     },
     {
      "id": "heart-failure",
-     "no": "7.4",
+     "no": "8.4",
      "title": "Heart Failure in Children",
      "short": "Heart failure",
      "sub": "Causes by age · treatment"
     },
     {
      "id": "rheumatic",
-     "no": "7.5",
+     "no": "8.5",
      "title": "Rheumatic Fever & Rheumatic Heart Disease",
      "short": "Rheumatic fever",
      "sub": "Jones criteria · prophylaxis"
     },
     {
      "id": "endocarditis",
-     "no": "7.6",
+     "no": "8.6",
      "title": "Infective Endocarditis & Myocarditis",
      "short": "Endocarditis",
      "sub": "Duke criteria · cardiomyopathy"
@@ -398,7 +414,7 @@
    ]
   },
   {
-   "no": 8,
+   "no": 9,
    "title": "Haematology",
    "short": "Haematology",
    "tab": "Blood",
@@ -406,49 +422,49 @@
    "topics": [
     {
      "id": "anaemia",
-     "no": "8.1",
+     "no": "9.1",
      "title": "Anaemia & Iron Deficiency",
      "short": "Anaemia",
      "sub": "Approach by MCV · iron therapy"
     },
     {
      "id": "sickle",
-     "no": "8.2",
+     "no": "9.2",
      "title": "Sickle Cell Disease",
      "short": "Sickle cell",
      "sub": "Crises · hydroxyurea · prevention"
     },
     {
      "id": "haemolytic",
-     "no": "8.3",
+     "no": "9.3",
      "title": "Thalassaemia & Haemolytic Anaemias",
      "short": "Haemolysis",
      "sub": "Thalassaemia · G6PD · spherocytosis"
     },
     {
      "id": "bleeding",
-     "no": "8.4",
+     "no": "9.4",
      "title": "Bleeding Disorders",
      "short": "Bleeding",
      "sub": "ITP · haemophilia · von Willebrand · DIC"
     },
     {
      "id": "leukaemia",
-     "no": "8.5",
+     "no": "9.5",
      "title": "Leukaemia",
      "short": "Leukaemia",
      "sub": "ALL · AML · tumour lysis"
     },
     {
      "id": "solid-tumours",
-     "no": "8.6",
+     "no": "9.6",
      "title": "Lymphoma & Solid Tumours",
      "short": "Tumours",
      "sub": "Burkitt · Wilms · neuroblastoma · retinoblastoma"
     },
     {
      "id": "immunodeficiency",
-     "no": "8.7",
+     "no": "9.7",
      "title": "Immunodeficiency & Allergy",
      "short": "Immunity",
      "sub": "When to suspect · anaphylaxis"
@@ -456,7 +472,7 @@
    ]
   },
   {
-   "no": 9,
+   "no": 10,
    "title": "Nephrology",
    "short": "Nephrology",
    "tab": "Renal",
@@ -464,28 +480,28 @@
    "topics": [
     {
      "id": "nephrotic",
-     "no": "9.1",
+     "no": "10.1",
      "title": "Nephrotic Syndrome",
      "short": "Nephrotic",
      "sub": "Steroid-sensitive · relapses · complications"
     },
     {
      "id": "nephritic",
-     "no": "9.2",
+     "no": "10.2",
      "title": "Acute Glomerulonephritis & HSP",
      "short": "Nephritis",
      "sub": "Post-streptococcal GN · Henoch–Schönlein purpura"
     },
     {
      "id": "uti",
-     "no": "9.3",
+     "no": "10.3",
      "title": "Urinary Tract Infection",
      "short": "UTI",
      "sub": "Diagnosis · treatment · VUR"
     },
     {
      "id": "aki",
-     "no": "9.4",
+     "no": "10.4",
      "title": "Acute & Chronic Kidney Disease",
      "short": "AKI & CKD",
      "sub": "AKI · HUS · CKD"
@@ -493,7 +509,7 @@
    ]
   },
   {
-   "no": 10,
+   "no": 11,
    "title": "Neurology",
    "short": "Neurology",
    "tab": "Neuro",
@@ -501,35 +517,35 @@
    "topics": [
     {
      "id": "febrile-seizures",
-     "no": "10.1",
+     "no": "11.1",
      "title": "Febrile Seizures",
      "short": "Febrile seizures",
      "sub": "Simple vs complex · advice to parents"
     },
     {
      "id": "epilepsy",
-     "no": "10.2",
+     "no": "11.2",
      "title": "Epilepsy",
      "short": "Epilepsy",
      "sub": "Seizure types · syndromes · drugs"
     },
     {
      "id": "cp",
-     "no": "10.3",
+     "no": "11.3",
      "title": "Cerebral Palsy",
      "short": "Cerebral palsy",
      "sub": "Types · causes · care"
     },
     {
      "id": "hydrocephalus",
-     "no": "10.4",
+     "no": "11.4",
      "title": "Hydrocephalus & Neural Tube Defects",
      "short": "Hydrocephalus",
      "sub": "Spina bifida · VP shunt"
     },
     {
      "id": "neuromuscular",
-     "no": "10.5",
+     "no": "11.5",
      "title": "Acute Flaccid Paralysis & Neuromuscular Disorders",
      "short": "AFP",
      "sub": "GBS · polio · Duchenne"
@@ -537,7 +553,7 @@
    ]
   },
   {
-   "no": 11,
+   "no": 12,
    "title": "Endocrinology",
    "short": "Endocrine",
    "tab": "Endo",
@@ -545,28 +561,28 @@
    "topics": [
     {
      "id": "dm",
-     "no": "11.1",
+     "no": "12.1",
      "title": "Diabetes Mellitus & DKA",
      "short": "Diabetes",
      "sub": "Type 1 DM · insulin · DKA protocol"
     },
     {
      "id": "thyroid",
-     "no": "11.2",
+     "no": "12.2",
      "title": "Thyroid Disorders",
      "short": "Thyroid",
      "sub": "Congenital hypothyroidism · goitre"
     },
     {
      "id": "puberty",
-     "no": "11.3",
+     "no": "12.3",
      "title": "Puberty & Growth Disorders",
      "short": "Puberty",
      "sub": "Precocious and delayed puberty · GH deficiency"
     },
     {
      "id": "cah",
-     "no": "11.4",
+     "no": "12.4",
      "title": "Congenital Adrenal Hyperplasia",
      "short": "CAH",
      "sub": "Salt-wasting crisis · ambiguous genitalia"
@@ -574,22 +590,15 @@
    ]
   },
   {
-   "no": 12,
-   "title": "Genetics & Rheumatology",
-   "short": "Genetics",
-   "tab": "Genetics",
-   "color": "#00897b",
+   "no": 13,
+   "title": "Rheumatology",
+   "short": "Rheumatology",
+   "tab": "Rheum",
+   "color": "#546e7a",
    "topics": [
     {
-     "id": "genetics",
-     "no": "12.1",
-     "title": "Chromosomal Disorders & Inheritance",
-     "short": "Genetics",
-     "sub": "Down · Turner · Klinefelter · inheritance patterns"
-    },
-    {
      "id": "rheumatology",
-     "no": "12.2",
+     "no": "13.1",
      "title": "Juvenile Arthritis & Kawasaki Disease",
      "short": "Rheumatology",
      "sub": "JIA · Kawasaki · SLE"
@@ -597,7 +606,7 @@
    ]
   },
   {
-   "no": 13,
+   "no": 14,
    "title": "Emergencies & Poisoning",
    "short": "Emergencies",
    "tab": "ER",
@@ -606,28 +615,28 @@
    "topics": [
     {
      "id": "etat",
-     "no": "13.1",
+     "no": "14.1",
      "title": "Triage & the Seriously Ill Child",
      "short": "ETAT",
      "sub": "ETAT · ABCD · shock"
     },
     {
      "id": "status",
-     "no": "13.2",
+     "no": "14.2",
      "title": "Status Epilepticus & the Unconscious Child",
      "short": "Status",
      "sub": "Seizure protocol · coma · raised ICP"
     },
     {
      "id": "poisoning",
-     "no": "13.3",
+     "no": "14.3",
      "title": "Poisoning",
      "short": "Poisoning",
      "sub": "Paracetamol · kerosene · organophosphate · iron"
     },
     {
      "id": "bites",
-     "no": "13.4",
+     "no": "14.4",
      "title": "Snake & Scorpion Envenomation",
      "short": "Bites",
      "sub": "Antivenom · local care"
@@ -635,7 +644,7 @@
    ]
   },
   {
-   "no": 14,
+   "no": 15,
    "title": "Clinical Examination & OSCE",
    "short": "OSCE",
    "tab": "OSCE",
@@ -644,28 +653,28 @@
    "topics": [
     {
      "id": "history",
-     "no": "14.1",
+     "no": "15.1",
      "title": "Pediatric History Taking",
      "short": "History",
      "sub": "Order of the history · Arabic questions · the summary"
     },
     {
      "id": "osce-hx-newborn",
-     "no": "14.2",
+     "no": "15.2",
      "title": "Focused Histories: Newborn & Infant",
      "short": "Newborn histories",
      "sub": "Neonatal jaundice · neonatal sepsis · malnutrition · diarrhoea"
     },
     {
      "id": "osce-hx-child",
-     "no": "14.3",
+     "no": "15.3",
      "title": "Focused Histories: Common Complaints",
      "short": "Child histories",
      "sub": "Cough · convulsions · bleeding · pallor · swelling · joints"
     },
     {
      "id": "osce-growth",
-     "no": "14.4",
+     "no": "15.4",
      "title": "General Examination, Growth & Development",
      "short": "General & growth",
      "sub": "Vital signs · anthropometry · growth chart · short stature · development"
@@ -675,53 +684,53 @@
      "title": "Respiratory System Examination",
      "short": "Respiratory",
      "sub": "Steps · findings · model presentation",
-     "no": "14.5"
+     "no": "15.5"
     },
     {
      "id": "osce-cvs",
      "title": "Cardiovascular System Examination",
      "short": "Cardiovascular",
      "sub": "Pulses · precordium · murmurs of common lesions",
-     "no": "14.6"
+     "no": "15.6"
     },
     {
      "id": "osce-abdomen",
      "title": "Abdominal Examination",
      "short": "Abdomen",
      "sub": "Liver and spleen · spleen or kidney · hepatosplenomegaly",
-     "no": "14.7"
+     "no": "15.7"
     },
     {
      "id": "osce-neuro",
-     "no": "14.8",
+     "no": "15.8",
      "title": "Nervous System & Special Examinations",
      "short": "Neuro & special",
      "sub": "Limbs · cerebral palsy · hydrocephalus · rickets · Down syndrome · anaemia"
     },
     {
      "id": "osce-newborn",
-     "no": "14.9",
+     "no": "15.9",
      "title": "Newborn Examination & Neonatal Resuscitation",
      "short": "Newborn",
      "sub": "Newborn check · resuscitation on the manikin · intubation"
     },
     {
      "id": "osce-dehydration",
-     "no": "14.10",
+     "no": "15.10",
      "title": "Dehydration & Malnutrition Assessment",
      "short": "Dehydration & SAM",
      "sub": "Signs of dehydration · Plans A–C · examination in SAM"
     },
     {
      "id": "osce-counsel",
-     "no": "14.11",
+     "no": "15.11",
      "title": "Counselling Stations",
      "short": "Counselling",
      "sub": "Immunization · febrile convulsion · epilepsy · diabetes · Down syndrome · asthma · ORS"
     },
     {
      "id": "osce-data",
-     "no": "14.12",
+     "no": "15.12",
      "title": "Data Interpretation & Spotters",
      "short": "Data & spotters",
      "sub": "CSF · blood counts · X-rays · instruments · pictures"
@@ -729,7 +738,7 @@
    ]
   },
   {
-   "no": 15,
+   "no": 16,
    "title": "Pediatric Drugs & Doses",
    "short": "Drugs",
    "tab": "Drugs",
@@ -737,7 +746,7 @@
    "topics": [
     {
      "id": "drugs",
-     "no": "15.1",
+     "no": "16.1",
      "title": "Pediatric Drugs & Doses",
      "short": "Drugs",
      "sub": "Use · dose per kg · frequency · duration · side effects"
@@ -760,6 +769,7 @@
    "febrile-seizures",
    "dm",
    "genetics",
+   "rheumatology",
    "etat",
    "history"
   ],
