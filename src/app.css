@@ -1728,3 +1728,12 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .rq .rqf h5 { margin:0 0 3px; }
 .rq .rqf.rqt { padding:9px 16px 10px; }
 .mb.rv.rq { margin-bottom:4px; }
+/* recap card in pieces that join into one card */
+.mb.rv.rq.rqa { border-bottom:0 !important; border-radius:9px 9px 0 0 !important; margin-bottom:0 !important; }
+.mb.rv.rq.rqm { border-top:0 !important; border-radius:0 !important; margin-top:0 !important; margin-bottom:0 !important; }
+.mb.rv.rq.rqz { border-radius:0 0 9px 9px !important; margin-bottom:10px !important; }
+.mb.rv.rq.rqa.rqz { border-radius:9px !important; }
+.rq.rqm > .rqg { border-top:1px solid #eef1f3; }
+.rq.rqm > .rqg .rqf { border-bottom:0; }
+.rq.rqa > .rqs { border-bottom:0; }
+.rq.rqm > .rqt { border-top:1px solid #f3dcd6; }

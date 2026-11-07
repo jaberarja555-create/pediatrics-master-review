@@ -38,7 +38,7 @@ def chapter_css(no, c):
     w, k = '#ffffff', '#000000'
     v = dict(ch=c, dark=mix(c, k, .45), mid=mix(c, w, .35), tint=mix(c, w, .88), tint2=mix(c, w, .95),
              line=mix(c, w, .78), line2=mix(c, w, .89), wash=mix(c, w, .975), hdr=mix(c, w, .8))
-    return (f'.page.c{no}{{--ch:{v["ch"]};--ch-dark:{v["dark"]};--ch-mid:{v["mid"]};--ch-tint:{v["tint"]};'
+    return (f'.page.c{no},.page .rqc{no}{{--ch:{v["ch"]};--ch-dark:{v["dark"]};--ch-mid:{v["mid"]};--ch-tint:{v["tint"]};'
             f'--ch-tint-2:{v["tint2"]};--ch-line:{v["line"]};--ch-line2:{v["line2"]};--ch-wash:{v["wash"]};--hdr-topic:{v["hdr"]}}}\n'
             f'.tp.ch{no},.hch.ch{no} summary{{background:linear-gradient(135deg,{v["dark"]} 0,{v["ch"]} 100%)}}\n'
             f'.hch.ch{no} .htp .tn{{color:{v["ch"]}}}\n'
@@ -323,14 +323,27 @@ def rv_rows(ex):
 def rq_card(t, d):
     """Exam recap card of one topic (owner, 7 Nov 2026): exam scenarios, then key symptoms / signs, diagnosis,
     investigations, differential, treatment, complications, key numbers in two columns, then the exam traps.
-    Written in content/rr/<topic>.json: {"sc": [...], "f": [[label, html], ...], "trap": html}."""
+    Written in content/rr/<topic>.json: {"sc": [...], "f": [[label, html], ...], "trap": html}.
+    The card is cut into pieces (title + scenarios, each row of two fields, traps) that join on seamlessly,
+    so pages fill to the bottom (owner: no page with one card and a big empty space)."""
     sc = ''.join(f'<div>{x}</div>' for x in d.get('sc', []))
     fs = [f for f in d.get('f', []) if f[1]]
-    cells = ''.join(f'<div class="rqf{" rqn" if lab == "Key numbers" else ""}{" rqw" if i == len(fs) - 1 and len(fs) % 2 else ""}"><h5>{lab}</h5>{v}</div>'
-                    for i, (lab, v) in enumerate(fs))
-    trap = f'<div class="rqf rqt"><h5>Exam traps</h5>{d["trap"]}</div>' if d.get('trap') else ''
-    return (f'<div class="mb rv rq"><div class="rqh"><span class="rvn">{t["no"]}</span>{t["title"]}</div>'
-            f'<div class="rqs">{sc}</div><div class="rqg">{cells}</div>{trap}</div>')
+    cell = lambda lab, v, w='': f'<div class="rqf{" rqn" if lab == "Key numbers" else ""}{w}"><h5>{lab}</h5>{v}</div>'
+    rows = []
+    for i in range(0, len(fs), 2):
+        pair = fs[i:i + 2]
+        rows.append(''.join(cell(l, v, ' rqw' if len(pair) == 1 else '') for l, v in pair))
+    parts = [f'<div class="rqh"><span class="rvn">{t["no"]}</span>{t["title"]}</div><div class="rqs">{sc}</div>']
+    parts += [f'<div class="rqg">{r}</div>' for r in rows]
+    if d.get('trap'):   # the traps stay with the last row, never alone at the top of a page
+        parts[-1] += f'<div class="rqf rqt"><h5>Exam traps</h5>{d["trap"]}</div>'
+    out = []
+    for k, x in enumerate(parts):
+        cls = ('mb rv rq rqa' if k == 0 else 'mb rv rvc rq rqm') + f' rqc{t["_ch"]}'
+        if k == len(parts) - 1:
+            cls += ' rqz'
+        out.append((f'<div class="{cls}">{x}</div>', True))
+    return out
 
 
 def chapter_exam(t):
@@ -338,7 +351,7 @@ def chapter_exam(t):
     the old per-chapter Exam corner (clue switch, formulas, test yourself) now lives here, at the end of the book."""
     f = CONTENT / 'rr' / f'{t["id"]}.json'
     if f.exists():   # owner (7 Nov 2026): the new exam recap card replaces the clue table
-        return [(rq_card(t, json.loads(f.read_text())), True)]
+        return rq_card(t, json.loads(f.read_text()))
     rows = rv_rows(t['_exam'])
     if not rows:
         return []
@@ -661,16 +674,23 @@ def build():
             chapters[-1][1].extend((k, h, w, sb, t) for k, h, w, sb in atoms)
     # owner (Nov 2026): no Exam corner after each chapter; every chapter's exam material is gathered in the
     # Rapid Review section at the end of the book, chapter by chapter, one block per topic
-    rr_streams = []
+    rr_streams, T2CH = [], {}
     for ch, stream in chapters:
         tps = [a[4] for a in stream if a[0] == 'title']
+        for t in tps:
+            t['_ch'] = ch['no']
         exam = [(x, t) for t in tps for x in chapter_exam(t)]
         if exam:
             head = ('<h1 class="mzt rrh"><img class="rrlogo" src="img/logo2.webp" alt="">Rapid Review<small>Exam recap of every topic, chapter by chapter</small></h1>'
-                    if not rr_streams else '') + f'<h2 class="rrc"><span class="no">{ch["no"]}</span>{ch["title"]}</h2>'
+                    if not rr_streams else '') + f'<h2 class="rrc rqc{ch["no"]}"><span class="no">{ch["no"]}</span>{ch["title"]}</h2>'
             rs = [('title', head, True, 'Rapid Review', tps[0])]
             rs.extend(('rvt', r, w, 'Rapid Review', t) for (r, w), t in exam)
             rr_streams.append((ch, rs, f'rr{ch["no"]}'))
+            for t in tps:
+                T2CH[t['id']] = ch
+    # owner (7 Nov 2026): the Rapid Review is one flowing stream; a chapter starts under the previous one (no part-empty pages)
+    if rr_streams:
+        rr_streams = [(rr_streams[0][0], [a for _, st, _ in rr_streams for a in st], 'rr')]
     chapters = [(ch, stream, f'ch{ch["no"]}') for ch, stream in chapters] + rr_streams
 
     def compose(stream, rows):
@@ -735,7 +755,8 @@ def build():
             vj = min(56, int(max(0, fills[k_] - 20) * .9 / max(1, len(rows) - 1))) if k_ < len(fills) and not MEASURE else 0
             if vj > 1:  # spread the page's spare height evenly between its rows (no empty block at the bottom)
                 body = f'<div class="vj" style="--vj:{vj}px"></div>' + body
-            paged.append((ch, first[4], sub, body, pno, key, {stream[i][4]['id'] for row in rows for i in row if stream[i][3] != 'Rapid Review'}))
+            pch = T2CH.get(next((stream[i][4]['id'] for row in rows for i in row if stream[i][0] != 'title'), ''), ch) if key == 'rr' else ch
+            paged.append((pch, first[4], sub, body, pno, key, {stream[i][4]['id'] for row in rows for i in row if stream[i][3] != 'Rapid Review'}))
             pno += 1
     rr_first = rr_first or pno
 

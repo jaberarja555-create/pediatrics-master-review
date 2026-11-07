@@ -7,7 +7,7 @@ for (let round = 0; round < 8; round++) {
   console.log(execSync('node paginate.js', { cwd: root }).toString().trim());
   const L = JSON.parse(fs.readFileSync(path.join(root, 'content', 'layout.json'), 'utf8'));
   const keys = Object.keys(L).filter(k => /^ch\d+$/.test(k)).sort((a, b) => +a.slice(2) - +b.slice(2))
-    .concat(Object.keys(L).filter(k => /^rr\d+$/.test(k)).sort((a, b) => +a.slice(2) - +b.slice(2)));
+    .concat(Object.keys(L).filter(k => /^rr\d*$/.test(k)).sort((a, b) => +a.slice(2) - +b.slice(2)));
   const idx = []; keys.forEach(k => L[k].pages.forEach((p, i) => idx.push([k, i])));
   const g = execSync('node tools/gaps.js', { cwd: root }).toString().trim().split('\n').map(x => x.split('\t'));
   if (g.length !== idx.length) { console.log('page count mismatch', g.length, idx.length); break; }

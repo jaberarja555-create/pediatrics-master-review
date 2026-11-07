@@ -100,6 +100,12 @@ const MARGIN = 42, GAP = 10, CONT_TOP = 18, JOIN = 40;  // a box piece at the to
       if (done.has(i)) continue;
       const opt = option(i); opt.row.forEach(j => done.add(j));
       const isTitle = A[i].k === 'title';
+      // owner (7 Nov 2026): the Rapid Review flows on; a chapter band starts under the previous chapter and stays with its first card
+      if (key === 'rr' && isTitle && units.length) {
+        const nx = option(i + 1); nx.row.forEach(j => done.add(j));
+        units.push({ rows: [opt.row, nx.row], h: opt.h + nx.h + GAP, rv: true, seg: Math.max(seg, 0) });
+        i++; continue;
+      }
       if (isTitle) seg++;
       const h = opt.h + (A[i].k === 'rvt' && !A[i].rc ? GAP : 0) - (A[i].k === 'cbox' || A[i].rc ? A[i].js : 0);
       if (A[i].k === 'raw' && !isTitle) { glue = glue ? { rows: [...glue.rows, opt.row], h: glue.h + h } : { rows: [opt.row], h }; continue; }
