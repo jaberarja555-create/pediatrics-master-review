@@ -247,6 +247,10 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
   space on a mid-topic page is spread between its boxes (vj up to 56 px), never on a topic's last page.
 - **No repeated points in the Rapid Review (owner, Nov 2026):** a Key number (`numt` / `rvnums` row) that restates a Clue switch row, Formula or
   Try it answer of the same topic was removed (68 rows). Do not add a Key number for a fact the side column already gives.
+- **Tap meanings in every box (owner, 7 Nov 2026):** a glossary word is explained once per box (`.box`, `.mb`, flashcard face, QBank), not once per page
+  (app.js termPass `TSC`), so a word in a later box on the same page still has its meaning. A whole-book scan (unmarked words, wordfreq zipf < 2.6)
+  added ~390 glossary entries; repeat the scan after new content. **Arabic** in book pages uses the shipped Cairo font (`content/img/fonts/cairo-arabic-*.woff2`,
+  10.4 pt); Inter WOFFs are shipped there too. The OSCE chapter (14) will be rewritten for Sudan exams from the owner's coming resources.
 - **Topic titles on one line (owner):** build.py gives titles over 32 characters a smaller font (min 16.5 pt) instead of wrapping.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.
 
