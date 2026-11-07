@@ -1720,3 +1720,11 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .rq .rqs div { font-size:9.4pt; } .rq .rqf { font-size:9.2pt; } .rq .rqf h5 { font-size:7.2pt; } .rq .rqh { font-size:11pt; }
 .rq .rqs div { display:block; position:relative; padding-left:14px; }
 .rq .rqs div::before { position:absolute; left:0; top:1.5px; }
+/* owner (7 Nov 2026): recap cards comfortable, not tight */
+.rq .rqh { padding:8px 14px; }
+.rq .rqs { padding:9px 16px 8px; }
+.rq .rqs div { line-height:1.6; padding:2.5px 0 2.5px 15px; }
+.rq .rqf { padding:8px 16px 9px; line-height:1.6; }
+.rq .rqf h5 { margin:0 0 3px; }
+.rq .rqf.rqt { padding:9px 16px 10px; }
+.mb.rv.rq { margin-bottom:4px; }
