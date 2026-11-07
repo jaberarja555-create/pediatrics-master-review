@@ -1860,3 +1860,395 @@ intraosseous | Into the bone marrow cavity, used for emergency fluids and drugs
 miosis | Constricted (pinpoint) pupils
 envenoming | Poisoning by venom from a bite or sting
 antivenom | Antibodies that neutralise snake or scorpion venom
+pot belly / pot-bellied | Protruding abdomen; in rickets from weak (hypotonic) abdominal muscles and a soft lower chest, in SAM and worms from a thin wall and distended bowel
+rachitic | Caused by or belonging to rickets (rachitic rosary, rachitic chest)
+Androctonus / Leiurus | Dangerous scorpion species of Sudan and North Africa whose venom causes autonomic storm and heart failure
+Echis | Saw-scaled (carpet) viper: the commonest dangerous snake of Sudan; its bite causes bleeding (incoagulable blood)
+elapid / elapids | Snakes of the cobra and mamba family; their venom is mainly neurotoxic (ptosis, paralysis)
+mamba / mambas | Fast African elapid snakes with neurotoxic venom
+cobra / cobras | Elapid snakes with neurotoxic venom; spitting cobras also injure the eyes
+haemotoxic | Venom that damages the blood clotting system and vessels, causing bleeding (vipers)
+neurotoxic / neurotoxin | Poisonous to nerves; causes weakness and paralysis
+incoagulable blood / incoagulable | Blood that does not clot (20-minute whole blood clotting test), a sign of viper envenoming
+envenomation / envenomed | Injection of venom by a bite or sting
+ballotable | A mass that can be bounced between two hands (one in front, one behind the loin): typical of an enlarged kidney
+Brudzinski's sign / Brudzinski | Flexing the neck makes the hips and knees bend: a sign of meningeal irritation
+Kernig's sign / Kernig | Pain and resistance on straightening the knee with the hip flexed: a sign of meningeal irritation
+Brushfield spots / Brushfield | Small white spots at the edge of the iris, seen in Down syndrome
+centrotemporal spikes / centrotemporal | EEG spikes over the central and temporal regions, typical of self-limited (rolandic) epilepsy of childhood
+rolandic epilepsy / rolandic | Benign childhood epilepsy: night-time focal seizures of the face and mouth, centrotemporal spikes, outgrown by puberty
+choanal | Blocked back of the nose from birth: a newborn who goes blue when feeding and pink when crying; a tube cannot be passed through the nose
+co-amoxiclav | Amoxicillin with clavulanic acid (protects amoxicillin from bacterial beta-lactamase)
+cushingoid | Looking like Cushing's syndrome: round moon face, central obesity, striae, from long steroid treatment
+cytopenia / cytopenias | A low count of one or more blood cell lines (red cells, white cells or platelets)
+dyshormonogenesis | Inherited defect in making thyroid hormone, causing congenital hypothyroidism and goitre
+enthesitis / enthesitis-related | Inflammation where a tendon or ligament attaches to bone (heel, knee); enthesitis-related arthritis affects older boys
+ethosuximide | Drug of choice for childhood absence epilepsy
+haemoglobinuric | Haemoglobin in the urine from intravascular haemolysis (black or cola urine, e.g. blackwater fever, G6PD crisis)
+hypercyanotic | Sudden deep cyanosis and breathlessness in tetralogy of Fallot from spasm of the right ventricular outflow; treated by knee-chest position, oxygen, morphine
+hypergonadotropic | Gonadal failure with high LH and FSH (e.g. Turner, Klinefelter syndrome)
+hypogonadotropic | Low LH and FSH from pituitary or hypothalamic failure (e.g. Kallmann syndrome)
+hypoalbuminaemia | Low serum albumin (below 25 g/L in nephrotic syndrome): causes oedema
+ketonaemia / ketonuria | Ketones in the blood or urine, from burning fat when insulin is lacking (DKA) or in starvation
+ketotic | Smelling of ketones (acetone, fruity breath) or caused by them
+Lisch nodules / Lisch | Small pigmented spots on the iris in neurofibromatosis type 1
+membranoproliferative | A type of glomerulonephritis with thickened capillary walls and low complement
+meningocele | Spina bifida with a sac of meninges and CSF but no nerve tissue; usually no paralysis
+myelomeningocele | Spina bifida with a sac containing spinal cord and nerves: paralysis, bladder and bowel loss, hydrocephalus
+microangiopathic / microangiopathic haemolytic anaemia | Red cells broken in small damaged vessels (fragmented cells): seen in HUS and DIC
+oligoarticular / oligoarthritis | Arthritis of 4 joints or fewer (the commonest juvenile idiopathic arthritis; uveitis risk)
+polyarticular | Arthritis of 5 joints or more
+precipitant / precipitants | A factor that triggers an attack or a crisis (infection, missed insulin)
+pseudohypoparathyroidism | Body resistant to PTH: low calcium, high phosphate with HIGH PTH; short stature, short 4th and 5th metacarpals
+Rathke's pouch / Rathke | Embryonic pouch from which the anterior pituitary forms; craniopharyngioma grows from its remnants
+serositis | Inflammation of the serous linings (pleura, pericardium, peritoneum), e.g. in lupus
+upslanting palpebral fissures / upslanting | Outer corners of the eyes higher than the inner corners (Down syndrome)
+palpebral fissure / palpebral | The opening between the eyelids
+ventriculoperitoneal shunt / ventriculoperitoneal / VP shunt | Tube draining CSF from a brain ventricle into the abdomen to treat hydrocephalus
+vesicoureteric reflux / vesicoureteric | Urine flowing back from the bladder up the ureter to the kidney; causes recurrent UTI and renal scars
+Werdnig–Hoffmann disease / Werdnig | Spinal muscular atrophy type 1: floppy infant from birth, tongue fasciculation, no sitting, death in infancy without treatment
+adrenarche / premature adrenarche | Rise of adrenal androgens before puberty; premature adrenarche gives early pubic hair and body odour without other puberty signs
+aerophobia | Fear and spasm on feeling a draught of air (a sign of rabies)
+hydrophobia | Painful throat spasm on trying to drink, with fear of water (a sign of rabies)
+albuminocytological dissociation / albuminocytological | High CSF protein with a normal cell count: typical of Guillain–Barré syndrome
+alfacalcidol | Active vitamin D (1-alpha-hydroxycholecalciferol) used in kidney disease and vitamin D-dependent rickets
+alkalinisation / alkalinise | Making the urine alkaline (IV sodium bicarbonate) to speed the excretion of salicylate
+angiomyolipoma | Benign kidney tumour of vessels, muscle and fat; seen in tuberous sclerosis
+antiepileptic / antiepileptics | Drug that prevents seizures
+bronchorrhoea | Profuse watery bronchial secretions (organophosphate poisoning)
+cefalexin | Oral first-generation cephalosporin, used for UTI prophylaxis and skin infections
+chlorphenamine | Antihistamine given after adrenaline in anaphylaxis
+cinchonism | Quinine side effects: tinnitus, deafness, headache, nausea, blurred vision
+clinodactyly | Inward-curved little finger (Down syndrome)
+clitoromegaly | Enlarged clitoris (virilisation, e.g. congenital adrenal hyperplasia)
+costophrenic angle / costophrenic | Angle between the ribs and diaphragm on a chest X-ray; lost in pleural effusion
+decompensating | An organ no longer able to cope (e.g. liver failure: jaundice, ascites, bleeding, encephalopathy)
+deflazacort | Steroid used to slow Duchenne muscular dystrophy
+detemir / glargine | Long-acting (basal) insulins given once or twice daily
+eculizumab | Antibody that blocks complement, used in atypical HUS
+euvolaemic | Having a normal body fluid volume (neither dry nor overloaded)
+femorals / femoral pulses | Pulses in the groins; weak or delayed femorals with arm hypertension = coarctation of the aorta
+goitrogen / goitrogens | Food or drug that causes goitre by blocking thyroid hormone production (cassava, millet, cabbage)
+hypercalciuria | Too much calcium in the urine: a cause of stones and haematuria
+hyperphosphataemia | High serum phosphate (kidney failure)
+indrawing | Lower chest wall pulled IN when the child breathes in: an IMCI sign of severe pneumonia
+leuprorelin | GnRH analogue used to stop central precocious puberty
+macro-orchidism | Large testes after puberty (fragile X syndrome)
+myeloproliferation / transient myeloproliferation | Overproduction of blood cells by the marrow; in newborns with Down syndrome a transient leukaemia-like state
+myoglobinuria / myoglobin | Muscle protein in the urine after muscle breakdown (rhabdomyolysis): dark urine, dipstick positive for blood but no red cells
+naevi | Small red skin spots with radiating vessels, a sign of chronic liver disease (naevus = birthmark or mole)
+nephrin | Protein of the kidney filter (podocyte slit); its gene defect causes congenital (Finnish) nephrotic syndrome
+nephrotoxin / nephrotoxins / nephrotoxic / nephrotoxicity | Drugs or substances that damage the kidneys (aminoglycosides, NSAIDs, contrast)
+nusinersen / onasemnogene | New gene-based treatments for spinal muscular atrophy
+orchidometer | Set of graded beads used to measure testicular volume (4 mL = start of puberty)
+paraphenylenediamine | Black hair dye (PPD) taken by mouth in self-poisoning: swelling of the face and airway, muscle breakdown, kidney failure
+patulous anus / patulous | An open, lax anus (loss of sphincter tone with spinal cord lesions)
+periportal | Fibrosis around the portal tracts of the liver from schistosomiasis ("pipe-stem" on ultrasound): portal hypertension with normal liver function
+polyphagia | Excessive hunger and eating (diabetes)
+proteinuric | Passing protein in the urine
+pseudohypertrophy | Large but weak muscles from fat and fibrous tissue replacing muscle (calves in Duchenne dystrophy)
+pubarche | Appearance of pubic hair
+pyuria / sterile pyuria | Pus cells in the urine; with a negative culture = sterile pyuria (renal TB, partly treated UTI, Kawasaki)
+relapser / frequent relapser | Nephrotic child with 2 or more relapses in 6 months (or 4 in a year)
+rhabdomyoma | Benign heart muscle tumour of infants with tuberous sclerosis
+rhizomelic | Shortening of the upper parts of the limbs (upper arms and thighs), as in achondroplasia
+rufinamide / vigabatrin / lamotrigine | Antiepileptic drugs (vigabatrin is the first choice for infantile spasms in tuberous sclerosis)
+adenoma sebaceum / sebaceum | Facial angiofibromas (red papules on the cheeks and nose) in tuberous sclerosis
+septostomy / balloon septostomy | Opening made in the atrial septum with a balloon catheter to mix blood (transposition of the great arteries)
+sternomastoid | Firm lump in the neck muscle of a baby at 2–3 weeks causing torticollis; treated by stretching
+subgaleal | Bleeding under the scalp aponeurosis after vacuum delivery: boggy swelling crossing sutures, can cause shock
+undulant | Fever that rises and falls over days (brucellosis)
+upgoing plantar | Big toe moving up on stroking the sole (Babinski sign): an upper motor neurone lesion after the age of 1–2 years
+virilised / virilising | Showing male features from excess androgens (enlarged clitoris, deep voice, body hair)
+xiphisternum | Lower tip of the breastbone
+talipes | Clubfoot: the foot turned down and in; positional talipes corrects passively, structural does not
+Robertsonian translocation / Robertsonian | Fusion of two chromosomes at their centres; the cause of about 4% of Down syndrome (can be inherited from a carrier parent)
+bitemporal | Loss of the outer halves of both visual fields from pressure on the optic chiasm (craniopharyngioma, pituitary tumour)
+septo-optic dysplasia / septo-optic | Small optic nerves, absent septum pellucidum and pituitary hormone deficiency
+supratentorial | Above the tentorium (the cerebral hemispheres); infratentorial = the posterior fossa
+hyperoxia | Giving 100% oxygen: PaO2 rises above 150 mmHg in lung disease but not in cyanotic heart disease
+neostigmine | Anticholinesterase drug; with atropine, used in snake-bite paralysis and myasthenia
+peritonsillar | Abscess beside a tonsil (quinsy): trismus, muffled voice, uvula pushed to the other side
+oestradiol | Main female sex hormone
+Patau syndrome / Patau | Trisomy 13: cleft lip and palate, polydactyly, small eyes, scalp defects, heart defects; few survive a year
+propylthiouracil / methimazole / antithyroid | Drugs that block thyroid hormone production (carbimazole and methimazole first choice in children)
+Koplik | White spots on the inside of the cheek before the measles rash
+marginatum | Pink rings with clear centres on the trunk in rheumatic fever
+ventriculostomy | Opening made in the floor of the third ventricle to drain CSF in obstructive hydrocephalus
+epicanthic folds / epicanthic | Skin folds covering the inner corner of the eye (Down syndrome)
+holoprosencephaly | Failure of the forebrain to divide into two hemispheres; midline facial defects (trisomy 13)
+wheal / wheals | Raised itchy skin swellings of urticaria
+fludrocortisone / mineralocorticoid | Salt-retaining hormone (aldosterone-like); fludrocortisone replaces it in salt-losing adrenal hyperplasia
+ototoxic / ototoxicity | Damaging to hearing (aminoglycosides, furosemide)
+pralidoxime | Antidote that reactivates cholinesterase in organophosphate poisoning (given with atropine)
+amenorrhoea | Absence of menstrual periods
+glycosuria | Glucose in the urine
+paraesthesia | Tingling or pins and needles
+trisomies | An extra (third) copy of a chromosome (21 Down, 18 Edwards, 13 Patau)
+hyperphagia | Excessive eating (Prader–Willi syndrome)
+atlanto-axial instability / atlanto-axial | Loose joint between the first two neck vertebrae (Down syndrome): risk of cord injury
+thrombocytosis | High platelet count (e.g. in the second week of Kawasaki disease)
+Ebstein | Tricuspid valve displaced into the right ventricle; linked to maternal lithium
+shockable rhythm / shockable / non-shockable | Cardiac arrest rhythms: VF and pulseless VT are shockable; asystole and PEA are not (children usually non-shockable)
+hypercoagulable | Clotting too easily (nephrotic syndrome: renal vein thrombosis)
+lacrimation | Tearing of the eyes
+microphthalmia | Abnormally small eyes (congenital rubella, trisomy 13)
+cubitus valgus | Wide carrying angle at the elbow (Turner syndrome)
+decorticate / decerebrate | Abnormal postures in coma: arms flexed (decorticate) or arms extended (decerebrate, worse)
+fibrillin | Connective-tissue protein whose gene defect causes Marfan syndrome
+freckling / axillary freckling | Small brown spots; in the axilla or groin a sign of neurofibromatosis type 1
+lymphopenia | Low lymphocyte count
+Plasmodium malariae / malariae | Malaria parasite with a 72-hour fever cycle (quartan) that can cause nephrotic syndrome
+hyperlipidaemia | High blood lipids (cholesterol, triglycerides), e.g. in nephrotic syndrome
+cardiotoxic | Damaging to the heart (anthracyclines, digoxin overdose)
+nomogram | Chart for reading a value against a reference (e.g. paracetamol level against time, bilirubin against age in hours)
+nephrogenic diabetes insipidus / nephrogenic | Kidneys not responding to ADH: large volumes of dilute urine
+17-hydroxyprogesterone / hydroxyprogesterone | Hormone raised in congenital adrenal hyperplasia (21-hydroxylase deficiency): the screening test
+venosus | Fetal vessel carrying blood from the umbilical vein past the liver
+clonus | Rhythmic jerking of a muscle on sudden stretch (upper motor neurone lesion)
+cystinosis | Inherited cystine storage disease: the commonest cause of Fanconi syndrome in children
+Kussmaul | Deep, sighing breathing of metabolic acidosis (DKA)
+Reye | Acute liver failure and encephalopathy after aspirin in a child with a viral illness
+adrenoleukodystrophy | X-linked disease of brain white matter and adrenal failure in boys
+hamartoma | Benign overgrowth of normal tissue in an abnormal arrangement
+extravascular haemolysis / extravascular | Red cells destroyed in the spleen and liver (not inside vessels)
+dermatosis | Any skin disease; flaky-paint dermatosis = peeling skin of SAM with oedema
+Mantoux | Tuberculin skin test: 5 TU PPD into the skin, induration read at 48–72 hours (≥ 10 mm positive; ≥ 5 mm in HIV or SAM)
+glucometer | Bedside device that measures blood glucose from a drop of blood
+ureteric reimplantation / reimplantation | Operation re-attaching the ureter to the bladder to stop severe reflux
+coloboma | Notch or gap in the iris or retina from birth (keyhole pupil)
+podocyte / podocytes | Cells of the kidney filter; injured in nephrotic syndrome
+DNA gyrase / gyrase | Bacterial enzyme blocked by quinolone antibiotics (ciprofloxacin)
+hepatotoxic / hepatotoxicity | Damaging to the liver (paracetamol overdose, isoniazid, valproate)
+ophthalmia | Conjunctivitis in the first month of life (gonococcal in the first days, chlamydial later)
+basophilic | Blue dots in red cells on the blood film (lead poisoning, thalassaemia)
+oxybutynin | Drug that relaxes the bladder (overactive bladder, daytime wetting)
+azoospermia | No sperm in the semen (Klinefelter syndrome, cystic fibrosis)
+calyces / calyx | Cup-like collecting chambers of the kidney
+flumazenil | Antidote to benzodiazepines
+hydralazine / labetalol / nifedipine / amlodipine / enalapril / prazosin | Drugs that lower blood pressure (prazosin also treats scorpion-sting hypertension)
+Lennox–Gastaut syndrome / Gastaut | Severe childhood epilepsy with many seizure types and learning disability
+Kallmann syndrome / Kallmann | Delayed puberty with loss of the sense of smell (low LH and FSH)
+salicylate / salicylates | Aspirin and related drugs; overdose causes fast breathing, tinnitus and acidosis
+polydipsia | Excessive thirst and drinking
+acanthosis nigricans / acanthosis / nigricans | Dark, velvety skin on the neck and axillae: a sign of insulin resistance (type 2 diabetes, obesity)
+post-ictal | The drowsy period after a seizure
+povidone-iodine | Iodine antiseptic for skin and wounds
+bronchopulmonary | Chronic lung disease of preterm babies after ventilation and oxygen
+nodosum | Tender red nodules on the shins (TB, streptococcal infection, IBD)
+periventricular | Damage to white matter beside the ventricles in preterm babies: the cause of spastic diplegia
+re-coarctation | Return of narrowing of the aorta after repair
+ataxic | Unsteady, uncoordinated movement (cerebellar disease)
+levamisole | Immune-modulating drug used to keep frequently relapsing nephrotic syndrome in remission
+phagocyte / phagocytes | White cells that engulf and kill bacteria (neutrophils, macrophages)
+adalimumab / etanercept / infliximab | Anti-TNF biological drugs for arthritis and inflammatory bowel disease
+cetirizine | Non-sedating antihistamine
+dysgenesis / gonadal dysgenesis | Abnormal development of an organ; gonadal dysgenesis = streak gonads (Turner syndrome)
+caustic / caustics | Corrosive acids or alkalis (e.g. caustic soda) that burn the mouth and oesophagus; never induce vomiting
+nebs | Nebuliser: device making a fine mist of a drug to breathe in
+orthosis / orthoses | Brace or splint supporting a weak limb or joint
+shagreen patch / shagreen | Thick, orange-peel skin patch on the lower back in tuberous sclerosis
+suprapubic | Above the pubic bone (suprapubic catheter, suprapubic aspiration of urine)
+redcurrant | Blood and mucus in the stool of intussusception
+pulseless | No palpable pulse (pulseless electrical activity, pulseless VT)
+acetazolamide | Diuretic that reduces CSF production (temporary treatment of hydrocephalus or raised pressure)
+antithrombin | Natural anticoagulant protein; lost in the urine in nephrotic syndrome (clot risk)
+feto-maternal haemorrhage / feto-maternal | Fetal blood passing into the mother's circulation (Kleihauer test)
+polydactyly | Extra fingers or toes (trisomy 13, Ellis–van Creveld)
+polymorphous | Of many forms (the varied rash of Kawasaki disease)
+histiocytosis / Langerhans cell histiocytosis | Disease of abnormal histiocytes: skull lytic lesions, rash, diabetes insipidus
+dysphonia | Hoarse or abnormal voice
+lumbosacral | The lower spine and sacrum (lumbosacral myelomeningocele)
+haemodialysis | Filtering the blood through a machine in kidney failure or poisoning
+precocity | Puberty before 8 years in girls or 9 years in boys
+refeeding | Dangerous fall in phosphate, potassium and magnesium when a starved child is fed too fast (heart failure, death)
+thiazide | Diuretic acting on the distal tubule (hydrochlorothiazide); used in nephrogenic diabetes insipidus
+aminoglycoside / aminoglycosides | Antibiotics like gentamicin and amikacin: ototoxic and nephrotoxic
+Mentzer | MCV ÷ red cell count: below 13 suggests thalassaemia trait, above 13 iron deficiency
+phlebitis | Inflammation of a vein (around an IV cannula)
+Fallot / tetralogy | The commonest cyanotic heart disease after infancy: VSD, overriding aorta, pulmonary stenosis, right ventricular hypertrophy
+Macewen's sign / Macewen | "Cracked-pot" sound on percussing the skull in raised intracranial pressure with open sutures
+Meckel | Remnant of the vitello-intestinal duct in the ileum; painless massive rectal bleeding in a 2-year-old
+epiphyseal | The growing end of a long bone
+synovitis / transient synovitis | Inflammation of a joint lining; transient synovitis = irritable hip after a viral illness
+cutis marmorata / cutis | Mottled skin (cutis = skin)
+diuresis | Increased urine output
+vasovagal | Fainting from a sudden fall in heart rate and blood pressure (pain, fear, standing long)
+Alport syndrome / Alport | Inherited nephritis with deafness and eye defects (X-linked)
+multisystem inflammatory syndrome / MIS-C | Kawasaki-like inflammatory illness after COVID-19 infection
+remit / remits / remission | Disappearance of disease activity
+Bordetella pertussis / Bordetella | Bacterium that causes whooping cough
+anosmia | Loss of the sense of smell (Kallmann syndrome)
+anthropometry | Body measurements: weight, height, head circumference, MUAC
+androstenedione | Adrenal androgen raised in congenital adrenal hyperplasia
+calcineurin inhibitors / calcineurin | Ciclosporin and tacrolimus: immunosuppressants for steroid-resistant nephrotic syndrome and transplants
+Perthes disease / Perthes | Avascular necrosis of the femoral head in boys of 4–8 years: painless limp
+cardiogenic shock / cardiogenic | Shock from pump failure of the heart
+erosion / erosions | Shallow breaks in the skin, mucosa or bone surface
+lymphoedema | Swelling from blocked lymph drainage (feet of newborns with Turner syndrome)
+tibial tuberosity / tuberosity | Bony bump below the knee where the patellar tendon attaches (Osgood–Schlatter)
+arteriosus | Fetal vessel joining the pulmonary artery to the aorta; it should close in the first days (PDA if open)
+anaerobe / anaerobes | Bacteria that grow without oxygen (metronidazole covers them)
+spirometry | Breathing test measuring FEV1 and FVC (asthma diagnosis over 5–6 years)
+bruit | Whooshing sound heard over a narrowed or overactive vessel or gland
+beta-hydroxybutyrate / hydroxybutyrate | Main ketone measured in the blood in DKA
+paresis | Partial paralysis (weakness)
+Ambu bag / Ambu | Self-inflating bag with a mask for giving breaths
+anencephaly | Absent skull vault and brain (neural tube defect); not compatible with life
+asystole | Flat line: no electrical activity of the heart
+effacement / effaced | Thinning (effaced foot processes of podocytes in minimal change disease)
+hirsutism | Excess male-pattern hair in a girl
+polyvalent antivenom / polyvalent | Antivenom that covers several snake species
+cherubic | Plump angelic face (Williams syndrome)
+hindbrain | Lower brain: cerebellum, pons and medulla (hindbrain herniation in Chiari II malformation)
+plasmapheresis | Removing the patient's plasma and replacing it, to remove antibodies (Guillain–Barré, TTP)
+Fanconi anaemia / Fanconi | Fanconi syndrome: proximal tubule leak of glucose, phosphate, amino acids and bicarbonate (rickets); Fanconi anaemia: inherited marrow failure with absent thumbs
+esterase / leucocyte esterase / leucocyte / leucocytes | Leucocytes = white blood cells; leucocyte esterase on dipstick shows white cells in urine (UTI)
+hydroxychloroquine | Antimalarial used for lupus and arthritis
+bronchiolitis | Viral (RSV) infection of the small airways in infants: wheeze, crackles, feeding difficulty
+polyneuropathy | Disease of many peripheral nerves (Guillain–Barré: ascending weakness, lost reflexes)
+tacrolimus | Calcineurin-inhibitor immunosuppressant
+dystrophin | Muscle protein absent in Duchenne muscular dystrophy
+demyelinating | Destroying the myelin sheath of nerves (Guillain–Barré, ADEM)
+meconium-stained liquor / meconium-stained | Green amniotic fluid: the fetus passed stool (distress, post-term)
+photosensitivity | Rash on sun exposure (lupus, porphyria)
+scissoring | Legs crossing like scissors from spasticity (cerebral palsy)
+baclofen | Muscle relaxant used for spasticity
+trachoma | Chlamydial eye infection causing scarring and blindness
+Gaucher disease / Gaucher | Lysosomal storage disease: big spleen and liver, bone pain, low counts
+meningeal | Belonging to the meninges (meningeal irritation: neck stiffness, Kernig, Brudzinski)
+biphasic | In two phases
+valgus | Bent outward away from the midline (genu valgum = knock knees)
+amniocentesis | Taking amniotic fluid for prenatal diagnosis (15–20 weeks)
+granulomatous | Forming granulomas (TB, Crohn's disease, chronic granulomatous disease)
+myositis | Inflammation of muscle
+non-blanching rash / non-blanching | Spots that do not fade under a glass: bleeding into the skin (meningococcal sepsis, ITP)
+nuchal translucency / nuchal | Fluid at the back of the fetal neck on 11–14-week scan; thick in Down syndrome
+thymic shadow / thymic | The thymus on an infant's chest X-ray ("sail sign"); absent in DiGeorge syndrome
+thiopental | Anaesthetic barbiturate used for refractory status epilepticus
+defibrillation | Electric shock to the heart for VF or pulseless VT (4 J/kg in children)
+intranasal | Given into the nose (intranasal midazolam for seizures)
+noradrenaline | Vasopressor for warm (vasodilated) septic shock
+sacroiliac | Joint between the sacrum and the pelvis (sacroiliitis in enthesitis-related arthritis)
+diaphragmatic | Bowel in the chest through a gap in the diaphragm: newborn distress, scaphoid abdomen
+post-streptococcal | After a streptococcal infection (glomerulonephritis 1–3 weeks after throat, 3–6 weeks after skin)
+ureter | Tube carrying urine from the kidney to the bladder
+shunt / shunts / shunting | A connection that diverts flow (VP shunt for hydrocephalus; left-to-right shunt in heart defects)
+echocardiogram | Ultrasound scan of the heart
+neutralising | Making a toxin or venom harmless (antivenom, antitoxin)
+Apgar | Newborn score at 1 and 5 minutes: heart rate, breathing, tone, reflex response, colour (0–10)
+cytomegalovirus | Herpes virus; congenital infection causes deafness, microcephaly, periventricular calcification
+lactam / beta-lactam | Antibiotics with a beta-lactam ring: penicillins and cephalosporins
+Kocher | Kocher's surgical approach or clamp
+Leber | Leber congenital amaurosis: inherited blindness from birth
+palpation / palpating | Examining by feeling with the hands
+startle / startles | Sudden jump of the whole body in response to a loud sound
+hyperventilation | Fast deep breathing; lowers CO2 (used briefly in raised intracranial pressure)
+malar rash / malar | Butterfly rash over the cheeks and nose (lupus)
+caput | Soft scalp oedema of the newborn crossing the sutures, gone in days
+clonidine | Alpha-2 agonist; overdose in children causes drowsiness, slow pulse and small pupils
+hypogonadism | Underactive testes or ovaries (delayed or absent puberty)
+neurogenic bladder / neurogenic | Bladder not working because of nerve damage (spina bifida)
+porphyria | Inherited defect of haem synthesis: abdominal pain, photosensitivity, dark urine
+psoriatic | Belonging to psoriasis (psoriatic arthritis)
+insensible losses / insensible | Water lost through the skin and breath (about 300–400 mL/m²/day)
+psychogenic | Caused by the mind rather than a body disease (psychogenic non-epileptic attacks)
+ketoacidosis / diabetic ketoacidosis | Acidosis from ketones when insulin is lacking: vomiting, Kussmaul breathing, dehydration
+post-ductal | Measured after the ductus arteriosus (feet oxygen saturation)
+lipoprotein / lipoproteins | Particles that carry fats in the blood (LDL, HDL)
+Auer | Needle-shaped inclusions in leukaemic blasts: acute myeloid leukaemia
+myasthenia gravis / myasthenia | Autoimmune disease of the nerve–muscle junction: fatigable weakness, ptosis
+McBurney | One third of the way from the anterior superior iliac spine to the umbilicus: site of appendix tenderness
+metacarpal / metacarpals | Bones of the palm
+evanescent | Fading quickly (the evanescent salmon-pink rash of systemic JIA)
+herniation / brain herniation | Brain pushed through a gap (tentorium, foramen magnum) by raised pressure: coning
+Niemann–Pick disease / Niemann | Lysosomal storage disease with big liver and spleen and a cherry-red spot
+otitis media / otitis | Infection of the middle ear: ear pain, fever, red bulging drum
+Shiga toxin / Shiga | Toxin of Shigella and E. coli O157 that causes HUS
+stippling | Fine dotted appearance (basophilic stippling of red cells)
+convulsive / non-convulsive | With or without visible jerking (non-convulsive status: coma with seizures seen only on EEG)
+tuberous sclerosis / tuberous | Genetic disease: ash-leaf macules, adenoma sebaceum, shagreen patch, infantile spasms, rhabdomyoma
+immunosuppression | Reduced immune defence (steroids, chemotherapy, HIV)
+myopathy | Disease of muscle (proximal weakness)
+glomerular / non-glomerular | From the kidney filter (cola urine, red cell casts, protein) or from below it (bright red blood, clots)
+heave / heaves | Sustained lift of the chest wall over an enlarged ventricle
+motor neurone / neurone | Nerve cell; upper motor neurone lesion = spastic, brisk reflexes; lower = floppy, absent reflexes
+anaemic | Having anaemia
+cholinergic | Acting on acetylcholine receptors (organophosphate poisoning: salivation, miosis, bradycardia)
+quotidian fever / quotidian | Fever spike once a day (systemic JIA)
+lupus / systemic lupus erythematosus / erythematosus | Autoimmune disease: malar rash, arthritis, nephritis, cytopenias, ANA positive
+Osler's nodes / Osler | Painful finger-pad nodules in infective endocarditis
+café-au-lait spots / au-lait | Light-brown flat skin patches; 6 or more over 5 mm before puberty suggest neurofibromatosis type 1
+McCune–Albright syndrome / McCune | Café-au-lait spots with ragged edges, bone fibrous dysplasia and precocious puberty
+lorazepam | Benzodiazepine for status epilepticus
+anoxic | Without oxygen (reflex anoxic seizures from breath-holding)
+digoxin-specific antibody / digoxin-specific | Antibody fragments that bind digoxin (antidote in toxicity)
+Blantyre coma scale / Blantyre | Coma score for young children (0–5) used in cerebral malaria
+sulcus / Harrison's sulcus | Groove (Harrison's sulcus: groove along the diaphragm attachment in rickets)
+infective | Infection of the heart valves or lining: fever, new murmur, splinter haemorrhages
+oxygen concentrator / concentrator | Machine that concentrates oxygen from room air
+hypertrophic | Enlarged by growth of its cells (hypertrophic pyloric stenosis, hypertrophic cardiomyopathy)
+voiding cystourethrogram / voiding | Voiding = passing urine; VCUG shows reflux
+hypothalamic | From the hypothalamus (hypothalamic tumour, hypothalamic precocious puberty)
+enteric | Typhoid and paratyphoid fever
+neuropathic | Caused by nerve damage
+vibratory murmur / vibratory | Musical innocent (Still's) murmur at the left sternal edge
+botulinum toxin / botulinum | Nerve toxin that paralyses muscles; used to treat spasticity
+Heimlich | Abdominal thrusts for a choking child over 1 year
+secretory diarrhoea / secretory | Watery diarrhoea from intestinal secretion (cholera), continuing when fasting
+analgesic / analgesics | Pain-relieving drugs
+prolongation | Lengthening (QT prolongation on the ECG)
+titration / titrate | Adjusting a dose step by step to the response
+notching | Scalloping of the lower rib borders by collateral arteries in coarctation of the aorta
+androgen / androgens | Male hormones (testosterone, adrenal androgens)
+gonad / gonads / gonadal | Testes or ovaries
+benzodiazepine / benzodiazepines | Sedative anticonvulsants: diazepam, midazolam, lorazepam
+foramen | Opening (foramen ovale: fetal opening between the atria)
+laryngeal | Belonging to the larynx (voice box)
+uncircumcised | Foreskin not removed
+intra-articular | Into a joint (intra-articular steroid injection)
+sciatic nerve / sciatic | Large nerve at the back of the thigh; avoid the upper outer buttock injection site
+arrhythmia / arrhythmias | Abnormal heart rhythm
+infiltrate / infiltrates | Shadowing on a chest X-ray from pus, fluid or cells in the lung
+biliary | Of the bile ducts (biliary atresia: blocked ducts, pale stools, Kasai before 60 days)
+Bruton's agammaglobulinaemia / Bruton | X-linked absence of B cells and antibodies: recurrent bacterial infections after 6 months in boys
+angiotensin | Hormone that raises blood pressure (ACE inhibitors block its formation)
+dorsum | Back surface (dorsum of the hand or foot)
+midstream urine / midstream | Urine collected from the middle of the stream to avoid contamination
+pyruvate kinase deficiency / pyruvate | Inherited red cell enzyme defect causing haemolytic anaemia
+heritable | Able to be inherited
+oxidant / oxidant drugs | Drugs and foods that trigger haemolysis in G6PD deficiency (primaquine, dapsone, fava beans)
+paralytic | Bowel not moving (no obstruction) after surgery, low potassium or sepsis
+hypertensive crisis / hypertensive | Very high blood pressure with organ damage (encephalopathy, heart failure)
+osmotic diarrhoea / osmotic | Diarrhoea from unabsorbed sugars that stops when fasting (lactose intolerance)
+medulla | Inner part of an organ (adrenal medulla; brainstem medulla)
+satiety | Feeling of fullness after eating
+shuffles | Moving along sitting on the bottom instead of crawling (normal variant; walks later)
+Hashimoto's thyroiditis / Hashimoto | Autoimmune thyroiditis: the commonest cause of acquired hypothyroidism and goitre in older children
+pica | Eating non-food substances (soil, ice): iron deficiency, lead poisoning
+nasal prongs / prongs | Short tubes in the nostrils to give oxygen
+atropine | Anticholinergic drug: antidote in organophosphate poisoning (until the chest is dry), treats bradycardia
+N-myc / MYCN | Cancer gene amplified in high-risk neuroblastoma
+ligation | Tying off a vessel or duct (PDA ligation)
+stool softener / softener | Laxative that softens stool (lactulose, PEG)
+cerebrospinal fluid / cerebrospinal | Fluid around the brain and spinal cord (CSF)
+Sternberg | Large owl-eye cells diagnostic of Hodgkin lymphoma
+flexor | Muscle that bends a joint
+webbed neck / webbed | Skin folds from the neck to the shoulders (Turner, Noonan syndrome)
+creatinine | Muscle waste product in blood; rises in kidney failure
+casein | Main protein of cow's milk (formula)
+lidocaine | Local anaesthetic
+calipers / skinfold calipers | Instrument for measuring skinfold thickness
+clouding / corneal clouding | Hazy cornea (mucopolysaccharidoses, congenital glaucoma)
+distributive shock / distributive | Shock from widespread vasodilatation (sepsis, anaphylaxis)
+nitrite / nitrites | Product of urinary bacteria; positive dipstick nitrite suggests UTI (Gram-negative)
+postural hypotension / postural | Fall in blood pressure on standing (dehydration, Addison's)
+meiosis | Cell division that halves the chromosomes to make eggs and sperm; non-disjunction in meiosis causes trisomy
+Janeway | Painless red spots on the palms and soles in infective endocarditis
+perinatal | Around the time of birth (from 28 weeks of pregnancy to 7 days after birth)
+fossa / posterior fossa | Hollow or pit (posterior fossa: cerebellum and brainstem)
+remodelling / bone remodelling | Reshaping (of bone during healing and growth)
+Aspergillus | Mould causing allergic or invasive lung infection
+callus | New bone forming around a healing fracture (multiple calluses of different ages = non-accidental injury)
+flexion | Bending of a joint
+ganglion / ganglia | A group of nerve cells (basal ganglia), or a cystic swelling near a joint

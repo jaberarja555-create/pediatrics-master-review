@@ -1,3 +1,6 @@
+@font-face{font-family:'Cairo';font-style:normal;font-weight:400;font-display:swap;src:url(img/fonts/cairo-arabic-400-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E}
+@font-face{font-family:'Cairo';font-style:normal;font-weight:600;font-display:swap;src:url(img/fonts/cairo-arabic-600-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E}
+@font-face{font-family:'Cairo';font-style:normal;font-weight:700;font-display:swap;src:url(img/fonts/cairo-arabic-700-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E}
 /* Inter shipped with the book (tools/fonts.py): same text metrics on every device, also offline */
 @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:block;src:url(img/fonts/inter-400.woff) format('woff')}
 @font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:block;src:url(img/fonts/inter-500.woff) format('woff')}
@@ -1644,3 +1647,7 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .relx{margin-top:14px;padding-top:12px;border-top:1px solid rgba(201,154,59,.35)}
 .btn.relb{background:transparent!important;border:1.5px solid #c99a3b;color:#f3d98b!important;width:100%}
 .btn.relb.sure{background:linear-gradient(120deg,#c99a3b,#f3d98b)!important;color:#0e2547!important}
+
+/* Arabic in the book pages (OSCE history tables): the shipped Cairo font, larger and clear (owner, Nov 2026: it looked small and blurry) */
+.bk [dir=rtl],.page [dir=rtl]{font-family:'Cairo','Inter',sans-serif;font-size:10.4pt;line-height:1.75;font-weight:500;color:#1c1917;letter-spacing:0}
+.bk th[dir=rtl],.bk th[style*="text-align:right"]{font-family:'Cairo','Inter',sans-serif;font-size:9.6pt;font-weight:700}
