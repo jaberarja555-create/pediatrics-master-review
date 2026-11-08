@@ -458,9 +458,12 @@ $('sheet').addEventListener('click',function(e){if(e.target===$('sheet')&&!MUST)
 
 /* ---------- highlights ---------- */
 function textNodes(sec){var w=document.createTreeWalker(sec,NodeFilter.SHOW_TEXT,{acceptNode:function(n){return n.parentNode.closest('svg')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),a=[];while(w.nextNode())a.push(w.currentNode);return a}
+/* a highlight or note on a dark box gets a see-through colour so the words stay readable (owner, 8 Nov 2026) */
+function markDk(sec){sec.querySelectorAll('mark.uhl').forEach(function(m){var e=m.parentElement;while(e&&e!==sec){var c=getComputedStyle(e).backgroundColor,v=c.match(/[\d.]+/g);
+  if(v&&(v.length<4||+v[3]>.5)){if(.2126*v[0]+.7152*v[1]+.0722*v[2]<110)m.classList.add('dk');return}e=e.parentElement}})}
 function renderPage(i){var host=wraps[i].firstChild,sec=srcPages[i].cloneNode(true);host.innerHTML='';host.appendChild(sec);delete wraps[i].dataset.dec;
   (HL[PKEY[i]]||[]).forEach(function(h,k){if(!hlOk(i,h))return;wrapRange(sec,h.s,h.e,function(){var m=document.createElement('mark');m.className='uhl '+h.c+(h.uw?' uw'+h.uw:'')+(h.hs===2?' hs2':'')+(h.n?' hasn':'');m.dataset.k=k;return m});
-    if(h.n){var ms=sec.querySelectorAll('mark.uhl[data-k="'+k+'"]'),last=ms[ms.length-1];if(last){var nm=document.createElement('span');nm.className='nm';nm.dataset.k=k;nm.title='Note';last.parentNode.insertBefore(nm,last.nextSibling)}}});if(Math.abs(i-lastCur)<=2)decorate(i)}
+    if(h.n){var ms=sec.querySelectorAll('mark.uhl[data-k="'+k+'"]'),last=ms[ms.length-1];if(last){var nm=document.createElement('span');nm.className='nm';nm.dataset.k=k;nm.title='Note';last.parentNode.insertBefore(nm,last.nextSibling)}}});markDk(sec);if(Math.abs(i-lastCur)<=2)decorate(i)}
 /* Highlights and notes are saved as text offsets on a page. When the book is re-laid out (new pages, moved boxes), the offsets
    can point at other words: the saved text (h.t) finds its place again in the same topic, and a highlight whose text is gone is not drawn. */
 var PTXT={};function ptext(i){if(PTXT[i]===undefined){var raw=textNodes(srcPages[i]).map(function(n){return n.nodeValue}).join(''),nrm='',map=[],sp=true;

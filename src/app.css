@@ -1862,3 +1862,9 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .bk .st.dark mark.uhl.n,.bk [style*="background:var(--ink)"] mark.uhl.n,.bk .dgb mark.uhl.n{background:rgba(253,224,71,.28)}
 .bk .st.dark mark.uhl:not(.n):not(.ur):not(.uk):not(.ub):not(.uo),.bk [style*="background:var(--ink)"] mark.uhl:not(.n):not(.ur):not(.uk):not(.ub):not(.uo){background:color-mix(in srgb,var(--hc) 45%,transparent)}
 .bk .st.dark mark.uhl *,.bk [style*="background:var(--ink)"] mark.uhl *{color:inherit}
+
+/* highlights and notes on dark boxes (owner, 8 Nov 2026) */
+.bk mark.uhl.dk{mix-blend-mode:normal;color:inherit}
+.bk mark.uhl.dk:not(.ur):not(.uk):not(.ub):not(.uo):not(.hs2){background:color-mix(in srgb,var(--hc) 42%,transparent)}
+.bk mark.uhl.dk.n{background:rgba(253,224,71,.3)}
+.bk mark.uhl.dk *{color:inherit}
