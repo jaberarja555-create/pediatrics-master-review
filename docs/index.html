@@ -1852,6 +1852,21 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 #home .prog .prhint{margin-top:14px;padding-top:12px;font:600 12px var(--sans);color:rgba(255,255,255,.82)}
 @media (max-width:360px){#home .prog .pgm{gap:8px;padding:10px 8px}#home .prog .pgm .mr{width:38px;height:38px}#home .prog .pgm .mv{font-size:13.5px}#home .prog .pgm .mk{letter-spacing:.6px}}
 
+/* About this edition in Arabic (owner, 8 Nov 2026, as in Surgery and Obstetrics) */
+.page.fmp .fm[dir=rtl] { font-family:'Cairo','Inter',sans-serif; text-align:right; }
+.page.fmp .fm[dir=rtl] h3 { font:700 13pt/1.4 'Cairo',sans-serif; }
+.page.fmp .fm[dir=rtl] p, .page.fmp .fm[dir=rtl] li { font-size:9.6pt; line-height:1.75; font-weight:500; }
+.page.fmp .fm[dir=rtl] ul { margin:0 0 8px; padding:0 18px 0 0; }
+.page.fmp .fm[dir=rtl] li { margin:0 0 2px; color:#1c1917; }
+.page.fmp .fmb.cp.full { grid-column:1/-1; }
+.page.fmp .fmb.cp .warn { border:1px solid #e3c98c; background:#fff8e6; border-radius:6px; padding:6px 10px; font-weight:700; }
+
+/* How-to pages fit above the footer (owner, 8 Nov 2026: the last tiles ran under the footer) */
+.hwh{height:72px}.hwt b{font-size:21pt}.hwi{top:112px;font-size:9.2pt;line-height:1.55}.howto .hwb{top:160px}
+.hw span{font-size:8.2pt;line-height:1.36}.hw b{font-size:10pt;line-height:1.3}.hw{padding:5px 9px;gap:8px}.hwg{gap:5px 8px}
+.hws{margin:7px 0 5px}.hw>i{width:28px;height:28px}.hw>i svg{width:16px;height:16px}.mock{margin-bottom:6px}.hwtip{margin-top:8px;padding:7px 14px}
+.page.fmp .fm[dir=rtl]{top:132px;gap:12px}.page.fmp .fm[dir=rtl] p{line-height:1.68}
+
 .page.c1,.page .rqc1{--ch:#0f7c78;--ch-dark:#084442;--ch-mid:#63aaa7;--ch-tint:#e2efef;--ch-tint-2:#f3f8f8;--ch-line:#cae2e1;--ch-line2:#e5f1f0;--ch-wash:#f9fcfc;--hdr-topic:#cfe5e4}
 .tp.ch1,.hch.ch1 summary{background:linear-gradient(135deg,#084442 0,#0f7c78 100%)}
 .hch.ch1 .htp .tn{color:#0f7c78}
@@ -2127,23 +2142,31 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 </div>
 <div class="ftr"><span><b>Pediatric Master Review</b> · 1st edition · 2026</span><svg class="ecgmini" viewBox="0 0 90 12"><path d="M0 6 C8 1,14 11,22 6 S36 1,44 6 S58 11,66 6 S80 1,88 6" fill="none" stroke="var(--ch)" stroke-width="1.4"/><circle cx="88" cy="6" r="2" fill="var(--ch)"/></svg><span>Student Master Note Series</span></div></section>
 <section class="page fmp" id="pab" data-id="about"><div class="toc-h"><div><b>About this edition</b><span>Pediatric Master Review · 1st edition · 2026</span></div></div>
-<div class="fm">
-<div class="fmb ed"><h3>This edition</h3>
-<p>The <b>first edition</b> covers undergraduate pediatrics in <b>15 chapters</b> and five parts: <b>General Pediatrics</b>, <b>Infectious Diseases</b>, <b>Systems</b>, <b>Emergencies</b>, and <b>Clinical &amp; Drugs</b>.</p>
-<p>With the book: <b>flashcards</b> for every topic, a <b>question bank</b> of single-best-answer MCQs with explanations, an <b>Exam corner</b> at the end of each chapter, an <b>OSCE</b> chapter, a <b>drugs and doses</b> chapter and a <b>Rapid review</b> at the end of the book.</p>
-<p>Content follows <b>local practice</b> in Sudanese hospitals and the national protocols (IMCI, ETAT, management of severe acute malnutrition), checked against standard pediatric textbooks and current WHO guidance. Where they differ, the local way is given and the guideline is noted.</p></div>
-<div class="fmb dc"><h3>Disclaimer</h3>
-<p>This book is a <b>revision aid for medical students</b>. It does not replace textbooks, clinical teaching or the judgement of your senior doctors.</p>
-<p>Medicine changes. The authors have made every effort to keep the content accurate and up to date, but errors are possible. <b>Check every drug dose</b> against the child's weight, current guidelines, the national formulary and your hospital's protocols before giving it.</p>
-<p>The authors accept no responsibility for any harm or loss arising from the use of this material.</p></div>
-<div class="fmb cp"><h3>Copyright</h3>
-<p>© 2026 <b>Dr. Abdaljalil Abdalkareem Arja</b> and <b>Dr. Alabass Abdulrahman</b> · Student Master Note Series. <b>All rights reserved.</b></p>
-<p>No part of this book, its flashcards or its questions may be copied, printed, photographed, shared in groups, converted to PDF, resold or distributed in any form without the written permission of the authors.</p>
-<p>A subscription is <b>personal</b>: one student, on up to two devices.</p></div>
-<div class="fmb th"><h3>Thanks</h3>
-<p>All praise and thanks are to <b>Allah</b>, who made this work possible.</p>
-<p>We thank our <b>parents</b> for their endless support; our <b>teachers</b> at the Faculty of Medicine, Shendi University, who taught us pediatrics on the wards and in the lecture halls; and the colleagues whose notes, summaries and sheets have helped generations of students.</p>
-<p>Thank you to every <b>student</b> who reads this book. Your questions and corrections make the next edition better: send them to us on WhatsApp <b>0116984258</b>.</p></div>
+<div class="fm" dir="rtl" lang="ar">
+<div class="fmb ed"><h3>هذه الطبعة</h3>
+<p>تغطّي <b>الطبعة الأولى</b> مادة طب الأطفال لطلاب الطب في <b>16 فصلًا</b>: طب الأطفال العام (النمو والتطور والتطعيم، والتغذية، وحديثو الولادة، والوراثة)، والأمراض المعدية، وأمراض الأجهزة، والطوارئ والتسمم، والفحص السريري والأوسكي، وأدوية الأطفال وجرعاتها.</p>
+<p>ومع الكتاب: <b>بطاقات مراجعة</b> لكل موضوع، و<b>بنك أسئلة</b> مع شرح الإجابات، و<b>مراجعة سريعة</b> في آخر الكتاب تلخّص كل موضوع استعدادًا للامتحان.</p>
+<p>المحتوى مبنيّ على الممارسة المعمول بها في المستشفيات السودانية والبرامج الوطنية، وتمّت مراجعته على أحدث إرشادات منظمة الصحة العالمية والمراجع المعتمدة في طب الأطفال.</p></div>
+<div class="fmb dc"><h3>إخلاء المسؤولية</h3>
+<p>هذا الكتاب <b>وسيلة مراجعة لطلاب الطب</b>، ولا يغني عن المراجع الأساسية، ولا عن التدريب السريري، ولا عن توجيه الأطباء المشرفين.</p>
+<p>بذل المؤلفان كل جهد لضمان دقة المعلومات وحداثتها، لكن الطب علم متجدّد والخطأ وارد. <b>يجب التحقق من كل جرعة دواء</b> حسب وزن الطفل، ومن الإرشادات الحالية وبروتوكولات المستشفى قبل استخدامها مع المرضى.</p>
+<p>لا يتحمّل المؤلفان أي مسؤولية عن ضرر أو خسارة تنتج عن استخدام هذا المحتوى.</p></div>
+<div class="fmb cp full"><h3>حقوق النشر والملكية الفكرية</h3>
+<p dir="ltr" style="text-align:right;font-family:Inter,sans-serif;font-weight:600">© 2026 Dr. Abdaljalil Abdalkareem Arja &amp; Dr. Alabass Abdulrahman · Student Master Note Series</p>
+<p><b>جميع الحقوق محفوظة للمؤلفَين.</b></p>
+<p>هذا الكتاب بكل محتواه — النصوص والجداول والرسومات والصور، وبطاقات المراجعة، وبنك الأسئلة، والمراجعة السريعة، وتصميم التطبيق — <b>ملكية فكرية خاصة بالمؤلفَين</b>، وهو ثمرة سنوات من العمل.</p>
+<p><b>يُمنع منعًا باتًّا، دون إذن مكتوب من المؤلفَين:</b></p>
+<ul>
+<li>نسخ أي جزء من الكتاب أو طباعته أو تصويره أو أخذ لقطات شاشة منه بغرض نشرها.</li>
+<li>تحويله إلى ملف <bdi dir="ltr">PDF</bdi> أو أي صيغة أخرى.</li>
+<li>نشره أو مشاركته في مجموعات واتساب أو تيليجرام أو فيسبوك أو أي منصة أخرى.</li>
+<li>بيعه أو توزيعه أو استخدامه في دورات أو ملخصات تجارية.</li>
+</ul>
+<p><b>الاشتراك شخصي:</b> لطالب واحد فقط، على جهازين كحدّ أقصى، ولا يجوز إعطاء كود التفعيل لشخص آخر. أي مخالفة لذلك تؤدّي إلى <b>إيقاف الكود</b> دون استرداد المبلغ.</p>
+<p class="warn">لا نُحلّ لأحد نسخ هذا الكتاب أو تداوله دون إذننا. شراؤك للاشتراك الأصلي يدعم المؤلفَين ويضمن استمرار السلسلة وتحديثها.</p></div>
+<div class="fmb th" style="grid-column:1/-1"><h3>شكر وتقدير</h3>
+<p>الحمد لله الذي بنعمته تتمّ الصالحات. نشكر <b>والدينا</b> على دعمهم الدائم، و<b>أساتذتنا</b> في كلية الطب بجامعة شندي الذين علّمونا طب الأطفال في العنابر وقاعات المحاضرات، والزملاء الذين أفادت ملخّصاتهم أجيالًا من الطلاب.</p>
+<p>وشكرًا لكل <b>طالب</b> يقرأ هذا الكتاب: أسئلتكم وملاحظاتكم تجعل الطبعة القادمة أفضل. راسلونا على واتساب <bdi dir="ltr"><b>0116984258</b></bdi>.</p></div>
 </div>
 <div class="ftr"><span><b>Pediatric Master Review</b> · 1st edition · 2026</span><svg class="ecgmini" viewBox="0 0 90 12"><path d="M0 6 C8 1,14 11,22 6 S36 1,44 6 S58 11,66 6 S80 1,88 6" fill="none" stroke="var(--ch)" stroke-width="1.4"/><circle cx="88" cy="6" r="2" fill="var(--ch)"/></svg><span>Student Master Note Series</span></div></section>
 <section class="page fmp rvw" id="prv" data-id="reviewers"><div class="toc-h"><div><b>Reviewers</b><span>Pediatric Master Review · 1st edition · 2026</span></div></div>
