@@ -1807,3 +1807,34 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 #home .prog .prhint .c0{background:rgba(248,113,113,.2);color:#fecaca}
 @media (max-width:360px){#home .prog .pgring{width:92px;height:92px}#home .prog .pgv b{font-size:24px}#home .prog .pgtx b{font-size:21px}}
 @media (prefers-reduced-motion:reduce){#home .prog .pgc::before,#home .prog .pgc::after,#home .prog .fg{animation:none}}
+
+/* Your progress card v3 (owner, 8 Nov 2026: four tiles incl. the question bank, refined sizes, type and colours) */
+#home .prog .pgc{position:relative;overflow:hidden;border-radius:22px;padding:18px 14px 14px;color:#fff;
+  background:radial-gradient(120% 90% at 100% 0%,rgba(232,198,110,.26),transparent 55%),radial-gradient(90% 70% at 0% 100%,rgba(80,190,140,.30),transparent 60%),linear-gradient(150deg,#0a3a24,#14653f);
+  box-shadow:0 16px 34px rgba(10,25,50,.28),inset 0 0 0 1px rgba(232,198,110,.38)}
+#home .prog .pgtop{gap:18px;padding:0 4px}
+#home .prog .pgring{width:104px;height:104px}
+#home .prog .pgv b{font:850 30px/1 var(--sans);letter-spacing:-.5px}
+#home .prog .pgey{font:800 10.5px var(--sans);letter-spacing:2px;color:#e8c66e}
+#home .prog .pgtx b{font:850 26px/1.05 var(--sans);letter-spacing:-.3px}
+#home .prog .pgtx b small{font-size:13px;font-weight:650;color:rgba(255,255,255,.62);letter-spacing:0}
+#home .prog .pgmsg{margin-top:6px;padding:4px 11px;font:700 11.5px var(--sans);background:linear-gradient(90deg,rgba(232,198,110,.22),rgba(232,198,110,.08));border:1px solid rgba(232,198,110,.45);color:#fbe7a6}
+#home .prog .pgms{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:16px}
+#home .prog .pgm{position:relative;display:flex;align-items:center;gap:10px;padding:11px 10px 11px 11px;border-radius:15px;text-align:left;justify-items:initial;
+  background:linear-gradient(160deg,rgba(255,255,255,.11),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.13);overflow:hidden}
+#home .prog .pgm::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--ac)}
+#home .prog .pgm .mr{flex:none;width:44px;height:44px}
+#home .prog .pgm .bg{stroke:rgba(255,255,255,.14)}
+#home .prog .pgm .fg{stroke:var(--ac)}
+#home .prog .pgm .mr b{font:800 11.5px var(--sans);letter-spacing:-.2px}
+#home .prog .pgm .mt{display:grid;gap:1px;min-width:0}
+#home .prog .pgm .mk{font:800 10px/1.2 var(--sans);letter-spacing:1.1px;text-transform:uppercase;color:var(--al)}
+#home .prog .pgm .mv{font:800 15px/1.2 var(--sans);color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+#home .prog .pgm .mv small{font-size:11px;font-weight:600;color:rgba(255,255,255,.6)}
+#home .prog .pgm .ms{font:700 10.5px var(--sans);color:var(--al)}
+#home .prog .pgm.pmast{--ac:#4ade80;--al:#a7f3c4}
+#home .prog .pgm.pcard{--ac:#e8c66e;--al:#f6dc96}
+#home .prog .pgm.ptop{--ac:#60b8ff;--al:#b5dcff}
+#home .prog .pgm.pqb{--ac:#f59ec4;--al:#fbc8de}
+#home .prog .prhint{margin-top:14px;padding-top:12px;font:600 12px var(--sans);color:rgba(255,255,255,.82)}
+@media (max-width:360px){#home .prog .pgm{gap:8px;padding:10px 8px}#home .prog .pgm .mr{width:38px;height:38px}#home .prog .pgm .mv{font-size:13.5px}#home .prog .pgm .mk{letter-spacing:.6px}}

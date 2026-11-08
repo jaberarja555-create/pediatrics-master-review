@@ -354,14 +354,15 @@ function refreshHome(){
   var tc=0,tk=0;deckIds.forEach(function(id){tc+=DECKS[id].cards.length;tk+=deckKnown(id)});
   var nh=0;Object.keys(HL).forEach(function(k){HL[k].forEach(function(h){if(h.c!=='n')nh++})});
   var done=TOPICS.filter(function(t){return topicRead(t)===t.pages.length}).length;
-  // Your progress (owner, 8 Nov 2026, as in Obstetrics): glowing gold ring for pages read, a line that follows the progress,
-  // three small rings and the progress chips; every label short so it fits any phone
+  // Your progress (owner, 8 Nov 2026): gold ring for pages read with a message that follows the progress, then four tiles
+  // (mastered pages, flashcards, topics, question bank answered + % correct), each with its own colour
   var rv=pct(tr,tp),C=2*Math.PI*44,c2=2*Math.PI*16;
   var msg=rv>=100?'Book complete ★':rv>=75?'Almost there':rv>=50?'More than half way':rv>=25?'Keep going':rv>0?'A good start':'Mark your first page';
-  function mini(cls,k,n,of){var v=pct(n,of);return '<div class="pgm '+cls+'"><span class="mr"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" class="bg"/>'+(v?'<circle cx="20" cy="20" r="16" class="fg" stroke-dasharray="'+(c2*v/100).toFixed(1)+' '+c2.toFixed(1)+'"/>':'')+'</svg><b>'+v+'<small>%</small></b></span><span class="mk">'+k+'</span><em>'+n+' / '+of+'</em></div>'}
+  var qn=0,qa=0,qok=0;try{QS.forEach(function(q){qn++;var s=QU[q.id];if(s&&'c' in s){qa++;if(s.c)qok++}})}catch(e){}
+  function tl(cls,k,n,of,sub){var v=pct(n,of);return '<div class="pgm '+cls+'"><span class="mr"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" class="bg"/>'+(v?'<circle cx="20" cy="20" r="16" class="fg" stroke-dasharray="'+(c2*v/100).toFixed(1)+' '+c2.toFixed(1)+'"/>':'')+'</svg><b>'+v+'<small>%</small></b></span><span class="mt"><span class="mk">'+k+'</span><span class="mv">'+n+'<small> / '+of+'</small></span>'+(sub?'<span class="ms">'+sub+'</span>':'')+'</span></div>'}
   $('prog').innerHTML='<div class="pgc"><div class="pgtop"><div class="pgring"><svg viewBox="0 0 100 100"><defs><linearGradient id="pgG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe7a6"/><stop offset=".55" stop-color="#e8c66e"/><stop offset="1" stop-color="#b8862b"/></linearGradient></defs><circle cx="50" cy="50" r="44" class="bg"/>'+(rv?'<circle cx="50" cy="50" r="44" class="fg" stroke-dasharray="'+(C*rv/100).toFixed(1)+' '+C.toFixed(1)+'"/>':'')+'</svg><div class="pgv"><b>'+rv+'<small>%</small></b></div></div>'+
     '<div class="pgtx"><span class="pgey">Pages read</span><b>'+tr+' <small>of '+tp+'</small></b><span class="pgmsg">'+msg+'</span></div></div>'+
-    '<div class="pgms">'+mini('pmast','Mastered',tm,tp)+mini('pcard','Flashcards',tk,tc)+mini('ptop','Topics',done,TOPICS.length)+'</div>'+
+    '<div class="pgms">'+tl('pmast','Mastered',tm,tp)+tl('pcard','Flashcards',tk,tc)+tl('ptop','Topics',done,TOPICS.length)+tl('pqb','Questions',qa,qn,qa?pct(qok,qa)+'% correct':'')+'</div>'+
     '<div class="prhint" dir="rtl" lang="ar"><span>علّم صفحاتك من زر التقدّم:</span><span class="pgch"><b class="c1">قريتها</b><b class="c2">أتقنتها</b><b class="c0">ما قريتها</b></span></div></div>';
   // Home: parts → chapter cards (tap to open) → topic rows with progress
   var tById={};TOPICS.forEach(function(t){tById[t.id]=t});
@@ -1119,6 +1120,7 @@ var QT=stj('qbtests')||[];       // finished tests
 var CUR=stj('qbcur');            // test in progress
 var qset={mode:'tutor',pool:'unused',n:10,ch:{}};
 var qsaved=stj('qbset');if(qsaved)qset=qsaved;
+if($('home')&&!$('home').hidden&&typeof refreshHome==='function')refreshHome();  // the progress card counts the question bank
 function saveQB(){stj('qb',QU);stj('qbtests',QT);stj('qbcur',CUR);stj('qbset',qset);syncSoon()}
 var L='ABCDE';
 if($('toolQb'))$('toolQb').textContent=QS.length+' MCQs with explanations';
