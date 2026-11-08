@@ -56,7 +56,7 @@ function freeMsg(){var fr='النسخة المجانية تفتح لك '+freeLis
 function freeList(){if(ACC.free_label)return '<b>'+ACC.free_label.replace(/([A-Za-z][A-Za-z ]*[A-Za-z])/g,'<span class="en">$1</span>')+'</b>';return (ACC.free_names||[]).map(function(n){return '<b class="en">'+esc(n)+'</b>'}).join('، ')}
 function E(t){return '<span class="en">'+t+'</span>'}
 function subHtml(code){var wa=(ACC.whatsapp||'').replace(/[^0-9]/g,''),who=esc(ACC.contact_name||'المؤلفين');
-  var msg='السلام عليكم '+(ACC.contact_name||'')+'، أرغب في الاشتراك في كتاب Pediatrics Master Review.';
+  var msg='السلام عليكم '+(ACC.contact_name||'')+'، أرغب في الاشتراك في كتاب Pediatric Master Review.';
   return '<div class="subx ar" dir="rtl"><img class="sublogo" src="img/logo3.webp" alt="">'+
   (TRIALNEW?'<button type="button" class="chc tr" data-trial="1"><span><b>جرّب أولًا: النسخة التجريبية لمدة '+trialDur()+'</b><small>مجانًا، الكتاب كله مع كل الأدوات</small></span></button>':'')+'<p class="lead">'+freeMsg()+' اشترك مرة واحدة لتفتح <b>الكتاب كاملًا</b>، وكل البطاقات، وبنك الأسئلة كاملًا، طوال هذه الطبعة.</p>'+
   (ACC.price?'<div class="price">قيمة الاشتراك: '+esc(ACC.price)+'</div>':'')+
@@ -1266,7 +1266,7 @@ $('plBack').onclick=function(){if(!PL)return;if(aud.currentTime<10&&PL.k>0)playP
 $('plSpd').onclick=function(){spd=SPD[(SPD.indexOf(spd)+1)%SPD.length];st('aspd',spd);aud.playbackRate=spd;updPlayer()};
 $('plPage').onclick=function(){if(PL)goPage(PL.g.parts[PL.k][0])};
 $('plX').onclick=function(){aud.pause();savePos();PL=null;$('player').hidden=true;updLis(currentPage());if(!$('lectures').hidden)markRows()};
-function media(){if(!('mediaSession' in navigator)||!PL)return;try{navigator.mediaSession.metadata=new MediaMetadata({title:PL.g.no+' · '+PL.g.title,artist:'Pediatrics Master Review',album:'Audio lectures',artwork:[{src:'img/icon.png',sizes:'512x512',type:'image/png'}]});
+function media(){if(!('mediaSession' in navigator)||!PL)return;try{navigator.mediaSession.metadata=new MediaMetadata({title:PL.g.no+' · '+PL.g.title,artist:'Pediatric Master Review',album:'Audio lectures',artwork:[{src:'img/icon.png',sizes:'512x512',type:'image/png'}]});
   navigator.mediaSession.setActionHandler('play',function(){aud.play()});navigator.mediaSession.setActionHandler('pause',function(){aud.pause()});
   navigator.mediaSession.setActionHandler('seekbackward',function(){$('plBack').click()});navigator.mediaSession.setActionHandler('seekforward',function(){aud.currentTime=Math.min(aud.duration||0,aud.currentTime+10)});
   navigator.mediaSession.setActionHandler('previoustrack',function(){if(PL&&PL.k>0)playPart(PL.g,PL.k-1,0)});navigator.mediaSession.setActionHandler('nexttrack',function(){if(PL&&PL.k+1<PL.g.parts.length)playPart(PL.g,PL.k+1,0)})}catch(e){}}
@@ -1330,7 +1330,7 @@ function welcomeName(){var t=document.querySelector('#welc .wt');if(t)t.textCont
 (function(){if((TRIALNEW&&!st('chz'))||(TRIALEND&&TRIAL&&!TRIAL.seen))return;   // owner: when the opening choice is due it shows at once, without the welcome card
   var code=!LOCKED&&st('code');var w=document.createElement('div');w.id='welc';w.setAttribute('role','dialog');
   w.innerHTML='<div class="wcard"><img src="img/logo3.webp" alt=""><div class="wt" dir="auto"></div>'+
-    (code?'<div class="wsig"><span class="wln"></span><span class="wc">Code <b dir="ltr">'+esc(code)+'</b></span></div>':'<div class="ws">Pediatrics Master Review · 1st edition</div>')+'</div>';
+    (code?'<div class="wsig"><span class="wln"></span><span class="wc">Code <b dir="ltr">'+esc(code)+'</b></span></div>':'<div class="ws">Pediatric Master Review · 1st edition</div>')+'</div>';
   document.body.appendChild(w);welcomeName();
   function close(){if(!w.parentNode)return;w.classList.add('out');setTimeout(function(){if(w.parentNode)w.parentNode.removeChild(w)},450)}
   w.addEventListener('click',close);setTimeout(close,1500)})();

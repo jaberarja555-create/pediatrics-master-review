@@ -1,6 +1,6 @@
 {
-  "name": "Pediatrics Master Review",
-  "short_name": "Pediatrics MR",
+  "name": "Pediatric Master Review",
+  "short_name": "Pediatric MR",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#0e2547",

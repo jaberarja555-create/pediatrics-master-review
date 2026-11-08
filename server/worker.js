@@ -1,5 +1,5 @@
 import { DurableObject } from 'cloudflare:workers';
-// Pediatrics Master Review · activation server (Cloudflare Worker + Durable Object)
+// Pediatric Master Review · activation server (Cloudflare Worker + Durable Object)
 // Like Dr. Arja Master Note: the authors make codes (PMR-XXXX-XXXX) on /admin and send one to each buyer;
 // the student types it in the app, which activates itself (one code = 2 devices by default; the authors can set 1–10 per code).
 // Routes: GET  /admin      control page (password)
@@ -281,7 +281,7 @@ function call(path,body){return fetch(path,{method:body?'POST':'GET',cache:'no-s
   .then(function(r){return r.json().catch(function(){return {error:'Server error ('+r.status+')'}}).then(function(j){if(j&&j.codes){ALL=j.codes;draw()}if(!r.ok)throw new Error(j.error||'Error');return j})})}
 function day(t){return t?new Date(t).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):''}
 function status(r){return !r.on?['b-off','SWITCHED OFF']:r.devices.length?['b-act','ACTIVATED']:['b-new','UNUSED']}
-function message(r){return 'السلام عليكم 🌷\\nشكراً على اشتراكك في Pediatrics Master Review.\\n\\nالـ activation code بتاعك:\\n*'+r.code+'*\\n\\nافتح الكتاب من اللينك دا ودوس "افتح الكتاب كامل"، اكتب الكود ودوس Activate:\\n'+APP_URL+'\\n\\nأو دوس على اللينك دا وبيتفعّل براه:\\n'+APP_URL+'#code='+r.code+'\\n\\n'+(r.max===2?'الكود الواحد بيفتح جهازين (الموبايل واللابتوب).':r.max===1?'الكود دا بيفتح جهاز واحد.':'الكود دا بيفتح '+r.max+' أجهزة.')+' ما ترسله لزول تاني.'}
+function message(r){return 'السلام عليكم 🌷\\nشكراً على اشتراكك في Pediatric Master Review.\\n\\nالـ activation code بتاعك:\\n*'+r.code+'*\\n\\nافتح الكتاب من اللينك دا ودوس "افتح الكتاب كامل"، اكتب الكود ودوس Activate:\\n'+APP_URL+'\\n\\nأو دوس على اللينك دا وبيتفعّل براه:\\n'+APP_URL+'#code='+r.code+'\\n\\n'+(r.max===2?'الكود الواحد بيفتح جهازين (الموبايل واللابتوب).':r.max===1?'الكود دا بيفتح جهاز واحد.':'الكود دا بيفتح '+r.max+' أجهزة.')+' ما ترسله لزول تاني.'}
 function copy(t,what){function ok(){toast(what+' copied')}
   if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(t).then(ok,function(){fallback(t)?ok():toast('Could not copy',1)});else fallback(t)?ok():toast('Could not copy',1)}
 function fallback(t){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();var k=false;try{k=document.execCommand('copy')}catch(e){}a.remove();return k}

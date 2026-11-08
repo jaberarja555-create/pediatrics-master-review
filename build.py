@@ -491,7 +491,7 @@ def chapter_cover(book, ch, pno):
             f'<h1 class="cvt">{ch["title"]}</h1></div>'
             f'<img class="cvseal" src="img/logo3.webp" alt=""><div class="cvbody"><div class="cvimg" style="height:{cover_h(ch["no"])}px"><img src="img/chcover_{ch["no"]}.jpg" alt=""></div>'
             f'<div class="cvin"><h3>In this chapter</h3>{rows}</div></div>'
-            f'<div class="cvbot"><span>Pediatrics Master Review</span><i></i><span>{book["edition"]}</span></div></section>\n')
+            f'<div class="cvbot"><span>Pediatric Master Review</span><i></i><span>{book["edition"]}</span></div></section>\n')
 
 
 def contents_pages(book, rr_page):
@@ -802,8 +802,8 @@ def build():
 
     meta_pages = [{'id': 'cover', 'label': 'Cover'}]
     meta_pages += [{'id': f'contents-{i + 1}', 'label': 'Contents'} for i in range(n_contents)]
-    html_pages = [f'<section class="page" id="p1" data-id="cover"><div class="covbg" style="background-image:url(img/cover4.jpg)"></div>'
-                  f'<img class="covimg" src="img/cover4.jpg" alt="{book["subject"]} Master Review, {book["edition"]}, cover"></section>\n']
+    html_pages = [f'<section class="page" id="p1" data-id="cover"><div class="covbg" style="background-image:url(img/cover5.jpg)"></div>'
+                  f'<img class="covimg" src="img/cover5.jpg" alt="{book["subject"]} Master Review, {book["edition"]}, cover"></section>\n']
     if authors:
         meta_pages.insert(1, {'id': 'authors', 'label': 'About the authors'})
         html_pages.append(f'<section class="page ab" id="p2" data-id="authors" dir="rtl" lang="ar">{authors}{footer(book)}</section>\n')

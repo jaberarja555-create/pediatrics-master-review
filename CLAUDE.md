@@ -258,6 +258,12 @@ The app and build now follow surgery-rapid-review (merged 5 Nov 2026; keep porti
 - **Chapter 15 (was 14) OSCE rewritten (7 Nov 2026)** as 12 topics (history, osce-hx-newborn, osce-hx-child, osce-growth, osce-resp, osce-cvs, osce-abdomen (owner: each system its own topic), osce-neuro, osce-newborn, osce-dehydration, osce-counsel, osce-data) from resources/osce (Shendi checklists, Ebedya, lil); Arabic history questions in Sudanese colloquial with no label; old `examination`/`osce` topics removed.
 - Done in this style: **chapters 1–3** (Nov 2026). Next: chapter 4 onward, one chapter at a time, owner reviews each.
 
+## Name and cover (owner, 8 Nov 2026)
+The book is **Pediatric Master Review** (book.json `subject` "Pediatric"; manifest, worker message, about pages). Cover `content/img/cover5.jpg`
+(owner's green cover, badge changed to "1st Edition", "Hematology & Oncology" changed to "Hematology"; Urology/Orthopedics-type items on the
+covers are future topics, kept). Flat seal `logo3.webp` + icons (green/gold, "PEDIATRIC · PD · 1ST EDITION"); app shell colours follow the green
+cover. Home progress card: gold ring + four tiles (mastered, flashcards, topics, questions with % correct).
+
 ## Drug section (owner, 7 Nov 2026, as in the Obstetrics book)
 Chapter 16 opens with the owner's poster `content/img/drcover.jpg` (book.json chapter key `poster`; build.py page kind 'poster', meta `dr`).
 The drugs topic is built from `content/drugs.json` (intro + 11 groups of drugs: name, mechanism, use, dose, side effects; labels from the old
