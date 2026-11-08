@@ -1853,3 +1853,4 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .hw span{font-size:8.2pt;line-height:1.36}.hw b{font-size:10pt;line-height:1.3}.hw{padding:5px 9px;gap:8px}.hwg{gap:5px 8px}
 .hws{margin:7px 0 5px}.hw>i{width:28px;height:28px}.hw>i svg{width:16px;height:16px}.mock{margin-bottom:6px}.hwtip{margin-top:8px;padding:7px 14px}
 .page.fmp .fm[dir=rtl]{top:132px;gap:12px}.page.fmp .fm[dir=rtl] p{line-height:1.68}
+.tdi.tdkc .tdin,.tdcov .tdn{display:inline-flex;align-items:center;justify-content:center}.tdi.tdkc .tdl{font-style:italic}

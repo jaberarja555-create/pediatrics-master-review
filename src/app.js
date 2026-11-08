@@ -411,18 +411,23 @@ function contentsHtml(){return META.contents.map(function(ch){
 /* Contents as a side panel, like the bookmarks panel of Adobe Reader (owner, Nov 2026): chapters in their colours, tap a chapter
    to open its topics, tap a topic to go there; the chapter and topic being read are open and marked */
 var TDOPEN={};
+/* Book cover and chapter covers in the panel (owner, 8 Nov 2026, as in Obstetrics) */
+function kCov(n){for(var i=0;i<META.pages.length;i++){var p=META.pages[i];if(p.chcover&&p.ch===n&&p.label!=='Rapid Review')return i+1}return 0}
+var BOOKI='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z"/><path d="M4 17a3 3 0 0 1 3-3h11"/></svg>';
 function tocCur(){var c=lastCur>=0?lastCur:lastPage(),p=PAGES[c];return p?(p.bn||c+1):1}
 function tocDrawer(){var cur=tocCur(),cs=META.contents,curCh=null,curT=null;
   cs.forEach(function(ch){ch.topics.forEach(function(t){if(t.p&&t.p<=cur){curCh=ch.no;curT=t.id}})});
   if(META.rr&&cur>=META.rr){curCh=null;curT=null}
+  cs.forEach(function(ch){var kc=kCov(ch.no);if(kc&&kc===cur){curCh=ch.no;curT='cov'+ch.no}});
   if(curCh!=null&&TDOPEN[curCh]===undefined)TDOPEN[curCh]=1;
-  var h='',lastPart='';
-  cs.forEach(function(ch,k){var ps=ch.topics.filter(function(t){return t.p}).map(function(t){return t.p}),a=ps.length?Math.min.apply(null,ps):0,
-      nx=cs.slice(k+1).map(function(c){var q=c.topics.filter(function(t){return t.p}).map(function(t){return t.p});return q.length?Math.min.apply(null,q):0}).filter(Boolean)[0],
+  var h='<button type="button" class="tdrr tdcov'+(cur===1?' cur':'')+'" data-tp="1"><span class="tdn">'+BOOKI+'</span><span class="tdt">Book cover<small>Pediatric Master Review · p 1</small></span></button>',lastPart='';
+  cs.forEach(function(ch,k){var ps=ch.topics.filter(function(t){return t.p}).map(function(t){return t.p}),kc=kCov(ch.no),a=kc||(ps.length?Math.min.apply(null,ps):0),
+      nx=cs.slice(k+1).map(function(c){var q=c.topics.filter(function(t){return t.p}).map(function(t){return t.p});return kCov(c.no)||(q.length?Math.min.apply(null,q):0)}).filter(Boolean)[0],
       b=nx?nx-1:(META.rr?META.rr-1:0),open=!!TDOPEN[ch.no],col=ch.color||'#1f8c59';
     if(ch.part&&ch.part!==lastPart){lastPart=ch.part;h+='<div class="tdpart">'+esc(ch.part)+'</div>'}
     h+='<div class="tdch'+(open?' open':'')+(ch.no===curCh?' cur':'')+'" style="--tc:'+col+'"><button type="button" class="tdhd" data-tch="'+ch.no+'"><span class="tdn">'+ch.no+'</span><span class="tdt">'+esc(ch.title)+
       '<small>'+ch.topics.length+' topic'+(ch.topics.length===1?'':'s')+(a?' · p '+a+(b>a?'–'+b:''):'')+'</small></span><svg class="tdv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button><div class="tdls">'+
+      (kc?'<button type="button" class="tdi tdkc'+(curT==='cov'+ch.no?' cur':'')+'" data-tp="'+kc+'"><span class="tdin">'+BOOKI+'</span><span class="tdl">Chapter cover</span><span class="tdp">'+kc+'</span></button>':'')+
       ch.topics.map(function(t){if(!t.p)return '<div class="tdi soon"><span class="tdin">'+esc(t.no)+'</span><span class="tdl">'+esc(t.title)+'</span><span class="tdp">soon</span></div>';
         var tt=TOPICS.filter(function(x){return x.id===t.id})[0],ok=tt&&topicRead(tt)===tt.pages.length;
         return '<button type="button" class="tdi'+(t.id===curT?' cur':'')+'" data-tp="'+t.p+'"><span class="tdin">'+esc(t.no)+'</span><span class="tdl">'+esc(t.title)+'</span><span class="tdp'+(ok?' ok':'')+'">'+(ok?'✓ ':'')+t.p+'</span></button>'}).join('')+'</div></div>'});
