@@ -1868,6 +1868,14 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .page.fmp .fm[dir=rtl]{top:132px;gap:12px}.page.fmp .fm[dir=rtl] p{line-height:1.68}
 .tdi.tdkc .tdin,.tdcov .tdn{display:inline-flex;align-items:center;justify-content:center}.tdi.tdkc .tdl{font-style:italic}
 
+/* Note marks (owner, 8 Nov 2026: the ✎ covered the text and a note on a dark box hid the words) */
+.bk span.nm{display:inline-block;width:0;height:1em;vertical-align:text-top;position:relative;margin:0}
+.bk span.nm::after{position:absolute;left:-4px;top:auto;bottom:calc(100% - 2px);display:block;font:700 7px/1 Inter,sans-serif;padding:1px 2px;border-radius:3px;box-shadow:0 1px 2px rgba(0,0,0,.25);transform:none;opacity:.95}
+.bk .st.dark mark.uhl,.bk [style*="background:var(--ink)"] mark.uhl,.bk .dgb mark.uhl{mix-blend-mode:normal;color:inherit}
+.bk .st.dark mark.uhl.n,.bk [style*="background:var(--ink)"] mark.uhl.n,.bk .dgb mark.uhl.n{background:rgba(253,224,71,.28)}
+.bk .st.dark mark.uhl:not(.n):not(.ur):not(.uk):not(.ub):not(.uo),.bk [style*="background:var(--ink)"] mark.uhl:not(.n):not(.ur):not(.uk):not(.ub):not(.uo){background:color-mix(in srgb,var(--hc) 45%,transparent)}
+.bk .st.dark mark.uhl *,.bk [style*="background:var(--ink)"] mark.uhl *{color:inherit}
+
 .page.c1,.page .rqc1{--ch:#0f7c78;--ch-dark:#084442;--ch-mid:#63aaa7;--ch-tint:#e2efef;--ch-tint-2:#f3f8f8;--ch-line:#cae2e1;--ch-line2:#e5f1f0;--ch-wash:#f9fcfc;--hdr-topic:#cfe5e4}
 .tp.ch1,.hch.ch1 summary{background:linear-gradient(135deg,#084442 0,#0f7c78 100%)}
 .hch.ch1 .htp .tn{color:#0f7c78}

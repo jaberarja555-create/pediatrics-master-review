@@ -1854,3 +1854,11 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .hws{margin:7px 0 5px}.hw>i{width:28px;height:28px}.hw>i svg{width:16px;height:16px}.mock{margin-bottom:6px}.hwtip{margin-top:8px;padding:7px 14px}
 .page.fmp .fm[dir=rtl]{top:132px;gap:12px}.page.fmp .fm[dir=rtl] p{line-height:1.68}
 .tdi.tdkc .tdin,.tdcov .tdn{display:inline-flex;align-items:center;justify-content:center}.tdi.tdkc .tdl{font-style:italic}
+
+/* Note marks (owner, 8 Nov 2026: the ✎ covered the text and a note on a dark box hid the words) */
+.bk span.nm{display:inline-block;width:0;height:1em;vertical-align:text-top;position:relative;margin:0}
+.bk span.nm::after{position:absolute;left:-4px;top:auto;bottom:calc(100% - 2px);display:block;font:700 7px/1 Inter,sans-serif;padding:1px 2px;border-radius:3px;box-shadow:0 1px 2px rgba(0,0,0,.25);transform:none;opacity:.95}
+.bk .st.dark mark.uhl,.bk [style*="background:var(--ink)"] mark.uhl,.bk .dgb mark.uhl{mix-blend-mode:normal;color:inherit}
+.bk .st.dark mark.uhl.n,.bk [style*="background:var(--ink)"] mark.uhl.n,.bk .dgb mark.uhl.n{background:rgba(253,224,71,.28)}
+.bk .st.dark mark.uhl:not(.n):not(.ur):not(.uk):not(.ub):not(.uo),.bk [style*="background:var(--ink)"] mark.uhl:not(.n):not(.ur):not(.uk):not(.ub):not(.uo){background:color-mix(in srgb,var(--hc) 45%,transparent)}
+.bk .st.dark mark.uhl *,.bk [style*="background:var(--ink)"] mark.uhl *{color:inherit}
