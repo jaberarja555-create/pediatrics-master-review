@@ -8253,6 +8253,9 @@ function setImm(on){if(on===IMM)return;var sc=$('scroller'),a=sc.getBoundingClie
   var b=sc.getBoundingClientRect().top;immT=Date.now();sc.scrollTop+=b-a;immY=sc.scrollTop}
 $('scroller').addEventListener('scroll',function(){var sc=$('scroller'),y=sc.scrollTop;if(Date.now()-immT<350){immY=y;return}
   var d=y-immY;if(d>60&&y>120&&!busyTools()){setImm(true);immY=y}else if(d<0)immY=Math.max(immY+d,y);else if(Math.abs(d)>200)immY=y},{passive:true});
+var NOCLK=0;  /* a tap in the Contents panel must not also tap the page that opens under the finger (owner, 8 Nov 2026: a chapter cover opened its first topic) */
+pagesEl.addEventListener('pointerdown',function(){NOCLK=0},true);  /* a click with no press on the page itself is the panel's own tap */
+pagesEl.addEventListener('click',function(e){if(NOCLK&&Date.now()<NOCLK){NOCLK=0;e.preventDefault();e.stopImmediatePropagation()}},true);
 pagesEl.addEventListener('click',function(e){if(busyTools()||e.target.closest('a,button,[data-p],mark,span.nm,.gt,.gtip,input,textarea'))return;setImm(!IMM)});
 function railSpace(){var r=$('rbar'),sc=$('scroller');if(!r||!sc)return;var w=(r.classList.contains('off')||IMM)?0:Math.ceil(r.offsetHeight);
   if(sc._rw===w)return;sc._rw=w;var cur=currentPage(),wp=wraps[cur],f=wp&&wp.offsetHeight?(sc.scrollTop-wp.offsetTop)/wp.offsetHeight:0;
@@ -8451,7 +8454,7 @@ function tocDrawer(){var cur=tocCur(),cs=META.contents,curCh=null,curT=null;
   var d=$('tocDr');if(!d){d=document.createElement('div');d.id='tocDr';d.className='tocdr';d.hidden=true;document.body.appendChild(d);
     d.addEventListener('click',function(e){if(e.target===d||e.target.closest('#tdX')){closeToc();return}
       var c=e.target.closest('[data-tch]');if(c){var n=c.dataset.tch,box=c.parentNode;TDOPEN[n]=TDOPEN[n]?0:1;box.classList.toggle('open',!!TDOPEN[n]);return}
-      var g=e.target.closest('[data-tp]');if(g){closeToc();goPage(+g.dataset.tp-1)}})}
+      var g=e.target.closest('[data-tp]');if(g){NOCLK=Date.now()+3000;closeToc();goPage(+g.dataset.tp-1)}})}
   d.innerHTML='<div class="tdin0"><div class="tdh"><b>Contents</b><span>Page '+cur+'</span><button type="button" id="tdX" aria-label="Close">✕</button></div><div class="tdbody">'+h+'</div></div>';
   d.hidden=false;requestAnimationFrame(function(){d.classList.add('on');var x=d.querySelector('.tdi.cur')||d.querySelector('.tdch.cur');if(x)x.scrollIntoView({block:'center'})})}
 function closeToc(){var d=$('tocDr');if(!d)return;d.classList.remove('on');setTimeout(function(){d.hidden=true},220)}
