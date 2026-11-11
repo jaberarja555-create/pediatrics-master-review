@@ -292,3 +292,6 @@ The book also opens inside the Student Master Review platform (https://student-m
 in a frame under no bar. A small script at the end of `src/shell.html` (`#smrBack`) runs only when the book is in a frame whose parent is that
 platform (ancestorOrigins / referrer, kept in sessionStorage `smr-parent`): it adds one small round button (back arrow + platform logo) on Home (top corner of the cover and title card, `.hm-top`)
 that sends `postMessage({smr:"library"})` to the platform, which returns to its library. Opened on its own, nothing changes.
+Progress for the platform (owner, 11 Nov 2026): `window.__smrStats` (end of src/app.js) returns pages read/mastered, questions answered/correct/wrong,
+flashcards known, topics completed, streak and per-chapter figures; the end-of-shell script sends them to the platform (`{smr:"stats"}`) while the book
+runs inside it. Deploy note: push to the LIVE branch first; Cloudflare builds a commit once, and a commit first pushed to another branch only gets a preview build.
