@@ -295,3 +295,11 @@ that sends `postMessage({smr:"library"})` to the platform, which returns to its 
 Progress for the platform (owner, 11 Nov 2026): `window.__smrStats` (end of src/app.js) returns pages read/mastered, questions answered/correct/wrong,
 flashcards known, topics completed, streak and per-chapter figures; the end-of-shell script sends them to the platform (`{smr:"stats"}`) while the book
 runs inside it. Deploy note: push to the LIVE branch first; Cloudflare builds a commit once, and a commit first pushed to another branch only gets a preview build.
+
+## New app design (owner, 11 Nov 2026: "make them as the new Obstetrics design"; Pediatrics first, own green colours)
+Preview only until the owner approves: `PRR_V2=1 SRR_OUT=build/v2 python3 build.py` lays `src/v2.css` (shell/Home/hub styles copied from
+obstetrics-master-review/src/v2.css, palette `peds`), `src/v2.html` and `src/v2.js` (inside app.js's closure) over the old shell (build.py `v2_layer`);
+a normal build (docs/, live) is unchanged. Stage 1 done: welcome screen, header, side menu (PC) / bottom bar (phone), Home, Chapters + chapter page,
+Practice, Resources, Settings, profile, help, progress sheet; reader, cards, question bank, search and lectures are the old screens inside it.
+Preview: https://claude.ai/artifact/K1L6WC1PFcDdjo9EthoCMy (build/v2/review.html = review copy, whole book open). Next: stage 2 (reader bars, question
+bank and cards in the app colours, language), then go live by building docs with PRR_V2=1 (push main first).

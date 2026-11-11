@@ -663,6 +663,29 @@ def rr_pages(book, groups, first_pno):
     return pages
 
 
+def v2_layer(page, app_js, decks, qbank):
+    """Lay src/v2.css, v2.html and v2.js over the old shell (as the Obstetrics app does): header and side menu after <div class="app">,
+    the new screens before the player, the bottom navigation after the old tabs, v2.js at the end of app.js's closure."""
+    v2html = (SRC / 'v2.html').read_text()
+    top, rest = v2html.split('<!--TOP-->')[1].split('<!--VIEWS-->')
+    views, nav = rest.split('<!--NAV-->')
+    def ins(s, anchor, new, before=True):
+        assert s.count(anchor) == 1, anchor
+        return s.replace(anchor, new + anchor if before else anchor + new)
+    page = ins(page, '{{CHAPTER_CSS}}', '\n' + (SRC / 'v2.css').read_text(), False)
+    page = ins(page, '<div class="app" id="app">', top, False)
+    page = ins(page, '<div class="player" id="player" hidden>', views)
+    j = page.index('</nav>', page.index('<nav class="tabs" id="tabs">')) + 6
+    page = page[:j] + nav + page[j:]
+    chimg = sorted(int(m.group(1)) for f in (CONTENT / 'img').glob('chcover_*.jpg') for m in [re.match(r'chcover_(\d+)\.jpg', f.name)] if m)
+    info = {'chimg': chimg, 'cards': sum(len(d['cards']) for d in decks.values()), 'qs': len(qbank['qs'])}
+    page = ins(page, '<script type="application/json" id="meta">', '<script>window.PED_INFO=' + json.dumps(info) + '</script>\n')
+    page = page.replace('<meta name="theme-color" content="#0e472c">', '<meta name="theme-color" content="#F0F7F3"><script>(function(){try{var r=document.documentElement,m=localStorage.getItem("prr-mode")||"day";r.setAttribute("data-pal","peds");r.setAttribute("data-theme",m==="night"||(m==="auto"&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light")}catch(e){}})()</script>')
+    s = app_js.rstrip()
+    assert s.endswith('})();')
+    return page, s[:-5] + '\n' + (SRC / 'v2.js').read_text() + '\n})();\n'
+
+
 def build():
     book = json.loads((CONTENT / 'book.json').read_text())
     book['chapters'] = [c for c in book['chapters'] if c.get('edition', 1) == 1]  # specialties wait for edition 2
@@ -936,7 +959,10 @@ def build():
         return json.dumps(o, ensure_ascii=False).replace('</', '<\\/')
 
     page = (SRC / 'shell.html').read_text()
-    for k, v in {'CSS': css, 'CHAPTER_CSS': chapter_css_all, 'JS': (SRC / 'app.js').read_text(),
+    app_js = (SRC / 'app.js').read_text()
+    if os.environ.get('PRR_V2'):   # the new app design (owner, 11 Nov 2026): preview builds only until the owner approves
+        page, app_js = v2_layer(page, app_js, decks, qbank)
+    for k, v in {'CSS': css, 'CHAPTER_CSS': chapter_css_all, 'JS': app_js,
                  'PAGES': ''.join(html_pages), 'META': js_json(meta), 'DECKS': js_json(decks), 'QBANK': js_json(qbank),
                  'TITLE': f'{book["subject"]} Master Review', 'SUBJECT': book['subject'], 'EDITION': book['edition'],
                  'SERIES': book['series'], 'BLURB': book['blurb'],
