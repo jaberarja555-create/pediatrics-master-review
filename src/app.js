@@ -1350,5 +1350,14 @@ GLAST=gsnap();updUR();
 refreshHome();
 if(LINKCODE&&(LOCKED||INTRIAL))openSub(LINKCODE);else if((TRIALNEW&&!st('chz'))||(TRIALEND&&!TRIAL.seen)){if(TRIALNEW)setMust(true);if(TRIALEND){TRIAL.seen=1;try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}}setTimeout(openChoose,250)}   // owner: on opening, choose the 24-hour trial or the paid version
 if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('sw.js').catch(function(){})}
+/* Student Master Review platform (owner, 11 Nov 2026): the book's real progress, sent to the platform's Progress page when the book runs inside it */
+window.__smrStats=function(){var r={pages:{total:0,read:0,mastered:0},q:{total:0,answered:0,correct:0,wrong:0},cards:{total:0,known:0},topics:{total:0,done:0},streak:0,ch:[]},by={},names={};
+  (META.contents||[]).forEach(function(c){if(c.no!=null)names[c.no]=c.title});
+  TOPICS.forEach(function(t){if(!t.pages||!t.pages.length)return;var n=t.pages.length,rd=topicRead(t),m=topicMast(t);r.pages.total+=n;r.pages.read+=rd;r.pages.mastered+=m;r.topics.total++;if(rd===n)r.topics.done++;
+    var c=by[t.ch]||(by[t.ch]={n:t.ch,name:names[t.ch]||('Chapter '+t.ch),read:0,mastered:0,total:0});c.read+=rd;c.mastered+=m;c.total+=n});
+  Object.keys(DECKS).forEach(function(id){r.cards.total+=DECKS[id].cards.length;r.cards.known+=deckKnown(id)});
+  QS.forEach(function(q){r.q.total++;var a=QU[q.id];if(a&&a.c!==undefined){r.q.answered++;if(a.c)r.q.correct++;else r.q.wrong++}});
+  try{r.streak=streak()}catch(e){}
+  r.ch=Object.keys(by).sort(function(a,b){return a-b}).map(function(k){return by[k]});return r};
 })();
 
