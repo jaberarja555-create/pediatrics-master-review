@@ -286,3 +286,9 @@ The owner works from two Claude accounts (subscription limits). Both must contin
   subscription texts in Arabic, Bankak, QBank in steps, flashcards by chapter, day/eye/night looks (ported to Surgery and Obstetrics).
   **Next:** junior-style rewrite of chapter 4 onward (one chapter at a time, owner reviews each), pictures for chapters 9–15
   (resources/pictures-needed.md), remaining mid-topic gaps (`node tools/blockers.js`).
+
+## Inside the Student Master Review platform (owner, 11 Nov 2026)
+The book also opens inside the Student Master Review platform (https://student-master-review.pages.dev, repo obstetrics-master-review/platform/),
+in a frame under no bar. A small script at the end of `src/shell.html` (`#smrBack`) runs only when the book is in a frame whose parent is that
+platform (ancestorOrigins / referrer, kept in sessionStorage `smr-parent`): it adds one small round button (back arrow + platform logo) on Home (top corner of the cover and title card, `.hm-top`)
+that sends `postMessage({smr:"library"})` to the platform, which returns to its library. Opened on its own, nothing changes.
