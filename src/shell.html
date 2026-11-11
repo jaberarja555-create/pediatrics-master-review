@@ -140,7 +140,7 @@
     '#smrBack svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}' +
     '[dir=rtl] #smrBack svg,html[dir=rtl] #smrBack svg{transform:scaleX(-1)}' +
     '#smrBack img{width:20px;height:auto;display:block}#smrBack .smrl{font:700 13px/1 system-ui,-apple-system,"Segoe UI",Roboto,Cairo,sans-serif;padding-inline-start:3px;white-space:nowrap}' +
-    '#smrBack.flow{position:static;margin-top:4px;align-self:flex-start}' + '';
+    '#smrBack.flow{position:static;margin-top:4px;align-self:flex-start}' + '' + '';
   document.head.appendChild(st);
   var PL = ''; try { PL = sessionStorage.getItem('smr-plang') || ''; } catch (e) {}
   function lang() {
@@ -170,7 +170,13 @@
   window.addEventListener('message', function (e) {
     if (e.origin !== org || !e.data) return;
     if (e.data.smr === 'getStats') send();
-    if (e.data.smr === 'lang' && /^(ar|en)$/.test(e.data.lang)) { PL = e.data.lang; try { sessionStorage.setItem('smr-plang', PL); } catch (er) {} label(); }
+    if (e.data.smr === 'lang' && /^(ar|en)$/.test(e.data.lang)) {
+      PL = e.data.lang; try { sessionStorage.setItem('smr-plang', PL); } catch (er) {}
+      /* the book follows the platform language unless the student chose one inside the book; a change in the platform's settings applies to every book */
+      var own = false; try { if (e.data.force) localStorage.removeItem('smr-langown'); own = localStorage.getItem('smr-langown') === '1'; } catch (er) {}
+      if (!own && typeof window.__smrLang === 'function') { try { window.__smrLang(PL); } catch (er) {} }
+      label();
+    }
   });
   setTimeout(send, 2500); setInterval(function () { if (!document.hidden) send(); }, 20000);
   document.addEventListener('click', sendSoon, true); document.addEventListener('visibilitychange', send); window.addEventListener('pagehide', send);
