@@ -1,58 +1,6 @@
 [
-{
-"q": "The commonest cause of death in children with DKA is:",
-"o": [
-"Hypoglycaemia",
-"Hypokalaemia",
-"Cerebral oedema",
-"Shock",
-"Sepsis"
-],
-"a": 2,
-"e": "Cerebral oedema.",
-"k": "cerebral oedema",
-"s": "bank"
-},
-{
-"q": "In DKA, insulin infusion should start:",
-"o": [
-"Immediately as an IV bolus",
-"1–2 h after starting fluids, no bolus",
-"After glucose normalises",
-"Only if pH < 7.0",
-"Subcutaneously"
-],
-"a": 1,
-"e": "Reduces cerebral oedema risk.",
-"k": "no insulin bolus",
-"s": "bank"
-},
-{
-"q": "Potassium in DKA fluids is given because:",
-"o": [
-"Serum K is always low",
-"Insulin drives K into cells and body K is depleted",
-"It lowers glucose",
-"It prevents cerebral oedema",
-"It corrects acidosis"
-],
-"a": 1,
-"e": "Total body K is low.",
-"k": "total body k is low",
-"s": "bank"
-},
-{
-"q": "The diagnostic random plasma glucose with symptoms is:",
-"o": [
-"≥ 7.8 mmol/L",
-"≥ 11.1 mmol/L",
-"≥ 6.1 mmol/L",
-"≥ 15 mmol/L",
-"≥ 5.5 mmol/L"
-],
-"a": 1,
-"e": "200 mg/dL.",
-"k": "11.1 mmol/l",
-"s": "bank"
-}
+{"q": "What is the commonest cause of death in children with diabetic ketoacidosis?", "o": ["Hypoglycaemia", "Hypokalaemia", "Cerebral oedema", "Shock", "Sepsis"], "a": 2, "e": "Cerebral oedema.", "k": "cerebral oedema", "s": "bank", "id": "q4hbp3", "d": 1},
+{"q": "When is the insulin infusion started in diabetic ketoacidosis?", "o": ["Immediately, as an intravenous bolus", "1–2 hours after the fluids are started, with no bolus", "After the glucose becomes normal", "Only if the pH is below 7.0", "Subcutaneously"], "a": 1, "e": "Starting insulin after the fluids, without a bolus, reduces the risk of cerebral oedema.", "k": "no insulin bolus", "s": "bank", "id": "tw6qzk", "d": 2},
+{"q": "Why is potassium given in the fluids in diabetic ketoacidosis?", "o": ["Serum potassium is always low", "Insulin drives potassium into the cells and total body potassium is depleted", "It lowers the glucose", "It prevents cerebral oedema", "It corrects the acidosis"], "a": 1, "e": "Total body potassium is low even when the serum potassium is normal.", "k": "total body k is low", "s": "bank", "id": "dfkov7", "d": 3},
+{"q": "Which random plasma glucose, with symptoms, diagnoses diabetes?", "o": ["≥ 7.8 mmol/L", "≥ 11.1 mmol/L", "≥ 6.1 mmol/L", "≥ 15 mmol/L", "≥ 5.5 mmol/L"], "a": 1, "e": "11.1 mmol/L (200 mg/dL) or more.", "k": "11.1 mmol/l", "s": "bank", "id": "96u6lc", "d": 1}
 ]

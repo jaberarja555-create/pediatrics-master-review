@@ -1,44 +1,5 @@
 [
-{
-"q": "The commonest enzyme deficiency in CAH is:",
-"o": [
-"11β-hydroxylase",
-"17α-hydroxylase",
-"21-hydroxylase",
-"3β-HSD",
-"Aromatase"
-],
-"a": 2,
-"e": "90–95%.",
-"k": "21-hydroxylase",
-"s": "bank"
-},
-{
-"q": "A 2-week-old boy with vomiting, shock, Na 122, K 7.4. Most likely:",
-"o": [
-"Pyloric stenosis",
-"CAH (salt wasting)",
-"Gastroenteritis",
-"Sepsis only",
-"Malrotation"
-],
-"a": 1,
-"e": "Salt-wasting CAH.",
-"k": "salt-wasting crisis",
-"s": "bank"
-},
-{
-"q": "The diagnostic test for 21-hydroxylase deficiency is:",
-"o": [
-"Cortisol",
-"17-OHP",
-"ACTH",
-"Testosterone",
-"Renin"
-],
-"a": 1,
-"e": "↑ 17-hydroxyprogesterone.",
-"k": "17-hydroxyprogesterone",
-"s": "bank"
-}
+{"q": "What is the commonest enzyme deficiency in congenital adrenal hyperplasia?", "o": ["11β-hydroxylase", "17α-hydroxylase", "21-hydroxylase", "3β-hydroxysteroid dehydrogenase", "Aromatase"], "a": 2, "e": "21-hydroxylase deficiency causes 90–95% of cases.", "k": "21-hydroxylase", "s": "bank", "id": "16sffxw", "d": 1},
+{"q": "A 2-week-old boy has vomiting and shock, with a sodium of 122 mmol/L and a potassium of 7.4 mmol/L. What is the most likely diagnosis?", "o": ["Pyloric stenosis", "Salt-wasting congenital adrenal hyperplasia", "Gastroenteritis", "Sepsis only", "Malrotation"], "a": 1, "e": "A low sodium with a high potassium in a vomiting boy is salt-wasting congenital adrenal hyperplasia.", "k": "salt-wasting crisis", "s": "bank", "id": "4fa22c", "d": 3},
+{"q": "The diagnostic test for 21-hydroxylase deficiency is:", "o": ["Cortisol", "17-hydroxyprogesterone", "ACTH", "Testosterone", "Renin"], "a": 1, "e": "17-hydroxyprogesterone is raised.", "k": "17-hydroxyprogesterone", "s": "bank", "d": 1}
 ]

@@ -1,207 +1,43 @@
 [
- [
-  "SLE",
-  "Who gets childhood SLE?",
-  "Mostly adolescent girls (5:1 before puberty, 9:1 after)."
- ],
- [
-  "SLE",
-  "Is childhood SLE milder than adult SLE?",
-  "No; it is more severe, with more renal and CNS disease."
- ],
- [
-  "SLE",
-  "Main cause of death in childhood SLE?",
-  "Lupus nephritis (and infection)."
- ],
- [
-  "SLE",
-  "Mnemonic for SLE features?",
-  "SOAP BRAIN MD."
- ],
- [
-  "SLE",
-  "Malar rash of SLE and the nasolabial folds?",
-  "It spares the nasolabial folds."
- ],
- [
-  "SLE",
-  "Oral ulcers of SLE are painful or painless?",
-  "Painless."
- ],
- [
-  "SLE",
-  "Type of arthritis in SLE?",
-  "Non-erosive."
- ],
- [
-  "SLE",
-  "Haematological features of SLE?",
-  "Coombs-positive haemolysis, leucopenia/lymphopenia, thrombocytopenia."
- ],
- [
-  "SLE",
-  "Neurological features of SLE?",
-  "Seizures, psychosis, chorea, stroke."
- ],
- [
-  "SLE",
-  "Commonest cardiac feature of SLE?",
-  "Pericarditis."
- ],
- [
-  "SLE",
-  "How common is nephritis in childhood SLE?",
-  "Up to 75%."
- ],
- [
-  "SLE",
-  "Which test is done at every SLE visit?",
-  "Urinalysis (with blood pressure)."
- ],
- [
-  "SLE",
-  "How is lupus nephritis graded?",
-  "Renal biopsy (classes III–IV severe)."
- ],
- [
-  "Investigations",
-  "Best screening test for SLE?",
-  "ANA (positive in over 95%)."
- ],
- [
-  "Investigations",
-  "Most specific antibody for SLE?",
-  "Anti-Sm."
- ],
- [
-  "Investigations",
-  "Antibody that follows lupus activity?",
-  "Anti-dsDNA."
- ],
- [
-  "Investigations",
-  "Complement in active SLE?",
-  "Low C3 and C4 (consumed by immune complexes)."
- ],
- [
-  "Investigations",
-  "Typical ESR and CRP in SLE?",
-  "High ESR, normal CRP."
- ],
- [
-  "Investigations",
-  "Lupus patient with fever and high CRP?",
-  "Suspect infection."
- ],
- [
-  "Treatment",
-  "Drug given to every child with SLE?",
-  "Hydroxychloroquine 5 mg/kg/day (max 400 mg)."
- ],
- [
-  "Treatment",
-  "Monitoring on hydroxychloroquine?",
-  "Yearly eye examination (retinal toxicity)."
- ],
- [
-  "Treatment",
-  "Steroid dose for moderate SLE?",
-  "Prednisolone 1–2 mg/kg/day (max 60 mg)."
- ],
- [
-  "Treatment",
-  "Treatment of severe lupus nephritis?",
-  "IV methylprednisolone then mycophenolate or IV cyclophosphamide."
- ],
- [
-  "Treatment",
-  "IV methylprednisolone pulse dose?",
-  "30 mg/kg/day (max 1 g) for 3 days."
- ],
- [
-  "Treatment",
-  "Signs that lupus treatment is working?",
-  "Fever and rash settle, C3/C4 rise, anti-dsDNA and proteinuria fall."
- ],
- [
-  "Treatment",
-  "Signs of a lupus flare?",
-  "New proteinuria, falling complement, rising anti-dsDNA, new cytopenias."
- ],
- [
-  "Neonatal lupus",
-  "Cause of neonatal lupus?",
-  "Maternal anti-Ro (SSA) and anti-La (SSB) antibodies."
- ],
- [
-  "Neonatal lupus",
-  "Permanent feature of neonatal lupus?",
-  "Congenital complete heart block."
- ],
- [
-  "Neonatal lupus",
-  "Transient features of neonatal lupus?",
-  "Periorbital rash, cytopenias, hepatitis (gone by 6 months)."
- ],
- [
-  "Drug-induced lupus",
-  "Drugs that cause lupus?",
-  "Hydralazine, isoniazid, procainamide, anticonvulsants, minocycline."
- ],
- [
-  "Drug-induced lupus",
-  "Antibody of drug-induced lupus?",
-  "Anti-histone."
- ],
- [
-  "JDM",
-  "What is juvenile dermatomyositis?",
-  "Autoimmune small-vessel vasculopathy of skin and muscle."
- ],
- [
-  "JDM",
-  "Age of JDM?",
-  "4–10 years, girls more often."
- ],
- [
-  "JDM",
-  "Is JDM linked to cancer in children?",
-  "No (unlike adults)."
- ],
- [
-  "JDM",
-  "Muscle weakness pattern in JDM?",
-  "Symmetrical proximal weakness (Gowers sign)."
- ],
- [
-  "JDM",
-  "Heliotrope rash?",
-  "Violet discoloration and swelling of the upper eyelids."
- ],
- [
-  "JDM",
-  "Gottron papules?",
-  "Red scaly papules over knuckles, elbows and knees."
- ],
- [
-  "JDM",
-  "Late skin complication of untreated JDM?",
-  "Calcinosis."
- ],
- [
-  "JDM",
-  "Investigations in JDM?",
-  "CK, LDH, AST, aldolase; MRI of thighs; EMG/biopsy if atypical."
- ],
- [
-  "JDM",
-  "Treatment of JDM?",
-  "IV methylprednisolone then oral prednisolone + methotrexate."
- ],
- [
-  "JDM",
-  "How to tell JDM from Duchenne dystrophy?",
-  "JDM: rash, tender muscles, raised inflammation, steroid response; Duchenne: boys, calf pseudohypertrophy."
- ]
+ ["SLE", "Who gets systemic lupus erythematosus (SLE) in childhood?", "Mostly adolescent girls: the ratio is 5 girls to 1 boy before puberty and 9 to 1 after.", 1, "ffjj5o"],
+ ["SLE", "Is childhood SLE milder than adult SLE?", "No. It is more severe, with more renal and central nervous system disease.", 2, "139onzf"],
+ ["SLE", "What is the main cause of death in childhood SLE?", "Lupus nephritis (and infection).", 2, "t8qrgf"],
+ ["SLE", "Which memory aid lists the features of SLE?", "SOAP BRAIN MD: serositis, oral ulcers, arthritis, photosensitivity, blood disorders, renal disease, ANA, immunological tests, neurological disease, malar rash and discoid rash.", 1, "16kb6pl"],
+ ["SLE", "Does the malar rash of SLE involve the nasolabial folds?", "No. It spares the nasolabial folds.", 1, "11xy6ef"],
+ ["SLE", "Are the oral ulcers of SLE painful or painless?", "Painless.", 1, "10xyeox"],
+ ["SLE", "What type of arthritis occurs in SLE?", "Non-erosive arthritis.", 2, "6frtyl"],
+ ["SLE", "What are the haematological features of SLE?", "Coombs-positive haemolysis, leucopenia or lymphopenia, and thrombocytopenia.", 2, "11q3ajv"],
+ ["SLE", "What are the neurological features of SLE?", "Seizures, psychosis, chorea and stroke.", 2, "1844k4r"],
+ ["SLE", "What is the commonest cardiac feature of SLE?", "Pericarditis.", 1, "74e9jc"],
+ ["SLE", "How common is nephritis in childhood SLE?", "It occurs in up to 75%.", 2, "16lbz25"],
+ ["SLE", "Which tests are done at every visit in SLE?", "A urinalysis, with the blood pressure.", 2, "4kjtif"],
+ ["SLE", "How is lupus nephritis graded?", "By renal biopsy; classes III–IV are severe.", 2, "qqz58p"],
+ ["Investigations", "What is the best screening test for SLE?", "The ANA, which is positive in over 95%.", 1, "164gcs2"],
+ ["Investigations", "What is the most specific antibody for SLE?", "Anti-Sm.", 1, "ho4lf9"],
+ ["Investigations", "Which antibody follows the activity of lupus?", "Anti-dsDNA.", 2, "q7n04a"],
+ ["Investigations", "What happens to complement in active SLE?", "C3 and C4 are low, because immune complexes consume them.", 2, "4hyxpo"],
+ ["Investigations", "What are the typical ESR and CRP in SLE?", "A high ESR with a normal CRP.", 3, "esxny2"],
+ ["Investigations", "A child with lupus has fever and a high CRP. What should be suspected?", "Infection.", 3, "sry13n"],
+ ["Treatment", "Which drug is given to every child with SLE?", "Hydroxychloroquine 5 mg/kg/day (maximum 400 mg).", 1, "1yvdw1u"],
+ ["Treatment", "What monitoring is needed on hydroxychloroquine?", "A yearly eye examination, for retinal toxicity.", 2, "10sb0uo"],
+ ["Treatment", "What dose of steroid is used for moderate SLE?", "Prednisolone 1–2 mg/kg/day (maximum 60 mg).", 2, "19jzu1m"],
+ ["Treatment", "How is severe lupus nephritis treated?", "With intravenous methylprednisolone, then mycophenolate or intravenous cyclophosphamide.", 2, "1h7srd9"],
+ ["Treatment", "What is the dose of an intravenous methylprednisolone pulse?", "30 mg/kg/day (maximum 1 g) for 3 days.", 2, "1c1oim7"],
+ ["Treatment", "What are the signs that lupus treatment is working?", "The fever and rash settle, C3 and C4 rise, and anti-dsDNA and proteinuria fall.", 2, "djslf6"],
+ ["Treatment", "What are the signs of a lupus flare?", "New proteinuria, falling complement, rising anti-dsDNA and new cytopenias.", 3, "cvc0mi"],
+ ["Neonatal lupus", "What causes neonatal lupus?", "Maternal anti-Ro (SSA) and anti-La (SSB) antibodies.", 2, "1jq9hqs"],
+ ["Neonatal lupus", "What is the permanent feature of neonatal lupus?", "Congenital complete heart block.", 1, "i7pp95"],
+ ["Neonatal lupus", "What are the transient features of neonatal lupus?", "A periorbital rash, cytopenias and hepatitis, gone by 6 months.", 2, "53apka"],
+ ["Drug-induced lupus", "Which drugs cause lupus?", "Hydralazine, isoniazid, procainamide, anticonvulsants and minocycline.", 2, "1sd7vb1"],
+ ["Drug-induced lupus", "Which antibody is found in drug-induced lupus?", "Anti-histone antibody.", 2, "11rswsu"],
+ ["JDM", "What is juvenile dermatomyositis (JDM)?", "An autoimmune disease of the small vessels of the skin and muscle.", 1, "dy7wr6"],
+ ["JDM", "At what age does juvenile dermatomyositis occur?", "At 4–10 years, more often in girls.", 1, "e0utv8"],
+ ["JDM", "Is juvenile dermatomyositis linked to cancer in children?", "No, unlike in adults.", 2, "b5u2g4"],
+ ["JDM", "What is the pattern of muscle weakness in juvenile dermatomyositis?", "Symmetrical proximal weakness, with a Gowers sign.", 1, "1r79ik5"],
+ ["JDM", "What is the heliotrope rash?", "Violet discoloration and swelling of the upper eyelids.", 1, "v647yk"],
+ ["JDM", "What are Gottron papules?", "Red scaly papules over the knuckles, elbows and knees.", 1, "1d7i87m"],
+ ["JDM", "What is the late skin complication of untreated juvenile dermatomyositis?", "Calcinosis.", 2, "10mi2l8"],
+ ["JDM", "Which investigations are done in juvenile dermatomyositis?", "CK, LDH, AST and aldolase; an MRI of the thighs; electromyography or biopsy if the picture is atypical.", 2, "14ud0rc"],
+ ["JDM", "How is juvenile dermatomyositis treated?", "With intravenous methylprednisolone, then oral prednisolone with methotrexate.", 2, "1l5y5gt"],
+ ["JDM", "How is juvenile dermatomyositis told apart from Duchenne muscular dystrophy?", "Juvenile dermatomyositis has a rash, tender muscles, raised inflammatory markers and responds to steroids; Duchenne affects boys and causes pseudohypertrophy of the calves.", 3, "auvsek"]
 ]

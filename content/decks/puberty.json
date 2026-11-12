@@ -1,122 +1,26 @@
 [
- [
-  "Normal",
-  "First sign in girls?",
-  "Breast budding (thelarche)."
- ],
- [
-  "Normal",
-  "First sign in boys?",
-  "Testes ≥ 4 mL."
- ],
- [
-  "Normal",
-  "Menarche after thelarche?",
-  "2–2.5 years."
- ],
- [
-  "Normal",
-  "Growth spurt girls vs boys?",
-  "Early in girls, late in boys."
- ],
- [
-  "Precocious",
-  "Definition girls?",
-  "Signs before 8 years."
- ],
- [
-  "Precocious",
-  "Definition boys?",
-  "Signs before 9 years."
- ],
- [
-  "Precocious",
-  "Central cause in boys?",
-  "CNS lesion: MRI brain."
- ],
- [
-  "Precocious",
-  "Central cause in girls?",
-  "Usually idiopathic."
- ],
- [
-  "Precocious",
-  "Treatment of central?",
-  "GnRH agonist."
- ],
- [
-  "Precocious",
-  "Peripheral causes?",
-  "CAH, tumours, McCune–Albright, exogenous steroids."
- ],
- [
-  "Precocious",
-  "Premature thelarche?",
-  "Isolated breast in girls 6 mo–2 yr; observe."
- ],
- [
-  "Delayed",
-  "Definition girls?",
-  "No signs by 13."
- ],
- [
-  "Delayed",
-  "Definition boys?",
-  "No signs by 14."
- ],
- [
-  "Delayed",
-  "Commonest cause?",
-  "Constitutional delay."
- ],
- [
-  "Delayed",
-  "Kallmann features?",
-  "Hypogonadotropic + anosmia."
- ],
- [
-  "Delayed",
-  "Hypergonadotropic causes?",
-  "Turner, Klinefelter."
- ],
- [
-  "GH",
-  "GH deficiency appearance?",
-  "Short, chubby, cherubic, normal proportions."
- ],
- [
-  "GH",
-  "Neonatal GH deficiency signs?",
-  "Hypoglycaemia, micropenis."
- ],
- [
-  "GH",
-  "Diagnosis?",
-  "Low IGF-1 + failed 2 stimulation tests."
- ],
- [
-  "Cranio",
-  "Craniopharyngioma signs?",
-  "Headache, bitemporal hemianopia, short stature, DI."
- ],
- [
-  "Cranio",
-  "X-ray?",
-  "Suprasellar calcification."
- ],
- [
-  "DI",
-  "DI features?",
-  "Polyuria, polydipsia, hypernatraemia, dilute urine."
- ],
- [
-  "DI",
-  "Test?",
-  "Water deprivation then desmopressin."
- ],
- [
-  "DI",
-  "Central DI treatment?",
-  "Desmopressin."
- ]
+ ["Normal puberty", "What is the first sign of puberty in girls?", "Breast budding (thelarche).", 1, "14y4ets"],
+ ["Normal puberty", "What is the first sign of puberty in boys?", "A testicular volume of 4 ml or more.", 1, "o5se5s"],
+ ["Normal puberty", "How long after thelarche does menarche occur?", "2–2.5 years later.", 2, "4k7iae"],
+ ["Normal puberty", "When does the growth spurt occur in girls and in boys?", "Early in puberty in girls and late in puberty in boys.", 2, "p3m6m5"],
+ ["Precocious puberty", "How is precocious puberty defined in girls?", "Signs of puberty before 8 years of age.", 1, "te4k5x"],
+ ["Precocious puberty", "How is precocious puberty defined in boys?", "Signs of puberty before 9 years of age.", 1, "5ggwej"],
+ ["Precocious puberty", "What usually causes central precocious puberty in boys, and what is done?", "A lesion of the central nervous system; an MRI of the brain is done.", 3, "1yyj51b"],
+ ["Precocious puberty", "What usually causes central precocious puberty in girls?", "It is usually idiopathic.", 2, "1seht"],
+ ["Precocious puberty", "How is central precocious puberty treated?", "With a GnRH agonist.", 2, "izwjij"],
+ ["Precocious puberty", "What are the peripheral causes of precocious puberty?", "Congenital adrenal hyperplasia, tumours, McCune–Albright syndrome and exogenous steroids.", 2, "1nblpzl"],
+ ["Precocious puberty", "What is premature thelarche?", "Isolated breast development in girls aged 6 months to 2 years; it is observed.", 2, "2w8940"],
+ ["Delayed puberty", "How is delayed puberty defined in girls?", "No signs of puberty by 13 years of age.", 1, "te4k5x"],
+ ["Delayed puberty", "How is delayed puberty defined in boys?", "No signs of puberty by 14 years of age.", 1, "5ggwej"],
+ ["Delayed puberty", "What is the commonest cause of delayed puberty?", "Constitutional delay.", 1, "r5dkbf"],
+ ["Delayed puberty", "What are the features of Kallmann syndrome?", "Hypogonadotropic hypogonadism with anosmia.", 2, "yomaq4"],
+ ["Delayed puberty", "What are the causes of hypergonadotropic hypogonadism?", "Turner syndrome and Klinefelter syndrome.", 2, "15vhvog"],
+ ["Growth hormone", "What does a child with growth hormone deficiency look like?", "Short and chubby, with a cherubic face and normal body proportions.", 2, "1dassv7"],
+ ["Growth hormone", "What are the neonatal signs of growth hormone deficiency?", "Hypoglycaemia and micropenis.", 2, "zuop2l"],
+ ["Growth hormone", "How is growth hormone deficiency diagnosed?", "A low IGF-1 and a failed response to 2 stimulation tests.", 2, "7d9oy6"],
+ ["Craniopharyngioma", "What are the signs of craniopharyngioma?", "Headache, bitemporal hemianopia, short stature and diabetes insipidus.", 2, "2eezoo"],
+ ["Craniopharyngioma", "What does the X-ray show in craniopharyngioma?", "Suprasellar calcification.", 2, "16escru"],
+ ["Diabetes insipidus", "What are the features of diabetes insipidus?", "Polyuria, polydipsia, hypernatraemia and dilute urine.", 1, "1uqgx53"],
+ ["Diabetes insipidus", "Which test diagnoses diabetes insipidus?", "A water deprivation test followed by desmopressin.", 2, "1c1nm5"],
+ ["Diabetes insipidus", "How is central diabetes insipidus treated?", "With desmopressin.", 1, "pn0trr"]
 ]

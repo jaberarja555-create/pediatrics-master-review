@@ -1,107 +1,23 @@
 [
- [
-  "General",
-  "Charcoal dose?",
-  "1 g/kg within 1 hour."
- ],
- [
-  "General",
-  "Charcoal not used for?",
-  "Hydrocarbons, caustics, iron, alcohols, lithium."
- ],
- [
-  "General",
-  "Induce vomiting?",
-  "No."
- ],
- [
-  "Kerosene",
-  "Main danger?",
-  "Aspiration pneumonitis."
- ],
- [
-  "Kerosene",
-  "Management?",
-  "No vomiting/lavage/charcoal; O₂, observe, CXR."
- ],
- [
-  "OP",
-  "Organophosphate features?",
-  "Miosis, salivation, sweating, bronchorrhoea, bradycardia, fasciculation."
- ],
- [
-  "OP",
-  "Antidote?",
-  "Atropine + pralidoxime."
- ],
- [
-  "OP",
-  "Atropine end point?",
-  "Dry chest."
- ],
- [
-  "OP",
-  "Atropine dose?",
-  "0.02–0.05 mg/kg, double every 5 min."
- ],
- [
-  "Paracetamol",
-  "Toxic dose?",
-  "> 150 mg/kg."
- ],
- [
-  "Paracetamol",
-  "Organ damaged?",
-  "Liver (day 2–4)."
- ],
- [
-  "Paracetamol",
-  "Antidote?",
-  "N-acetylcysteine."
- ],
- [
-  "Iron",
-  "Toxic dose?",
-  "> 60 mg/kg elemental."
- ],
- [
-  "Iron",
-  "Antidote?",
-  "Desferrioxamine."
- ],
- [
-  "Iron",
-  "X-ray?",
-  "Tablets visible."
- ],
- [
-  "Caustic",
-  "Caustic late complication?",
-  "Oesophageal stricture."
- ],
- [
-  "Caustic",
-  "Endoscopy timing?",
-  "12–24 h."
- ],
- [
-  "PPD",
-  "Hair dye (PPD) danger?",
-  "Airway angio-oedema, rhabdomyolysis, AKI."
- ],
- [
-  "Opioid",
-  "Opioid antidote?",
-  "Naloxone 0.1 mg/kg."
- ],
- [
-  "Salicylate",
-  "Salicylate acid–base?",
-  "Respiratory alkalosis + metabolic acidosis."
- ],
- [
-  "Salicylate",
-  "Treatment?",
-  "Urine alkalinisation."
- ]
+ ["General", "What is the dose of activated charcoal, and when is it given?", "1 g/kg, within 1 hour of ingestion.", 1, "1rw24mn"],
+ ["General", "For which poisons is activated charcoal not used?", "Hydrocarbons, caustics, iron, alcohols and lithium.", 2, "5jaiwp"],
+ ["General", "Is vomiting induced after poisoning?", "No.", 1, "40g31w"],
+ ["Kerosene", "What is the main danger of kerosene poisoning?", "Aspiration pneumonitis.", 1, "1vtvvp1"],
+ ["Kerosene", "How is kerosene poisoning managed?", "No vomiting, lavage or charcoal; oxygen, observation and a chest X-ray.", 2, "s5xwl8"],
+ ["Organophosphates", "What are the features of organophosphate poisoning?", "Miosis, salivation, sweating, bronchorrhoea, bradycardia and fasciculation.", 1, "1ui7dgi"],
+ ["Organophosphates", "What are the antidotes for organophosphate poisoning?", "Atropine and pralidoxime.", 1, "1x6kh1d"],
+ ["Organophosphates", "What is the end point of atropine treatment?", "A dry chest.", 2, "aqvzp0"],
+ ["Organophosphates", "What is the dose of atropine in organophosphate poisoning?", "0.02–0.05 mg/kg, doubled every 5 minutes until the chest is dry.", 2, "1no4yci"],
+ ["Paracetamol", "What dose of paracetamol is toxic?", "More than 150 mg/kg.", 2, "14z17y1"],
+ ["Paracetamol", "Which organ does paracetamol poisoning damage, and when?", "The liver, on days 2–4.", 1, "l0p461"],
+ ["Paracetamol", "What is the antidote for paracetamol poisoning?", "N-acetylcysteine.", 1, "1x6kh1d"],
+ ["Iron", "What dose of iron is toxic?", "More than 60 mg/kg of elemental iron.", 2, "14z17y1"],
+ ["Iron", "What is the antidote for iron poisoning?", "Desferrioxamine.", 1, "1x6kh1d"],
+ ["Iron", "What does the abdominal X-ray show in iron poisoning?", "The tablets are visible.", 2, "16escru"],
+ ["Caustics", "What is the late complication of caustic ingestion?", "Oesophageal stricture.", 1, "2hir9"],
+ ["Caustics", "When is endoscopy done after caustic ingestion?", "At 12–24 hours.", 2, "xofe1"],
+ ["Hair dye", "What are the dangers of hair dye (paraphenylenediamine) poisoning?", "Angio-oedema of the airway, rhabdomyolysis and acute kidney injury.", 2, "1ga1fa3"],
+ ["Opioids", "What is the antidote for opioid poisoning, and its dose?", "Naloxone 0.1 mg/kg.", 1, "o5lb7n"],
+ ["Salicylates", "What is the acid–base disturbance in salicylate poisoning?", "A respiratory alkalosis with a metabolic acidosis.", 3, "dh4r81"],
+ ["Salicylates", "How is salicylate poisoning treated?", "By alkalinisation of the urine.", 2, "hrr3b"]
 ]

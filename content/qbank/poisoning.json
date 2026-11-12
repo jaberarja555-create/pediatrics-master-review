@@ -1,58 +1,6 @@
 [
-{
-"q": "A child swallowed kerosene. The correct management is:",
-"o": [
-"Induce vomiting",
-"Gastric lavage",
-"Activated charcoal",
-"Observe, oxygen, CXR; no vomiting",
-"Milk to drink"
-],
-"a": 3,
-"e": "Aspiration risk.",
-"k": "no vomiting, no charcoal",
-"s": "bank"
-},
-{
-"q": "The antidote for organophosphate poisoning is:",
-"o": [
-"Naloxone",
-"Atropine + pralidoxime",
-"Flumazenil",
-"N-acetylcysteine",
-"Desferrioxamine"
-],
-"a": 1,
-"e": "Atropine until dry chest.",
-"k": "atropine",
-"s": "bank"
-},
-{
-"q": "Activated charcoal is NOT effective in poisoning with:",
-"o": [
-"Paracetamol",
-"Iron",
-"Phenobarbitone",
-"Carbamazepine",
-"Aspirin"
-],
-"a": 1,
-"e": "Does not bind iron.",
-"k": "no charcoal",
-"s": "bank"
-},
-{
-"q": "The antidote for paracetamol poisoning is:",
-"o": [
-"Naloxone",
-"Atropine",
-"N-acetylcysteine",
-"Vitamin K",
-"Desferrioxamine"
-],
-"a": 2,
-"e": "NAC.",
-"k": "n-acetylcysteine",
-"s": "bank"
-}
+{"q": "A child has swallowed kerosene. What is the correct management?", "o": ["Induce vomiting", "Gastric lavage", "Activated charcoal", "Observation, oxygen and a chest X-ray; no vomiting", "Give milk to drink"], "a": 3, "e": "The main risk is aspiration into the lungs.", "k": "no vomiting, no charcoal", "s": "bank", "id": "1pvc97n", "d": 2},
+{"q": "The antidote for organophosphate poisoning is:", "o": ["Naloxone", "Atropine + pralidoxime", "Flumazenil", "N-acetylcysteine", "Desferrioxamine"], "a": 1, "e": "Atropine is given until the chest is dry.", "k": "atropine", "s": "bank", "d": 1},
+{"q": "Activated charcoal is NOT effective in poisoning with:", "o": ["Paracetamol", "Iron", "Phenobarbitone", "Carbamazepine", "Aspirin"], "a": 1, "e": "Activated charcoal does not bind iron.", "k": "no charcoal", "s": "bank", "d": 2},
+{"q": "The antidote for paracetamol poisoning is:", "o": ["Naloxone", "Atropine", "N-acetylcysteine", "Vitamin K", "Desferrioxamine"], "a": 2, "e": "N-acetylcysteine.", "k": "n-acetylcysteine", "s": "bank", "d": 1}
 ]

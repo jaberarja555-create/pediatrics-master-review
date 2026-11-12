@@ -1,97 +1,21 @@
 [
- [
-  "Status",
-  "Operational definition?",
-  "Seizure ≥ 5 minutes."
- ],
- [
-  "Status",
-  "Common causes in Sudan?",
-  "Febrile seizure, cerebral malaria, meningitis, hypoglycaemia."
- ],
- [
-  "Protocol",
-  "First step after ABC?",
-  "Check glucose."
- ],
- [
-  "Protocol",
-  "IV diazepam dose?",
-  "0.3 mg/kg (max 10 mg)."
- ],
- [
-  "Protocol",
-  "Rectal diazepam?",
-  "0.5 mg/kg."
- ],
- [
-  "Protocol",
-  "Buccal midazolam?",
-  "0.3 mg/kg."
- ],
- [
-  "Protocol",
-  "Max benzodiazepine doses?",
-  "Two."
- ],
- [
-  "Protocol",
-  "Second-line drugs?",
-  "Phenytoin or phenobarbitone 20 mg/kg."
- ],
- [
-  "Protocol",
-  "Phenytoin precautions?",
-  "ECG; not in dextrose."
- ],
- [
-  "Protocol",
-  "Refractory status?",
-  "ICU: thiopental or midazolam infusion."
- ],
- [
-  "Coma",
-  "Coma by GCS?",
-  "≤ 8."
- ],
- [
-  "Coma",
-  "Blantyre score in cerebral malaria?",
-  "≤ 2."
- ],
- [
-  "Coma",
-  "Coma + pinpoint pupils + secretions?",
-  "Organophosphate poisoning."
- ],
- [
-  "Coma",
-  "Coma + retinal haemorrhages in infant?",
-  "Non-accidental injury."
- ],
- [
-  "ICP",
-  "Signs of raised ICP?",
-  "Falling GCS, unequal pupils, posturing, papilloedema."
- ],
- [
-  "ICP",
-  "Cushing triad?",
-  "Bradycardia, hypertension, irregular breathing."
- ],
- [
-  "ICP",
-  "Position?",
-  "Head up 30°."
- ],
- [
-  "ICP",
-  "Mannitol dose?",
-  "0.5–1 g/kg."
- ],
- [
-  "ICP",
-  "LP in raised ICP?",
-  "No."
- ]
+ ["Status epilepticus", "What is the operational definition of status epilepticus?", "A seizure lasting 5 minutes or more.", 1, "f1m28u"],
+ ["Status epilepticus", "What are the common causes of status epilepticus in Sudan?", "Febrile seizures, cerebral malaria, meningitis and hypoglycaemia.", 1, "ejo3ai"],
+ ["Protocol", "What is the first step after airway, breathing and circulation?", "Checking the blood glucose.", 1, "flvzut"],
+ ["Protocol", "What is the intravenous dose of diazepam?", "0.3 mg/kg (maximum 10 mg).", 2, "loc98q"],
+ ["Protocol", "What is the rectal dose of diazepam?", "0.5 mg/kg.", 1, "1kigwih"],
+ ["Protocol", "What is the dose of buccal midazolam?", "0.3 mg/kg.", 2, "zlehef"],
+ ["Protocol", "What is the maximum number of benzodiazepine doses?", "Two doses.", 2, "1arvrh2"],
+ ["Protocol", "Which second-line drugs are used in status epilepticus?", "Phenytoin or phenobarbitone, 20 mg/kg.", 2, "necji7"],
+ ["Protocol", "Which precautions are taken with phenytoin?", "ECG monitoring, and it is not mixed with dextrose.", 3, "187a77g"],
+ ["Protocol", "How is refractory status epilepticus treated?", "In intensive care, with a thiopental or midazolam infusion.", 2, "1vfu08g"],
+ ["Coma", "Which Glasgow Coma Scale score defines coma?", "8 or less.", 1, "1luq1qp"],
+ ["Coma", "Which Blantyre coma score defines cerebral malaria?", "2 or less.", 2, "1k8d55e"],
+ ["Coma", "A child is in coma with pinpoint pupils and heavy secretions. What is the cause?", "Organophosphate poisoning.", 3, "vy47tw"],
+ ["Coma", "An infant in coma has retinal haemorrhages. What must be suspected?", "Non-accidental injury.", 3, "nv9d3g"],
+ ["Raised intracranial pressure", "What are the signs of raised intracranial pressure?", "A falling Glasgow Coma Scale, unequal pupils, abnormal posturing and papilloedema.", 2, "15amy36"],
+ ["Raised intracranial pressure", "What is the Cushing triad?", "Bradycardia, hypertension and irregular breathing.", 1, "ch2b9y"],
+ ["Raised intracranial pressure", "In which position is a child with raised intracranial pressure nursed?", "With the head raised 30°.", 2, "1pdhfyu"],
+ ["Raised intracranial pressure", "What is the dose of mannitol?", "0.5–1 g/kg.", 2, "14a0xge"],
+ ["Raised intracranial pressure", "Is a lumbar puncture done when intracranial pressure is raised?", "No.", 2, "19tw6du"]
 ]

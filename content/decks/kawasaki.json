@@ -1,222 +1,46 @@
 [
- [
-  "Kawasaki",
-  "What is Kawasaki disease?",
-  "Acute self-limiting vasculitis of medium-sized arteries in young children."
- ],
- [
-  "Kawasaki",
-  "Age of Kawasaki disease?",
-  "80% under 5 years."
- ],
- [
-  "Kawasaki",
-  "Diagnostic criteria of Kawasaki disease?",
-  "Fever ≥ 5 days + at least 4 of 5 principal features."
- ],
- [
-  "Kawasaki",
-  "Five principal features of Kawasaki disease?",
-  "Conjunctivitis, rash, cervical adenopathy, oral changes, hand/foot changes."
- ],
- [
-  "Kawasaki",
-  "Type of conjunctivitis in Kawasaki disease?",
-  "Bilateral, non-purulent, sparing the area around the iris."
- ],
- [
-  "Kawasaki",
-  "Size of the cervical node in Kawasaki disease?",
-  "≥ 1.5 cm, usually one-sided."
- ],
- [
-  "Kawasaki",
-  "Oral changes in Kawasaki disease?",
-  "Red cracked lips, strawberry tongue, red throat."
- ],
- [
-  "Kawasaki",
-  "When does fingertip peeling occur?",
-  "Subacute phase, weeks 2–3."
- ],
- [
-  "Kawasaki",
-  "Unusual clue at the vaccination site?",
-  "Redness or crusting at the BCG scar."
- ],
- [
-  "Kawasaki",
-  "Platelets in Kawasaki disease?",
-  "Normal in week 1, rise in weeks 2–3 (often > 1 million)."
- ],
- [
-  "Kawasaki",
-  "Urine finding in Kawasaki disease?",
-  "Sterile pyuria."
- ],
- [
-  "Kawasaki",
-  "Most important complication?",
-  "Coronary artery aneurysm."
- ],
- [
-  "Kawasaki",
-  "Aneurysm risk without and with treatment?",
-  "About 25% untreated; under 5% with IVIG."
- ],
- [
-  "Kawasaki",
-  "When do coronary aneurysms form?",
-  "Weeks 2–4."
- ],
- [
-  "Kawasaki",
-  "Who has the highest aneurysm risk?",
-  "Infants under 1 year, boys, fever > 10 days, late treatment."
- ],
- [
-  "Kawasaki",
-  "What is incomplete Kawasaki disease?",
-  "Fever ≥ 5 days with fewer than 4 features; common in infants."
- ],
- [
-  "Kawasaki",
-  "Workup of suspected incomplete Kawasaki?",
-  "CRP, ESR, supporting labs and echocardiogram."
- ],
- [
-  "Kawasaki",
-  "Kawasaki versus scarlet fever?",
-  "Scarlet fever: exudative tonsillitis, sandpaper rash, no conjunctivitis."
- ],
- [
-  "Kawasaki",
-  "What is MIS-C?",
-  "Kawasaki-like illness after COVID-19, older children, more shock."
- ],
- [
-  "Treatment",
-  "IVIG dose in Kawasaki disease?",
-  "2 g/kg single infusion over 10–12 hours."
- ],
- [
-  "Treatment",
-  "Ideal timing of IVIG?",
-  "Within 10 days of fever onset."
- ],
- [
-  "Treatment",
-  "High-dose aspirin in Kawasaki disease?",
-  "80–100 mg/kg/day in 4 doses until afebrile 48–72 h."
- ],
- [
-  "Treatment",
-  "Low-dose aspirin in Kawasaki disease?",
-  "3–5 mg/kg once daily until 6–8 weeks if echo normal."
- ],
- [
-  "Treatment",
-  "Purpose of high then low aspirin?",
-  "High = anti-inflammatory; low = antiplatelet."
- ],
- [
-  "Treatment",
-  "When is echocardiography done?",
-  "At diagnosis, at 1–2 weeks and at 6–8 weeks."
- ],
- [
-  "Treatment",
-  "Treatment of giant aneurysm (≥ 8 mm)?",
-  "Anticoagulation (warfarin or LMWH) with aspirin."
- ],
- [
-  "Treatment",
-  "First sign of response to IVIG?",
-  "Fever settles within 36 hours of the infusion."
- ],
- [
-  "Treatment",
-  "Definition and treatment of IVIG resistance?",
-  "Fever ≥ 36 h after IVIG: second IVIG 2 g/kg, or steroids/infliximab."
- ],
- [
-  "Treatment",
-  "Delay of live vaccines after IVIG?",
-  "11 months."
- ],
- [
-  "Treatment",
-  "Risk of influenza or varicella on aspirin?",
-  "Reye syndrome."
- ],
- [
-  "Treatment",
-  "Why avoid ibuprofen with aspirin in Kawasaki?",
-  "It blocks aspirin's antiplatelet action."
- ],
- [
-  "Vasculitis",
-  "Commonest vasculitis of childhood?",
-  "IgA vasculitis (Henoch–Schönlein purpura)."
- ],
- [
-  "Vasculitis",
-  "Large-vessel vasculitis of adolescent girls?",
-  "Takayasu arteritis."
- ],
- [
-  "Vasculitis",
-  "Clues to Takayasu arteritis?",
-  "Absent arm pulses, BP difference between arms, bruits, hypertension."
- ],
- [
-  "Vasculitis",
-  "Features of polyarteritis nodosa?",
-  "Hypertension, skin nodules, livedo, testicular pain, mononeuritis."
- ],
- [
-  "Vasculitis",
-  "Antibody of granulomatosis with polyangiitis?",
-  "c-ANCA."
- ],
- [
-  "FMF",
-  "Inheritance and gene of FMF?",
-  "Autosomal recessive, MEFV (pyrin)."
- ],
- [
-  "FMF",
-  "Typical FMF attack?",
-  "Fever 12–72 h with abdominal pain, pleurisy or large-joint arthritis."
- ],
- [
-  "FMF",
-  "Skin sign of FMF?",
-  "Erysipelas-like erythema on the shin or foot."
- ],
- [
-  "FMF",
-  "Drug of choice in FMF?",
-  "Daily lifelong colchicine."
- ],
- [
-  "FMF",
-  "Complication colchicine prevents in FMF?",
-  "AA amyloidosis (nephrotic syndrome, renal failure)."
- ],
- [
-  "FMF",
-  "Monitoring in FMF?",
-  "CRP/serum amyloid A normal between attacks; urine protein every 6–12 months."
- ],
- [
-  "PFAPA",
-  "What does PFAPA stand for?",
-  "Periodic fever, aphthous stomatitis, pharyngitis, cervical adenitis."
- ],
- [
-  "PFAPA",
-  "Treatment of a PFAPA attack?",
-  "Single dose of prednisolone 1–2 mg/kg."
- ]
+ ["Kawasaki", "What is Kawasaki disease?", "Acute self-limiting vasculitis of medium-sized arteries in young children.", 1, "vsi2wt"],
+ ["Kawasaki", "At what age does Kawasaki disease occur?", "80% of cases are under 5 years of age.", 1, "1x74xvz"],
+ ["Kawasaki", "What are the diagnostic criteria of Kawasaki disease?", "Fever for 5 days or more, with at least 4 of the 5 principal features.", 1, "1mejkvq"],
+ ["Kawasaki", "What are the five principal features of Kawasaki disease?", "Conjunctivitis, rash, cervical lymphadenopathy, changes in the mouth, and changes in the hands and feet.", 1, "gkzsj5"],
+ ["Kawasaki", "What type of conjunctivitis occurs in Kawasaki disease?", "Bilateral and non-purulent, sparing the area around the iris.", 2, "1bvgv39"],
+ ["Kawasaki", "How large is the cervical lymph node in Kawasaki disease?", "1.5 cm or more, usually on one side.", 2, "75xwf2"],
+ ["Kawasaki", "What are the changes in the mouth in Kawasaki disease?", "Red cracked lips, a strawberry tongue and a red throat.", 2, "1thswob"],
+ ["Kawasaki", "When does peeling of the fingertips occur in Kawasaki disease?", "In the subacute phase, in weeks 2–3.", 2, "1luw4jg"],
+ ["Kawasaki", "Which unusual clue appears at the vaccination site in Kawasaki disease?", "Redness or crusting at the BCG scar.", 3, "gnrxrl"],
+ ["Kawasaki", "What happens to the platelets in Kawasaki disease?", "They are normal in week 1 and rise in weeks 2–3, often above 1 million.", 2, "1r6dre6"],
+ ["Kawasaki", "What is the urine finding in Kawasaki disease?", "Sterile pyuria.", 2, "1tq9ypc"],
+ ["Kawasaki", "What is the most important complication of Kawasaki disease?", "Coronary artery aneurysm.", 1, "rz6sw6"],
+ ["Kawasaki", "What is the risk of coronary aneurysm without and with treatment?", "About 25% without treatment and under 5% with intravenous immunoglobulin.", 2, "mwumr5"],
+ ["Kawasaki", "When do coronary aneurysms form in Kawasaki disease?", "In weeks 2–4.", 2, "gr6y0y"],
+ ["Kawasaki", "Who has the highest risk of coronary aneurysm?", "Infants under 1 year, boys, children with fever for more than 10 days, and children treated late.", 2, "lvnakh"],
+ ["Kawasaki", "What is incomplete Kawasaki disease?", "Fever for 5 days or more with fewer than 4 principal features; it is common in infants.", 2, "1ateshb"],
+ ["Kawasaki", "How is suspected incomplete Kawasaki disease investigated?", "With CRP, ESR, supporting laboratory tests and an echocardiogram.", 3, "nkcei8"],
+ ["Kawasaki", "How is Kawasaki disease told apart from scarlet fever?", "Scarlet fever has exudative tonsillitis and a sandpaper rash, without conjunctivitis.", 3, "qkzqm7"],
+ ["Kawasaki", "What is MIS-C?", "A Kawasaki-like illness after COVID-19, in older children, with more shock.", 2, "dob418"],
+ ["Treatment", "What is the dose of intravenous immunoglobulin in Kawasaki disease?", "2 g/kg as a single infusion over 10–12 hours.", 2, "gum7m2"],
+ ["Treatment", "When is intravenous immunoglobulin ideally given?", "Within 10 days of the start of the fever.", 2, "9ni0xi"],
+ ["Treatment", "What is the high dose of aspirin in Kawasaki disease?", "80–100 mg/kg/day in 4 doses, until the child has been afebrile for 48–72 hours.", 2, "lbisa0"],
+ ["Treatment", "What is the low dose of aspirin in Kawasaki disease?", "3–5 mg/kg once daily until 6–8 weeks, if the echocardiogram is normal.", 2, "pln6vu"],
+ ["Treatment", "Why is aspirin given first in a high dose and then in a low dose?", "The high dose is anti-inflammatory; the low dose is antiplatelet.", 2, "1299xm3"],
+ ["Treatment", "When is echocardiography done in Kawasaki disease?", "At diagnosis, at 1–2 weeks and at 6–8 weeks.", 2, "i8ykur"],
+ ["Treatment", "How is a giant coronary aneurysm (8 mm or more) treated?", "With anticoagulation (warfarin or low-molecular-weight heparin) together with aspirin.", 3, "iwohyz"],
+ ["Treatment", "What is the first sign of response to intravenous immunoglobulin?", "The fever settles within 36 hours of the infusion.", 2, "132yxlk"],
+ ["Treatment", "How is resistance to intravenous immunoglobulin defined and treated?", "Fever 36 hours or more after the infusion: a second dose of 2 g/kg, or steroids or infliximab.", 3, "1nt46xo"],
+ ["Treatment", "For how long are live vaccines delayed after intravenous immunoglobulin?", "11 months.", 3, "bja3ti"],
+ ["Treatment", "What is the risk of influenza or varicella in a child on aspirin?", "Reye syndrome.", 2, "yfxcqa"],
+ ["Treatment", "Why is ibuprofen avoided with aspirin in Kawasaki disease?", "It blocks the antiplatelet action of aspirin.", 3, "a7xc5d"],
+ ["Vasculitis", "What is the commonest vasculitis of childhood?", "IgA vasculitis (Henoch–Schönlein purpura).", 1, "10x0u8s"],
+ ["Vasculitis", "Which large-vessel vasculitis affects adolescent girls?", "Takayasu arteritis.", 2, "x6a44q"],
+ ["Vasculitis", "What are the clues to Takayasu arteritis?", "Absent arm pulses, a difference in blood pressure between the arms, bruits and hypertension.", 2, "1nw5ram"],
+ ["Vasculitis", "What are the features of polyarteritis nodosa?", "Hypertension, skin nodules, livedo, testicular pain and mononeuritis.", 2, "1bzebnc"],
+ ["Vasculitis", "Which antibody is found in granulomatosis with polyangiitis?", "c-ANCA.", 2, "9y6h6i"],
+ ["FMF", "How is familial Mediterranean fever (FMF) inherited, and which gene is involved?", "Autosomal recessive; the MEFV gene (pyrin).", 2, "mkfgsd"],
+ ["FMF", "What is a typical attack of familial Mediterranean fever?", "Fever for 12–72 hours with abdominal pain, pleurisy or arthritis of a large joint.", 2, "1c6326e"],
+ ["FMF", "What is the skin sign of familial Mediterranean fever?", "An erysipelas-like redness on the shin or foot.", 2, "kb3b8p"],
+ ["FMF", "What is the drug of choice in familial Mediterranean fever?", "Colchicine, daily and for life.", 1, "19s1hlx"],
+ ["FMF", "Which complication does colchicine prevent in familial Mediterranean fever?", "AA amyloidosis, with nephrotic syndrome and renal failure.", 2, "1nzdlar"],
+ ["FMF", "How is familial Mediterranean fever monitored?", "The CRP and serum amyloid A should be normal between attacks, and the urine protein is checked every 6–12 months.", 3, "cyd99f"],
+ ["PFAPA", "What does PFAPA stand for?", "Periodic fever, aphthous stomatitis, pharyngitis and cervical adenitis.", 1, "ngg68f"],
+ ["PFAPA", "How is an attack of PFAPA treated?", "With a single dose of prednisolone 1–2 mg/kg.", 2, "s5x3pv"]
 ]

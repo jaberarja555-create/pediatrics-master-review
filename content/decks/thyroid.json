@@ -1,102 +1,22 @@
 [
- [
-  "CH",
-  "Commonest preventable cause of intellectual disability?",
-  "Congenital hypothyroidism."
- ],
- [
-  "CH",
-  "Commonest cause of CH?",
-  "Thyroid dysgenesis."
- ],
- [
-  "CH",
-  "Features of CH?",
-  "Prolonged jaundice, constipation, big tongue, umbilical hernia, large AF."
- ],
- [
-  "CH",
-  "Screening test?",
-  "Heel-prick TSH."
- ],
- [
-  "CH",
-  "Treat within?",
-  "2 weeks."
- ],
- [
-  "CH",
-  "Levothyroxine dose in neonate?",
-  "10–15 µg/kg/day."
- ],
- [
-  "CH",
-  "Bone X-ray sign?",
-  "Absent distal femoral epiphysis."
- ],
- [
-  "Acquired",
-  "Commonest acquired cause?",
-  "Hashimoto thyroiditis."
- ],
- [
-  "Acquired",
-  "Antibody in Hashimoto?",
-  "Anti-TPO."
- ],
- [
-  "Acquired",
-  "Growth in hypothyroidism?",
-  "Short, overweight, delayed bone age."
- ],
- [
-  "Acquired",
-  "Associated syndromes?",
-  "Down, Turner, type 1 DM."
- ],
- [
-  "Graves",
-  "Commonest hyperthyroidism?",
-  "Graves disease."
- ],
- [
-  "Graves",
-  "Antibody?",
-  "TSH-receptor antibody."
- ],
- [
-  "Graves",
-  "TSH in Graves?",
-  "Suppressed."
- ],
- [
-  "Graves",
-  "Drug?",
-  "Carbimazole 0.25–1 mg/kg/day."
- ],
- [
-  "Graves",
-  "Serious side effect?",
-  "Agranulocytosis."
- ],
- [
-  "Graves",
-  "Symptom control?",
-  "Propranolol."
- ],
- [
-  "Goitre",
-  "Endemic goitre cause?",
-  "Iodine deficiency."
- ],
- [
-  "Goitre",
-  "Prevention?",
-  "Iodised salt."
- ],
- [
-  "Nodule",
-  "Thyroid nodule in child?",
-  "Ultrasound + FNA (cancer risk)."
- ]
+ ["Congenital hypothyroidism", "What is the commonest preventable cause of intellectual disability that is screened for at birth?", "Congenital hypothyroidism.", 1, "1on3jvm"],
+ ["Congenital hypothyroidism", "What is the commonest cause of congenital hypothyroidism?", "Thyroid dysgenesis.", 1, "jiyt9p"],
+ ["Congenital hypothyroidism", "What are the features of congenital hypothyroidism?", "Prolonged jaundice, constipation, a large tongue, an umbilical hernia and a large anterior fontanelle.", 1, "1sm91w4"],
+ ["Congenital hypothyroidism", "What is the screening test for congenital hypothyroidism?", "The heel-prick TSH.", 1, "t2fajn"],
+ ["Congenital hypothyroidism", "Within how long must congenital hypothyroidism be treated?", "Within 2 weeks of birth.", 2, "xvhc7i"],
+ ["Congenital hypothyroidism", "What is the dose of levothyroxine in a newborn?", "10–15 µg/kg/day.", 2, "1fwhhpf"],
+ ["Congenital hypothyroidism", "What is the bone X-ray sign of congenital hypothyroidism?", "An absent distal femoral epiphysis at birth.", 3, "1xp9pvf"],
+ ["Acquired hypothyroidism", "What is the commonest cause of acquired hypothyroidism?", "Hashimoto thyroiditis.", 1, "n9o3gj"],
+ ["Acquired hypothyroidism", "Which antibody is found in Hashimoto thyroiditis?", "Anti-thyroid peroxidase (anti-TPO).", 2, "utw16u"],
+ ["Acquired hypothyroidism", "What happens to growth in hypothyroidism?", "The child is short and overweight, with a delayed bone age.", 2, "gq0ukn"],
+ ["Acquired hypothyroidism", "Which conditions are associated with autoimmune hypothyroidism?", "Down syndrome, Turner syndrome and type 1 diabetes.", 2, "16gjqs7"],
+ ["Graves disease", "What is the commonest cause of hyperthyroidism in children?", "Graves disease.", 1, "10spbqq"],
+ ["Graves disease", "Which antibody causes Graves disease?", "The TSH-receptor antibody.", 2, "1x5gkgr"],
+ ["Graves disease", "What is the TSH in Graves disease?", "Suppressed.", 1, "13sld4d"],
+ ["Graves disease", "Which drug treats Graves disease, and at what dose?", "Carbimazole 0.25–1 mg/kg/day.", 2, "13ha4f"],
+ ["Graves disease", "What is the serious side effect of carbimazole?", "Agranulocytosis.", 2, "13v21t"],
+ ["Graves disease", "Which drug controls the symptoms of hyperthyroidism?", "Propranolol.", 1, "15gshbt"],
+ ["Goitre", "What causes endemic goitre?", "Iodine deficiency.", 1, "1y24fh"],
+ ["Goitre", "How is endemic goitre prevented?", "With iodised salt.", 1, "mrwiy7"],
+ ["Nodule", "How is a thyroid nodule in a child investigated, and why?", "With ultrasound and fine-needle aspiration, because the risk of cancer is higher in children.", 3, "53sc18"]
 ]

@@ -1,192 +1,40 @@
 [
- [
-  "Approach",
-  "What two questions come first in a child with a limp or painful joint?",
-  "Is the child febrile or unwell, and how many joints are involved (with the age)."
- ],
- [
-  "Approach",
-  "Morning stiffness that eases with activity suggests?",
-  "Inflammatory arthritis."
- ],
- [
-  "Approach",
-  "Bone pain that wakes the child at night suggests?",
-  "Leukaemia or a bone tumour."
- ],
- [
-  "Approach",
-  "Why must the hip be examined in a child with knee pain?",
-  "Hip pain is referred to the knee (obturator and femoral nerves)."
- ],
- [
-  "Causes by age",
-  "Toddler refuses to walk after a minor twist, afebrile, tender tibia?",
-  "Toddler's fracture (spiral fracture of the tibia)."
- ],
- [
-  "Causes by age",
-  "Commonest cause of acute limp at 3–10 years?",
-  "Transient synovitis of the hip."
- ],
- [
-  "Causes by age",
-  "Swollen painful hands and feet in an infant with sickle cell disease?",
-  "Dactylitis (hand–foot syndrome)."
- ],
- [
-  "Septic arthritis",
-  "Commonest organism in septic arthritis at all ages?",
-  "Staphylococcus aureus."
- ],
- [
-  "Septic arthritis",
-  "Organism of septic arthritis in children under 4 that is hard to culture?",
-  "Kingella kingae."
- ],
- [
-  "Septic arthritis",
-  "Organism of bone and joint infection typical of sickle cell disease?",
-  "Salmonella."
- ],
- [
-  "Septic arthritis",
-  "How does septic arthritis present in a neonate?",
-  "Pseudoparalysis (not moving the limb) and irritability."
- ],
- [
-  "Septic arthritis",
-  "Position of a hip with septic arthritis?",
-  "Flexed, abducted and externally rotated."
- ],
- [
-  "Septic arthritis",
-  "Key test in suspected septic arthritis?",
-  "Joint aspiration: Gram stain, culture and cell count."
- ],
- [
-  "Septic arthritis",
-  "White cell count of joint fluid in septic arthritis?",
-  "Usually over 50 000/mm³, mostly neutrophils."
- ],
- [
-  "Septic arthritis",
-  "Four Kocher criteria?",
-  "Fever > 38.5 °C, refusal to bear weight, ESR > 40 mm/h, WBC > 12 000/mm³."
- ],
- [
-  "Septic arthritis",
-  "Meaning of 3 or 4 Kocher criteria?",
-  "Septic arthritis is very likely (over 90%): aspirate at once."
- ],
- [
-  "Septic arthritis",
-  "Why is the septic hip drained surgically?",
-  "Aspiration alone does not decompress it; pressure can kill the femoral head."
- ],
- [
-  "Septic arthritis",
-  "Empirical antibiotics for septic arthritis?",
-  "IV cloxacillin 50 mg/kg 6-hourly + ceftriaxone 80–100 mg/kg once daily."
- ],
- [
-  "Septic arthritis",
-  "Total duration of antibiotics for septic arthritis?",
-  "About 3 weeks (IV then oral)."
- ],
- [
-  "Septic arthritis",
-  "First signs that septic arthritis is responding?",
-  "Fever and pain settle within 48–72 h; CRP halves in 2–3 days."
- ],
- [
-  "Septic arthritis",
-  "Fever and high CRP after 72 h of treatment means?",
-  "Undrained pus, adjacent osteomyelitis or resistant organism: re-image and re-drain."
- ],
- [
-  "Osteomyelitis",
-  "Usual site of acute osteomyelitis?",
-  "Metaphysis of long bones (femur, tibia)."
- ],
- [
-  "Osteomyelitis",
-  "When does the X-ray become abnormal in osteomyelitis?",
-  "After 10–14 days (periosteal reaction)."
- ],
- [
-  "Osteomyelitis",
-  "Best early imaging for osteomyelitis?",
-  "MRI."
- ],
- [
-  "Osteomyelitis",
-  "Total antibiotic duration in osteomyelitis?",
-  "About 4–6 weeks."
- ],
- [
-  "Transient synovitis",
-  "Typical child with transient synovitis?",
-  "Well boy 3–10 years, limp after a viral illness, bears weight, afebrile."
- ],
- [
-  "Transient synovitis",
-  "Treatment of transient synovitis?",
-  "Rest and NSAIDs; settles in 1–2 weeks."
- ],
- [
-  "Perthes",
-  "What is Perthes disease?",
-  "Idiopathic avascular necrosis of the femoral head."
- ],
- [
-  "Perthes",
-  "Typical patient with Perthes disease?",
-  "Boy 4–8 years, painless limp, small for age."
- ],
- [
-  "Perthes",
-  "Hip movements lost first in Perthes disease?",
-  "Abduction and internal rotation."
- ],
- [
-  "SCFE",
-  "Typical patient with SCFE?",
-  "Obese adolescent boy (10–16 years) with knee or hip pain."
- ],
- [
-  "SCFE",
-  "Sign of SCFE on hip flexion?",
-  "The leg rolls into external rotation."
- ],
- [
-  "SCFE",
-  "Best X-ray view for SCFE?",
-  "Frog-leg lateral view of both hips."
- ],
- [
-  "SCFE",
-  "Treatment of SCFE?",
-  "Urgent surgical pinning; no weight bearing until fixed."
- ],
- [
-  "Other causes",
-  "Arthritis 1–4 weeks after bloody diarrhoea?",
-  "Reactive arthritis."
- ],
- [
-  "Other causes",
-  "Recurrent haemarthrosis in a boy after minor trauma?",
-  "Haemophilia."
- ],
- [
-  "Growing pains",
-  "Features of growing pains?",
-  "Bilateral evening/night leg pain, 3–12 years, gone by morning, normal examination."
- ],
- [
-  "Growing pains",
-  "Red flags that exclude growing pains?",
-  "One leg, joint pain, limp, daytime pain, fever, weight loss or abnormal blood count."
- ]
+ ["Approach", "What two questions come first in a child with a limp or painful joint?", "Is the child febrile or unwell, and how many joints are involved (with the age).", 2, "7lta33"],
+ ["Approach", "What does morning stiffness that eases with activity suggest?", "Inflammatory arthritis.", 2, "1g5jrs2"],
+ ["Approach", "What does bone pain that wakes the child at night suggest?", "Leukaemia or a bone tumour.", 2, "ms21fu"],
+ ["Approach", "Why must the hip be examined in a child with knee pain?", "Hip pain is referred to the knee (obturator and femoral nerves).", 3, "ibau5j"],
+ ["Causes by age", "A toddler refuses to walk after a minor twist; he has no fever and the tibia is tender. What is the diagnosis?", "Toddler's fracture (spiral fracture of the tibia).", 3, "x03ma0"],
+ ["Causes by age", "What is the commonest cause of an acute limp at 3–10 years?", "Transient synovitis of the hip.", 1, "69ysxg"],
+ ["Causes by age", "An infant with sickle cell disease has swollen, painful hands and feet. What is the diagnosis?", "Dactylitis (hand–foot syndrome).", 2, "13ijltk"],
+ ["Septic arthritis", "What is the commonest organism of septic arthritis at all ages?", "Staphylococcus aureus.", 1, "pkivkr"],
+ ["Septic arthritis", "Which organism of septic arthritis in children under 4 years is hard to culture?", "Kingella kingae.", 2, "1un6f7v"],
+ ["Septic arthritis", "Which organism of bone and joint infection is typical of sickle cell disease?", "Salmonella.", 1, "ttijj8"],
+ ["Septic arthritis", "How does septic arthritis present in a neonate?", "Pseudoparalysis (not moving the limb) and irritability.", 2, "j76m01"],
+ ["Septic arthritis", "In which position is a hip with septic arthritis held?", "Flexed, abducted and externally rotated.", 2, "2kh2r9"],
+ ["Septic arthritis", "What is the key test in suspected septic arthritis?", "Joint aspiration: Gram stain, culture and cell count.", 1, "149kvth"],
+ ["Septic arthritis", "What is the white cell count of the joint fluid in septic arthritis?", "Usually over 50 000/mm³, mostly neutrophils.", 2, "b5r4of"],
+ ["Septic arthritis", "What are the four Kocher criteria?", "Fever > 38.5 °C, refusal to bear weight, ESR > 40 mm/h, WBC > 12 000/mm³.", 2, "1gz3ndc"],
+ ["Septic arthritis", "What do 3 or 4 Kocher criteria mean?", "Septic arthritis is very likely (over 90%): aspirate at once.", 3, "1oryk18"],
+ ["Septic arthritis", "Why is the septic hip drained surgically?", "Aspiration alone does not decompress it; pressure can kill the femoral head.", 3, "kdtapl"],
+ ["Septic arthritis", "Which antibiotics are given empirically for septic arthritis?", "Intravenous cloxacillin 50 mg/kg 6-hourly with ceftriaxone 80–100 mg/kg once daily.", 2, "djaubb"],
+ ["Septic arthritis", "What is the total duration of antibiotics for septic arthritis?", "About 3 weeks (intravenous, then oral).", 2, "13bz5hk"],
+ ["Septic arthritis", "What are the first signs that septic arthritis is responding to treatment?", "The fever and pain settle within 48–72 hours, and the CRP halves in 2–3 days.", 2, "1q1ov1n"],
+ ["Septic arthritis", "What do fever and a high CRP after 72 hours of treatment mean?", "Undrained pus, adjacent osteomyelitis or a resistant organism: the joint is imaged and drained again.", 3, "9nonep"],
+ ["Osteomyelitis", "What is the usual site of acute osteomyelitis?", "The metaphysis of the long bones (femur and tibia).", 1, "1vjo3k7"],
+ ["Osteomyelitis", "When does the X-ray become abnormal in osteomyelitis?", "After 10–14 days, when a periosteal reaction appears.", 2, "13xv65a"],
+ ["Osteomyelitis", "What is the best early imaging for osteomyelitis?", "MRI.", 1, "1obe579"],
+ ["Osteomyelitis", "What is the total antibiotic duration in osteomyelitis?", "About 4–6 weeks.", 2, "8j7w14"],
+ ["Transient synovitis", "Which child typically has transient synovitis?", "A well boy of 3–10 years with a limp after a viral illness, who bears weight and has no fever.", 2, "fgp2pj"],
+ ["Transient synovitis", "How is transient synovitis treated?", "With rest and NSAIDs; it settles in 1–2 weeks.", 1, "17mnh2q"],
+ ["Perthes", "What is Perthes disease?", "Idiopathic avascular necrosis of the femoral head.", 1, "1wakqla"],
+ ["Perthes", "Which child typically has Perthes disease?", "A boy of 4–8 years with a painless limp, small for his age.", 2, "oz8zn7"],
+ ["Perthes", "Which hip movements are lost first in Perthes disease?", "Abduction and internal rotation.", 2, "8v8ktc"],
+ ["SCFE", "Which child typically has slipped capital femoral epiphysis (SCFE)?", "An obese adolescent boy (10–16 years) with knee or hip pain.", 2, "y11dwh"],
+ ["SCFE", "What is the sign of slipped capital femoral epiphysis when the hip is flexed?", "The leg rolls into external rotation.", 2, "u6ay3b"],
+ ["SCFE", "What is the best X-ray view for slipped capital femoral epiphysis?", "Frog-leg lateral view of both hips.", 2, "1eo3cx1"],
+ ["SCFE", "How is slipped capital femoral epiphysis treated?", "With urgent surgical pinning; no weight is borne on the leg until it is fixed.", 2, "1vimrf3"],
+ ["Other causes", "What causes arthritis 1–4 weeks after bloody diarrhoea?", "Reactive arthritis.", 2, "1i4tcs0"],
+ ["Other causes", "A boy has recurrent bleeding into a joint after minor trauma. What is the diagnosis?", "Haemophilia.", 2, "1mm5fp8"],
+ ["Growing pains", "What are the features of growing pains?", "Pain in both legs in the evening or at night, at 3–12 years, gone by the morning, with a normal examination.", 1, "rbcp"],
+ ["Growing pains", "Which red flags exclude growing pains?", "Pain in one leg, joint pain, a limp, daytime pain, fever, weight loss or an abnormal blood count.", 3, "lwulpm"]
 ]

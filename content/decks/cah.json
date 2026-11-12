@@ -1,102 +1,22 @@
 [
- [
-  "Basics",
-  "Inheritance?",
-  "Autosomal recessive."
- ],
- [
-  "Basics",
-  "Commonest enzyme?",
-  "21-hydroxylase (90–95%)."
- ],
- [
-  "Basics",
-  "Mechanism of virilisation?",
-  "↑ ACTH → precursors to androgens."
- ],
- [
-  "Clinical",
-  "Girls present with?",
-  "Ambiguous genitalia."
- ],
- [
-  "Clinical",
-  "Boys present with?",
-  "Salt-wasting crisis at 1–3 weeks."
- ],
- [
-  "Clinical",
-  "Electrolytes in crisis?",
-  "↓ Na, ↑ K, ↓ glucose, acidosis."
- ],
- [
-  "Clinical",
-  "Long-term growth if untreated?",
-  "Tall child, short adult."
- ],
- [
-  "Diagnosis",
-  "Diagnostic test?",
-  "↑ 17-OHP."
- ],
- [
-  "Diagnosis",
-  "Ambiguous genitalia urgent tests?",
-  "Karyotype, pelvic US, 17-OHP, electrolytes."
- ],
- [
-  "DDx",
-  "Vomiting boy, low K alkalosis?",
-  "Pyloric stenosis."
- ],
- [
-  "DDx",
-  "Vomiting boy, high K?",
-  "CAH."
- ],
- [
-  "Crisis",
-  "Crisis fluids?",
-  "0.9% saline 20 mL/kg bolus."
- ],
- [
-  "Crisis",
-  "Hydrocortisone infant crisis?",
-  "25 mg IV."
- ],
- [
-  "Long-term",
-  "Maintenance hydrocortisone?",
-  "10–15 mg/m²/day in 3 doses."
- ],
- [
-  "Long-term",
-  "Mineralocorticoid?",
-  "Fludrocortisone."
- ],
- [
-  "Long-term",
-  "Salt supplement?",
-  "NaCl in infancy."
- ],
- [
-  "Long-term",
-  "Sick-day rule?",
-  "Double/triple hydrocortisone."
- ],
- [
-  "Long-term",
-  "Under-treatment signs?",
-  "Fast growth, advanced bone age."
- ],
- [
-  "Adrenal",
-  "Commonest Cushing in children?",
-  "Iatrogenic (steroids)."
- ],
- [
-  "Adrenal",
-  "Addison pigmentation cause?",
-  "↑ ACTH."
- ]
+ ["Basics", "How is congenital adrenal hyperplasia inherited?", "Autosomal recessive.", 1, "1avlwwl"],
+ ["Basics", "Which enzyme is most commonly deficient?", "21-hydroxylase (90–95% of cases).", 1, "oukhh6"],
+ ["Basics", "Why does virilisation occur in congenital adrenal hyperplasia?", "The high ACTH drives the steroid precursors towards androgens.", 2, "1rbh6z8"],
+ ["Clinical", "How do girls with congenital adrenal hyperplasia present?", "With ambiguous genitalia.", 1, "1v1nskr"],
+ ["Clinical", "How do boys with congenital adrenal hyperplasia present?", "With a salt-wasting crisis at 1–3 weeks of age.", 2, "x6f057"],
+ ["Clinical", "What are the electrolytes in a salt-wasting crisis?", "Low sodium, high potassium, low glucose and acidosis.", 2, "jl6iqg"],
+ ["Clinical", "What happens to growth in untreated congenital adrenal hyperplasia?", "A tall child who becomes a short adult.", 3, "1msfgp8"],
+ ["Diagnosis", "What is the diagnostic test for congenital adrenal hyperplasia?", "A raised 17-hydroxyprogesterone (17-OHP).", 1, "t0eic4"],
+ ["Diagnosis", "Which tests are done urgently in a baby with ambiguous genitalia?", "A karyotype, a pelvic ultrasound, 17-OHP and electrolytes.", 2, "gly9pj"],
+ ["Differential", "A vomiting boy has a low potassium and an alkalosis. What is the likely cause?", "Pyloric stenosis.", 3, "19diwui"],
+ ["Differential", "A vomiting boy has a high potassium. What is the likely cause?", "Congenital adrenal hyperplasia.", 3, "1qf9rjj"],
+ ["Crisis", "Which fluid is given in an adrenal crisis?", "A bolus of 0.9% saline, 20 ml/kg.", 2, "1x9t7ax"],
+ ["Crisis", "What dose of hydrocortisone is given to an infant in crisis?", "25 mg intravenously.", 2, "1e5bhok"],
+ ["Long-term", "What is the maintenance dose of hydrocortisone?", "10–15 mg/m²/day in 3 doses.", 2, "1oj7450"],
+ ["Long-term", "Which mineralocorticoid is given?", "Fludrocortisone.", 1, "3ty8pu"],
+ ["Long-term", "Which supplement is given in infancy?", "Sodium chloride.", 2, "q2v6rg"],
+ ["Long-term", "What is the sick-day rule?", "The hydrocortisone dose is doubled or tripled during illness.", 2, "1fk1i1c"],
+ ["Long-term", "What are the signs of under-treatment?", "Fast growth and an advanced bone age.", 3, "14ehi2u"],
+ ["Adrenal", "What is the commonest cause of Cushing syndrome in children?", "Iatrogenic: steroid treatment.", 1, "511uzz"],
+ ["Adrenal", "What causes the pigmentation of Addison disease?", "A high ACTH.", 2, "1iy11w7"]
 ]

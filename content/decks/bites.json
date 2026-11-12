@@ -1,107 +1,23 @@
 [
- [
-  "Snake",
-  "Haemotoxic snakes in Sudan?",
-  "Carpet viper, puff adder."
- ],
- [
-  "Snake",
-  "Viper features?",
-  "Swelling, blistering, bleeding, incoagulable blood."
- ],
- [
-  "Snake",
-  "Neurotoxic first sign?",
-  "Ptosis."
- ],
- [
-  "Snake",
-  "First aid?",
-  "Keep still, immobilise limb, transport."
- ],
- [
-  "Snake",
-  "Avoid?",
-  "Cutting, sucking, tight tourniquet."
- ],
- [
-  "Snake",
-  "Bedside test?",
-  "20-minute whole blood clotting test."
- ],
- [
-  "Snake",
-  "Antivenom indications?",
-  "Systemic envenoming or severe local swelling."
- ],
- [
-  "Snake",
-  "Child antivenom dose?",
-  "Same as adult."
- ],
- [
-  "Snake",
-  "Repeat antivenom when?",
-  "Still incoagulable after 6 h."
- ],
- [
-  "Snake",
-  "Prepare for?",
-  "Anaphylaxis (adrenaline ready)."
- ],
- [
-  "Snake",
-  "Neurotoxic support?",
-  "Ventilation, neostigmine trial."
- ],
- [
-  "Snake",
-  "Observe?",
-  "At least 24 h."
- ],
- [
-  "Scorpion",
-  "Mechanism?",
-  "Catecholamine and acetylcholine release."
- ],
- [
-  "Scorpion",
-  "Grade III features?",
-  "Pulmonary oedema, shock, convulsions."
- ],
- [
-  "Scorpion",
-  "Local pain treatment?",
-  "Lidocaine infiltration."
- ],
- [
-  "Scorpion",
-  "Drug for hypertension/oedema?",
-  "Prazosin 30 µg/kg."
- ],
- [
-  "Scorpion",
-  "Systemic envenoming?",
-  "Scorpion antivenom."
- ],
- [
-  "Dog",
-  "First step?",
-  "Wash wound 15 min with soap and water."
- ],
- [
-  "Dog",
-  "Rabies vaccine schedule?",
-  "Days 0, 3, 7, 14 (± 28)."
- ],
- [
-  "Dog",
-  "When add RIG?",
-  "Category III exposures."
- ],
- [
-  "Dog",
-  "Observe dog?",
-  "10 days."
- ]
+ ["Snake bite", "Which haemotoxic snakes are found in Sudan?", "The carpet viper and the puff adder.", 1, "egxj6d"],
+ ["Snake bite", "What are the features of a viper bite?", "Swelling, blistering, bleeding and incoagulable blood.", 1, "1vppl64"],
+ ["Snake bite", "What is the first sign of neurotoxic envenoming?", "Ptosis.", 2, "qh4rqm"],
+ ["Snake bite", "What is the first aid for a snake bite?", "Keep the child still, immobilise the limb and transport to hospital.", 1, "tc57o3"],
+ ["Snake bite", "What must be avoided after a snake bite?", "Cutting, sucking and a tight tourniquet.", 1, "wmu9hm"],
+ ["Snake bite", "Which bedside test shows envenoming by a viper?", "The 20-minute whole blood clotting test.", 2, "1ttn6dh"],
+ ["Snake bite", "What are the indications for antivenom?", "Systemic envenoming or severe local swelling.", 2, "147ibd9"],
+ ["Snake bite", "What dose of antivenom does a child receive?", "The same dose as an adult.", 3, "gpp23d"],
+ ["Snake bite", "When is antivenom repeated?", "If the blood is still incoagulable after 6 hours.", 2, "185u9zv"],
+ ["Snake bite", "What must be prepared before giving antivenom?", "Treatment for anaphylaxis, with adrenaline ready.", 2, "138k2zz"],
+ ["Snake bite", "What support is given in neurotoxic envenoming?", "Ventilation, and a trial of neostigmine.", 2, "12yf21g"],
+ ["Snake bite", "For how long is a child observed after a snake bite?", "For at least 24 hours.", 1, "6u1epv"],
+ ["Scorpion sting", "What is the mechanism of scorpion envenoming?", "Release of catecholamines and acetylcholine.", 2, "lru52e"],
+ ["Scorpion sting", "What are the features of grade III scorpion envenoming?", "Pulmonary oedema, shock and convulsions.", 2, "2tw91e"],
+ ["Scorpion sting", "How is the local pain of a scorpion sting treated?", "With lidocaine infiltration.", 1, "16j7kos"],
+ ["Scorpion sting", "Which drug treats the hypertension and pulmonary oedema of scorpion envenoming?", "Prazosin 30 µg/kg.", 2, "yohnz6"],
+ ["Scorpion sting", "What is given for systemic scorpion envenoming?", "Scorpion antivenom.", 2, "1jrz9sq"],
+ ["Dog bite", "What is the first step after a dog bite?", "Washing the wound for 15 minutes with soap and water.", 1, "1ld8bj7"],
+ ["Dog bite", "What is the rabies vaccine schedule?", "Days 0, 3, 7 and 14 (and day 28 in some schedules).", 2, "1wilosh"],
+ ["Dog bite", "When is rabies immunoglobulin added?", "For category III exposures.", 2, "8u3hx0"],
+ ["Dog bite", "For how long is the dog observed?", "For 10 days.", 2, "1u1thk7"]
 ]

@@ -1,127 +1,27 @@
 [
- [
-  "Basics",
-  "Cause of type 1 DM?",
-  "Autoimmune β-cell destruction."
- ],
- [
-  "Basics",
-  "Peaks?",
-  "5–7 years and puberty."
- ],
- [
-  "Clinical",
-  "Classic symptoms?",
-  "Polyuria, polydipsia, weight loss, enuresis."
- ],
- [
-  "Clinical",
-  "DKA signs?",
-  "Kussmaul breathing, acetone breath, vomiting, abdominal pain."
- ],
- [
-  "Diagnosis",
-  "Random glucose criterion?",
-  "≥ 11.1 mmol/L with symptoms."
- ],
- [
-  "Diagnosis",
-  "Fasting glucose criterion?",
-  "≥ 7.0 mmol/L."
- ],
- [
-  "Diagnosis",
-  "HbA1c criterion?",
-  "≥ 6.5%."
- ],
- [
-  "Insulin",
-  "Total daily dose pre-pubertal?",
-  "0.7–1 U/kg/day."
- ],
- [
-  "Insulin",
-  "Premixed regimen split?",
-  "⅔ morning, ⅓ evening."
- ],
- [
-  "Insulin",
-  "Lumps at injection site?",
-  "Lipohypertrophy."
- ],
- [
-  "Insulin",
-  "HbA1c target?",
-  "< 7%."
- ],
- [
-  "Hypo",
-  "Hypoglycaemia level?",
-  "< 3.9 mmol/L."
- ],
- [
-  "Hypo",
-  "Conscious hypo treatment?",
-  "15 g fast sugar, recheck 15 min."
- ],
- [
-  "Hypo",
-  "Unconscious hypo treatment?",
-  "Glucagon IM or 10% dextrose 2 mL/kg."
- ],
- [
-  "DKA",
-  "DKA criteria?",
-  "Glucose > 11, pH < 7.3 or HCO₃ < 15, ketones."
- ],
- [
-  "DKA",
-  "Severe DKA?",
-  "pH < 7.1."
- ],
- [
-  "DKA",
-  "Fluid deficit replaced over?",
-  "48 hours."
- ],
- [
-  "DKA",
-  "Insulin start?",
-  "1–2 h after fluids, 0.05–0.1 U/kg/h, no bolus."
- ],
- [
-  "DKA",
-  "Potassium in fluids?",
-  "40 mmol/L KCl."
- ],
- [
-  "DKA",
-  "When add dextrose?",
-  "Glucose < 14–17 mmol/L."
- ],
- [
-  "DKA",
-  "Bicarbonate?",
-  "Not used routinely."
- ],
- [
-  "DKA",
-  "Main cause of death?",
-  "Cerebral oedema."
- ],
- [
-  "DKA",
-  "Cerebral oedema signs?",
-  "Headache, bradycardia, hypertension, confusion."
- ],
- [
-  "DKA",
-  "Cerebral oedema treatment?",
-  "Mannitol 0.5–1 g/kg or 3% saline."
- ],
- [
-  "DKA",
-  "Corrected Na formula?",
-  "Na + 0.3 × (glucose − 5.5)."
- ]
+ ["Basics", "What causes type 1 diabetes?", "Autoimmune destruction of the pancreatic β-cells.", 1, "16em4ib"],
+ ["Basics", "At what ages does type 1 diabetes peak?", "At 5–7 years and at puberty.", 1, "13gx7cb"],
+ ["Clinical", "What are the classic symptoms of type 1 diabetes?", "Polyuria, polydipsia, weight loss and enuresis.", 1, "e5lgiv"],
+ ["Clinical", "What are the signs of diabetic ketoacidosis (DKA)?", "Kussmaul (deep, rapid) breathing, acetone on the breath, vomiting and abdominal pain.", 1, "7evmr3"],
+ ["Diagnosis", "Which random glucose diagnoses diabetes?", "11.1 mmol/L or more, with symptoms.", 1, "103ekr1"],
+ ["Diagnosis", "Which fasting glucose diagnoses diabetes?", "7.0 mmol/L or more.", 1, "q1anca"],
+ ["Diagnosis", "Which HbA1c diagnoses diabetes?", "6.5% or more.", 1, "e65e85"],
+ ["Insulin", "What is the total daily insulin dose before puberty?", "0.7–1 unit/kg/day.", 2, "2gmnog"],
+ ["Insulin", "How is a premixed insulin regimen split?", "Two thirds in the morning and one third in the evening.", 2, "1h17gek"],
+ ["Insulin", "What causes lumps at the injection sites?", "Lipohypertrophy, from injecting repeatedly into the same place.", 2, "l8yd6j"],
+ ["Insulin", "What is the HbA1c target in children with diabetes?", "Below 7%.", 1, "13dfvl3"],
+ ["Hypoglycaemia", "At what glucose level is a child with diabetes hypoglycaemic?", "Below 3.9 mmol/L.", 1, "deq3eh"],
+ ["Hypoglycaemia", "How is hypoglycaemia treated in a conscious child?", "With 15 g of fast-acting sugar, then the glucose is rechecked after 15 minutes.", 2, "16i508d"],
+ ["Hypoglycaemia", "How is hypoglycaemia treated in an unconscious child?", "With intramuscular glucagon, or 10% dextrose 2 ml/kg intravenously.", 2, "1vahjas"],
+ ["DKA", "What are the criteria of diabetic ketoacidosis?", "A glucose above 11 mmol/L, a pH below 7.3 or bicarbonate below 15 mmol/L, and ketones.", 2, "2rokhm"],
+ ["DKA", "What pH defines severe diabetic ketoacidosis?", "Below 7.1.", 1, "fc1l2p"],
+ ["DKA", "Over how long is the fluid deficit replaced in DKA?", "Over 48 hours.", 2, "bipbyf"],
+ ["DKA", "How is insulin started in DKA?", "1–2 hours after the fluids are started, at 0.05–0.1 unit/kg/h, with no bolus.", 2, "lzomcz"],
+ ["DKA", "How much potassium is added to the fluids in DKA?", "40 mmol/L of potassium chloride.", 2, "9tsr52"],
+ ["DKA", "When is dextrose added to the fluids in DKA?", "When the glucose falls below 14–17 mmol/L.", 2, "1xt9dbi"],
+ ["DKA", "Is bicarbonate used in DKA?", "Not routinely.", 2, "1xd2oox"],
+ ["DKA", "What is the main cause of death in DKA?", "Cerebral oedema.", 1, "9dwbjq"],
+ ["DKA", "What are the signs of cerebral oedema in DKA?", "Headache, bradycardia, hypertension and confusion.", 2, "9j08ge"],
+ ["DKA", "How is cerebral oedema in DKA treated?", "With mannitol 0.5–1 g/kg or 3% saline.", 2, "a9kvho"],
+ ["DKA", "How is the corrected sodium calculated in DKA?", "Corrected sodium = measured sodium + 0.3 × (glucose − 5.5), in mmol/L.", 3, "v43dov"]
 ]

@@ -1,122 +1,26 @@
 [
- [
-  "Triage",
-  "What is ETAT?",
-  "WHO Emergency Triage Assessment and Treatment."
- ],
- [
-  "Triage",
-  "When is triage done?",
-  "On arrival, before registration."
- ],
- [
-  "Triage",
-  "Three triage groups?",
-  "Emergency, priority, non-urgent (queue)."
- ],
- [
-  "Emergency",
-  "Emergency signs?",
-  "Airway/breathing problems, shock, coma, convulsing, severe dehydration."
- ],
- [
-  "Emergency",
-  "ETAT shock signs?",
-  "Cold hands, CRT > 3 s, weak fast pulse."
- ],
- [
-  "Emergency",
-  "AVPU coma level?",
-  "P or U."
- ],
- [
-  "Priority",
-  "Tiny baby?",
-  "< 2 months."
- ],
- [
-  "Priority",
-  "Priority signs examples?",
-  "Trauma, pallor, poisoning, pain, burns, oedema, wasting."
- ],
- [
-  "Treatment",
-  "Fluid bolus without SAM?",
-  "10–20 mL/kg crystalloid."
- ],
- [
-  "Treatment",
-  "Shock in SAM?",
-  "15 mL/kg over 1 h."
- ],
- [
-  "Treatment",
-  "Dextrose for hypoglycaemia?",
-  "10% dextrose 5 mL/kg."
- ],
- [
-  "Treatment",
-  "Convulsing child?",
-  "Rectal diazepam 0.5 mg/kg."
- ],
- [
-  "Shock",
-  "Commonest shock type?",
-  "Hypovolaemic."
- ],
- [
-  "Shock",
-  "Cardiogenic shock clues?",
-  "Big liver, gallop, crackles."
- ],
- [
-  "Shock",
-  "Septic shock antibiotics?",
-  "Ceftriaxone within 1 hour."
- ],
- [
-  "Shock",
-  "Inotrope in cold septic shock?",
-  "Adrenaline."
- ],
- [
-  "Shock",
-  "No IV access in 90 s?",
-  "Intraosseous."
- ],
- [
-  "CPR",
-  "Rescue breaths first?",
-  "5."
- ],
- [
-  "CPR",
-  "Compression ratio?",
-  "15 : 2."
- ],
- [
-  "CPR",
-  "Rate?",
-  "100–120/min."
- ],
- [
-  "CPR",
-  "Commonest arrest rhythm?",
-  "Asystole/PEA."
- ],
- [
-  "CPR",
-  "Adrenaline dose in arrest?",
-  "10 µg/kg (0.1 mL/kg 1:10 000)."
- ],
- [
-  "CPR",
-  "Defibrillation energy?",
-  "4 J/kg."
- ],
- [
-  "CPR",
-  "Reversible causes?",
-  "4 Hs and 4 Ts."
- ]
+ ["Triage", "What is ETAT?", "The WHO Emergency Triage Assessment and Treatment guideline.", 1, "u406ub"],
+ ["Triage", "When is triage done?", "On arrival, before registration.", 1, "1qgtcch"],
+ ["Triage", "What are the three triage groups?", "Emergency, priority and non-urgent (queue).", 1, "7pxsf5"],
+ ["Emergency", "What are the emergency signs?", "Obstructed or absent breathing, severe respiratory distress, shock, coma, convulsions and severe dehydration.", 1, "1v8f94"],
+ ["Emergency", "What are the signs of shock in ETAT?", "Cold hands, a capillary refill time longer than 3 seconds, and a weak, fast pulse.", 1, "112tnhh"],
+ ["Emergency", "Which AVPU level means coma?", "Responds only to pain (P), or unresponsive (U).", 2, "12o05kl"],
+ ["Priority", "Which baby is a \"tiny baby\" priority sign?", "Any infant under 2 months of age.", 1, "1nwrmzt"],
+ ["Priority", "Give examples of priority signs.", "Trauma, pallor, poisoning, severe pain, burns, oedema and visible wasting.", 1, "jopdc"],
+ ["Treatment", "What fluid bolus is given for shock in a child without severe malnutrition?", "10–20 ml/kg of a crystalloid.", 2, "or7tsh"],
+ ["Treatment", "What fluid is given for shock in severe acute malnutrition?", "15 ml/kg over 1 hour.", 2, "1qflom5"],
+ ["Treatment", "What dose of dextrose is given for hypoglycaemia?", "10% dextrose 5 ml/kg.", 1, "1cryv8o"],
+ ["Treatment", "What is given to a convulsing child?", "Rectal diazepam 0.5 mg/kg.", 1, "1it4osp"],
+ ["Shock", "What is the commonest type of shock in children?", "Hypovolaemic shock.", 1, "1jp2hxe"],
+ ["Shock", "What are the clues to cardiogenic shock?", "A large liver, a gallop rhythm and crackles in the lungs.", 3, "1o0jqun"],
+ ["Shock", "Which antibiotic is given in septic shock, and how fast?", "Ceftriaxone within 1 hour.", 2, "188sf6q"],
+ ["Shock", "Which inotrope is used in cold septic shock?", "Adrenaline.", 2, "7drppk"],
+ ["Shock", "What access is used when an intravenous line cannot be placed within 90 seconds?", "Intraosseous access.", 2, "1es9b0i"],
+ ["CPR", "How many rescue breaths are given first?", "5 rescue breaths.", 1, "1vttqvd"],
+ ["CPR", "What is the compression-to-ventilation ratio in children?", "15 : 2.", 1, "majgry"],
+ ["CPR", "What is the rate of chest compressions?", "100–120 per minute.", 1, "1aviv3"],
+ ["CPR", "What is the commonest arrest rhythm in children?", "Asystole or pulseless electrical activity.", 2, "1vk2upf"],
+ ["CPR", "What is the dose of adrenaline in cardiac arrest?", "10 µg/kg (0.1 ml/kg of 1:10 000).", 2, "jqjvjz"],
+ ["CPR", "What energy is used for defibrillation?", "4 J/kg.", 2, "so66t3"],
+ ["CPR", "Which reversible causes of arrest are looked for?", "The 4 Hs and 4 Ts.", 2, "1i30idm"]
 ]

@@ -1,58 +1,6 @@
 [
-{
-"q": "The bedside test for viper envenoming is:",
-"o": [
-"Platelet count",
-"20-minute whole blood clotting test",
-"Bleeding time",
-"INR",
-"Fibrinogen"
-],
-"a": 1,
-"e": "20WBCT.",
-"k": "20-minute whole blood clotting test",
-"s": "bank"
-},
-{
-"q": "The dose of snake antivenom for a child compared with an adult is:",
-"o": [
-"Half",
-"Quarter",
-"Same",
-"Double",
-"By weight"
-],
-"a": 2,
-"e": "It neutralises venom.",
-"k": "same dose for children as adults",
-"s": "bank"
-},
-{
-"q": "The most important first step after a dog bite is:",
-"o": [
-"Antibiotics",
-"Suturing",
-"Washing with soap and water for 15 min",
-"Rabies immunoglobulin",
-"Tetanus toxoid"
-],
-"a": 2,
-"e": "Reduces rabies risk greatly.",
-"k": "soap and running water for 15 minutes",
-"s": "bank"
-},
-{
-"q": "Pulmonary oedema after scorpion sting is prevented/treated with:",
-"o": [
-"Atropine",
-"Prazosin",
-"Morphine",
-"Calcium",
-"Furosemide alone"
-],
-"a": 1,
-"e": "α-blocker.",
-"k": "prazosin",
-"s": "bank"
-}
+{"q": "The bedside test for viper envenoming is:", "o": ["Platelet count", "20-minute whole blood clotting test", "Bleeding time", "INR", "Fibrinogen"], "a": 1, "e": "The 20-minute whole blood clotting test.", "k": "20-minute whole blood clotting test", "s": "bank", "d": 1},
+{"q": "How does the dose of snake antivenom for a child compare with the adult dose?", "o": ["Half", "Quarter", "Same", "Double", "By weight"], "a": 2, "e": "The dose is the same, because antivenom neutralises the amount of venom, not a dose per kg.", "k": "same dose for children as adults", "s": "bank", "id": "eyb73z", "d": 2},
+{"q": "The most important first step after a dog bite is:", "o": ["Antibiotics", "Suturing", "Washing with soap and water for 15 minutes", "Rabies immunoglobulin", "Tetanus toxoid"], "a": 2, "e": "Washing greatly reduces the risk of rabies.", "k": "soap and running water for 15 minutes", "s": "bank", "d": 1},
+{"q": "Which drug prevents or treats pulmonary oedema after a scorpion sting?", "o": ["Atropine", "Prazosin", "Morphine", "Calcium", "Furosemide alone"], "a": 1, "e": "Prazosin, an α-blocker.", "k": "prazosin", "s": "bank", "id": "147fsgi", "d": 2}
 ]
