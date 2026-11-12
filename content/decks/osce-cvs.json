@@ -1,62 +1,14 @@
 [
- [
-  "CVS",
-  "Why feel radial and femoral pulses together?",
-  "To detect radio-femoral delay of coarctation."
- ],
- [
-  "CVS",
-  "Collapsing pulse in a child suggests?",
-  "PDA."
- ],
- [
-  "CVS",
-  "Parasternal heave means?",
-  "Right ventricular hypertrophy."
- ],
- [
-  "CVS",
-  "Palpable P2 means?",
-  "Pulmonary hypertension."
- ],
- [
-  "CVS",
-  "Most useful sign of heart failure in an infant?",
-  "An enlarged tender liver."
- ],
- [
-  "CVS",
-  "VSD murmur?",
-  "Pansystolic at the lower left sternal edge."
- ],
- [
-  "CVS",
-  "ASD sign?",
-  "Wide fixed splitting of S2 with a soft ejection murmur upper left sternal edge."
- ],
- [
-  "CVS",
-  "PDA murmur?",
-  "Continuous machinery murmur below the left clavicle."
- ],
- [
-  "CVS",
-  "Coarctation murmur site?",
-  "Between the scapulae."
- ],
- [
-  "CVS",
-  "S2 in tetralogy of Fallot?",
-  "Single."
- ],
- [
-  "CVS",
-  "Features of an innocent murmur?",
-  "Soft systolic, no thrill, varies with posture, well child, normal heart sounds."
- ],
- [
-  "CVS",
-  "Left lateral thoracotomy scar suggests?",
-  "PDA ligation, coarctation repair or a shunt."
- ]
+ ["CVS", "Why are the radial and femoral pulses felt together?", "To detect the radio-femoral delay of coarctation of the aorta.", 2, "108f6jv"],
+ ["CVS", "What does a collapsing pulse suggest in a child?", "A patent ductus arteriosus.", 2, "2vet0v"],
+ ["CVS", "What does a parasternal heave mean?", "Right ventricular hypertrophy.", 2, "w4gylv"],
+ ["CVS", "What does a palpable P2 mean?", "Pulmonary hypertension.", 3, "1pansvy"],
+ ["CVS", "What is the most useful sign of heart failure in an infant?", "An enlarged, tender liver.", 2, "1c29j4u"],
+ ["CVS", "What is the murmur of a ventricular septal defect?", "A pansystolic murmur at the lower left sternal edge.", 1, "1t8jwcm"],
+ ["CVS", "What are the signs of an atrial septal defect?", "Wide fixed splitting of the second heart sound, with a soft ejection murmur at the upper left sternal edge.", 2, "17qvlxw"],
+ ["CVS", "What is the murmur of a patent ductus arteriosus?", "A continuous \"machinery\" murmur below the left clavicle.", 1, "qtglyk"],
+ ["CVS", "Where is the murmur of coarctation heard?", "Between the scapulae.", 2, "psfga9"],
+ ["CVS", "What is the second heart sound in tetralogy of Fallot?", "Single.", 2, "wlbisp"],
+ ["CVS", "What are the features of an innocent murmur?", "A soft systolic murmur with no thrill, varying with posture, in a well child with normal heart sounds.", 2, "1wl6h7e"],
+ ["CVS", "What does a left lateral thoracotomy scar suggest?", "Ligation of a patent ductus arteriosus, repair of coarctation, or a shunt operation.", 3, "1o0dh9y"]
 ]

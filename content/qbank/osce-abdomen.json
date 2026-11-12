@@ -1,58 +1,6 @@
 [
- {
-  "q": "Which feature distinguishes the spleen from an enlarged left kidney?",
-  "o": [
-   "Ballotable",
-   "Can get above it",
-   "Resonant on percussion",
-   "Notch present",
-   "Moves little with breathing"
-  ],
-  "a": 3,
-  "e": "The spleen has a notch, cannot be got above, is dull and moves towards the right iliac fossa.",
-  "k": "notch",
-  "s": "new"
- },
- {
-  "q": "A child from Gedaref has fever for 2 months, wasting and a spleen crossing the midline. The best diagnostic test is:",
-  "o": [
-   "Blood film for malaria",
-   "rK39 test",
-   "Widal test",
-   "Hb electrophoresis",
-   "Stool for ova"
-  ],
-  "a": 1,
-  "e": "Kala-azar is confirmed by the rK39 test (or bone marrow/splenic aspirate).",
-  "k": "rK39 test",
-  "s": "new"
- },
- {
-  "q": "Palpation for an enlarged liver starts from the:",
-  "o": [
-   "Right costal margin",
-   "Epigastrium",
-   "Right iliac fossa",
-   "Umbilicus",
-   "Left iliac fossa"
-  ],
-  "a": 2,
-  "e": "Starting low avoids missing a very large liver whose edge lies below the hand.",
-  "k": "right iliac fossa",
-  "s": "new"
- },
- {
-  "q": "A child has a firm spleen, haematemesis and normal liver function. The most likely cause is:",
-  "o": [
-   "Kala-azar",
-   "Portal hypertension from schistosomiasis",
-   "Leukaemia",
-   "Heart failure",
-   "Thalassaemia"
-  ],
-  "a": 1,
-  "e": "Schistosomal periportal fibrosis causes portal hypertension with a firm spleen and preserved liver function.",
-  "k": "portal hypertension",
-  "s": "new"
- }
+{"q": "Which feature distinguishes the spleen from an enlarged left kidney?", "o": ["Ballotable", "Can get above it", "Resonant on percussion", "Notch present", "Moves little with breathing"], "a": 3, "e": "The spleen has a notch, cannot be got above, is dull and moves towards the right iliac fossa.", "k": "notch", "s": "new", "d": 2},
+{"q": "A child from Gedaref has fever for 2 months, wasting and a spleen crossing the midline. The best diagnostic test is:", "o": ["Blood film for malaria", "rK39 test", "Widal test", "Hb electrophoresis", "Stool for ova"], "a": 1, "e": "Kala-azar is confirmed by the rK39 test (or bone marrow/splenic aspirate).", "k": "rK39 test", "s": "new", "d": 1},
+{"q": "Palpation for an enlarged liver starts from the:", "o": ["Right costal margin", "Epigastrium", "Right iliac fossa", "Umbilicus", "Left iliac fossa"], "a": 2, "e": "Starting low avoids missing a very large liver whose edge lies below the hand.", "k": "right iliac fossa", "s": "new", "d": 2},
+{"q": "A child has a firm spleen, haematemesis and normal liver function. The most likely cause is:", "o": ["Kala-azar", "Portal hypertension from schistosomiasis", "Leukaemia", "Heart failure", "Thalassaemia"], "a": 1, "e": "Schistosomal periportal fibrosis causes portal hypertension with a firm spleen and preserved liver function.", "k": "portal hypertension", "s": "new", "d": 3}
 ]

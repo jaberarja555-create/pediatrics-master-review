@@ -1,167 +1,35 @@
 [
- [
-  "General",
-  "How is a child examined opportunistically?",
-  "Observe first on the mother's lap, warm hands, leave unpleasant parts (throat, ears) to the end."
- ],
- [
-  "General",
-  "Where is central cyanosis seen?",
-  "Tongue and lips."
- ],
- [
-  "General",
-  "Blue hands and feet with a pink tongue in a newborn?",
-  "Acrocyanosis: normal."
- ],
- [
-  "General",
-  "Normal capillary refill?",
-  "2 seconds or less."
- ],
- [
-  "General",
-  "Where is the BCG scar?",
-  "Left upper arm."
- ],
- [
-  "General",
-  "How long is pressure applied to test pitting oedema?",
-  "3 seconds over the dorsum of the feet."
- ],
- [
-  "Vital signs",
-  "Normal newborn heart rate?",
-  "120–160 per minute."
- ],
- [
-  "Vital signs",
-  "Normal newborn respiratory rate?",
-  "40–60 per minute."
- ],
- [
-  "Vital signs",
-  "How long is the respiratory rate counted?",
-  "A full minute, while the child is calm."
- ],
- [
-  "Vital signs",
-  "IMCI fast breathing at 2–12 months?",
-  "50 breaths per minute or more."
- ],
- [
-  "Vital signs",
-  "IMCI fast breathing at 1–5 years?",
-  "40 breaths per minute or more."
- ],
- [
-  "Vital signs",
-  "Lowest normal systolic BP at 1–10 years?",
-  "70 + (2 × age in years) mmHg."
- ],
- [
-  "Vital signs",
-  "Correct BP cuff size?",
-  "Covers about two-thirds of the upper arm."
- ],
- [
-  "Anthropometry",
-  "How is length measured under 2 years?",
-  "Lying on a length board by two people."
- ],
- [
-  "Anthropometry",
-  "How is the head circumference measured?",
-  "Over the occipital prominence and above the eyebrows; largest of three readings."
- ],
- [
-  "Anthropometry",
-  "Where is MUAC measured?",
-  "Left upper arm, midway between acromion and olecranon."
- ],
- [
-  "Growth chart",
-  "Until what age is corrected age used for preterm babies?",
-  "2 years."
- ],
- [
-  "Growth chart",
-  "Weight-for-height below −2 SD means?",
-  "Wasting (acute malnutrition)."
- ],
- [
-  "Growth chart",
-  "Height-for-age below −2 SD means?",
-  "Stunting (chronic malnutrition or disease)."
- ],
- [
-  "Growth chart",
-  "Height falls first with weight preserved suggests?",
-  "An endocrine cause (hypothyroidism, GH deficiency)."
- ],
- [
-  "Short stature",
-  "Definition of short stature?",
-  "Height below −2 SD (3rd centile) for age and sex."
- ],
- [
-  "Short stature",
-  "Familial short stature: bone age?",
-  "Normal."
- ],
- [
-  "Short stature",
-  "Constitutional delay: bone age?",
-  "Delayed."
- ],
- [
-  "Short stature",
-  "Which test is done in every short girl?",
-  "Karyotype (Turner syndrome)."
- ],
- [
-  "Short stature",
-  "Which X-ray gives the bone age?",
-  "Left hand and wrist."
- ],
- [
-  "Development",
-  "Order of the developmental fields?",
-  "Gross motor, fine motor and vision, hearing and speech, social."
- ],
- [
-  "Development",
-  "Age of the social smile?",
-  "6 weeks."
- ],
- [
-  "Development",
-  "Age of head control?",
-  "3 months."
- ],
- [
-  "Development",
-  "Age of sitting without support?",
-  "7–8 months."
- ],
- [
-  "Development",
-  "Age of the immature pincer grasp and stranger anxiety?",
-  "9 months."
- ],
- [
-  "Development",
-  "Copies a circle; copies a cross?",
-  "3 years; 4 years."
- ],
- [
-  "Development",
-  "Delay only in speech: first test?",
-  "A hearing test."
- ],
- [
-  "Development",
-  "Hand preference before 12 months suggests?",
-  "Weakness of the other side (hemiplegic CP)."
- ]
+ ["General", "How is a child examined opportunistically?", "Observe first on the mother's lap, warm hands, leave unpleasant parts (throat, ears) to the end.", 2, "yhtipe"],
+ ["General", "Where is central cyanosis seen?", "On the tongue and lips.", 1, "1j3m0m5"],
+ ["General", "A newborn has blue hands and feet with a pink tongue. What is this?", "Acrocyanosis, which is normal.", 2, "k1d8mk"],
+ ["General", "What is a normal capillary refill time?", "2 seconds or less.", 1, "n8s18h"],
+ ["General", "Where is the BCG scar?", "On the left upper arm.", 1, "pq23w8"],
+ ["General", "How long is pressure applied to test pitting oedema?", "3 seconds over the dorsum of the feet.", 1, "1dsrtug"],
+ ["Vital signs", "What is the normal heart rate of a newborn?", "120–160 per minute.", 1, "envid1"],
+ ["Vital signs", "What is the normal respiratory rate of a newborn?", "40–60 per minute.", 1, "8ladbt"],
+ ["Vital signs", "How long is the respiratory rate counted?", "A full minute, while the child is calm.", 1, "eh5a8a"],
+ ["Vital signs", "What is IMCI fast breathing at 2–12 months?", "50 breaths per minute or more.", 1, "5yk4zz"],
+ ["Vital signs", "What is IMCI fast breathing at 1–5 years?", "40 breaths per minute or more.", 1, "1koenp3"],
+ ["Vital signs", "What is the lowest normal systolic blood pressure at 1–10 years?", "70 + (2 × age in years) mmHg.", 2, "1gw953q"],
+ ["Vital signs", "What is the correct size of the blood pressure cuff?", "A cuff that covers about two thirds of the upper arm.", 2, "lknvvw"],
+ ["Anthropometry", "How is length measured under 2 years?", "Lying on a length board by two people.", 1, "1a249c5"],
+ ["Anthropometry", "How is the head circumference measured?", "Over the occipital prominence and above the eyebrows; the largest of three readings is recorded.", 2, "r3hn7h"],
+ ["Anthropometry", "Where is the mid-upper arm circumference (MUAC) measured?", "On the left upper arm, midway between the acromion and the olecranon.", 1, "1qgt8g0"],
+ ["Growth chart", "Until what age is the corrected age used for preterm babies?", "Until 2 years.", 1, "1fq3g7n"],
+ ["Growth chart", "What does a weight-for-height below −2 standard deviations mean?", "Wasting (acute malnutrition).", 2, "1c07cr3"],
+ ["Growth chart", "What does a height-for-age below −2 standard deviations mean?", "Stunting (chronic malnutrition or chronic disease).", 2, "ctpcca"],
+ ["Growth chart", "What does it suggest when the height falls first while the weight is preserved?", "An endocrine cause, such as hypothyroidism or growth hormone deficiency.", 3, "1flvlhl"],
+ ["Short stature", "How is short stature defined?", "A height below −2 standard deviations (the 3rd centile) for age and sex.", 1, "pv9ft7"],
+ ["Short stature", "What is the bone age in familial short stature?", "Normal.", 2, "ppyuiv"],
+ ["Short stature", "What is the bone age in constitutional delay?", "Delayed.", 2, "1465hn1"],
+ ["Short stature", "Which test is done in every short girl?", "A karyotype, for Turner syndrome.", 2, "v9nc7m"],
+ ["Short stature", "Which X-ray gives the bone age?", "An X-ray of the left hand and wrist.", 1, "wx2j35"],
+ ["Development", "In what order are the fields of development assessed?", "Gross motor; fine motor and vision; hearing and speech; social development.", 2, "t05c9y"],
+ ["Development", "At what age does the social smile appear?", "At 6 weeks.", 1, "1wzi5ir"],
+ ["Development", "At what age is head control achieved?", "At 3 months.", 1, "f1v5ne"],
+ ["Development", "At what age does a child sit without support?", "At 7–8 months.", 1, "8e37c4"],
+ ["Development", "At what age do the immature pincer grasp and stranger anxiety appear?", "At 9 months.", 1, "1nn0vgf"],
+ ["Development", "At what ages does a child copy a circle and a cross?", "A circle at 3 years and a cross at 4 years.", 1, "12p13hm"],
+ ["Development", "A child has delay in speech only. What is the first test?", "A hearing test.", 2, "o1l7ht"],
+ ["Development", "What does hand preference before 12 months suggest?", "Weakness of the other side (hemiplegic cerebral palsy).", 3, "186u639"]
 ]

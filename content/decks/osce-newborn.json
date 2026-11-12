@@ -1,152 +1,32 @@
 [
- [
-  "Newborn",
-  "When is the newborn examination done?",
-  "In the first 72 hours."
- ],
- [
-  "Newborn",
-  "Caput succedaneum versus cephalhaematoma?",
-  "Caput crosses suture lines; cephalhaematoma is limited by a suture."
- ],
- [
-  "Newborn",
-  "Which cephalic swelling may cause jaundice?",
-  "Cephalhaematoma."
- ],
- [
-  "Newborn",
-  "Absent red reflex means?",
-  "Congenital cataract or retinoblastoma: urgent eye review."
- ],
- [
-  "Newborn",
-  "How is the palate examined?",
-  "Seen and felt for a cleft."
- ],
- [
-  "Newborn",
-  "Why are the femoral pulses felt?",
-  "To detect coarctation of the aorta."
- ],
- [
-  "Newborn",
-  "Normal umbilical cord vessels?",
-  "Two arteries and one vein."
- ],
- [
-  "Newborn",
-  "Two tests for hip dysplasia?",
-  "Barlow (dislocates) and Ortolani (relocates)."
- ],
- [
-  "Newborn",
-  "Best test for suspected hip dysplasia in an infant?",
-  "Hip ultrasound."
- ],
- [
-  "Newborn",
-  "Asymmetrical Moro reflex?",
-  "Brachial plexus injury or fractured clavicle/humerus."
- ],
- [
-  "Newborn",
-  "Waiter's tip posture?",
-  "Erb's palsy (C5–C6)."
- ],
- [
-  "Newborn",
-  "Frothy saliva and choking at the first feed?",
-  "Oesophageal atresia: pass a tube."
- ],
- [
-  "Newborn",
-  "No meconium in 48 hours with distension?",
-  "Hirschsprung disease or anorectal anomaly."
- ],
- [
-  "Resuscitation",
-  "First steps at birth?",
-  "Dry, remove the wet towel, keep warm, assess breathing, tone and heart rate."
- ],
- [
-  "Resuscitation",
-  "When is bag-and-mask ventilation started?",
-  "Not breathing or gasping, or HR < 100/min, by 60 seconds."
- ],
- [
-  "Resuscitation",
-  "Ventilation rate in the newborn?",
-  "40–60 breaths per minute."
- ],
- [
-  "Resuscitation",
-  "Gas for starting term resuscitation?",
-  "Room air (21%)."
- ],
- [
-  "Resuscitation",
-  "When are chest compressions started?",
-  "HR < 60/min after 30 s of effective ventilation."
- ],
- [
-  "Resuscitation",
-  "Compression technique and ratio?",
-  "Two thumbs on the lower third of the sternum, one third of chest depth, 3 : 1."
- ],
- [
-  "Resuscitation",
-  "Dose of adrenaline in newborn resuscitation?",
-  "1:10,000, 0.1–0.3 ml/kg IV via the umbilical vein."
- ],
- [
-  "Resuscitation",
-  "First sign that ventilation works?",
-  "A rising heart rate."
- ],
- [
-  "Resuscitation",
-  "Chest not rising with mask ventilation: steps?",
-  "Reposition head, re-apply mask, suction, open mouth, more pressure, then tube or LMA."
- ],
- [
-  "Intubation",
-  "Tube size for a 1–2 kg baby?",
-  "3.0 mm."
- ],
- [
-  "Intubation",
-  "Tube size for a baby under 1 kg?",
-  "2.5 mm."
- ],
- [
-  "Intubation",
-  "Depth of the tube at the lip?",
-  "Weight in kg + 6 cm."
- ],
- [
-  "Intubation",
-  "Which hand holds the laryngoscope?",
-  "The left hand."
- ],
- [
-  "Intubation",
-  "Signs the tube is in the trachea?",
-  "Equal chest rise, breath sounds both sides, none over the stomach, rising heart rate, CO₂ detector change."
- ],
- [
-  "Intubation",
-  "Breath sounds only on the right after intubation?",
-  "Tube in the right main bronchus: pull back."
- ],
- [
-  "Intubation",
-  "Why intubate in diaphragmatic hernia?",
-  "Bag and mask inflates the bowel in the chest."
- ],
- [
-  "Intubation",
-  "When does the team consider stopping resuscitation?",
-  "After about 20 minutes with no heart rate."
- ]
+ ["Newborn", "When is the newborn examination done?", "In the first 72 hours.", 1, "1ljybeg"],
+ ["Newborn", "How does caput succedaneum differ from a cephalhaematoma?", "Caput crosses the suture lines; a cephalhaematoma is limited by a suture.", 2, "4meh1j"],
+ ["Newborn", "Which scalp swelling may cause jaundice?", "A cephalhaematoma.", 2, "13mee39"],
+ ["Newborn", "What does an absent red reflex mean?", "A congenital cataract or a retinoblastoma; an urgent eye review is needed.", 2, "10cofgv"],
+ ["Newborn", "How is the palate examined?", "Seen and felt for a cleft.", 1, "16a7s20"],
+ ["Newborn", "Why are the femoral pulses felt?", "To detect coarctation of the aorta.", 2, "1t7dft"],
+ ["Newborn", "What are the normal vessels of the umbilical cord?", "Two arteries and one vein.", 1, "mlfhul"],
+ ["Newborn", "Which two tests look for developmental dysplasia of the hip?", "The Barlow test (which dislocates the hip) and the Ortolani test (which relocates it).", 1, "1uxwmye"],
+ ["Newborn", "What is the best test for suspected hip dysplasia in an infant?", "A hip ultrasound.", 1, "d3siwx"],
+ ["Newborn", "What does an asymmetrical Moro reflex indicate?", "A brachial plexus injury or a fractured clavicle or humerus.", 2, "h1wvht"],
+ ["Newborn", "Which injury causes the \"waiter's tip\" posture?", "Erb's palsy (C5–C6).", 2, "1oq5w26"],
+ ["Newborn", "A newborn has frothy saliva and chokes at the first feed. What is the diagnosis and what is done?", "Oesophageal atresia; a tube is passed to confirm it.", 2, "3b4bah"],
+ ["Newborn", "What causes no meconium in 48 hours with abdominal distension?", "Hirschsprung disease or an anorectal anomaly.", 2, "1eo2ckd"],
+ ["Resuscitation", "What are the first steps at birth?", "Dry the baby, remove the wet towel, keep the baby warm, and assess breathing, tone and heart rate.", 1, "fv131g"],
+ ["Resuscitation", "When is bag-and-mask ventilation started?", "When the baby is not breathing or is gasping, or the heart rate is below 100/min, by 60 seconds.", 1, "1pak6iy"],
+ ["Resuscitation", "What is the ventilation rate in the newborn?", "40–60 breaths per minute.", 1, "14a4eub"],
+ ["Resuscitation", "Which gas is used to start the resuscitation of a term baby?", "Room air (21%).", 1, "1lcav0s"],
+ ["Resuscitation", "When are chest compressions started?", "When the heart rate is below 60/min after 30 seconds of effective ventilation.", 1, "c0bn8g"],
+ ["Resuscitation", "What are the technique and ratio of neonatal chest compressions?", "Two thumbs on the lower third of the sternum, to one third of the depth of the chest, at a ratio of 3 : 1.", 1, "lq7rs7"],
+ ["Resuscitation", "What is the dose of adrenaline in newborn resuscitation?", "0.1–0.3 ml/kg of adrenaline 1:10 000 intravenously through the umbilical vein.", 2, "842si7"],
+ ["Resuscitation", "What is the first sign that ventilation is working?", "A rising heart rate.", 2, "12qte1y"],
+ ["Resuscitation", "The chest does not rise with mask ventilation. What are the steps?", "Reposition the head, re-apply the mask, suction, open the mouth, increase the pressure, then use a tube or a laryngeal mask airway.", 3, "100cumr"],
+ ["Intubation", "What tube size is used for a baby of 1–2 kg?", "3.0 mm.", 2, "1nxc78u"],
+ ["Intubation", "What tube size is used for a baby under 1 kg?", "2.5 mm.", 2, "1nri1rv"],
+ ["Intubation", "How deep is the tube placed, measured at the lip?", "Weight in kg + 6 cm.", 2, "jrjcav"],
+ ["Intubation", "Which hand holds the laryngoscope?", "The left hand.", 1, "rvv3h8"],
+ ["Intubation", "What are the signs that the tube is in the trachea?", "Equal chest rise, breath sounds on both sides and none over the stomach, a rising heart rate and a colour change of the CO₂ detector.", 2, "qlo95e"],
+ ["Intubation", "After intubation, breath sounds are heard only on the right. What has happened and what is done?", "The tube is in the right main bronchus; it is pulled back.", 3, "1bhcy3q"],
+ ["Intubation", "Why is a baby with a diaphragmatic hernia intubated?", "Bag-and-mask ventilation inflates the bowel in the chest.", 3, "3znqmz"],
+ ["Intubation", "When does the team consider stopping resuscitation?", "After about 20 minutes with no heart rate.", 2, "11wq9ea"]
 ]

@@ -1,147 +1,31 @@
 [
- [
-  "Neuro",
-  "Root of the knee reflex?",
-  "L3–L4."
- ],
- [
-  "Neuro",
-  "Root of the ankle reflex?",
-  "S1."
- ],
- [
-  "Neuro",
-  "When is an extensor plantar response normal?",
-  "Until the child walks (12–18 months)."
- ],
- [
-  "Neuro",
-  "UMN lesion signs?",
-  "Increased tone, brisk reflexes, clonus, extensor plantar, little wasting."
- ],
- [
-  "Neuro",
-  "LMN lesion signs?",
-  "Decreased tone, reduced or absent reflexes, wasting, fasciculation."
- ],
- [
-  "Neuro",
-  "Gowers' sign suggests?",
-  "Proximal muscle weakness: Duchenne muscular dystrophy (check CK)."
- ],
- [
-  "Neuro",
-  "What is looked for on the back?",
-  "Sinus, tuft of hair, swelling or scar of a neural tube defect."
- ],
- [
-  "Neuro",
-  "Floppy weak legs after a febrile illness in an unvaccinated child?",
-  "Poliomyelitis."
- ],
- [
-  "CP",
-  "Definition of cerebral palsy?",
-  "A non-progressive disorder of movement and posture from injury to the developing brain."
- ],
- [
-  "CP",
-  "Commonest type of CP?",
-  "Spastic (about 70%)."
- ],
- [
-  "CP",
-  "CP type typical of preterm babies?",
-  "Spastic diplegia (periventricular leukomalacia)."
- ],
- [
-  "CP",
-  "Signs of hemiplegic CP?",
-  "Early hand preference, flexed arm, circumduction gait."
- ],
- [
-  "CP",
-  "Kernicterus causes which CP type?",
-  "Dyskinetic (athetoid)."
- ],
- [
-  "CP",
-  "Early signs of CP?",
-  "Delayed motor milestones, persistent fisting, early hand preference, persistent primitive reflexes."
- ],
- [
-  "CP",
-  "Associated problems of CP?",
-  "Epilepsy, learning difficulty, squint, hearing and vision loss, malnutrition, drooling, hip dislocation."
- ],
- [
-  "CP",
-  "Mainstay of CP management?",
-  "Physiotherapy within a multidisciplinary team."
- ],
- [
-  "CP",
-  "Drugs for spasticity?",
-  "Baclofen or diazepam; botulinum toxin injections."
- ],
- [
-  "CP",
-  "Best imaging in CP?",
-  "MRI of the brain."
- ],
- [
-  "Hydrocephalus",
-  "Signs of hydrocephalus?",
-  "Large head, dilated scalp veins, sunsetting eyes, bulging fontanelle, separated sutures."
- ],
- [
-  "Hydrocephalus",
-  "How is a VP shunt checked?",
-  "Press the valve: it should empty and refill."
- ],
- [
-  "Hydrocephalus",
-  "Best first imaging of an infant's large head?",
-  "Cranial ultrasound."
- ],
- [
-  "Rickets",
-  "Head signs of rickets?",
-  "Craniotabes, frontal and parietal bossing, large late-closing fontanelle, delayed teeth."
- ],
- [
-  "Rickets",
-  "Chest signs of rickets?",
-  "Rickety rosary, Harrison's sulcus, pigeon chest."
- ],
- [
-  "Rickets",
-  "Limb signs of rickets?",
-  "Wide wrists and ankles, bow legs or knock knees."
- ],
- [
-  "Down",
-  "Hand signs of Down syndrome?",
-  "Single palmar crease, short broad hands, incurved little finger."
- ],
- [
-  "Down",
-  "Heart lesion typical of Down syndrome?",
-  "AVSD."
- ],
- [
-  "Down",
-  "Confirming test for Down syndrome?",
-  "Karyotype."
- ],
- [
-  "Anaemia",
-  "Where is pallor looked for?",
-  "Conjunctiva, palms, nail beds, tongue."
- ],
- [
-  "Anaemia",
-  "Pallor with petechiae, nodes and bone pain?",
-  "Leukaemia: blood film and bone marrow."
- ]
+ ["Neuro", "Which nerve roots supply the knee reflex?", "L3–L4.", 2, "swv72o"],
+ ["Neuro", "Which nerve root supplies the ankle reflex?", "S1.", 2, "1nj852o"],
+ ["Neuro", "Until when is an extensor plantar response normal?", "Until the child walks (12–18 months).", 2, "1a56w4u"],
+ ["Neuro", "What are the signs of an upper motor neurone lesion?", "Increased tone, brisk reflexes, clonus, an extensor plantar response and little wasting.", 1, "lrzv5d"],
+ ["Neuro", "What are the signs of a lower motor neurone lesion?", "Decreased tone, reduced or absent reflexes, wasting and fasciculation.", 1, "xfsx2g"],
+ ["Neuro", "What does the Gowers sign suggest?", "Proximal muscle weakness, as in Duchenne muscular dystrophy; the CK is checked.", 2, "1tqaawt"],
+ ["Neuro", "What is looked for on the back in the neurological examination?", "A sinus, a tuft of hair, a swelling or a scar of a neural tube defect.", 2, "vnnaav"],
+ ["Neuro", "An unvaccinated child has floppy, weak legs after a febrile illness. What is the likely diagnosis?", "Poliomyelitis.", 3, "1jo6qm5"],
+ ["CP", "What is cerebral palsy?", "A non-progressive disorder of movement and posture caused by injury to the developing brain.", 1, "5fjjqq"],
+ ["CP", "What is the commonest type of cerebral palsy?", "Spastic cerebral palsy (about 70%).", 1, "9jvbe"],
+ ["CP", "Which type of cerebral palsy is typical of preterm babies?", "Spastic diplegia, from periventricular leukomalacia.", 2, "fp0w8k"],
+ ["CP", "What are the signs of hemiplegic cerebral palsy?", "Early hand preference, a flexed arm and a circumduction gait.", 2, "ysd8ki"],
+ ["CP", "Which type of cerebral palsy does kernicterus cause?", "Dyskinetic (athetoid) cerebral palsy.", 2, "1nh34ai"],
+ ["CP", "What are the early signs of cerebral palsy?", "Delayed motor milestones, persistent fisting, early hand preference and persistent primitive reflexes.", 2, "2htldc"],
+ ["CP", "Which problems are associated with cerebral palsy?", "Epilepsy, learning difficulty, squint, loss of hearing and vision, malnutrition, drooling and dislocation of the hip.", 2, "hv8l97"],
+ ["CP", "What is the mainstay of the management of cerebral palsy?", "Physiotherapy within a multidisciplinary team.", 1, "jb1tb8"],
+ ["CP", "Which drugs treat spasticity?", "Baclofen or diazepam, and botulinum toxin injections.", 2, "fjqgrw"],
+ ["CP", "What is the best imaging in cerebral palsy?", "An MRI of the brain.", 1, "lt0jff"],
+ ["Hydrocephalus", "What are the signs of hydrocephalus?", "A large head, dilated scalp veins, \"sunsetting\" eyes, a bulging fontanelle and separated sutures.", 1, "1iz32yz"],
+ ["Hydrocephalus", "How is a ventriculoperitoneal shunt checked?", "The valve is pressed: it should empty and refill.", 2, "1kprqib"],
+ ["Hydrocephalus", "What is the best first imaging of an infant with a large head?", "A cranial ultrasound.", 1, "xd6oju"],
+ ["Rickets", "What are the head signs of rickets?", "Craniotabes, frontal and parietal bossing, a large late-closing fontanelle and delayed teeth.", 1, "17foxq1"],
+ ["Rickets", "What are the chest signs of rickets?", "The rickety rosary, Harrison's sulcus and a pigeon chest.", 1, "1xzv3h6"],
+ ["Rickets", "What are the limb signs of rickets?", "Wide wrists and ankles, and bow legs or knock knees.", 1, "bgc5yj"],
+ ["Down", "What are the hand signs of Down syndrome?", "A single palmar crease, short broad hands and an incurved little finger.", 1, "aumn6m"],
+ ["Down", "Which heart lesion is typical of Down syndrome?", "Atrioventricular septal defect.", 1, "1w30dgx"],
+ ["Down", "Which test confirms Down syndrome?", "A karyotype.", 1, "gke3g7"],
+ ["Anaemia", "Where is pallor looked for?", "In the conjunctiva, palms, nail beds and tongue.", 1, "oqkeyx"],
+ ["Anaemia", "A child has pallor with petechiae, enlarged nodes and bone pain. What is the likely diagnosis and what is done?", "Leukaemia; a blood film and a bone marrow examination are done.", 3, "qvww4t"]
 ]

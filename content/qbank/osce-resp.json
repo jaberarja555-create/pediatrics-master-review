@@ -1,58 +1,6 @@
 [
- {
-  "q": "A child has a central trachea, dull percussion and bronchial breathing at the right base. The diagnosis is:",
-  "o": [
-   "Pleural effusion",
-   "Pneumothorax",
-   "Consolidation",
-   "Collapse",
-   "Asthma"
-  ],
-  "a": 2,
-  "e": "Dullness with bronchial breathing and a central trachea = consolidation.",
-  "k": "consolidation",
-  "s": "new"
- },
- {
-  "q": "Trachea pushed away, stony dull percussion and absent breath sounds indicate:",
-  "o": [
-   "Consolidation",
-   "Pleural effusion",
-   "Collapse",
-   "Bronchiolitis",
-   "Pneumothorax"
-  ],
-  "a": 1,
-  "e": "Stony dullness with absent breath sounds and mediastinal shift away = effusion.",
-  "k": "stony dull",
-  "s": "new"
- },
- {
-  "q": "In lung collapse the trachea is:",
-  "o": [
-   "Central",
-   "Pushed away",
-   "Pulled towards the affected side",
-   "Deviated only on expiration",
-   "Not palpable"
-  ],
-  "a": 2,
-  "e": "Collapse pulls the mediastinum towards the affected side; effusion and pneumothorax push it away.",
-  "k": "towards",
-  "s": "new"
- },
- {
-  "q": "Which sign is heard in consolidation but NOT in a pleural effusion?",
-  "o": [
-   "Reduced air entry",
-   "Dull percussion",
-   "Bronchial breathing",
-   "Reduced expansion",
-   "Tachypnoea"
-  ],
-  "a": 2,
-  "e": "Consolidated lung transmits bronchial breathing; fluid blocks the sound.",
-  "k": "bronchial",
-  "s": "new"
- }
+{"q": "A child has a central trachea, dull percussion and bronchial breathing at the right base. The diagnosis is:", "o": ["Pleural effusion", "Pneumothorax", "Consolidation", "Collapse", "Asthma"], "a": 2, "e": "Dullness with bronchial breathing and a central trachea = consolidation.", "k": "consolidation", "s": "new", "d": 1},
+{"q": "Trachea pushed away, stony dull percussion and absent breath sounds indicate:", "o": ["Consolidation", "Pleural effusion", "Collapse", "Bronchiolitis", "Pneumothorax"], "a": 1, "e": "Stony dullness with absent breath sounds and mediastinal shift away = effusion.", "k": "stony dull", "s": "new", "d": 2},
+{"q": "In lung collapse the trachea is:", "o": ["Central", "Pushed away", "Pulled towards the affected side", "Deviated only on expiration", "Not palpable"], "a": 2, "e": "Collapse pulls the mediastinum towards the affected side; effusion and pneumothorax push it away.", "k": "towards", "s": "new", "d": 1},
+{"q": "Which sign is heard in consolidation but NOT in a pleural effusion?", "o": ["Reduced air entry", "Dull percussion", "Bronchial breathing", "Reduced expansion", "Tachypnoea"], "a": 2, "e": "Consolidated lung transmits bronchial breathing; fluid blocks the sound.", "k": "bronchial", "s": "new", "d": 2}
 ]

@@ -1,142 +1,30 @@
 [
- [
-  "Starting",
-  "Which three steps start every history station and carry marks?",
-  "Greeting the mother, introducing yourself and taking permission."
- ],
- [
-  "Starting",
-  "Which kind of questions is used first in a history?",
-  "Open questions; closed questions later to fill the gaps."
- ],
- [
-  "Starting",
-  "Which two questions should you ask yourself before taking the history?",
-  "What is the differential diagnosis, and which part of the history decides between them?"
- ],
- [
-  "Order",
-  "Which four parts make the history paediatric?",
-  "Birth, nutritional, immunization and developmental history."
- ],
- [
-  "Personal data",
-  "Why is the residence asked?",
-  "Endemic diseases: malaria, kala-azar, schistosomiasis."
- ],
- [
-  "Presenting complaint",
-  "How is each presenting complaint written?",
-  "In the mother's words, in chronological order, with its duration."
- ],
- [
-  "Presenting complaint",
-  "Where is a known chronic disease stated?",
-  "Before the complaints: \"a known case of … now presenting with …\"."
- ],
- [
-  "Present illness",
-  "What is asked after analysing each complaint?",
-  "Relevant negatives, treatment received, complications and effect on feeding, sleep and school."
- ],
- [
-  "Family",
-  "Which family questions are always asked?",
-  "Consanguinity, siblings' health and deaths, similar illness, inherited disease and contact with a chronic cough."
- ],
- [
-  "Social",
-  "Which social points are asked?",
-  "Parents' education, occupation and income; housing, crowding, water, latrine, animals; smoking at home."
- ],
- [
-  "Drugs",
-  "Which drug points are asked?",
-  "Current drugs and doses, drug allergy and traditional remedies (cautery, herbs)."
- ],
- [
-  "Immunization",
-  "Best way to check the immunization status?",
-  "Look at the EPI card (and the BCG scar)."
- ],
- [
-  "Birth",
-  "Three parts of the birth history?",
-  "Antenatal, natal and postnatal."
- ],
- [
-  "Birth",
-  "Which natal detail is a risk for neonatal sepsis?",
-  "Prolonged rupture of membranes."
- ],
- [
-  "Birth",
-  "Which postnatal question points to birth asphyxia?",
-  "Did the baby cry immediately or need resuscitation?"
- ],
- [
-  "Birth",
-  "Antenatal fever with rash suggests what?",
-  "A congenital (TORCH) infection."
- ],
- [
-  "Nutrition",
-  "Why ask how formula is prepared?",
-  "Over-diluted feeds cause undernutrition."
- ],
- [
-  "Nutrition",
-  "Best way to record the present diet?",
-  "A 24-hour recall of type, amount and frequency of meals."
- ],
- [
-  "Nutrition",
-  "At what age should weaning start?",
-  "6 months."
- ],
- [
-  "Development",
-  "Which developmental finding points away from cerebral palsy?",
-  "Regression (loss of skills already gained): a progressive disease."
- ],
- [
-  "Arabic",
-  "Ask about consanguinity in Arabic.",
-  "إنتي وأبوهو قرايب؟"
- ],
- [
-  "Arabic",
-  "Ask whether the baby cried at birth in Arabic.",
-  "الشافع بكى طوالي بعد الولادة؟"
- ],
- [
-  "Arabic",
-  "\"الطراش أخضر\" suggests what?",
-  "Bilious vomiting: intestinal obstruction."
- ],
- [
-  "Arabic",
-  "\"البراز أبيض والبول غامق\" suggests what?",
-  "Obstructive (conjugated) jaundice."
- ],
- [
-  "Summary",
-  "What does a good summary contain?",
-  "Age, sex (residence), complaints with durations, key positives and important negatives."
- ],
- [
-  "Summary",
-  "How is each differential diagnosis presented?",
-  "With one reason for and one against."
- ],
- [
-  "Long case",
-  "Order of the problem list in the long case?",
-  "Medical, nutritional, developmental and social problems."
- ],
- [
-  "Exam trap",
-  "Why do leading questions lose marks?",
-  "They suggest the answer; open questions give reliable information."
- ]
+ ["Starting", "Which three steps start every history station and carry marks?", "Greeting the mother, introducing yourself and taking permission.", 1, "1s07nsw"],
+ ["Starting", "Which kind of questions is used first in a history?", "Open questions; closed questions later to fill the gaps.", 1, "95ldzp"],
+ ["Starting", "Which two questions should you ask yourself before taking the history?", "What is the differential diagnosis, and which part of the history decides between them?", 2, "1i5xox7"],
+ ["Order", "Which four parts make the history specifically paediatric?", "Birth, nutritional, immunization and developmental history.", 1, "uh5sfd"],
+ ["Personal data", "Why is the place of residence asked?", "To think of endemic diseases: malaria, kala-azar and schistosomiasis.", 1, "lmjvpq"],
+ ["Presenting complaint", "How is each presenting complaint written?", "In the mother's words, in chronological order, with its duration.", 1, "oso0u5"],
+ ["Presenting complaint", "Where is a known chronic disease stated?", "Before the complaints: \"a known case of … now presenting with …\".", 2, "sw1kad"],
+ ["Present illness", "What is asked after analysing each complaint?", "Relevant negatives, treatment received, complications and effect on feeding, sleep and school.", 2, "1v1a1kt"],
+ ["Family", "Which family questions are always asked?", "Consanguinity, siblings' health and deaths, similar illness, inherited disease and contact with a chronic cough.", 2, "1gxky68"],
+ ["Social", "Which social points are asked?", "Parents' education, occupation and income; housing, crowding, water, latrine, animals; smoking at home.", 2, "1rlpcdc"],
+ ["Drugs", "Which drug points are asked?", "Current drugs and doses, drug allergy and traditional remedies (cautery, herbs).", 2, "1yu855f"],
+ ["Immunization", "What is the best way to check the immunization status?", "Look at the EPI card (and the BCG scar).", 1, "2y1wy6"],
+ ["Birth", "What are the three parts of the birth history?", "Antenatal, natal and postnatal history.", 1, "1hf9j42"],
+ ["Birth", "Which natal detail is a risk for neonatal sepsis?", "Prolonged rupture of membranes.", 2, "x547of"],
+ ["Birth", "Which postnatal question points to birth asphyxia?", "Did the baby cry immediately or need resuscitation?", 2, "ca2h76"],
+ ["Birth", "What does antenatal fever with a rash suggest?", "A congenital (TORCH) infection.", 3, "12hjfzu"],
+ ["Nutrition", "Why is the mother asked how she prepares the formula?", "Over-diluted feeds cause undernutrition.", 2, "kltigl"],
+ ["Nutrition", "What is the best way to record the present diet?", "A 24-hour recall of the type, amount and frequency of meals.", 2, "w7q4tc"],
+ ["Nutrition", "At what age should weaning start?", "At 6 months.", 1, "18ngfbn"],
+ ["Development", "Which developmental finding points away from cerebral palsy?", "Regression (loss of skills already gained), which suggests a progressive disease.", 3, "8w3vhd"],
+ ["Arabic", "How is consanguinity asked about in Arabic?", "إنتي وأبوهو قرايب؟", 2, "hqgro"],
+ ["Arabic", "How is the mother asked in Arabic whether the baby cried at birth?", "الشافع بكى طوالي بعد الولادة؟", 2, "1e0hajp"],
+ ["Arabic", "What does \"الطراش أخضر\" suggest?", "Bilious vomiting: intestinal obstruction.", 2, "1ul4iw8"],
+ ["Arabic", "What does \"البراز أبيض والبول غامق\" suggest?", "Obstructive (conjugated) jaundice.", 3, "mynvqp"],
+ ["Summary", "What does a good summary contain?", "Age, sex (residence), complaints with durations, key positives and important negatives.", 2, "1dl8wce"],
+ ["Summary", "How is each differential diagnosis presented?", "With one point for it and one point against it.", 2, "jyeuzk"],
+ ["Long case", "In what order is the problem list given in the long case?", "Medical, nutritional, developmental and social problems.", 2, "1kt8ry2"],
+ ["Exam trap", "Why do leading questions lose marks?", "They suggest the answer; open questions give reliable information.", 2, "37rlqy"]
 ]

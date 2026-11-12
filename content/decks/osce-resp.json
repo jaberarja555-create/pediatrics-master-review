@@ -1,77 +1,17 @@
 [
- [
-  "Respiratory",
-  "Signs of respiratory distress on inspection?",
-  "Nasal flaring, grunting, head nodding, recession (subcostal, intercostal, suprasternal)."
- ],
- [
-  "Respiratory",
-  "Where is chest expansion checked?",
-  "At three levels, comparing both sides."
- ],
- [
-  "Respiratory",
-  "Percussion in pleural effusion?",
-  "Stony dull."
- ],
- [
-  "Respiratory",
-  "Consolidation signs?",
-  "Central trachea, dull percussion, bronchial breathing, crackles."
- ],
- [
-  "Respiratory",
-  "Trachea in lung collapse?",
-  "Pulled towards the affected side."
- ],
- [
-  "Respiratory",
-  "Trachea in effusion or pneumothorax?",
-  "Pushed away."
- ],
- [
-  "Respiratory",
-  "What is offered at the end?",
-  "Examination of the back and ear, nose and throat."
- ],
- [
-  "Respiratory",
-  "Order of the respiratory examination?",
-  "General, inspection, palpation, percussion, auscultation, then summary."
- ],
- [
-  "Respiratory",
-  "Chest shape signs of rickets?",
-  "Harrison's sulcus, rickety rosary, pigeon chest."
- ],
- [
-  "Respiratory",
-  "Hyperinflated chest suggests?",
-  "Asthma or bronchiolitis (air trapping)."
- ],
- [
-  "Respiratory",
-  "Bronchial breathing means?",
-  "Consolidation (sound carried through solid lung)."
- ],
- [
-  "Respiratory",
-  "Wheeze versus stridor?",
-  "Wheeze: expiratory, small airways; stridor: inspiratory, upper airway."
- ],
- [
-  "Respiratory",
-  "Clubbing with chronic productive cough suggests?",
-  "Bronchiectasis or cystic fibrosis."
- ],
- [
-  "Respiratory",
-  "Hyper-resonance with absent breath sounds and shifted trachea?",
-  "Pneumothorax."
- ],
- [
-  "Respiratory",
-  "Head nodding in an infant means?",
-  "Severe respiratory distress (accessory muscles)."
- ]
+ ["Respiratory", "What are the signs of respiratory distress on inspection?", "Nasal flaring, grunting, head nodding and recession (subcostal, intercostal and suprasternal).", 2, "10y60nw"],
+ ["Respiratory", "Where is chest expansion checked?", "At three levels, comparing both sides.", 1, "1iosnf9"],
+ ["Respiratory", "What is the percussion note over a pleural effusion?", "Stony dull.", 1, "1wskhtj"],
+ ["Respiratory", "What are the signs of consolidation?", "A central trachea, a dull percussion note, bronchial breathing and crackles.", 2, "1tnywql"],
+ ["Respiratory", "Where is the trachea in collapse of the lung?", "Pulled towards the affected side.", 2, "wd8q6r"],
+ ["Respiratory", "Where is the trachea in a large effusion or a pneumothorax?", "Pushed away from the affected side.", 2, "ocpl9c"],
+ ["Respiratory", "What is offered at the end of the respiratory examination?", "Examination of the back, and of the ear, nose and throat.", 1, "o567wh"],
+ ["Respiratory", "In what order is the respiratory system examined?", "General examination, inspection, palpation, percussion and auscultation, then a summary.", 1, "mqjt1m"],
+ ["Respiratory", "What are the chest signs of rickets?", "Harrison's sulcus, the rickety rosary and a pigeon chest.", 2, "twyuhn"],
+ ["Respiratory", "What does a hyperinflated chest suggest?", "Asthma or bronchiolitis (air trapping).", 2, "18j4kvu"],
+ ["Respiratory", "What does bronchial breathing mean?", "Consolidation: the sound is carried through solid lung.", 2, "wp2qmn"],
+ ["Respiratory", "How does wheeze differ from stridor?", "Wheeze is expiratory and comes from the small airways; stridor is inspiratory and comes from the upper airway.", 2, "1ytq6vy"],
+ ["Respiratory", "What does clubbing with a chronic productive cough suggest?", "Bronchiectasis or cystic fibrosis.", 2, "r7t359"],
+ ["Respiratory", "What do hyper-resonance, absent breath sounds and a shifted trachea indicate?", "A pneumothorax.", 3, "yxzgnz"],
+ ["Respiratory", "What does head nodding in an infant mean?", "Severe respiratory distress, with use of the accessory muscles.", 2, "d4vndg"]
 ]

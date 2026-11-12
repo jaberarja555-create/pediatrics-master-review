@@ -339,4 +339,5 @@ system and the one admin page. The Library button sits beside the new Home greet
   key of the old wording]; question JSON gets "d" (level) and "id" (old id when the stem was reworded), so known cards and answers stay.
   Chapter files `tools/levels/ch<N>.py` (CARDS per topic with the old index; QS per topic index), applied with `python3 tools/levels/apply.py`.
   App (src/app.js): Level row in flashcards (`prr-fclv`) and step 3 «Level» in the test builder, shown once any card/question has a level.
-  Done: chapter 1 (owner to review before the rest). Surgery has the same app code and tools to come.
+  Done for ALL 16 chapters (12 Nov 2026): 2,569 cards (924 easy, 1,377 medium, 268 hard) and 770 questions; 8 exact duplicate cards removed.
+  Chapters 13 and 15 use LV (one digit per card) + REW (rewritten question/answer) instead of full CARDS lists. Surgery has the same app code; its cards are next.

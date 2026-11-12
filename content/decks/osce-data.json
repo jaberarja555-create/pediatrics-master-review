@@ -1,162 +1,34 @@
 [
- [
-  "CSF",
-  "Normal CSF white cells?",
-  "≤ 5 lymphocytes/mm³."
- ],
- [
-  "CSF",
-  "Normal CSF protein?",
-  "0.15–0.4 g/L."
- ],
- [
-  "CSF",
-  "Normal CSF : blood glucose?",
-  "About two-thirds."
- ],
- [
-  "CSF",
-  "Bacterial meningitis CSF?",
-  "Turbid, many neutrophils, high protein, low glucose (< 0.4), Gram stain positive."
- ],
- [
-  "CSF",
-  "Viral meningitis CSF?",
-  "Clear, lymphocytes, normal glucose, normal or slightly high protein."
- ],
- [
-  "CSF",
-  "TB meningitis CSF?",
-  "Lymphocytes, very high protein, low glucose, cobweb clot, ZN stain."
- ],
- [
-  "CSF",
-  "Uniform red cells with xanthochromia?",
-  "Subarachnoid haemorrhage (not a traumatic tap)."
- ],
- [
-  "CBC",
-  "Low MCV, high RDW, low ferritin?",
-  "Iron deficiency anaemia."
- ],
- [
-  "CBC",
-  "Very low MCV, normal RDW, target cells?",
-  "Thalassaemia."
- ],
- [
-  "CBC",
-  "High reticulocytes and bilirubin with anaemia?",
-  "Haemolysis."
- ],
- [
-  "CBC",
-  "Pancytopenia, huge spleen, fever?",
-  "Kala-azar."
- ],
- [
-  "CBC",
-  "Blasts in the film?",
-  "Acute leukaemia: bone marrow."
- ],
- [
-  "CBC",
-  "High eosinophils?",
-  "Parasites or allergy."
- ],
- [
-  "Urine",
-  "Nephrotic urine?",
-  "Protein +++ (> 40 mg/m²/h), little blood."
- ],
- [
-  "Urine",
-  "Nephritic urine?",
-  "Red cells and red cell casts, some protein; low C3, high ASO."
- ],
- [
-  "Urine",
-  "UTI urine?",
-  "Pus cells, nitrites, positive culture."
- ],
- [
-  "X-ray",
-  "Boot-shaped heart?",
-  "Tetralogy of Fallot."
- ],
- [
-  "X-ray",
-  "Egg on its side?",
-  "Transposition of the great arteries."
- ],
- [
-  "X-ray",
-  "Snowman heart?",
-  "TAPVR."
- ],
- [
-  "X-ray",
-  "Steeple sign?",
-  "Croup."
- ],
- [
-  "X-ray",
-  "Thumb sign?",
-  "Epiglottitis."
- ],
- [
-  "X-ray",
-  "Double bubble?",
-  "Duodenal atresia."
- ],
- [
-  "X-ray",
-  "Cupping and fraying of metaphyses?",
-  "Rickets."
- ],
- [
-  "X-ray",
-  "Order to present an X-ray?",
-  "Type and view, patient, quality, findings, diagnosis, next test."
- ],
- [
-  "Instruments",
-  "NG tube length?",
-  "Nose → ear lobe → xiphisternum."
- ],
- [
-  "Instruments",
-  "Intraosseous site?",
-  "Proximal tibia, 1–2 cm below the tuberosity, medial surface."
- ],
- [
-  "Instruments",
-  "Nasal prong oxygen flow?",
-  "1–2 L/min (0.5–1 L/min in neonates)."
- ],
- [
-  "Instruments",
-  "Phototherapy light and care?",
-  "Blue light 430–490 nm, eyes covered, extra fluids."
- ],
- [
-  "Instruments",
-  "VVM: discard when?",
-  "When the square is as dark as or darker than the circle."
- ],
- [
-  "Instruments",
-  "Energy in F-75, F-100, RUTF?",
-  "75 and 100 kcal per 100 ml; RUTF 500 kcal per sachet."
- ],
- [
-  "Spotters",
-  "How is a Mantoux test read?",
-  "Induration (not redness) across the forearm at 48–72 hours."
- ],
- [
-  "Spotters",
-  "Where are Koplik spots?",
-  "Buccal mucosa opposite the lower molars."
- ]
+ ["CSF", "What is the normal white cell count in the CSF?", "5 lymphocytes/mm³ or fewer.", 1, "14pkhk8"],
+ ["CSF", "What is the normal CSF protein?", "0.15–0.4 g/L.", 1, "s3vr8f"],
+ ["CSF", "What is the normal ratio of CSF glucose to blood glucose?", "About two thirds.", 1, "dy4xi8"],
+ ["CSF", "What does the CSF show in bacterial meningitis?", "Turbid fluid, many neutrophils, a high protein, a low glucose (ratio below 0.4) and a positive Gram stain.", 2, "1wfzvj"],
+ ["CSF", "What does the CSF show in viral meningitis?", "Clear fluid with lymphocytes, a normal glucose and a normal or slightly raised protein.", 2, "bh8l76"],
+ ["CSF", "What does the CSF show in tuberculous meningitis?", "Lymphocytes, a very high protein, a low glucose, a cobweb clot and a ZN stain for the bacilli.", 2, "8q7s5y"],
+ ["CSF", "What do evenly blood-stained CSF and xanthochromia indicate?", "A subarachnoid haemorrhage, not a traumatic tap.", 3, "6m8e5e"],
+ ["CBC", "What do a low MCV, a high RDW and a low ferritin indicate?", "Iron deficiency anaemia.", 2, "jk3mf5"],
+ ["CBC", "What do a very low MCV, a normal RDW and target cells indicate?", "Thalassaemia.", 3, "zfdkqn"],
+ ["CBC", "What do anaemia with high reticulocytes and a high bilirubin indicate?", "Haemolysis.", 2, "phm9nx"],
+ ["CBC", "What do pancytopenia, a huge spleen and fever suggest?", "Kala-azar.", 2, "14db7l8"],
+ ["CBC", "What do blasts in the blood film mean?", "Acute leukaemia; a bone marrow examination is done.", 2, "1yzhmnq"],
+ ["CBC", "What causes a high eosinophil count?", "Parasites or allergy.", 1, "trpfvq"],
+ ["Urine", "What does the urine show in nephrotic syndrome?", "Protein +++ (more than 40 mg/m²/h) with little blood.", 2, "1x1v1ei"],
+ ["Urine", "What does the urine show in nephritis?", "Red cells and red cell casts with some protein; the C3 is low and the ASO high.", 2, "y9oaqc"],
+ ["Urine", "What does the urine show in urinary tract infection?", "Pus cells, nitrites and a positive culture.", 1, "1kv6keq"],
+ ["X-ray", "Which lesion gives a boot-shaped heart?", "Tetralogy of Fallot.", 1, "1nucemz"],
+ ["X-ray", "Which lesion gives an \"egg on its side\" heart?", "Transposition of the great arteries.", 1, "qqaisq"],
+ ["X-ray", "Which lesion gives a \"snowman\" heart?", "Total anomalous pulmonary venous return.", 2, "ttmote"],
+ ["X-ray", "What does the steeple sign indicate?", "Croup.", 1, "1ggnckq"],
+ ["X-ray", "What does the thumb sign indicate?", "Epiglottitis.", 1, "1559c8o"],
+ ["X-ray", "What does the double bubble indicate?", "Duodenal atresia.", 1, "10w1o1w"],
+ ["X-ray", "What does cupping and fraying of the metaphyses indicate?", "Rickets.", 1, "7odqx8"],
+ ["X-ray", "In what order is an X-ray presented?", "Type and view, the patient, the quality, the findings, the diagnosis and the next test.", 2, "ttnlt1"],
+ ["Instruments", "How is the length of a nasogastric tube measured?", "From the nose to the ear lobe, then to the xiphisternum.", 1, "r4cb5w"],
+ ["Instruments", "Where is an intraosseous needle inserted?", "In the proximal tibia, 1–2 cm below the tuberosity, on the medial surface.", 2, "u7p5jl"],
+ ["Instruments", "What oxygen flow is given by nasal prongs?", "1–2 L/min (0.5–1 L/min in newborns).", 1, "1hb86xs"],
+ ["Instruments", "What light is used for phototherapy, and what care is given?", "Blue light of 430–490 nm, with the eyes covered and extra fluids.", 1, "zl23w2"],
+ ["Instruments", "When is a vaccine discarded according to the vaccine vial monitor (VVM)?", "When the square is as dark as or darker than the circle.", 2, "166r3cg"],
+ ["Instruments", "What is the energy content of F-75, F-100 and RUTF?", "75 and 100 kcal per 100 ml; RUTF has 500 kcal per sachet.", 1, "5f1k14"],
+ ["Spotters", "How is a Mantoux test read?", "By measuring the induration (not the redness) across the forearm at 48–72 hours.", 2, "nk2hqg"],
+ ["Spotters", "Where are Koplik spots seen?", "On the buccal mucosa opposite the lower molars.", 1, "v9lxc7"]
 ]

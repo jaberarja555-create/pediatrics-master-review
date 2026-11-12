@@ -1,137 +1,29 @@
 [
- [
-  "Jaundice",
-  "Which onset of neonatal jaundice is always pathological?",
-  "Jaundice in the first 24 hours of life."
- ],
- [
-  "Jaundice",
-  "How does neonatal jaundice spread?",
-  "From the face downwards; palms and soles mean a high level."
- ],
- [
-  "Jaundice",
-  "Pale stool and dark urine in a jaundiced baby suggest what?",
-  "Conjugated jaundice: biliary atresia or hepatitis."
- ],
- [
-  "Jaundice",
-  "Name four symptoms of kernicterus.",
-  "Poor suck, lethargy, high-pitched cry, arching of the back (and fits)."
- ],
- [
-  "Jaundice",
-  "Which blood groups suggest haemolytic disease?",
-  "Rh-negative mother, or mother group O with baby A or B."
- ],
- [
-  "Jaundice",
-  "Prolonged jaundice with constipation suggests what?",
-  "Congenital hypothyroidism."
- ],
- [
-  "Jaundice",
-  "Which test shows immune haemolysis?",
-  "The direct Coombs test."
- ],
- [
-  "Jaundice",
-  "Treatment of jaundice above the exchange line or with kernicterus signs?",
-  "Exchange transfusion."
- ],
- [
-  "Sepsis",
-  "What time divides early from late neonatal sepsis?",
-  "72 hours."
- ],
- [
-  "Sepsis",
-  "Early neonatal sepsis organisms?",
-  "GBS, E. coli, Listeria."
- ],
- [
-  "Sepsis",
-  "Late neonatal sepsis organisms?",
-  "Staphylococcus, Klebsiella, Pseudomonas, Candida."
- ],
- [
-  "Sepsis",
-  "Which maternal risk factor for sepsis is a number?",
-  "Rupture of membranes for more than 18 hours."
- ],
- [
-  "Sepsis",
-  "Which temperature change is common in septic preterm babies?",
-  "Low temperature (hypothermia)."
- ],
- [
-  "Sepsis",
-  "Best test to confirm neonatal sepsis?",
-  "Blood culture."
- ],
- [
-  "Sepsis",
-  "First-line antibiotics for neonatal sepsis?",
-  "Ampicillin + gentamicin for at least 10 days."
- ],
- [
-  "Sepsis",
-  "How long is neonatal meningitis treated?",
-  "At least 3 weeks (cefotaxime)."
- ],
- [
-  "Malnutrition",
-  "Which feeding details are asked in a malnourished child?",
-  "Breastfeeding, formula type and dilution, weaning age and foods, present diet, feeding during diarrhoea, taboos."
- ],
- [
-  "Malnutrition",
-  "Name the life-threatening conditions of SAM in the first 24 hours.",
-  "Hypoglycaemia, hypothermia, dehydration, infection and heart failure."
- ],
- [
-  "Malnutrition",
-  "Treatment of hypoglycaemia in SAM?",
-  "10% glucose 5 ml/kg IV (or 50 ml orally/NGT), then F-75 every 30 minutes."
- ],
- [
-  "Malnutrition",
-  "Hypothermia threshold in SAM?",
-  "Axillary temperature below 35 °C."
- ],
- [
-  "Malnutrition",
-  "Which children with SAM receive antibiotics?",
-  "All of them (amoxicillin; ampicillin + gentamicin if complicated)."
- ],
- [
-  "Malnutrition",
-  "Five parts of the diagnosis in a SAM station?",
-  "Classification, life-threatening condition, nutritional deficiency, infection and predisposing factor."
- ],
- [
-  "Diarrhoea",
-  "Acute versus persistent diarrhoea?",
-  "Acute < 14 days; persistent 14 days or more."
- ],
- [
-  "Diarrhoea",
-  "Blood and mucus in the stool means what?",
-  "Dysentery (Shigella, amoebiasis)."
- ],
- [
-  "Diarrhoea",
-  "Treatment of bloody diarrhoea?",
-  "Ciprofloxacin 15 mg/kg 12-hourly for 3 days."
- ],
- [
-  "Diarrhoea",
-  "Zinc dose in diarrhoea?",
-  "10 mg daily under 6 months, 20 mg daily from 6 months, for 10–14 days."
- ],
- [
-  "Diarrhoea",
-  "Which vaccines are asked in a diarrhoea history?",
-  "Rotavirus and measles."
- ]
+ ["Jaundice", "Which onset of neonatal jaundice is always pathological?", "Jaundice in the first 24 hours of life.", 1, "djyg1r"],
+ ["Jaundice", "How does neonatal jaundice spread?", "From the face downwards; palms and soles mean a high level.", 1, "uj9t6g"],
+ ["Jaundice", "Pale stool and dark urine in a jaundiced baby suggest what?", "Conjugated jaundice: biliary atresia or hepatitis.", 2, "1nprw5r"],
+ ["Jaundice", "Name four symptoms of kernicterus.", "Poor suck, lethargy, high-pitched cry, arching of the back (and fits).", 2, "vycl6f"],
+ ["Jaundice", "Which blood groups suggest haemolytic disease of the newborn?", "A rhesus-negative mother, or a group O mother with a group A or B baby.", 1, "swhz4h"],
+ ["Jaundice", "What does prolonged jaundice with constipation suggest?", "Congenital hypothyroidism.", 2, "181hus6"],
+ ["Jaundice", "Which test shows immune haemolysis?", "The direct Coombs test.", 1, "ug73dh"],
+ ["Jaundice", "How is jaundice above the exchange line, or with signs of kernicterus, treated?", "By exchange transfusion.", 2, "yzzc80"],
+ ["Sepsis", "Which age divides early from late neonatal sepsis?", "72 hours.", 1, "gsy1g2"],
+ ["Sepsis", "Which organisms cause early neonatal sepsis?", "Group B streptococcus, E. coli and Listeria.", 1, "1bgh32o"],
+ ["Sepsis", "Which organisms cause late neonatal sepsis?", "Staphylococcus, Klebsiella, Pseudomonas and Candida.", 2, "1c6fxbh"],
+ ["Sepsis", "Which maternal risk factor for neonatal sepsis is defined by a number?", "Rupture of the membranes for more than 18 hours.", 2, "1op8dx6"],
+ ["Sepsis", "Which temperature change is common in septic preterm babies?", "A low temperature (hypothermia).", 2, "1fgk3mt"],
+ ["Sepsis", "What is the best test to confirm neonatal sepsis?", "A blood culture.", 1, "z1jg9z"],
+ ["Sepsis", "What are the first-line antibiotics for neonatal sepsis?", "Ampicillin and gentamicin for at least 10 days.", 1, "1jvvo0f"],
+ ["Sepsis", "For how long is neonatal meningitis treated?", "For at least 3 weeks (with cefotaxime).", 2, "1hb7oez"],
+ ["Malnutrition", "Which feeding details are asked in a malnourished child?", "Breastfeeding, the type and dilution of formula, the age and foods of weaning, the present diet, feeding during diarrhoea, and food taboos.", 2, "1yd2s0j"],
+ ["Malnutrition", "What are the life-threatening conditions of severe acute malnutrition in the first 24 hours?", "Hypoglycaemia, hypothermia, dehydration, infection and heart failure.", 2, "pr43bn"],
+ ["Malnutrition", "How is hypoglycaemia treated in severe acute malnutrition?", "10% glucose 5 ml/kg intravenously (or 50 ml by mouth or nasogastric tube), then F-75 every 30 minutes.", 2, "9qnifw"],
+ ["Malnutrition", "What is the hypothermia threshold in severe acute malnutrition?", "An axillary temperature below 35 °C.", 1, "cvxwl6"],
+ ["Malnutrition", "Which children with severe acute malnutrition receive antibiotics?", "All of them: amoxicillin, or ampicillin with gentamicin if complicated.", 2, "9xa5ke"],
+ ["Malnutrition", "What are the five parts of the diagnosis in a severe acute malnutrition station?", "The classification, the life-threatening condition, the nutritional deficiency, the infection and the predisposing factor.", 3, "11etlkd"],
+ ["Diarrhoea", "How does acute diarrhoea differ from persistent diarrhoea?", "Acute diarrhoea lasts less than 14 days; persistent diarrhoea lasts 14 days or more.", 1, "1hwi8j"],
+ ["Diarrhoea", "What does blood and mucus in the stool mean?", "Dysentery (Shigella or amoebiasis).", 1, "gmq29s"],
+ ["Diarrhoea", "How is bloody diarrhoea treated?", "With ciprofloxacin 15 mg/kg 12-hourly for 3 days.", 2, "12l1j5s"],
+ ["Diarrhoea", "What is the zinc dose in diarrhoea?", "10 mg daily under 6 months and 20 mg daily from 6 months, for 10–14 days.", 1, "tfj2es"],
+ ["Diarrhoea", "Which vaccines are asked about in a diarrhoea history?", "Rotavirus and measles vaccines.", 2, "13jrzhv"]
 ]

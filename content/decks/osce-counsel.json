@@ -1,152 +1,32 @@
 [
- [
-  "Structure",
-  "Steps of a counselling station?",
-  "Greet, ask what she knows, explain simply, advise, check understanding, questions, follow-up."
- ],
- [
-  "Structure",
-  "How is understanding checked?",
-  "Ask the mother to repeat the key points in her own words."
- ],
- [
-  "Immunization",
-  "EPI vaccines at birth?",
-  "BCG and OPV 0."
- ],
- [
-  "Immunization",
-  "EPI vaccines at 6, 10 and 14 weeks?",
-  "OPV, pentavalent, PCV, rotavirus (IPV at 14 weeks, no rotavirus at 14 weeks)."
- ],
- [
-  "Immunization",
-  "EPI vaccines at 9 months?",
-  "Measles–rubella 1, meningococcal A, yellow fever where at risk."
- ],
- [
-  "Immunization",
-  "Second measles–rubella dose?",
-  "18 months."
- ],
- [
-  "Immunization",
-  "Expected reaction after vaccines?",
-  "Fever and pain for 1–2 days: paracetamol."
- ],
- [
-  "Immunization",
-  "Normal course of the BCG site?",
-  "A small sore at 2–6 weeks that heals into a scar."
- ],
- [
-  "Immunization",
-  "Name false contraindications to vaccination.",
-  "Mild illness, low fever, cold, diarrhoea, antibiotics, malnutrition, prematurity."
- ],
- [
-  "Immunization",
-  "Missed doses?",
-  "Continue the series; never restart."
- ],
- [
-  "Febrile convulsion",
-  "How should the mother detect fever?",
-  "Back of the hand on covered parts; best with a thermometer (≥ 37.5 °C axillary)."
- ],
- [
-  "Febrile convulsion",
-  "Paracetamol dose?",
-  "15 mg/kg every 6 hours."
- ],
- [
-  "Febrile convulsion",
-  "Sponging water?",
-  "Lukewarm (tepid), not cold water or alcohol."
- ],
- [
-  "Febrile convulsion",
-  "First aid during a fit?",
-  "On the side, safe surface, nothing in the mouth, loosen clothes, time it."
- ],
- [
-  "Febrile convulsion",
-  "When is rectal diazepam given?",
-  "Fit longer than 5 minutes: 0.5 mg/kg."
- ],
- [
-  "Febrile convulsion",
-  "Recurrence risk?",
-  "About 1 in 3."
- ],
- [
-  "Febrile convulsion",
-  "Do antipyretics prevent febrile convulsions?",
-  "No; they give comfort only."
- ],
- [
-  "Epilepsy",
-  "Most important medicine advice?",
-  "Give it every day; never stop suddenly."
- ],
- [
-  "Epilepsy",
-  "When is antiepileptic treatment usually stopped?",
-  "After 2 seizure-free years, gradually."
- ],
- [
-  "Epilepsy",
-  "Safety precautions?",
-  "No swimming or bathing alone, no climbing heights, avoid sleep loss."
- ],
- [
-  "Diabetes",
-  "How is diabetes explained?",
-  "The pancreas stopped making insulin; not her fault, not caused by sweets."
- ],
- [
-  "Diabetes",
-  "Insulin storage?",
-  "Spare vials in the fridge (not freezer); vial in use at room temperature up to 4 weeks."
- ],
- [
-  "Diabetes",
-  "Why rotate injection sites?",
-  "To prevent lipohypertrophy and erratic absorption."
- ],
- [
-  "Diabetes",
-  "Sick-day rule?",
-  "Never stop insulin; fluids, more glucose and ketone checks; come with vomiting."
- ],
- [
-  "Diabetes",
-  "Signs of hypoglycaemia?",
-  "Sweating, shaking, hunger, pallor, irritability, drowsiness, fits."
- ],
- [
-  "Diabetes",
-  "Treatment of hypoglycaemia when awake?",
-  "Sugar by mouth at once, then a snack."
- ],
- [
-  "Diabetes",
-  "Unconscious hypoglycaemic child at home?",
-  "Glucagon IM, nothing by mouth, go to hospital."
- ],
- [
-  "Down syndrome",
-  "How is the cause of Down syndrome explained?",
-  "An extra chromosome 21 at conception; not the parents' fault."
- ],
- [
-  "Inhaler",
-  "Spacer technique?",
-  "Shake, one puff, 5–6 normal breaths; mask under 4 years."
- ],
- [
-  "ORS",
-  "How is ORS prepared?",
-  "One packet in 1 litre of clean water; use within 24 hours."
- ]
+ ["Structure", "What are the steps of a counselling station?", "Greet, ask what the mother knows, explain simply, advise, check understanding, invite questions and arrange follow-up.", 1, "x7kxfz"],
+ ["Structure", "How is understanding checked?", "Ask the mother to repeat the key points in her own words.", 2, "1crpynu"],
+ ["Immunization", "Which EPI vaccines are given at birth?", "BCG and the birth dose of oral polio vaccine.", 1, "g78irx"],
+ ["Immunization", "Which EPI vaccines are given at 6, 10 and 14 weeks?", "Oral polio, pentavalent, pneumococcal conjugate and rotavirus vaccines; inactivated polio vaccine is added at 14 weeks, and rotavirus vaccine is not given at 14 weeks.", 1, "6equj4"],
+ ["Immunization", "Which EPI vaccines are given at 9 months?", "The first dose of measles–rubella vaccine, meningococcal A vaccine, and yellow fever vaccine where there is a risk.", 1, "tv4quw"],
+ ["Immunization", "When is the second dose of measles–rubella vaccine given?", "At 18 months.", 1, "ttnuvi"],
+ ["Immunization", "What reaction is expected after vaccines?", "Fever and pain for 1–2 days, treated with paracetamol.", 1, "1dmcdym"],
+ ["Immunization", "What is the normal course of the BCG site?", "A small sore at 2–6 weeks that heals into a scar.", 1, "n2f67m"],
+ ["Immunization", "Name false contraindications to vaccination.", "Mild illness, low fever, cold, diarrhoea, antibiotics, malnutrition, prematurity.", 2, "837ro2"],
+ ["Immunization", "What is done when vaccine doses are missed?", "The series is continued; it is never restarted.", 1, "1rqesy6"],
+ ["Febrile convulsion", "How should the mother detect fever?", "With the back of the hand on covered parts of the body, or best with a thermometer (37.5 °C or more in the axilla).", 1, "1a8q6zr"],
+ ["Febrile convulsion", "What is the dose of paracetamol?", "15 mg/kg every 6 hours.", 1, "l8eoxp"],
+ ["Febrile convulsion", "What water is used for sponging?", "Lukewarm (tepid) water, not cold water or alcohol.", 1, "1e6gykx"],
+ ["Febrile convulsion", "What is the first aid during a fit?", "Place the child on the side on a safe surface, put nothing in the mouth, loosen the clothes and time the fit.", 1, "ik29dk"],
+ ["Febrile convulsion", "When is rectal diazepam given?", "When a fit lasts longer than 5 minutes: 0.5 mg/kg.", 2, "4eepbg"],
+ ["Febrile convulsion", "What is the risk of recurrence of febrile convulsions?", "About 1 in 3.", 1, "b64t4w"],
+ ["Febrile convulsion", "Do antipyretics prevent febrile convulsions?", "No. They give comfort only.", 2, "xb9qvd"],
+ ["Epilepsy", "What is the most important advice about antiepileptic medicine?", "Give it every day and never stop it suddenly.", 1, "14szlto"],
+ ["Epilepsy", "When is antiepileptic treatment usually stopped?", "Gradually, after 2 seizure-free years.", 2, "h7e6rs"],
+ ["Epilepsy", "What safety precautions are advised in epilepsy?", "No swimming or bathing alone, no climbing to heights, and avoiding loss of sleep.", 1, "lln4zm"],
+ ["Diabetes", "How is diabetes explained to the mother?", "The pancreas has stopped making insulin; it is not her fault and it is not caused by sweets.", 1, "e2nihs"],
+ ["Diabetes", "How is insulin stored?", "Spare vials in the fridge (not the freezer); the vial in use at room temperature for up to 4 weeks.", 2, "18042ii"],
+ ["Diabetes", "Why are the injection sites rotated?", "To prevent lipohypertrophy and erratic absorption.", 2, "16h2y89"],
+ ["Diabetes", "What is the sick-day rule in diabetes?", "Never stop insulin; give fluids and more glucose, check ketones, and come to hospital with vomiting.", 2, "1fk1i1c"],
+ ["Diabetes", "What are the signs of hypoglycaemia?", "Sweating, shaking, hunger, pallor, irritability, drowsiness and fits.", 1, "ozndvg"],
+ ["Diabetes", "How is hypoglycaemia treated in an awake child?", "Sugar by mouth at once, followed by a snack.", 1, "1h48y75"],
+ ["Diabetes", "What is done for an unconscious hypoglycaemic child at home?", "Intramuscular glucagon, nothing by mouth, and transfer to hospital.", 2, "17a9di"],
+ ["Down syndrome", "How is the cause of Down syndrome explained?", "An extra chromosome 21 at conception; it is not the parents' fault.", 1, "1wmbj4n"],
+ ["Inhaler", "What is the technique of using a spacer?", "Shake the inhaler, give one puff, take 5–6 normal breaths; use a mask under 4 years.", 2, "1xkvfib"],
+ ["ORS", "How is ORS prepared?", "One packet in 1 litre of clean water, used within 24 hours.", 1, "129ssek"]
 ]

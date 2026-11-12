@@ -1,72 +1,16 @@
 [
- [
-  "Abdomen",
-  "Position for the abdominal examination?",
-  "Lying flat with arms by the sides (infant on the mother's lap)."
- ],
- [
-  "Abdomen",
-  "Where does deep palpation start?",
-  "In the right iliac fossa."
- ],
- [
-  "Abdomen",
-  "Normal liver edge in infants?",
-  "Up to 2 cm below the costal margin."
- ],
- [
-  "Abdomen",
-  "Spleen versus kidney: three differences?",
-  "Spleen: cannot get above it, notch, dull, not ballotable; kidney: ballotable, resonant."
- ],
- [
-  "Abdomen",
-  "Signs of ascites?",
-  "Shifting dullness; fluid thrill if tense."
- ],
- [
-  "Abdomen",
-  "What do cautery marks over the abdomen suggest?",
-  "A long-standing illness (e.g. splenomegaly) treated traditionally."
- ],
- [
-  "Abdomen",
-  "Ballotable flank mass in a well toddler?",
-  "Wilms tumour (do not palpate hard)."
- ],
- [
-  "HSM",
-  "Huge spleen, fever, wasting, from Gedaref?",
-  "Kala-azar: rK39 test."
- ],
- [
-  "HSM",
-  "Firm spleen with haematemesis and normal liver function?",
-  "Portal hypertension (schistosomiasis)."
- ],
- [
-  "HSM",
-  "First test in hepatosplenomegaly?",
-  "CBC with a blood film."
- ],
- [
-  "Abdomen",
-  "How is liver size reported?",
-  "Cm below the costal margin in the mid-clavicular line, plus span by percussion."
- ],
- [
-  "Abdomen",
-  "How is spleen size reported?",
-  "Cm from the left costal margin towards the right iliac fossa."
- ],
- [
-  "Abdomen",
-  "Visible peristalsis left to right in a 4-week-old?",
-  "Pyloric stenosis."
- ],
- [
-  "Abdomen",
-  "What is examined at the end of the abdominal station?",
-  "Hernial orifices and genitalia; offer the anal examination."
- ]
+ ["Abdomen", "In which position is the abdomen examined?", "Lying flat with the arms by the sides (an infant on the mother's lap).", 1, "12vqivu"],
+ ["Abdomen", "Where does deep palpation start?", "In the right iliac fossa.", 1, "230ihv"],
+ ["Abdomen", "How far below the costal margin is the normal liver edge in infants?", "Up to 2 cm.", 2, "5l07vh"],
+ ["Abdomen", "How is the spleen told apart from the kidney?", "The spleen: you cannot get above it, it has a notch, it is dull and it is not ballotable. The kidney is ballotable and resonant.", 2, "cu5iny"],
+ ["Abdomen", "What are the signs of ascites?", "Shifting dullness, and a fluid thrill if the ascites is tense.", 1, "fbcwc4"],
+ ["Abdomen", "What do cautery marks over the abdomen suggest?", "A long-standing illness (e.g. splenomegaly) treated traditionally.", 2, "lk2o5k"],
+ ["Abdomen", "A well toddler has a ballotable flank mass. What is the likely diagnosis?", "Wilms tumour; it is not palpated hard.", 3, "c6hw8r"],
+ ["HSM", "A wasted child from Gedaref has fever and a huge spleen. What is the likely diagnosis and the test?", "Kala-azar; the rK39 test.", 2, "crnaw2"],
+ ["HSM", "A child has a firm spleen and haematemesis with normal liver function. What is the cause?", "Portal hypertension from schistosomiasis.", 3, "1y5vd2m"],
+ ["HSM", "What is the first test in hepatosplenomegaly?", "A complete blood count with a blood film.", 1, "1xrur6r"],
+ ["Abdomen", "How is the size of the liver reported?", "In cm below the costal margin in the mid-clavicular line, with the span by percussion.", 1, "19w3rwt"],
+ ["Abdomen", "How is the size of the spleen reported?", "In cm from the left costal margin towards the right iliac fossa.", 1, "1ti7td4"],
+ ["Abdomen", "A 4-week-old has visible peristalsis from left to right. What is the diagnosis?", "Pyloric stenosis.", 2, "oeeddj"],
+ ["Abdomen", "What is examined at the end of the abdominal station?", "The hernial orifices and genitalia; an anal examination is offered.", 1, "d5h9h0"]
 ]

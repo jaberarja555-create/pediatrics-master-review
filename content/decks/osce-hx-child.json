@@ -1,152 +1,32 @@
 [
- [
-  "Cough",
-  "Acute versus chronic cough?",
-  "Acute under 3 weeks; chronic over 4 weeks."
- ],
- [
-  "Cough",
-  "Sudden choking cough while eating suggests what?",
-  "An inhaled foreign body: bronchoscopy."
- ],
- [
-  "Cough",
-  "Barking cough suggests what?",
-  "Croup."
- ],
- [
-  "Cough",
-  "Bouts of cough ending in a whoop and vomiting?",
-  "Pertussis."
- ],
- [
-  "Cough",
-  "Night cough with exercise and dust triggers suggests what?",
-  "Asthma."
- ],
- [
-  "Cough",
-  "Night sweats, weight loss and an adult contact suggest what?",
-  "Pulmonary TB."
- ],
- [
-  "Asthma",
-  "Which past event marks an asthmatic at high risk?",
-  "Admission to intensive care or ventilation."
- ],
- [
-  "Asthma",
-  "Which family history supports asthma?",
-  "Atopy: asthma, eczema or allergic rhinitis."
- ],
- [
-  "Asthma",
-  "Which environmental questions are asked?",
-  "Smoking at home, wood or charcoal smoke, animals, dust."
- ],
- [
-  "Convulsions",
-  "First question in a convulsion history?",
-  "Was it a true seizure (not breath-holding, rigor or faint)?"
- ],
- [
-  "Convulsions",
-  "Three phases of the attack to analyse?",
-  "Before (trigger, aura), during (type, duration), after (postictal)."
- ],
- [
-  "Convulsions",
-  "Weakness of one limb after a fit?",
-  "Todd's paresis: a focal seizure."
- ],
- [
-  "Convulsions",
-  "Definition of a simple febrile convulsion?",
-  "Generalised, < 15 minutes, once in 24 h, age 6 months – 5 years, full recovery."
- ],
- [
-  "Convulsions",
-  "What makes a febrile convulsion complex?",
-  "Focal onset, ≥ 15 minutes, or recurrence within 24 hours."
- ],
- [
-  "Convulsions",
-  "Fever and convulsion under 12 months: next step?",
-  "Lumbar puncture (meningitis signs unreliable)."
- ],
- [
-  "Bleeding",
-  "Skin and mucosal bleeding suggests what?",
-  "A platelet or vessel disorder."
- ],
- [
-  "Bleeding",
-  "Joint and muscle bleeding suggests what?",
-  "A clotting factor disorder (haemophilia)."
- ],
- [
-  "Bleeding",
-  "Petechiae 2 weeks after a viral illness in a well child?",
-  "Immune thrombocytopenia (ITP)."
- ],
- [
-  "Bleeding",
-  "Which past events reveal a bleeding tendency?",
-  "Bleeding after circumcision, at vaccination sites, from the cord; cephalhaematoma."
- ],
- [
-  "Bleeding",
-  "Family pattern of haemophilia?",
-  "Male relatives on the mother's side (X-linked)."
- ],
- [
-  "Bleeding",
-  "Treatment of von Willebrand disease?",
-  "Desmopressin (DDAVP), vWF concentrate or cryoprecipitate."
- ],
- [
-  "Pallor",
-  "Which dietary history causes iron deficiency in a toddler?",
-  "A prolonged milk-only diet (cow's milk), late weaning."
- ],
- [
-  "Pallor",
-  "Eating soil or ice is called what?",
-  "Pica: a sign of iron deficiency."
- ],
- [
-  "Swelling",
-  "Where does renal oedema start?",
-  "Around the eyes and face, in the morning."
- ],
- [
-  "Swelling",
-  "Frothy urine suggests what?",
-  "Proteinuria: nephrotic syndrome."
- ],
- [
-  "Swelling",
-  "Cola-coloured urine after a sore throat?",
-  "Post-streptococcal glomerulonephritis."
- ],
- [
-  "Red urine",
-  "Red urine at the end of urination after canal swimming?",
-  "Urinary schistosomiasis: praziquantel."
- ],
- [
-  "Red urine",
-  "Dark urine after fava beans?",
-  "Haemoglobinuria from G6PD deficiency."
- ],
- [
-  "Joints",
-  "Migrating large-joint arthritis after a sore throat?",
-  "Acute rheumatic fever."
- ],
- [
-  "Joints",
-  "Secondary prophylaxis of rheumatic fever?",
-  "Benzathine penicillin IM every 4 weeks."
- ]
+ ["Cough", "How does an acute cough differ from a chronic cough?", "An acute cough lasts under 3 weeks; a chronic cough lasts over 4 weeks.", 1, "1v5t1ph"],
+ ["Cough", "What does a sudden choking cough while eating suggest?", "An inhaled foreign body, which needs bronchoscopy.", 2, "ua7skn"],
+ ["Cough", "What does a barking cough suggest?", "Croup.", 1, "immaza"],
+ ["Cough", "What do bouts of cough ending in a whoop and vomiting suggest?", "Pertussis.", 1, "uhul1n"],
+ ["Cough", "What does a night cough triggered by exercise and dust suggest?", "Asthma.", 2, "144xehi"],
+ ["Cough", "What do night sweats, weight loss and contact with an adult with chronic cough suggest?", "Pulmonary tuberculosis.", 2, "1gp1lof"],
+ ["Asthma", "Which past event marks an asthmatic at high risk?", "Admission to intensive care or ventilation.", 2, "130c4tn"],
+ ["Asthma", "Which family history supports asthma?", "Atopy: asthma, eczema or allergic rhinitis in the family.", 1, "1cd0sem"],
+ ["Asthma", "Which environmental questions are asked in asthma?", "Smoking at home, wood or charcoal smoke, animals and dust.", 1, "6jbwln"],
+ ["Convulsions", "What is the first question in a convulsion history?", "Was it a true seizure, and not breath-holding, a rigor or a faint?", 2, "1cyldq3"],
+ ["Convulsions", "Which three phases of the attack are analysed?", "Before (trigger and aura), during (type and duration) and after (the postictal phase).", 2, "8ywsq3"],
+ ["Convulsions", "What does weakness of one limb after a fit mean?", "Todd's paresis, which shows that the seizure was focal.", 3, "1vuafkd"],
+ ["Convulsions", "How is a simple febrile convulsion defined?", "A generalised seizure lasting less than 15 minutes, once in 24 hours, at 6 months to 5 years of age, with full recovery.", 1, "qnbb5r"],
+ ["Convulsions", "What makes a febrile convulsion complex?", "A focal onset, a duration of 15 minutes or more, or recurrence within 24 hours.", 2, "13xty3w"],
+ ["Convulsions", "A child under 12 months has fever and a convulsion. What is the next step?", "A lumbar puncture, because the signs of meningitis are unreliable at this age.", 3, "90rcqj"],
+ ["Bleeding", "What does bleeding into the skin and mucosa suggest?", "A disorder of the platelets or the vessels.", 2, "126hdwg"],
+ ["Bleeding", "What does bleeding into joints and muscles suggest?", "A clotting factor disorder (haemophilia).", 2, "1pyrisy"],
+ ["Bleeding", "A well child has petechiae 2 weeks after a viral illness. What is the likely diagnosis?", "Immune thrombocytopenia (ITP).", 2, "1xu8y75"],
+ ["Bleeding", "Which past events reveal a bleeding tendency?", "Bleeding after circumcision, at vaccination sites or from the cord, and a cephalhaematoma.", 2, "il3iyf"],
+ ["Bleeding", "What is the family pattern of haemophilia?", "Affected male relatives on the mother's side (X-linked).", 2, "1ym1znf"],
+ ["Bleeding", "How is von Willebrand disease treated?", "With desmopressin (DDAVP), von Willebrand factor concentrate or cryoprecipitate.", 2, "jhki5f"],
+ ["Pallor", "Which dietary history causes iron deficiency in a toddler?", "A prolonged milk-only diet (cow's milk) and late weaning.", 2, "1rkk7b5"],
+ ["Pallor", "What is eating soil or ice called?", "Pica, a sign of iron deficiency.", 1, "8i0vd3"],
+ ["Swelling", "Where does renal oedema start?", "Around the eyes and face, in the morning.", 2, "rw56sq"],
+ ["Swelling", "What does frothy urine suggest?", "Proteinuria, as in nephrotic syndrome.", 2, "1k41m5h"],
+ ["Swelling", "What causes cola-coloured urine after a sore throat?", "Post-streptococcal glomerulonephritis.", 2, "1vn9c43"],
+ ["Red urine", "A child passes red urine at the end of urination after swimming in canals. What is the cause and the treatment?", "Urinary schistosomiasis, treated with praziquantel.", 2, "1jfw7eg"],
+ ["Red urine", "What causes dark urine after eating fava beans?", "Haemoglobinuria from G6PD deficiency.", 2, "1kuf6kr"],
+ ["Joints", "What causes a migrating arthritis of the large joints after a sore throat?", "Acute rheumatic fever.", 2, "1gg3a8b"],
+ ["Joints", "What is the secondary prophylaxis of rheumatic fever?", "Benzathine penicillin intramuscularly every 4 weeks.", 1, "xq3esd"]
 ]

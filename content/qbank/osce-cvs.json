@@ -1,58 +1,6 @@
 [
- {
-  "q": "The most useful sign of heart failure in an infant is:",
-  "o": [
-   "Ankle oedema",
-   "Raised JVP",
-   "Enlarged tender liver",
-   "Basal crackles",
-   "Clubbing"
-  ],
-  "a": 2,
-  "e": "Hepatomegaly is the most reliable sign in infants; oedema is late.",
-  "k": "tender enlarged liver",
-  "s": "new"
- },
- {
-  "q": "Wide fixed splitting of the second heart sound is typical of:",
-  "o": [
-   "VSD",
-   "PDA",
-   "Secundum ASD",
-   "Tetralogy of Fallot",
-   "Coarctation"
-  ],
-  "a": 2,
-  "e": "Secundum ASD gives wide fixed splitting and a soft pulmonary ejection murmur.",
-  "k": "wide fixed splitting",
-  "s": "new"
- },
- {
-  "q": "A child has a collapsing pulse and a continuous murmur below the left clavicle. The diagnosis is:",
-  "o": [
-   "VSD",
-   "ASD",
-   "PDA",
-   "Aortic stenosis",
-   "Coarctation"
-  ],
-  "a": 2,
-  "e": "PDA: machinery murmur below the left clavicle, collapsing pulse, wide pulse pressure.",
-  "k": "collapsing",
-  "s": "new"
- },
- {
-  "q": "All are features of an innocent murmur EXCEPT:",
-  "o": [
-   "Soft",
-   "Systolic",
-   "Varies with posture",
-   "Thrill",
-   "Normal heart sounds"
-  ],
-  "a": 3,
-  "e": "A thrill means a pathological murmur.",
-  "k": "innocent murmur",
-  "s": "new"
- }
+{"q": "The most useful sign of heart failure in an infant is:", "o": ["Ankle oedema", "Raised JVP", "Enlarged tender liver", "Basal crackles", "Clubbing"], "a": 2, "e": "Hepatomegaly is the most reliable sign in infants; oedema is late.", "k": "tender enlarged liver", "s": "new", "d": 1},
+{"q": "Wide fixed splitting of the second heart sound is typical of:", "o": ["VSD", "PDA", "Secundum ASD", "Tetralogy of Fallot", "Coarctation"], "a": 2, "e": "Secundum ASD gives wide fixed splitting and a soft pulmonary ejection murmur.", "k": "wide fixed splitting", "s": "new", "d": 1},
+{"q": "A child has a collapsing pulse and a continuous murmur below the left clavicle. The diagnosis is:", "o": ["VSD", "ASD", "PDA", "Aortic stenosis", "Coarctation"], "a": 2, "e": "PDA: machinery murmur below the left clavicle, collapsing pulse, wide pulse pressure.", "k": "collapsing", "s": "new", "d": 1},
+{"q": "All are features of an innocent murmur EXCEPT:", "o": ["Soft", "Systolic", "Varies with posture", "Thrill", "Normal heart sounds"], "a": 3, "e": "A thrill means a pathological murmur.", "k": "innocent murmur", "s": "new", "d": 1}
 ]
