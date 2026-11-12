@@ -321,3 +321,8 @@ Opening and language (owner, 11 Nov 2026): the greeting shows on every opening; 
   once the Supabase migration (obstetrics tools/supabase/pending/009_three_books.sql) is applied. Tests used: a simulated Supabase
   (request → approval → opens by itself → sync; a forged key is dropped).
 - Go live (after the owner approves): set key_hash + old_until, build docs with PRR_V2=1, new icons from v2_logo, push the live branch.
+- **Automatic sync (owner, 12 Nov 2026: "once there is internet, notes and every edit sync and upload by themselves, even with one phone"):**
+  a block right after the sync start (`/* Automatic sync … */`, same in the three books) watches localStorage writes of the synced keys
+  (highlights, notes, drawings, page marks, cards known, question answers, tests, bookmarks, blank pages, streak) and starts a sync 4 s later;
+  `<prefix>-dirty` = changes not yet online (kept across restarts); retried every 30 s when the upload failed; a check for other devices'
+  changes every 3 minutes while the app is open; upload on pagehide / going to the background. Subscribed devices only (sync is per subscription).
