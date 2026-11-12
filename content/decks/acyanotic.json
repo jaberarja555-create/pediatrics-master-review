@@ -1,172 +1,36 @@
 [
- [
-  "VSD",
-  "Commonest type of VSD?",
-  "Perimembranous."
- ],
- [
-  "VSD",
-  "Murmur of VSD?",
-  "Harsh pansystolic murmur at the lower left sternal edge."
- ],
- [
-  "VSD",
-  "Small VSD: murmur loudness?",
-  "Loud; the smaller the hole, the louder the murmur."
- ],
- [
-  "VSD",
-  "Symptoms of large VSD?",
-  "Breathless and sweating on feeds, poor weight gain, chest infections, heart failure."
- ],
- [
-  "VSD",
-  "When does a large VSD cause heart failure?",
-  "At 4–8 weeks."
- ],
- [
-  "VSD",
-  "Apical mid-diastolic murmur in large VSD?",
-  "High flow across the mitral valve."
- ],
- [
-  "VSD",
-  "X-ray and ECG in large VSD?",
-  "Cardiomegaly, plethoric lungs; biventricular hypertrophy."
- ],
- [
-  "VSD",
-  "Do small VSDs close?",
-  "30–50% close spontaneously."
- ],
- [
-  "VSD",
-  "Treatment of small VSD?",
-  "Reassure, follow up, dental hygiene."
- ],
- [
-  "VSD",
-  "Medical treatment of large VSD?",
-  "Furosemide, captopril, high-calorie feeds."
- ],
- [
-  "VSD",
-  "Indications for VSD surgery?",
-  "Uncontrolled heart failure, failure to thrive, pulmonary hypertension."
- ],
- [
-  "VSD",
-  "VSD murmur softer with loud P2?",
-  "Pulmonary hypertension developing."
- ],
- [
-  "ASD",
-  "Commonest ASD type?",
-  "Secundum."
- ],
- [
-  "ASD",
-  "Key sign of ASD?",
-  "Wide fixed splitting of S2."
- ],
- [
-  "ASD",
-  "Origin of ASD murmur?",
-  "Increased flow across the pulmonary valve."
- ],
- [
-  "ASD",
-  "ECG in secundum ASD?",
-  "Right axis deviation, RVH, partial RBBB."
- ],
- [
-  "ASD",
-  "ECG in primum ASD?",
-  "Left (superior) axis."
- ],
- [
-  "ASD",
-  "Endocarditis risk in secundum ASD?",
-  "Very rare."
- ],
- [
-  "ASD",
-  "Treatment of large secundum ASD?",
-  "Device or surgical closure at 3–5 years."
- ],
- [
-  "AVSD",
-  "AVSD is linked to?",
-  "Down syndrome."
- ],
- [
-  "PDA",
-  "Murmur of PDA?",
-  "Continuous machinery murmur below the left clavicle."
- ],
- [
-  "PDA",
-  "Pulse in PDA?",
-  "Collapsing, bounding, wide pulse pressure."
- ],
- [
-  "PDA",
-  "Risk groups for PDA?",
-  "Preterm babies, congenital rubella."
- ],
- [
-  "PDA",
-  "ECG in PDA?",
-  "LVH."
- ],
- [
-  "PDA",
-  "Treatment of PDA in a preterm?",
-  "Ibuprofen or indomethacin (or paracetamol)."
- ],
- [
-  "PDA",
-  "Treatment of PDA in a term baby?",
-  "Catheter coil/device or ligation."
- ],
- [
-  "Coarctation",
-  "Signs of coarctation in an older child?",
-  "High arm BP, weak delayed femoral pulses, murmur at the back."
- ],
- [
-  "Coarctation",
-  "Newborn severe coarctation presentation?",
-  "Shock and absent femorals when the duct closes."
- ],
- [
-  "Coarctation",
-  "First drug in neonatal coarctation?",
-  "PGE1 infusion."
- ],
- [
-  "Coarctation",
-  "X-ray in older child with coarctation?",
-  "Rib notching, 3 sign."
- ],
- [
-  "Coarctation",
-  "Brain complication of coarctation?",
-  "Berry aneurysm, haemorrhage."
- ],
- [
-  "Stenosis",
-  "Noonan syndrome lesion and treatment?",
-  "Pulmonary stenosis: balloon valvuloplasty."
- ],
- [
-  "Stenosis",
-  "Aortic stenosis symptoms?",
-  "Chest pain, syncope on exercise, sudden death."
- ],
- [
-  "Stenosis",
-  "Murmur of aortic stenosis?",
-  "Ejection systolic, upper right sternal edge to the neck."
- ]
+ ["VSD", "What is the commonest type of ventricular septal defect?", "Perimembranous.", 1, "88g5y8"],
+ ["VSD", "What is the murmur of a ventricular septal defect?", "A harsh pansystolic murmur at the lower left sternal edge.", 1, "3ci5i9"],
+ ["VSD", "How loud is the murmur of a small ventricular septal defect?", "Loud: the smaller the hole, the louder the murmur.", 2, "11m8tpm"],
+ ["VSD", "What are the symptoms of a large ventricular septal defect?", "Breathlessness and sweating during feeds, poor weight gain, chest infections and heart failure.", 1, "tk1ci8"],
+ ["VSD", "When does a large ventricular septal defect cause heart failure?", "At 4–8 weeks of age.", 2, "ri657o"],
+ ["VSD", "What causes the apical mid-diastolic murmur in a large ventricular septal defect?", "High flow across the mitral valve.", 3, "zuzilx"],
+ ["VSD", "What do the X-ray and ECG show in a large ventricular septal defect?", "Cardiomegaly with plethoric lungs, and biventricular hypertrophy.", 2, "17j7xil"],
+ ["VSD", "Do small ventricular septal defects close?", "30–50% close on their own.", 1, "2n91bh"],
+ ["VSD", "How is a small ventricular septal defect managed?", "Reassurance, follow-up and good dental hygiene.", 1, "1urjgya"],
+ ["VSD", "How is a large ventricular septal defect treated medically?", "With furosemide, captopril and high-calorie feeds.", 2, "4p5qn"],
+ ["VSD", "What are the indications for surgery of a ventricular septal defect?", "Uncontrolled heart failure, failure to thrive and pulmonary hypertension.", 2, "ibz7lv"],
+ ["VSD", "The murmur of a ventricular septal defect becomes softer and P2 becomes loud. What does this mean?", "Pulmonary hypertension is developing.", 3, "kwtyvb"],
+ ["ASD", "What is the commonest type of atrial septal defect?", "Secundum.", 1, "195v8oi"],
+ ["ASD", "What is the key sign of an atrial septal defect?", "Wide fixed splitting of the second heart sound.", 1, "gx32r8"],
+ ["ASD", "Where does the murmur of an atrial septal defect come from?", "From increased flow across the pulmonary valve.", 3, "p4lhj6"],
+ ["ASD", "What does the ECG show in a secundum atrial septal defect?", "Right axis deviation, right ventricular hypertrophy and partial right bundle branch block.", 2, "1ml7us7"],
+ ["ASD", "What does the ECG show in a primum atrial septal defect?", "A left (superior) axis.", 3, "1ogytm3"],
+ ["ASD", "What is the risk of endocarditis in a secundum atrial septal defect?", "Very rare.", 2, "1fvskp6"],
+ ["ASD", "How is a large secundum atrial septal defect treated?", "By device or surgical closure at 3–5 years.", 2, "1ve2p1x"],
+ ["AVSD", "Which syndrome is linked to atrioventricular septal defect?", "Down syndrome.", 1, "w1kqux"],
+ ["PDA", "What is the murmur of a patent ductus arteriosus?", "A continuous \"machinery\" murmur below the left clavicle.", 1, "3ce0e3"],
+ ["PDA", "What is the pulse in a patent ductus arteriosus?", "Collapsing and bounding, with a wide pulse pressure.", 2, "114hw92"],
+ ["PDA", "Which groups are at risk of a patent ductus arteriosus?", "Preterm babies and babies with congenital rubella.", 1, "1umi6jo"],
+ ["PDA", "What does the ECG show in a patent ductus arteriosus?", "Left ventricular hypertrophy.", 2, "17al5km"],
+ ["PDA", "How is a patent ductus arteriosus treated in a preterm baby?", "With ibuprofen or indomethacin (or paracetamol).", 1, "1wptrli"],
+ ["PDA", "How is a patent ductus arteriosus treated in a term baby?", "By catheter closure with a coil or device, or by surgical ligation.", 2, "p2nbrv"],
+ ["Coarctation", "What are the signs of coarctation in an older child?", "A high blood pressure in the arms, weak and delayed femoral pulses, and a murmur heard over the back.", 2, "1jpksnz"],
+ ["Coarctation", "How does severe coarctation present in a newborn?", "With shock and absent femoral pulses when the ductus arteriosus closes.", 2, "1tsw0jb"],
+ ["Coarctation", "What is the first drug in neonatal coarctation?", "A prostaglandin E1 infusion.", 2, "bmv3bt"],
+ ["Coarctation", "What does the X-ray show in an older child with coarctation?", "Rib notching and the \"3\" sign.", 2, "1400ro2"],
+ ["Coarctation", "What is the brain complication of coarctation?", "A berry aneurysm, with haemorrhage.", 3, "1c7pamh"],
+ ["Stenosis", "Which lesion is linked with Noonan syndrome, and how is it treated?", "Pulmonary stenosis, treated by balloon valvuloplasty.", 2, "pj4m86"],
+ ["Stenosis", "What are the symptoms of aortic stenosis?", "Chest pain, syncope on exercise and sudden death.", 2, "rtr91f"],
+ ["Stenosis", "What is the murmur of aortic stenosis?", "An ejection systolic murmur at the upper right sternal edge, radiating to the neck.", 1, "4vy6re"]
 ]

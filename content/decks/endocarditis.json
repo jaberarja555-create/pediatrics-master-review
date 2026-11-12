@@ -1,152 +1,32 @@
 [
- [
-  "IE",
-  "Requirements for IE?",
-  "Abnormal heart plus bacteraemia."
- ],
- [
-  "IE",
-  "Commonest organism?",
-  "Streptococcus viridans."
- ],
- [
-  "IE",
-  "Organism after cardiac surgery or lines?",
-  "Staphylococcus aureus or S. epidermidis."
- ],
- [
-  "IE",
-  "Commonest sign of IE?",
-  "Prolonged fever."
- ],
- [
-  "IE",
-  "Osler nodes?",
-  "Tender nodules on finger pads."
- ],
- [
-  "IE",
-  "Janeway lesions?",
-  "Painless red spots on palms and soles."
- ],
- [
-  "IE",
-  "Roth spots?",
-  "Retinal haemorrhages with pale centre."
- ],
- [
-  "IE",
-  "Renal sign of IE?",
-  "Microscopic haematuria."
- ],
- [
-  "IE",
-  "Key test in IE?",
-  "3 sets of blood cultures before antibiotics."
- ],
- [
-  "IE",
-  "Imaging in IE?",
-  "Echocardiography for vegetations."
- ],
- [
-  "IE",
-  "Duke major criteria?",
-  "Typical organism in 2 cultures; vegetation/abscess on echo."
- ],
- [
-  "IE",
-  "Definite IE by Duke?",
-  "2 major, 1 major + 3 minor, or 5 minor."
- ],
- [
-  "IE",
-  "Empirical antibiotics?",
-  "Benzylpenicillin + gentamicin (± cloxacillin)."
- ],
- [
-  "IE",
-  "Duration of IV antibiotics?",
-  "4–6 weeks."
- ],
- [
-  "IE",
-  "Indications for surgery in IE?",
-  "Uncontrolled heart failure, abscess, emboli with large vegetation, fungal IE."
- ],
- [
-  "IE",
-  "Best prevention of IE?",
-  "Good dental hygiene."
- ],
- [
-  "IE",
-  "Who needs dental prophylaxis (AHA 2021)?",
-  "Prosthetic valve, previous IE, unrepaired cyanotic CHD, recent repair with prosthetic material."
- ],
- [
-  "IE",
-  "Prophylaxis dose?",
-  "Amoxicillin 50 mg/kg (max 2 g) 30–60 min before."
- ],
- [
-  "IE",
-  "Heart lesion with very rare IE?",
-  "Secundum ASD."
- ],
- [
-  "Myocarditis",
-  "Commonest cause of myocarditis?",
-  "Coxsackie B virus."
- ],
- [
-  "Myocarditis",
-  "Clue to myocarditis?",
-  "Tachycardia out of proportion to fever, gallop, no murmur."
- ],
- [
-  "Myocarditis",
-  "ECG in myocarditis?",
-  "Low voltage, ST–T changes, arrhythmia."
- ],
- [
-  "Myocarditis",
-  "Long-term risk?",
-  "Dilated cardiomyopathy."
- ],
- [
-  "Cardiomyopathy",
-  "Causes of dilated cardiomyopathy?",
-  "Myocarditis, anthracyclines, muscular dystrophy, genetic."
- ],
- [
-  "Cardiomyopathy",
-  "Hypertrophic cardiomyopathy inheritance?",
-  "Autosomal dominant."
- ],
- [
-  "Cardiomyopathy",
-  "Sudden death in a young athlete?",
-  "Hypertrophic cardiomyopathy."
- ],
- [
-  "Cardiomyopathy",
-  "Treatment of hypertrophic cardiomyopathy?",
-  "Beta-blocker, avoid sport, ICD; no digoxin."
- ],
- [
-  "Pericarditis",
-  "Chest pain relieved by sitting forward?",
-  "Pericarditis."
- ],
- [
-  "Pericarditis",
-  "Signs of tamponade?",
-  "Tachycardia, low BP, raised JVP, pulsus paradoxus."
- ],
- [
-  "Pericarditis",
-  "Treatment of tamponade?",
-  "Pericardiocentesis."
- ]
+ ["Infective endocarditis", "What is needed for infective endocarditis to develop?", "An abnormal heart together with bacteraemia.", 1, "lmbn18"],
+ ["Infective endocarditis", "What is the commonest organism of infective endocarditis?", "Streptococcus viridans.", 1, "1107bs8"],
+ ["Infective endocarditis", "Which organisms cause endocarditis after cardiac surgery or central lines?", "Staphylococcus aureus or Staphylococcus epidermidis.", 2, "1b0dgmz"],
+ ["Infective endocarditis", "What is the commonest sign of infective endocarditis?", "Prolonged fever.", 1, "1664djs"],
+ ["Infective endocarditis", "What are Osler nodes?", "Tender nodules on the finger pads.", 1, "vimxeh"],
+ ["Infective endocarditis", "What are Janeway lesions?", "Painless red spots on the palms and soles.", 1, "1qdxr5l"],
+ ["Infective endocarditis", "What are Roth spots?", "Retinal haemorrhages with a pale centre.", 1, "skkeu5"],
+ ["Infective endocarditis", "What is the renal sign of infective endocarditis?", "Microscopic haematuria.", 2, "p6ppwj"],
+ ["Infective endocarditis", "What is the key test in infective endocarditis?", "Three sets of blood cultures taken before antibiotics.", 2, "1yatnv9"],
+ ["Infective endocarditis", "Which imaging is done in infective endocarditis?", "Echocardiography, to look for vegetations.", 1, "1m56lg0"],
+ ["Infective endocarditis", "What are the Duke major criteria?", "A typical organism in 2 blood cultures, and a vegetation or abscess on echocardiography.", 2, "14fms3o"],
+ ["Infective endocarditis", "When is infective endocarditis definite by the Duke criteria?", "With 2 major criteria, 1 major and 3 minor criteria, or 5 minor criteria.", 2, "6py2f3"],
+ ["Infective endocarditis", "Which antibiotics are given empirically for infective endocarditis?", "Benzylpenicillin and gentamicin, with cloxacillin if needed.", 2, "1v0mice"],
+ ["Infective endocarditis", "For how long are intravenous antibiotics given?", "4–6 weeks.", 1, "u4vn0q"],
+ ["Infective endocarditis", "What are the indications for surgery in infective endocarditis?", "Uncontrolled heart failure, an abscess, emboli with a large vegetation, and fungal endocarditis.", 3, "4szmsz"],
+ ["Infective endocarditis", "What is the best prevention of infective endocarditis?", "Good dental hygiene.", 2, "9qo9m6"],
+ ["Infective endocarditis", "Who needs antibiotic prophylaxis before dental procedures (AHA 2021)?", "Children with a prosthetic valve, previous endocarditis, unrepaired cyanotic congenital heart disease, or a recent repair with prosthetic material.", 3, "1l68qsx"],
+ ["Infective endocarditis", "What is the prophylaxis dose?", "Amoxicillin 50 mg/kg (maximum 2 g), 30–60 minutes before the procedure.", 2, "vvkmu3"],
+ ["Infective endocarditis", "In which heart lesion is infective endocarditis very rare?", "Secundum atrial septal defect.", 2, "st2j3h"],
+ ["Myocarditis", "What is the commonest cause of myocarditis?", "Coxsackie B virus.", 1, "14qk878"],
+ ["Myocarditis", "What is the clue to myocarditis?", "A tachycardia out of proportion to the fever, with a gallop rhythm and no murmur.", 3, "g9tymt"],
+ ["Myocarditis", "What does the ECG show in myocarditis?", "Low voltage, ST–T changes and arrhythmias.", 2, "1cqgb0b"],
+ ["Myocarditis", "What is the long-term risk after myocarditis?", "Dilated cardiomyopathy.", 2, "14rofal"],
+ ["Cardiomyopathy", "What are the causes of dilated cardiomyopathy?", "Myocarditis, anthracyclines, muscular dystrophy and genetic causes.", 2, "ced47y"],
+ ["Cardiomyopathy", "How is hypertrophic cardiomyopathy inherited?", "Autosomal dominant.", 1, "1o9vl1h"],
+ ["Cardiomyopathy", "What is the commonest cause of sudden death in a young athlete?", "Hypertrophic cardiomyopathy.", 2, "muhcxt"],
+ ["Cardiomyopathy", "How is hypertrophic cardiomyopathy treated?", "With a beta-blocker, avoiding competitive sport, and an implantable defibrillator if needed; digoxin is not given.", 2, "qkabu8"],
+ ["Pericarditis", "Which chest pain is relieved by sitting forward?", "The pain of pericarditis.", 1, "1pr0vlu"],
+ ["Pericarditis", "What are the signs of cardiac tamponade?", "Tachycardia, low blood pressure, a raised jugular venous pressure and pulsus paradoxus.", 2, "rh4bkb"],
+ ["Pericarditis", "How is cardiac tamponade treated?", "By pericardiocentesis.", 1, "1c2y78t"]
 ]

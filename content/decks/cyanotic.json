@@ -1,157 +1,32 @@
 [
- [
-  "Cyanosis",
-  "Central cyanosis appears when deoxygenated Hb exceeds?",
-  "5 g/dl."
- ],
- [
-  "Cyanosis",
-  "Heart vs lung cause of newborn cyanosis?",
-  "Heart: little distress, fails hyperoxia test; lung: distress, improves with oxygen."
- ],
- [
-  "Cyanosis",
-  "Chocolate-coloured blood, normal PaO2?",
-  "Methaemoglobinaemia."
- ],
- [
-  "TOF",
-  "Four parts of tetralogy?",
-  "Pulmonary stenosis, VSD, overriding aorta, RVH."
- ],
- [
-  "TOF",
-  "What decides severity of TOF?",
-  "Degree of pulmonary (outflow) stenosis."
- ],
- [
-  "TOF",
-  "Murmur in TOF?",
-  "Ejection systolic at upper left sternal edge (pulmonary stenosis)."
- ],
- [
-  "TOF",
-  "Second sound in TOF?",
-  "Single S2."
- ],
- [
-  "TOF",
-  "X-ray in TOF?",
-  "Boot-shaped heart, oligaemic lungs."
- ],
- [
-  "TOF",
-  "Squatting in TOF?",
-  "Raises systemic resistance → less right-to-left shunt."
- ],
- [
-  "TOF",
-  "Is heart failure common in TOF?",
-  "No, rare."
- ],
- [
-  "TOF",
-  "Peak age of tet spells?",
-  "2–4 months (first 2 years)."
- ],
- [
-  "TOF",
-  "Features of a tet spell?",
-  "Deeper cyanosis, rapid deep breathing, irritability, murmur fades."
- ],
- [
-  "TOF",
-  "First steps in a tet spell?",
-  "Calm, knee–chest position, oxygen."
- ],
- [
-  "TOF",
-  "Drugs in a tet spell?",
-  "Morphine 0.1 mg/kg, saline bolus, bicarbonate, IV propranolol."
- ],
- [
-  "TOF",
-  "Drug to prevent spells?",
-  "Oral propranolol."
- ],
- [
-  "TOF",
-  "Drug to avoid in TOF?",
-  "Digoxin."
- ],
- [
-  "TOF",
-  "Why treat iron deficiency in TOF?",
-  "Stiff microcytic cells raise viscosity and stroke risk."
- ],
- [
-  "TOF",
-  "Timing of total repair?",
-  "4–12 months."
- ],
- [
-  "TOF",
-  "Palliative shunt in TOF?",
-  "Modified Blalock–Taussig (subclavian to pulmonary artery)."
- ],
- [
-  "TOF",
-  "Cyanosed child with fever, headache, hemiparesis?",
-  "Brain abscess."
- ],
- [
-  "TGA",
-  "Defect in TGA?",
-  "Aorta from the RV, pulmonary artery from the LV."
- ],
- [
-  "TGA",
-  "TGA is associated with?",
-  "Infant of a diabetic mother, boys."
- ],
- [
-  "TGA",
-  "Murmur in TGA with intact septum?",
-  "None."
- ],
- [
-  "TGA",
-  "Lungs in TGA?",
-  "Plethoric."
- ],
- [
-  "TGA",
-  "Emergency treatment of TGA?",
-  "PGE1, balloon atrial septostomy."
- ],
- [
-  "TGA",
-  "Definitive operation for TGA?",
-  "Arterial switch in the first weeks."
- ],
- [
-  "Others",
-  "Cyanotic CHD with left axis deviation?",
-  "Tricuspid atresia."
- ],
- [
-  "Others",
-  "Huge right atrium, displaced tricuspid valve?",
-  "Ebstein anomaly."
- ],
- [
-  "Others",
-  "Snowman heart?",
-  "Supracardiac TAPVR."
- ],
- [
-  "Others",
-  "Shock in the first week, tiny left ventricle?",
-  "Hypoplastic left heart syndrome."
- ],
- [
-  "Others",
-  "Target SpO2 in duct-dependent lesions on PGE1?",
-  "75–85%."
- ]
+ ["Cyanosis", "At what level of deoxygenated haemoglobin does central cyanosis appear?", "Above 5 g/dL.", 2, "zojtrt"],
+ ["Cyanosis", "How is a heart cause of newborn cyanosis told apart from a lung cause?", "A heart cause gives little distress and fails the hyperoxia test; a lung cause gives distress and improves with oxygen.", 3, "176ure"],
+ ["Cyanosis", "A cyanosed child has chocolate-coloured blood with a normal PaO₂. What is the diagnosis?", "Methaemoglobinaemia.", 3, "1u8s130"],
+ ["Tetralogy of Fallot", "What are the four parts of tetralogy of Fallot?", "Pulmonary stenosis, ventricular septal defect, overriding aorta and right ventricular hypertrophy.", 1, "1rip3tz"],
+ ["Tetralogy of Fallot", "What decides the severity of tetralogy of Fallot?", "The degree of pulmonary (right ventricular outflow) stenosis.", 2, "1fs6aej"],
+ ["Tetralogy of Fallot", "What is the murmur of tetralogy of Fallot?", "An ejection systolic murmur at the upper left sternal edge, from the pulmonary stenosis.", 2, "1p4o6dr"],
+ ["Tetralogy of Fallot", "What is the second heart sound in tetralogy of Fallot?", "A single second heart sound.", 2, "n8q702"],
+ ["Tetralogy of Fallot", "What does the X-ray show in tetralogy of Fallot?", "A boot-shaped heart with oligaemic lungs.", 1, "1ecs1ic"],
+ ["Tetralogy of Fallot", "Why does squatting help in tetralogy of Fallot?", "It raises the systemic vascular resistance, so less blood shunts from right to left.", 3, "398ih3"],
+ ["Tetralogy of Fallot", "Is heart failure common in tetralogy of Fallot?", "No, it is rare.", 2, "110shcw"],
+ ["Tetralogy of Fallot", "At what age do hypercyanotic (tet) spells peak?", "At 2–4 months (within the first 2 years).", 2, "dpdor4"],
+ ["Tetralogy of Fallot", "What are the features of a tet spell?", "Deeper cyanosis, rapid deep breathing and irritability; the murmur fades.", 2, "huz7ax"],
+ ["Tetralogy of Fallot", "What are the first steps in a tet spell?", "Calming the child, the knee–chest position and oxygen.", 2, "2nq06d"],
+ ["Tetralogy of Fallot", "Which drugs are given in a tet spell?", "Morphine 0.1 mg/kg, a saline bolus, sodium bicarbonate and intravenous propranolol.", 2, "1thvhxd"],
+ ["Tetralogy of Fallot", "Which drug prevents tet spells?", "Oral propranolol.", 2, "x6sts7"],
+ ["Tetralogy of Fallot", "Which drug is avoided in tetralogy of Fallot?", "Digoxin.", 3, "5vrbkv"],
+ ["Tetralogy of Fallot", "Why is iron deficiency treated in tetralogy of Fallot?", "Stiff microcytic red cells raise the blood viscosity and the risk of stroke.", 3, "ixa3ki"],
+ ["Tetralogy of Fallot", "When is total repair of tetralogy of Fallot done?", "At 4–12 months.", 2, "zv29k3"],
+ ["Tetralogy of Fallot", "What is the palliative shunt in tetralogy of Fallot?", "The modified Blalock–Taussig shunt (subclavian artery to pulmonary artery).", 2, "14g5x9e"],
+ ["Tetralogy of Fallot", "A cyanosed child has fever, headache and hemiparesis. What is the likely cause?", "A brain abscess.", 3, "g7rsby"],
+ ["TGA", "What is the defect in transposition of the great arteries?", "The aorta arises from the right ventricle and the pulmonary artery from the left ventricle.", 1, "1xpf87x"],
+ ["TGA", "What is transposition of the great arteries associated with?", "An infant of a diabetic mother, and male sex.", 2, "1utgwkj"],
+ ["TGA", "Is there a murmur in transposition with an intact ventricular septum?", "No.", 2, "17w33tt"],
+ ["TGA", "What do the lungs look like on the X-ray in transposition?", "Plethoric.", 2, "17sowgt"],
+ ["TGA", "What is the emergency treatment of transposition of the great arteries?", "Prostaglandin E1 and balloon atrial septostomy.", 2, "dnhntv"],
+ ["TGA", "What is the definitive operation for transposition of the great arteries?", "The arterial switch, in the first weeks of life.", 2, "1u9wz1a"],
+ ["Others", "Which cyanotic heart disease has left axis deviation on the ECG?", "Tricuspid atresia.", 3, "8q0b3z"],
+ ["Others", "Which lesion has a huge right atrium and a displaced tricuspid valve?", "Ebstein anomaly.", 2, "1y5wjpa"],
+ ["Others", "A baby has shock in the first week and a tiny left ventricle. What is the diagnosis?", "Hypoplastic left heart syndrome.", 2, "9aljbg"],
+ ["Others", "What is the target oxygen saturation in duct-dependent lesions on prostaglandin E1?", "75–85%.", 3, "1fvm794"]
 ]

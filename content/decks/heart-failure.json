@@ -1,142 +1,30 @@
 [
- [
-  "Causes",
-  "Commonest cause of heart failure in infants?",
-  "Congenital heart disease with a large left-to-right shunt."
- ],
- [
-  "Causes",
-  "Heart failure in the first week?",
-  "Duct-dependent left heart lesions, asphyxia, arrhythmia, anaemia, sepsis."
- ],
- [
-  "Causes",
-  "Commonest cause in older children in Africa?",
-  "Rheumatic heart disease."
- ],
- [
-  "Causes",
-  "Heart failure with Hb 4 g/dl?",
-  "Anaemic heart failure."
- ],
- [
-  "Causes",
-  "Heart failure with hypertension and haematuria?",
-  "Post-streptococcal glomerulonephritis."
- ],
- [
-  "Features",
-  "Earliest sign of heart failure in infants?",
-  "Breathlessness and sweating during feeds, poor feeding."
- ],
- [
-  "Features",
-  "Most reliable sign of heart failure in infants?",
-  "Enlarged tender liver."
- ],
- [
-  "Features",
-  "Is leg oedema an early sign in infants?",
-  "No; oedema is late (eyelids, sacrum)."
- ],
- [
-  "Features",
-  "Is splenomegaly a sign of heart failure?",
-  "No."
- ],
- [
-  "Features",
-  "Heart sounds in heart failure?",
-  "Tachycardia with gallop rhythm."
- ],
- [
-  "Investigations",
-  "Key test for cause and function?",
-  "Echocardiography."
- ],
- [
-  "Treatment",
-  "Fluid in congested heart failure?",
-  "Restrict to about 2/3 maintenance."
- ],
- [
-  "Treatment",
-  "Furosemide dose?",
-  "1 mg/kg IV or oral, 1–3 times daily."
- ],
- [
-  "Treatment",
-  "Why add spironolactone?",
-  "To keep potassium."
- ],
- [
-  "Treatment",
-  "Side effects of furosemide?",
-  "Hypokalaemia and alkalosis."
- ],
- [
-  "Treatment",
-  "ACE inhibitor in heart failure?",
-  "Captopril; avoid in outflow obstruction."
- ],
- [
-  "Treatment",
-  "Feeding in infant heart failure?",
-  "High-calorie small frequent feeds, NG if tired."
- ],
- [
-  "Digoxin",
-  "Contraindications of digoxin?",
-  "Tetralogy, hypertrophic cardiomyopathy, heart block."
- ],
- [
-  "Digoxin",
-  "Factors increasing digoxin toxicity?",
-  "Hypokalaemia, hypomagnesaemia, hypercalcaemia, renal failure, myocarditis."
- ],
- [
-  "Digoxin",
-  "Signs of digoxin toxicity?",
-  "Vomiting, bradycardia, new arrhythmia or heart block."
- ],
- [
-  "Digoxin",
-  "Antidote for severe digoxin toxicity?",
-  "Digoxin-specific antibody (Fab)."
- ],
- [
-  "SVT",
-  "Commonest arrhythmia in children?",
-  "SVT."
- ],
- [
-  "SVT",
-  "Heart rate in infant SVT?",
-  "220–300, fixed, narrow QRS."
- ],
- [
-  "SVT",
-  "First treatment of stable SVT in infant?",
-  "Ice-water bag to the face."
- ],
- [
-  "SVT",
-  "Drug for SVT?",
-  "Adenosine 0.1 mg/kg rapid IV, then 0.2 mg/kg."
- ],
- [
-  "SVT",
-  "SVT with shock?",
-  "Synchronised cardioversion 1 J/kg."
- ],
- [
-  "SVT",
-  "ECG of WPW?",
-  "Short PR, delta wave."
- ],
- [
-  "Heart block",
-  "Congenital complete heart block cause?",
-  "Maternal lupus (anti-Ro, anti-La)."
- ]
+ ["Causes", "What is the commonest cause of heart failure in infants?", "Congenital heart disease with a large left-to-right shunt.", 1, "rf034"],
+ ["Causes", "What causes heart failure in the first week of life?", "Duct-dependent left heart lesions, asphyxia, arrhythmia, anaemia and sepsis.", 2, "16hfrgh"],
+ ["Causes", "What is the commonest cause of heart failure in older children in Africa?", "Rheumatic heart disease.", 1, "1x6ina8"],
+ ["Causes", "A child in heart failure has a haemoglobin of 4 g/dL. What is the cause?", "Anaemic heart failure.", 2, "do1yqv"],
+ ["Causes", "A child has heart failure with hypertension and haematuria. What is the cause?", "Post-streptococcal glomerulonephritis.", 3, "1gnu1st"],
+ ["Features", "What is the earliest sign of heart failure in infants?", "Breathlessness and sweating during feeds, with poor feeding.", 1, "12n1c22"],
+ ["Features", "What is the most reliable sign of heart failure in infants?", "An enlarged, tender liver.", 2, "psk4ji"],
+ ["Features", "Is leg oedema an early sign of heart failure in infants?", "No. Oedema is late and appears on the eyelids and sacrum.", 2, "l3123x"],
+ ["Features", "Is splenomegaly a sign of heart failure?", "No.", 2, "jec3u0"],
+ ["Features", "What are the heart sounds in heart failure?", "Tachycardia with a gallop rhythm.", 1, "2fquvc"],
+ ["Investigations", "Which test shows the cause of heart failure and the heart function?", "Echocardiography.", 1, "kh7flv"],
+ ["Treatment", "How much fluid is given in congestive heart failure?", "Fluid is restricted to about two thirds of maintenance.", 2, "1gcglys"],
+ ["Treatment", "What is the dose of furosemide?", "1 mg/kg intravenously or by mouth, 1–3 times daily.", 1, "w8v4u5"],
+ ["Treatment", "Why is spironolactone added?", "To keep potassium.", 2, "1yli5de"],
+ ["Treatment", "What are the side effects of furosemide?", "Hypokalaemia and alkalosis.", 1, "1hvp6f6"],
+ ["Treatment", "Which ACE inhibitor is used in heart failure, and when is it avoided?", "Captopril; it is avoided in obstruction of the left ventricular outflow.", 3, "1bhasnr"],
+ ["Treatment", "How is an infant with heart failure fed?", "With small, frequent high-calorie feeds, by nasogastric tube if the infant tires.", 2, "lo3h8q"],
+ ["Digoxin", "What are the contraindications to digoxin?", "Tetralogy of Fallot, hypertrophic cardiomyopathy and heart block.", 3, "1mhpxpq"],
+ ["Digoxin", "Which factors increase digoxin toxicity?", "Hypokalaemia, hypomagnesaemia, hypercalcaemia, renal failure and myocarditis.", 2, "12ae1zn"],
+ ["Digoxin", "What are the signs of digoxin toxicity?", "Vomiting, bradycardia, and a new arrhythmia or heart block.", 2, "qranyx"],
+ ["Digoxin", "What is the antidote for severe digoxin toxicity?", "Digoxin-specific antibody fragments (Fab).", 2, "11283z9"],
+ ["SVT", "What is the commonest arrhythmia in children?", "Supraventricular tachycardia (SVT).", 1, "8xv4ox"],
+ ["SVT", "What is the heart rate in supraventricular tachycardia in an infant?", "220–300/min, fixed, with a narrow QRS complex.", 2, "dzafdf"],
+ ["SVT", "What is the first treatment of stable supraventricular tachycardia in an infant?", "A bag of ice water applied to the face.", 2, "1j70c1t"],
+ ["SVT", "Which drug treats supraventricular tachycardia?", "Adenosine 0.1 mg/kg as a rapid intravenous push, then 0.2 mg/kg.", 2, "1gv54kl"],
+ ["SVT", "How is supraventricular tachycardia with shock treated?", "With synchronised cardioversion at 1 J/kg.", 2, "ufub6w"],
+ ["SVT", "What is the ECG of Wolff–Parkinson–White syndrome?", "A short PR interval and a delta wave.", 2, "1kjmk43"],
+ ["Heart block", "What causes congenital complete heart block?", "Maternal lupus (anti-Ro and anti-La antibodies).", 2, "q115ny"]
 ]

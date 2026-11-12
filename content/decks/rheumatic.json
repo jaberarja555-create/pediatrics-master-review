@@ -1,157 +1,33 @@
 [
- [
-  "ARF",
-  "Cause of rheumatic fever?",
-  "Autoimmune reaction after group A streptococcal pharyngitis."
- ],
- [
-  "ARF",
-  "Latent period after sore throat?",
-  "2–4 weeks."
- ],
- [
-  "ARF",
-  "Peak age?",
-  "5–15 years."
- ],
- [
-  "ARF",
-  "Major criteria?",
-  "Carditis, arthritis, chorea, erythema marginatum, subcutaneous nodules."
- ],
- [
-  "ARF",
-  "Minor criteria?",
-  "Fever, arthralgia, raised ESR/CRP, prolonged PR."
- ],
- [
-  "ARF",
-  "Diagnosis of first attack?",
-  "2 major or 1 major + 2 minor + evidence of GAS."
- ],
- [
-  "ARF",
-  "Evidence of GAS infection?",
-  "Raised ASO or anti-DNase B, positive throat culture."
- ],
- [
-  "ARF",
-  "Criteria that can stand alone?",
-  "Chorea, indolent carditis."
- ],
- [
-  "ARF",
-  "Arthritis of ARF?",
-  "Migratory large-joint, very painful, responds to aspirin in 48 h, no deformity."
- ],
- [
-  "ARF",
-  "Commonest valve lesion in acute carditis?",
-  "Mitral regurgitation."
- ],
- [
-  "ARF",
-  "Carey Coombs murmur?",
-  "Apical mid-diastolic murmur in acute carditis."
- ],
- [
-  "ARF",
-  "Sign of myocarditis in ARF?",
-  "Tachycardia out of proportion to fever."
- ],
- [
-  "ARF",
-  "Sydenham chorea features?",
-  "Jerky movements, milkmaid grip, emotional lability, late, girls."
- ],
- [
-  "ARF",
-  "Subcutaneous nodules indicate?",
-  "Severe carditis."
- ],
- [
-  "ARF",
-  "Best test for carditis?",
-  "Echocardiography with Doppler."
- ],
- [
-  "ARF",
-  "Only manifestation causing permanent damage?",
-  "Carditis."
- ],
- [
-  "Treatment",
-  "Eradicating GAS in ARF?",
-  "Benzathine penicillin IM once (or oral penicillin 10 days)."
- ],
- [
-  "Treatment",
-  "Benzathine dose?",
-  "600 000 units < 27 kg; 1.2 million units ≥ 27 kg."
- ],
- [
-  "Treatment",
-  "Anti-inflammatory for arthritis?",
-  "Aspirin 50–80 mg/kg/day (or naproxen)."
- ],
- [
-  "Treatment",
-  "Severe carditis treatment?",
-  "Prednisolone 2 mg/kg/day + heart failure drugs."
- ],
- [
-  "Treatment",
-  "Chorea treatment?",
-  "Haloperidol, carbamazepine or valproate; prophylaxis."
- ],
- [
-  "Treatment",
-  "Why avoid early aspirin in arthralgia only?",
-  "It hides the migratory arthritis."
- ],
- [
-  "Prevention",
-  "Secondary prophylaxis drug?",
-  "Benzathine penicillin G every 4 weeks."
- ],
- [
-  "Prevention",
-  "Prophylaxis duration without carditis?",
-  "5 years or until 21."
- ],
- [
-  "Prevention",
-  "Prophylaxis duration with residual valve disease?",
-  "10 years or until 40 (sometimes life)."
- ],
- [
-  "Prevention",
-  "Primary prevention?",
-  "Treat strep sore throat within 9 days."
- ],
- [
-  "RHD",
-  "Signs of mitral stenosis?",
-  "Loud S1, opening snap, apical diastolic rumble."
- ],
- [
-  "RHD",
-  "Signs of aortic regurgitation?",
-  "Collapsing pulse, early diastolic murmur at left sternal edge."
- ],
- [
-  "RHD",
-  "RHD child with fever 2 weeks?",
-  "Infective endocarditis until proved otherwise."
- ],
- [
-  "RHD",
-  "Treatment of severe mitral stenosis?",
-  "Balloon mitral valvotomy."
- ],
- [
-  "RHD",
-  "Signs of rheumatic recurrence?",
-  "Fever, joint pain, new or changed murmur, rising ESR."
- ]
+ ["Rheumatic fever", "What causes rheumatic fever?", "An autoimmune reaction after group A streptococcal pharyngitis.", 1, "1cfyu3d"],
+ ["Rheumatic fever", "What is the latent period after the sore throat?", "2–4 weeks.", 1, "syjgft"],
+ ["Rheumatic fever", "What is the peak age of rheumatic fever?", "5–15 years.", 1, "5tn82p"],
+ ["Rheumatic fever", "What are the major (Jones) criteria?", "Carditis, arthritis, chorea, erythema marginatum and subcutaneous nodules.", 1, "190c8op"],
+ ["Rheumatic fever", "What are the minor criteria?", "Fever, arthralgia, a raised ESR or CRP, and a prolonged PR interval.", 1, "tqqpkl"],
+ ["Rheumatic fever", "How is a first attack of rheumatic fever diagnosed?", "2 major criteria, or 1 major and 2 minor criteria, together with evidence of group A streptococcal infection.", 2, "dflmjx"],
+ ["Rheumatic fever", "What is the evidence of group A streptococcal infection?", "A raised ASO or anti-DNase B titre, or a positive throat culture.", 2, "1k32ykz"],
+ ["Rheumatic fever", "Which criteria can stand alone for the diagnosis?", "Chorea and indolent carditis.", 3, "krzwk6"],
+ ["Rheumatic fever", "What is the arthritis of rheumatic fever like?", "Migratory, very painful arthritis of large joints that responds to aspirin within 48 hours and leaves no deformity.", 2, "1a4dfbp"],
+ ["Rheumatic fever", "What is the commonest valve lesion in acute rheumatic carditis?", "Mitral regurgitation.", 1, "lw2by8"],
+ ["Rheumatic fever", "What is the Carey Coombs murmur?", "An apical mid-diastolic murmur in acute rheumatic carditis.", 2, "wdjsya"],
+ ["Rheumatic fever", "What is the sign of myocarditis in rheumatic fever?", "A tachycardia out of proportion to the fever.", 2, "1esfasn"],
+ ["Rheumatic fever", "What are the features of Sydenham chorea?", "Jerky movements, a \"milkmaid's grip\" and emotional lability; it appears late and mostly in girls.", 2, "1c7pfd"],
+ ["Rheumatic fever", "What do subcutaneous nodules indicate in rheumatic fever?", "Severe carditis.", 3, "18no7et"],
+ ["Rheumatic fever", "What is the best test for rheumatic carditis?", "Echocardiography with Doppler.", 1, "1oqcmr5"],
+ ["Rheumatic fever", "Which manifestation of rheumatic fever causes permanent damage?", "Carditis.", 2, "1mutz1y"],
+ ["Treatment", "How is group A streptococcus eradicated in rheumatic fever?", "With one intramuscular dose of benzathine penicillin (or oral penicillin for 10 days).", 2, "1vk8y6b"],
+ ["Treatment", "What is the dose of benzathine penicillin?", "600 000 units under 27 kg; 1.2 million units from 27 kg.", 2, "zp5ke4"],
+ ["Treatment", "Which anti-inflammatory drug is used for the arthritis?", "Aspirin 50–80 mg/kg/day (or naproxen).", 2, "11bb264"],
+ ["Treatment", "How is severe carditis treated?", "With prednisolone 2 mg/kg/day, together with heart failure drugs.", 2, "1dqztsm"],
+ ["Treatment", "How is Sydenham chorea treated?", "With haloperidol, carbamazepine or valproate, and secondary prophylaxis.", 2, "wscucj"],
+ ["Treatment", "Why is aspirin avoided early when there is only arthralgia?", "It hides the migratory arthritis that would confirm the diagnosis.", 3, "cy7t4x"],
+ ["Prevention", "Which drug is used for secondary prophylaxis?", "Benzathine penicillin G every 4 weeks.", 1, "prf8p8"],
+ ["Prevention", "How long is secondary prophylaxis given when there was no carditis?", "For 5 years or until 21 years of age.", 2, "e9shzx"],
+ ["Prevention", "How long is secondary prophylaxis given with residual valve disease?", "For 10 years or until 40 years of age (sometimes for life).", 2, "aztue1"],
+ ["Prevention", "What is the primary prevention of rheumatic fever?", "Treating streptococcal sore throat within 9 days.", 2, "dieq4x"],
+ ["RHD", "What are the signs of mitral stenosis?", "A loud first heart sound, an opening snap and an apical diastolic rumble.", 2, "6i8557"],
+ ["RHD", "What are the signs of aortic regurgitation?", "A collapsing pulse and an early diastolic murmur at the left sternal edge.", 2, "1766i3m"],
+ ["RHD", "A child with rheumatic heart disease has had fever for 2 weeks. What should be assumed?", "Infective endocarditis until proved otherwise.", 3, "2q4pf2"],
+ ["RHD", "How is severe mitral stenosis treated?", "By balloon mitral valvotomy.", 2, "xbokmv"],
+ ["RHD", "What are the signs of a recurrence of rheumatic fever?", "Fever, joint pain, a new or changed murmur and a rising ESR.", 2, "153nrok"]
 ]
