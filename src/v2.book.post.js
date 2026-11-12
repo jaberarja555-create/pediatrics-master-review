@@ -14,3 +14,5 @@ var _aba=ACT.about;ACT.about=function(b){var a=ABOUT.filter(function(x){return x
 UG5=[];
 /* bookmarks of the new app sync with the rest (as in Obstetrics: SM key bm) */
 if(typeof SM!=='undefined'&&!SM.bm){SM.bm={get:function(){return stj('bm')||{}},set:function(v){stj('bm',v);if(window.__bmSet)window.__bmSet(v)}};try{SMU.bm=SMU.bm||{};SMP.bm=smSnap('bm')}catch(e){}}
+/* a page size saved by the old design of this book (pinch or ×1.5 …) is reset once, so the page fits the screen in the new reader (owner, 12 Nov 2026) */
+if(!st('v2z')){st('v2z','1');if(st('zoom')){try{localStorage.removeItem(BK.prefix+'-zoom')}catch(e){}if(typeof ZM!=='undefined')ZM='auto'}}
