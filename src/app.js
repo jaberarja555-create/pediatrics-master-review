@@ -1406,7 +1406,7 @@ function afterWelcome(){if(window.__v2sub)return;   /* the new app shows its own
 GLAST=gsnap();updUR();
 refreshHome();
 /* the opening choice now follows the greeting (afterWelcome) */
-if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('sw.js').catch(function(){})}
+if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('sw.js').then(function(g){var t=Date.now();document.addEventListener('visibilitychange',function(){if(!document.hidden&&g&&g.update&&Date.now()-t>18e5){t=Date.now();try{g.update().catch(function(){})}catch(e){}}})}).catch(function(){})}   // the saved copy opens at once; a new version is looked for in the background (also when the app comes back to the screen after 30 minutes)
 /* Student Master Review platform (owner, 11 Nov 2026): the book's real progress, sent to the platform's Progress page when the book runs inside it */
 window.__smrStats=function(){var r={pages:{total:0,read:0,mastered:0},q:{total:0,answered:0,correct:0,wrong:0},cards:{total:0,known:0},topics:{total:0,done:0},streak:0,ch:[]},by={},names={};
   (META.contents||[]).forEach(function(c){if(c.no!=null)names[c.no]=c.title});
