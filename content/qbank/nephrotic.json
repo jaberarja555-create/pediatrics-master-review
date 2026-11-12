@@ -1,58 +1,6 @@
 [
-{
-"q": "The commonest cause of nephrotic syndrome in children is:",
-"o": [
-"FSGS",
-"Membranous",
-"Minimal change disease",
-"MPGN",
-"IgA nephropathy"
-],
-"a": 2,
-"e": "≈ 80% under 6 years.",
-"k": "minimal change disease",
-"s": "bank"
-},
-{
-"q": "Steroid-resistant nephrotic syndrome is defined as no remission after:",
-"o": [
-"1 week",
-"2 weeks",
-"4–6 weeks of daily prednisolone",
-"3 months",
-"6 months"
-],
-"a": 2,
-"e": "Then biopsy.",
-"k": "steroid-resistant",
-"s": "bank"
-},
-{
-"q": "A child with nephrotic syndrome develops fever and abdominal tenderness. Most likely:",
-"o": [
-"Appendicitis",
-"Pneumococcal peritonitis",
-"Pancreatitis",
-"Renal vein thrombosis",
-"Hepatitis"
-],
-"a": 1,
-"e": "Spontaneous bacterial peritonitis.",
-"k": "spontaneous bacterial peritonitis",
-"s": "bank"
-},
-{
-"q": "Which is NOT a feature of minimal change nephrotic syndrome?",
-"o": [
-"Selective proteinuria",
-"Normal C3",
-"Hypertension and gross haematuria",
-"Hyperlipidaemia",
-"Steroid response"
-],
-"a": 2,
-"e": "These suggest nephritis.",
-"k": "no macroscopic haematuria",
-"s": "bank"
-}
+{"q": "What is the commonest cause of nephrotic syndrome in children?", "o": ["Focal segmental glomerulosclerosis", "Membranous nephropathy", "Minimal change disease", "Membranoproliferative glomerulonephritis", "IgA nephropathy"], "a": 2, "e": "Minimal change disease causes about 80% of nephrotic syndrome under 6 years.", "k": "minimal change disease", "s": "bank", "id": "19rctv9", "d": 1},
+{"q": "Steroid-resistant nephrotic syndrome is defined as no remission after:", "o": ["1 week", "2 weeks", "4–6 weeks of daily prednisolone", "3 months", "6 months"], "a": 2, "e": "A renal biopsy follows.", "k": "steroid-resistant", "s": "bank", "d": 1},
+{"q": "A child with nephrotic syndrome develops fever and abdominal tenderness. What is the most likely cause?", "o": ["Appendicitis", "Pneumococcal peritonitis", "Pancreatitis", "Renal vein thrombosis", "Hepatitis"], "a": 1, "e": "Spontaneous bacterial (pneumococcal) peritonitis.", "k": "spontaneous bacterial peritonitis", "s": "bank", "id": "1xtlj20", "d": 2},
+{"q": "Which is NOT a feature of minimal change nephrotic syndrome?", "o": ["Selective proteinuria", "Normal C3", "Hypertension and gross haematuria", "Hyperlipidaemia", "Steroid response"], "a": 2, "e": "Hypertension and visible haematuria suggest nephritis.", "k": "no macroscopic haematuria", "s": "bank", "d": 2}
 ]

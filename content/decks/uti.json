@@ -1,117 +1,25 @@
 [
- [
-  "Basics",
-  "Commonest organism?",
-  "E. coli."
- ],
- [
-  "Basics",
-  "Proteus suggests?",
-  "Stones."
- ],
- [
-  "Clinical",
-  "Infant UTI features?",
-  "Fever, vomiting, poor feeding, prolonged jaundice."
- ],
- [
-  "Clinical",
-  "Pyelonephritis features?",
-  "Fever ≥ 38, loin pain."
- ],
- [
-  "Sample",
-  "Most reliable infant sample?",
-  "Suprapubic aspirate."
- ],
- [
-  "Sample",
-  "Problem with bag samples?",
-  "Contamination."
- ],
- [
-  "Dipstick",
-  "Most specific?",
-  "Nitrite."
- ],
- [
-  "Dipstick",
-  "Most sensitive?",
-  "Leucocyte esterase."
- ],
- [
-  "Culture",
-  "Significant count clean catch?",
-  "> 10⁵ CFU/mL."
- ],
- [
-  "Culture",
-  "Suprapubic aspirate?",
-  "Any growth."
- ],
- [
-  "Treatment",
-  "< 3 months?",
-  "IV ampicillin + gentamicin."
- ],
- [
-  "Treatment",
-  "Pyelonephritis duration?",
-  "7–10 days."
- ],
- [
-  "Treatment",
-  "Cystitis duration?",
-  "3 days."
- ],
- [
-  "Treatment",
-  "Oral option?",
-  "Cefixime or co-amoxiclav."
- ],
- [
-  "VUR",
-  "What is VUR?",
-  "Backflow of urine into ureter/kidney."
- ],
- [
-  "VUR",
-  "Consequence?",
-  "Renal scarring, hypertension, CKD."
- ],
- [
-  "VUR",
-  "Sibling risk?",
-  "30%."
- ],
- [
-  "VUR",
-  "Gold standard test?",
-  "MCUG."
- ],
- [
-  "Imaging",
-  "Test for scars?",
-  "DMSA (4–6 months later)."
- ],
- [
-  "Imaging",
-  "First imaging in infants?",
-  "Renal ultrasound."
- ],
- [
-  "Prophylaxis",
-  "Drug?",
-  "Trimethoprim 2 mg/kg at night."
- ],
- [
-  "PUV",
-  "PUV features?",
-  "Boy, poor stream, palpable bladder, antenatal hydronephrosis."
- ],
- [
-  "Prevention",
-  "Contributory factor to treat?",
-  "Constipation."
- ]
+ ["Basics", "What is the commonest organism of urinary tract infection?", "E. coli.", 1, "1107bs8"],
+ ["Basics", "What does a Proteus urinary infection suggest?", "Urinary stones.", 2, "5cpg8c"],
+ ["Clinical", "What are the features of urinary tract infection in infants?", "Fever, vomiting, poor feeding and prolonged jaundice.", 2, "1kjoewi"],
+ ["Clinical", "What are the features of pyelonephritis?", "A fever of 38 °C or more and loin pain.", 1, "1e2wpmj"],
+ ["Sample", "What is the most reliable urine sample in an infant?", "A suprapubic aspirate.", 1, "13pcwms"],
+ ["Sample", "What is the problem with bag urine samples?", "Contamination.", 1, "1xvpicn"],
+ ["Dipstick", "Which dipstick test is the most specific for urinary infection?", "Nitrite.", 2, "tq1onk"],
+ ["Dipstick", "Which dipstick test is the most sensitive for urinary infection?", "Leucocyte esterase.", 2, "13yni12"],
+ ["Culture", "What colony count is significant in a clean-catch sample?", "More than 10⁵ colony-forming units per ml.", 2, "oo3zuh"],
+ ["Culture", "What colony count is significant in a suprapubic aspirate?", "Any growth.", 2, "mc9pn2"],
+ ["Treatment", "How is urinary infection treated under 3 months of age?", "With intravenous ampicillin and gentamicin.", 2, "ha07a3"],
+ ["Treatment", "For how long is pyelonephritis treated?", "7–10 days.", 1, "u72ekk"],
+ ["Treatment", "For how long is cystitis treated?", "3 days.", 1, "11yigt3"],
+ ["Treatment", "Which oral antibiotics are used for urinary infection?", "Cefixime or co-amoxiclav.", 2, "yexj94"],
+ ["VUR", "What is vesicoureteric reflux (VUR)?", "Backflow of urine from the bladder into the ureter and kidney.", 1, "llnokm"],
+ ["VUR", "What are the consequences of vesicoureteric reflux?", "Renal scarring, hypertension and chronic kidney disease.", 2, "jxi7wc"],
+ ["VUR", "What is the risk of vesicoureteric reflux in siblings?", "30%.", 2, "10gkjma"],
+ ["VUR", "What is the gold-standard test for vesicoureteric reflux?", "A micturating cystourethrogram (MCUG).", 1, "1nz6lpm"],
+ ["Imaging", "Which test shows renal scars, and when is it done?", "A DMSA scan, 4–6 months after the infection.", 2, "8elrde"],
+ ["Imaging", "What is the first imaging after urinary infection in infants?", "A renal ultrasound.", 1, "w2rz9x"],
+ ["Prophylaxis", "Which drug is used for prophylaxis against urinary infection?", "Trimethoprim 2 mg/kg at night.", 2, "13ha4f"],
+ ["Posterior urethral valves", "What are the features of posterior urethral valves?", "A boy with a poor urinary stream, a palpable bladder and hydronephrosis found before birth.", 2, "12t5vsj"],
+ ["Prevention", "Which contributory factor is treated to prevent urinary infection?", "Constipation.", 2, "1cj7tgb"]
 ]

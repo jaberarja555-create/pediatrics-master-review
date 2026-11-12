@@ -1,127 +1,27 @@
 [
- [
-  "Definition",
-  "Three features of nephrotic syndrome?",
-  "Heavy proteinuria, hypoalbuminaemia, oedema."
- ],
- [
-  "Definition",
-  "Nephrotic-range UPCR?",
-  "> 200 mg/mmol."
- ],
- [
-  "Definition",
-  "Albumin level?",
-  "< 25 g/L."
- ],
- [
-  "Basics",
-  "Peak age?",
-  "2–6 years."
- ],
- [
-  "Basics",
-  "Commonest cause?",
-  "Minimal change disease."
- ],
- [
-  "Basics",
-  "EM in minimal change?",
-  "Podocyte foot-process effacement."
- ],
- [
-  "Basics",
-  "Secondary causes in Sudan?",
-  "Hepatitis B, HIV, malaria, schistosomiasis, SLE, HSP."
- ],
- [
-  "Clinical",
-  "First sign?",
-  "Periorbital oedema."
- ],
- [
-  "Clinical",
-  "Minimal change features?",
-  "Normal BP, no gross haematuria, normal C3 and renal function."
- ],
- [
-  "Biopsy",
-  "Indications for biopsy?",
-  "Age < 1 or > 12, steroid resistance, hypertension, haematuria, low C3."
- ],
- [
-  "Treatment",
-  "Prednisolone dose?",
-  "60 mg/m²/day for 4–6 weeks."
- ],
- [
-  "Treatment",
-  "Then?",
-  "40 mg/m² alternate days for 4–6 weeks."
- ],
- [
-  "Treatment",
-  "Prophylaxis while oedematous?",
-  "Penicillin V."
- ],
- [
-  "Treatment",
-  "Diet?",
-  "No added salt, normal protein."
- ],
- [
-  "Treatment",
-  "Refractory oedema?",
-  "20% albumin + furosemide."
- ],
- [
-  "Response",
-  "Define remission.",
-  "Negative/trace dipstick 3 consecutive days."
- ],
- [
-  "Response",
-  "Steroid-sensitive?",
-  "Remission within 4 weeks."
- ],
- [
-  "Response",
-  "Steroid-resistant?",
-  "No remission after 4–6 weeks."
- ],
- [
-  "Response",
-  "Steroid-resistant biopsy often shows?",
-  "FSGS."
- ],
- [
-  "Response",
-  "Frequent relapser definition?",
-  "≥ 2 relapses in 6 months."
- ],
- [
-  "Response",
-  "Steroid-sparing drugs?",
-  "Levamisole, cyclophosphamide, MMF, ciclosporin."
- ],
- [
-  "Complications",
-  "Infection typical?",
-  "Pneumococcal peritonitis."
- ],
- [
-  "Complications",
-  "Why thrombosis?",
-  "Loss of antithrombin III."
- ],
- [
-  "Complications",
-  "Hypovolaemia signs?",
-  "Abdominal pain, cold peripheries, ↑ Hct."
- ],
- [
-  "Complications",
-  "Lipids?",
-  "Raised cholesterol."
- ]
+ ["Definition", "What are the three features of nephrotic syndrome?", "Heavy proteinuria, hypoalbuminaemia and oedema.", 1, "1p1yw3s"],
+ ["Definition", "What urine protein-to-creatinine ratio (UPCR) is in the nephrotic range?", "Above 200 mg/mmol.", 2, "ej68jr"],
+ ["Definition", "What serum albumin level is seen in nephrotic syndrome?", "Below 25 g/L.", 1, "1jic2sn"],
+ ["Basics", "What is the peak age of nephrotic syndrome?", "2–6 years.", 1, "5tn82p"],
+ ["Basics", "What is the commonest cause of nephrotic syndrome in children?", "Minimal change disease.", 1, "r5dkbf"],
+ ["Basics", "What does electron microscopy show in minimal change disease?", "Effacement of the podocyte foot processes.", 2, "wrgbd9"],
+ ["Basics", "What are the secondary causes of nephrotic syndrome in Sudan?", "Hepatitis B, HIV infection, malaria, schistosomiasis, systemic lupus erythematosus and Henoch–Schönlein purpura.", 2, "dtxjep"],
+ ["Clinical", "What is the first sign of nephrotic syndrome?", "Periorbital oedema.", 1, "1ld1c42"],
+ ["Clinical", "What are the features of minimal change disease?", "A normal blood pressure, no visible haematuria, a normal C3 and normal renal function.", 2, "1nx533l"],
+ ["Biopsy", "What are the indications for a renal biopsy in nephrotic syndrome?", "Age under 1 year or over 12 years, steroid resistance, hypertension, haematuria and a low C3.", 3, "mv7anl"],
+ ["Treatment", "What is the dose of prednisolone in the first episode?", "60 mg/m²/day for 4–6 weeks.", 2, "u9avn8"],
+ ["Treatment", "How is prednisolone continued after the daily course?", "40 mg/m² on alternate days for 4–6 weeks.", 2, "1c3a1u"],
+ ["Treatment", "Which prophylaxis is given while the child is oedematous?", "Penicillin V.", 2, "9vqplx"],
+ ["Treatment", "What diet is advised in nephrotic syndrome?", "No added salt and a normal protein intake.", 1, "13b7or"],
+ ["Treatment", "How is refractory oedema treated?", "With 20% albumin followed by furosemide.", 2, "1ny61j"],
+ ["Response", "How is remission defined?", "A negative or trace urine dipstick for protein on 3 consecutive days.", 2, "1yp7bga"],
+ ["Response", "What is steroid-sensitive nephrotic syndrome?", "Remission within 4 weeks of prednisolone.", 2, "15vsywq"],
+ ["Response", "What is steroid-resistant nephrotic syndrome?", "No remission after 4–6 weeks of prednisolone.", 2, "1b79f8z"],
+ ["Response", "What does the biopsy often show in steroid-resistant nephrotic syndrome?", "Focal segmental glomerulosclerosis (FSGS).", 2, "wca3s1"],
+ ["Response", "How is a frequent relapser defined?", "2 or more relapses in 6 months.", 2, "s1g52"],
+ ["Response", "Which steroid-sparing drugs are used?", "Levamisole, cyclophosphamide, mycophenolate mofetil and ciclosporin.", 2, "13ehobt"],
+ ["Complications", "Which infection is typical of nephrotic syndrome?", "Pneumococcal peritonitis.", 2, "111ce9o"],
+ ["Complications", "Why does thrombosis occur in nephrotic syndrome?", "Antithrombin III is lost in the urine.", 3, "1wsrlmb"],
+ ["Complications", "What are the signs of hypovolaemia in nephrotic syndrome?", "Abdominal pain, cold peripheries and a rising haematocrit.", 3, "51t4kr"],
+ ["Complications", "What happens to the blood lipids in nephrotic syndrome?", "The cholesterol rises.", 1, "uhl5ru"]
 ]

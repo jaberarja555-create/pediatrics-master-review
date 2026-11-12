@@ -1,127 +1,27 @@
 [
- [
-  "Definition",
-  "Define epilepsy.",
-  "Two unprovoked seizures > 24 h apart."
- ],
- [
-  "Classification",
-  "Generalised seizure types?",
-  "Tonic–clonic, absence, myoclonic, tonic, atonic."
- ],
- [
-  "West",
-  "West syndrome age?",
-  "3–12 months."
- ],
- [
-  "West",
-  "West features?",
-  "Flexor spasms in clusters, regression."
- ],
- [
-  "West",
-  "West EEG?",
-  "Hypsarrhythmia."
- ],
- [
-  "West",
-  "West cause to look for?",
-  "Tuberous sclerosis (ash-leaf spots)."
- ],
- [
-  "West",
-  "West treatment?",
-  "Steroids/ACTH or vigabatrin."
- ],
- [
-  "Absence",
-  "Absence features?",
-  "Brief stares, no post-ictal, many daily."
- ],
- [
-  "Absence",
-  "Provoked by?",
-  "Hyperventilation."
- ],
- [
-  "Absence",
-  "EEG?",
-  "3 Hz spike-and-wave."
- ],
- [
-  "Absence",
-  "Drug?",
-  "Ethosuximide (or valproate)."
- ],
- [
-  "JME",
-  "JME features?",
-  "Morning myoclonic jerks in adolescents."
- ],
- [
-  "JME",
-  "JME drug?",
-  "Valproate (levetiracetam in girls)."
- ],
- [
-  "Rolandic",
-  "Rolandic features?",
-  "Night-time face twitching, drooling, 4–10 yr."
- ],
- [
-  "DDx",
-  "Breath-holding spell trigger?",
-  "Crying from anger or pain."
- ],
- [
-  "DDx",
-  "Check in breath-holding?",
-  "Iron deficiency."
- ],
- [
-  "Drugs",
-  "When to start AED?",
-  "After second unprovoked seizure."
- ],
- [
-  "Drugs",
-  "When to stop?",
-  "After 2 seizure-free years."
- ],
- [
-  "Drugs",
-  "Valproate dose?",
-  "20–40 mg/kg/day."
- ],
- [
-  "Drugs",
-  "Valproate risks?",
-  "Hepatotoxicity, pancreatitis, teratogenicity."
- ],
- [
-  "Drugs",
-  "Carbamazepine worsens?",
-  "Absence and myoclonic seizures."
- ],
- [
-  "Drugs",
-  "Carbamazepine side effects?",
-  "Rash (SJS), hyponatraemia."
- ],
- [
-  "Drugs",
-  "Phenytoin side effects?",
-  "Gum hypertrophy, hirsutism, ataxia."
- ],
- [
-  "Drugs",
-  "Phenobarbitone side effects?",
-  "Sedation, hyperactivity, learning problems."
- ],
- [
-  "Advice",
-  "Safety advice?",
-  "Supervised swimming/bathing, no heights."
- ]
+ ["Definition", "How is epilepsy defined?", "Two unprovoked seizures more than 24 hours apart.", 1, "b57mp6"],
+ ["Classification", "What are the types of generalised seizure?", "Tonic–clonic, absence, myoclonic, tonic and atonic seizures.", 1, "djtck0"],
+ ["West syndrome", "At what age does West syndrome start?", "At 3–12 months.", 1, "pnpli6"],
+ ["West syndrome", "What are the features of West syndrome?", "Flexor spasms in clusters, with developmental regression.", 2, "fpi07l"],
+ ["West syndrome", "What does the EEG show in West syndrome?", "Hypsarrhythmia.", 1, "1t0w6jt"],
+ ["West syndrome", "Which cause of West syndrome must be looked for?", "Tuberous sclerosis (ash-leaf spots).", 2, "t0dxei"],
+ ["West syndrome", "How is West syndrome treated?", "With steroids or ACTH, or vigabatrin.", 2, "usgbeg"],
+ ["Absence epilepsy", "What are the features of absence seizures?", "Brief staring spells, many times a day, with no post-ictal phase.", 1, "1vj2gyn"],
+ ["Absence epilepsy", "What provokes absence seizures?", "Hyperventilation.", 1, "1m4vxgs"],
+ ["Absence epilepsy", "What does the EEG show in absence epilepsy?", "3 Hz spike-and-wave discharges.", 1, "19j08"],
+ ["Absence epilepsy", "Which drug treats absence epilepsy?", "Ethosuximide (or valproate).", 2, "13ha4f"],
+ ["Juvenile myoclonic epilepsy", "What are the features of juvenile myoclonic epilepsy?", "Myoclonic jerks in the morning, in adolescents.", 2, "1mu97j8"],
+ ["Juvenile myoclonic epilepsy", "Which drug treats juvenile myoclonic epilepsy?", "Valproate; levetiracetam in girls.", 3, "16f4aqp"],
+ ["Rolandic epilepsy", "What are the features of Rolandic epilepsy?", "Twitching of the face and drooling at night, at 4–10 years of age.", 2, "12k0r8k"],
+ ["Differential", "What triggers a breath-holding spell?", "Crying from anger or pain.", 1, "14bk0vd"],
+ ["Differential", "What is checked in a child with breath-holding spells?", "Iron deficiency.", 3, "1d48hd2"],
+ ["Drugs", "When is an antiepileptic drug started?", "After a second unprovoked seizure.", 2, "3tsqak"],
+ ["Drugs", "When are antiepileptic drugs stopped?", "After 2 seizure-free years.", 2, "1bqi9we"],
+ ["Drugs", "What is the dose of valproate?", "20–40 mg/kg/day.", 2, "o0f02w"],
+ ["Drugs", "What are the risks of valproate?", "Hepatotoxicity, pancreatitis and harm to the fetus (teratogenicity).", 2, "14l4mfp"],
+ ["Drugs", "Which seizures does carbamazepine make worse?", "Absence and myoclonic seizures.", 3, "z5rs30"],
+ ["Drugs", "What are the side effects of carbamazepine?", "Rash (Stevens–Johnson syndrome) and hyponatraemia.", 2, "13plxk8"],
+ ["Drugs", "What are the side effects of phenytoin?", "Gum hypertrophy, hirsutism and ataxia.", 1, "6bn35q"],
+ ["Drugs", "What are the side effects of phenobarbitone?", "Sedation, hyperactivity and learning problems.", 2, "9wqg04"],
+ ["Advice", "What safety advice is given in epilepsy?", "Swimming and bathing only under supervision, and no climbing to heights.", 1, "1scea6x"]
 ]

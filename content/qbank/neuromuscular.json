@@ -1,58 +1,6 @@
 [
-{
-"q": "CSF in Guillain–Barré syndrome shows:",
-"o": [
-"High cells, low glucose",
-"High protein with normal cells",
-"Normal",
-"Blood",
-"Oligoclonal bands only"
-],
-"a": 1,
-"e": "Albuminocytological dissociation.",
-"k": "albuminocytological dissociation",
-"s": "bank"
-},
-{
-"q": "Treatment of Guillain–Barré syndrome is:",
-"o": [
-"Steroids",
-"IVIG",
-"Antibiotics",
-"Pyridostigmine",
-"Antivirals"
-],
-"a": 1,
-"e": "IVIG or plasmapheresis.",
-"k": "ivig 2 g/kg",
-"s": "bank"
-},
-{
-"q": "A boy with Gowers' sign and calf hypertrophy most likely has:",
-"o": [
-"SMA",
-"Duchenne muscular dystrophy",
-"Myasthenia",
-"CP",
-"GBS"
-],
-"a": 1,
-"e": "DMD.",
-"k": "gowers' sign",
-"s": "bank"
-},
-{
-"q": "Tongue fasciculations in a floppy alert infant suggest:",
-"o": [
-"Down syndrome",
-"SMA",
-"Hypothyroidism",
-"HIE",
-"Prader–Willi"
-],
-"a": 1,
-"e": "Anterior horn cell disease.",
-"k": "tongue fasciculation",
-"s": "bank"
-}
+{"q": "CSF in Guillain–Barré syndrome shows:", "o": ["High cells, low glucose", "High protein with normal cells", "Normal", "Blood", "Oligoclonal bands only"], "a": 1, "e": "This is albuminocytological dissociation.", "k": "albuminocytological dissociation", "s": "bank", "d": 1},
+{"q": "Treatment of Guillain–Barré syndrome is:", "o": ["Steroids", "Intravenous immunoglobulin", "Antibiotics", "Pyridostigmine", "Antivirals"], "a": 1, "e": "Intravenous immunoglobulin or plasmapheresis.", "k": "ivig 2 g/kg", "s": "bank", "d": 1},
+{"q": "A boy with the Gowers sign and enlarged calves most likely has:", "o": ["Spinal muscular atrophy", "Duchenne muscular dystrophy", "Myasthenia gravis", "Cerebral palsy", "Guillain–Barré syndrome"], "a": 1, "e": "Duchenne muscular dystrophy.", "k": "gowers' sign", "s": "bank", "id": "izucor", "d": 1},
+{"q": "Fasciculation of the tongue in a floppy, alert infant suggests:", "o": ["Down syndrome", "Spinal muscular atrophy", "Hypothyroidism", "Hypoxic–ischaemic encephalopathy", "Prader–Willi syndrome"], "a": 1, "e": "Spinal muscular atrophy is a disease of the anterior horn cells.", "k": "tongue fasciculation", "s": "bank", "id": "mwehpt", "d": 2}
 ]

@@ -1,92 +1,20 @@
 [
- [
-  "Definition",
-  "Age range of febrile seizures?",
-  "6 months to 5 years."
- ],
- [
-  "Definition",
-  "Prevalence?",
-  "3–4% of children."
- ],
- [
-  "Types",
-  "Simple febrile seizure?",
-  "Generalised, < 15 min, once in 24 h, full recovery."
- ],
- [
-  "Types",
-  "Complex febrile seizure?",
-  "Focal, ≥ 15 min, or repeated in 24 h."
- ],
- [
-  "Types",
-  "Febrile status?",
-  "≥ 30 minutes."
- ],
- [
-  "Cause",
-  "Classic virus?",
-  "HHV-6 (roseola)."
- ],
- [
-  "Assessment",
-  "Test for fever source in Sudan?",
-  "Malaria RDT/film."
- ],
- [
-  "Assessment",
-  "When LP?",
-  "Meningeal signs, < 12 months, on antibiotics, complex, slow recovery."
- ],
- [
-  "Assessment",
-  "Is EEG needed in simple FS?",
-  "No."
- ],
- [
-  "Treatment",
-  "Seizure > 5 min?",
-  "Rectal diazepam 0.5 mg/kg or buccal midazolam 0.3 mg/kg."
- ],
- [
-  "Treatment",
-  "Position during fit?",
-  "Recovery position."
- ],
- [
-  "Treatment",
-  "Do antipyretics prevent recurrence?",
-  "No."
- ],
- [
-  "Treatment",
-  "Long-term AEDs for simple FS?",
-  "No."
- ],
- [
-  "Prognosis",
-  "Recurrence risk?",
-  "About 30%."
- ],
- [
-  "Prognosis",
-  "Risk factors for recurrence?",
-  "First < 18 months, family history, low fever, short fever."
- ],
- [
-  "Prognosis",
-  "Epilepsy risk after simple FS?",
-  "1–2%."
- ],
- [
-  "Prognosis",
-  "Brain damage?",
-  "No."
- ],
- [
-  "DDx",
-  "Fever + persistent coma + malaria?",
-  "Cerebral malaria."
- ]
+ ["Definition", "At what ages do febrile seizures occur?", "From 6 months to 5 years.", 1, "e9d5cv"],
+ ["Definition", "How common are febrile seizures?", "They occur in 3–4% of children.", 1, "xx685y"],
+ ["Types", "What is a simple febrile seizure?", "A generalised seizure lasting less than 15 minutes, occurring once in 24 hours, with full recovery.", 1, "y8x46t"],
+ ["Types", "What is a complex febrile seizure?", "A seizure that is focal, lasts 15 minutes or more, or recurs within 24 hours.", 2, "ahfg53"],
+ ["Types", "What is febrile status epilepticus?", "A febrile seizure lasting 30 minutes or more.", 1, "158ice8"],
+ ["Cause", "Which virus is classically linked with febrile seizures?", "Human herpesvirus 6 (roseola).", 2, "1cgdtu8"],
+ ["Assessment", "Which test is done in Sudan to look for the source of fever?", "A malaria rapid test or blood film.", 1, "h3vpev"],
+ ["Assessment", "When is a lumbar puncture done after a febrile seizure?", "With meningeal signs, under 12 months of age, when the child is already on antibiotics, after a complex seizure, or with slow recovery.", 3, "ytsvw5"],
+ ["Assessment", "Is an EEG needed after a simple febrile seizure?", "No.", 2, "1x9uhxf"],
+ ["Treatment", "How is a seizure lasting more than 5 minutes treated?", "With rectal diazepam 0.5 mg/kg or buccal midazolam 0.3 mg/kg.", 2, "1hp9n05"],
+ ["Treatment", "In which position is the child placed during a seizure?", "The recovery position.", 1, "ij4sja"],
+ ["Treatment", "Do antipyretics prevent recurrence of febrile seizures?", "No.", 2, "1hvb4zj"],
+ ["Treatment", "Are long-term antiepileptic drugs given for simple febrile seizures?", "No.", 2, "jt8asl"],
+ ["Prognosis", "What is the risk of recurrence of a febrile seizure?", "About 30%.", 1, "b64t4w"],
+ ["Prognosis", "What are the risk factors for recurrence?", "A first seizure before 18 months, a family history, a seizure at a low temperature, and a short duration of fever before the seizure.", 3, "y1a50r"],
+ ["Prognosis", "What is the risk of epilepsy after a simple febrile seizure?", "1–2%.", 2, "11m0u60"],
+ ["Prognosis", "Do febrile seizures cause brain damage?", "No.", 1, "13mxgfa"],
+ ["Differential", "A child with fever and malaria stays in coma after a seizure. What is the diagnosis?", "Cerebral malaria.", 3, "x7ase3"]
 ]

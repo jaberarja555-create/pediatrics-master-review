@@ -1,82 +1,18 @@
 [
- [
-  "Definition",
-  "Define CP.",
-  "Permanent movement disorder from non-progressive brain injury < 2 yr."
- ],
- [
-  "Causes",
-  "Perinatal causes?",
-  "HIE, prematurity (PVL), kernicterus."
- ],
- [
-  "Causes",
-  "Postnatal causes?",
-  "Meningitis, cerebral malaria, head injury."
- ],
- [
-  "Types",
-  "Commonest type?",
-  "Spastic (80%)."
- ],
- [
-  "Types",
-  "Spastic signs?",
-  "↑ Tone, brisk reflexes, upgoing plantars, clonus."
- ],
- [
-  "Types",
-  "Preterm PVL type?",
-  "Spastic diplegia."
- ],
- [
-  "Types",
-  "HIE type?",
-  "Spastic quadriplegia."
- ],
- [
-  "Types",
-  "Kernicterus type?",
-  "Dyskinetic (choreoathetoid)."
- ],
- [
-  "Types",
-  "Ataxic CP lesion?",
-  "Cerebellum."
- ],
- [
-  "Signs",
-  "Early signs?",
-  "Delayed milestones, persistent reflexes, early hand preference."
- ],
- [
-  "Assoc",
-  "Epilepsy in CP?",
-  "30–40%."
- ],
- [
-  "Assoc",
-  "Other associated problems?",
-  "Intellectual disability, squint, deafness, feeding, aspiration."
- ],
- [
-  "Diagnosis",
-  "How diagnosed?",
-  "Clinically; MRI supports."
- ],
- [
-  "Treatment",
-  "Spasticity drugs?",
-  "Baclofen, botulinum toxin."
- ],
- [
-  "Treatment",
-  "Team?",
-  "Physio, OT, speech therapy, orthopaedics."
- ],
- [
-  "DDx",
-  "Loss of skills means?",
-  "Not CP: neurodegenerative."
- ]
+ ["Definition", "What is cerebral palsy?", "A permanent disorder of movement caused by a non-progressive injury to the brain before 2 years of age.", 1, "g36r30"],
+ ["Causes", "What are the perinatal causes of cerebral palsy?", "Hypoxic–ischaemic encephalopathy, prematurity (periventricular leukomalacia) and kernicterus.", 1, "1vl9yut"],
+ ["Causes", "What are the postnatal causes of cerebral palsy?", "Meningitis, cerebral malaria and head injury.", 1, "1m6ibgh"],
+ ["Types", "What is the commonest type of cerebral palsy?", "Spastic cerebral palsy (80%).", 1, "clqhds"],
+ ["Types", "What are the signs of spastic cerebral palsy?", "Increased tone, brisk reflexes, upgoing plantars and clonus.", 1, "wnlcfe"],
+ ["Types", "Which type of cerebral palsy follows periventricular leukomalacia in preterm babies?", "Spastic diplegia.", 2, "64aat6"],
+ ["Types", "Which type of cerebral palsy follows hypoxic–ischaemic encephalopathy?", "Spastic quadriplegia.", 2, "1m6vkp5"],
+ ["Types", "Which type of cerebral palsy follows kernicterus?", "Dyskinetic (choreoathetoid) cerebral palsy.", 2, "1o1gexg"],
+ ["Types", "Where is the lesion in ataxic cerebral palsy?", "In the cerebellum.", 2, "l48fkq"],
+ ["Signs", "What are the early signs of cerebral palsy?", "Delayed milestones, persistent primitive reflexes and early hand preference.", 2, "n6cpwm"],
+ ["Associated problems", "How often does epilepsy occur in cerebral palsy?", "In 30–40%.", 2, "1iid67s"],
+ ["Associated problems", "Which other problems are associated with cerebral palsy?", "Intellectual disability, squint, deafness, feeding difficulty and aspiration.", 2, "ho4skh"],
+ ["Diagnosis", "How is cerebral palsy diagnosed?", "Clinically; an MRI supports the diagnosis.", 2, "1ioouix"],
+ ["Treatment", "Which drugs treat spasticity?", "Baclofen and botulinum toxin.", 2, "1v3ct4t"],
+ ["Treatment", "Which team cares for a child with cerebral palsy?", "Physiotherapy, occupational therapy, speech therapy and orthopaedics.", 1, "1c1a3m"],
+ ["Differential", "What does loss of skills mean in a child thought to have cerebral palsy?", "It is not cerebral palsy; a neurodegenerative disease must be considered.", 3, "1oopblv"]
 ]

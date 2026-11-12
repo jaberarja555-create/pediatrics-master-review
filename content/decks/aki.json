@@ -1,127 +1,27 @@
 [
- [
-  "AKI",
-  "Definition?",
-  "Creatinine ≥ 1.5× baseline or urine < 0.5 mL/kg/h for 6 h."
- ],
- [
-  "AKI",
-  "Commonest type?",
-  "Pre-renal."
- ],
- [
-  "AKI",
-  "Pre-renal urine?",
-  "Na < 20, FENa < 1%."
- ],
- [
-  "AKI",
-  "ATN urine?",
-  "Na > 40, FENa > 2%, casts."
- ],
- [
-  "AKI",
-  "Post-renal cause in boys?",
-  "Posterior urethral valves."
- ],
- [
-  "AKI",
-  "First step if hypovolaemic?",
-  "Saline bolus 10–20 mL/kg."
- ],
- [
-  "AKI",
-  "Maintenance fluid?",
-  "Insensible 400 mL/m² + output."
- ],
- [
-  "AKI",
-  "Dialysis indications?",
-  "Refractory K, overload, acidosis, uraemia."
- ],
- [
-  "AKI",
-  "Common dialysis method in Sudan?",
-  "Peritoneal dialysis."
- ],
- [
-  "HUS",
-  "HUS triad?",
-  "MAHA, thrombocytopenia, AKI."
- ],
- [
-  "HUS",
-  "Cause?",
-  "Shiga toxin E. coli O157."
- ],
- [
-  "HUS",
-  "Film?",
-  "Schistocytes."
- ],
- [
-  "HUS",
-  "Coombs?",
-  "Negative."
- ],
- [
-  "HUS",
-  "Avoid?",
-  "Antibiotics and antidiarrhoeals."
- ],
- [
-  "CKD",
-  "CKD definition?",
-  "Damage or GFR < 60 for > 3 months."
- ],
- [
-  "CKD",
-  "Commonest cause in children?",
-  "Congenital anomalies (CAKUT)."
- ],
- [
-  "CKD",
-  "Schwartz formula?",
-  "36.5 × height ÷ creatinine (µmol/L)."
- ],
- [
-  "CKD",
-  "CKD features?",
-  "Growth failure, anaemia, osteodystrophy, hypertension."
- ],
- [
-  "CKD",
-  "Anaemia treatment?",
-  "Erythropoietin + iron."
- ],
- [
-  "CKD",
-  "Bone treatment?",
-  "Phosphate binders + alfacalcidol."
- ],
- [
-  "CKD",
-  "Drug to slow progression?",
-  "ACE inhibitor."
- ],
- [
-  "CKD",
-  "Best renal replacement?",
-  "Transplantation."
- ],
- [
-  "HTN",
-  "Hypertension definition?",
-  "≥ 95th centile on 3 occasions."
- ],
- [
-  "HTN",
-  "Commonest cause in children?",
-  "Renal disease."
- ],
- [
-  "HTN",
-  "Emergency BP reduction?",
-  "≤ 25% in 8 h."
- ]
+ ["Acute kidney injury", "How is acute kidney injury defined?", "A creatinine of 1.5 times the baseline or more, or a urine output below 0.5 ml/kg/h for 6 hours.", 2, "4q338s"],
+ ["Acute kidney injury", "What is the commonest type of acute kidney injury?", "Pre-renal.", 1, "clqhds"],
+ ["Acute kidney injury", "What does the urine show in pre-renal acute kidney injury?", "A urine sodium below 20 mmol/L and a fractional excretion of sodium (FENa) below 1%.", 3, "735m8w"],
+ ["Acute kidney injury", "What does the urine show in acute tubular necrosis?", "A urine sodium above 40 mmol/L, a FENa above 2% and casts.", 3, "1gvy3lt"],
+ ["Acute kidney injury", "What is the post-renal cause of acute kidney injury in boys?", "Posterior urethral valves.", 2, "s2symz"],
+ ["Acute kidney injury", "What is the first step in a hypovolaemic child with acute kidney injury?", "A saline bolus of 10–20 ml/kg.", 2, "kzzrr4"],
+ ["Acute kidney injury", "How much maintenance fluid is given in oliguric acute kidney injury?", "The insensible loss (400 ml/m²) plus the urine output.", 2, "1604juq"],
+ ["Acute kidney injury", "What are the indications for dialysis?", "Refractory hyperkalaemia, fluid overload, acidosis and uraemia.", 2, "cs43pw"],
+ ["Acute kidney injury", "Which dialysis method is common in Sudan?", "Peritoneal dialysis.", 1, "1qoeh8j"],
+ ["HUS", "What is the triad of haemolytic uraemic syndrome?", "Microangiopathic haemolytic anaemia, thrombocytopenia and acute kidney injury.", 1, "1tookr"],
+ ["HUS", "What causes haemolytic uraemic syndrome?", "Shiga toxin from E. coli O157.", 1, "x9hv6e"],
+ ["HUS", "What does the blood film show in haemolytic uraemic syndrome?", "Schistocytes (fragmented red cells).", 1, "14exwb"],
+ ["HUS", "What is the Coombs test in haemolytic uraemic syndrome?", "Negative.", 2, "17a15yc"],
+ ["HUS", "Which drugs are avoided in haemolytic uraemic syndrome?", "Antibiotics and antidiarrhoeal drugs.", 3, "wmu9hm"],
+ ["Chronic kidney disease", "How is chronic kidney disease defined?", "Kidney damage, or a GFR below 60, for more than 3 months.", 2, "1ckaeiw"],
+ ["Chronic kidney disease", "What is the commonest cause of chronic kidney disease in children?", "Congenital anomalies of the kidney and urinary tract (CAKUT).", 2, "7nypcx"],
+ ["Chronic kidney disease", "What is the Schwartz formula?", "GFR = 36.5 × height (cm) ÷ creatinine (µmol/L).", 2, "eyuznn"],
+ ["Chronic kidney disease", "What are the features of chronic kidney disease in children?", "Growth failure, anaemia, renal osteodystrophy and hypertension.", 2, "1b836u6"],
+ ["Chronic kidney disease", "How is the anaemia of chronic kidney disease treated?", "With erythropoietin and iron.", 2, "13nda0j"],
+ ["Chronic kidney disease", "How is the bone disease of chronic kidney disease treated?", "With phosphate binders and alfacalcidol.", 2, "1j4fi4j"],
+ ["Chronic kidney disease", "Which drug slows the progression of chronic kidney disease?", "An ACE inhibitor.", 2, "1xlg5um"],
+ ["Chronic kidney disease", "What is the best renal replacement therapy?", "Kidney transplantation.", 1, "4ye3mr"],
+ ["Hypertension", "How is hypertension defined in children?", "A blood pressure at or above the 95th centile on 3 occasions.", 2, "14bygtu"],
+ ["Hypertension", "What is the commonest cause of hypertension in children?", "Renal disease.", 1, "7nypcx"],
+ ["Hypertension", "How fast is the blood pressure lowered in a hypertensive emergency?", "By no more than 25% in the first 8 hours.", 3, "10vxplb"]
 ]

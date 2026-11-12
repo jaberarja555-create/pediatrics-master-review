@@ -1,58 +1,6 @@
 [
-{
-"q": "The EEG of childhood absence epilepsy shows:",
-"o": [
-"Hypsarrhythmia",
-"3 Hz spike-and-wave",
-"Centrotemporal spikes",
-"Burst suppression",
-"Normal"
-],
-"a": 1,
-"e": "3 Hz.",
-"k": "3 hz spike-and-wave",
-"s": "bank"
-},
-{
-"q": "Infantile spasms with ash-leaf spots: treatment of choice is:",
-"o": [
-"Carbamazepine",
-"Vigabatrin",
-"Phenytoin",
-"Ethosuximide",
-"Diazepam"
-],
-"a": 1,
-"e": "Vigabatrin in tuberous sclerosis.",
-"k": "vigabatrin",
-"s": "bank"
-},
-{
-"q": "Which drug may worsen absence seizures?",
-"o": [
-"Valproate",
-"Ethosuximide",
-"Carbamazepine",
-"Lamotrigine",
-"Levetiracetam"
-],
-"a": 2,
-"e": "Carbamazepine.",
-"k": "worsens absence",
-"s": "bank"
-},
-{
-"q": "Gum hypertrophy is a side effect of:",
-"o": [
-"Valproate",
-"Phenytoin",
-"Carbamazepine",
-"Levetiracetam",
-"Ethosuximide"
-],
-"a": 1,
-"e": "Phenytoin.",
-"k": "gum hypertrophy",
-"s": "bank"
-}
+{"q": "The EEG of childhood absence epilepsy shows:", "o": ["Hypsarrhythmia", "3 Hz spike-and-wave", "Centrotemporal spikes", "Burst suppression", "Normal"], "a": 1, "e": "Absence epilepsy shows 3 Hz spike-and-wave discharges.", "k": "3 hz spike-and-wave", "s": "bank", "d": 1},
+{"q": "Infantile spasms with ash-leaf spots: what is the treatment of choice?", "o": ["Carbamazepine", "Vigabatrin", "Phenytoin", "Ethosuximide", "Diazepam"], "a": 1, "e": "Vigabatrin is the drug of choice in tuberous sclerosis.", "k": "vigabatrin", "s": "bank", "id": "1v6zpro", "d": 2},
+{"q": "Which drug may worsen absence seizures?", "o": ["Valproate", "Ethosuximide", "Carbamazepine", "Lamotrigine", "Levetiracetam"], "a": 2, "e": "Carbamazepine can make absence seizures worse.", "k": "worsens absence", "s": "bank", "d": 2},
+{"q": "Gum hypertrophy is a side effect of:", "o": ["Valproate", "Phenytoin", "Carbamazepine", "Levetiracetam", "Ethosuximide"], "a": 1, "e": "Gum hypertrophy is a side effect of phenytoin.", "k": "gum hypertrophy", "s": "bank", "d": 1}
 ]

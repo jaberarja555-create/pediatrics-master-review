@@ -1,122 +1,26 @@
 [
- [
-  "Basics",
-  "Define hydrocephalus.",
-  "Excess CSF in the ventricles with raised pressure."
- ],
- [
-  "Basics",
-  "CSF made by?",
-  "Choroid plexus."
- ],
- [
-  "Basics",
-  "CSF absorbed by?",
-  "Arachnoid villi."
- ],
- [
-  "Types",
-  "Commonest congenital obstructive cause?",
-  "Aqueduct stenosis."
- ],
- [
-  "Types",
-  "Communicating causes?",
-  "Meningitis (TB), IVH."
- ],
- [
-  "Types",
-  "MMC association?",
-  "Chiari II malformation."
- ],
- [
-  "Infant",
-  "Infant signs?",
-  "Enlarging OFC, bulging AF, wide sutures, sunset eyes."
- ],
- [
-  "Older",
-  "Older child signs?",
-  "Morning headache, vomiting, papilloedema, VI palsy."
- ],
- [
-  "Older",
-  "Cushing triad?",
-  "Bradycardia, hypertension, irregular breathing."
- ],
- [
-  "Tests",
-  "Infant imaging?",
-  "Cranial ultrasound."
- ],
- [
-  "Treatment",
-  "Standard treatment?",
-  "VP shunt."
- ],
- [
-  "Treatment",
-  "Aqueduct stenosis option?",
-  "Endoscopic third ventriculostomy."
- ],
- [
-  "Shunt",
-  "Commonest shunt problem?",
-  "Blockage."
- ],
- [
-  "Shunt",
-  "Shunt infection organism?",
-  "Staph epidermidis."
- ],
- [
-  "NTD",
-  "When does the neural tube close?",
-  "Weeks 3–4."
- ],
- [
-  "NTD",
-  "Commonest serious NTD?",
-  "Myelomeningocele."
- ],
- [
-  "NTD",
-  "Spina bifida occulta signs?",
-  "Tuft of hair, dimple, lipoma."
- ],
- [
-  "NTD",
-  "MMC care at birth?",
-  "Sterile saline gauze, prone."
- ],
- [
-  "NTD",
-  "Closure timing?",
-  "Within 48–72 h."
- ],
- [
-  "NTD",
-  "MMC bladder management?",
-  "Clean intermittent catheterisation."
- ],
- [
-  "NTD",
-  "Folic acid all women?",
-  "0.4 mg daily."
- ],
- [
-  "NTD",
-  "Folic acid high risk?",
-  "5 mg daily."
- ],
- [
-  "NTD",
-  "Prenatal marker?",
-  "Raised maternal AFP."
- ],
- [
-  "NTD",
-  "MMC allergy?",
-  "Latex."
- ]
+ ["Basics", "What is hydrocephalus?", "Excess cerebrospinal fluid in the ventricles with raised pressure.", 1, "6gvdsw"],
+ ["Basics", "Where is cerebrospinal fluid made?", "In the choroid plexus.", 1, "158v8ef"],
+ ["Basics", "Where is cerebrospinal fluid absorbed?", "Through the arachnoid villi.", 1, "1r1b1ha"],
+ ["Types", "What is the commonest congenital obstructive cause of hydrocephalus?", "Aqueduct stenosis.", 2, "1e70v31"],
+ ["Types", "What are the causes of communicating hydrocephalus?", "Meningitis (especially tuberculous) and intraventricular haemorrhage.", 2, "1aff0lh"],
+ ["Types", "Which malformation accompanies myelomeningocele?", "The Chiari II malformation.", 2, "c3og1n"],
+ ["Infant", "What are the signs of hydrocephalus in an infant?", "An enlarging head circumference, a bulging anterior fontanelle, wide sutures and \"sunset\" eyes.", 1, "rhkwoz"],
+ ["Older child", "What are the signs of hydrocephalus in an older child?", "Morning headache, vomiting, papilloedema and a sixth nerve palsy.", 2, "1nmqx21"],
+ ["Older child", "What is the Cushing triad?", "Bradycardia, hypertension and irregular breathing.", 2, "ch2b9y"],
+ ["Tests", "Which imaging is used for hydrocephalus in an infant?", "A cranial ultrasound.", 1, "18grayp"],
+ ["Treatment", "What is the standard treatment of hydrocephalus?", "A ventriculoperitoneal shunt.", 1, "kxbrai"],
+ ["Treatment", "Which operation is an option in aqueduct stenosis?", "Endoscopic third ventriculostomy.", 3, "17nxbds"],
+ ["Shunt", "What is the commonest shunt problem?", "Blockage.", 2, "1a1kpvj"],
+ ["Shunt", "Which organism causes shunt infection?", "Staphylococcus epidermidis.", 2, "1nacdeu"],
+ ["Neural tube defects", "When does the neural tube close?", "In weeks 3–4 of pregnancy.", 1, "16pz9ea"],
+ ["Neural tube defects", "What is the commonest serious neural tube defect?", "Myelomeningocele.", 1, "4dyhb6"],
+ ["Neural tube defects", "What are the signs of spina bifida occulta?", "A tuft of hair, a dimple or a lipoma over the spine.", 1, "18sbxpq"],
+ ["Neural tube defects", "How is a myelomeningocele cared for at birth?", "It is covered with sterile saline gauze and the baby is nursed prone.", 2, "17yw5a3"],
+ ["Neural tube defects", "When is a myelomeningocele closed?", "Within 48–72 hours of birth.", 2, "1cqpws0"],
+ ["Neural tube defects", "How is the bladder managed in myelomeningocele?", "With clean intermittent catheterisation.", 2, "1hxk5z7"],
+ ["Neural tube defects", "How much folic acid should all women take to prevent neural tube defects?", "0.4 mg daily.", 1, "1pcma9s"],
+ ["Neural tube defects", "How much folic acid should women at high risk take?", "5 mg daily.", 2, "5dhw1e"],
+ ["Neural tube defects", "Which prenatal marker is raised in neural tube defects?", "Maternal α-fetoprotein.", 2, "1j6rxxq"],
+ ["Neural tube defects", "Which allergy is common in myelomeningocele?", "Latex allergy.", 3, "1y28c64"]
 ]

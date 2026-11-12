@@ -1,117 +1,25 @@
 [
- [
-  "PSGN",
-  "Nephritic features?",
-  "Haematuria, oedema, hypertension, oliguria."
- ],
- [
-  "PSGN",
-  "Urine colour?",
-  "Cola/smoky."
- ],
- [
-  "PSGN",
-  "Urine microscopy?",
-  "RBC casts."
- ],
- [
-  "PSGN",
-  "Latency after throat infection?",
-  "1–2 weeks."
- ],
- [
-  "PSGN",
-  "Latency after skin infection?",
-  "3–6 weeks."
- ],
- [
-  "PSGN",
-  "Complement?",
-  "Low C3, normal by 6–8 weeks."
- ],
- [
-  "PSGN",
-  "Skin strep marker?",
-  "Anti-DNase B."
- ],
- [
-  "PSGN",
-  "Throat strep marker?",
-  "ASO."
- ],
- [
-  "PSGN",
-  "Fluid restriction?",
-  "400 mL/m²/day + urine output."
- ],
- [
-  "PSGN",
-  "Diuretic?",
-  "Furosemide 1–2 mg/kg."
- ],
- [
-  "PSGN",
-  "Antihypertensive?",
-  "Nifedipine or amlodipine."
- ],
- [
-  "PSGN",
-  "Serious complications?",
-  "Hypertensive encephalopathy, AKI, pulmonary oedema."
- ],
- [
-  "PSGN",
-  "Prognosis?",
-  "> 95% full recovery."
- ],
- [
-  "PSGN",
-  "C3 low after 8 weeks?",
-  "Biopsy (MPGN/lupus)."
- ],
- [
-  "IgA",
-  "Haematuria during sore throat?",
-  "IgA nephropathy."
- ],
- [
-  "Alport",
-  "Haematuria + deafness + family history?",
-  "Alport syndrome."
- ],
- [
-  "HSP",
-  "HSP rash site?",
-  "Buttocks and extensor legs."
- ],
- [
-  "HSP",
-  "Platelets in HSP?",
-  "Normal."
- ],
- [
-  "HSP",
-  "HSP gut complication?",
-  "Intussusception."
- ],
- [
-  "HSP",
-  "HSP renal involvement?",
-  "30–50%."
- ],
- [
-  "HSP",
-  "HSP follow-up?",
-  "Urine and BP for 6–12 months."
- ],
- [
-  "Haematuria",
-  "Glomerular haematuria clues?",
-  "Cola urine, casts, dysmorphic RBCs."
- ],
- [
-  "Haematuria",
-  "Dipstick blood + but no RBCs?",
-  "Haemoglobinuria or myoglobinuria."
- ]
+ ["Post-streptococcal glomerulonephritis", "What are the features of the nephritic syndrome?", "Haematuria, oedema, hypertension and oliguria.", 1, "3gz2kq"],
+ ["Post-streptococcal glomerulonephritis", "What colour is the urine in acute glomerulonephritis?", "Cola-coloured or smoky.", 1, "pg49g6"],
+ ["Post-streptococcal glomerulonephritis", "What does urine microscopy show in acute glomerulonephritis?", "Red cell casts.", 1, "86qbcu"],
+ ["Post-streptococcal glomerulonephritis", "How long after a throat infection does post-streptococcal glomerulonephritis appear?", "1–2 weeks.", 2, "1uk1jr6"],
+ ["Post-streptococcal glomerulonephritis", "How long after a skin infection does post-streptococcal glomerulonephritis appear?", "3–6 weeks.", 2, "19n7w3t"],
+ ["Post-streptococcal glomerulonephritis", "What happens to complement in post-streptococcal glomerulonephritis?", "C3 is low and returns to normal by 6–8 weeks.", 2, "y4rd15"],
+ ["Post-streptococcal glomerulonephritis", "Which antibody marks a streptococcal skin infection?", "Anti-DNase B.", 2, "c1m9vi"],
+ ["Post-streptococcal glomerulonephritis", "Which antibody marks a streptococcal throat infection?", "ASO (antistreptolysin O).", 1, "1o3wqqt"],
+ ["Post-streptococcal glomerulonephritis", "How much fluid is allowed in acute glomerulonephritis?", "400 ml/m²/day plus the urine output.", 2, "zqdktl"],
+ ["Post-streptococcal glomerulonephritis", "Which diuretic is used, and at what dose?", "Furosemide 1–2 mg/kg.", 2, "1vfvudw"],
+ ["Post-streptococcal glomerulonephritis", "Which antihypertensive is used in acute glomerulonephritis?", "Nifedipine or amlodipine.", 2, "12adton"],
+ ["Post-streptococcal glomerulonephritis", "What are the serious complications of acute glomerulonephritis?", "Hypertensive encephalopathy, acute kidney injury and pulmonary oedema.", 2, "1lqchza"],
+ ["Post-streptococcal glomerulonephritis", "What is the prognosis of post-streptococcal glomerulonephritis?", "Over 95% recover fully.", 1, "vtwh8d"],
+ ["Post-streptococcal glomerulonephritis", "The C3 is still low after 8 weeks. What is done?", "A renal biopsy, to look for membranoproliferative glomerulonephritis or lupus.", 3, "w7f4ko"],
+ ["IgA nephropathy", "A child has haematuria during a sore throat. What is the likely diagnosis?", "IgA nephropathy.", 3, "1ox6qtu"],
+ ["Alport syndrome", "A child has haematuria and deafness, with a family history. What is the diagnosis?", "Alport syndrome.", 2, "adgxq3"],
+ ["Henoch–Schönlein purpura", "Where is the rash of Henoch–Schönlein purpura?", "On the buttocks and the extensor surfaces of the legs.", 1, "g7fefr"],
+ ["Henoch–Schönlein purpura", "What is the platelet count in Henoch–Schönlein purpura?", "Normal.", 2, "14lklb7"],
+ ["Henoch–Schönlein purpura", "What is the gut complication of Henoch–Schönlein purpura?", "Intussusception.", 2, "7ym0to"],
+ ["Henoch–Schönlein purpura", "How often are the kidneys involved in Henoch–Schönlein purpura?", "In 30–50% of children.", 2, "qe6q0p"],
+ ["Henoch–Schönlein purpura", "How is a child followed up after Henoch–Schönlein purpura?", "With urine tests and blood pressure checks for 6–12 months.", 2, "sbjxhf"],
+ ["Haematuria", "What are the clues to glomerular haematuria?", "Cola-coloured urine, casts and dysmorphic red cells.", 2, "ihtkr8"],
+ ["Haematuria", "The urine dipstick is positive for blood but there are no red cells. What is the cause?", "Haemoglobinuria or myoglobinuria.", 3, "c4syz9"]
 ]

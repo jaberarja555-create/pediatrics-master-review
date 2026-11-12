@@ -1,58 +1,6 @@
 [
-{
-"q": "The triad of HUS includes all EXCEPT:",
-"o": [
-"Microangiopathic haemolytic anaemia",
-"Thrombocytopenia",
-"AKI",
-"Prolonged PT",
-"Schistocytes"
-],
-"a": 3,
-"e": "Clotting is normal in HUS.",
-"k": "normal clotting",
-"s": "bank"
-},
-{
-"q": "Urine Na < 20 mmol/L and FENa < 1% in oliguria indicates:",
-"o": [
-"ATN",
-"Pre-renal AKI",
-"Post-renal",
-"GN",
-"CKD"
-],
-"a": 1,
-"e": "Pre-renal.",
-"k": "fena < 1%",
-"s": "bank"
-},
-{
-"q": "The commonest cause of CKD in children is:",
-"o": [
-"Diabetes",
-"Hypertension",
-"Congenital anomalies of the urinary tract",
-"SLE",
-"PSGN"
-],
-"a": 2,
-"e": "CAKUT.",
-"k": "congenital anomalies",
-"s": "bank"
-},
-{
-"q": "An indication for dialysis is:",
-"o": [
-"Creatinine 120",
-"Refractory hyperkalaemia",
-"Mild oedema",
-"Haematuria",
-"Proteinuria"
-],
-"a": 1,
-"e": "Hyperkalaemia not responding.",
-"k": "refractory hyperkalaemia",
-"s": "bank"
-}
+{"q": "The features of haemolytic uraemic syndrome include all of the following EXCEPT:", "o": ["Microangiopathic haemolytic anaemia", "Thrombocytopenia", "Acute kidney injury", "Prolonged prothrombin time", "Schistocytes"], "a": 3, "e": "The clotting tests are normal in haemolytic uraemic syndrome.", "k": "normal clotting", "s": "bank", "id": "6buths", "d": 2},
+{"q": "In an oliguric child, a urine sodium below 20 mmol/L and a FENa below 1% indicate:", "o": ["Acute tubular necrosis", "Pre-renal acute kidney injury", "Post-renal acute kidney injury", "Glomerulonephritis", "Chronic kidney disease"], "a": 1, "e": "These findings indicate pre-renal acute kidney injury.", "k": "fena < 1%", "s": "bank", "id": "2rfak1", "d": 2},
+{"q": "The commonest cause of CKD in children is:", "o": ["Diabetes", "Hypertension", "Congenital anomalies of the urinary tract", "SLE", "PSGN"], "a": 2, "e": "Congenital anomalies of the kidney and urinary tract (CAKUT).", "k": "congenital anomalies", "s": "bank", "d": 1},
+{"q": "An indication for dialysis is:", "o": ["A creatinine of 120 µmol/L", "Refractory hyperkalaemia", "Mild oedema", "Haematuria", "Proteinuria"], "a": 1, "e": "Hyperkalaemia that does not respond to treatment needs dialysis.", "k": "refractory hyperkalaemia", "s": "bank", "d": 2}
 ]

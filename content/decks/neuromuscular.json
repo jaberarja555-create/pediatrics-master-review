@@ -1,127 +1,27 @@
 [
- [
-  "AFP",
-  "Define AFP.",
-  "Sudden flaccid weakness in a child < 15 years."
- ],
- [
-  "AFP",
-  "Commonest cause now?",
-  "Guillain–Barré syndrome."
- ],
- [
-  "AFP",
-  "Surveillance samples?",
-  "Two stools 24 h apart within 14 days."
- ],
- [
-  "GBS",
-  "Trigger?",
-  "Respiratory or GI infection (Campylobacter)."
- ],
- [
-  "GBS",
-  "Weakness pattern?",
-  "Symmetric ascending, areflexia."
- ],
- [
-  "GBS",
-  "CSF?",
-  "High protein, normal cells."
- ],
- [
-  "GBS",
-  "Main danger?",
-  "Respiratory failure."
- ],
- [
-  "GBS",
-  "Treatment?",
-  "IVIG 2 g/kg."
- ],
- [
-  "GBS",
-  "Steroids?",
-  "No."
- ],
- [
-  "GBS",
-  "Ventilate when VC?",
-  "< 15–20 mL/kg."
- ],
- [
-  "TM",
-  "Transverse myelitis clue?",
-  "Sensory level, urinary retention."
- ],
- [
-  "Polio",
-  "Polio clue?",
-  "Asymmetric, fever, normal sensation."
- ],
- [
-  "DMD",
-  "Inheritance?",
-  "X-linked recessive."
- ],
- [
-  "DMD",
-  "Protein?",
-  "Dystrophin absent."
- ],
- [
-  "DMD",
-  "Gowers' sign?",
-  "Climbs up legs to stand."
- ],
- [
-  "DMD",
-  "Calf sign?",
-  "Pseudohypertrophy."
- ],
- [
-  "DMD",
-  "Screening test?",
-  "CK (very high)."
- ],
- [
-  "DMD",
-  "Wheelchair by?",
-  "About 12 years."
- ],
- [
-  "DMD",
-  "Causes of death?",
-  "Respiratory failure, cardiomyopathy."
- ],
- [
-  "DMD",
-  "Drug slowing progression?",
-  "Corticosteroids."
- ],
- [
-  "Becker",
-  "Becker vs Duchenne?",
-  "Reduced dystrophin, later, milder."
- ],
- [
-  "Floppy",
-  "Central hypotonia causes?",
-  "HIE, Down, Prader–Willi, hypothyroidism."
- ],
- [
-  "Floppy",
-  "Peripheral hypotonia signs?",
-  "Marked weakness, absent reflexes, alert."
- ],
- [
-  "SMA",
-  "SMA gene?",
-  "SMN1."
- ],
- [
-  "SMA",
-  "SMA type 1 sign?",
-  "Tongue fasciculations."
- ]
+ ["Acute flaccid paralysis", "What is acute flaccid paralysis?", "Sudden flaccid weakness in a child under 15 years of age.", 1, "1izh7s"],
+ ["Acute flaccid paralysis", "What is now the commonest cause of acute flaccid paralysis?", "Guillain–Barré syndrome.", 2, "cnqcyt"],
+ ["Acute flaccid paralysis", "Which samples are taken for surveillance?", "Two stool samples 24 hours apart within 14 days.", 2, "m0ncgt"],
+ ["Guillain–Barré syndrome", "What triggers Guillain–Barré syndrome?", "A respiratory or gastrointestinal infection (Campylobacter).", 1, "pxe1t3"],
+ ["Guillain–Barré syndrome", "What is the pattern of weakness in Guillain–Barré syndrome?", "Symmetric ascending weakness with absent reflexes.", 1, "1mu4a0w"],
+ ["Guillain–Barré syndrome", "What does the CSF show in Guillain–Barré syndrome?", "A high protein with normal cells.", 2, "18je1"],
+ ["Guillain–Barré syndrome", "What is the main danger in Guillain–Barré syndrome?", "Respiratory failure.", 1, "1vtvvp1"],
+ ["Guillain–Barré syndrome", "How is Guillain–Barré syndrome treated?", "With intravenous immunoglobulin 2 g/kg.", 2, "hrr3b"],
+ ["Guillain–Barré syndrome", "Are steroids used in Guillain–Barré syndrome?", "No.", 2, "1kklaa0"],
+ ["Guillain–Barré syndrome", "At what vital capacity is ventilation started?", "Below 15–20 ml/kg.", 3, "11vjc9e"],
+ ["Transverse myelitis", "What is the clue to transverse myelitis?", "A sensory level and urinary retention.", 3, "1lwdo01"],
+ ["Polio", "What is the clue to polio?", "Asymmetric weakness with fever and normal sensation.", 2, "1jdycex"],
+ ["Duchenne muscular dystrophy", "How is Duchenne muscular dystrophy inherited?", "X-linked recessive.", 1, "1avlwwl"],
+ ["Duchenne muscular dystrophy", "Which protein is absent in Duchenne muscular dystrophy?", "Dystrophin.", 1, "1jqi4ho"],
+ ["Duchenne muscular dystrophy", "What is the Gowers sign?", "The child climbs up his own legs with his hands to stand up.", 1, "4klylu"],
+ ["Duchenne muscular dystrophy", "What is the calf sign of Duchenne muscular dystrophy?", "Pseudohypertrophy of the calves.", 1, "i1cltm"],
+ ["Duchenne muscular dystrophy", "What is the screening test for Duchenne muscular dystrophy?", "Creatine kinase, which is very high.", 1, "t2fajn"],
+ ["Duchenne muscular dystrophy", "By what age does a boy with Duchenne muscular dystrophy need a wheelchair?", "By about 12 years.", 2, "1krm51u"],
+ ["Duchenne muscular dystrophy", "What are the causes of death in Duchenne muscular dystrophy?", "Respiratory failure and cardiomyopathy.", 2, "1rac21q"],
+ ["Duchenne muscular dystrophy", "Which drug slows the progression of Duchenne muscular dystrophy?", "Corticosteroids.", 2, "xp2e2r"],
+ ["Becker muscular dystrophy", "How does Becker muscular dystrophy differ from Duchenne?", "Dystrophin is reduced rather than absent, and the disease starts later and is milder.", 2, "1rtg2a6"],
+ ["Floppy infant", "What are the causes of central hypotonia?", "Hypoxic–ischaemic encephalopathy, Down syndrome, Prader–Willi syndrome and hypothyroidism.", 2, "5ssef9"],
+ ["Floppy infant", "What are the signs of peripheral hypotonia?", "Marked weakness and absent reflexes in an alert infant.", 3, "1wn8j2q"],
+ ["Spinal muscular atrophy", "Which gene is affected in spinal muscular atrophy?", "SMN1.", 2, "1xvi6c1"],
+ ["Spinal muscular atrophy", "What is the sign of spinal muscular atrophy type 1?", "Fasciculation of the tongue.", 2, "1sdtxpi"]
 ]

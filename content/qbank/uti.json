@@ -1,58 +1,6 @@
 [
-{
-"q": "The most specific dipstick finding for UTI is:",
-"o": [
-"Protein",
-"Blood",
-"Nitrite",
-"Leucocyte esterase",
-"Glucose"
-],
-"a": 2,
-"e": "Nitrite.",
-"k": "nitrite (specific)",
-"s": "bank"
-},
-{
-"q": "The gold-standard investigation for vesicoureteric reflux is:",
-"o": [
-"Ultrasound",
-"DMSA",
-"MCUG",
-"IVU",
-"CT"
-],
-"a": 2,
-"e": "Micturating cystourethrogram.",
-"k": "mcug",
-"s": "bank"
-},
-{
-"q": "Renal scarring is best shown by:",
-"o": [
-"Ultrasound",
-"DMSA scan",
-"MCUG",
-"Plain X-ray",
-"Urine culture"
-],
-"a": 1,
-"e": "DMSA.",
-"k": "renal scarring",
-"s": "bank"
-},
-{
-"q": "UTI in a 2-month-old should be treated with:",
-"o": [
-"Oral nitrofurantoin 3 days",
-"IV ampicillin + gentamicin",
-"Oral trimethoprim",
-"No antibiotic",
-"Ciprofloxacin oral"
-],
-"a": 1,
-"e": "Under 3 months: IV.",
-"k": "< 3 months",
-"s": "bank"
-}
+{"q": "The most specific dipstick finding for UTI is:", "o": ["Protein", "Blood", "Nitrite", "Leucocyte esterase", "Glucose"], "a": 2, "e": "Nitrite is the most specific dipstick finding.", "k": "nitrite (specific)", "s": "bank", "d": 1},
+{"q": "The gold-standard investigation for vesicoureteric reflux is:", "o": ["Ultrasound", "DMSA scan", "Micturating cystourethrogram", "Intravenous urogram", "CT scan"], "a": 2, "e": "The micturating cystourethrogram (MCUG) shows the reflux.", "k": "mcug", "s": "bank", "d": 1},
+{"q": "Renal scarring is best shown by:", "o": ["Ultrasound", "DMSA scan", "MCUG", "Plain X-ray", "Urine culture"], "a": 1, "e": "The DMSA scan shows renal scars.", "k": "renal scarring", "s": "bank", "d": 1},
+{"q": "How should urinary tract infection be treated in a 2-month-old?", "o": ["Oral nitrofurantoin for 3 days", "Intravenous ampicillin and gentamicin", "Oral trimethoprim", "No antibiotic", "Oral ciprofloxacin"], "a": 1, "e": "Under 3 months of age, treatment is intravenous.", "k": "< 3 months", "s": "bank", "id": "10nx0de", "d": 2}
 ]
