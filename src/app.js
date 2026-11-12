@@ -1034,7 +1034,7 @@ if(SYNC){setTimeout(function(){syncNow()},1500);
   setInterval(function(){if(!due())return;if(dirty||syncErr==='net')syncNow();else if(Date.now()-(+localStorage.getItem('prr-synced')||0)>18e4)syncNow()},30000);
   window.addEventListener('pagehide',function(){if(dirty)syncNow()});
   document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden'&&dirty)syncNow()});
-  window.__autoSync={dirty:function(){return dirty}};
+  window.__autoSync={dirty:function(){return dirty},now:function(){return syncNow()}};
   if(dirty)setTimeout(function(){syncNow()},2500)})();
 
 /* ---------- definitions: hover (computer) or tap (phone) an abbreviation or a medical word ---------- */
