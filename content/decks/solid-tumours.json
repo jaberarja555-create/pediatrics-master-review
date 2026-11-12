@@ -1,197 +1,41 @@
 [
- [
-  "Lymphoma",
-  "Commonest childhood cancer in many parts of Africa?",
-  "Burkitt lymphoma."
- ],
- [
-  "Lymphoma",
-  "Endemic Burkitt site?",
-  "Jaw and orbit."
- ],
- [
-  "Lymphoma",
-  "Virus linked to endemic Burkitt?",
-  "EBV (with malaria)."
- ],
- [
-  "Lymphoma",
-  "Burkitt translocation?",
-  "t(8;14), MYC."
- ],
- [
-  "Lymphoma",
-  "Burkitt histology?",
-  "Starry sky."
- ],
- [
-  "Lymphoma",
-  "Burkitt emergency on treatment?",
-  "Tumour lysis syndrome."
- ],
- [
-  "Lymphoma",
-  "Hodgkin nodes?",
-  "Painless, rubbery, neck or supraclavicular."
- ],
- [
-  "Lymphoma",
-  "B symptoms?",
-  "Fever > 38 °C, night sweats, weight loss > 10% in 6 months."
- ],
- [
-  "Lymphoma",
-  "Hodgkin hallmark cell?",
-  "Reed–Sternberg cell."
- ],
- [
-  "Lymphoma",
-  "Danger with a mediastinal mass?",
-  "Airway collapse with sedation or anaesthesia."
- ],
- [
-  "Lymphoma",
-  "Which node biopsy?",
-  "Excision biopsy."
- ],
- [
-  "Neuroblastoma",
-  "Origin?",
-  "Neural crest: adrenal medulla, sympathetic chain."
- ],
- [
-  "Neuroblastoma",
-  "Commonest cancer in infants?",
-  "Neuroblastoma."
- ],
- [
-  "Neuroblastoma",
-  "Mass features?",
-  "Hard, irregular, crosses midline, calcified."
- ],
- [
-  "Neuroblastoma",
-  "Raccoon eyes and proptosis?",
-  "Orbital metastases of neuroblastoma."
- ],
- [
-  "Neuroblastoma",
-  "Dancing eyes, dancing feet?",
-  "Opsoclonus–myoclonus (neuroblastoma)."
- ],
- [
-  "Neuroblastoma",
-  "Urine markers?",
-  "VMA and HVA."
- ],
- [
-  "Neuroblastoma",
-  "Poor prognostic gene?",
-  "MYCN amplification."
- ],
- [
-  "Neuroblastoma",
-  "Good-prognosis age?",
-  "Under 18 months."
- ],
- [
-  "Neuroblastoma",
-  "Stage 4S?",
-  "Infant with liver, skin or marrow spread; may regress."
- ],
- [
-  "Wilms",
-  "Peak age?",
-  "3–4 years."
- ],
- [
-  "Wilms",
-  "Mass features?",
-  "Smooth flank mass, does not cross midline."
- ],
- [
-  "Wilms",
-  "Associated signs?",
-  "Haematuria, hypertension, aniridia, hemihypertrophy."
- ],
- [
-  "Wilms",
-  "WAGR?",
-  "Wilms, Aniridia, Genitourinary anomalies, Retardation."
- ],
- [
-  "Wilms",
-  "Commonest metastasis site?",
-  "Lungs."
- ],
- [
-  "Wilms",
-  "Treatment?",
-  "Pre-operative chemotherapy, then nephrectomy."
- ],
- [
-  "Wilms",
-  "Why not press the mass?",
-  "Risk of rupture."
- ],
- [
-  "Liver",
-  "Tumour with very high α-fetoprotein in a toddler?",
-  "Hepatoblastoma."
- ],
- [
-  "Retinoblastoma",
-  "Commonest sign?",
-  "Leukocoria (white pupil)."
- ],
- [
-  "Retinoblastoma",
-  "Gene and chromosome?",
-  "RB1, chromosome 13."
- ],
- [
-  "Retinoblastoma",
-  "Bilateral retinoblastoma means?",
-  "Heritable form: screen siblings."
- ],
- [
-  "Retinoblastoma",
-  "Second cancer in heritable form?",
-  "Osteosarcoma."
- ],
- [
-  "Retinoblastoma",
-  "Screening test?",
-  "Red reflex."
- ],
- [
-  "Brain",
-  "Investigation of choice?",
-  "MRI."
- ],
- [
-  "Brain",
-  "Medulloblastoma features?",
-  "Truncal ataxia, raised intracranial pressure."
- ],
- [
-  "Brain",
-  "Craniopharyngioma features?",
-  "Bitemporal hemianopia, short stature, diabetes insipidus."
- ],
- [
-  "Bone",
-  "Osteosarcoma X-ray?",
-  "Sunburst, Codman triangle, metaphysis near the knee."
- ],
- [
-  "Bone",
-  "Ewing sarcoma X-ray?",
-  "Onion-skin, diaphysis; fever and high ESR."
- ],
- [
-  "Soft tissue",
-  "Grape-like vaginal mass in an infant?",
-  "Rhabdomyosarcoma (sarcoma botryoides)."
- ]
+ ["Lymphoma", "What is the commonest childhood cancer in many parts of Africa?", "Burkitt lymphoma.", 1, "19ly2ph"],
+ ["Lymphoma", "Where does endemic Burkitt lymphoma occur?", "In the jaw and the orbit.", 1, "c47e4y"],
+ ["Lymphoma", "Which virus is linked to endemic Burkitt lymphoma?", "Epstein–Barr virus, together with malaria.", 1, "18d612e"],
+ ["Lymphoma", "What is the translocation of Burkitt lymphoma?", "t(8;14), involving MYC.", 2, "5kb35x"],
+ ["Lymphoma", "What is the histology of Burkitt lymphoma?", "A \"starry sky\" pattern.", 1, "1m2dthc"],
+ ["Lymphoma", "Which emergency occurs when Burkitt lymphoma is treated?", "Tumour lysis syndrome.", 2, "1unlzsm"],
+ ["Lymphoma", "What are the lymph nodes of Hodgkin lymphoma like?", "Painless and rubbery, in the neck or above the clavicle.", 1, "1j6qelk"],
+ ["Lymphoma", "What are B symptoms?", "Fever above 38 °C, night sweats, and weight loss of more than 10% in 6 months.", 1, "1thuit3"],
+ ["Lymphoma", "What is the hallmark cell of Hodgkin lymphoma?", "The Reed–Sternberg cell.", 1, "1t32o59"],
+ ["Lymphoma", "What is the danger of a mediastinal mass?", "Collapse of the airway during sedation or anaesthesia.", 3, "1eezsmc"],
+ ["Lymphoma", "Which type of lymph node biopsy is done?", "An excision biopsy.", 2, "bajqdy"],
+ ["Neuroblastoma", "Where does neuroblastoma arise?", "From the neural crest: the adrenal medulla or the sympathetic chain.", 1, "7n6th5"],
+ ["Neuroblastoma", "What is the commonest cancer in infants?", "Neuroblastoma.", 1, "19u6awi"],
+ ["Neuroblastoma", "What is the abdominal mass of neuroblastoma like?", "Hard and irregular, crossing the midline, often with calcification.", 2, "6du4ye"],
+ ["Neuroblastoma", "What causes \"raccoon eyes\" and proptosis in a child with an abdominal mass?", "Orbital metastases of neuroblastoma.", 2, "zzujom"],
+ ["Neuroblastoma", "What is the \"dancing eyes, dancing feet\" syndrome?", "Opsoclonus–myoclonus, a paraneoplastic syndrome of neuroblastoma.", 3, "1m9j16j"],
+ ["Neuroblastoma", "Which urine markers are raised in neuroblastoma?", "VMA and HVA (catecholamine metabolites).", 1, "m0sm77"],
+ ["Neuroblastoma", "Which gene carries a poor prognosis in neuroblastoma?", "MYCN amplification.", 2, "1ofjvz2"],
+ ["Neuroblastoma", "Which age has a good prognosis in neuroblastoma?", "Under 18 months.", 2, "1m0vifi"],
+ ["Neuroblastoma", "What is stage 4S neuroblastoma?", "An infant with spread to the liver, skin or marrow; it may regress on its own.", 3, "1rhssou"],
+ ["Wilms tumour", "What is the peak age of Wilms tumour?", "3–4 years.", 1, "5tn82p"],
+ ["Wilms tumour", "What is the mass of Wilms tumour like?", "A smooth flank mass that does not cross the midline.", 1, "6du4ye"],
+ ["Wilms tumour", "Which signs are associated with Wilms tumour?", "Haematuria, hypertension, aniridia and hemihypertrophy.", 2, "6bql7n"],
+ ["Wilms tumour", "What is WAGR syndrome?", "Wilms tumour, aniridia, genitourinary anomalies and intellectual disability (retardation).", 2, "1d14fe"],
+ ["Wilms tumour", "What is the commonest site of metastasis of Wilms tumour?", "The lungs.", 1, "jcuvj3"],
+ ["Wilms tumour", "How is Wilms tumour treated?", "With chemotherapy before surgery, then nephrectomy.", 2, "hrr3b"],
+ ["Wilms tumour", "Why is the mass of Wilms tumour not pressed during examination?", "There is a risk of rupture.", 2, "yl4xkq"],
+ ["Liver", "Which liver tumour in a toddler has a very high α-fetoprotein?", "Hepatoblastoma.", 2, "fcnguy"],
+ ["Retinoblastoma", "What is the commonest sign of retinoblastoma?", "Leukocoria (a white pupil).", 1, "ckwajh"],
+ ["Retinoblastoma", "Which gene is involved in retinoblastoma, and on which chromosome?", "RB1, on chromosome 13.", 2, "jhhlw3"],
+ ["Retinoblastoma", "What does bilateral retinoblastoma mean?", "The heritable form; the siblings are screened.", 2, "12qzkbx"],
+ ["Retinoblastoma", "Which second cancer occurs in the heritable form of retinoblastoma?", "Osteosarcoma.", 3, "dp60ge"],
+ ["Retinoblastoma", "What is the screening test for retinoblastoma?", "The red reflex.", 1, "t2fajn"],
+ ["Brain", "What is the investigation of choice for a brain tumour?", "MRI.", 1, "plsgvn"],
+ ["Brain", "What are the features of medulloblastoma?", "Truncal ataxia and raised intracranial pressure.", 2, "1pfasur"],
+ ["Brain", "What are the features of craniopharyngioma?", "Bitemporal hemianopia, short stature and diabetes insipidus.", 2, "txxuir"],
+ ["Bone", "What does the X-ray show in osteosarcoma?", "A sunburst appearance and a Codman triangle, in the metaphysis near the knee.", 2, "1gl5eo0"],
+ ["Bone", "What does the X-ray show in Ewing sarcoma, and what are its other features?", "An \"onion-skin\" appearance in the diaphysis, with fever and a high ESR.", 2, "1iszanq"],
+ ["Soft tissue", "An infant has a grape-like vaginal mass. What is the diagnosis?", "Rhabdomyosarcoma (sarcoma botryoides).", 2, "x12d74"]
 ]

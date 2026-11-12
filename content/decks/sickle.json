@@ -1,187 +1,39 @@
 [
- [
-  "Basis",
-  "Inheritance of SCD?",
-  "Autosomal recessive."
- ],
- [
-  "Basis",
-  "Molecular defect in HbS?",
-  "Valine replaces glutamic acid at position 6 of β-globin."
- ],
- [
-  "Basis",
-  "Chromosome of the β-globin gene?",
-  "Chromosome 11."
- ],
- [
-  "Basis",
-  "Where in Sudan is SCD common?",
-  "Western Sudan (Kordofan, Darfur)."
- ],
- [
-  "Basis",
-  "Why no symptoms before 6 months?",
-  "High fetal haemoglobin."
- ],
- [
-  "Basis",
-  "Triggers of sickling?",
-  "Hypoxia, dehydration, acidosis, infection, cold."
- ],
- [
-  "Forms",
-  "HbSS electrophoresis?",
-  "No HbA; HbS 80–95%, HbF 2–20%."
- ],
- [
-  "Forms",
-  "Sickle cell trait electrophoresis?",
-  "HbA > 50%, HbS 35–45%."
- ],
- [
-  "Forms",
-  "Is the trait symptomatic?",
-  "No anaemia or crises; protects against severe malaria."
- ],
- [
-  "Clinical",
-  "Commonest first presentation in infancy?",
-  "Dactylitis (hand–foot syndrome)."
- ],
- [
-  "Clinical",
-  "Age of autosplenectomy?",
-  "About 5–6 years."
- ],
- [
-  "Clinical",
-  "Infections in SCD?",
-  "Encapsulated bacteria (pneumococcus); Salmonella osteomyelitis."
- ],
- [
-  "Clinical",
-  "Cause of enuresis in SCD?",
-  "Sickle nephropathy (cannot concentrate urine)."
- ],
- [
-  "Diagnosis",
-  "Diagnostic test for SCD?",
-  "Hb electrophoresis (HPLC)."
- ],
- [
-  "Diagnosis",
-  "Limitation of the sickling test?",
-  "Positive in both trait and disease."
- ],
- [
-  "Diagnosis",
-  "Film sign of hyposplenism?",
-  "Howell–Jolly bodies."
- ],
- [
-  "Crises",
-  "Commonest crisis?",
-  "Vaso-occlusive (painful) crisis."
- ],
- [
-  "Crises",
-  "Treatment of painful crisis?",
-  "Analgesia within 30–60 min, fluids, oxygen if SpO₂ < 95%."
- ],
- [
-  "Crises",
-  "Is transfusion used in a simple painful crisis?",
-  "No."
- ],
- [
-  "Crises",
-  "Acute chest syndrome definition?",
-  "New lung infiltrate + fever, chest pain, cough or hypoxia."
- ],
- [
-  "Crises",
-  "Treatment of acute chest syndrome?",
-  "Oxygen, ceftriaxone + macrolide, analgesia, spirometry, transfusion."
- ],
- [
-  "Crises",
-  "Treatment of stroke in SCD?",
-  "Urgent exchange transfusion (HbS < 30%), then regular transfusion."
- ],
- [
-  "Crises",
-  "Splenic sequestration features?",
-  "Sudden pallor, enlarging spleen, Hb fall ≥ 2 g/dl, shock."
- ],
- [
-  "Crises",
-  "Transfusion volume in sequestration?",
-  "Small: 5–10 ml/kg."
- ],
- [
-  "Crises",
-  "Cause of aplastic crisis?",
-  "Parvovirus B19."
- ],
- [
-  "Crises",
-  "Aplastic vs haemolytic crisis?",
-  "Aplastic: low reticulocytes, no more jaundice; haemolytic: high reticulocytes, deeper jaundice."
- ],
- [
-  "Crises",
-  "Fever ≥ 38.5 °C in SCD?",
-  "Blood culture and IV ceftriaxone within 1 hour."
- ],
- [
-  "Transfusion",
-  "Indications for exchange transfusion?",
-  "Stroke, severe acute chest syndrome, persistent priapism."
- ],
- [
-  "Transfusion",
-  "Upper limit of Hb after transfusion?",
-  "10–11 g/dl."
- ],
- [
-  "Long-term",
-  "Penicillin prophylaxis?",
-  "Penicillin V 125 mg bd to 3 y, 250 mg bd to at least 5 y."
- ],
- [
-  "Long-term",
-  "Why folic acid?",
-  "Constant haemolysis uses folate (prevents megaloblastic crisis)."
- ],
- [
-  "Long-term",
-  "When to start hydroxyurea?",
-  "From 9 months in all HbSS."
- ],
- [
-  "Long-term",
-  "Hydroxyurea starting dose?",
-  "20 mg/kg/day."
- ],
- [
-  "Long-term",
-  "How does hydroxyurea work?",
-  "Raises HbF."
- ],
- [
-  "Long-term",
-  "Stroke screening?",
-  "Transcranial Doppler yearly from 2 to 16 years."
- ],
- [
-  "Long-term",
-  "Only cure of SCD?",
-  "Stem cell transplant."
- ],
- [
-  "Genetics",
-  "Children of two carriers?",
-  "25% HbSS, 50% HbAS, 25% HbAA."
- ]
+ ["Basis", "How is sickle cell disease inherited?", "Autosomal recessive.", 1, "57r9xa"],
+ ["Basis", "What is the molecular defect in haemoglobin S?", "Valine replaces glutamic acid at position 6 of the β-globin chain.", 2, "1a69n4y"],
+ ["Basis", "On which chromosome is the β-globin gene?", "Chromosome 11.", 2, "11zt8s2"],
+ ["Basis", "Where in Sudan is sickle cell disease common?", "In Western Sudan (Kordofan and Darfur).", 1, "1sz3ikl"],
+ ["Basis", "Why are there no symptoms before 6 months of age?", "Fetal haemoglobin is still high.", 2, "mqiipc"],
+ ["Basis", "What triggers sickling?", "Hypoxia, dehydration, acidosis, infection and cold.", 1, "4w5pd3"],
+ ["Forms", "What does electrophoresis show in HbSS?", "No HbA, HbS 80–95% and HbF 2–20%.", 2, "woacw6"],
+ ["Forms", "What does electrophoresis show in sickle cell trait?", "HbA above 50% and HbS 35–45%.", 2, "q170pz"],
+ ["Forms", "Is sickle cell trait symptomatic?", "No. There is no anaemia and there are no crises, and the trait protects against severe malaria.", 2, "k8t1kw"],
+ ["Clinical", "What is the commonest first presentation of sickle cell disease in infancy?", "Dactylitis (hand–foot syndrome).", 1, "pqdlph"],
+ ["Clinical", "At what age does autosplenectomy occur?", "At about 5–6 years.", 2, "7rwwyh"],
+ ["Clinical", "Which infections occur in sickle cell disease?", "Infections with encapsulated bacteria (pneumococcus), and Salmonella osteomyelitis.", 2, "c6v36u"],
+ ["Clinical", "What causes enuresis in sickle cell disease?", "Sickle nephropathy: the kidney cannot concentrate the urine.", 3, "83rqwm"],
+ ["Diagnosis", "What is the diagnostic test for sickle cell disease?", "Haemoglobin electrophoresis (HPLC).", 1, "1juu7ef"],
+ ["Diagnosis", "What is the limitation of the sickling test?", "It is positive in both the trait and the disease.", 2, "atbytv"],
+ ["Diagnosis", "Which blood film sign shows hyposplenism?", "Howell–Jolly bodies.", 2, "1saymsi"],
+ ["Crises", "What is the commonest crisis in sickle cell disease?", "The vaso-occlusive (painful) crisis.", 1, "1w5m1xz"],
+ ["Crises", "How is a painful crisis treated?", "Analgesia within 30–60 minutes, fluids, and oxygen if the saturation is below 95%.", 2, "1907u3m"],
+ ["Crises", "Is blood transfused in a simple painful crisis?", "No.", 2, "gsouja"],
+ ["Crises", "How is acute chest syndrome defined?", "A new infiltrate on the chest X-ray with fever, chest pain, cough or hypoxia.", 2, "8rfriw"],
+ ["Crises", "How is acute chest syndrome treated?", "Oxygen, ceftriaxone with a macrolide, analgesia, incentive spirometry and transfusion.", 2, "1t9dohe"],
+ ["Crises", "How is a stroke treated in sickle cell disease?", "With an urgent exchange transfusion to bring HbS below 30%, followed by regular transfusions.", 3, "4740in"],
+ ["Crises", "What are the features of splenic sequestration?", "Sudden pallor, an enlarging spleen, a fall in haemoglobin of 2 g/dL or more, and shock.", 2, "1i41i9z"],
+ ["Crises", "What volume of blood is transfused in splenic sequestration?", "A small volume: 5–10 ml/kg, because blood returns from the spleen.", 3, "edzg1h"],
+ ["Crises", "What causes an aplastic crisis?", "Parvovirus B19.", 1, "3lpfot"],
+ ["Crises", "How is an aplastic crisis told apart from a haemolytic crisis?", "An aplastic crisis has low reticulocytes and no increase in jaundice; a haemolytic crisis has high reticulocytes and deeper jaundice.", 3, "1m1ede9"],
+ ["Crises", "A child with sickle cell disease has a fever of 38.5 °C or more. What is done?", "A blood culture and intravenous ceftriaxone within 1 hour.", 2, "1ng5vh2"],
+ ["Transfusion", "What are the indications for exchange transfusion in sickle cell disease?", "Stroke, severe acute chest syndrome and persistent priapism.", 2, "6kmueo"],
+ ["Transfusion", "What is the upper limit of haemoglobin after transfusion in sickle cell disease?", "10–11 g/dL.", 3, "1g1zfw7"],
+ ["Long-term", "What penicillin prophylaxis is given in sickle cell disease?", "Penicillin V 125 mg twice daily until 3 years, then 250 mg twice daily until at least 5 years.", 2, "ay4iqz"],
+ ["Long-term", "Why is folic acid given in sickle cell disease?", "Constant haemolysis uses up folate; folic acid prevents a megaloblastic crisis.", 2, "65cbfr"],
+ ["Long-term", "When is hydroxyurea started?", "From 9 months of age in all children with HbSS.", 2, "tsgwia"],
+ ["Long-term", "What is the starting dose of hydroxyurea?", "20 mg/kg/day.", 2, "1bltw8o"],
+ ["Long-term", "How does hydroxyurea work?", "It raises fetal haemoglobin (HbF).", 2, "16hsm9"],
+ ["Long-term", "How is stroke screened for in sickle cell disease?", "With a transcranial Doppler every year from 2 to 16 years.", 2, "13atz9t"],
+ ["Long-term", "What is the only cure of sickle cell disease?", "A stem cell transplant.", 1, "ewrt59"],
+ ["Genetics", "What are the expected children of two carriers?", "25% HbSS, 50% HbAS and 25% HbAA.", 1, "12f9zmw"]
 ]

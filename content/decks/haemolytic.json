@@ -1,192 +1,40 @@
 [
- [
-  "Haemolysis",
-  "Lab signs of haemolysis?",
-  "High reticulocytes, unconjugated bilirubin, LDH; low haptoglobin."
- ],
- [
-  "Haemolysis",
-  "Test for immune haemolysis?",
-  "Direct Coombs test."
- ],
- [
-  "Haemolysis",
-  "Haemolysis with dark urine means?",
-  "Intravascular haemolysis (haemoglobinuria)."
- ],
- [
-  "Haemolysis",
-  "Skull X-ray of chronic haemolysis?",
-  "Hair-on-end."
- ],
- [
-  "Haemolysis",
-  "Megaloblastic crisis cause?",
-  "Folate deficiency."
- ],
- [
-  "Thalassaemia",
-  "Thalassaemia vs SCD defect?",
-  "Thalassaemia: too little globin; SCD: abnormal globin."
- ],
- [
-  "Thalassaemia",
-  "Age of onset of β-thalassaemia major?",
-  "6–12 months."
- ],
- [
-  "Thalassaemia",
-  "Thalassaemic face?",
-  "Frontal bossing, prominent maxilla, depressed nasal bridge."
- ],
- [
-  "Thalassaemia",
-  "Blood film in thalassaemia major?",
-  "Microcytic hypochromic, target cells, nucleated red cells."
- ],
- [
-  "Thalassaemia",
-  "Electrophoresis of β-thalassaemia major?",
-  "HbF very high, HbA absent or low."
- ],
- [
-  "Thalassaemia",
-  "Diagnostic finding in β-thalassaemia trait?",
-  "HbA₂ > 3.5%."
- ],
- [
-  "Thalassaemia",
-  "How is α-thalassaemia trait diagnosed?",
-  "DNA testing (electrophoresis normal)."
- ],
- [
-  "Thalassaemia",
-  "Three α genes deleted?",
-  "HbH disease."
- ],
- [
-  "Thalassaemia",
-  "Four α genes deleted?",
-  "Hb Bart's hydrops fetalis."
- ],
- [
-  "Thalassaemia",
-  "Ferritin in thalassaemia major?",
-  "High (iron overload)."
- ],
- [
-  "Thalassaemia",
-  "Commonest cause of death in thalassaemia major?",
-  "Cardiac iron overload (heart failure, arrhythmia)."
- ],
- [
-  "Treatment",
-  "Target pre-transfusion Hb (TIF)?",
-  "9.5–10.5 g/dl."
- ],
- [
-  "Treatment",
-  "Transfusion volume and interval?",
-  "10–15 ml/kg every 2–5 weeks."
- ],
- [
-  "Treatment",
-  "When to start chelation?",
-  "After 10–20 transfusions or ferritin > 1000 µg/L."
- ],
- [
-  "Treatment",
-  "Oral chelator dose?",
-  "Deferasirox 20–40 mg/kg/day once daily."
- ],
- [
-  "Treatment",
-  "Desferrioxamine route?",
-  "SC pump over 8–12 hours, 5–7 nights a week."
- ],
- [
-  "Treatment",
-  "Deferiprone side effect?",
-  "Agranulocytosis."
- ],
- [
-  "Treatment",
-  "Splenectomy indication in thalassaemia?",
-  "Hypersplenism or huge painful spleen, after 5–6 years."
- ],
- [
-  "Treatment",
-  "Cure of thalassaemia major?",
-  "Stem cell transplant."
- ],
- [
-  "G6PD",
-  "Inheritance of G6PD deficiency?",
-  "X-linked recessive."
- ],
- [
-  "G6PD",
-  "Triggers?",
-  "Fava beans, infection, primaquine, sulphonamides, nitrofurantoin, mothballs."
- ],
- [
-  "G6PD",
-  "Film in G6PD haemolysis?",
-  "Bite cells, Heinz bodies."
- ],
- [
-  "G6PD",
-  "Why repeat the G6PD assay later?",
-  "Young cells have more enzyme: falsely normal during attack."
- ],
- [
-  "G6PD",
-  "Newborn risk in G6PD deficiency?",
-  "Severe early jaundice."
- ],
- [
-  "Spherocytosis",
-  "Inheritance of hereditary spherocytosis?",
-  "Usually autosomal dominant."
- ],
- [
-  "Spherocytosis",
-  "Protein defect?",
-  "Spectrin or ankyrin."
- ],
- [
-  "Spherocytosis",
-  "Red cell index high in HS?",
-  "MCHC."
- ],
- [
-  "Spherocytosis",
-  "Best test for HS?",
-  "Eosin-5-maleimide binding test (flow cytometry)."
- ],
- [
-  "Spherocytosis",
-  "Coombs test in HS?",
-  "Negative."
- ],
- [
-  "Spherocytosis",
-  "Timing of splenectomy in HS?",
-  "After 6 years (vaccines before, penicillin after)."
- ],
- [
-  "AIHA",
-  "Warm AIHA antibody?",
-  "IgG; treat with prednisolone."
- ],
- [
-  "AIHA",
-  "Cold AIHA causes?",
-  "Mycoplasma, EBV (IgM)."
- ],
- [
-  "AIHA",
-  "Evans syndrome?",
-  "Autoimmune haemolytic anaemia + immune thrombocytopenia."
- ]
+ ["Haemolysis", "What are the laboratory signs of haemolysis?", "A high reticulocyte count, unconjugated bilirubin and LDH, and a low haptoglobin.", 2, "7hefo1"],
+ ["Haemolysis", "Which test shows immune haemolysis?", "The direct Coombs test.", 1, "1vrw9s5"],
+ ["Haemolysis", "What does haemolysis with dark urine mean?", "Intravascular haemolysis, with haemoglobinuria.", 2, "1f9zy70"],
+ ["Haemolysis", "What does the skull X-ray show in chronic haemolysis?", "A \"hair-on-end\" appearance.", 2, "t0w22w"],
+ ["Haemolysis", "What causes a megaloblastic crisis in chronic haemolysis?", "Folate deficiency.", 2, "nz6kts"],
+ ["Thalassaemia", "How does the defect of thalassaemia differ from that of sickle cell disease?", "Thalassaemia is too little globin; sickle cell disease is an abnormal globin.", 2, "1e372xs"],
+ ["Thalassaemia", "At what age does β-thalassaemia major present?", "At 6–12 months.", 1, "bqv2g8"],
+ ["Thalassaemia", "What is the thalassaemic face?", "Frontal bossing, a prominent maxilla and a depressed nasal bridge.", 1, "3vivxf"],
+ ["Thalassaemia", "What does the blood film show in thalassaemia major?", "Microcytic hypochromic cells, target cells and nucleated red cells.", 2, "17bacpu"],
+ ["Thalassaemia", "What does electrophoresis show in β-thalassaemia major?", "A very high HbF, with HbA absent or low.", 2, "1rdfohw"],
+ ["Thalassaemia", "What is the diagnostic finding in β-thalassaemia trait?", "HbA₂ above 3.5%.", 2, "1n2t9ws"],
+ ["Thalassaemia", "How is α-thalassaemia trait diagnosed?", "By DNA testing; electrophoresis is normal.", 3, "hdixka"],
+ ["Thalassaemia", "What does deletion of three α-globin genes cause?", "HbH disease.", 2, "14r20ux"],
+ ["Thalassaemia", "What does deletion of all four α-globin genes cause?", "Hb Bart's hydrops fetalis.", 2, "1qntn2p"],
+ ["Thalassaemia", "What is the ferritin in thalassaemia major?", "High, because of iron overload.", 2, "1t8wnvh"],
+ ["Thalassaemia", "What is the commonest cause of death in thalassaemia major?", "Iron overload of the heart, causing heart failure and arrhythmia.", 2, "1mw1jl1"],
+ ["Treatment", "What is the target pre-transfusion haemoglobin in thalassaemia major (TIF)?", "9.5–10.5 g/dL.", 2, "19znr5k"],
+ ["Treatment", "What volume of blood is transfused, and how often?", "10–15 ml/kg every 2–5 weeks.", 2, "88x1gf"],
+ ["Treatment", "When is iron chelation started?", "After 10–20 transfusions, or when the ferritin is above 1000 µg/L.", 2, "omq8ab"],
+ ["Treatment", "What is the dose of the oral chelator deferasirox?", "20–40 mg/kg/day once daily.", 2, "18vnqra"],
+ ["Treatment", "How is desferrioxamine given?", "Subcutaneously by pump over 8–12 hours, 5–7 nights a week.", 2, "1log8jn"],
+ ["Treatment", "What is the serious side effect of deferiprone?", "Agranulocytosis.", 2, "1302mu0"],
+ ["Treatment", "When is splenectomy done in thalassaemia?", "For hypersplenism or a huge painful spleen, after 5–6 years of age.", 3, "k6wppi"],
+ ["Treatment", "What is the cure of thalassaemia major?", "A stem cell transplant.", 1, "okc7i1"],
+ ["G6PD deficiency", "How is G6PD deficiency inherited?", "X-linked recessive.", 1, "1ubf9d8"],
+ ["G6PD deficiency", "What triggers haemolysis in G6PD deficiency?", "Fava beans, infection, primaquine, sulphonamides, nitrofurantoin and mothballs (naphthalene).", 1, "meuzlw"],
+ ["G6PD deficiency", "What does the blood film show in G6PD haemolysis?", "Bite cells and Heinz bodies.", 2, "d1i0jj"],
+ ["G6PD deficiency", "Why is the G6PD assay repeated later?", "Young red cells have more enzyme, so the test can be falsely normal during an attack.", 3, "11ooqd7"],
+ ["G6PD deficiency", "What is the newborn risk in G6PD deficiency?", "Severe early jaundice.", 2, "apbo3e"],
+ ["Spherocytosis", "How is hereditary spherocytosis inherited?", "Usually autosomal dominant.", 1, "1couv4e"],
+ ["Spherocytosis", "Which protein is defective in hereditary spherocytosis?", "Spectrin or ankyrin.", 2, "13knlm9"],
+ ["Spherocytosis", "Which red cell index is high in hereditary spherocytosis?", "The MCHC.", 2, "q57bdm"],
+ ["Spherocytosis", "What is the best test for hereditary spherocytosis?", "The eosin-5-maleimide (EMA) binding test by flow cytometry.", 3, "kujetn"],
+ ["Spherocytosis", "What is the Coombs test in hereditary spherocytosis?", "Negative.", 2, "1swk5xe"],
+ ["Spherocytosis", "When is splenectomy done in hereditary spherocytosis?", "After 6 years of age, with vaccines before and penicillin after.", 2, "gh560f"],
+ ["Autoimmune haemolysis", "Which antibody causes warm autoimmune haemolytic anaemia, and how is it treated?", "IgG; it is treated with prednisolone.", 2, "1v5j13r"],
+ ["Autoimmune haemolysis", "What causes cold autoimmune haemolytic anaemia?", "Mycoplasma and Epstein–Barr virus infection (IgM antibodies).", 2, "1gzrdv6"],
+ ["Autoimmune haemolysis", "What is Evans syndrome?", "Autoimmune haemolytic anaemia together with immune thrombocytopenia.", 2, "13j8vur"]
 ]

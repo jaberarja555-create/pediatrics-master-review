@@ -1,44 +1,5 @@
 [
-{
-"q": "The first drug in anaphylaxis is:",
-"o": [
-"IV hydrocortisone",
-"Oral antihistamine",
-"IM adrenaline",
-"Salbutamol",
-"IV fluids"
-],
-"a": 2,
-"e": "IM adrenaline 1:1000.",
-"k": "im adrenaline 1:1000",
-"s": "bank"
-},
-{
-"q": "Recurrent Staphylococcal and Aspergillus abscesses suggest:",
-"o": [
-"Bruton",
-"SCID",
-"Chronic granulomatous disease",
-"IgA deficiency",
-"Complement deficiency"
-],
-"a": 2,
-"e": "Phagocyte defect.",
-"k": "chronic granulomatous disease",
-"s": "bank"
-},
-{
-"q": "The commonest primary immunodeficiency is:",
-"o": [
-"SCID",
-"Bruton",
-"Selective IgA deficiency",
-"CGD",
-"DiGeorge"
-],
-"a": 2,
-"e": "Often mild.",
-"k": "selective iga deficiency",
-"s": "bank"
-}
+{"q": "The first drug in anaphylaxis is:", "o": ["Intravenous hydrocortisone", "Oral antihistamine", "Intramuscular adrenaline", "Salbutamol", "Intravenous fluids"], "a": 2, "e": "Intramuscular adrenaline 1:1000.", "k": "im adrenaline 1:1000", "s": "bank", "d": 1},
+{"q": "Recurrent Staphylococcal and Aspergillus abscesses suggest:", "o": ["Bruton agammaglobulinaemia", "Severe combined immunodeficiency", "Chronic granulomatous disease", "IgA deficiency", "Complement deficiency"], "a": 2, "e": "Chronic granulomatous disease is a defect of the phagocytes.", "k": "chronic granulomatous disease", "s": "bank", "d": 2},
+{"q": "The commonest primary immunodeficiency is:", "o": ["Severe combined immunodeficiency", "Bruton agammaglobulinaemia", "Selective IgA deficiency", "Chronic granulomatous disease", "DiGeorge syndrome"], "a": 2, "e": "Selective IgA deficiency is often mild.", "k": "selective iga deficiency", "s": "bank", "d": 1}
 ]

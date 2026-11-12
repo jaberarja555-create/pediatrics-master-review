@@ -1,177 +1,37 @@
 [
- [
-  "Facts",
-  "Commonest childhood cancer?",
-  "Leukaemia (ALL)."
- ],
- [
-  "Facts",
-  "Peak age of ALL?",
-  "2–5 years."
- ],
- [
-  "Facts",
-  "Risk factors for leukaemia?",
-  "Down syndrome, Fanconi, ataxia telangiectasia, radiation."
- ],
- [
-  "Features",
-  "Features of marrow failure?",
-  "Pallor, petechiae, fever and infections."
- ],
- [
-  "Features",
-  "Features of infiltration?",
-  "Bone pain, limp, hepatosplenomegaly, nodes, testis, CNS."
- ],
- [
-  "Features",
-  "Mediastinal mass in an adolescent boy?",
-  "T-cell ALL."
- ],
- [
-  "Features",
-  "Gum hypertrophy and chloroma?",
-  "AML (monocytic)."
- ],
- [
-  "Diagnosis",
-  "Diagnostic test?",
-  "Bone marrow aspirate with immunophenotyping."
- ],
- [
-  "Diagnosis",
-  "Marrow blasts for ALL?",
-  "≥ 25%."
- ],
- [
-  "Diagnosis",
-  "Auer rods?",
-  "AML."
- ],
- [
-  "Diagnosis",
-  "Can WBC be normal or low in leukaemia?",
-  "Yes; blasts may be absent from the film."
- ],
- [
-  "DDx",
-  "JIA vs leukaemia clue?",
-  "Platelets high in JIA, low in leukaemia."
- ],
- [
-  "DDx",
-  "Sudan mimic of leukaemia with huge spleen?",
-  "Kala-azar."
- ],
- [
-  "DDx",
-  "Leukaemoid reaction?",
-  "High WBC of mature cells with infection; no blasts."
- ],
- [
-  "Treatment",
-  "Induction drugs?",
-  "Vincristine, steroid, asparaginase ± daunorubicin, IT methotrexate."
- ],
- [
-  "Treatment",
-  "Remission definition?",
-  "< 5% blasts in a normal marrow."
- ],
- [
-  "Treatment",
-  "Why intrathecal therapy?",
-  "CNS is a sanctuary site."
- ],
- [
-  "Treatment",
-  "Maintenance drugs?",
-  "Daily 6-mercaptopurine, weekly methotrexate."
- ],
- [
-  "Treatment",
-  "Total treatment length?",
-  "2–3 years."
- ],
- [
-  "Treatment",
-  "Prophylaxis against Pneumocystis?",
-  "Co-trimoxazole."
- ],
- [
-  "Treatment",
-  "Sanctuary sites of relapse?",
-  "CNS and testes."
- ],
- [
-  "Treatment",
-  "Acute promyelocytic leukaemia drug?",
-  "ATRA (all-trans retinoic acid)."
- ],
- [
-  "Prognosis",
-  "Good-prognosis age?",
-  "1–10 years."
- ],
- [
-  "Prognosis",
-  "WBC predicting poor prognosis?",
-  "≥ 50 × 10⁹/L."
- ],
- [
-  "Prognosis",
-  "Poor genetic findings?",
-  "t(9;22), t(4;11), hypodiploidy."
- ],
- [
-  "Prognosis",
-  "Strongest prognostic factor?",
-  "Response to induction (MRD)."
- ],
- [
-  "Prognosis",
-  "Cure of childhood ALL?",
-  "About 90%."
- ],
- [
-  "TLS",
-  "Biochemistry of tumour lysis?",
-  "High K⁺, phosphate, uric acid; low calcium."
- ],
- [
-  "TLS",
-  "Prevention of tumour lysis?",
-  "Hyperhydration without K⁺, allopurinol or rasburicase."
- ],
- [
-  "Neutropenia",
-  "Febrile neutropenia definition?",
-  "Fever ≥ 38.3 °C with neutrophils < 0.5 × 10⁹/L."
- ],
- [
-  "Neutropenia",
-  "Action in febrile neutropenia?",
-  "Cultures and IV broad-spectrum antibiotics within 1 hour."
- ],
- [
-  "Side effects",
-  "Vincristine toxicity?",
-  "Neuropathy, constipation; fatal if intrathecal."
- ],
- [
-  "Side effects",
-  "Anthracycline toxicity?",
-  "Cardiomyopathy."
- ],
- [
-  "Side effects",
-  "Asparaginase toxicity?",
-  "Allergy, pancreatitis, thrombosis."
- ],
- [
-  "Side effects",
-  "Cyclophosphamide toxicity?",
-  "Haemorrhagic cystitis, infertility."
- ]
+ ["Facts", "What is the commonest childhood cancer?", "Leukaemia, mainly acute lymphoblastic leukaemia (ALL).", 1, "1to1nde"],
+ ["Facts", "What is the peak age of acute lymphoblastic leukaemia?", "2–5 years.", 1, "1xzv26d"],
+ ["Facts", "What are the risk factors for leukaemia?", "Down syndrome, Fanconi anaemia, ataxia telangiectasia and radiation.", 2, "fhix9t"],
+ ["Features", "What are the features of bone marrow failure in leukaemia?", "Pallor, petechiae, fever and infections.", 1, "5guskz"],
+ ["Features", "What are the features of infiltration by leukaemia?", "Bone pain, a limp, hepatosplenomegaly, enlarged lymph nodes, and involvement of the testis and central nervous system.", 2, "tiyefa"],
+ ["Features", "An adolescent boy with leukaemia has a mediastinal mass. Which type is likely?", "T-cell acute lymphoblastic leukaemia.", 3, "10yimv8"],
+ ["Features", "Which leukaemia causes gum hypertrophy and chloromas?", "Acute myeloid leukaemia (the monocytic type).", 2, "10osqmw"],
+ ["Diagnosis", "What is the diagnostic test for leukaemia?", "A bone marrow aspirate with immunophenotyping.", 1, "t0eic4"],
+ ["Diagnosis", "What percentage of marrow blasts defines acute lymphoblastic leukaemia?", "25% or more.", 2, "h4g8t2"],
+ ["Diagnosis", "In which leukaemia are Auer rods seen?", "Acute myeloid leukaemia.", 1, "14c2nv8"],
+ ["Diagnosis", "Can the white cell count be normal or low in leukaemia?", "Yes, and blasts may be absent from the blood film.", 3, "1q4h177"],
+ ["Differential", "Which clue separates juvenile idiopathic arthritis from leukaemia?", "The platelets are high in juvenile idiopathic arthritis and low in leukaemia.", 3, "6gd51v"],
+ ["Differential", "Which disease in Sudan mimics leukaemia with a huge spleen?", "Kala-azar.", 2, "5m6f4k"],
+ ["Differential", "What is a leukaemoid reaction?", "A high white cell count of mature cells during an infection, with no blasts.", 2, "13szzfq"],
+ ["Treatment", "Which drugs are used for induction in acute lymphoblastic leukaemia?", "Vincristine, a steroid and asparaginase (with or without daunorubicin), with intrathecal methotrexate.", 2, "2jpvor"],
+ ["Treatment", "How is remission defined?", "Fewer than 5% blasts in a normal bone marrow.", 2, "6r4br9"],
+ ["Treatment", "Why is intrathecal therapy given?", "The central nervous system is a sanctuary site that drugs in the blood do not reach well.", 2, "16h69n7"],
+ ["Treatment", "Which drugs are used for maintenance?", "Daily 6-mercaptopurine and weekly methotrexate.", 2, "155c1i1"],
+ ["Treatment", "How long is the total treatment of acute lymphoblastic leukaemia?", "2–3 years.", 1, "1i5vv5h"],
+ ["Treatment", "Which drug prevents Pneumocystis pneumonia during treatment?", "Cotrimoxazole.", 1, "vhjnc8"],
+ ["Treatment", "What are the sanctuary sites of relapse?", "The central nervous system and the testes.", 2, "n59m3i"],
+ ["Treatment", "Which drug is used for acute promyelocytic leukaemia?", "All-trans retinoic acid (ATRA).", 2, "t2gs0u"],
+ ["Prognosis", "Which age has a good prognosis in acute lymphoblastic leukaemia?", "1–10 years.", 2, "1m0vifi"],
+ ["Prognosis", "Which white cell count predicts a poor prognosis?", "50 × 10⁹/L or more.", 2, "m4j0x8"],
+ ["Prognosis", "Which genetic findings carry a poor prognosis?", "t(9;22), t(4;11) and hypodiploidy.", 3, "1eixyxc"],
+ ["Prognosis", "What is the strongest prognostic factor?", "The response to induction, measured as minimal residual disease (MRD).", 3, "ico7dj"],
+ ["Prognosis", "What is the cure rate of childhood acute lymphoblastic leukaemia?", "About 90%.", 1, "un8mc4"],
+ ["Tumour lysis", "What is the biochemistry of tumour lysis syndrome?", "High potassium, phosphate and uric acid, with a low calcium.", 2, "eueocq"],
+ ["Tumour lysis", "How is tumour lysis syndrome prevented?", "Hyperhydration without potassium, with allopurinol or rasburicase.", 2, "1cunqnq"],
+ ["Neutropenia", "How is febrile neutropenia defined?", "A fever of 38.3 °C or more with neutrophils below 0.5 × 10⁹/L.", 2, "10f49p"],
+ ["Neutropenia", "What is done in febrile neutropenia?", "Cultures, and intravenous broad-spectrum antibiotics within 1 hour.", 2, "yiim73"],
+ ["Side effects", "What are the toxic effects of vincristine?", "Neuropathy and constipation; it is fatal if given intrathecally.", 2, "1u97bc8"],
+ ["Side effects", "What is the toxic effect of anthracyclines?", "Cardiomyopathy.", 1, "10yaezd"],
+ ["Side effects", "What are the toxic effects of asparaginase?", "Allergy, pancreatitis and thrombosis.", 2, "1djrukh"],
+ ["Side effects", "What are the toxic effects of cyclophosphamide?", "Haemorrhagic cystitis and infertility.", 2, "9t9e0y"]
 ]

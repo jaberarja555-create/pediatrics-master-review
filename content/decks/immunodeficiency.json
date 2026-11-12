@@ -1,122 +1,26 @@
 [
- [
-  "General",
-  "Normal infections a year in toddlers?",
-  "6–10 viral."
- ],
- [
-  "General",
-  "Commonest secondary causes in Sudan?",
-  "Malnutrition, HIV."
- ],
- [
-  "Warning",
-  "Warning signs?",
-  "Serious, unusual, persistent infections, FTT, family history."
- ],
- [
-  "B cell",
-  "Antibody defect infections?",
-  "Recurrent bacterial respiratory infections after 6 months."
- ],
- [
-  "B cell",
-  "Bruton features?",
-  "Boys, no tonsils, very low Igs."
- ],
- [
-  "B cell",
-  "Commonest primary immunodeficiency?",
-  "Selective IgA deficiency."
- ],
- [
-  "T cell",
-  "T-cell defect infections?",
-  "Viral, fungal, PCP."
- ],
- [
-  "T cell",
-  "SCID treatment?",
-  "Bone marrow transplant."
- ],
- [
-  "T cell",
-  "Live vaccines in SCID?",
-  "Contraindicated."
- ],
- [
-  "Phagocyte",
-  "CGD infections?",
-  "Staph and Aspergillus abscesses."
- ],
- [
-  "Phagocyte",
-  "CGD test?",
-  "NBT / DHR."
- ],
- [
-  "Phagocyte",
-  "Delayed cord separation?",
-  "Leucocyte adhesion defect."
- ],
- [
-  "Complement",
-  "Recurrent Neisseria?",
-  "Terminal complement deficiency."
- ],
- [
-  "Spleen",
-  "Asplenia infections?",
-  "Encapsulated bacteria."
- ],
- [
-  "Tests",
-  "First-line tests?",
-  "CBC, HIV, immunoglobulins."
- ],
- [
-  "Treatment",
-  "Antibody deficiency treatment?",
-  "IVIG replacement."
- ],
- [
-  "Allergy",
-  "Atopic triad?",
-  "Eczema, asthma, allergic rhinitis."
- ],
- [
-  "Allergy",
-  "Food allergy gold standard?",
-  "Oral food challenge."
- ],
- [
-  "Anaphylaxis",
-  "First drug?",
-  "IM adrenaline 1:1000."
- ],
- [
-  "Anaphylaxis",
-  "Dose?",
-  "0.01 mL/kg, max 0.5 mL."
- ],
- [
-  "Anaphylaxis",
-  "Repeat every?",
-  "5 minutes."
- ],
- [
-  "Anaphylaxis",
-  "Shock fluid?",
-  "20 mL/kg."
- ],
- [
-  "Anaphylaxis",
-  "Observation?",
-  "6–12 hours."
- ],
- [
-  "HAE",
-  "Hereditary angio-oedema cause?",
-  "C1-inhibitor deficiency."
- ]
+ ["General", "How many infections a year are normal in toddlers?", "6–10 viral infections a year.", 1, "ulddos"],
+ ["General", "What are the commonest secondary causes of immunodeficiency in Sudan?", "Malnutrition and HIV infection.", 1, "dsqio6"],
+ ["Warning signs", "What are the warning signs of immunodeficiency?", "Serious, unusual or persistent infections, failure to thrive and a family history.", 2, "19d90wd"],
+ ["B-cell defects", "Which infections occur with antibody (B-cell) defects?", "Recurrent bacterial respiratory infections after 6 months of age.", 2, "8gazkc"],
+ ["B-cell defects", "What are the features of Bruton agammaglobulinaemia?", "Boys with no tonsils and very low immunoglobulins.", 2, "fxygxc"],
+ ["B-cell defects", "What is the commonest primary immunodeficiency?", "Selective IgA deficiency.", 1, "nbhi86"],
+ ["T-cell defects", "Which infections occur with T-cell defects?", "Viral and fungal infections, and Pneumocystis pneumonia.", 2, "1odu2ol"],
+ ["T-cell defects", "How is severe combined immunodeficiency (SCID) treated?", "With a bone marrow transplant.", 2, "wjhj8c"],
+ ["T-cell defects", "Can live vaccines be given in severe combined immunodeficiency?", "No, they are contraindicated.", 2, "3cytwn"],
+ ["Phagocyte defects", "Which infections occur in chronic granulomatous disease?", "Abscesses caused by Staphylococcus and Aspergillus.", 2, "1mncx33"],
+ ["Phagocyte defects", "Which test diagnoses chronic granulomatous disease?", "The NBT or DHR test.", 3, "1sabp65"],
+ ["Phagocyte defects", "Which immunodeficiency causes delayed separation of the umbilical cord?", "Leucocyte adhesion defect.", 3, "1one82d"],
+ ["Complement", "What causes recurrent Neisseria infections?", "Deficiency of the terminal complement components.", 3, "wywoo2"],
+ ["Spleen", "Which infections occur with asplenia?", "Infections with encapsulated bacteria.", 2, "bfh33i"],
+ ["Tests", "What are the first-line tests for immunodeficiency?", "A complete blood count, an HIV test and immunoglobulin levels.", 2, "161v48d"],
+ ["Treatment", "How is antibody deficiency treated?", "With intravenous immunoglobulin replacement.", 2, "1d8lxe"],
+ ["Allergy", "What is the atopic triad?", "Eczema, asthma and allergic rhinitis.", 1, "1q9fw77"],
+ ["Allergy", "What is the gold-standard test for food allergy?", "An oral food challenge.", 2, "e9qyuc"],
+ ["Anaphylaxis", "What is the first drug in anaphylaxis?", "Intramuscular adrenaline 1:1000.", 1, "1l4ygb3"],
+ ["Anaphylaxis", "What is the dose of adrenaline in anaphylaxis?", "0.01 ml/kg of 1:1000, to a maximum of 0.5 ml.", 2, "13fbmq"],
+ ["Anaphylaxis", "How often is adrenaline repeated in anaphylaxis?", "Every 5 minutes if needed.", 2, "10l3p1l"],
+ ["Anaphylaxis", "What fluid bolus is given for shock in anaphylaxis?", "20 ml/kg.", 2, "1xcex3n"],
+ ["Anaphylaxis", "For how long is a child observed after anaphylaxis?", "6–12 hours.", 2, "1tfwwxf"],
+ ["Hereditary angio-oedema", "What causes hereditary angio-oedema?", "C1-inhibitor deficiency.", 2, "eeh36v"]
 ]
