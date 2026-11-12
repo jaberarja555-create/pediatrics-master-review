@@ -12,3 +12,5 @@ var _aba=ACT.about;ACT.about=function(b){var a=ABOUT.filter(function(x){return x
   _aba(b)};
 /* the user manual has no poster pages here; it opens with the steps and the screenshots of this app (content/img/help_*.jpg, tools/help_shots.js) */
 UG5=[];
+/* bookmarks of the new app sync with the rest (as in Obstetrics: SM key bm) */
+if(typeof SM!=='undefined'&&!SM.bm){SM.bm={get:function(){return stj('bm')||{}},set:function(v){stj('bm',v);if(window.__bmSet)window.__bmSet(v)}};try{SMU.bm=SMU.bm||{};SMP.bm=smSnap('bm')}catch(e){}}
