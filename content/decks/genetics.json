@@ -1,147 +1,31 @@
 [
- [
-  "Down",
-  "Commonest mechanism of Down syndrome?",
-  "Non-disjunction (94%)."
- ],
- [
-  "Down",
-  "Down from translocation: action?",
-  "Karyotype parents."
- ],
- [
-  "Down",
-  "Facial features?",
-  "Upslanting eyes, epicanthic folds, flat face, protruding tongue."
- ],
- [
-  "Down",
-  "Hand sign?",
-  "Single palmar crease."
- ],
- [
-  "Down",
-  "CHD in Down?",
-  "AVSD (40–50% have CHD)."
- ],
- [
-  "Down",
-  "GI anomaly?",
-  "Duodenal atresia, Hirschsprung."
- ],
- [
-  "Down",
-  "Endocrine problem?",
-  "Hypothyroidism."
- ],
- [
-  "Down",
-  "Malignancy?",
-  "Leukaemia."
- ],
- [
-  "Down",
-  "Spine problem?",
-  "Atlanto-axial instability."
- ],
- [
-  "Edwards",
-  "Trisomy 18 hands and feet?",
-  "Overlapping fingers, rocker-bottom feet."
- ],
- [
-  "Patau",
-  "Trisomy 13 features?",
-  "Cleft lip/palate, polydactyly, microphthalmia."
- ],
- [
-  "Turner",
-  "Turner karyotype?",
-  "45,X."
- ],
- [
-  "Turner",
-  "Newborn sign?",
-  "Lymphoedema of hands and feet."
- ],
- [
-  "Turner",
-  "Commonest feature?",
-  "Short stature."
- ],
- [
-  "Turner",
-  "Heart lesion?",
-  "Coarctation, bicuspid aortic valve."
- ],
- [
-  "Turner",
-  "Kidney?",
-  "Horseshoe kidney."
- ],
- [
-  "Turner",
-  "Treatment?",
-  "GH and oestrogen."
- ],
- [
-  "Klinefelter",
-  "Karyotype?",
-  "47,XXY."
- ],
- [
-  "Klinefelter",
-  "Features?",
-  "Tall, small firm testes, gynaecomastia, infertility."
- ],
- [
-  "Inheritance",
-  "AD risk to child?",
-  "50%."
- ],
- [
-  "Inheritance",
-  "AR risk each pregnancy?",
-  "25%."
- ],
- [
-  "Inheritance",
-  "X-linked recessive examples?",
-  "Haemophilia, Duchenne, G6PD."
- ],
- [
-  "Inheritance",
-  "Mitochondrial inheritance?",
-  "From mother only."
- ],
- [
-  "Syndromes",
-  "Fragile X features?",
-  "Long face, big ears, macro-orchidism, ID."
- ],
- [
-  "Syndromes",
-  "NF1 skin sign?",
-  "≥ 6 café-au-lait spots."
- ],
- [
-  "Syndromes",
-  "Tuberous sclerosis skin?",
-  "Ash-leaf spots."
- ],
- [
-  "Syndromes",
-  "DiGeorge features?",
-  "Cardiac, thymic aplasia, cleft palate, hypocalcaemia."
- ],
- [
-  "Syndromes",
-  "Prader–Willi?",
-  "Floppy infant then hyperphagia, obesity."
- ],
- [
-  "Prenatal",
-  "Diagnostic tests?",
-  "CVS (11–14 wk), amniocentesis (15+ wk)."
- ]
+ ["Down syndrome", "What is the commonest mechanism of Down syndrome?", "Non-disjunction, in 94% of cases.", 1, "v6ga0d"],
+ ["Down syndrome", "A child has Down syndrome caused by a translocation. What should be done?", "Karyotype both parents, because one of them may carry a balanced translocation.", 3, "dy9uda"],
+ ["Down syndrome", "What are the facial features of Down syndrome?", "Upslanting eyes, epicanthic folds, a flat face and a protruding tongue.", 1, "4u8esu"],
+ ["Down syndrome", "Which hand sign is seen in Down syndrome?", "A single palmar crease.", 1, "u2t5jl"],
+ ["Down syndrome", "Which congenital heart defect is typical of Down syndrome?", "Atrioventricular septal defect (AVSD); 40–50% of children with Down syndrome have congenital heart disease.", 2, "1qclzlv"],
+ ["Down syndrome", "Which gastrointestinal anomalies occur in Down syndrome?", "Duodenal atresia and Hirschsprung disease.", 2, "ocnriy"],
+ ["Down syndrome", "Which endocrine problem is common in Down syndrome?", "Hypothyroidism.", 1, "668hc3"],
+ ["Down syndrome", "Which malignancy is more common in Down syndrome?", "Leukaemia.", 1, "12ho410"],
+ ["Down syndrome", "Which spinal problem occurs in Down syndrome?", "Atlanto-axial instability.", 2, "rq8tdp"],
+ ["Edwards syndrome", "What are the hand and foot features of trisomy 18 (Edwards syndrome)?", "Overlapping fingers and rocker-bottom feet.", 2, "g0z9a8"],
+ ["Patau syndrome", "What are the features of trisomy 13 (Patau syndrome)?", "Cleft lip and palate, polydactyly and microphthalmia.", 2, "1asupld"],
+ ["Turner syndrome", "What is the karyotype of Turner syndrome?", "45,X.", 1, "5f6max"],
+ ["Turner syndrome", "What is the newborn sign of Turner syndrome?", "Lymphoedema of the hands and feet.", 2, "1vjlfd7"],
+ ["Turner syndrome", "What is the commonest feature of Turner syndrome?", "Short stature.", 1, "fuycq6"],
+ ["Turner syndrome", "Which heart lesions occur in Turner syndrome?", "Coarctation of the aorta and a bicuspid aortic valve.", 2, "zn3p07"],
+ ["Turner syndrome", "Which kidney anomaly occurs in Turner syndrome?", "Horseshoe kidney.", 2, "fmok8z"],
+ ["Turner syndrome", "How is Turner syndrome treated?", "With growth hormone and oestrogen.", 2, "hrr3b"],
+ ["Klinefelter syndrome", "What is the karyotype of Klinefelter syndrome?", "47,XXY.", 1, "1j3d48j"],
+ ["Klinefelter syndrome", "What are the features of Klinefelter syndrome?", "Tall stature, small firm testes, gynaecomastia and infertility.", 2, "q6r5oi"],
+ ["Inheritance", "What is the risk to the child of a parent with an autosomal dominant disorder?", "50% for each child.", 1, "1joat10"],
+ ["Inheritance", "What is the risk in each pregnancy when both parents carry an autosomal recessive disorder?", "25% in each pregnancy.", 1, "apr0bz"],
+ ["Inheritance", "Give examples of X-linked recessive disorders.", "Haemophilia, Duchenne muscular dystrophy and G6PD deficiency.", 1, "1r7am13"],
+ ["Inheritance", "How is mitochondrial disease inherited?", "From the mother only.", 2, "5d156y"],
+ ["Syndromes", "What are the features of fragile X syndrome?", "A long face, large ears, large testes (macro-orchidism) and intellectual disability.", 2, "1t5bf2i"],
+ ["Syndromes", "What is the skin sign of neurofibromatosis type 1?", "Six or more café-au-lait spots.", 2, "suu2me"],
+ ["Syndromes", "What is the skin sign of tuberous sclerosis?", "Ash-leaf spots (hypopigmented macules).", 2, "x9tqig"],
+ ["Syndromes", "What are the features of DiGeorge syndrome?", "Heart defects, absent thymus (thymic aplasia), cleft palate and hypocalcaemia.", 2, "1g3n812"],
+ ["Syndromes", "What are the features of Prader–Willi syndrome?", "A floppy infant who later develops an excessive appetite (hyperphagia) and obesity.", 2, "1phievd"],
+ ["Prenatal diagnosis", "Which tests give a prenatal diagnosis, and when are they done?", "Chorionic villus sampling at 11–14 weeks and amniocentesis from 15 weeks.", 2, "1az560n"]
 ]

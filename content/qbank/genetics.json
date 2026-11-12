@@ -1,58 +1,6 @@
 [
-{
-"q": "The commonest heart defect in Down syndrome is:",
-"o": [
-"VSD",
-"AVSD",
-"TOF",
-"PDA",
-"ASD"
-],
-"a": 1,
-"e": "AVSD.",
-"k": "congenital heart disease",
-"s": "bank"
-},
-{
-"q": "Overlapping fingers and rocker-bottom feet suggest:",
-"o": [
-"Down",
-"Edwards",
-"Patau",
-"Turner",
-"Noonan"
-],
-"a": 1,
-"e": "Trisomy 18.",
-"k": "rocker-bottom feet",
-"s": "bank"
-},
-{
-"q": "A tall boy with small testes and gynaecomastia has:",
-"o": [
-"Turner",
-"Fragile X",
-"Klinefelter",
-"Marfan",
-"Noonan"
-],
-"a": 2,
-"e": "47,XXY.",
-"k": "small firm testes",
-"s": "bank"
-},
-{
-"q": "Haemophilia is inherited as:",
-"o": [
-"Autosomal dominant",
-"Autosomal recessive",
-"X-linked recessive",
-"Mitochondrial",
-"X-linked dominant"
-],
-"a": 2,
-"e": "X-linked recessive.",
-"k": "haemophilia a/b",
-"s": "bank"
-}
+{"q": "What is the commonest heart defect in Down syndrome?", "o": ["Ventricular septal defect", "Atrioventricular septal defect", "Tetralogy of Fallot", "Patent ductus arteriosus", "Atrial septal defect"], "a": 1, "e": "Atrioventricular septal defect (AVSD) is the typical heart defect of Down syndrome.", "k": "congenital heart disease", "s": "bank", "id": "lldgi3", "d": 1},
+{"q": "Overlapping fingers and rocker-bottom feet suggest:", "o": ["Down syndrome", "Edwards syndrome", "Patau syndrome", "Turner syndrome", "Noonan syndrome"], "a": 1, "e": "Overlapping fingers and rocker-bottom feet are features of trisomy 18 (Edwards syndrome).", "k": "rocker-bottom feet", "s": "bank", "d": 1},
+{"q": "A tall boy with small testes and gynaecomastia has:", "o": ["Turner syndrome", "Fragile X syndrome", "Klinefelter syndrome", "Marfan syndrome", "Noonan syndrome"], "a": 2, "e": "Klinefelter syndrome (47,XXY): tall stature, small firm testes, gynaecomastia and infertility.", "k": "small firm testes", "s": "bank", "d": 1},
+{"q": "Haemophilia is inherited as:", "o": ["Autosomal dominant", "Autosomal recessive", "X-linked recessive", "Mitochondrial", "X-linked dominant"], "a": 2, "e": "Haemophilia is X-linked recessive, so it affects boys and is carried by their mothers.", "k": "haemophilia a/b", "s": "bank", "d": 1}
 ]
