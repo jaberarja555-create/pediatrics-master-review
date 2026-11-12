@@ -335,3 +335,8 @@ docs/ is now built with the new app (the Obstetrics design, tools/port_v2.py) by
 Icons img/v2-icon-192.png / v2-icon-512.png / v2-apple-touch.png (the owner's new emblem on the book's light colour), manifest colours to match.
 Old activation codes (Worker) keep working until access.old_until = 12 Dec 2026 (tools/v2book.json); new subscriptions go through the shared
 system and the one admin page. The Library button sits beside the new Home greeting (#v2homeW .hgr), as in Obstetrics.
+- **Levels and clean wording of flashcards and questions (owner, 12 Nov 2026, as in Obstetrics):** card = [section, question, answer, level 1–3,
+  key of the old wording]; question JSON gets "d" (level) and "id" (old id when the stem was reworded), so known cards and answers stay.
+  Chapter files `tools/levels/ch<N>.py` (CARDS per topic with the old index; QS per topic index), applied with `python3 tools/levels/apply.py`.
+  App (src/app.js): Level row in flashcards (`prr-fclv`) and step 3 «Level» in the test builder, shown once any card/question has a level.
+  Done: chapter 1 (owner to review before the rest). Surgery has the same app code and tools to come.
