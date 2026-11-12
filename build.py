@@ -950,7 +950,7 @@ def build():
             if hit is None:
                 print(f'  qbank {t["id"]}: link text not found: {q.get("k")!r}')
                 hit = pages[0] if pages else 0
-            qbank['qs'].append([t['id'], q['q'], q['o'], q['a'], q['e'], hit + 1, q.get('s', 'new')])
+            qbank['qs'].append([t['id'], q['q'], q['o'], q['a'], q['e'], hit + 1, q.get('s', 'new')] + ([q.get('d', 0), q['id']] if q.get('id') else [q['d']] if q.get('d') else []))
 
     # Free trial: chosen topics, then ~equal flashcards and questions from those topics (evenly spread in each)
     acc = book.get('access', {})

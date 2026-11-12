@@ -1093,13 +1093,16 @@ function markIn(i,q){[].forEach.call(document.querySelectorAll('.bk mark.hit'),f
   if(first){var sc=$('scroller');sc.scrollTop=first.getBoundingClientRect().top-sc.getBoundingClientRect().top+sc.scrollTop-120}}
 
 /* ---------- flashcards (known cards are remembered) ---------- */
-function cardKey(id,c){var s=c[1],h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return id+':'+(h>>>0).toString(36)}
+function cardKey(id,c){if(c[4])return id+':'+c[4];var s=c[1]||'',h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return id+':'+(h>>>0).toString(36)}
 var curDeck='all',deck=[],total=0,known=0,started=false;
 var deckIds=Object.keys(DECKS);
 $('toolCards').textContent=deckIds.reduce(function(a,k){return a+DECKS[k].cards.length},0)+' cards · '+deckIds.length+' topic'+(deckIds.length===1?'':'s');
 /* flashcards (owner, Nov 2026): Today and All on top, then a chapter bar, then the topics of the chosen chapter only */
 var DCH={};(META.topics||[]).forEach(function(t){DCH[t.id]=t.ch});
 var fcChs=[];META.contents.forEach(function(c){if(deckIds.some(function(id){return DCH[id]===c.no}))fcChs.push(c)});
+/* levels (owner, 12 Nov 2026, as in Obstetrics): card = [section, question, answer, level 1-3, key of the old wording]; question q[7] = level */
+var LVN={1:'Easy',2:'Medium',3:'Hard'},FLV=+st('fclv')||0;
+function lvTag(d){return d?'<span class="lvt l'+d+'">'+LVN[d]+'</span>':''}
 var FCH=+st('fcch')||(fcChs[0]&&fcChs[0].no)||1;
 function chDecks(n){return deckIds.filter(function(id){return DCH[id]===n})}
 function kn(ids){var a=0,b=0;ids.forEach(function(id){a+=deckKnown(id);b+=DECKS[id].cards.length});return [a,b]}
@@ -1112,14 +1115,17 @@ function chips(){if(/^ch:/.test(curDeck))FCH=+curDeck.slice(3);else if(DCH[curDe
   h+='<div class="fclab">'+esc(cur?cur.title:'')+'</div><div class="chips fctops"><button class="chip'+(curDeck==='ch:'+FCH?' on':'')+'" type="button" data-d="ch:'+FCH+'">All of chapter '+FCH+'<small>'+C[0]+'/'+C[1]+'</small></button>'+
     chDecks(FCH).map(function(k){return '<button class="chip'+(k===curDeck?' on':'')+'" type="button" data-d="'+k+'">'+esc(DECKS[k].short)+'<small>'+deckKnown(k)+'/'+DECKS[k].cards.length+'</small></button>'}).join('')+'</div>'+
     (LOCKED?'<button class="chip lkc" type="button" data-sub="1" dir="rtl">🔒 اشترك لفتح كل البطاقات</button>':'');
+  var LC=[0,0,0,0];deckIds.forEach(function(id){DECKS[id].cards.forEach(function(c){LC[0]++;if(c[3])LC[c[3]]++})});
+  if(LC[1]+LC[2]+LC[3])h+='<div class="fclab">Level</div><div class="fclv">'+[[0,'All levels'],[1,'Easy'],[2,'Medium'],[3,'Hard']].map(function(o){return '<button type="button" data-lv="'+o[0]+'" class="'+(FLV===o[0]?'on':'')+'">'+o[1]+'<small>'+LC[o[0]]+'</small></button>'}).join('')+'</div>';
   $('deckChips').innerHTML=h;var on=$('deckChips').querySelector('.fcchs .on');if(on&&on.scrollIntoView)try{on.scrollIntoView({block:'nearest',inline:'center'})}catch(e){}}
 $('deckChips').onclick=function(e){var b=e.target.closest('button');if(!b)return;
+  if(b.dataset.lv!==undefined){FLV=+b.dataset.lv;st('fclv',FLV);if(curDeck==='daily')curDeck='all';startDeck(curDeck);return}
   if(b.dataset.fch){FCH=+b.dataset.fch;st('fcch',FCH);curDeck='ch:'+FCH;startDeck(curDeck);return}
   if(b.dataset.d){curDeck=b.dataset.d;if(/^ch:/.test(curDeck)||DCH[curDeck])st('fcch',/^ch:/.test(curDeck)?curDeck.slice(3):DCH[curDeck]);startDeck(curDeck)}};
 function startDeck(k,all){started=true;
-  if(k==='daily'){var D=daily();deck=[];total=D.keys.length;known=D.done.length;D.keys.forEach(function(key){if(D.done.indexOf(key)<0){var x=CBYK[key];deck.push({key:key,t:DECKS[x.id].short,cat:x.c[0],q:x.c[1],a:x.c[2]})}});chips();renderCard();return}
+  if(k==='daily'){var D=daily();deck=[];total=D.keys.length;known=D.done.length;D.keys.forEach(function(key){if(D.done.indexOf(key)<0){var x=CBYK[key];deck.push({key:key,t:DECKS[x.id].short,cat:x.c[0],q:x.c[1],a:x.c[2],d:x.c[3]})}});chips();renderCard();return}
   var src=k==='all'?deckIds:/^ch:/.test(k)?chDecks(+k.slice(3)):[k];deck=[];total=0;known=0;
-  src.forEach(function(id){DECKS[id].cards.forEach(function(c){var key=cardKey(id,c);total++;if(KNOWN[key]&&!all){known++;return}deck.push({key:key,t:DECKS[id].short,cat:c[0],q:c[1],a:c[2]})})});
+  src.forEach(function(id){DECKS[id].cards.forEach(function(c){if(FLV&&c[3]!==FLV)return;var key=cardKey(id,c);total++;if(KNOWN[key]&&!all){known++;return}deck.push({key:key,t:DECKS[id].short,cat:c[0],q:c[1],a:c[2],d:c[3]})})});
   if(all)known=0;
   for(var i=deck.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=deck[i];deck[i]=deck[j];deck[j]=x}chips();renderCard()}
 function renderCard(){$('fcProg').style.width=(total?known/total*100:0)+'%';$('fcScore').textContent=(curDeck==='daily'?'Done ':'Known ')+known+' / '+total;
@@ -1130,7 +1136,7 @@ function renderCard(){$('fcProg').style.width=(total?known/total*100:0)+'%';$('f
     $('fcAll').onclick=function(){startDeck(curDeck,true)};
     $('fcReset').onclick=function(){var src=curDeck==='all'?deckIds:/^ch:/.test(curDeck)?chDecks(+curDeck.slice(3)):[curDeck];src.forEach(function(id){DECKS[id].cards.forEach(function(c){delete KNOWN[cardKey(id,c)]})});saveKnown();startDeck(curDeck)};return}
   var c=deck[0];$('fcLeft').textContent=deck.length+' left';
-  $('fcStage').innerHTML='<button class="fc" type="button" id="fcCard" aria-label="Flip card"><div class="in"><div class="face q"><span class="k">'+esc(c.t)+' · '+esc(c.cat)+'</span><div class="tx">'+esc(c.q)+'</div></div><div class="face a"><span class="k">Answer</span><div class="tx">'+esc(c.a)+'</div></div></div></button><p class="fhint" style="margin-top:10px">Tap the card to see the answer</p><div class="fact" style="margin-top:12px"><button class="ag" type="button" id="fcNo">Again</button><button class="gd" type="button" id="fcYes">Knew it</button></div>';
+  $('fcStage').innerHTML='<button class="fc" type="button" id="fcCard" aria-label="Flip card"><div class="in"><div class="face q"><span class="k">'+esc(c.t)+' · '+esc(c.cat)+lvTag(c.d)+'</span><div class="tx">'+esc(c.q)+'</div></div><div class="face a"><span class="k">Answer</span><div class="tx">'+esc(c.a)+'</div></div></div></button><p class="fhint" style="margin-top:10px">Tap the card to see the answer</p><div class="fact" style="margin-top:12px"><button class="ag" type="button" id="fcNo">Again</button><button class="gd" type="button" id="fcYes">Knew it</button></div>';
   [].forEach.call($('fcCard').querySelectorAll('.tx'),function(x){termify(x)});$('fcCard').onclick=function(){this.classList.toggle('flip')};
   $('fcNo').onclick=function(){deck.push(deck.shift());renderCard()};
   $('fcYes').onclick=function(){var x=deck.shift();KNOWN[x.key]=1;saveKnown();known++;if(curDeck==='daily')dailyDone(x.key);chips();renderCard()}}
@@ -1155,7 +1161,7 @@ $('dailyBtn').onclick=function(){curDeck='daily';started=false;show('cards')};
 
 /* ---------- question bank ---------- */
 var QB=JSON.parse($('qbdata').textContent);if(LOCKED)QB.qs=(ACC.qs||[]).map(function(i){return QB.qs[i]});var QS=QB.qs,QTOP={};QB.topics.forEach(function(t){QTOP[t.id]=t});
-function qid(q){var s=q[0]+q[1],h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return (h>>>0).toString(36)}
+function qid(q){if(q[8])return q[8];var s=q[0]+q[1],h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return (h>>>0).toString(36)}
 QS.forEach(function(q){q.id=qid(q)});
 var QU=stj('qb')||{};            // qid -> {c:1|0 last answer correct, m:1 marked}
 var QT=stj('qbtests')||[];       // finished tests
@@ -1171,7 +1177,7 @@ function chShort(n){var c=META.contents.filter(function(x){return x.no===n})[0];
 function chTitle(n){var c=META.contents.filter(function(x){return x.no===n})[0];return c?c.title:'Chapter '+n}
 function inPool(q,pool){var u=QU[q.id];if(pool==='unused')return !u||u.c===undefined;if(pool==='incorrect')return u&&u.c===0;if(pool==='marked')return u&&u.m;return true}
 function poolQs(){var any=Object.keys(qset.ch).some(function(k){return qset.ch[k]});
-  return QS.filter(function(q){return (!any||qset.ch[QTOP[q[0]].ch])&&inPool(q,qset.pool)})}
+  return QS.filter(function(q){return (!any||qset.ch[QTOP[q[0]].ch])&&inPool(q,qset.pool)&&(!+qset.lv||q[7]===+qset.lv)})}
 function qbStats(){var used=0,ok=0,m=0;QS.forEach(function(q){var u=QU[q.id];if(u&&u.c!==undefined){used++;if(u.c)ok++}if(u&&u.m)m++});return {used:used,ok:ok,m:m}}
 function renderQB(){if(CUR&&!CUR.done)return renderQ();$('subtitle').textContent='Question bank';
   var s=qbStats(),pool=poolQs(),max=pool.length,n=Math.min(qset.n,max);
@@ -1183,12 +1189,15 @@ function renderQB(){if(CUR&&!CUR.done)return renderQ();$('subtitle').textContent
   h+=step(1,'Mode')+'<div class="seg" data-k="mode">'+[['tutor','Tutor','see the answer after each question'],['timed','Timed','like the exam · 1 min 15 s each']].map(function(o){return '<button type="button" data-v="'+o[0]+'" class="'+(qset.mode===o[0]?'on':'')+'"><b>'+o[1]+'</b><span>'+o[2]+'</span></button>'}).join('')+'</div>';
   h+=step(2,'Questions')+'<div class="qbpool" data-k="pool">'+[['unused','Unused'],['incorrect','Incorrect'],['marked','Marked'],['all','All']].map(function(o){
     var c=QS.filter(function(q){return inPool(q,o[0])}).length;return '<button type="button" class="'+(qset.pool===o[0]?'on':'')+'" data-v="'+o[0]+'"><b>'+c+'</b><span>'+o[1]+'</span></button>'}).join('')+'</div>';
-  h+=step(3,'Chapters',any?nsel+' selected · <button type="button" class="qblink" id="qbAll">clear</button>':'all chapters')+'<div class="qbparts">'+(function(ps){var o=[];ps.forEach(function(p){var l=o[o.length-1];if(p[1].length===1&&l&&l.one){l[0]+=' · '+chShort(p[1][0]);l[1]=l[1].concat(p[1])}else{var q=[p[1].length===1?chShort(p[1][0]):p[0],p[1].slice()];q.one=p[1].length===1;o.push(q)}});return o})(QB.parts||[['',qchs]]).map(function(p){
+  var HL=QS.some(function(q){return q[7]}),SN=HL?1:0;
+  if(HL)h+=step(3,'Level')+'<div class="qbpool" data-k="lv">'+[['0','All levels'],['1','Easy'],['2','Medium'],['3','Hard']].map(function(o){
+    var c=QS.filter(function(q){return !+o[0]||q[7]===+o[0]}).length;return '<button type="button" class="'+(String(+qset.lv||0)===o[0]?'on':'')+'" data-v="'+o[0]+'"><b>'+c+'</b><span>'+o[1]+'</span></button>'}).join('')+'</div>';
+  h+=step(3+SN,'Chapters',any?nsel+' selected · <button type="button" class="qblink" id="qbAll">clear</button>':'all chapters')+'<div class="qbparts">'+(function(ps){var o=[];ps.forEach(function(p){var l=o[o.length-1];if(p[1].length===1&&l&&l.one){l[0]+=' · '+chShort(p[1][0]);l[1]=l[1].concat(p[1])}else{var q=[p[1].length===1?chShort(p[1][0]):p[0],p[1].slice()];q.one=p[1].length===1;o.push(q)}});return o})(QB.parts||[['',qchs]]).map(function(p){
     var cs=p[1].filter(function(n){return qchs.indexOf(n)>=0});if(!cs.length)return '';
     var allOn=cs.every(function(n){return qset.ch[n]}),pc=cs.reduce(function(a,n){return a+QS.filter(function(q){return QTOP[q[0]].ch===n}).length},0);
     return '<button type="button" class="qbpt'+(allOn?' on':'')+'" data-part="'+cs.join(',')+'"><span>'+esc(p[0]||'Chapters')+'</span><small>'+pc+' questions · '+(allOn?'selected':'select all')+'</small></button><div class="qbch">'+cs.map(function(n){var c=QS.filter(function(q){return QTOP[q[0]].ch===n}).length;
       return '<button type="button" class="qx'+n+(qset.ch[n]?' on':'')+'" data-ch="'+n+'" title="'+esc(chTitle(n))+'"><span class="n">'+n+'</span><span class="l">'+esc(chShort(n))+'</span><small>'+c+'</small></button>'}).join('')+'</div>'}).join('')+'</div>';
-  h+=step(4,'Number of questions',max+' available')+'<div class="qbnq">'+[10,20,40,max].filter(function(v,ix,a){return v>0&&v<=max&&a.indexOf(v)===ix}).map(function(v){return '<button type="button" data-qn="'+v+'" class="'+(n===v?'on':'')+'">'+(v===max&&v>40?'All '+v:v)+'</button>'}).join('')+'</div>'+
+  h+=step(4+SN,'Number of questions',max+' available')+'<div class="qbnq">'+[10,20,40,max].filter(function(v,ix,a){return v>0&&v<=max&&a.indexOf(v)===ix}).map(function(v){return '<button type="button" data-qn="'+v+'" class="'+(n===v?'on':'')+'">'+(v===max&&v>40?'All '+v:v)+'</button>'}).join('')+'</div>'+
     '<div class="qbn"><input type="range" id="qbN" min="1" max="'+Math.max(1,Math.min(max,100))+'" value="'+Math.max(1,n)+'"'+(max?'':' disabled')+'><b id="qbNv">'+n+'</b></div></div>';
   h+='<div class="qbbar"><button class="btn qbgo" type="button" id="qbGo"'+(max?'':' disabled')+'>'+(max?'Start test<small id="qbGoS">'+n+' questions · '+(qset.mode==='timed'?'Timed':'Tutor')+'</small>':'No questions match')+'</button></div>';
   if(QT.length){h+='<div class="sh"><h3>Previous tests</h3><span>Tap to review</span></div><div class="qbprev">'+QT.slice().reverse().map(function(t,i){var j=QT.length-1-i,sc=pct(t.ok,t.ids.length);
@@ -1247,7 +1256,7 @@ function renderQ(){clearInterval(qtick);var id=CUR.ids[CUR.i],q=QBY[id],n=CUR.id
     '<button type="button" id="qbEnd" class="chip">'+(CUR.done?'Close':'End test')+'</button></div>';
   h+='<div class="qbgrid pal" id="qbPal" hidden>'+CUR.ids.map(function(x,j){var c='';if(CUR.done||(CUR.sub&&CUR.sub[x]))c=QBY[x]&&CUR.ans[x]===QBY[x][3]?'ok':CUR.ans[x]===undefined?'na':'no';else if(CUR.ans[x]!==undefined)c='an';
     return '<button type="button" data-j="'+j+'" class="'+c+(j===CUR.i?' cur':'')+'">'+(j+1)+'</button>'}).join('')+'</div>';
-  h+='<div class="qbq qx'+t.ch+'"><span class="k">'+esc(t.no)+' · '+esc(t.short)+'</span><p>'+esc(q[1])+'</p></div><div class="qbo">'+q[2].map(function(o,j){
+  h+='<div class="qbq qx'+t.ch+'"><span class="k">'+esc(t.no)+' · '+esc(t.short)+lvTag(q[7])+'</span><p>'+esc(q[1])+'</p></div><div class="qbo">'+q[2].map(function(o,j){
     var c='';if(shown){if(j===q[3])c='ok';else if(j===a)c='no'}else if(j===a)c='sel';
     return '<button type="button" data-o="'+j+'" class="'+c+'"><span class="l">'+L[j]+'</span><span>'+esc(o)+'</span></button>'}).join('')+'</div>';
   if(shown){var right=a===q[3];h+='<div class="qbe '+(a===undefined?'na':right?'ok':'no')+'"><b>'+(a===undefined?'Not answered':right?'Correct':'Incorrect')+' · answer '+L[q[3]]+'</b><p>'+esc(q[4])+'</p><button type="button" class="qblink" data-p="'+q[5]+'">Read in the book · p '+q[5]+' ›</button></div>'}
