@@ -304,3 +304,20 @@ Practice, Resources, Settings, profile, help, progress sheet; reader, cards, que
 Preview: https://claude.ai/artifact/K1L6WC1PFcDdjo9EthoCMy (build/v2/review.html = review copy, whole book open). Next: stage 2 (reader bars, question
 bank and cards in the app colours, language), then go live by building docs with PRR_V2=1 (push main first).
 Opening and language (owner, 11 Nov 2026): the greeting shows on every opening; a device that is not subscribed and not in a trial is then offered the choices (subscribe · trial while unused · free), only the first opening must be answered. Inside the Student Master Review platform the book follows the platform language (`window.__smrLang`) unless the student chose a language inside the book (`localStorage smr-langown`); a change of language in the platform settings applies to every book.
+
+## Exactly like the new Obstetrics app (owner, 11–12 Nov 2026) — preview build only until the owner approves
+- The app screens ARE the Obstetrics app code: `python3 tools/port_v2.py` copies obstetrics-master-review/src/v2.js, v2.search.js,
+  v2.tools.js, v2.lang.js, v2.css, v2.html into src/ with the replacements in tools/v2book.json (names, palette, prefix prr-, pictures,
+  qbank-v → qbank). This book's own parts: src/v2.book.js (start of the closure: page names p.t / p.f, tpages, tRead/tMast/pct, question
+  records, the licence interface `window.__lic`), src/v2.book.post.js (end: sync hooks, About tiles open the book's own pages, no posters),
+  src/v2.book.css (palette, hides the older screens). Do not edit the ported files by hand: change Obstetrics, then re-run port_v2.py.
+- Build the preview: `PRR_V2=1 SRR_OUT=build/v2 python3 build.py` (build/v2/index.html and review.html; docs/ stays the old app).
+  User-manual pictures: serve build/v2 and run `node tools/help_shots.js` (content/img/help_*.jpg). Emblem: content/img/v2_logo.webp
+  (owner's new logo, circle only; v2_logo_full.webp with the title). Preview: https://claude.ai/artifact/K1L6WC1PFcDdjo9EthoCMy
+- Subscription = the shared Supabase system of the Obstetrics book (one admin for the three books, book 'ped'): requests, receipts,
+  plans, device link numbers. src/app.js: `window.__sbRpc` (adds p_book to obs_request_status / obs_request_submit), hex device id
+  prr-sdev, the book's key in prr-k checked against access.key_hash (HASK), sync through obs_sync_get / obs_sync_put. Old codes from the
+  Worker still open the book until access.old_until (launch day + one month). key_hash and old_until go in tools/v2book.json "access"
+  once the Supabase migration (obstetrics tools/supabase/pending/009_three_books.sql) is applied. Tests used: a simulated Supabase
+  (request → approval → opens by itself → sync; a forged key is dropped).
+- Go live (after the owner approves): set key_hash + old_until, build docs with PRR_V2=1, new icons from v2_logo, push the live branch.
