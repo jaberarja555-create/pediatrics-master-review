@@ -90,12 +90,12 @@
   "code": "PMR",
   "aboutImg": {
    "authors": "img/authors.webp",
-   "reviewers": "img/part2.jpg",
-   "edition": "img/cover5.jpg",
-   "howto": "img/part3.jpg",
-   "tools": "img/part4.jpg",
-   "refs": "img/part5.jpg",
-   "contents": "img/part1.jpg",
+   "reviewers": "img/abt_reviewers.jpg",
+   "edition": "img/abt_edition.jpg",
+   "howto": "img/help_home.jpg",
+   "tools": "img/help_reader.jpg",
+   "refs": "img/abt_refs.jpg",
+   "contents": "img/abt_contents.jpg",
    "rr": "img/rrcover.jpg"
   }
  },
