@@ -1,207 +1,43 @@
 [
- [
-  "Definition",
-  "Define rickets.",
-  "Defective mineralisation of growing bone (growth plate and osteoid) in children."
- ],
- [
-  "Definition",
-  "What is the same defect called after the growth plates close?",
-  "Osteomalacia."
- ],
- [
-  "Vitamin D",
-  "Where is vitamin D 25-hydroxylated?",
-  "In the liver."
- ],
- [
-  "Vitamin D",
-  "Where is 25(OH)D converted to the active form?",
-  "In the kidney (1α-hydroxylase, stimulated by PTH)."
- ],
- [
-  "Vitamin D",
-  "Best test of vitamin D status?",
-  "Serum 25(OH)D."
- ],
- [
-  "Vitamin D",
-  "25(OH)D level that defines vitamin D deficiency?",
-  "Below 30 nmol/L."
- ],
- [
-  "Causes",
-  "Most common cause of rickets?",
-  "Nutritional: vitamin D deficiency and/or low calcium intake."
- ],
- [
-  "Causes",
-  "Peak age of nutritional rickets?",
-  "6 months to 2 years."
- ],
- [
-  "Causes",
-  "Why does an exclusively breastfed infant get rickets without supplements?",
-  "Breast milk is low in vitamin D."
- ],
- [
-  "Causes",
-  "How do anticonvulsants cause rickets?",
-  "Phenytoin and phenobarbitone speed up the breakdown of vitamin D."
- ],
- [
-  "Causes",
-  "Defect in vitamin D-dependent rickets type 1?",
-  "Absent renal 1α-hydroxylase (low 1,25(OH)2D)."
- ],
- [
-  "Causes",
-  "Clue to vitamin D-dependent rickets type 2?",
-  "Alopecia with very high 1,25(OH)2D (receptor resistance)."
- ],
- [
-  "Causes",
-  "Commonest inherited rickets?",
-  "X-linked hypophosphataemic rickets (renal phosphate loss, normal PTH)."
- ],
- [
-  "Clinical",
-  "Earliest clinical sign of rickets in a young infant?",
-  "Craniotabes (soft skull that yields like a ping-pong ball)."
- ],
- [
-  "Clinical",
-  "What is the rachitic rosary?",
-  "Rounded, painless swelling of the costochondral junctions."
- ],
- [
-  "Clinical",
-  "What is the Harrison sulcus?",
-  "A groove of the lower chest along the attachment of the diaphragm."
- ],
- [
-  "Clinical",
-  "Fontanelle and head in rickets?",
-  "Wide, late-closing anterior fontanelle; frontal and parietal bossing."
- ],
- [
-  "Clinical",
-  "Leg deformity after the child walks?",
-  "Bow legs (genu varum), later knock knees."
- ],
- [
-  "Clinical",
-  "Muscle and motor signs of rickets?",
-  "Hypotonia, delayed motor milestones, pot belly."
- ],
- [
-  "Clinical",
-  "Rosary of scurvy compared with rickets?",
-  "Scurvy: sharp, angular, tender · rickets: rounded, painless."
- ],
- [
-  "Investigations",
-  "Biochemistry of nutritional rickets?",
-  "Calcium normal or low, phosphate low, ALP and PTH high, 25(OH)D low."
- ],
- [
-  "Investigations",
-  "Best blood marker of rickets activity and healing?",
-  "Alkaline phosphatase (ALP)."
- ],
- [
-  "Investigations",
-  "Which finding is NOT consistent with nutritional rickets?",
-  "Raised serum phosphate (seen in chronic kidney disease)."
- ],
- [
-  "Investigations",
-  "Why is serum calcium often normal in rickets?",
-  "Raised PTH mobilises calcium from bone (and wastes phosphate)."
- ],
- [
-  "Investigations",
-  "X-ray signs of active rickets at the wrist?",
-  "Widened, cupped and frayed metaphysis; low bone density."
- ],
- [
-  "Investigations",
-  "First X-ray sign of healing?",
-  "A dense white calcification line at the metaphysis, 2–4 weeks after vitamin D."
- ],
- [
-  "Investigations",
-  "Biochemistry of X-linked hypophosphataemic rickets?",
-  "Very low phosphate, normal calcium and normal PTH."
- ],
- [
-  "Treatment",
-  "Daily vitamin D treatment for a 2-year-old with rickets?",
-  "3000–6000 IU daily for 12 weeks, plus calcium 500 mg daily."
- ],
- [
-  "Treatment",
-  "Daily vitamin D treatment under 12 months?",
-  "2000 IU daily for 12 weeks, plus calcium."
- ],
- [
-  "Treatment",
-  "Single oral (stoss) dose for 1–12 years?",
-  "150,000 IU once (50,000 IU at 3–12 months)."
- ],
- [
-  "Treatment",
-  "When is stoss therapy used?",
-  "When daily drops are unlikely to be taken; not under 3 months."
- ],
- [
-  "Treatment",
-  "Calcium dose with vitamin D treatment?",
-  "500 mg elemental calcium daily."
- ],
- [
-  "Treatment",
-  "Emergency treatment of hypocalcaemic tetany or seizure?",
-  "10% calcium gluconate 0.5 ml/kg IV (max 20 ml) over 10 minutes with monitoring."
- ],
- [
-  "Treatment",
-  "Drug of choice in vitamin D-dependent rickets?",
-  "Calcitriol plus calcium."
- ],
- [
-  "Treatment",
-  "Treatment of X-linked hypophosphataemic rickets?",
-  "Oral phosphate plus calcitriol (or burosumab)."
- ],
- [
-  "Treatment",
-  "When is healing checked?",
-  "At 3 months: ALP and wrist X-ray."
- ],
- [
-  "Prevention",
-  "Vitamin D to prevent rickets in infancy?",
-  "400 IU daily from birth to 12 months, however fed."
- ],
- [
-  "Prevention",
-  "Features of vitamin D toxicity?",
-  "Hypercalcaemia: vomiting, constipation, polyuria, nephrocalcinosis."
- ],
- [
-  "Physiology",
-  "Main action of active vitamin D on the gut?",
-  "↑ Absorption of calcium and phosphate from the small intestine."
- ],
- [
-  "Physiology",
-  "Effect of PTH on the kidney?",
-  "↑ Calcium reabsorption, ↓ phosphate reabsorption (phosphaturia), ↑ 1α-hydroxylase."
- ],
- [
-  "Biochemistry",
-  "Why is phosphate low in nutritional rickets?",
-  "Low calcium raises PTH, which makes the kidney lose phosphate."
- ]
+ ["Definition", "What is rickets?", "Defective mineralisation of growing bone (the growth plate and the osteoid) in children.", 1, "1dhnu32"],
+ ["Definition", "What is the same defect called after the growth plates have closed?", "Osteomalacia.", 1, "o6it8p"],
+ ["Vitamin D", "Where is vitamin D 25-hydroxylated?", "In the liver.", 1, "17y6hov"],
+ ["Vitamin D", "Where is 25-hydroxyvitamin D converted to the active form?", "In the kidney, by 1α-hydroxylase, which is stimulated by parathyroid hormone (PTH).", 1, "bf14mb"],
+ ["Vitamin D", "What is the best test of vitamin D status?", "Serum 25-hydroxyvitamin D.", 1, "9l6xf0"],
+ ["Vitamin D", "Which 25-hydroxyvitamin D level defines vitamin D deficiency?", "A level below 30 nmol/L.", 1, "1w36366"],
+ ["Causes", "What is the most common cause of rickets?", "Nutritional rickets: vitamin D deficiency and/or a low calcium intake.", 1, "1t5v4no"],
+ ["Causes", "What is the peak age of nutritional rickets?", "From 6 months to 2 years.", 1, "1ai6uce"],
+ ["Causes", "Why does an exclusively breastfed infant develop rickets without supplements?", "Breast milk is low in vitamin D.", 2, "f9pnwb"],
+ ["Causes", "How do anticonvulsants cause rickets?", "Phenytoin and phenobarbitone speed up the breakdown of vitamin D.", 2, "qwle3o"],
+ ["Causes", "What is the defect in vitamin D-dependent rickets type 1?", "Absent renal 1α-hydroxylase, so the level of 1,25-dihydroxyvitamin D is low.", 3, "14ppfg5"],
+ ["Causes", "What is the clue to vitamin D-dependent rickets type 2?", "Alopecia with a very high 1,25-dihydroxyvitamin D level, because of resistance of the vitamin D receptor.", 3, "zbj6aq"],
+ ["Causes", "What is the commonest inherited form of rickets?", "X-linked hypophosphataemic rickets: the kidney loses phosphate and the PTH is normal.", 2, "7gj44l"],
+ ["Clinical", "What is the earliest clinical sign of rickets in a young infant?", "Craniotabes: a soft skull that yields like a ping-pong ball.", 1, "v06ik8"],
+ ["Clinical", "What is the rachitic rosary?", "Rounded, painless swelling of the costochondral junctions.", 1, "kd29b"],
+ ["Clinical", "What is the Harrison sulcus?", "A groove of the lower chest along the attachment of the diaphragm.", 1, "m4k1tf"],
+ ["Clinical", "What are the fontanelle and head findings in rickets?", "A wide, late-closing anterior fontanelle, with frontal and parietal bossing.", 1, "1mrq2xu"],
+ ["Clinical", "Which leg deformity appears after the child walks?", "Bow legs (genu varum), and later knock knees.", 1, "kkj8mt"],
+ ["Clinical", "What are the muscle and motor signs of rickets?", "Hypotonia, delayed motor milestones and a pot belly.", 2, "1o491ue"],
+ ["Clinical", "How does the rosary of scurvy differ from the rosary of rickets?", "In scurvy it is sharp, angular and tender; in rickets it is rounded and painless.", 3, "6mhcdk"],
+ ["Investigations", "What is the biochemistry of nutritional rickets?", "Calcium normal or low, phosphate low, alkaline phosphatase (ALP) and PTH high, and 25-hydroxyvitamin D low.", 2, "dkh27w"],
+ ["Investigations", "What is the best blood marker of rickets activity and healing?", "Alkaline phosphatase (ALP).", 1, "yrucxr"],
+ ["Investigations", "Which finding is NOT consistent with nutritional rickets?", "A raised serum phosphate, which is seen in chronic kidney disease.", 3, "x6rll8"],
+ ["Investigations", "Why is the serum calcium often normal in rickets?", "The raised PTH mobilises calcium from bone (and makes the kidney lose phosphate).", 3, "16w51n4"],
+ ["Investigations", "What are the X-ray signs of active rickets at the wrist?", "A widened, cupped and frayed metaphysis with low bone density.", 2, "15nnsaz"],
+ ["Investigations", "What is the first X-ray sign of healing?", "A dense white line of calcification at the metaphysis, 2–4 weeks after vitamin D is started.", 2, "ga0sti"],
+ ["Investigations", "What is the biochemistry of X-linked hypophosphataemic rickets?", "A very low phosphate, with normal calcium and normal PTH.", 3, "7n47qz"],
+ ["Treatment", "What daily vitamin D treatment is given to a 2-year-old with rickets?", "3000–6000 IU daily for 12 weeks, together with calcium 500 mg daily.", 2, "oi8ic5"],
+ ["Treatment", "What daily vitamin D treatment is given under 12 months of age?", "2000 IU daily for 12 weeks, together with calcium.", 2, "46o6jy"],
+ ["Treatment", "What is the single oral (stoss) dose of vitamin D for children aged 1–12 years?", "150 000 IU once (50 000 IU at 3–12 months).", 2, "hpflmr"],
+ ["Treatment", "When is stoss therapy used?", "When daily drops are unlikely to be taken. It is not used under 3 months of age.", 2, "1d0ld49"],
+ ["Treatment", "What calcium dose is given with vitamin D treatment?", "500 mg of elemental calcium daily.", 1, "yuex24"],
+ ["Treatment", "How is hypocalcaemic tetany or a hypocalcaemic seizure treated in an emergency?", "10% calcium gluconate 0.5 ml/kg intravenously (maximum 20 ml) over 10 minutes, with cardiac monitoring.", 2, "18n9dec"],
+ ["Treatment", "What is the drug of choice in vitamin D-dependent rickets?", "Calcitriol, together with calcium.", 2, "1kwdpkn"],
+ ["Treatment", "How is X-linked hypophosphataemic rickets treated?", "Oral phosphate with calcitriol, or burosumab.", 2, "seuujj"],
+ ["Treatment", "When is healing checked, and how?", "At 3 months, with the ALP and a wrist X-ray.", 2, "14ikgum"],
+ ["Prevention", "How much vitamin D is given to prevent rickets in infancy?", "400 IU daily from birth to 12 months, however the baby is fed.", 1, "cymevs"],
+ ["Prevention", "What are the features of vitamin D toxicity?", "Hypercalcaemia: vomiting, constipation, polyuria and nephrocalcinosis.", 2, "ng9s2g"],
+ ["Physiology", "What is the main action of active vitamin D on the gut?", "It increases the absorption of calcium and phosphate from the small intestine.", 1, "1vr5giz"],
+ ["Physiology", "What are the effects of PTH on the kidney?", "It increases calcium reabsorption, decreases phosphate reabsorption (phosphaturia) and increases 1α-hydroxylase activity.", 2, "1w2qzt5"],
+ ["Biochemistry", "Why is the phosphate low in nutritional rickets?", "The low calcium raises PTH, which makes the kidney lose phosphate.", 3, "2esq06"]
 ]
