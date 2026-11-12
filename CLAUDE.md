@@ -329,3 +329,9 @@ Opening and language (owner, 11 Nov 2026): the greeting shows on every opening; 
 - **One app (owner, 12 Nov 2026):** this book's own address (and an installed copy of it) now moves the student into Student Master Review
   (https://student-master-review.pages.dev/#read-<book>), carrying the device identity (dev, act, code, sdev, trial, name, settings) after the #;
   scripts at the top and end of src/shell.html (same as in Obstetrics; see its CLAUDE.md "One app"). Only the production host names move.
+
+## The new app is LIVE (owner, 12 Nov 2026: "Pediatrics and Surgery still have old features")
+docs/ is now built with the new app (the Obstetrics design, tools/port_v2.py) by default: `python3 build.py` (PRR_V2=0 builds the old design).
+Icons img/v2-icon-192.png / v2-icon-512.png / v2-apple-touch.png (the owner's new emblem on the book's light colour), manifest colours to match.
+Old activation codes (Worker) keep working until access.old_until = 12 Dec 2026 (tools/v2book.json); new subscriptions go through the shared
+system and the one admin page. The Library button sits beside the new Home greeting (#v2homeW .hgr), as in Obstetrics.

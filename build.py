@@ -1004,7 +1004,7 @@ def build():
 
     page = (SRC / 'shell.html').read_text()
     app_js = (SRC / 'app.js').read_text()
-    if os.environ.get('PRR_V2'):   # the new app design (owner, 11 Nov 2026): preview builds only until the owner approves
+    if os.environ.get('PRR_V2', '1') != '0':   # the new app design (owner, 11 Nov 2026): preview builds only until the owner approves
         page, app_js = v2_layer(page, app_js, decks, qbank, meta, html_pages, meta.get('access', {}))
     for k, v in {'CSS': css, 'CHAPTER_CSS': chapter_css_all, 'JS': app_js,
                  'PAGES': ''.join(html_pages), 'META': js_json(meta), 'DECKS': js_json(decks), 'QBANK': js_json(qbank),

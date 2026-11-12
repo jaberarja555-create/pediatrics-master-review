@@ -104,7 +104,7 @@
   "supabase_url": "https://kgdmjeffeqfdlfnjnnek.supabase.co",
   "supabase_anon": "sb_publishable_aUgkKc4QpItV4yKKViVFCg_dipnUdDl",
   "key_hash": "698bb79800f8534ccff8fd231d8fc42dbeda944af7aaf26b25a1a13098406ec0",
-  "old_until": "",
+  "old_until": "2026-12-12T23:59:59+02:00",
   "plans": [
    {
     "id": "month",
