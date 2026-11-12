@@ -326,3 +326,6 @@ Opening and language (owner, 11 Nov 2026): the greeting shows on every opening; 
   (highlights, notes, drawings, page marks, cards known, question answers, tests, bookmarks, blank pages, streak) and starts a sync 4 s later;
   `<prefix>-dirty` = changes not yet online (kept across restarts); retried every 30 s when the upload failed; a check for other devices'
   changes every 3 minutes while the app is open; upload on pagehide / going to the background. Subscribed devices only (sync is per subscription).
+- **One app (owner, 12 Nov 2026):** this book's own address (and an installed copy of it) now moves the student into Student Master Review
+  (https://student-master-review.pages.dev/#read-<book>), carrying the device identity (dev, act, code, sdev, trial, name, settings) after the #;
+  scripts at the top and end of src/shell.html (same as in Obstetrics; see its CLAUDE.md "One app"). Only the production host names move.
