@@ -2025,6 +2025,11 @@ table.refs tr:nth-child(odd) td { background:#f7f8fc; }
 .page:has(>.fp.fpimg) .ftr{display:none}
 /* fp:end */
 
+/* Speed (owner, 12 Nov 2026): each page is its own layout island, so a change inside one page never re-lays out the book,
+   and pages off the screen are not rendered at all (html.lz = pages built on demand, see app.js LAZY) */
+.pw{contain:strict}
+html.lz .pw{content-visibility:auto}
+
 .page.c1,.page .rqc1{--ch:#0f7c78;--ch-dark:#084442;--ch-mid:#63aaa7;--ch-tint:#e2efef;--ch-tint-2:#f3f8f8;--ch-line:#cae2e1;--ch-line2:#e5f1f0;--ch-wash:#f9fcfc;--hdr-topic:#cfe5e4}
 .tp.ch1,.hch.ch1 summary{background:linear-gradient(135deg,#084442 0,#0f7c78 100%)}
 .hch.ch1 .htp .tn{color:#0f7c78}
@@ -9152,10 +9157,16 @@ function saveRead(){stj('prog',readSet);stj('progu',PROGU);if(typeof syncSoon===
 var tpl=$('bookPages').content, pagesEl=$('pages'), wraps=[], srcPages=[].slice.call(tpl.querySelectorAll('section.page'));
 srcPages=(function(){var k=0;return PAGES.map(function(p){if(!p.user)return srcPages[k++];var s=document.createElement('section');s.className='page upage';s.dataset.id=p.id;
   s.innerHTML='<div class="uph"><span>صفحتي · My notes</span><em>'+esc(PAGES[PAGES.indexOf(p)-1]?PAGES[PAGES.indexOf(p)-1].label:'')+'</em></div><div class="upl"></div>';return s})})();
-srcPages.forEach(function(sec,i){
+/* Speed (owner, 12 Nov 2026: "the app is very slow"): a page's content is built only when it comes near the screen (ensurePage);
+   before that its wrapper is an empty sheet of the right size. Tools that measure every page (paginate.js, check.js, screenshots)
+   run in an automated browser and get all pages at once, as before; window.__lazy = 1 forces the students' way there. */
+var LAZY=!navigator.webdriver||!!window.__lazy;if(LAZY)document.documentElement.classList.add('lz');
+(function(){var fr=document.createDocumentFragment();srcPages.forEach(function(sec,i){
   var pw=document.createElement('div');pw.className='pw';pw.dataset.i=i;
-  var host=document.createElement('div');host.className='bk';host.appendChild(sec.cloneNode(true));
-  pw.appendChild(host);pagesEl.appendChild(pw);wraps.push(pw)});
+  var host=document.createElement('div');host.className='bk';if(!LAZY||PAGES[i].user){host.appendChild(sec.cloneNode(true));pw.dataset.r='1'}
+  pw.appendChild(host);fr.appendChild(pw);wraps.push(pw)});pagesEl.appendChild(fr)})();
+function ensurePage(i){var pw=wraps[i];if(pw&&!pw.dataset.r)renderPage(i,1)}
+window.__renderAll=function(){for(var i=0;i<wraps.length;i++)ensurePage(i)};
 if(LOCKED)wraps.forEach(function(pw,i){if(pageFree(i))return;pw.classList.add('lk');var o=document.createElement('div');o.className='lko';o.innerHTML='<div class="ar" dir="rtl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><b>هذه الصفحة للمشتركين</b><span>'+freeMsg()+' اشترك لتفتح الكتاب كاملًا مع كل البطاقات وبنك الأسئلة.</span><button type="button" class="btn" data-sub="1">اضغط هنا للاشتراك</button></div>';pw.appendChild(o)});
 var cm=$('coverMini');cm.appendChild(srcPages[0].cloneNode(true));
 function fitCover(){var w=cm.parentNode.clientWidth||112;cm.style.transform='scale('+(w/816)+')'}fitCover();
@@ -9164,7 +9175,7 @@ function fitCover(){var w=cm.parentNode.clientWidth||112;cm.style.transform='sca
 var ZM=st('zoom')||'auto';
 function zscale(){var sc=$('scroller'),W=sc.clientWidth-16,H=sc.clientHeight-20;if(ZM==='width')return W/816;if(ZM==='page')return Math.min(W/816,H/1152);if(ZM==='auto')return Math.min(W,816)/816;return +ZM||1}
 function layout(){var s=zscale(),avail=816*s;if(avail<100)return;$('zoomLbl').textContent=zlabel();
-  wraps.forEach(function(pw){pw.style.width=avail+'px';pw.style.height=(1152*s)+'px';pw.firstChild.style.transform='scale('+s+')'})}
+  wraps.forEach(function(pw){if(pw._s===s)return;pw._s=s;pw.style.width=avail+'px';pw.style.height=(1152*s)+'px';pw.firstChild.style.transform='scale('+s+')'})}
 /* on a screen narrower than the page (phones) sizes are shown against the screen width (fill width = 100 %), with bigger steps */
 function zbase(){var W=($('scroller').clientWidth||innerWidth)-16;return W<816?Math.max(.1,W/816):1}   // before the reader is first shown its width is 0
 function zpct(){return Math.round(zscale()/zbase()*100)}
@@ -9207,7 +9218,7 @@ function upgRebuild(){
     if(a<0)return;var j=a+1;while(j<PAGES.length&&PAGES[j].user)j++;
     var np={id:id,user:1,label:PAGES[a].label+' · صفحتي',a:UPG[id].a},sec=upgSec(np,PAGES[j-1]);
     PAGES.splice(j,0,np);srcPages.splice(j,0,sec);
-    var pw=document.createElement('div');pw.className='pw';var host=document.createElement('div');host.className='bk';host.appendChild(sec.cloneNode(true));pw.appendChild(host);
+    var pw=document.createElement('div');pw.className='pw';pw.dataset.r='1';var host=document.createElement('div');host.className='bk';host.appendChild(sec.cloneNode(true));pw.appendChild(host);
     pagesEl.insertBefore(pw,wraps[j]||null);wraps.splice(j,0,pw)});
   NP=PAGES.length;wraps.forEach(function(pw,i){pw.dataset.i=i;delete pw.dataset.dec});
   BIDX=[];PAGES.forEach(function(p,i){if(p.bn)BIDX[p.bn-1]=i});
@@ -9226,7 +9237,7 @@ window.addEventListener('resize',function(){layout();fitCover()});
 $('zoomLbl').textContent=zlabel();
 function currentPage(){var sc=$('scroller'),mid=sc.scrollTop+sc.clientHeight*0.35,cur=0;for(var i=0;i<wraps.length;i++){if(wraps[i].offsetTop<=mid)cur=i}return cur}
 var lastCur=-1;   // page in view (renderPage re-decorates pages near it)
-function onScroll(){var c=currentPage();lastCur=c;decorateNear(c);updLis(c);updPr(c);fitRail();if(!$('pnum').classList.contains('ed'))$('pnum').textContent=PAGES[c].user?'✎ صفحتي':PAGES[c].bn+' / '+BOOKN;$('subtitle').textContent=PAGES[c].label;st('page',PKEY[c]);if(c!==lastSyncPg){lastSyncPg=c;if(typeof syncSoon==='function'&&SYNC)syncSoon()}}
+function onScroll(how){var c=currentPage(),same=how==='s'&&c===lastCur;lastCur=c;decorateNear(c);if(same)return;updLis(c);updPr(c);fitRail();if(!$('pnum').classList.contains('ed'))$('pnum').textContent=PAGES[c].user?'✎ صفحتي':PAGES[c].bn+' / '+BOOKN;$('subtitle').textContent=PAGES[c].label;st('page',PKEY[c]);if(c!==lastSyncPg){lastSyncPg=c;if(typeof syncSoon==='function'&&SYNC)syncSoon()}}
 /* page number: tap it, type a page and press Enter (owner, Nov 2026) */
 (function(){var pn=$('pnum');if(!pn)return;pn.title='Go to page';pn.addEventListener('click',function(e){e.stopPropagation();if(pn.classList.contains('ed'))return;
   var cur=PAGES[currentPage()]||{},v=cur.bn||'';pn.classList.add('ed');
@@ -9268,7 +9279,7 @@ $('prBtn').onclick=function(e){e.stopPropagation();var c=currentPage();if(LOCKED
 function setProg(v){var c=currentPage(),k=PKEY[c];if(v)readSet[k]=v;else delete readSet[k];PROGU[k]=Date.now();saveRead();updPr(c);
   var b=$('prBtn');b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop');
   if(v===0)chime([523.3,392],'sine');else if(v===1)chime([659.3,987.8],'sine');else chime([523.3,659.3,784,1046.5,1318.5],'triangle')}
-$('scroller').addEventListener('scroll',onScroll,{passive:true});
+var osRaf=0;$('scroller').addEventListener('scroll',function(){if(osRaf)return;osRaf=requestAnimationFrame(function(){osRaf=0;onScroll('s')})},{passive:true});
 function goPage(i){goIdx(BIDX[i]!=null?BIDX[i]:i)}
 function goIdx(i){i=Math.max(0,Math.min(NP-1,i));show('reader');layout();$('scroller').scrollTop=wraps[i].offsetTop-10;onScroll()}
 function lastPage(){var k=st('page');return k&&byKey[k]!==undefined?byKey[k]:0}
@@ -9283,7 +9294,7 @@ var xrMap={};XR.forEach(function(x){xrMap[x[0].toLowerCase()]=x});
 var xrRe=XR.length?new RegExp('(^|[^A-Za-z0-9])('+XR.map(function(x){return x[0]}).sort(function(a,b){return b.length-a.length}).map(reEsc).join('|')+')(?![A-Za-z0-9])','gi'):null;
 var noRe=/\((?:see )?(\d{1,2}\.\d)\)/g;
 function skipNode(n){return n.parentNode.closest('svg,a,abbr,mark,h1,.kicker,.hdr,.toc-h,button,.xr')}
-function decorate(i){var pw=wraps[i];if(!pw||pw.dataset.dec)return;pw.dataset.dec='1';
+function decorate(i){var pw=wraps[i];if(!pw||pw.dataset.dec)return;if(!pw.dataset.r){renderPage(i,1);if(pw.dataset.dec)return}pw.dataset.dec='1';
   var p=PAGES[i],sec=pw.querySelector('section.page');if(!sec)return;
   if(!p.topic||p.ex){if(!FRONT.test(p.id))termify(sec);return}   // links only on topic pages; definitions also in exam corners and rapid review
   var own=p.topic,used={};
@@ -9303,11 +9314,17 @@ function decorate(i){var pw=wraps[i];if(!pw||pw.dataset.dec)return;pw.dataset.de
 function fillPage(sec){var m=sec.querySelector('.mzm'),ft=sec.querySelector('.ftr');if(!m||!ft||sec.classList.contains('ex')||m.querySelector('.dk'))return;
   // owner (Nov 2026): use spare room INSIDE the boxes (more line spacing, padding, bigger rows), not as gaps between boxes
   function free(){var sc=sec.getBoundingClientRect().height/sec.offsetHeight||1,b=0;[].forEach.call(m.children,function(c){var r=c.getBoundingClientRect();if(r.height)b=Math.max(b,r.bottom)});return (ft.getBoundingClientRect().top-b)/sc}
-  if(free()<80)return;
+  var f0=free();if(f0<80)return;
   function set(t){sec.style.setProperty('--ft',t.toFixed(3))}
-  sec.classList.add('fill');var lo=0,hi=2.2;set(hi);if(free()>=50){return}
-  for(var k=0;k<7;k++){var mid=(lo+hi)/2;set(mid);if(free()>=50)lo=mid;else hi=mid}set(lo)}
-function decorateNear(c){for(var i=Math.max(0,c-1);i<=Math.min(NP-1,c+2);i++)decorate(i)}
+  sec.classList.add('fill');var lo=0,hi=2.2;set(hi);var fh=free();if(fh>=50){return}
+  for(var k=0;k<5&&hi-lo>.02;k++){var mid=lo+(hi-lo)*Math.min(.93,Math.max(.07,(f0-52)/((f0-fh)||1)));set(mid);var fm=free();if(fm>=50){lo=mid;f0=fm;if(fm<56)break}else{hi=mid;fh=fm}}set(lo)}
+var DQ=[],DQT=0;
+function dqRun(dl){DQT=0;var n=0;while(DQ.length&&(n<1||(dl&&dl.timeRemaining&&dl.timeRemaining()>14))){var j=DQ.shift();if(wraps[j])decorate(j);n++}if(DQ.length)dqGo()}
+function dqGo(){if(DQT)return;DQT=1;if(window.requestIdleCallback)requestIdleCallback(dqRun,{timeout:500});else setTimeout(dqRun,60)}
+function decorateNear(c){if(!LAZY){for(var i=Math.max(0,c-1);i<=Math.min(NP-1,c+2);i++)decorate(i);return}
+  var sc=$('scroller'),top=sc.scrollTop,bot=top+sc.clientHeight,q=[];if(!sc.clientHeight)return;   // reader not on the screen: nothing to prepare
+  [c,c+1,c-1].forEach(function(j){var w=wraps[j];if(!w||w.dataset.dec)return;var t=w.offsetTop;if(t<bot+120&&t+w.offsetHeight>top-120)decorate(j);else q.push(j)});
+  DQ=q.concat([c+2,c+3,c-2,c+4,c-3]).filter(function(j){return j>=0&&j<NP&&!wraps[j].dataset.dec});if(DQ.length)dqGo()}
 
 /* night */
 /* book page look (owner): the top-bar button (shown in the reader) opens 3 choices: day (white pages, the default),
@@ -9473,7 +9490,7 @@ function textNodes(sec){var w=document.createTreeWalker(sec,NodeFilter.SHOW_TEXT
 /* a highlight or note on a dark box gets a see-through colour so the words stay readable (owner, 8 Nov 2026) */
 function markDk(sec){sec.querySelectorAll('mark.uhl').forEach(function(m){var e=m.parentElement;while(e&&e!==sec){var c=getComputedStyle(e).backgroundColor,v=c.match(/[\d.]+/g);
   if(v&&(v.length<4||+v[3]>.5)){if(.2126*v[0]+.7152*v[1]+.0722*v[2]<110)m.classList.add('dk');return}e=e.parentElement}})}
-function renderPage(i){var host=wraps[i].firstChild,sec=srcPages[i].cloneNode(true);host.innerHTML='';host.appendChild(sec);delete wraps[i].dataset.dec;
+function renderPage(i,force){var pw0=wraps[i];if(!pw0||(!pw0.dataset.r&&!force))return;pw0.dataset.r='1';var host=wraps[i].firstChild,sec=srcPages[i].cloneNode(true);host.innerHTML='';host.appendChild(sec);delete wraps[i].dataset.dec;
   (HL[PKEY[i]]||[]).forEach(function(h,k){if(!hlOk(i,h))return;wrapRange(sec,h.s,h.e,function(){var m=document.createElement('mark');m.className='uhl '+h.c+(h.uw?' uw'+h.uw:'')+(h.hs===2?' hs2':'')+(h.n?' hasn':'');m.dataset.k=k;return m});
     if(h.n){var ms=sec.querySelectorAll('mark.uhl[data-k="'+k+'"]'),last=ms[ms.length-1];if(last){var nm=document.createElement('span');nm.className='nm';nm.dataset.k=k;nm.title='Note';last.parentNode.insertBefore(nm,last.nextSibling)}}});markDk(sec);if(Math.abs(i-lastCur)<=2)decorate(i)}
 /* Highlights and notes are saved as text offsets on a page. When the book is re-laid out (new pages, moved boxes), the offsets
@@ -10080,7 +10097,7 @@ document.addEventListener('click',function(e){var g=e.target.closest&&e.target.c
 document.addEventListener('scroll',function(){if(tipFor)hideTip()},true);
 
 /* ---------- search ---------- */
-var TEXT=wraps.map(function(pw){return pw.textContent.replace(/\s+/g,' ')});
+var TEXT=srcPages.map(function(pw){return pw.textContent.replace(/\s+/g,' ')});
 $('qchips').innerHTML=META.chips.map(function(c){return '<button class="chip" type="button">'+esc(c)+'</button>'+'<button type="button" class="chip" data-sub="1">Device</button>'}).join('');
 $('qchips').onclick=function(e){var b=e.target.closest('.chip');if(b){$('q').value=b.textContent;runSearch()}};
 function runSearch(){var q=$('q').value.trim();var out=$('results');if(q.length<2){out.innerHTML='<p class="empty">Type at least 2 letters. Every page of the book is searched.</p>';return}
@@ -10090,7 +10107,7 @@ function runSearch(){var q=$('q').value.trim();var out=$('results');if(q.length<
 $('q').addEventListener('input',runSearch);runSearch();
 $('results').onclick=function(e){var b=e.target.closest('.ri');if(!b)return;var i=+b.dataset.i;goIdx(i);markIn(i,$('q').value.trim())};
 function markIn(i,q){[].forEach.call(document.querySelectorAll('.bk mark.hit'),function(m){m.replaceWith(document.createTextNode(m.textContent))});if(!q)return;
-  var ql=q.toLowerCase(),first=null;textNodes(wraps[i]).forEach(function(n){var t=n.nodeValue,k=t.toLowerCase().indexOf(ql);if(k<0)return;var r=document.createRange();r.setStart(n,k);r.setEnd(n,k+q.length);var m=document.createElement('mark');m.className='hit';try{r.surroundContents(m);if(!first)first=m}catch(e){}});
+  ensurePage(i);var ql=q.toLowerCase(),first=null;textNodes(wraps[i]).forEach(function(n){var t=n.nodeValue,k=t.toLowerCase().indexOf(ql);if(k<0)return;var r=document.createRange();r.setStart(n,k);r.setEnd(n,k+q.length);var m=document.createElement('mark');m.className='hit';try{r.surroundContents(m);if(!first)first=m}catch(e){}});
   if(first){var sc=$('scroller');sc.scrollTop=first.getBoundingClientRect().top-sc.getBoundingClientRect().top+sc.scrollTop-120}}
 
 /* ---------- flashcards (known cards are remembered) ---------- */
@@ -10558,8 +10575,8 @@ function pill(){var c=lastCur<0?currentPage():lastCur,k=0,n=0;for(var i=0;i<wrap
   $('v2rb').textContent=t?t.no+' '+t.title.charAt(0).toUpperCase()+t.title.slice(1):({rr:'Rapid Review',dr:'Pediatric Drugs',cover:'Book cover',fm:lab}[scNow()]||lab);
   $('v2rs').textContent=t?'Chapter '+t.ch+' · '+chap(t.ch).name:'Pediatric Master Review';
   $('v2rnav').hidden=!t&&!WHOLE;$('rnSl').disabled=$('rnVd').disabled=!t;RBM.hidden=!t;if(t){RBM.classList.toggle('on',!!BM['t:'+t.id]);RBM.setAttribute('aria-pressed',!!BM['t:'+t.id])}}
-var _os=onScroll;onScroll=function(){_os.apply(this,arguments);pill()};
-$('scroller').addEventListener('scroll',pill,{passive:true});
+/* Speed (12 Nov 2026): while the same page stays in view a scroll rewrites nothing (the shell calls onScroll('s') once per frame) */
+var _os=onScroll;onScroll=function(how){var c0=lastCur;_os.apply(this,arguments);if(how!=='s'||lastCur!==c0)pill()};
 /* panels open above a bottom button and below a top one */
 flyAt=function(f,btn){var r=btn.getBoundingClientRect(),R=$('reader').getBoundingClientRect();f.hidden=false;
   if(r.top>R.top+R.height/2){f.style.top='auto';f.style.bottom=(R.bottom-r.top+10)+'px'}else{f.style.bottom='auto';f.style.top=Math.max(8,r.bottom-R.top+8)+'px'}
