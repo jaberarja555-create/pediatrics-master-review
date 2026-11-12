@@ -790,3 +790,4 @@ html[data-lang="en"] #v2homeW .hq small{display:none}   /* the English subtitle 
 .tocdr .tdtabs{display:flex;gap:6px;padding:10px 12px 4px}.tocdr .tdtabs button{flex:1;height:38px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;font:700 14px 'Cairo',var(--ui);cursor:pointer}
 .tocdr .tdtabs button.on{background:#fff;color:var(--deep);border-color:#fff}.tocdr .tdemp{margin:18px 10px;font:500 14px/1.7 'Cairo',sans-serif;color:rgba(255,255,255,.8);text-align:center}
 .tocdr .tdbm .tdi{margin:2px 0}
+.v2msheet .mvn,.tocdr .tdemp{direction:rtl}

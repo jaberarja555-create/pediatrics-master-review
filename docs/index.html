@@ -2842,6 +2842,7 @@ html[data-lang="en"] #v2homeW .hq small{display:none}   /* the English subtitle 
 .tocdr .tdtabs{display:flex;gap:6px;padding:10px 12px 4px}.tocdr .tdtabs button{flex:1;height:38px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;font:700 14px 'Cairo',var(--ui);cursor:pointer}
 .tocdr .tdtabs button.on{background:#fff;color:var(--deep);border-color:#fff}.tocdr .tdemp{margin:18px 10px;font:500 14px/1.7 'Cairo',sans-serif;color:rgba(255,255,255,.8);text-align:center}
 .tocdr .tdbm .tdi{margin:2px 0}
+.v2msheet .mvn,.tocdr .tdemp{direction:rtl}
 
 /* ===== Pediatric Master Review: its own green palette and pictures over the Obstetrics app styles (src/v2.css comes from tools/port_v2.py) ===== */
 :root[data-pal="peds"][data-pal]{--bg:#F0F7F3;--sf:#fff;--sf2:#F6FBF8;--tx:#173D2A;--sub:#587262;--pri:#1E7A4C;--pon:#fff;--sel:#D5EEDF;--bd:#D3E6DA;--deep:#0E472C;--deep2:#1F6B45;--gold:#C9A24A}
@@ -2907,6 +2908,7 @@ html[data-lang="en"] /* ---------- reader tools,html[data-lang="en"] third pass 
 #reader .penfly.tsheet{direction:ltr;text-align:left}
 html[data-lang="en"] html[data-lang="en"] .v2ic.fwd{transform:none}
 html[data-lang="en"] html:not([data-lang="en"]) #v2homeW .hc3 .hgo .v2ic{transform:none}
+html[data-lang="en"] .v2msheet .mvn,html[data-lang="en"] .tocdr .tdemp{direction:ltr}
 html[data-lang="en"] #app [lang="ar"]:not(.page):not(.page *),html[data-lang="en"] .sheet [lang="ar"],html[data-lang="en"] .v2wel [dir="rtl"]{direction:ltr}
 html[data-lang="en"] .v2bk .v2ic{transform:scaleX(-1)}
 
@@ -11066,6 +11068,8 @@ try{history.replaceState({obs:0},'');history.pushState({obs:1},'');
 (function(){var h=document.createElement('button');h.type='button';h.id='rnHm';h.innerHTML=I('home')+'<span>الرئيسية</span>';h.onclick=function(){go('v2home')};var n=$('v2rnav');n.insertBefore(h,n.firstChild)})();
 
 /* Student Master Review platform (owner, 11 Nov 2026): the book's real progress, sent to the platform's Progress page when the book runs inside it */
+/* the name and picture came from Student Master Review (owner, 12 Nov 2026: one profile for the main app and the books) */
+window.__smrProfile=function(){try{header();var w=$('v2welT');if(w)w.innerHTML=greet();if(CURV==='v2home'||CURV==='v2profile'||CURV==='v2settings')R[CURV]()}catch(e){}};
 window.__smrStats=function(){var r={pages:{total:0,read:0,mastered:0},q:{total:QS.length,answered:0,correct:0,wrong:0},cards:{total:0,known:0},topics:{total:TOPICS.length,done:0},streak:0,ch:[]};
   TOPICS.forEach(function(t){var a=npg(t.id),b=tRead(t.id);r.pages.total+=a;r.pages.read+=b;r.pages.mastered+=tMast(t.id);if(a&&b>=a)r.topics.done++});
   deckIds.forEach(function(id){r.cards.total+=DECKS[id].cards.length;r.cards.known+=deckKnown(id)});
@@ -11367,6 +11371,7 @@ if(!st('v2z')){st('v2z','1');if(st('zoom')){try{localStorage.removeItem(BK.prefi
   window.addEventListener('message', function (e) {
     if (e.origin !== org || !e.data) return;
     if (e.data.smr === 'getStats') send();
+    if (e.data.smr === 'profile') profIn(e.data);
     if (e.data.smr === 'lang' && /^(ar|en)$/.test(e.data.lang)) {
       PL = e.data.lang; try { sessionStorage.setItem('smr-plang', PL); } catch (er) {}
       /* the book follows the platform language unless the student chose one inside the book; a change in the platform's settings applies to every book */
@@ -11375,6 +11380,20 @@ if(!st('v2z')){st('v2z','1');if(st('zoom')){try{localStorage.removeItem(BK.prefi
       label();
     }
   });
+  /* One name and one picture (owner, 12 Nov 2026: "the user name from the main app should be the same inside the books, and also the picture"):
+     the platform sends its profile to the book; a change made inside the book goes back to the platform, which passes it to the other books. */
+  var PFX = 'prr', pfIn = false;
+  function pfGet() { var n = '', p = ''; try { n = (localStorage.getItem(PFX + '-name') || localStorage.getItem(PFX + '-sname') || '').trim(); p = localStorage.getItem(PFX + '-photo') || ''; } catch (e) {} return { name: n, photo: p }; }
+  function pfUp(init) { try { var o = pfGet(); window.parent.postMessage({ smr: 'profile', init: !!init, name: o.name, photo: o.photo }, org); } catch (e) {} }
+  function profIn(d) { if (typeof d.name !== 'string' || typeof d.photo !== 'string') return; pfIn = true;
+    try { if (d.name) localStorage.setItem(PFX + '-name', d.name); else localStorage.removeItem(PFX + '-name');
+      if (/^data:image\//.test(d.photo)) localStorage.setItem(PFX + '-photo', d.photo); else localStorage.removeItem(PFX + '-photo'); } catch (e) {}
+    pfIn = false; try { if (typeof window.__smrProfile === 'function') window.__smrProfile(); } catch (e) {} }
+  (function () { var S = Storage.prototype, si = S.setItem, ri = S.removeItem, tm = 0;
+    function chk(k, o) { if (pfIn || o !== window.localStorage || (k !== PFX + '-name' && k !== PFX + '-photo')) return; clearTimeout(tm); tm = setTimeout(function () { pfUp(false); }, 600); }
+    S.setItem = function (k) { var r = si.apply(this, arguments); chk(k, this); return r; };
+    S.removeItem = function (k) { var r = ri.apply(this, arguments); chk(k, this); return r; }; })();
+  setTimeout(function () { pfUp(true); }, 60);
   setTimeout(send, 2500); setInterval(function () { if (!document.hidden) send(); }, 60000);
   document.addEventListener('click', sendSoon, true); document.addEventListener('visibilitychange', send); window.addEventListener('pagehide', send);
   var q = 0;
