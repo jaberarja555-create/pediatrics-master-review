@@ -1,7 +1,8 @@
 <!--TOP-->
-<aside class="v2side" id="v2side"><button type="button" class="sb" data-v="v2home"><img src="img/logo3.webp" alt=""><b>Pediatric<span>Master Review</span></b></button><nav id="v2sn"></nav><div class="art" aria-hidden="true"></div></aside>
+<script>(function(){try{var r=document.documentElement,m=localStorage.getItem("prr-mode")||"day";r.setAttribute("data-pal",localStorage.getItem("prr-pal")||"peds");r.setAttribute("data-theme",m==="night"||(m==="auto"&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light")}catch(e){}})()</script>
+<aside class="v2side" id="v2side"><button type="button" class="sb" data-v="v2home"><img src="img/v2_logo.webp" alt=""><b>Pediatric<span>Master Review</span></b></button><nav id="v2sn"></nav><div class="art" aria-hidden="true"></div></aside>
 <header class="v2hd" id="v2hd">
-  <button type="button" class="v2br" data-v="v2home"><img src="img/logo3.webp" alt=""><b>Pediatric<span>Master Review</span></b></button>
+  <button type="button" class="v2br" data-v="v2home"><img src="img/v2_logo.webp" alt=""><b>Pediatric<span>Master Review</span></b></button>
   <label class="v2sr" lang="ar"><svg class="v2ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="v2q" type="search" placeholder="ابحث في الكتاب…" autocomplete="off" aria-label="ابحث في الكتاب" dir="auto"></label>
   <button type="button" class="v2hb sbtn" id="v2sb" aria-label="بحث"><svg class="v2ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
   <button type="button" class="v2me" id="v2me" aria-label="الملف الشخصي"><span class="av" id="v2av"></span><b id="v2nm" dir="auto"></b></button>
@@ -17,9 +18,24 @@
 <section class="view v2v" id="v2settings" hidden><div class="v2w" id="v2settingsW"></div></section>
 <section class="view v2v" id="v2profile" hidden><div class="v2w narrow" id="v2profileW"></div></section>
 <section class="view v2v" id="v2notif" hidden><div class="v2w narrow" id="v2notifW"></div></section>
+<section class="view v2v" id="v2saved" hidden><div class="v2w narrow" id="v2savedW"></div></section>
+<section class="view v2v" id="v2lect" hidden><div class="v2w" id="v2lectW"></div></section>
+<section class="view v2v" id="v2sub" hidden><div class="v2w narrow" id="v2subW"></div></section>
+<section class="view v2v" id="v2pay" hidden><div class="v2w narrow" id="v2payW"></div></section>
+<section class="view v2v" id="v2dl" hidden><div class="v2w narrow" id="v2dlW"></div></section>
+<section class="view v2v" id="v2help" hidden><div class="v2w" id="v2helpW"></div></section>
 <section class="view v2v" id="v2contact" hidden><div class="v2w" id="v2contactW"></div></section>
+<section class="view v2v" id="v2about" hidden><div class="v2w" id="v2aboutW"></div></section>
+<section class="view v2v" id="v2poster" hidden><div class="v2w" id="v2posterW"></div></section>
+<section class="view v2v" id="v2slides" hidden><div class="v2w" id="v2slidesW"></div></section>
 <!--NAV-->
-<div class="v2wel" id="v2wel" lang="ar" role="dialog" aria-modal="true" aria-labelledby="v2welT"><div class="wi"><span class="lg"><i></i><i></i><img src="img/logo3.webp" alt=""></span>
+<div class="v2wel" id="v2wel" lang="ar" role="dialog" aria-modal="true" aria-labelledby="v2welT"><div class="wi"><span class="lg"><i></i><i></i><img src="img/v2_logo.webp" alt=""></span>
   <h2 id="v2welT"></h2><p dir="rtl">ابدأ رحلتك مع <bdi dir="ltr">Pediatric Master Review</bdi></p><button type="button" class="v2btn" id="v2welGo">ابدأ</button></div></div>
 <nav class="v2nav" id="v2nav" aria-label="Main"></nav>
-<div class="sheet" id="v2psheet" hidden><div class="in" role="dialog" aria-modal="true"><h3><span lang="ar" class="ar">تقدّمك</span> <button class="chip" id="v2psx" type="button">إغلاق</button></h3><div id="v2pbody"></div></div></div>
+<nav class="v2rnav" id="v2rnav" lang="ar" aria-label="القراءة" hidden>
+  <button type="button" id="rnSl"><svg class="v2ic" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M12 16v4M8 20h8M9 9h6M9 12h3"/></svg><span>المحاضرات</span></button>
+  <button type="button" id="rnVd"><svg class="v2ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></svg><span>الفيديو</span></button>
+  <button type="button" id="rnTp"><svg class="v2ic" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>المواضيع</span></button>
+</nav>
+<div class="sheet" id="v2tsheet" hidden><div class="in" role="dialog" aria-modal="true"><h3><span lang="ar" class="ar">مواضيع الفصل</span> <button class="chip" id="v2tsx" type="button">Close</button></h3><div id="v2tbody"></div></div></div>
+<div class="sheet" id="v2psheet" hidden><div class="in" role="dialog" aria-modal="true"><h3><span lang="ar" class="ar">تقدّمك</span> <button class="chip" id="v2psx" type="button">Close</button></h3><div id="v2pbody"></div></div></div>

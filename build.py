@@ -663,27 +663,71 @@ def rr_pages(book, groups, first_pno):
     return pages
 
 
-def v2_layer(page, app_js, decks, qbank):
-    """Lay src/v2.css, v2.html and v2.js over the old shell (as the Obstetrics app does): header and side menu after <div class="app">,
-    the new screens before the player, the bottom navigation after the old tabs, v2.js at the end of app.js's closure."""
-    v2html = (SRC / 'v2.html').read_text()
+def en_css(css):
+    """English app language (as in the Obstetrics build): every v2 rule that sets right-to-left direction, right alignment or a mirrored
+    icon gets a left-to-right twin under html[data-lang="en"]."""
+    out = []
+    for sel, body in re.findall(r'([^{}@]+)\{([^{}]*)\}', css):
+        d = []
+        if 'direction:rtl' in body: d.append('direction:ltr')
+        if 'text-align:right' in body: d.append('text-align:left')
+        if 'transform:scaleX(-1)' in body: d.append('transform:none')
+        if d and '%' not in sel:
+            out.append(','.join('html[data-lang="en"] ' + x.strip() for x in sel.split(',') if x.strip()) + '{' + ';'.join(d) + '}')
+    out.append('html[data-lang="en"] #app [lang="ar"]:not(.page):not(.page *),html[data-lang="en"] .sheet [lang="ar"],html[data-lang="en"] .v2wel [dir="rtl"]{direction:ltr}')
+    out.append('html[data-lang="en"] .v2bk .v2ic{transform:scaleX(-1)}')
+    return '\n/* English language: left-to-right twins (build.py en_css) */\n' + '\n'.join(out) + '\n'
+
+
+def v2_layer(page, app_js, decks, qbank, meta, html_pages, access):
+    """The new app (owner, 11 Nov 2026: "exactly like Obstetrics"): src/v2.css, v2.html and v2.js are the Obstetrics app code copied by
+    tools/port_v2.py; src/v2.book.js (start), v2.book.post.js (end) and v2.book.css adapt it to this book. Laid over the old shell:
+    header and side menu after <div class="app">, the new screens before the player, the bottom navigation after the old tabs, and the
+    whole v2 closure (with search, tools, language) at the end of app.js's closure."""
+    rd = lambda n: (SRC / n).read_text() if (SRC / n).exists() else ''
+    v2html = rd('v2.html')
     top, rest = v2html.split('<!--TOP-->')[1].split('<!--VIEWS-->')
     views, nav = rest.split('<!--NAV-->')
     def ins(s, anchor, new, before=True):
         assert s.count(anchor) == 1, anchor
         return s.replace(anchor, new + anchor if before else anchor + new)
-    page = ins(page, '{{CHAPTER_CSS}}', '\n' + (SRC / 'v2.css').read_text(), False)
+    css = rd('v2.css') + '\n' + rd('v2.book.css')
+    page = ins(page, '{{CHAPTER_CSS}}', '\n' + css + en_css(css), False)
     page = ins(page, '<div class="app" id="app">', top, False)
     page = ins(page, '<div class="player" id="player" hidden>', views)
-    j = page.index('</nav>', page.index('<nav class="tabs" id="tabs">')) + 6
+    j = page.index('</nav>', page.index('<nav class="tabs" id="tabs"')) + 6
     page = page[:j] + nav + page[j:]
+    bkset = json.loads((ROOT / 'tools' / 'v2book.json').read_text())
+    access.update({k: v for k, v in bkset.get('access', {}).items() if k != '_' and v != ''})   # shared subscription settings
     chimg = sorted(int(m.group(1)) for f in (CONTENT / 'img').glob('chcover_*.jpg') for m in [re.match(r'chcover_(\d+)\.jpg', f.name)] if m)
-    info = {'chimg': chimg, 'cards': sum(len(d['cards']) for d in decks.values()), 'qs': len(qbank['qs'])}
-    page = ins(page, '<script type="application/json" id="meta">', '<script>window.PED_INFO=' + json.dumps(info) + '</script>\n')
-    page = page.replace('<meta name="theme-color" content="#0e472c">', '<meta name="theme-color" content="#F0F7F3"><script>(function(){try{var r=document.documentElement,m=localStorage.getItem("prr-mode")||"day";r.setAttribute("data-pal","peds");r.setAttribute("data-theme",m==="night"||(m==="auto"&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light")}catch(e){}})()</script>')
+    free = set(access.get('free_topics') or [])
+    order = [t['id'] for t in meta['topics']]
+    tt = {t['id']: t['title'] for t in meta['topics']}
+    timg = {}
+    for p, h in zip(meta['pages'], html_pages):
+        t = p.get('topic')
+        if t and not p.get('ex') and t not in timg:
+            m = re.search(r'<img[^>]+src="(img/[^"]+)"', h)
+            if m: timg[t] = m.group(1)
+    tot = {'cards': sum(len(d['cards']) for d in decks.values()), 'qs': len(qbank['qs'])}
+    info = {'locked': {t: 1 for t in order if t not in free}, 'free_names': [tt[t] for t in order if t in free], 'order': order,
+            'tot': tot, 'timg': timg, 'chimg': chimg, 'bk': bkset['bk']}
+    cfg = {k: access.get(k) for k in ('price', 'trial_hours', 'whatsapp', 'whatsapp_local', 'bankak_account', 'bankak_name', 'contact_name')}
+    cfg.update({'bankak': access.get('bankak_account'), 'contact': access.get('contact_name'), 'plans': access.get('plans') or bkset.get('plans', []),
+                'url': access.get('supabase_url', ''), 'anon': access.get('supabase_anon', '')})
+    page = ins(page, '<script type="application/json" id="meta">',
+               '<script>window.BOOK_INFO=' + json.dumps(info, ensure_ascii=False) + ';window.BOOK_CFG=' + json.dumps(cfg, ensure_ascii=False) + '</script>\n')
+    pal = bkset['pal']
+    px = bkset['prefix']
+    page, n = re.subn(r'<meta name="theme-color" content="[^"]*">', lambda m: '<meta name="theme-color" content="' + pal[3] + '"><script>(function(){try{var r=document.documentElement,p=localStorage.getItem("' + px + '-pal")||"' + pal[0] + '",m=localStorage.getItem("' + px + '-mode")||"day";r.setAttribute("data-pal",p);r.setAttribute("data-theme",m==="night"||(m==="auto"&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light")}catch(e){}})()</script>', page, count=1)
+    assert n == 1
+    v2 = rd('v2.js').rstrip()
+    assert v2.startswith('/*') and v2.endswith('})();')
+    k = v2.index('(function(){') + len('(function(){')
+    v2 = v2[:k] + '\n' + rd('v2.book.js') + v2[k:-5] + '\n' + rd('v2.search.js') + '\n' + rd('v2.tools.js') + '\n' + rd('v2.lang.js') + '\n' + rd('v2.book.post.js') + '\n})();'
     s = app_js.rstrip()
     assert s.endswith('})();')
-    return page, s[:-5] + '\n' + (SRC / 'v2.js').read_text() + '\n})();\n'
+    return page, s[:-5] + '\n' + v2 + '\n})();\n'
 
 
 def build():
@@ -961,7 +1005,7 @@ def build():
     page = (SRC / 'shell.html').read_text()
     app_js = (SRC / 'app.js').read_text()
     if os.environ.get('PRR_V2'):   # the new app design (owner, 11 Nov 2026): preview builds only until the owner approves
-        page, app_js = v2_layer(page, app_js, decks, qbank)
+        page, app_js = v2_layer(page, app_js, decks, qbank, meta, html_pages, meta.get('access', {}))
     for k, v in {'CSS': css, 'CHAPTER_CSS': chapter_css_all, 'JS': app_js,
                  'PAGES': ''.join(html_pages), 'META': js_json(meta), 'DECKS': js_json(decks), 'QBANK': js_json(qbank),
                  'TITLE': f'{book["subject"]} Master Review', 'SUBJECT': book['subject'], 'EDITION': book['edition'],
@@ -980,7 +1024,9 @@ def build():
     # Authors' review copy for the claude.ai Artifact preview: a full HTML document with the whole book open (meta review = true).
     art, nrev = re.subn(r'"review":\s*false', '"review": true', page, count=1)
     assert nrev == 1 or os.environ.get('PRR_REVIEW'), 'review flag not found in meta'
-    if not os.environ.get('SRR_OUT'):
+    if os.environ.get('SRR_OUT'):   # preview builds get their own whole-book review copy beside index.html
+        (OUT / 'review.html').write_text(art)
+    else:
         (ROOT / 'artifact').mkdir(exist_ok=True)
         (ROOT / 'artifact' / 'index.html').write_text(art)
     print(f'Built docs/index.html: {len(meta_pages)} pages, {len(topics_meta)} topics, '

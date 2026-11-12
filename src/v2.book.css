@@ -1,0 +1,10 @@
+/* ===== Pediatric Master Review: its own green palette and pictures over the Obstetrics app styles (src/v2.css comes from tools/port_v2.py) ===== */
+:root[data-pal="peds"][data-pal]{--bg:#F0F7F3;--sf:#fff;--sf2:#F6FBF8;--tx:#173D2A;--sub:#587262;--pri:#1E7A4C;--pon:#fff;--sel:#D5EEDF;--bd:#D3E6DA;--deep:#0E472C;--deep2:#1F6B45;--gold:#C9A24A}
+:root[data-pal="peds"][data-theme="dark"]{--bg:#101C16;--sf:#18271F;--sf2:#1F3127;--tx:#EAF6EF;--sub:#A3C2B0;--pri:#7FD3A6;--pon:#0B2418;--sel:#27402F;--bd:#2C4536;--deep:#0A140F;--deep2:#18271F}
+#welc{display:none!important}
+.app:not(.rd)>.bar{display:none}
+#home{display:none!important}
+.v2side .art{background-position:center 40%}
+.hbook img{object-fit:cover}
+.chr .im,.chd .ph{background-color:var(--deep)}
+.hgr .l b{letter-spacing:.2px}

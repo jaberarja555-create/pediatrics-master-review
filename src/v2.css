@@ -82,7 +82,7 @@ button{font-family:inherit}
 .hacc div{flex:1;min-width:0;text-align:right}
 .hacc b{display:block;font:700 15px/1.3 'Cairo',sans-serif}.hacc small{display:block;font:500 12px/1.5 'Cairo',sans-serif;color:var(--sub)}
 .hcont{position:relative;overflow:hidden;min-height:164px;padding:16px;display:flex;flex-direction:column;align-items:flex-start;text-align:left;direction:ltr}
-.hcont .ph{position:absolute;inset:0 0 0 38%;background:url(img/part1.jpg) center 20%/cover}
+.hcont .ph{position:absolute;inset:0 0 0 38%;background:url(img/part3.jpg) center 20%/cover}
 .hcont .ph::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--sf) 0,transparent 42%)}
 .hcont>*:not(.ph){position:relative}
 .hcont h3{margin:0;font:800 16px/1.25 var(--ui);max-width:54%}
@@ -186,7 +186,7 @@ button{font-family:inherit}
 #v2psheet .in{background:var(--bg)}
 
 /* legacy study screens follow the palette until they are rebuilt */
-#cards,#qbank-v,#search,#lect{background:var(--bg)}
+#cards,#qbank,#search,#lect{background:var(--bg)}
 
 /* ---- tablet: icon rail · PC: sidebar with labels ---- */
 @media (min-width:760px){
@@ -228,7 +228,7 @@ button{font-family:inherit}
   .v2side{width:226px;padding:16px 14px}
   .v2side .sb b{display:block}
   .v2side nav button{justify-content:flex-start;padding:0 14px}.v2side nav button span{display:block}
-  .v2side .art{display:block;position:absolute;left:0;right:0;bottom:0;height:46%;background:url(img/part3.jpg) center 30%/cover;-webkit-mask:linear-gradient(180deg,transparent 0,#000 38%);mask:linear-gradient(180deg,transparent 0,#000 38%);opacity:.95}
+  .v2side .art{display:block;position:absolute;left:0;right:0;bottom:0;height:46%;background:url(img/part1.jpg) center 30%/cover;-webkit-mask:linear-gradient(180deg,transparent 0,#000 38%);mask:linear-gradient(180deg,transparent 0,#000 38%);opacity:.95}
   .v2side nav button{background-clip:padding-box}
 }
 @media (max-width:359px){.v2me b{display:none}.v2br b{font-size:11.5px}}
@@ -344,11 +344,11 @@ button{font-family:inherit}
 @keyframes wlburst{0%{transform:scale(1);opacity:.9}100%{transform:scale(3.2);opacity:0}}
 @media (prefers-reduced-motion:reduce){.v2wel *,.v2wel{animation:none!important;transition:opacity .2s!important}}
 /* the owner's full pictures (10 Nov 2026): consultation photo with its own soft left side; tall baby picture fills the PC sidebar */
-.hcont .ph{inset:0;background:url(img/part1.jpg) right 22%/cover}
+.hcont .ph{inset:0;background:url(img/part3.jpg) right 22%/cover}
 .hcont .ph::after{background:linear-gradient(90deg,var(--sf) 0,color-mix(in srgb,var(--sf) 82%,transparent) 30%,transparent 58%)}
 @media (min-width:1180px){
   .v2side{background:var(--deep2)}
-  .v2side .art{inset:0;height:auto;background:url(img/part3.jpg) center bottom/cover;-webkit-mask:none;mask:none;opacity:1}
+  .v2side .art{inset:0;height:auto;background:url(img/part1.jpg) center bottom/cover;-webkit-mask:none;mask:none;opacity:1}
   .v2side .art::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,color-mix(in srgb,var(--deep) 62%,transparent) 0,color-mix(in srgb,var(--deep) 30%,transparent) 38%,transparent 62%)}
   :root[data-theme="dark"] .v2side .art::after{background:linear-gradient(180deg,color-mix(in srgb,var(--deep) 88%,transparent) 0,color-mix(in srgb,var(--deep) 60%,transparent) 45%,color-mix(in srgb,var(--deep) 25%,transparent) 100%)}
   .v2side .sb,.v2side nav{position:relative;z-index:1}
@@ -364,10 +364,6 @@ button{font-family:inherit}
 .sld li::marker{color:#9272C6}
 .sld .sp{flex:none;width:36%;margin:16% 5% 7% 3%;border-radius:8px;background:#E7DCF7 center/cover;box-shadow:0 2px 8px rgba(57,43,85,.18)}
 .sld .sn{left:auto}
-/* the book cover follows the app colour (owner, 10 Nov 2026): recoloured copies of his navy cover */
-
-
-
 .brow{display:flex;gap:8px;flex-wrap:wrap}
 #reader .pnum{pointer-events:none}
 .frm details{border-top:1px solid var(--bd);padding-top:8px;display:grid;gap:8px}.frm details summary{font:600 13px 'Cairo',sans-serif;color:var(--pri);cursor:pointer}
@@ -382,9 +378,6 @@ button{font-family:inherit}
 @media (min-width:760px){.hlp{grid-template-columns:1fr 260px;align-items:start;gap:20px;padding:18px}.hlp img{max-width:260px}}
 /* the baby picture follows the app colour (owner, 10 Nov 2026) */
 @media (min-width:1180px){
-  
-  
-  
 }
 /* Practice fills tablets and PCs: flashcards and questions side by side (owner, 10 Nov 2026) */
 .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
@@ -395,6 +388,99 @@ button{font-family:inherit}
 .pch div{display:flex;gap:8px;margin-top:4px;direction:rtl}.pch .v2btn{flex:1;padding:0 8px}
 .v2wel{overflow:auto}@media (max-height:480px){.v2wel .lg{width:110px;margin-bottom:4px}.v2wel .v2btn{margin-top:8px}}
 @media (max-width:759px){.v2br{flex:1 1 0;overflow:hidden}.v2br b{overflow:hidden;text-overflow:ellipsis}.v2me{max-width:25vw;flex:0 1 auto;min-width:0}.v2br{flex:1 0 auto}}
+
+/* ===== Reader, new design (owner, 10 Nov 2026): the book page itself is unchanged; everything around it is the app ===== */
+.app.rd .v2nav{display:none}
+.app.rd>.bar{background:var(--sf);color:var(--tx);border-bottom:1px solid var(--bd);padding:calc(env(safe-area-inset-top,0px) + 6px) 8px 6px;min-height:54px;gap:4px;position:relative;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.app.rd>.bar h1,.app.rd>.bar .blogo,.app.rd>.bar #hmMode{display:none}
+.app.rd>.bar .ib{color:var(--tx);width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:none}.app.rd>.bar .ib:active{background:var(--sel)}
+.app.rd>.bar .ib svg{width:21px;height:21px}
+.bar .rt{flex:1;min-width:0;display:none;flex-direction:column;gap:1px;padding:0 4px}.app.rd>.bar .rt{display:flex}
+.bar .rt small{font:600 11px/1.2 var(--ui);color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .rt b{font:800 15px/1.25 var(--ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .rbm,.bar #prBtn,.bar .rprog{display:none}
+.app.rd>.bar .rbm{display:grid}.bar .rbm .v2ic{width:21px;height:21px}.bar .rbm.on{color:var(--pri)}.bar .rbm.on .v2ic{fill:currentColor}
+.app.rd>.bar #prBtn{display:flex;align-items:center;gap:5px;flex:none;height:32px;padding:0 10px;border-radius:16px;font:700 11.5px 'Cairo','Inter',sans-serif;background:var(--sel);color:var(--tx);white-space:nowrap}
+.app.rd>.bar #prBtn[hidden]{display:none}
+.app.rd>.bar #prBtn svg{width:15px;height:15px}
+.app.rd>.bar #prBtn.pr0{background:color-mix(in srgb,var(--bad) 14%,var(--sf));color:var(--bad)}
+.app.rd>.bar #prBtn.pr1{background:color-mix(in srgb,#3b82f6 16%,var(--sf));color:#2563eb}:root[data-theme="dark"] .app.rd>.bar #prBtn.pr1{color:#93c5fd}
+.app.rd>.bar #prBtn.pr2{background:color-mix(in srgb,var(--ok) 18%,var(--sf));color:var(--ok)}.app.rd>.bar #prBtn.pr2 svg{fill:currentColor}
+.app.rd>.bar .rprog{display:block;position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--sel)}
+.bar .rprog i{display:block;height:100%;background:var(--pri);border-radius:0 2px 2px 0;transition:width .25s ease}
+#reader{background:color-mix(in srgb,var(--sel) 55%,var(--bg))}
+:root[data-theme="dark"] #reader{background:color-mix(in srgb,var(--deep) 70%,var(--bg))}
+#reader #scroller{scroll-behavior:auto}
+#reader #pages{padding:14px 8px 40px;gap:14px}
+#reader .pw{border-radius:10px;box-shadow:0 1px 2px rgba(57,43,85,.08),0 10px 28px rgba(57,43,85,.16)}
+#reader .pnum{top:10px;left:50%;right:auto;transform:translateX(-50%);background:color-mix(in srgb,var(--sf) 92%,transparent);color:var(--tx);border:1px solid var(--bd);box-shadow:var(--sh);padding:4px 12px;font:700 12px var(--ui);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:opacity .2s}
+/* tools (owner, 11 Nov 2026): a round pen button at the bottom right; pressing it opens the tools in rings around it */
+#reader .rbar{position:absolute;right:34px;bottom:34px;left:auto;top:auto;width:0;height:0;padding:0;margin:0;border:0;border-radius:0;background:none;box-shadow:none;overflow:visible;display:block;
+  transform:none!important;opacity:1!important;pointer-events:none;z-index:7}
+#reader .rbar::before{content:'';position:absolute;left:-250px;top:-250px;width:500px;height:500px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,color-mix(in srgb,var(--pri) 30%,transparent) 0,color-mix(in srgb,var(--pri) 16%,transparent) 45%,transparent 70%);transform:scale(.1);opacity:0;transition:transform .45s cubic-bezier(.2,.9,.3,1.2),opacity .3s ease}
+#reader .rbar.fan::before{transform:scale(1);opacity:1}
+#reader .rbar>button,#reader .rbar>.urw{position:absolute;left:-27px;top:-27px;width:54px;height:54px;min-height:0;flex:none;margin:0;padding:0;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
+  background:var(--sf);color:var(--tx);border:1px solid var(--bd);box-shadow:0 4px 14px rgba(57,43,85,.24);font:700 9px/1.1 'Cairo','Inter',sans-serif;white-space:nowrap;
+  transform:translate(0,0) scale(.2) rotate(-90deg);opacity:0;pointer-events:none;transition:transform .42s cubic-bezier(.2,.9,.3,1.25),opacity .25s ease,background .18s ease;transition-delay:var(--d,0s)}
+#reader .rbar.fan>button,#reader .rbar.fan>.urw{transform:translate(var(--x,0),var(--y,0)) scale(1) rotate(0);opacity:1;pointer-events:auto}
+#reader .rbar>button svg{width:21px;height:21px;stroke-width:1.9;color:var(--pri)}
+#reader .rbar>button:active{background:var(--sel)}
+#reader .rbar>button.on{background:var(--pri);color:var(--pon);border-color:var(--pri)}#reader .rbar>button.on svg{color:var(--pon)}
+#reader .rbar #rbHide{display:none}
+#reader .rbar>.urw{width:auto;height:44px;left:-46px;top:-22px;flex-direction:row;gap:0;padding:0 4px;border-radius:999px;margin:0}
+#reader .rbar .urw button{width:42px;height:42px;min-height:0;flex:none;border-radius:50%;font-size:0;gap:0;color:var(--pri)}#reader .rbar .urw button svg{width:20px;height:20px}#reader .rbar .urw button:disabled{opacity:.3}
+#reader #rbShow{position:absolute;right:12px;bottom:12px;left:auto;top:auto;z-index:8;width:44px;height:44px;border-radius:50%;display:grid!important;place-items:center;background:var(--pri);color:var(--pon)!important;border:0;box-shadow:0 4px 12px rgba(57,43,85,.28);transition:transform .3s cubic-bezier(.2,.9,.3,1.3)}
+#reader #rbShow.open{transform:rotate(135deg) scale(1.08)}#reader #rbShow:active{transform:scale(.9)}#reader #rbShow .v2ic{width:21px;height:21px}
+@media (max-width:759px){#reader .inkbar,#reader .hlbar{bottom:64px!important}}
+/* reading bar at the bottom: slides, video, topics, progress of the page */
+.v2rnav{display:none}
+.app.rd .v2rnav:not([hidden]){flex:none;display:grid;grid-template-columns:repeat(4,1fr);direction:rtl;gap:2px;background:var(--sf);border-top:1px solid var(--bd);padding:5px 6px calc(env(safe-area-inset-bottom,0px) + 5px)}
+.app.imm .v2rnav{display:none!important}
+.v2rnav button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:48px;padding:5px 2px;border-radius:12px;font:700 11.5px 'Cairo','Inter',sans-serif;color:var(--tx);white-space:nowrap}
+.v2rnav button .v2ic,.v2rnav button svg{width:22px;height:22px;color:var(--pri)}.v2rnav button:active{background:var(--sel)}
+.v2rnav #prBtn{background:none}.v2rnav #prBtn svg{color:currentColor;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.v2rnav #prBtn.pr0{color:var(--bad)}.v2rnav #prBtn.pr1{color:#2563eb}:root[data-theme="dark"] .v2rnav #prBtn.pr1{color:#93c5fd}.v2rnav #prBtn.pr2{color:var(--ok)}.v2rnav #prBtn.pr2 svg{fill:currentColor}
+.v2rnav #prBtn[hidden]{display:none}
+.tpr.cur{border-color:var(--pri);box-shadow:0 0 0 1.5px var(--pri) inset,var(--sh)}button.tpr{width:100%;color:var(--tx)}
+.vcd.foc{border-color:var(--pri);box-shadow:0 0 0 2px var(--pri),var(--sh)}
+/* the side navigation can be hidden and shown */
+.sbt{display:none!important}
+@media (min-width:760px){.sbt{display:grid!important}.app.nosb{padding-left:0}.app.nosb .v2side{display:none}.app.rd .v2rnav:not([hidden]){grid-template-columns:repeat(4,minmax(0,180px));justify-content:center}}
+/* panels and small bars in the app look */
+#reader .penfly,.bmmenu{background:var(--sf);color:var(--tx);border:1px solid var(--bd);border-radius:18px;box-shadow:0 4px 10px rgba(57,43,85,.10),0 18px 40px rgba(57,43,85,.24);font-family:'Cairo','Inter',sans-serif}
+#reader .penfly b,.bmmenu b{color:var(--pri)}
+#reader .penfly small{color:var(--sub)}
+#reader .penfly .ptog{background:var(--sel);color:var(--tx);font-family:'Cairo','Inter',sans-serif}#reader .penfly .ptog.on{background:var(--pri);color:var(--pon)}
+#reader .penfly .dot,#reader .hlbar .dot{border-color:var(--bd)}#reader .penfly .dot.cur,#reader .hlbar .dot.cur{border-color:var(--sf);box-shadow:0 0 0 2.5px var(--pri)}
+#reader .penfly button:not(.dot):not(.ptog){color:var(--tx)}
+.bmmenu button{color:var(--tx);font-family:'Cairo','Inter',sans-serif}.bmmenu button small{color:var(--sub)}.bmmenu button.cur{background:var(--sel);box-shadow:inset 0 0 0 1.5px var(--pri);color:var(--tx)}.bmmenu button:hover{background:var(--sel)}
+#reader .inkbar,#reader .hlbar{background:color-mix(in srgb,var(--sf) 94%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--bd);box-shadow:0 2px 6px rgba(57,43,85,.10),0 14px 34px rgba(57,43,85,.22);bottom:14px}
+#reader .inkbar button{color:var(--sub)}#reader .inkbar button.cur{background:var(--pri);color:var(--pon)}#reader .inkbar .sep{background:var(--bd)}#reader .inkbar .tbl{color:var(--pri)}
+#reader .hlbar{color:var(--tx)}#reader .hlbar .nb{background:var(--sel);color:var(--tx)}#reader .hlbar button{color:var(--tx)}
+@media (prefers-reduced-motion:reduce){#reader .rbar,.bar .rprog i{transition:none}}
+/* reader bar: a clear Home button; the page count sits in the title line; the read mark is a round chip on phones */
+.bar .rhome{display:none}.app.rd>.bar .rhome{display:grid;background:var(--sel);color:var(--pri)}.bar .rhome .v2ic{width:20px;height:20px}
+#reader .pnum{display:none}
+@media (max-width:759px){.app.rd>.bar .ib{width:36px;height:36px}}
+#reader .penfly .hst button,#reader .penfly .upc button{color:var(--tx);border-color:var(--bd)}
+#reader .penfly .hst button.cur,#reader .penfly .upc button.cur{border-color:var(--pri);background:var(--sel)}
+#reader .penfly .isz button.cur{background:var(--pri);color:var(--pon)}#reader .penfly .upk button:active{background:var(--sel)}
+#reader .penfly [class*="sz"] button.cur,#reader .penfly .psz .cur{background:var(--sel);box-shadow:inset 0 0 0 1.5px var(--pri);color:var(--tx)}
+
+/* About the book */
+.abh{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;padding:16px 18px;direction:rtl;text-align:center;background:linear-gradient(120deg,var(--sel),var(--sf))}
+.abh img{height:190px;border-radius:8px;box-shadow:0 10px 26px rgba(40,25,70,.28);transform:rotate(-3deg)}
+.abh h3{margin:0;font:800 clamp(19px,3.4vw,34px)/1.35 'Cairo',sans-serif;color:var(--tx)}
+.abh .abl{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px 0;color:var(--pri)}.abh .abl::before,.abh .abl::after{content:'';width:56px;height:1.5px;background:var(--pri);opacity:.5}.abh .abl .v2ic{width:24px;height:24px}
+.abh p{margin:0;font:500 clamp(13px,1.7vw,17px)/1.6 'Cairo',sans-serif;color:var(--sub)}
+.abg{display:grid;grid-template-columns:1fr 1fr;gap:10px;direction:rtl}
+.abt{padding:0;overflow:hidden;display:flex;flex-direction:column;color:var(--tx);transition:transform .15s ease,box-shadow .15s ease}.abt:hover{transform:translateY(-2px)}.abt:active{transform:scale(.98)}
+.abt .im{display:block;aspect-ratio:3/2;background:var(--sel) center/cover}
+.abt .lb{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 12px;font:700 14.5px 'Cairo',sans-serif}.abt .lb .v2ic{width:18px;height:18px;color:var(--sub);transform:scaleX(-1)}
+.abp{padding:0;overflow:hidden;max-width:760px;margin:0 auto;width:100%}.abp img{display:block;width:100%;height:auto}
+@media (max-width:520px){.abh{grid-template-columns:1fr;justify-items:center;gap:10px}.abh img{height:170px}}
+@media (min-width:760px){.abg{grid-template-columns:repeat(4,1fr);gap:14px}.abh img{height:250px}.abt .lb{font-size:16px;padding:12px 14px}}
 
 /* levels of flashcards and questions */
 .fclv{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}
@@ -412,6 +498,32 @@ button{font-family:inherit}
   #v2homeW .hgrid>div>.hq{flex:1 1 auto;display:flex;flex-direction:column}#v2homeW .hq button{flex:1 1 auto}
 }
 
+/* Help */
+.hcd{display:flex;flex-direction:column;align-items:center;gap:6px;padding:22px 18px;text-align:center;background:linear-gradient(160deg,var(--sel),var(--sf))}
+.hcd img{width:84px;height:84px;border-radius:50%;background:#fff;box-shadow:0 6px 18px rgba(57,43,85,.18)}
+.hcd h3{margin:6px 0 0;font:800 22px 'Cairo',sans-serif;color:var(--tx)}.hcd p{margin:0;max-width:440px;font:500 14px/1.7 'Cairo',sans-serif;color:var(--sub)}
+.hcd .hph{margin-top:6px;padding:6px 20px;border-radius:999px;background:var(--sf);border:1.5px solid var(--bd);color:var(--pri);font:800 21px var(--ui);letter-spacing:1px;text-decoration:none}
+.hcg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;direction:rtl}
+.hco{display:flex;flex-direction:column;align-items:center;gap:4px;padding:18px 8px;text-align:center;text-decoration:none;color:var(--tx);transition:transform .15s ease}.hco:active{transform:scale(.96)}
+.hco span{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;color:#fff;margin-bottom:4px}.hco span .v2ic{width:30px;height:30px}
+.hco.wa span{background:#25a55a}.hco.tg span{background:#2b9fd9}.hco.cl span{background:var(--pri)}
+.hco b{font:700 16px 'Cairo',sans-serif}.hco small{font:500 12px 'Cairo',sans-serif;color:var(--sub)}
+@media (max-width:420px){.hco small{display:none}}
+
+@keyframes v2ring{0%,100%{transform:rotate(0)}15%{transform:rotate(16deg)}30%{transform:rotate(-14deg)}45%{transform:rotate(10deg)}60%{transform:rotate(-7deg)}80%{transform:rotate(3deg)}}
+.ring>.v2ic,.ring>svg{animation:v2ring .9s ease;transform-origin:50% 10%}
+
+.ugh{margin:10px 2px 0;font:800 18px 'Cairo',sans-serif;direction:rtl;text-align:right;color:var(--tx);scroll-margin-top:8px}#v2helpW .abp{scroll-margin-top:8px}
+
+.hpp{display:grid;grid-template-columns:1fr;gap:12px;direction:rtl}@media (min-width:760px){.hpp{grid-template-columns:1fr 1fr}}
+.hpc{display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 14px;text-align:center}
+.hpc h3{margin:0;font:800 20px 'Cairo',sans-serif;color:var(--tx)}
+.hpc .hph{padding:4px 18px;border-radius:999px;background:var(--sel);color:var(--pri);font:800 19px var(--ui);letter-spacing:1px;text-decoration:none}
+.hpc .hcg{width:100%;margin-top:6px}.hpc .hco{padding:6px 4px}.hpc .hco span{width:52px;height:52px}
+.hcd{padding:16px 18px}.hcd img{width:64px;height:64px}
+/* first paint: nothing of the old app shows before the new one is ready (owner, 11 Nov 2026) */
+#home,#tabs{display:none!important}
+.v2wel{background-color:#F5F1FC}
 /* Resources on tablets and PCs: seven large tiles that fill the screen (owner, 11 Nov 2026: no empty half) */
 @media (min-width:760px){
   #v2resourcesW{min-height:100%;box-sizing:border-box}
@@ -433,6 +545,30 @@ button{font-family:inherit}
   html[data-lang="ar"] .v2me b{font-size:15.5px}
 }
 
+/* reading card (owner, 11 Nov 2026): the chapter's picture fills the right side and a small preview of the topic's figure sits in the corner */
+.hcont .ph{inset:0 0 0 40%;background-position:center;background-size:cover}
+.hcont .ph::after{background:linear-gradient(90deg,var(--sf) 0,color-mix(in srgb,var(--sf) 70%,transparent) 22%,transparent 55%)}
+.hcont .pv{position:absolute;right:10px;bottom:10px;width:28%;max-width:150px;aspect-ratio:4/3;border-radius:12px;background:#fff center/cover;border:3px solid var(--sf);box-shadow:0 6px 16px rgba(40,25,70,.3)}
+@media (min-width:760px){
+  .hcont{padding:22px}.hcont em{font-size:14px}.hcont h3{font-size:24px;line-height:1.2;max-width:46%}.hcont p{font-size:16px;margin-top:8px;max-width:46%}
+  .hcont .pg{width:42%}.hcont .pg b{font-size:17px}.hcont .v2btn{height:48px;min-width:190px;font-size:16px;margin-top:14px}
+  .hcont .ph{inset:0 0 0 44%}.hcont .pv{right:16px;bottom:16px;max-width:190px;width:26%}
+}
+@media (max-width:759px){@container (max-height:150px){.hcont .pv{display:none}}}
+
+/* search */
+.ssc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;direction:rtl;margin:2px 0 10px}
+.ssc .chip{border:1.5px solid var(--bd);background:var(--sf);color:var(--tx);border-radius:999px;padding:6px 13px;font:700 13px 'Cairo',var(--ui)}.ssc .chip.on{background:var(--pri);color:var(--pon);border-color:var(--pri)}
+.ssc select{flex:1 1 150px;min-width:0;height:36px;border-radius:999px;border:1.5px solid var(--bd);background:var(--sf);color:var(--tx);padding:0 12px;font:600 13px var(--ui);direction:ltr}
+.shd{margin:14px 2px 6px;font:800 14px 'Cairo',var(--ui);color:var(--tx);direction:rtl;text-align:right}.shd small{font:700 11.5px var(--ui);color:var(--pri);background:var(--sel);border-radius:9px;padding:1px 8px;margin:0 6px}
+.sgr{display:grid;grid-template-columns:1fr;gap:8px}@media (min-width:760px){.sgr{grid-template-columns:1fr 1fr 1fr}}
+.sres{display:grid;grid-template-columns:36px 1fr auto;gap:10px;align-items:center;padding:9px 12px;text-align:left;color:var(--tx);width:100%}
+.sres .ii{width:36px;height:36px;border-radius:10px;background:var(--sel);color:var(--pri);display:grid;place-items:center}.sres .ii .v2ic{width:19px;height:19px}
+.sres b{display:block;font:700 14px/1.3 'Cairo',var(--ui)}.sres small{display:block;font:500 11.5px var(--ui);color:var(--sub)}.sres>.v2ic{width:16px;height:16px;color:var(--sub)}
+#results .res{background:var(--sf);border-color:var(--bd)}#results .ri{border-color:var(--bd);color:var(--tx)}#results .ri .pn{color:var(--pri)}#results .ri span{color:var(--sub)}#results .ri b{color:var(--tx)}
+#results mark{background:color-mix(in srgb,var(--pri) 28%,transparent);color:inherit;border-radius:3px;padding:0 1px}
+#results .ri.sc .an{display:none;margin-top:4px;color:var(--tx);font-weight:600}#results .ri.sc.open .an{display:block}
+
 /* Home: streak and overall progress as two tidy tiles; progress sheet (owner, 11 Nov 2026) */
 .hsm2{display:grid;grid-template-columns:1fr 1fr;gap:8px;direction:rtl}
 .hsm2 button{display:flex;align-items:center;gap:10px;padding:8px 12px;color:var(--tx);text-align:right;min-width:0}
@@ -448,19 +584,19 @@ button{font-family:inherit}
 .pch em{font:800 13px var(--ui);font-style:normal;color:var(--pri)}.pch>div>:last-child{grid-column:1/-1}
 .pch .v2bar{height:6px;align-self:center}
 /* question bank and flashcards in the app's colours (owner, 11 Nov 2026: the gold look was the old book's) */
-#qbank-v,#cards{--gold:var(--pri)}
-:is(#qbank-v,#cards) :is(.qbw .seg button,.qbpool button,.qbnq button,.fctop button,.qbch button,.fcchs button,.qbo button,.qbgrid button,.qbic,.qbtb .qt,.chip){background:var(--sf);border-color:var(--bd);color:var(--tx)}
-:is(#qbank-v,#cards) :is(.qbst>div,.qbf,.qbq,.qbe,.qbres,.qbtop,.qbprev button){background:var(--sf);border-color:var(--bd);color:var(--tx)}
-#qbank-v .qbw .seg button.on,#qbank-v .qbpool button.on,#qbank-v .qbnq button.on,#cards .fctop button.on,#cards .chip.on{border-color:var(--pri)!important;background:var(--sel)!important;color:var(--tx)!important}
-#qbank-v .qbpool button.on span,#qbank-v .qbnq button.on,#qbank-v .qbpt,#qbank-v .qbpt.on small,#qbank-v .qblink,:is(#qbank-v,#cards) .fclab{color:var(--pri)!important}
-#qbank-v .qbl .qno{background:var(--pri);color:var(--pon)}
-#qbank-v .qbgo,#qbank-v #qbSub{background:var(--pri)!important;color:var(--pon)!important;border:0;box-shadow:0 6px 16px color-mix(in srgb,var(--pri) 35%,transparent)}
-#qbank-v .qbgob{background:linear-gradient(to top,var(--bg) 70%,transparent)}
-#qbank-v .qbn input{accent-color:var(--pri)}#qbank-v .qbic.on{color:var(--pri);border-color:var(--pri)}#qbank-v .qbgrid .cur{outline-color:var(--pri)}
-#qbank-v .qbo .sel{border-color:var(--pri);box-shadow:inset 0 0 0 1px var(--pri)}#qbank-v .qbo .sel .l{background:var(--pri);color:var(--pon);border-color:var(--pri)}
-#qbank-v .qbo .l{background:var(--bg);border-color:var(--bd);color:var(--tx)}
-#qbank-v .qbq{border-left-color:var(--pri)}#qbank-v .qbq .k{color:var(--pri)}#qbank-v .qbq p{color:var(--tx)}
-#qbank-v .qbst span,#qbank-v .qbpool span,:is(#qbank-v,#cards) small,#cards .fcm,#qbank-v .qbl em{color:var(--sub)}
+#qbank,#cards{--gold:var(--pri)}
+:is(#qbank,#cards) :is(.qbw .seg button,.qbpool button,.qbnq button,.fctop button,.qbch button,.fcchs button,.qbo button,.qbgrid button,.qbic,.qbtb .qt,.chip){background:var(--sf);border-color:var(--bd);color:var(--tx)}
+:is(#qbank,#cards) :is(.qbst>div,.qbf,.qbq,.qbe,.qbres,.qbtop,.qbprev button){background:var(--sf);border-color:var(--bd);color:var(--tx)}
+#qbank .qbw .seg button.on,#qbank .qbpool button.on,#qbank .qbnq button.on,#cards .fctop button.on,#cards .chip.on{border-color:var(--pri)!important;background:var(--sel)!important;color:var(--tx)!important}
+#qbank .qbpool button.on span,#qbank .qbnq button.on,#qbank .qbpt,#qbank .qbpt.on small,#qbank .qblink,:is(#qbank,#cards) .fclab{color:var(--pri)!important}
+#qbank .qbl .qno{background:var(--pri);color:var(--pon)}
+#qbank .qbgo,#qbank #qbSub{background:var(--pri)!important;color:var(--pon)!important;border:0;box-shadow:0 6px 16px color-mix(in srgb,var(--pri) 35%,transparent)}
+#qbank .qbgob{background:linear-gradient(to top,var(--bg) 70%,transparent)}
+#qbank .qbn input{accent-color:var(--pri)}#qbank .qbic.on{color:var(--pri);border-color:var(--pri)}#qbank .qbgrid .cur{outline-color:var(--pri)}
+#qbank .qbo .sel{border-color:var(--pri);box-shadow:inset 0 0 0 1px var(--pri)}#qbank .qbo .sel .l{background:var(--pri);color:var(--pon);border-color:var(--pri)}
+#qbank .qbo .l{background:var(--bg);border-color:var(--bd);color:var(--tx)}
+#qbank .qbq{border-left-color:var(--pri)}#qbank .qbq .k{color:var(--pri)}#qbank .qbq p{color:var(--tx)}
+#qbank .qbst span,#qbank .qbpool span,:is(#qbank,#cards) small,#cards .fcm,#qbank .qbl em{color:var(--sub)}
 #cards .face.q{background:linear-gradient(150deg,var(--sf),var(--sel))!important;border:1px solid var(--bd)!important;border-top:6px solid var(--pri)!important;color:var(--tx)!important;box-shadow:0 10px 26px rgba(57,43,85,.14)!important}
 #cards .face.q .k,#cards .face.a .k{color:var(--pri)!important}#cards .face.q .tx{background:none!important;color:var(--tx)!important;-webkit-text-fill-color:currentColor}
 #cards .face.a{background:var(--sf)!important;color:var(--tx)!important;border:1px solid var(--bd)!important;border-left:6px solid var(--pri)!important;box-shadow:0 10px 26px rgba(57,43,85,.14)!important}
@@ -470,6 +606,76 @@ button{font-family:inherit}
 #v2homeW .hacc{order:9}
 #v2homeW .hbook{order:1}#v2homeW .hcont{order:2}
 #v2homeW .hst{order:1}#v2homeW .hsm2{order:2}#v2homeW .hq{order:3}
+/* ---------- reader tools, third pass (owner, 11 Nov 2026): tool sheets, calm selection, free notes ---------- */
+/* compact tool card (owner, 11 Nov 2026 evening: the full-width sheet was "big and ugly"): a small card above the tools button, no labels, no long text */
+#reader .penfly.tsheet{position:absolute;left:auto!important;right:12px!important;top:auto!important;bottom:78px!important;width:276px;max-width:calc(100% - 24px);max-height:min(64vh,420px);overflow:auto;box-sizing:border-box;padding:10px 12px 12px;border-radius:20px;direction:rtl;text-align:right;
+  background:color-mix(in srgb,var(--sf) 96%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid var(--bd);box-shadow:0 2px 6px rgba(57,43,85,.10),0 14px 36px rgba(57,43,85,.24);animation:tsUp .18s cubic-bezier(.2,.8,.2,1);transform-origin:100% 100%}
+@keyframes tsUp{from{transform:translateY(10px) scale(.96);opacity:0}to{transform:none;opacity:1}}
+#reader .penfly.tsheet[data-k="z"]{right:auto!important;left:12px!important;bottom:66px!important;transform-origin:0 100%}
+@media (prefers-reduced-motion:reduce){#reader .penfly.tsheet{animation:none}}
+.tsheet .tfh{display:flex;align-items:center;gap:8px;margin:0 0 10px}
+.tsheet .tfi{flex:none;width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:var(--sel);color:var(--pri)}.tsheet .tfi svg{width:17px;height:17px}
+.tsheet .tft{flex:1;font:800 14px 'Cairo','Inter',sans-serif;color:var(--tx)}
+.tsheet .tfx{display:none}
+#reader .penfly.tsheet .ptog.tsw{flex:none;width:44px;min-height:0;height:26px;margin:0;padding:0;border:0;border-radius:13px;background:var(--bd);position:relative;transition:background .18s}
+#reader .penfly.tsheet .ptog.tsw i{position:absolute;top:3px;right:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .18s}
+#reader .penfly.tsheet .ptog.tsw.on{background:var(--pri)}#reader .penfly.tsheet .ptog.tsw.on i{transform:translateX(-18px)}
+#reader .penfly.tsheet b.tfl{display:none}#reader .penfly.tsheet[data-k="u"] b.tfl{display:block;margin:8px 0 6px;font:700 11.5px 'Cairo','Inter',sans-serif;color:var(--sub)}
+#reader .penfly.tsheet .pdots{display:flex;flex-wrap:nowrap;gap:0;justify-content:space-between;margin:0 0 10px}
+#reader .penfly.tsheet .pdots .dot{flex:none;width:26px;height:26px;border:0;box-shadow:inset 0 0 0 1px rgba(0,0,0,.10)}
+#reader .penfly.tsheet .pdots .dot.cur{box-shadow:0 0 0 2px var(--sf),0 0 0 4px var(--pri);transform:none}
+#reader .penfly.tsheet .isz,#reader .penfly.tsheet .hst,#reader .penfly.tsheet .upk,#reader .penfly.tsheet .upc{display:flex;gap:2px;margin:0 0 2px;padding:3px;border-radius:12px;background:var(--bg)}
+#reader .penfly.tsheet .isz button{flex:1;min-height:0;height:32px;justify-content:center;gap:0;border:0;border-radius:9px;background:transparent;color:var(--sub);font-size:0;box-shadow:none}
+#reader .penfly.tsheet .isz.tsz button b{color:var(--tx)}
+#reader .penfly.tsheet .hst button,#reader .penfly.tsheet .upk button,#reader .penfly.tsheet .upc button{flex:1;min-height:0;padding:6px 2px;border:0;border-radius:9px;background:transparent;color:var(--sub);font:700 11px 'Cairo','Inter',sans-serif;box-shadow:none}
+#reader .penfly.tsheet .isz button.cur,#reader .penfly.tsheet .hst button.cur,#reader .penfly.tsheet .upc button.cur{background:var(--sf);color:var(--pri);box-shadow:0 1px 3px rgba(57,43,85,.18),inset 0 0 0 1.5px var(--pri)}
+#reader .penfly.tsheet .ptog:not(.tsw){margin-top:8px!important;min-height:0;height:34px;padding:0 10px;border-radius:10px;background:var(--bg);color:var(--tx);font:700 12px 'Cairo','Inter',sans-serif;border:0}
+#reader .penfly.tsheet .ptog:not(.tsw).on{background:var(--sel);color:var(--pri);box-shadow:inset 0 0 0 1.5px var(--pri)}
+#reader .penfly.tsheet .zrow{gap:6px;margin:8px 0 0!important}#reader .penfly.tsheet .zrow .ptog{margin-top:0!important}
+#reader .penfly.tsheet [data-iu],#reader .penfly.tsheet [data-ir]{display:none}
+#reader .penfly.tsheet .zb{background:var(--sel);color:var(--pri);width:40px;height:34px;border-radius:10px;font-size:18px}#reader .penfly.tsheet .zrow span{color:var(--tx);font-size:14px}
+#reader .penfly.tsheet .propt{background:var(--bg);color:var(--tx);border-radius:10px;min-height:38px;font:700 12.5px 'Cairo','Inter',sans-serif}
+#reader .penfly.tsheet small{display:none}
+/* tools ring: each tool in a tinted disc */
+#reader .rbar.fan>button svg,#reader .rbar>button svg{stroke-width:1.8}
+#reader .rbar>button.on{background:var(--pri)!important;color:var(--pon)!important}
+/* options after selecting text */
+#reader .hlbar.selopt{flex-direction:column;align-items:stretch;gap:10px;padding:12px 14px;border-radius:22px;width:min(360px,calc(100% - 20px));box-sizing:border-box;bottom:74px!important;background:var(--sf);border:1px solid var(--bd);box-shadow:0 4px 10px rgba(57,43,85,.12),0 18px 44px rgba(57,43,85,.28);animation:tsUp .2s ease}
+#reader .hlbar.selopt[hidden]{display:none}
+.selopt .soc{display:flex;align-items:center;justify-content:space-between;gap:6px}.selopt .soc .dot{width:36px;height:36px;border:0!important;box-shadow:inset 0 0 0 1px rgba(0,0,0,.10);flex:none}
+.selopt .soc .dot.cur{box-shadow:0 0 0 2.5px var(--sf),0 0 0 5px var(--pri)!important}.selopt .soc .uwp{display:flex;gap:4px}
+.selopt .sob{display:flex;gap:8px}.selopt .sob .txt{flex:1;height:44px;justify-content:center;gap:7px;border-radius:14px;background:var(--sel)!important;color:var(--tx)!important;font:700 14px 'Cairo','Inter',sans-serif;padding:0 10px}
+.selopt .sob .txt svg{width:19px;height:19px;color:var(--pri);flex:none}.selopt .sob .sox{flex:0 0 44px;color:var(--sub)!important;font:700 14px/1 sans-serif}
+.selopt .soc .txt{height:34px;min-width:34px;justify-content:center;border-radius:10px;background:var(--bg);color:var(--tx)!important}.selopt .soc .txt.cur{background:var(--pri)!important;color:var(--pon)!important}
+@media (min-width:760px){#reader .hlbar.selopt{bottom:24px!important}}
+/* the tools button: only the drawing tools, larger discs with their names */
+#reader #hlPen,#reader #ulBtn,#reader #rNotes{display:none!important}
+#reader #rbShow{width:54px;height:54px;right:14px;bottom:14px}#reader #rbShow .v2ic{width:25px;height:25px}
+#reader .rbar>button{width:64px;height:64px;left:-32px;top:-32px;font:700 11.5px 'Cairo','Inter',sans-serif;color:var(--tx);box-shadow:0 3px 8px rgba(57,43,85,.12),0 10px 26px rgba(57,43,85,.2)}
+#reader .rbar>button svg{width:25px;height:25px}
+/* zoom and page number: their own small controls on the page */
+#reader .v2zoom{position:absolute;left:62px;bottom:14px;z-index:6;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;padding:0;font-size:0;background:color-mix(in srgb,var(--sf) 92%,transparent);color:var(--pri);border:1px solid var(--bd);box-shadow:0 3px 10px rgba(57,43,85,.2)}
+#reader .v2zoom svg{width:21px;height:21px}#reader .v2zoom span{display:none}
+#reader #v2full{width:42px;height:42px;bottom:14px}
+#reader .pnum{display:block;top:auto;bottom:20px;left:50%;right:auto;transform:translateX(-50%);z-index:5;padding:6px 14px;border-radius:999px;font:800 12.5px 'Inter',sans-serif;font-variant-numeric:tabular-nums;background:color-mix(in srgb,var(--sf) 94%,transparent);color:var(--tx);border:1px solid var(--bd);box-shadow:0 3px 10px rgba(57,43,85,.18);opacity:1}
+/* free notes */
+.pw svg.ink g.fn{pointer-events:auto;cursor:pointer}
+#fnb{position:fixed;z-index:80;left:50%;transform:translateX(-50%);width:min(440px,calc(100vw - 24px));padding:14px;border-radius:22px;background:var(--sf);border:1px solid var(--bd);box-shadow:0 6px 14px rgba(57,43,85,.14),0 24px 60px rgba(57,43,85,.34);font-family:'Cairo','Inter',sans-serif;color:var(--tx)}
+#fnb[hidden]{display:none}
+#fnb .fnh{display:flex;align-items:center;gap:8px;margin-bottom:10px;color:var(--pri)}#fnb .fnh .v2ic{width:20px;height:20px}#fnb .fnh b{flex:1;font-size:15.5px;color:var(--tx)}#fnb .fnh span{font:700 12px 'Inter',sans-serif;color:var(--sub)}
+#fnb textarea{width:100%;box-sizing:border-box;min-height:110px;padding:12px;border-radius:14px;border:1.5px solid var(--bd);background:var(--bg);color:var(--tx);font:500 15px/1.7 'Cairo','Inter',sans-serif;resize:vertical}#fnb textarea:focus{outline:0;border-color:var(--pri)}
+#fnb .fna{display:flex;gap:8px;margin-top:10px}#fnb .fna button{flex:1;height:44px;border-radius:14px;background:var(--sel);color:var(--tx);font:700 14px 'Cairo','Inter',sans-serif}#fnb .fna .ok{background:var(--pri);color:var(--pon)}#fnb .fna .d{flex:0 0 auto;padding:0 16px;background:transparent;color:#b42318}
+#reader .listip{background:var(--deep,#2b2140);color:#fff;border:0;border-radius:16px;font:700 13px/1.6 'Cairo','Inter',sans-serif;box-shadow:0 10px 30px rgba(57,43,85,.3)}
+#reader #rbShow.open{transform:rotate(-45deg) scale(1.06)}
+#reader .rbar>button span{font-size:11.5px;line-height:1.1;white-space:nowrap}
+#reader .rbar>button{width:60px;height:60px;left:-30px;top:-30px}
+#reader:has(#rbar.fan) .pnum,#reader:has(#rbar.fan) .v2zoom,#reader:has(#rbar.fan) #v2full{opacity:0;pointer-events:none;transition:opacity .15s}
+/* an underline is a line only, never a highlight (owner, 11 Nov 2026) */
+.bk mark.uhl.uhl.ur,.bk mark.uhl.uhl.uk,.bk mark.uhl.uhl.ub,.bk mark.uhl.uhl.uo{background:none!important}
+.selopt .sor{display:flex;align-items:center;gap:10px}.selopt .sor>b{flex:0 0 44px;font:700 12.5px 'Cairo','Inter',sans-serif;color:var(--sub)}.selopt .sor .soc{flex:1}
+.selopt .soc.sou{justify-content:flex-start;gap:10px}.selopt .ud{flex:1;height:40px;border-radius:12px;background:var(--bg);border:1px solid var(--bd);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:0}
+.selopt .ud span{font:600 12px/1 'Inter',sans-serif;color:var(--tx)}.selopt .ud i{display:block;width:26px;height:2.5px;border-radius:2px}
+.selopt .soc .dot{width:32px;height:32px}
 /* tablets and laptops held sideways with little height (owner, 11 Nov 2026: Home scrolled a little): a tighter tier, nothing is removed */
 @media (min-width:760px) and (max-height:720px){
   #v2homeW{gap:8px}#v2homeW .hgrid,#v2homeW .hgrid>div{gap:8px}
@@ -481,6 +687,28 @@ button{font-family:inherit}
 }
 @media (min-width:760px) and (max-height:600px){#v2homeW .hgr{display:none}#v2homeW .hcont p{display:none}#v2homeW .hbook img{max-height:84px}}
 .v2rnav button:disabled{opacity:.38}
+/* reader bar holds tools, zoom and full page beside the bookmark (owner, 11 Nov 2026 evening) */
+.bar .rtl{display:none}.app.rd>.bar .rtl{display:grid}.app.rd>.bar .rtl span{display:none}.app.rd>.bar .rtl svg,.app.rd>.bar .rtl .v2ic{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.app.rd>.bar .rtools{background:var(--pri);color:var(--pon)!important;transition:transform .25s}.app.rd>.bar .rtools.open{transform:rotate(-45deg)}
+#reader .rbar{position:fixed;right:auto;bottom:auto;z-index:40}
+#reader .penfly.tsheet,#reader .penfly.tsheet[data-k="z"]{top:8px!important;bottom:auto!important;right:10px!important;left:auto!important;transform-origin:100% 0}
+@keyframes tsUp{from{transform:translateY(-8px) scale(.96);opacity:0}to{transform:none;opacity:1}}
+#v2fx{display:none}.app.imm #v2fx{display:grid;position:absolute;right:10px;top:10px;z-index:8;width:38px;height:38px;border-radius:50%;place-items:center;background:color-mix(in srgb,var(--sf) 90%,transparent);color:var(--pri);border:1px solid var(--bd);box-shadow:0 3px 10px rgba(57,43,85,.22)}
+#v2fx .v2ic{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:759px){.app.rd>.bar .ib{width:34px;height:34px}.app.rd>.bar{gap:2px}.app.rd>.bar .rt{padding:0 2px}}
+.bar .rpg{display:none}.app.rd>.bar .rpg{display:block;position:static;transform:none;flex:none;margin:0 2px;padding:5px 9px;border-radius:999px;background:var(--sel);color:var(--tx);border:0;box-shadow:none;font:800 12px 'Inter',sans-serif;font-variant-numeric:tabular-nums;white-space:nowrap;pointer-events:none;opacity:1}
+@media (max-width:759px){.app.rd>.bar .rpg{padding:4px 7px;font-size:11px}.app.rd>.bar .rhome{display:none}}
+@media (max-width:759px){.app.rd>.bar #v2rs{display:none}.app.rd>.bar #v2rb{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:12px;line-height:1.2;letter-spacing:-.01em;text-overflow:clip}.app.rd>.bar .rpg{padding:4px 6px;font-size:10.5px;margin:0}.app.rd>.bar .ib{width:32px;height:32px}}
+/* tools button is an icon like its neighbours (owner: the filled disc looked too big); the page chip can be tapped to type a page */
+.app.rd>.bar .rtools{background:transparent;color:var(--tx)!important}.app.rd>.bar .rtools.open{background:var(--sel);color:var(--pri)!important;transform:none}
+.app.rd>.bar .rpg{pointer-events:auto;cursor:pointer}
+.app.rd>.bar .rpg.ed{display:flex;align-items:center;gap:4px;padding:3px 4px 3px 8px;background:var(--sel)}
+.app.rd>.bar .rpg.ed input{width:3.4em;font:800 13px 'Inter',sans-serif;text-align:center;border:1.5px solid var(--pri);border-radius:10px;padding:4px 2px;background:var(--sf);color:var(--tx)}
+.app.rd>.bar .rpg.ed span{color:var(--sub)}.app.rd>.bar .rpg.ed button{border:0;border-radius:10px;padding:5px 10px;background:var(--pri);color:var(--pon);font:800 12px 'Inter',sans-serif}
+@media (max-width:759px){.app.rd>.bar:has(.rpg.ed) .rt{display:none}.app.rd>.bar:has(.rpg.ed) .rpg{margin-inline-start:auto}}
+.app.rd .v2rnav:not([hidden]){grid-template-columns:repeat(5,1fr)}
+@media (min-width:760px){.app.rd .v2rnav:not([hidden]){grid-template-columns:repeat(5,minmax(0,160px));justify-content:center}.app.rd>.bar .rhome{display:none}}
+.v2rnav button{font-size:11px}
 /* Home reading card: whole picture, two bars (owner, 11 Nov 2026 evening) */
 #v2homeW .hcont.hc2{padding:10px;display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;gap:8px;min-height:150px}
 .hcont.hc2 .ph{inset:0!important;background-position:center!important;background-size:cover!important}.hcont.hc2 .ph::after{display:none}
@@ -499,14 +727,36 @@ button{font-family:inherit}
 @media (max-width:759px){#v2homeW .hcont.hc2{min-height:64px;padding:8px;gap:6px;overflow:hidden}.hc2 .cb{padding:6px 10px}.hc2 .cbb{padding:5px 5px 5px 10px}#v2homeW .hc2 .cbb .v2btn{height:34px}
   @container (max-height:128px){.hc2 .cbt{margin:auto 0;max-width:calc(100% - 140px)}.hc2 .cbb{position:absolute;right:8px;top:50%;transform:translateY(-50%);padding:0;background:none;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}.hc2 .cp{display:none}.hc2 .cbt small{display:block}.hc2 .cbt em{display:none}}
   @container (max-height:74px){.hc2 .cbt small{display:none}}}
+/* opening choice after the greeting (owner, 11 Nov 2026) */
+.v2chz{z-index:90}
+.v2chz .in{max-width:440px;margin:auto;padding:22px 18px 18px;border-radius:24px}
+.v2chz h3{margin:0;font:800 21px/1.3 'Cairo','Inter',sans-serif;text-align:center;color:var(--tx);text-transform:none;letter-spacing:0;display:block}
+.v2chz .chzl{margin:4px 0 14px;text-align:center;color:var(--sub);font:600 14px 'Cairo','Inter',sans-serif}
+.chzb{display:flex;align-items:center;gap:14px;width:100%;padding:14px 16px;margin-bottom:10px;border:1px solid var(--bd);border-radius:18px;background:var(--sf);color:var(--tx);text-align:start;cursor:pointer;font-family:inherit}
+.chzb .v2ic{width:26px;height:26px;flex:none;color:var(--pri)}
+.chzb span{display:flex;flex-direction:column;gap:2px}
+.chzb b{font-size:16px}
+.chzb small{font-size:12.5px;color:var(--sub)}
+.chzb.pd{background:var(--deep);color:#fff;border-color:transparent}
+.chzb.pd .v2ic,.chzb.pd small{color:#f3d68a}
+.chzb.tr{background:var(--sel)}
+.chzb:disabled{opacity:.6}
 
-/* ===== Pediatric Master Review in the new app design (owner, 11 Nov 2026): the Obstetrics layout in the book's own green ===== */
-:root[data-pal="peds"][data-pal]{--bg:#F0F7F3;--sf:#fff;--sf2:#F6FBF8;--tx:#173D2A;--sub:#587262;--pri:#1E7A4C;--pon:#fff;--sel:#D5EEDF;--bd:#D3E6DA;--deep:#0E472C;--deep2:#1F6B45;--gold:#C9A24A}
-:root[data-pal="peds"][data-theme="dark"]{--bg:#101C16;--sf:#18271F;--sf2:#1F3127;--tx:#EAF6EF;--sub:#A3C2B0;--pri:#7FD3A6;--pon:#0B2418;--sel:#27402F;--bd:#2C4536;--deep:#0A140F;--deep2:#18271F}
-#welc{display:none!important}
-.app:not(.rd)>.bar{display:none}
-#home{display:none!important}
-.v2side .art{background-position:center 40%}
-.hbook img{object-fit:cover}
-.chr .im,.chd .ph{background-color:var(--deep)}
-.hgr .l b{letter-spacing:.2px}
+/* ===== Phone Home, less crowded (owner, 11 Nov 2026, from his phone): the two progress tiles are left out on phones (Settings → «تقدّمي»
+   still shows them), so the reading card keeps its two bars; the name chip shows only the picture on narrow phones; forward arrows point
+   right in English; the shortcut labels and the subscription line get room instead of being cut ===== */
+@media (max-width:759px){
+  #v2homeW .hsm2{display:none}
+  #v2homeW .hq button{padding:10px 6px;gap:6px;font-size:13px}
+  #v2homeW .hq button>.v2ic{width:20px;height:20px}
+  #v2homeW .hq button span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+  #v2homeW .hacc small{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+}
+@media (max-width:430px){.v2me b{display:none}.v2me{padding:0 3px}}
+html[data-lang="en"] .v2ic.fwd{transform:scaleX(-1)}
+/* reading card in one row (short phones): the button is smaller and the chapter name stops before it, in both languages */
+@media (max-width:759px){
+  @container (max-height:128px){.hc2 .cbb .v2btn{height:36px;padding:0 13px;font-size:13.5px;gap:6px}.hc2 .cbt{max-width:calc(100% - 150px)}
+    html[data-lang="en"] .hc2 .cbt{max-width:calc(100% - 172px)}}
+}
+@media (max-width:379px){html[data-lang="en"] #v2homeW .hq button>.v2ic:first-child{display:none}}

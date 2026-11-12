@@ -1,0 +1,129 @@
+{
+ "_": "Book settings for tools/port_v2.py: the Obstetrics app code is copied with these replacements (owner, 11 Nov 2026: Pediatrics exactly like Obstetrics, in its own green).",
+ "prefix": "prr",
+ "pal": [
+  "peds",
+  "الافتراضي",
+  "#1E7A4C",
+  "#F0F7F3"
+ ],
+ "replace": [
+  [
+   "Obstetrics Master Review",
+   "Pediatric Master Review"
+  ],
+  [
+   "<b>Obstetrics<span>",
+   "<b>Pediatric<span>"
+  ],
+  [
+   "4th Edition · 2026",
+   "1st Edition · 2026"
+  ],
+  [
+   "4th Edition",
+   "1st Edition"
+  ],
+  [
+   "Obstetric Drugs",
+   "Pediatric Drugs"
+  ],
+  [
+   "Obstetric drugs",
+   "Pediatric drugs"
+  ],
+  [
+   "learning obstetrics",
+   "learning pediatrics"
+  ],
+  [
+   "أدوية التوليد",
+   "أدوية الأطفال"
+  ],
+  [
+   "تعلّم التوليد",
+   "تعلّم طب الأطفال"
+  ],
+  [
+   "OBS-XXXX-XXXX",
+   "PMR-XXXX-XXXX"
+  ],
+  [
+   "الكتاب مقسّم إلى سبعة فصول",
+   "الكتاب مقسّم إلى ستة عشر فصلًا"
+  ],
+  [
+   "t.ch===7",
+   "t.ch===BK.osce"
+  ],
+  [
+   "img/v2_fetus.jpg",
+   "img/part1.jpg"
+  ],
+  [
+   "img/v2_consult.jpg",
+   "img/part3.jpg"
+  ],
+  [
+   "url(fonts/",
+   "url(img/fonts/"
+  ],
+  [
+   "qbank-v",
+   "qbank"
+  ]
+ ],
+ "bk": {
+  "name": "Pediatric Master Review",
+  "short": "Pediatric",
+  "ed": "1st Edition",
+  "book": "ped",
+  "osce": 15,
+  "drugs": 16,
+  "cover": "img/cover5.jpg",
+  "chFallback": [
+   "img/part1.jpg",
+   "img/part1.jpg",
+   "img/part2.jpg"
+  ],
+  "prefix": "prr",
+  "code": "PMR",
+  "aboutImg": {
+   "authors": "img/authors.webp",
+   "reviewers": "img/part2.jpg",
+   "edition": "img/cover5.jpg",
+   "howto": "img/part3.jpg",
+   "tools": "img/part4.jpg",
+   "refs": "img/part5.jpg",
+   "contents": "img/part1.jpg",
+   "rr": "img/rrcover.jpg"
+  }
+ },
+ "access": {
+  "_": "Merged into META.access by the new-app build. key_hash = SHA-256 of this book's key in Supabase (obs_book_keys, printed by migration 009 when it is applied); old_until = launch day + one month (old PMR codes stop then).",
+  "supabase_url": "https://kgdmjeffeqfdlfnjnnek.supabase.co",
+  "supabase_anon": "sb_publishable_aUgkKc4QpItV4yKKViVFCg_dipnUdDl",
+  "key_hash": "",
+  "old_until": "",
+  "plans": [
+   {
+    "id": "month",
+    "ar": "شهري",
+    "en": "Monthly",
+    "price": "10,000 SD"
+   },
+   {
+    "id": "year",
+    "ar": "سنوي",
+    "en": "Annual",
+    "price": "30,000 SD"
+   },
+   {
+    "id": "life",
+    "ar": "مدى الحياة",
+    "en": "Lifetime",
+    "price": "50,000 SD"
+   }
+  ]
+ }
+}
