@@ -1021,6 +1021,13 @@ def build():
         shutil.copytree(CONTENT / 'audio', OUT / 'audio', dirs_exist_ok=True, ignore=shutil.ignore_patterns('*.json'))
     for f in ('manifest.json', 'sw.js'):
         shutil.copy(SRC / f, OUT / f)
+    # the service worker saves every file of the book at the first opening (owner, 12 Nov 2026: fast opening); a new build = a new cache name
+    ver = hashlib.sha1((OUT / 'index.html').read_bytes()).hexdigest()[:10]
+    assets = ['./', 'index.html', 'manifest.json'] + sorted('img/' + str(f.relative_to(OUT / 'img')) for f in (OUT / 'img').rglob('*')
+                                                        if f.is_file() and f.suffix.lower() in ('.jpg', '.jpeg', '.png', '.webp', '.svg', '.woff', '.woff2', '.gif'))
+    sw = (OUT / 'sw.js').read_text()
+    sw = re.sub(r"var C='[^']*',ASSETS=\[.*?\];", lambda m: "var C='prr-" + ver + "',ASSETS=" + json.dumps(assets) + ";", sw, count=1, flags=re.S)
+    (OUT / 'sw.js').write_text(sw)
     # Authors' review copy for the claude.ai Artifact preview: a full HTML document with the whole book open (meta review = true).
     art, nrev = re.subn(r'"review":\s*false', '"review": true', page, count=1)
     assert nrev == 1 or os.environ.get('PRR_REVIEW'), 'review flag not found in meta'

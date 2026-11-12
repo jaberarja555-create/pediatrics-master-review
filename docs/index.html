@@ -8051,8 +8051,19 @@ var REVIEW=!!META.review;   // review copy for the authors (PRR_REVIEW build): e
 var TRIAL_MS=(+ACC.trial_hours||0)*3600e3,TRIAL=(function(){var t=null,now=Date.now();try{t=JSON.parse(localStorage.getItem('prr-trial')||'null')}catch(e){}
   if(!t||!t.s)return null;if(now<t.m-6e5)t.x=1;t.m=Math.max(t.m,now);if(now>=t.s+TRIAL_MS)t.x=1;try{localStorage.setItem('prr-trial',JSON.stringify(t))}catch(e){}return t})();
 function trialLeft(){return TRIAL_MS&&TRIAL&&!TRIAL.x?Math.max(0,TRIAL.s+TRIAL_MS-Date.now()):0}
-var INTRIAL=!REVIEW&&!!TRIAL_MS&&!st('act')&&trialLeft()>0,TRIALNEW=!REVIEW&&!!TRIAL_MS&&!st('act')&&!TRIAL,TRIALEND=!REVIEW&&!!TRIAL_MS&&!st('act')&&!!TRIAL&&!INTRIAL;
-var LOCKED=!REVIEW&&!INTRIAL&&(!st('act')||!ACC.public_key);
+/* old activation codes (PMR-…) work until ACC.old_until (owner, 11 Nov 2026: one month after the new app goes live, as in Obstetrics) */
+var OLDEND=!!(ACC.old_until&&Date.now()>Date.parse(ACC.old_until));
+if(OLDEND&&st('act')){try{localStorage.removeItem('prr-act')}catch(e){}st('ended','1')}
+/* a subscription from the shared system (the same as Obstetrics, book 'ped'): its key is kept in prr-k and checked against ACC.key_hash */
+var SBC=window.BOOK_CFG||{},BOOKID=((window.BOOK_INFO||{}).bk||{}).book||'ped';
+var SDEV=st('sdev');if(!/^[0-9a-f]{20}$/.test(SDEV||'')){var rb=new Uint8Array(10);crypto.getRandomValues(rb);SDEV=[].map.call(rb,function(b){return ('0'+b.toString(16)).slice(-2)}).join('');st('sdev',SDEV)}
+window.__sbDev=SDEV;
+if(SBC.url&&SBC.anon)window.__sbRpc=function(n,a){a=a||{};if(/^obs_request_(status|submit)$/.test(n)){var b={};for(var k in a)b[k]=a[k];b.p_book=BOOKID;a=b}
+  return fetch(SBC.url.replace(/\/$/,'')+'/rest/v1/rpc/'+n,{method:'POST',cache:'no-store',headers:{apikey:SBC.anon,'Content-Type':'application/json'},body:JSON.stringify(a)})
+    .then(function(r){return r.json().then(function(d){return r.ok?{data:d}:{error:d||{}}},function(){return {error:{}}})})};
+var HASK=!!st('k')&&!!ACC.key_hash;
+var INTRIAL=!REVIEW&&!!TRIAL_MS&&!st('act')&&!HASK&&trialLeft()>0,TRIALNEW=!REVIEW&&!!TRIAL_MS&&!st('act')&&!HASK&&!TRIAL,TRIALEND=!REVIEW&&!!TRIAL_MS&&!st('act')&&!HASK&&!!TRIAL&&!INTRIAL;
+var LOCKED=!REVIEW&&!INTRIAL&&!HASK&&(!st('act')||!ACC.public_key);
 if(INTRIAL)setTimeout(function(){location.reload()},Math.min(trialLeft()+500,2e9));
 function trialPost(start){if(SRV==null)return Promise.resolve(null);return fetch(SRV.replace(/\/$/,'')+'/trial',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({dev:DEV,start:start||0})}).then(function(r){return r.json()}).catch(function(){return null})}
 /* opening the book (owner, Nov 2026: it was slow): the choice is saved at once, the server is told in the background (the first
@@ -8075,7 +8086,7 @@ function checkCode(code){code=(code||'').replace(/\s+/g,'');var parts=code.split
   return crypto.subtle.importKey('jwk',ACC.public_key,{name:'ECDSA',namedCurve:'P-256'},false,['verify']).then(function(k){
     return crypto.subtle.verify({name:'ECDSA',hash:'SHA-256'},k,b64u(sig),new TextEncoder().encode('PMR|pediatrics|1|'+parts.join(',')))}).catch(function(){return false})}
 function relock(){try{localStorage.removeItem('prr-act');localStorage.removeItem('prr-code');localStorage.removeItem('prr-name')}catch(e){}location.reload()}
-if(!LOCKED&&!REVIEW&&!INTRIAL)checkCode(st('act')).then(function(ok){if(!ok)return relock();
+if(!LOCKED&&!REVIEW&&!INTRIAL&&st('act'))checkCode(st('act')).then(function(ok){if(!ok)return relock();
   /* online check: the authors can switch a code off or reset its devices; offline the book stays open */
   if(SRV!=null&&st('code')&&navigator.onLine!==false)fetch(SRV.replace(/\/$/,'')+'/check?dev='+DEV+'&code='+encodeURIComponent(st('code')),{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){if(j&&j.ok===false&&j.reason!=='device')relock();else if(j&&j.ok&&typeof j.name==='string'&&j.name!==(st('name')||'')){st('name',j.name);welcomeName()}}).catch(function(){})});
 if(LOCKED){var fd={};Object.keys(ACC.cards||{}).forEach(function(id){if(DECKS[id])fd[id]={short:DECKS[id].short,cards:ACC.cards[id].map(function(j){return DECKS[id].cards[j]})}});DECKS=fd}
@@ -9003,9 +9014,11 @@ function progData(){var o={};Object.keys(readSet).concat(Object.keys(PROGU)).for
 function progApply(pg){var r={},u={};Object.keys(pg).forEach(function(k){if(pg[k][0])r[k]=pg[k][0];u[k]=pg[k][1]});
   if(JSON.stringify(r)===JSON.stringify(readSet))return;readSet=r;PROGU=u;stj('prog',readSet);stj('progu',PROGU);
   if(!$('home').hidden)refreshHome();if(!$('reader').hidden)updPr(currentPage())}
-var SYNC=!LOCKED&&SRV!=null&&!!st('code'),syncing=false,syncAgain=false,syncT=null,syncErr='';
+var SYNC=(HASK&&!!window.__sbRpc)||(!LOCKED&&SRV!=null&&!!st('code')),syncing=false,syncAgain=false,syncT=null,syncErr='';
 function syncSoon(){if(!SYNC)return;clearTimeout(syncT);syncT=setTimeout(function(){syncNow()},4000)}
-function syncPost(body){body.code=st('code');body.dev=DEV;body.token=st('act');
+function syncPost(body){if(HASK&&window.__sbRpc){var dv=window.__sbDev;   /* shared system: the subscription's saved data, versioned */
+    return (body.data?window.__sbRpc('obs_sync_put',{p_dev:dv,p_ver:body.ver||0,p_data:body.data}):window.__sbRpc('obs_sync_get',{p_dev:dv})).then(function(r){return r.data||{ok:false,reason:'net'}})}
+  body.code=st('code');body.dev=DEV;body.token=st('act');
   return fetch(SRV.replace(/\/$/,'')+'/sync',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json()})}
 function hlApply(m){progApply(m.prog||{});smApply(m.sm||{});inkApply(m.ink||{},m.idel||{});var before=JSON.stringify(HL);if(JSON.stringify(m.hl)===before&&JSON.stringify(m.del)===JSON.stringify(HLDEL))return;
   var touched={};Object.keys(HL).concat(Object.keys(m.hl)).forEach(function(k){touched[k]=1});
@@ -9371,7 +9384,8 @@ function welcomeName(){var t=document.querySelector('#welc .wt');if(t)t.textCont
 /* owner, 11 Nov 2026: the greeting shows on every opening, then a device that is not subscribed and not in a trial is offered the choices
    (subscribe · trial while it is unused · free); only the first opening must be answered */
 function chooseDue(){return (TRIALNEW&&!st('chz'))||(TRIALEND&&TRIAL&&!TRIAL.seen)||(LOCKED&&!INTRIAL&&!REVIEW)}
-function afterWelcome(){if(LINKCODE&&(LOCKED||INTRIAL)){openSub(LINKCODE);return}if(!chooseDue())return;if(TRIALNEW&&!st('chz'))setMust(true);if(TRIALEND&&TRIAL&&!TRIAL.seen){TRIAL.seen=1;try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}}openChoose()}
+function afterWelcome(){if(window.__v2sub)return;   /* the new app shows its own choices after its greeting */
+  if(LINKCODE&&(LOCKED||INTRIAL)){openSub(LINKCODE);return}if(!chooseDue())return;if(TRIALNEW&&!st('chz'))setMust(true);if(TRIALEND&&TRIAL&&!TRIAL.seen){TRIAL.seen=1;try{localStorage.setItem('prr-trial',JSON.stringify(TRIAL))}catch(e){}}openChoose()}
 (function(){
   var code=!LOCKED&&st('code');var w=document.createElement('div');w.id='welc';w.setAttribute('role','dialog');
   w.innerHTML='<div class="wcard"><img src="img/logo3.webp" alt=""><div class="wt" dir="auto"></div>'+
