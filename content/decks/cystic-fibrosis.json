@@ -1,162 +1,34 @@
 [
- [
-  "CF",
-  "Inheritance of cystic fibrosis?",
-  "Autosomal recessive."
- ],
- [
-  "CF",
-  "Gene and chromosome?",
-  "CFTR on chromosome 7."
- ],
- [
-  "CF",
-  "Commonest mutation?",
-  "F508del (ΔF508)."
- ],
- [
-  "CF",
-  "Basic defect in CF?",
-  "Faulty chloride channel → thick secretions, salty sweat."
- ],
- [
-  "CF",
-  "Newborn presentation of CF?",
-  "Meconium ileus."
- ],
- [
-  "CF",
-  "GI features of CF?",
-  "Steatorrhoea, failure to thrive, rectal prolapse, fat-soluble vitamin deficiency."
- ],
- [
-  "CF",
-  "Early lung organism in CF?",
-  "Staphylococcus aureus."
- ],
- [
-  "CF",
-  "Organism in older children with CF?",
-  "Pseudomonas aeruginosa."
- ],
- [
-  "CF",
-  "Nasal polyps in a child suggest?",
-  "Cystic fibrosis."
- ],
- [
-  "CF",
-  "Electrolyte disturbance in CF in hot weather?",
-  "Hyponatraemic, hypochloraemic metabolic alkalosis."
- ],
- [
-  "CF",
-  "Cause of male infertility in CF?",
-  "Absent vas deferens."
- ],
- [
-  "CF",
-  "Test of choice for CF?",
-  "Sweat chloride test."
- ],
- [
-  "CF",
-  "Sweat chloride diagnostic of CF?",
-  "≥ 60 mmol/L on two occasions."
- ],
- [
-  "CF",
-  "Newborn screening test for CF?",
-  "Immunoreactive trypsinogen (IRT)."
- ],
- [
-  "CF",
-  "Test for pancreatic insufficiency?",
-  "Faecal elastase (low)."
- ],
- [
-  "CF",
-  "Airway treatment in CF?",
-  "Daily chest physiotherapy, dornase alfa, hypertonic saline."
- ],
- [
-  "CF",
-  "Nutrition in CF?",
-  "Pancreatic enzymes with meals, high-calorie diet, vitamins A, D, E, K."
- ],
- [
-  "CF",
-  "IV antibiotics for Pseudomonas in CF?",
-  "Ceftazidime + tobramycin."
- ],
- [
-  "CF",
-  "Drugs that correct the CFTR protein?",
-  "CFTR modulators (elexacaftor–tezacaftor–ivacaftor)."
- ],
- [
-  "CF",
-  "Risk to each later child of carrier parents?",
-  "25%."
- ],
- [
-  "Foreign body",
-  "Commonest age of foreign body inhalation?",
-  "1–3 years."
- ],
- [
-  "Foreign body",
-  "Commonest object inhaled?",
-  "Peanuts and seeds."
- ],
- [
-  "Foreign body",
-  "Which bronchus usually?",
-  "Right main bronchus (wider, more vertical)."
- ],
- [
-  "Foreign body",
-  "Signs of a bronchial foreign body?",
-  "One-sided wheeze, reduced air entry on one side."
- ],
- [
-  "Foreign body",
-  "X-ray finding of a bronchial foreign body?",
-  "Air trapping on expiratory film (often normal)."
- ],
- [
-  "Foreign body",
-  "Treatment of inhaled foreign body?",
-  "Rigid bronchoscopy."
- ],
- [
-  "Foreign body",
-  "Choking infant under 1 year who cannot cough?",
-  "5 back blows, then 5 chest thrusts."
- ],
- [
-  "Foreign body",
-  "Choking child over 1 year who cannot cough?",
-  "5 back blows, then 5 abdominal thrusts."
- ],
- [
-  "Bronchiectasis",
-  "Definition of bronchiectasis?",
-  "Permanent dilatation of bronchi with chronic infection."
- ],
- [
-  "Bronchiectasis",
-  "Best test for bronchiectasis?",
-  "High-resolution CT chest."
- ],
- [
-  "Bronchiectasis",
-  "Kartagener syndrome?",
-  "Primary ciliary dyskinesia with situs inversus, sinusitis, bronchiectasis."
- ],
- [
-  "Lung abscess",
-  "X-ray of lung abscess?",
-  "Cavity with an air–fluid level."
- ]
+ ["Cystic fibrosis", "How is cystic fibrosis inherited?", "Autosomal recessive.", 1, "oro5mq"],
+ ["Cystic fibrosis", "Which gene is affected in cystic fibrosis, and on which chromosome?", "The CFTR gene on chromosome 7.", 1, "jhhlw3"],
+ ["Cystic fibrosis", "What is the commonest mutation in cystic fibrosis?", "F508del (ΔF508).", 1, "j06w6p"],
+ ["Cystic fibrosis", "What is the basic defect in cystic fibrosis?", "A faulty chloride channel, which causes thick secretions and salty sweat.", 2, "1rhvu7y"],
+ ["Cystic fibrosis", "How does cystic fibrosis present in the newborn?", "With meconium ileus.", 1, "1c1hyzm"],
+ ["Cystic fibrosis", "What are the gastrointestinal features of cystic fibrosis?", "Steatorrhoea, failure to thrive, rectal prolapse and deficiency of the fat-soluble vitamins.", 2, "1ovzng8"],
+ ["Cystic fibrosis", "Which organism infects the lungs early in cystic fibrosis?", "Staphylococcus aureus.", 2, "1p3wsj2"],
+ ["Cystic fibrosis", "Which organism infects the lungs of older children with cystic fibrosis?", "Pseudomonas aeruginosa.", 2, "1h6kmh6"],
+ ["Cystic fibrosis", "What do nasal polyps in a child suggest?", "Cystic fibrosis.", 3, "uptuf1"],
+ ["Cystic fibrosis", "Which electrolyte disturbance occurs in cystic fibrosis in hot weather?", "A hyponatraemic, hypochloraemic metabolic alkalosis.", 3, "10cq4rz"],
+ ["Cystic fibrosis", "What causes male infertility in cystic fibrosis?", "Absence of the vas deferens.", 2, "16q7ul9"],
+ ["Cystic fibrosis", "What is the test of choice for cystic fibrosis?", "The sweat chloride test.", 1, "w0xco1"],
+ ["Cystic fibrosis", "Which sweat chloride level is diagnostic of cystic fibrosis?", "60 mmol/L or more on two occasions.", 2, "1vx7yl4"],
+ ["Cystic fibrosis", "What is the newborn screening test for cystic fibrosis?", "Immunoreactive trypsinogen (IRT).", 2, "fa483c"],
+ ["Cystic fibrosis", "Which test shows pancreatic insufficiency?", "A low faecal elastase.", 2, "1b9gn4d"],
+ ["Cystic fibrosis", "How are the airways treated in cystic fibrosis?", "With daily chest physiotherapy, dornase alfa and hypertonic saline.", 2, "lli5d0"],
+ ["Cystic fibrosis", "How is nutrition managed in cystic fibrosis?", "Pancreatic enzymes with meals, a high-calorie diet, and vitamins A, D, E and K.", 2, "upjpex"],
+ ["Cystic fibrosis", "Which intravenous antibiotics are used for Pseudomonas in cystic fibrosis?", "Ceftazidime and tobramycin.", 2, "hzxvk0"],
+ ["Cystic fibrosis", "Which drugs correct the CFTR protein?", "CFTR modulators (elexacaftor–tezacaftor–ivacaftor).", 2, "1owcq2"],
+ ["Cystic fibrosis", "What is the risk to each later child when both parents are carriers?", "25%.", 1, "4onww4"],
+ ["Foreign body", "At what age is foreign body inhalation commonest?", "At 1–3 years.", 1, "xevymh"],
+ ["Foreign body", "Which objects are most often inhaled?", "Peanuts and seeds.", 1, "1yij0dq"],
+ ["Foreign body", "Which bronchus does an inhaled foreign body usually enter, and why?", "The right main bronchus, because it is wider and more vertical.", 1, "1kjthnf"],
+ ["Foreign body", "What are the signs of a foreign body in a bronchus?", "One-sided wheeze and reduced air entry on one side.", 2, "1i3t2kz"],
+ ["Foreign body", "What does the X-ray show with a bronchial foreign body?", "Air trapping on an expiratory film; the X-ray is often normal.", 3, "1w114a3"],
+ ["Foreign body", "How is an inhaled foreign body treated?", "By rigid bronchoscopy.", 1, "26731"],
+ ["Foreign body", "How is a choking infant under 1 year who cannot cough treated?", "With 5 back blows, then 5 chest thrusts.", 2, "99vmn"],
+ ["Foreign body", "How is a choking child over 1 year who cannot cough treated?", "With 5 back blows, then 5 abdominal thrusts.", 2, "1w4aa79"],
+ ["Bronchiectasis", "What is bronchiectasis?", "Permanent dilatation of the bronchi with chronic infection.", 1, "qktyg6"],
+ ["Bronchiectasis", "What is the best test for bronchiectasis?", "High-resolution CT of the chest.", 2, "dgn1sp"],
+ ["Bronchiectasis", "What is Kartagener syndrome?", "Primary ciliary dyskinesia with situs inversus, sinusitis and bronchiectasis.", 2, "6tmd1e"],
+ ["Lung abscess", "What does a lung abscess look like on the X-ray?", "A cavity with an air–fluid level.", 1, "1e0aeej"]
 ]

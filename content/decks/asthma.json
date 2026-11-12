@@ -1,187 +1,39 @@
 [
- [
-  "Basics",
-  "Definition of asthma?",
-  "Chronic airway inflammation with hyper-responsive airways and variable, reversible obstruction."
- ],
- [
-  "Basics",
-  "Strongest risk factor for childhood asthma?",
-  "Atopy with parental asthma."
- ],
- [
-  "Basics",
-  "Commonest trigger of asthma in children?",
-  "Viral colds."
- ],
- [
-  "Basics",
-  "Drugs that trigger asthma?",
-  "Aspirin, NSAIDs, beta-blockers."
- ],
- [
-  "Clinical",
-  "Classic asthma symptoms?",
-  "Recurrent wheeze, cough, breathlessness, worse at night and with triggers."
- ],
- [
-  "Clinical",
-  "Cough-variant asthma?",
-  "Chronic night cough as the only symptom."
- ],
- [
-  "Clinical",
-  "Chest deformity of long-standing asthma?",
-  "Harrison sulcus, pigeon or barrel chest."
- ],
- [
-  "Clinical",
-  "Does a normal examination exclude asthma?",
-  "No."
- ],
- [
-  "Diagnosis",
-  "Best test to confirm asthma in a school child?",
-  "Spirometry with bronchodilator reversibility."
- ],
- [
-  "Diagnosis",
-  "Reversibility in asthma?",
-  "FEV₁ rises by ≥ 12% after salbutamol."
- ],
- [
-  "Diagnosis",
-  "Age when spirometry is possible?",
-  "About 5–6 years."
- ],
- [
-  "Diagnosis",
-  "Is a chest X-ray needed to diagnose asthma?",
-  "No."
- ],
- [
-  "Drugs",
-  "Reliever drug in asthma?",
-  "Salbutamol (SABA)."
- ],
- [
-  "Drugs",
-  "Side effects of salbutamol?",
-  "Tremor, tachycardia, hypokalaemia."
- ],
- [
-  "Drugs",
-  "Main controller drug?",
-  "Inhaled corticosteroid."
- ],
- [
-  "Drugs",
-  "Side effects of ICS and prevention?",
-  "Oral thrush, hoarse voice; use a spacer and rinse the mouth."
- ],
- [
-  "Drugs",
-  "Can a LABA be used alone?",
-  "No; always with ICS."
- ],
- [
-  "Drugs",
-  "What is MART?",
-  "One budesonide–formoterol inhaler used as both maintenance and reliever."
- ],
- [
-  "Drugs",
-  "Oral leukotriene antagonist?",
-  "Montelukast."
- ],
- [
-  "Steps",
-  "GINA 2026: SABA alone in 6–11-year-olds?",
-  "Not advised; every child needs ICS-containing treatment."
- ],
- [
-  "Steps",
-  "Step 2 for children 6–11?",
-  "Daily low-dose ICS + salbutamol as needed."
- ],
- [
-  "Steps",
-  "Step 3 for children 5 years and under?",
-  "Double the low dose of ICS."
- ],
- [
-  "Steps",
-  "First thing to check before stepping up?",
-  "Inhaler technique and adherence."
- ],
- [
-  "Steps",
-  "When to step down?",
-  "After 3 months of good control."
- ],
- [
-  "Devices",
-  "Device for a 2-year-old?",
-  "MDI + spacer + face mask."
- ],
- [
-  "Devices",
-  "MDI + spacer versus nebuliser in attacks?",
-  "Equally effective."
- ],
- [
-  "Acute",
-  "Signs of a severe attack?",
-  "Talks in words, agitated, accessory muscles, SpO₂ < 92%, PEF ≤ 50%."
- ],
- [
-  "Acute",
-  "Signs of life-threatening asthma?",
-  "Silent chest, cyanosis, drowsiness, bradycardia, poor effort, PEF < 33%."
- ],
- [
-  "Acute",
-  "Meaning of a normal PaCO₂ in an attack?",
-  "The child is tiring: danger sign."
- ],
- [
-  "Acute",
-  "First-line drugs in an acute attack?",
-  "Oxygen, salbutamol every 20 minutes, early oral prednisolone."
- ],
- [
-  "Acute",
-  "Prednisolone dose in an attack?",
-  "1–2 mg/kg once daily (max 40 mg) for 3–5 days."
- ],
- [
-  "Acute",
-  "Add-on in a severe attack in the first hour?",
-  "Nebulised ipratropium."
- ],
- [
-  "Acute",
-  "IV drug when not responding to first-line treatment?",
-  "Magnesium sulphate 40 mg/kg (max 2 g) over 20 minutes."
- ],
- [
-  "Acute",
-  "Sudden worsening with one-sided absent breath sounds?",
-  "Pneumothorax."
- ],
- [
-  "Acute",
-  "Target SpO₂ with oxygen?",
-  "94–98%."
- ],
- [
-  "Education",
-  "Vaccine advised every year in asthma?",
-  "Influenza vaccine."
- ],
- [
-  "Education",
-  "Prevention of exercise-induced asthma?",
-  "Salbutamol before exercise (and good control with ICS)."
- ]
+ ["Basics", "What is asthma?", "Chronic inflammation of the airways with hyper-responsive airways and variable, reversible obstruction.", 1, "1ybn16x"],
+ ["Basics", "What is the strongest risk factor for childhood asthma?", "Atopy together with parental asthma.", 2, "44c8ad"],
+ ["Basics", "What is the commonest trigger of asthma in children?", "Viral colds.", 1, "jt99lb"],
+ ["Basics", "Which drugs trigger asthma?", "Aspirin, NSAIDs and beta-blockers.", 2, "xwkd69"],
+ ["Clinical", "What are the classic symptoms of asthma?", "Recurrent wheeze, cough and breathlessness, worse at night and with triggers.", 1, "1dmwrkt"],
+ ["Clinical", "What is cough-variant asthma?", "Asthma in which a chronic night cough is the only symptom.", 2, "1yjcjjb"],
+ ["Clinical", "Which chest deformities follow long-standing asthma?", "A Harrison sulcus and a pigeon or barrel chest.", 2, "1ifcr3j"],
+ ["Clinical", "Does a normal examination exclude asthma?", "No.", 2, "12tmqfx"],
+ ["Diagnosis", "What is the best test to confirm asthma in a school child?", "Spirometry with bronchodilator reversibility.", 2, "1tuz7qg"],
+ ["Diagnosis", "What reversibility shows asthma?", "A rise in FEV₁ of 12% or more after salbutamol.", 2, "90zrjv"],
+ ["Diagnosis", "From what age is spirometry possible?", "From about 5–6 years.", 1, "1ebxos9"],
+ ["Diagnosis", "Is a chest X-ray needed to diagnose asthma?", "No.", 1, "dy7kcc"],
+ ["Drugs", "What is the reliever drug in asthma?", "Salbutamol, a short-acting beta-agonist (SABA).", 1, "1r1a8d4"],
+ ["Drugs", "What are the side effects of salbutamol?", "Tremor, tachycardia and hypokalaemia.", 1, "1yot9gx"],
+ ["Drugs", "What is the main controller drug in asthma?", "An inhaled corticosteroid (ICS).", 1, "al3l36"],
+ ["Drugs", "What are the side effects of inhaled corticosteroids, and how are they prevented?", "Oral thrush and a hoarse voice; they are prevented by using a spacer and rinsing the mouth.", 2, "ekadml"],
+ ["Drugs", "Can a long-acting beta-agonist (LABA) be used alone?", "No. It is always used with an inhaled corticosteroid.", 2, "vn8gmf"],
+ ["Drugs", "What is MART (maintenance and reliever therapy)?", "One budesonide–formoterol inhaler used both for maintenance and as the reliever.", 2, "u82rfz"],
+ ["Drugs", "Which oral leukotriene antagonist is used in asthma?", "Montelukast.", 1, "1xl9g80"],
+ ["Steps", "Is salbutamol alone advised for children aged 6–11 years (GINA 2026)?", "No. Every child needs treatment that contains an inhaled corticosteroid.", 3, "1cg098d"],
+ ["Steps", "What is step 2 treatment for children aged 6–11 years?", "A daily low dose of inhaled corticosteroid, with salbutamol as needed.", 2, "nlnwd6"],
+ ["Steps", "What is step 3 treatment for children aged 5 years and under?", "Doubling the low dose of inhaled corticosteroid.", 2, "1db0kha"],
+ ["Steps", "What is checked first before stepping up asthma treatment?", "Inhaler technique and adherence.", 2, "10isl60"],
+ ["Steps", "When is asthma treatment stepped down?", "After 3 months of good control.", 2, "1f1y8so"],
+ ["Devices", "Which inhaler device is used for a 2-year-old?", "A metered-dose inhaler with a spacer and a face mask.", 1, "75ymgd"],
+ ["Devices", "How does a metered-dose inhaler with a spacer compare with a nebuliser in acute attacks?", "They are equally effective.", 2, "bgv1af"],
+ ["Acute", "What are the signs of a severe asthma attack?", "The child talks only in words, is agitated and uses the accessory muscles, with an oxygen saturation below 92% and a peak flow of 50% or less.", 2, "1fs4nqh"],
+ ["Acute", "What are the signs of life-threatening asthma?", "A silent chest, cyanosis, drowsiness, bradycardia, poor respiratory effort and a peak flow below 33%.", 2, "vbhq6q"],
+ ["Acute", "What does a normal PaCO₂ mean during an asthma attack?", "The child is tiring: it is a danger sign.", 3, "2gc3w0"],
+ ["Acute", "What are the first-line drugs in an acute asthma attack?", "Oxygen, salbutamol every 20 minutes and early oral prednisolone.", 1, "1jyo2xz"],
+ ["Acute", "What is the dose of prednisolone in an asthma attack?", "1–2 mg/kg once daily (maximum 40 mg) for 3–5 days.", 2, "1yiuy5m"],
+ ["Acute", "What is added in a severe attack in the first hour?", "Nebulised ipratropium.", 2, "124j52q"],
+ ["Acute", "Which intravenous drug is given when an attack does not respond to first-line treatment?", "Magnesium sulphate 40 mg/kg (maximum 2 g) over 20 minutes.", 2, "1oi4p0e"],
+ ["Acute", "During an attack, a child suddenly worsens and breath sounds are absent on one side. What is the cause?", "A pneumothorax.", 3, "v2cllv"],
+ ["Acute", "What is the target oxygen saturation when oxygen is given in asthma?", "94–98%.", 2, "3hcspy"],
+ ["Education", "Which vaccine is advised every year in asthma?", "Influenza vaccine.", 1, "ymz8k9"],
+ ["Education", "How is exercise-induced asthma prevented?", "With salbutamol before exercise, and good control with an inhaled corticosteroid.", 2, "3qqmxh"]
 ]

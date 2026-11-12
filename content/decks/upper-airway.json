@@ -1,227 +1,47 @@
 [
- [
-  "Common cold",
-  "Commonest cause of the common cold?",
-  "Rhinovirus."
- ],
- [
-  "Common cold",
-  "Treatment of the common cold in an infant?",
-  "Paracetamol, saline nose drops before feeds, continue breastfeeding; no antibiotics."
- ],
- [
-  "Common cold",
-  "Commonest complication of a cold in infants?",
-  "Acute otitis media."
- ],
- [
-  "Pharyngitis",
-  "Most sore throats in children under 3 years are caused by?",
-  "Viruses."
- ],
- [
-  "Pharyngitis",
-  "Age of streptococcal tonsillitis?",
-  "5–15 years (rare under 3)."
- ],
- [
-  "Pharyngitis",
-  "Clues to streptococcal tonsillitis?",
-  "Sudden fever, tonsillar exudate, tender anterior neck nodes, no cough."
- ],
- [
-  "Pharyngitis",
-  "Clues to a viral sore throat?",
-  "Cough, runny nose, hoarseness, conjunctivitis, mouth ulcers."
- ],
- [
-  "Pharyngitis",
-  "Treatment of streptococcal tonsillitis?",
-  "Penicillin V or amoxicillin for 10 days, or one IM benzathine penicillin."
- ],
- [
-  "Pharyngitis",
-  "Main reason to treat GAS tonsillitis?",
-  "To prevent rheumatic fever."
- ],
- [
-  "Pharyngitis",
-  "Does penicillin prevent post-streptococcal glomerulonephritis?",
-  "No; it prevents rheumatic fever only."
- ],
- [
-  "Pharyngitis",
-  "Antibiotic to avoid in glandular fever?",
-  "Amoxicillin (causes a rash)."
- ],
- [
-  "Pharyngitis",
-  "Features of infectious mononucleosis?",
-  "Exudative tonsillitis, big neck nodes, splenomegaly, atypical lymphocytes."
- ],
- [
-  "Complications",
-  "Signs of peritonsillar abscess (quinsy)?",
-  "Severe one-sided sore throat, trismus, muffled voice, uvula pushed to the other side."
- ],
- [
-  "Complications",
-  "Retropharyngeal abscess: age and signs?",
-  "Under 5; fever, refuses to move the neck, drooling; wide prevertebral space on X-ray."
- ],
- [
-  "Complications",
-  "Commonest indication for adenotonsillectomy?",
-  "Obstructive sleep apnoea."
- ],
- [
-  "Complications",
-  "Recurrent tonsillitis criteria for tonsillectomy?",
-  "≥ 7 in 1 year, ≥ 5 a year for 2 years, or ≥ 3 a year for 3 years."
- ],
- [
-  "Otitis media",
-  "Why are infants prone to otitis media?",
-  "Short, wide, horizontal Eustachian tube."
- ],
- [
-  "Otitis media",
-  "Commonest bacterium in otitis media?",
-  "Streptococcus pneumoniae."
- ],
- [
-  "Otitis media",
-  "Otoscopy in acute otitis media?",
-  "Red, bulging drum with loss of the light reflex."
- ],
- [
-  "Otitis media",
-  "IMCI treatment of acute ear infection?",
-  "Amoxicillin for 5 days, pain relief, dry the ear by wicking."
- ],
- [
-  "Otitis media",
-  "Chronic ear infection (IMCI)?",
-  "Pus draining for 14 days or more: wicking + topical quinolone drops."
- ],
- [
-  "Otitis media",
-  "Sign of mastoiditis?",
-  "Tender swelling behind the ear, ear pushed forward: admit, IV antibiotics."
- ],
- [
-  "Otitis media",
-  "Commonest cause of conductive hearing loss in children?",
-  "Otitis media with effusion (glue ear)."
- ],
- [
-  "Otitis media",
-  "Tympanometry in glue ear?",
-  "Flat trace."
- ],
- [
-  "Otitis media",
-  "Treatment of persistent glue ear with hearing loss?",
-  "Grommets (± adenoidectomy)."
- ],
- [
-  "Sinusitis",
-  "Which sinuses are present at birth?",
-  "Maxillary and ethmoid."
- ],
- [
-  "Sinusitis",
-  "When to suspect bacterial sinusitis?",
-  "Cold lasting more than 10 days, or worsening again."
- ],
- [
-  "Croup",
-  "Commonest cause of croup?",
-  "Parainfluenza virus."
- ],
- [
-  "Croup",
-  "Age of croup?",
-  "6 months to 6 years (peak 1–2 years)."
- ],
- [
-  "Croup",
-  "Features of croup?",
-  "Barking cough, hoarse voice, inspiratory stridor, low fever, worse at night."
- ],
- [
-  "Croup",
-  "Drug for all grades of croup?",
-  "Dexamethasone 0.15 mg/kg orally once."
- ],
- [
-  "Croup",
-  "Croup with stridor at rest?",
-  "Nebulised adrenaline 1:1000 0.5 ml/kg (max 5 ml) + dexamethasone."
- ],
- [
-  "Croup",
-  "Why observe after nebulised adrenaline?",
-  "Its effect lasts only about 2 hours (rebound)."
- ],
- [
-  "Croup",
-  "Steeple sign?",
-  "Subglottic narrowing on AP neck X-ray in croup."
- ],
- [
-  "Croup",
-  "Are antibiotics used in croup?",
-  "No (viral)."
- ],
- [
-  "Epiglottitis",
-  "Cause of epiglottitis?",
-  "Haemophilus influenzae type b."
- ],
- [
-  "Epiglottitis",
-  "Features of epiglottitis?",
-  "Sudden high fever, toxic, drooling, muffled voice, soft stridor, sits forward, little cough."
- ],
- [
-  "Epiglottitis",
-  "First step in epiglottitis?",
-  "Secure the airway: intubation in theatre by an experienced anaesthetist."
- ],
- [
-  "Epiglottitis",
-  "What must not be done in epiglottitis?",
-  "Examine the throat with a tongue depressor, lay the child down or upset the child."
- ],
- [
-  "Epiglottitis",
-  "Antibiotic for epiglottitis?",
-  "IV ceftriaxone for 7–10 days."
- ],
- [
-  "Epiglottitis",
-  "X-ray sign of epiglottitis?",
-  "Thumb sign on lateral neck X-ray."
- ],
- [
-  "Epiglottitis",
-  "Prophylaxis for contacts?",
-  "Rifampicin 20 mg/kg once daily for 4 days."
- ],
- [
-  "Tracheitis",
-  "Cause of bacterial tracheitis?",
-  "Staphylococcus aureus, usually after croup."
- ],
- [
-  "Laryngomalacia",
-  "Commonest cause of chronic stridor in infants?",
-  "Laryngomalacia."
- ],
- [
-  "Laryngomalacia",
-  "Course of laryngomalacia?",
-  "Resolves by 12–24 months; reassure."
- ]
+ ["Common cold", "What is the commonest cause of the common cold?", "Rhinovirus.", 1, "1kpf04i"],
+ ["Common cold", "How is the common cold treated in an infant?", "Paracetamol, saline nose drops before feeds and continued breastfeeding; no antibiotics.", 1, "kklm22"],
+ ["Common cold", "What is the commonest complication of a cold in infants?", "Acute otitis media.", 1, "1d88sc"],
+ ["Pharyngitis", "What causes most sore throats in children under 3 years?", "Viruses.", 1, "1e6z0bd"],
+ ["Pharyngitis", "At what age does streptococcal tonsillitis occur?", "At 5–15 years; it is rare under 3 years.", 1, "1vk5kcb"],
+ ["Pharyngitis", "What are the clues to streptococcal tonsillitis?", "Sudden fever, exudate on the tonsils, tender anterior neck nodes and no cough.", 2, "14fdm0i"],
+ ["Pharyngitis", "What are the clues to a viral sore throat?", "Cough, a runny nose, hoarseness, conjunctivitis and mouth ulcers.", 2, "xarzj2"],
+ ["Pharyngitis", "How is streptococcal tonsillitis treated?", "With penicillin V or amoxicillin for 10 days, or a single intramuscular dose of benzathine penicillin.", 1, "mp2ar8"],
+ ["Pharyngitis", "What is the main reason to treat group A streptococcal tonsillitis?", "To prevent rheumatic fever.", 2, "l9d0pq"],
+ ["Pharyngitis", "Does penicillin prevent post-streptococcal glomerulonephritis?", "No. It prevents rheumatic fever only.", 3, "z2vlau"],
+ ["Pharyngitis", "Which antibiotic is avoided in glandular fever, and why?", "Amoxicillin, because it causes a rash.", 2, "n9lexw"],
+ ["Pharyngitis", "What are the features of infectious mononucleosis?", "Exudative tonsillitis, large neck nodes, splenomegaly and atypical lymphocytes.", 1, "17q58ow"],
+ ["Complications", "What are the signs of a peritonsillar abscess (quinsy)?", "A severe one-sided sore throat, trismus, a muffled voice and a uvula pushed to the other side.", 2, "od97kg"],
+ ["Complications", "At what age does a retropharyngeal abscess occur, and what are its signs?", "Under 5 years: fever, refusal to move the neck and drooling, with a wide prevertebral space on the X-ray.", 2, "1bzfa8i"],
+ ["Complications", "What is the commonest indication for adenotonsillectomy?", "Obstructive sleep apnoea.", 2, "1pcenge"],
+ ["Complications", "What are the criteria of recurrent tonsillitis for tonsillectomy?", "7 or more episodes in 1 year, 5 or more a year for 2 years, or 3 or more a year for 3 years.", 2, "kp07ot"],
+ ["Otitis media", "Why are infants prone to otitis media?", "Their Eustachian tube is short, wide and horizontal.", 2, "6afyz3"],
+ ["Otitis media", "What is the commonest bacterium in otitis media?", "Streptococcus pneumoniae.", 1, "1wqfp6v"],
+ ["Otitis media", "What does otoscopy show in acute otitis media?", "A red, bulging eardrum with loss of the light reflex.", 1, "1k3okks"],
+ ["Otitis media", "How is an acute ear infection treated (IMCI)?", "Amoxicillin for 5 days, pain relief, and drying the ear by wicking.", 2, "1to8ye5"],
+ ["Otitis media", "How is a chronic ear infection defined and treated (IMCI)?", "Pus draining for 14 days or more; it is treated by wicking and topical quinolone drops.", 2, "18vunav"],
+ ["Otitis media", "What is the sign of mastoiditis, and what is done?", "A tender swelling behind the ear that pushes the ear forward. The child is admitted for intravenous antibiotics.", 2, "f0w6jf"],
+ ["Otitis media", "What is the commonest cause of conductive hearing loss in children?", "Otitis media with effusion (glue ear).", 1, "leljp3"],
+ ["Otitis media", "What does tympanometry show in glue ear?", "A flat trace.", 2, "1fwrdf4"],
+ ["Otitis media", "How is persistent glue ear with hearing loss treated?", "With grommets, sometimes with adenoidectomy.", 2, "ez17z7"],
+ ["Sinusitis", "Which sinuses are present at birth?", "The maxillary and ethmoid sinuses.", 1, "1955hul"],
+ ["Sinusitis", "When is bacterial sinusitis suspected?", "When a cold lasts more than 10 days, or worsens again after improving.", 2, "mgchl1"],
+ ["Croup", "What is the commonest cause of croup?", "Parainfluenza virus.", 1, "1wgu80h"],
+ ["Croup", "At what age does croup occur?", "From 6 months to 6 years, with a peak at 1–2 years.", 1, "1skqwlo"],
+ ["Croup", "What are the features of croup?", "A barking cough, a hoarse voice, inspiratory stridor and a low fever, worse at night.", 1, "18x61e2"],
+ ["Croup", "Which drug is given in all grades of croup?", "Dexamethasone 0.15 mg/kg by mouth, once.", 1, "gbg0kf"],
+ ["Croup", "How is croup with stridor at rest treated?", "Nebulised adrenaline 1:1000, 0.5 ml/kg (maximum 5 ml), together with dexamethasone.", 2, "yquu3o"],
+ ["Croup", "Why is the child observed after nebulised adrenaline?", "Its effect lasts only about 2 hours, and the stridor can return (rebound).", 3, "p2rtnx"],
+ ["Croup", "What is the steeple sign?", "Subglottic narrowing on the anteroposterior neck X-ray in croup.", 2, "1ggnckq"],
+ ["Croup", "Are antibiotics used in croup?", "No, because croup is viral.", 1, "revbp9"],
+ ["Epiglottitis", "What causes epiglottitis?", "Haemophilus influenzae type b.", 1, "1rb5vfw"],
+ ["Epiglottitis", "What are the features of epiglottitis?", "Sudden high fever, a toxic child who drools and sits forward, a muffled voice, soft stridor and little cough.", 2, "6opviw"],
+ ["Epiglottitis", "What is the first step in epiglottitis?", "Securing the airway: intubation in the operating theatre by an experienced anaesthetist.", 2, "muye87"],
+ ["Epiglottitis", "What must not be done in epiglottitis?", "Examining the throat with a tongue depressor, laying the child down or upsetting the child.", 3, "divup8"],
+ ["Epiglottitis", "Which antibiotic is given for epiglottitis?", "Intravenous ceftriaxone for 7–10 days.", 2, "hzha33"],
+ ["Epiglottitis", "What is the X-ray sign of epiglottitis?", "The thumb sign on the lateral neck X-ray.", 1, "hfenkd"],
+ ["Epiglottitis", "What prophylaxis is given to contacts of epiglottitis?", "Rifampicin 20 mg/kg once daily for 4 days.", 2, "vdiv0u"],
+ ["Tracheitis", "What causes bacterial tracheitis?", "Staphylococcus aureus, usually after croup.", 2, "1lyt7ea"],
+ ["Laryngomalacia", "What is the commonest cause of chronic stridor in infants?", "Laryngomalacia.", 1, "k4o8s5"],
+ ["Laryngomalacia", "What is the course of laryngomalacia?", "It resolves by 12–24 months; the parents are reassured.", 1, "1sccwlf"]
 ]
