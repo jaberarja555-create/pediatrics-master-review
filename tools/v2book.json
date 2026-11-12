@@ -89,11 +89,11 @@
   "prefix": "prr",
   "code": "PMR",
   "aboutImg": {
-   "authors": "img/authors.webp",
+   "authors": "img/abt_authors.jpg",
    "reviewers": "img/abt_reviewers.jpg",
    "edition": "img/abt_edition.jpg",
-   "howto": "img/help_home.jpg",
-   "tools": "img/help_reader.jpg",
+   "howto": "img/abt_howto.jpg",
+   "tools": "img/abt_tools.jpg",
    "refs": "img/abt_refs.jpg",
    "contents": "img/abt_contents.jpg",
    "rr": "img/rrcover.jpg"

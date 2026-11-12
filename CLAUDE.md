@@ -341,3 +341,14 @@ system and the one admin page. The Library button sits beside the new Home greet
   App (src/app.js): Level row in flashcards (`prr-fclv`) and step 3 «Level» in the test builder, shown once any card/question has a level.
   Done for ALL 16 chapters (12 Nov 2026): 2,569 cards (924 easy, 1,377 medium, 268 hard) and 770 questions; 8 exact duplicate cards removed.
   Chapters 13 and 15 use LV (one digit per card) + REW (rewritten question/answer) instead of full CARDS lists. Surgery has the same app code; its cards are next.
+
+## Front pages in the poster design (owner, 12 Nov 2026: "the beginning of the book still has the old design")
+About the authors, About this edition (with disclaimer, copyright and thanks), Reviewers («فريق المراجعة», the owner's layout: head of the
+team and deputy in Surgery, members, thanks with the cover), How to use the book and the app (six steps with app screenshots), Study tools
+(the new reader's tools) and References are made by `python3 tools/frontpages.py` (same file in Pediatrics and Surgery; the book's colours,
+counts of chapters/topics/cards/questions read from the content; CSS block `fp:start … fp:end` in src/app.css). Do not edit those content/*.html
+by hand: change the script. A poster sent by the owner fills its page instead (`OWNER`; Surgery references = content/img/ab_refs.jpg, his
+picture). The About tiles open each page as a poster (`ab_<name>.jpg`, thumbnails `abt_<name>.jpg`, as in Obstetrics): after a build, serve docs/
+and run `node tools/frontshots.js http://localhost:PORT/ <prefix> && python3 tools/frontshots.py`, then build again. The owner's AI posters
+can carry wrong names/universities (his Surgery reviewers poster did): names and universities come from the book's own list. New app
+features go into the how-to / study-tools pages through this script.
