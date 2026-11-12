@@ -1,137 +1,29 @@
 [
- [
-  "Definition",
-  "Definition of constipation?",
-  "Hard, painful or infrequent stools (< 3 a week)."
- ],
- [
-  "Definition",
-  "Percentage functional?",
-  "Over 90%."
- ],
- [
-  "Definition",
-  "Mechanism of functional constipation?",
-  "Pain → withholding → harder, larger stool → more pain."
- ],
- [
-  "Causes",
-  "Metabolic causes of constipation?",
-  "Hypothyroidism, hypercalcaemia, hypokalaemia, lead poisoning."
- ],
- [
-  "Causes",
-  "Not causes of constipation (MCQ)?",
-  "Hypocalcaemia and gastro-oesophageal reflux."
- ],
- [
-  "Causes",
-  "Neurological causes?",
-  "Spina bifida, spinal cord lesions, cerebral palsy."
- ],
- [
-  "Red flags",
-  "Red flags in constipation?",
-  "Meconium after 48 h, onset in first weeks, ribbon stools, FTT, abnormal spine/legs."
- ],
- [
-  "Fissure",
-  "Anal fissure picture?",
-  "Pain on defecation, blood streaks on stool surface."
- ],
- [
-  "Fissure",
-  "Treatment of anal fissure?",
-  "Stool softener, petroleum jelly, treat constipation."
- ],
- [
-  "Treatment",
-  "Drug of choice for constipation?",
-  "Polyethylene glycol (PEG)."
- ],
- [
-  "Treatment",
-  "PEG dose for disimpaction?",
-  "1–1.5 g/kg/day for 3–6 days."
- ],
- [
-  "Treatment",
-  "PEG maintenance dose?",
-  "0.4 g/kg/day for at least 2 months."
- ],
- [
-  "Treatment",
-  "Lactulose dose?",
-  "1–2 ml/kg/day."
- ],
- [
-  "Treatment",
-  "Toilet routine?",
-  "Sit 5 minutes after meals (gastrocolic reflex)."
- ],
- [
-  "Encopresis",
-  "Definition of encopresis?",
-  "Passing stool in underwear after 4 years of age."
- ],
- [
-  "Encopresis",
-  "Usual cause of encopresis?",
-  "Overflow around a faecal mass (functional constipation)."
- ],
- [
-  "Hirschsprung",
-  "Pathology of Hirschsprung disease?",
-  "Absent ganglion cells; distal segment cannot relax."
- ],
- [
-  "Hirschsprung",
-  "Commonest segment?",
-  "Rectosigmoid (75%)."
- ],
- [
-  "Hirschsprung",
-  "Sex ratio and association?",
-  "Boys 4:1; Down syndrome."
- ],
- [
-  "Hirschsprung",
-  "Newborn presentation?",
-  "Meconium after 48 h, distension, bilious vomiting."
- ],
- [
-  "Hirschsprung",
-  "Rectal examination finding?",
-  "Explosive gush of stool and gas; empty rectum."
- ],
- [
-  "Hirschsprung",
-  "Dangerous complication?",
-  "Enterocolitis: fever, explosive offensive diarrhoea, shock."
- ],
- [
-  "Hirschsprung",
-  "Gold-standard test?",
-  "Rectal suction biopsy."
- ],
- [
-  "Hirschsprung",
-  "Contrast enema finding?",
-  "Transition zone: narrow distal, dilated proximal colon."
- ],
- [
-  "Hirschsprung",
-  "Definitive treatment?",
-  "Pull-through operation."
- ],
- [
-  "Hirschsprung",
-  "Rectum in functional constipation vs Hirschsprung?",
-  "Full of stool vs empty."
- ],
- [
-  "Hirschsprung",
-  "Soiling in Hirschsprung disease?",
-  "Rare (common in functional constipation)."
- ]
+ ["Definition", "How is constipation defined?", "Hard, painful or infrequent stools (fewer than 3 a week).", 1, "f2upx4"],
+ ["Definition", "What percentage of childhood constipation is functional?", "Over 90%.", 1, "1a2154m"],
+ ["Definition", "What is the mechanism of functional constipation?", "Painful defecation leads to withholding, which makes the stool harder and larger, which causes more pain.", 2, "1wpti8p"],
+ ["Causes", "What are the metabolic causes of constipation?", "Hypothyroidism, hypercalcaemia, hypokalaemia and lead poisoning.", 2, "1nq26z9"],
+ ["Causes", "Which conditions are NOT causes of constipation (a common MCQ)?", "Hypocalcaemia and gastro-oesophageal reflux.", 3, "1yps6e6"],
+ ["Causes", "What are the neurological causes of constipation?", "Spina bifida, lesions of the spinal cord and cerebral palsy.", 2, "3kvjqb"],
+ ["Red flags", "What are the red flags in constipation?", "Meconium passed after 48 hours, onset in the first weeks of life, ribbon stools, failure to thrive, and an abnormal spine or legs.", 2, "11pktxd"],
+ ["Fissure", "What is the picture of an anal fissure?", "Pain on defecation and streaks of blood on the surface of the stool.", 1, "14byflw"],
+ ["Fissure", "How is an anal fissure treated?", "With a stool softener and petroleum jelly, and by treating the constipation.", 1, "1a0l0qp"],
+ ["Treatment", "What is the drug of choice for constipation?", "Polyethylene glycol (PEG).", 1, "72ej3b"],
+ ["Treatment", "What dose of polyethylene glycol is used for disimpaction?", "1–1.5 g/kg/day for 3–6 days.", 2, "3vb867"],
+ ["Treatment", "What is the maintenance dose of polyethylene glycol?", "0.4 g/kg/day for at least 2 months.", 2, "o4vnif"],
+ ["Treatment", "What is the dose of lactulose?", "1–2 ml/kg/day.", 2, "ahruli"],
+ ["Treatment", "What is the toilet routine in constipation?", "Sitting on the toilet for 5 minutes after meals, using the gastrocolic reflex.", 2, "wt1wni"],
+ ["Encopresis", "What is encopresis?", "Passing stool in the underwear after 4 years of age.", 1, "15gsbhw"],
+ ["Encopresis", "What is the usual cause of encopresis?", "Overflow around a faecal mass in functional constipation.", 2, "pdvdvg"],
+ ["Hirschsprung disease", "What is the pathology of Hirschsprung disease?", "Ganglion cells are absent, so the distal segment of bowel cannot relax.", 1, "j9us8r"],
+ ["Hirschsprung disease", "Which segment is most commonly affected in Hirschsprung disease?", "The rectosigmoid (75%).", 1, "124n4gh"],
+ ["Hirschsprung disease", "What are the sex ratio and the main association of Hirschsprung disease?", "Boys are affected 4 times as often as girls; it is associated with Down syndrome.", 2, "1vkpfrq"],
+ ["Hirschsprung disease", "How does Hirschsprung disease present in the newborn?", "Meconium is passed after 48 hours, with abdominal distension and bilious vomiting.", 2, "qmdmj2"],
+ ["Hirschsprung disease", "What is found on rectal examination in Hirschsprung disease?", "An empty rectum, followed by an explosive gush of stool and gas.", 2, "lclnqu"],
+ ["Hirschsprung disease", "What is the dangerous complication of Hirschsprung disease?", "Enterocolitis: fever, explosive offensive diarrhoea and shock.", 2, "1i48g97"],
+ ["Hirschsprung disease", "What is the gold-standard test for Hirschsprung disease?", "A rectal suction biopsy.", 1, "sxv7av"],
+ ["Hirschsprung disease", "What does a contrast enema show in Hirschsprung disease?", "A transition zone: a narrow distal segment and a dilated proximal colon.", 2, "1mvmibo"],
+ ["Hirschsprung disease", "What is the definitive treatment of Hirschsprung disease?", "A pull-through operation.", 1, "1wnkvr8"],
+ ["Hirschsprung disease", "How does the rectum differ between functional constipation and Hirschsprung disease?", "It is full of stool in functional constipation and empty in Hirschsprung disease.", 3, "sgu2vf"],
+ ["Hirschsprung disease", "Is soiling common in Hirschsprung disease?", "No, it is rare; soiling is common in functional constipation.", 3, "1d8fbdx"]
 ]

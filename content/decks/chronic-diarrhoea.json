@@ -1,172 +1,36 @@
 [
- [
-  "Persistent",
-  "IMCI severe persistent diarrhoea?",
-  "Diarrhoea ≥ 14 days with any dehydration: refer."
- ],
- [
-  "Persistent",
-  "Home treatment of persistent diarrhoea?",
-  "Continue breastfeeding, yoghurt instead of half the milk, 6 meals a day, zinc, vitamin A, review in 5 days."
- ],
- [
-  "Persistent",
-  "Commonest mechanism of persistent diarrhoea after GE?",
-  "Secondary lactose intolerance."
- ],
- [
-  "Chronic",
-  "Definition of chronic diarrhoea?",
-  "More than 4 weeks, or recurrent."
- ],
- [
-  "Chronic",
-  "Stool in osmotic diarrhoea?",
-  "Acidic (pH < 5.5), reducing substances positive."
- ],
- [
-  "Chronic",
-  "Toddler's diarrhoea features?",
-  "Loose stools with undigested food by day, normal growth, too much juice."
- ],
- [
-  "Chronic",
-  "Steatorrhoea + recurrent chest infections?",
-  "Cystic fibrosis: sweat chloride test."
- ],
- [
-  "Coeliac",
-  "Cause of coeliac disease?",
-  "T-cell reaction to gluten (HLA-DQ2/DQ8)."
- ],
- [
-  "Coeliac",
-  "Grains with gluten?",
-  "Wheat, barley, rye."
- ],
- [
-  "Coeliac",
-  "Safe cereals in coeliac disease?",
-  "Rice and maize."
- ],
- [
-  "Coeliac",
-  "Classic coeliac picture?",
-  "Diarrhoea, distended abdomen, wasted buttocks, FTT after wheat introduced."
- ],
- [
-  "Coeliac",
-  "Older child presentations?",
-  "Short stature, iron deficiency anaemia, delayed puberty, dermatitis herpetiformis."
- ],
- [
-  "Coeliac",
-  "Screening test?",
-  "tTG-IgA with total IgA, while eating gluten."
- ],
- [
-  "Coeliac",
-  "Why measure total IgA?",
-  "IgA deficiency gives a false-negative tTG-IgA."
- ],
- [
-  "Coeliac",
-  "No-biopsy diagnosis (ESPGHAN 2020)?",
-  "tTG-IgA ≥ 10 × ULN + positive EMA in a second sample."
- ],
- [
-  "Coeliac",
-  "Biopsy findings?",
-  "Villous atrophy, crypt hyperplasia, intraepithelial lymphocytes."
- ],
- [
-  "Coeliac",
-  "Groups screened for coeliac disease?",
-  "Type 1 diabetes, Down, Turner, Williams, IgA deficiency, autoimmune thyroiditis, relatives."
- ],
- [
-  "Coeliac",
-  "Treatment?",
-  "Lifelong strict gluten-free diet."
- ],
- [
-  "Coeliac",
-  "Long-term risk of untreated coeliac disease?",
-  "Small-bowel lymphoma."
- ],
- [
-  "IBD",
-  "Crohn vs UC: site?",
-  "Crohn: mouth to anus, skip, transmural; UC: colon from rectum, continuous, mucosal."
- ],
- [
-  "IBD",
-  "IBD with perianal fistula and growth failure?",
-  "Crohn disease."
- ],
- [
-  "IBD",
-  "IBD complication: toxic megacolon?",
-  "Ulcerative colitis."
- ],
- [
-  "IBD",
-  "Biopsy granulomas?",
-  "Crohn disease."
- ],
- [
-  "IBD",
-  "First-line treatment of paediatric Crohn disease?",
-  "Exclusive enteral nutrition 6–8 weeks."
- ],
- [
-  "Lactose",
-  "Commonest type of lactose intolerance in children?",
-  "Secondary, after gastroenteritis."
- ],
- [
-  "Lactose",
-  "Stool tests for lactose intolerance?",
-  "pH < 5.5 and positive reducing substances."
- ],
- [
-  "Lactose",
-  "Management after GE?",
-  "Continue breastfeeding; lactose-free formula 2–4 weeks."
- ],
- [
-  "CMPA",
-  "Cow's milk protein allergy features?",
-  "Vomiting, diarrhoea, bloody mucoid stool, eczema, wheeze, poor weight gain."
- ],
- [
-  "CMPA",
-  "How is CMPA diagnosed?",
-  "Elimination for 2–4 weeks, then re-introduction challenge."
- ],
- [
-  "CMPA",
-  "Formula for CMPA?",
-  "Extensively hydrolysed formula (amino-acid if severe)."
- ],
- [
-  "CMPA",
-  "Breastfed baby with CMPA?",
-  "Continue breastfeeding; mother avoids dairy, takes calcium."
- ],
- [
-  "CMPA",
-  "When do most outgrow CMPA?",
-  "By 3–5 years."
- ],
- [
-  "Giardia",
-  "Giardiasis features?",
-  "Watery offensive greasy stools, bloating, no blood, weight loss."
- ],
- [
-  "Giardia",
-  "Treatment of giardiasis?",
-  "Metronidazole 5 mg/kg three times daily for 5 days."
- ]
+ ["Persistent", "What is IMCI severe persistent diarrhoea, and what is done?", "Diarrhoea for 14 days or more with any dehydration; the child is referred.", 2, "nl6bwz"],
+ ["Persistent", "How is persistent diarrhoea treated at home?", "Breastfeeding continues, yoghurt replaces half of the milk, 6 meals a day are given, with zinc and vitamin A, and the child is reviewed in 5 days.", 2, "l5pnd5"],
+ ["Persistent", "What is the commonest mechanism of persistent diarrhoea after gastroenteritis?", "Secondary lactose intolerance.", 2, "1dinj00"],
+ ["Chronic", "How is chronic diarrhoea defined?", "Diarrhoea for more than 4 weeks, or recurrent diarrhoea.", 1, "1e0ujqu"],
+ ["Chronic", "What does the stool show in osmotic diarrhoea?", "An acidic stool (pH below 5.5) with positive reducing substances.", 2, "1dduczi"],
+ ["Chronic", "What are the features of toddler's diarrhoea?", "Loose stools containing undigested food during the day, normal growth, and too much fruit juice.", 2, "xuivnv"],
+ ["Chronic", "A child has steatorrhoea and recurrent chest infections. What is the diagnosis, and what is the test?", "Cystic fibrosis; the sweat chloride test.", 2, "1rzh7ik"],
+ ["Coeliac disease", "What causes coeliac disease?", "A T-cell reaction to gluten in people with HLA-DQ2 or HLA-DQ8.", 2, "yy3h0d"],
+ ["Coeliac disease", "Which grains contain gluten?", "Wheat, barley and rye.", 1, "9egjsw"],
+ ["Coeliac disease", "Which cereals are safe in coeliac disease?", "Rice and maize.", 1, "1qbqf0m"],
+ ["Coeliac disease", "What is the classic picture of coeliac disease?", "Diarrhoea, a distended abdomen, wasted buttocks and failure to thrive after wheat is introduced.", 2, "1fo6a47"],
+ ["Coeliac disease", "How does coeliac disease present in older children?", "With short stature, iron deficiency anaemia, delayed puberty or dermatitis herpetiformis.", 2, "16y0sfq"],
+ ["Coeliac disease", "What is the screening test for coeliac disease?", "Anti-tissue transglutaminase IgA (tTG-IgA) with total IgA, while the child is eating gluten.", 2, "t2fajn"],
+ ["Coeliac disease", "Why is the total IgA measured?", "IgA deficiency gives a false-negative tTG-IgA.", 3, "kkktyq"],
+ ["Coeliac disease", "When can coeliac disease be diagnosed without a biopsy (ESPGHAN 2020)?", "When the tTG-IgA is 10 times the upper limit of normal or more, and the endomysial antibody (EMA) is positive in a second sample.", 3, "1x0ta5x"],
+ ["Coeliac disease", "What does the biopsy show in coeliac disease?", "Villous atrophy, crypt hyperplasia and increased intraepithelial lymphocytes.", 2, "1i789tv"],
+ ["Coeliac disease", "Which groups are screened for coeliac disease?", "Children with type 1 diabetes, Down, Turner or Williams syndrome, IgA deficiency or autoimmune thyroiditis, and relatives of patients.", 2, "126q5vv"],
+ ["Coeliac disease", "How is coeliac disease treated?", "With a strict gluten-free diet for life.", 1, "hrr3b"],
+ ["Coeliac disease", "What is the long-term risk of untreated coeliac disease?", "Lymphoma of the small bowel.", 2, "34umfa"],
+ ["IBD", "How does Crohn disease differ from ulcerative colitis in its site?", "Crohn disease affects any part from mouth to anus, with skip lesions, and is transmural. Ulcerative colitis affects the colon continuously from the rectum and involves the mucosa only.", 2, "apvnh7"],
+ ["IBD", "Which inflammatory bowel disease causes perianal fistulas and growth failure?", "Crohn disease.", 2, "1i9nzsk"],
+ ["IBD", "Which inflammatory bowel disease causes toxic megacolon?", "Ulcerative colitis.", 2, "3v7hqs"],
+ ["IBD", "In which inflammatory bowel disease does the biopsy show granulomas?", "Crohn disease.", 2, "x5vgfi"],
+ ["IBD", "What is the first-line treatment of Crohn disease in children?", "Exclusive enteral nutrition for 6–8 weeks.", 3, "1s3x5sb"],
+ ["Lactose", "What is the commonest type of lactose intolerance in children?", "Secondary lactose intolerance, after gastroenteritis.", 1, "12h66i"],
+ ["Lactose", "Which stool tests show lactose intolerance?", "A pH below 5.5 and positive reducing substances.", 2, "zaw8sn"],
+ ["Lactose", "How is lactose intolerance after gastroenteritis managed?", "Breastfeeding continues; a lactose-free formula is used for 2–4 weeks.", 2, "1a6rnts"],
+ ["CMPA", "What are the features of cow's milk protein allergy?", "Vomiting, diarrhoea, bloody mucoid stools, eczema, wheeze and poor weight gain.", 2, "qigqq1"],
+ ["CMPA", "How is cow's milk protein allergy diagnosed?", "Cow's milk is removed for 2–4 weeks and then reintroduced as a challenge.", 2, "1tus16g"],
+ ["CMPA", "Which formula is used for cow's milk protein allergy?", "An extensively hydrolysed formula; an amino acid formula if the allergy is severe.", 2, "ax5nir"],
+ ["CMPA", "How is a breastfed baby with cow's milk protein allergy managed?", "Breastfeeding continues; the mother avoids dairy foods and takes calcium.", 3, "3zxe8c"],
+ ["CMPA", "By what age do most children outgrow cow's milk protein allergy?", "By 3–5 years.", 1, "2n58t3"],
+ ["Giardia", "What are the features of giardiasis?", "Watery, offensive, greasy stools without blood, with bloating and weight loss.", 1, "ca7ufq"],
+ ["Giardia", "How is giardiasis treated?", "Metronidazole 5 mg/kg three times daily for 5 days.", 2, "17imc96"]
 ]

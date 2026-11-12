@@ -1,157 +1,33 @@
 [
- [
-  "Intussusception",
-  "Commonest type of intussusception?",
-  "Ileocolic."
- ],
- [
-  "Intussusception",
-  "Age of intussusception?",
-  "3 months–3 years (peak 5–10 months)."
- ],
- [
-  "Intussusception",
-  "Cause under 2 years?",
-  "Swollen Peyer patches after viral infection (no lead point)."
- ],
- [
-  "Intussusception",
-  "Lead points in older children?",
-  "Meckel diverticulum, polyp, lymphoma, HSP."
- ],
- [
-  "Intussusception",
-  "Pain pattern?",
-  "Colicky screaming attacks, legs drawn up; pale and lethargic between."
- ],
- [
-  "Intussusception",
-  "Stool sign and its timing?",
-  "Redcurrant jelly stool: a late sign."
- ],
- [
-  "Intussusception",
-  "Abdominal sign?",
-  "Sausage-shaped mass right upper abdomen; empty right iliac fossa."
- ],
- [
-  "Intussusception",
-  "Best test?",
-  "Ultrasound: target (doughnut) sign."
- ],
- [
-  "Intussusception",
-  "First-line treatment?",
-  "Air or saline enema reduction under imaging."
- ],
- [
-  "Intussusception",
-  "Contraindications to enema reduction?",
-  "Peritonitis, perforation, uncorrected shock."
- ],
- [
-  "Intussusception",
-  "Is distension an early sign?",
-  "No: it is late."
- ],
- [
-  "Intussusception",
-  "Vaccine with a small risk of intussusception?",
-  "Rotavirus vaccine."
- ],
- [
-  "Appendicitis",
-  "Pain pattern?",
-  "Periumbilical, then right iliac fossa."
- ],
- [
-  "Appendicitis",
-  "Why perforated in under-5s?",
-  "Vague signs delay diagnosis; thin omentum."
- ],
- [
-  "Appendicitis",
-  "First imaging?",
-  "Ultrasound (appendix > 6 mm, non-compressible)."
- ],
- [
-  "Acute pain",
-  "Medical causes of acute abdominal pain?",
-  "Lower-lobe pneumonia, DKA, UTI, sickle crisis, HSP, mesenteric adenitis."
- ],
- [
-  "Acute pain",
-  "Boy with abdominal pain: never forget to examine?",
-  "Scrotum (testicular torsion) and hernial orifices."
- ],
- [
-  "Recurrent pain",
-  "Definition of recurrent abdominal pain?",
-  "≥ 4 episodes in 2 months; 90% functional."
- ],
- [
-  "Recurrent pain",
-  "Feature supporting functional pain?",
-  "Periumbilical pain, normal growth, no night pain."
- ],
- [
-  "Recurrent pain",
-  "Red flags?",
-  "Pain away from umbilicus, waking at night, weight loss, blood in stool, fever."
- ],
- [
-  "Recurrent pain",
-  "Management of functional pain?",
-  "Explain, reassure, keep at school, reduce stress."
- ],
- [
-  "GI bleeding",
-  "Melaena means?",
-  "Black tarry stool: upper GI bleeding."
- ],
- [
-  "GI bleeding",
-  "Newborn vomiting blood, well baby?",
-  "Swallowed maternal blood: Apt test."
- ],
- [
-  "GI bleeding",
-  "Commonest cause of rectal bleeding in infants and toddlers?",
-  "Anal fissure."
- ],
- [
-  "GI bleeding",
-  "Painless bright blood at end of stool, 2–8 years?",
-  "Juvenile polyp."
- ],
- [
-  "GI bleeding",
-  "Haematemesis + big spleen + normal LFT, child from an irrigated farming area?",
-  "Varices from schistosomal portal hypertension."
- ],
- [
-  "Meckel",
-  "Rule of 2 in Meckel diverticulum?",
-  "2%, 2 feet from ileocaecal valve, 2 inches, 2 tissues, under 2 years."
- ],
- [
-  "Meckel",
-  "Classic presentation?",
-  "Painless massive rectal bleeding in a toddler."
- ],
- [
-  "Meckel",
-  "Why does it bleed?",
-  "Ectopic gastric mucosa makes acid that ulcerates the ileum."
- ],
- [
-  "Meckel",
-  "Test of choice?",
-  "Technetium-99m pertechnetate scan."
- ],
- [
-  "Meckel",
-  "Treatment?",
-  "Surgical resection."
- ]
+ ["Intussusception", "What is the commonest type of intussusception?", "Ileocolic intussusception.", 1, "8gup49"],
+ ["Intussusception", "At what age does intussusception occur?", "From 3 months to 3 years, with a peak at 5–10 months.", 1, "pains9"],
+ ["Intussusception", "What causes intussusception under 2 years of age?", "Swollen Peyer patches after a viral infection; there is no lead point.", 2, "pmv3yu"],
+ ["Intussusception", "What lead points cause intussusception in older children?", "Meckel diverticulum, a polyp, lymphoma and Henoch–Schönlein purpura.", 2, "1tj0u6q"],
+ ["Intussusception", "What is the pain pattern of intussusception?", "Colicky attacks of screaming with the legs drawn up; the child is pale and lethargic between attacks.", 1, "m1h9qx"],
+ ["Intussusception", "What is the stool sign of intussusception, and is it early or late?", "A redcurrant jelly stool; it is a late sign.", 2, "1r9y9eu"],
+ ["Intussusception", "What is the abdominal sign of intussusception?", "A sausage-shaped mass in the right upper abdomen, with an empty right iliac fossa.", 1, "30x0z"],
+ ["Intussusception", "What is the best test for intussusception?", "Ultrasound, which shows the target (doughnut) sign.", 1, "ouv1sh"],
+ ["Intussusception", "What is the first-line treatment of intussusception?", "Reduction by air or saline enema under imaging.", 1, "1iaoegm"],
+ ["Intussusception", "What are the contraindications to enema reduction?", "Peritonitis, perforation and uncorrected shock.", 2, "15wzbnb"],
+ ["Intussusception", "Is abdominal distension an early sign of intussusception?", "No. It is a late sign.", 2, "61xx4"],
+ ["Intussusception", "Which vaccine carries a small risk of intussusception?", "Rotavirus vaccine.", 1, "yx6lvk"],
+ ["Appendicitis", "What is the pain pattern of appendicitis?", "Pain around the umbilicus that moves to the right iliac fossa.", 1, "m1h9qx"],
+ ["Appendicitis", "Why is appendicitis often perforated in children under 5?", "The signs are vague, so diagnosis is delayed, and the omentum is thin.", 3, "3todh7"],
+ ["Appendicitis", "What is the first imaging for suspected appendicitis?", "Ultrasound: an appendix wider than 6 mm that does not compress.", 2, "1tpnzav"],
+ ["Acute pain", "What are the medical causes of acute abdominal pain?", "Lower-lobe pneumonia, diabetic ketoacidosis, urinary tract infection, sickle cell crisis, Henoch–Schönlein purpura and mesenteric adenitis.", 2, "1uxs7ek"],
+ ["Acute pain", "What must never be forgotten when examining a boy with abdominal pain?", "The scrotum (testicular torsion) and the hernial orifices.", 3, "gax3ed"],
+ ["Recurrent pain", "How is recurrent abdominal pain defined?", "Four or more episodes in 2 months; 90% are functional.", 1, "hzlvok"],
+ ["Recurrent pain", "Which features support functional abdominal pain?", "Pain around the umbilicus, normal growth and no pain at night.", 2, "ge7eq7"],
+ ["Recurrent pain", "What are the red flags in recurrent abdominal pain?", "Pain away from the umbilicus, waking at night, weight loss, blood in the stool and fever.", 2, "19ckbvr"],
+ ["Recurrent pain", "How is functional abdominal pain managed?", "By explanation and reassurance, keeping the child at school, and reducing stress.", 2, "1rjl9rs"],
+ ["GI bleeding", "What does melaena mean?", "A black tarry stool, which indicates upper gastrointestinal bleeding.", 1, "104qvhi"],
+ ["GI bleeding", "A well newborn vomits blood. What is the likely cause, and which test confirms it?", "Swallowed maternal blood, confirmed by the Apt test.", 2, "hsi5nj"],
+ ["GI bleeding", "What is the commonest cause of rectal bleeding in infants and toddlers?", "An anal fissure.", 1, "13idmcn"],
+ ["GI bleeding", "A child aged 2–8 years passes painless bright blood at the end of the stool. What is the likely cause?", "A juvenile polyp.", 2, "1miwz3z"],
+ ["GI bleeding", "A child from an irrigated farming area has haematemesis, a big spleen and normal liver function tests. What is the cause?", "Bleeding varices from portal hypertension caused by schistosomiasis.", 3, "14mnhnw"],
+ ["Meckel diverticulum", "What is the \"rule of 2\" for Meckel diverticulum?", "It occurs in 2% of people, 2 feet from the ileocaecal valve, is 2 inches long, contains 2 types of ectopic tissue and usually presents under 2 years.", 1, "1sfli3z"],
+ ["Meckel diverticulum", "What is the classic presentation of Meckel diverticulum?", "Painless massive rectal bleeding in a toddler.", 1, "13dmbb"],
+ ["Meckel diverticulum", "Why does a Meckel diverticulum bleed?", "Ectopic gastric mucosa makes acid that ulcerates the ileum.", 2, "1dkgwa3"],
+ ["Meckel diverticulum", "What is the test of choice for Meckel diverticulum?", "A technetium-99m pertechnetate scan.", 2, "1ym5u3n"],
+ ["Meckel diverticulum", "How is a bleeding Meckel diverticulum treated?", "By surgical resection.", 1, "hrr3b"]
 ]

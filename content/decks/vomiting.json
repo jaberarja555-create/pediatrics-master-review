@@ -1,147 +1,31 @@
 [
- [
-  "Approach",
-  "Meaning of bilious vomiting?",
-  "Obstruction below the duodenal papilla: surgical emergency."
- ],
- [
-  "Approach",
-  "First steps in bilious vomiting in a newborn?",
-  "Nil by mouth, NGT, IV fluids, surgeon, upper GI contrast."
- ],
- [
-  "Approach",
-  "Double bubble sign?",
-  "Duodenal atresia (Down syndrome)."
- ],
- [
-  "Approach",
-  "Early-morning vomiting with headache?",
-  "Raised intracranial pressure."
- ],
- [
-  "Approach",
-  "Vomiting with fever in an infant: always exclude?",
-  "Urinary infection and meningitis."
- ],
- [
-  "GOR",
-  "Peak and resolution of infant reflux?",
-  "Peak 4 months; resolves by 12–18 months."
- ],
- [
-  "GOR",
-  "GOR vs GORD?",
-  "GORD = reflux with complications (poor growth, oesophagitis, aspiration)."
- ],
- [
-  "GOR",
-  "Sandifer syndrome?",
-  "Neck twisting/arching posture from reflux."
- ],
- [
-  "GOR",
-  "Best test for reflux?",
-  "24-hour pH-impedance study."
- ],
- [
-  "GOR",
-  "First treatment of a happy spitter?",
-  "Reassurance, avoid overfeeding."
- ],
- [
-  "GOR",
-  "Reflux not improving with thickened feeds?",
-  "Trial of extensively hydrolysed formula 2–4 weeks (CMPA)."
- ],
- [
-  "GOR",
-  "When is a PPI given?",
-  "Proven oesophagitis, 4–8 weeks."
- ],
- [
-  "GOR",
-  "Sleeping position in reflux?",
-  "Supine (on the back)."
- ],
- [
-  "GOR",
-  "Surgery for severe GORD?",
-  "Fundoplication."
- ],
- [
-  "Pyloric stenosis",
-  "Typical patient?",
-  "First-born boy, 2–8 weeks old."
- ],
- [
-  "Pyloric stenosis",
-  "Vomiting type?",
-  "Projectile, non-bilious, after every feed; hungry after."
- ],
- [
-  "Pyloric stenosis",
-  "Examination signs?",
-  "Visible peristalsis left to right; olive mass on test feed."
- ],
- [
-  "Pyloric stenosis",
-  "Blood gas?",
-  "Hypochloraemic hypokalaemic metabolic alkalosis."
- ],
- [
-  "Pyloric stenosis",
-  "Urine in late cases?",
-  "Paradoxical aciduria."
- ],
- [
-  "Pyloric stenosis",
-  "Test of choice?",
-  "Ultrasound: muscle ≥ 3 mm, canal ≥ 15 mm."
- ],
- [
-  "Pyloric stenosis",
-  "Barium sign?",
-  "String sign (and shoulder sign)."
- ],
- [
-  "Pyloric stenosis",
-  "Is it an emergency operation?",
-  "No: correct fluids and electrolytes first."
- ],
- [
-  "Pyloric stenosis",
-  "Operation?",
-  "Ramstedt pyloromyotomy."
- ],
- [
-  "Pyloric stenosis",
-  "Antibiotic risk factor?",
-  "Erythromycin/azithromycin in the first 2 weeks."
- ],
- [
-  "Pyloric stenosis",
-  "Stools in pyloric stenosis?",
-  "Small and infrequent (constipation)."
- ],
- [
-  "Malrotation",
-  "Malrotation with volvulus presentation?",
-  "Sudden bilious vomiting in a newborn who fed well; later blood per rectum, shock."
- ],
- [
-  "Malrotation",
-  "Test of choice for malrotation?",
-  "Upper GI contrast study (DJ flexure right of midline, corkscrew)."
- ],
- [
-  "Malrotation",
-  "Operation for malrotation?",
-  "Ladd procedure (emergency laparotomy)."
- ],
- [
-  "Malrotation",
-  "Long-term risk after volvulus?",
-  "Short bowel syndrome."
- ]
+ ["Approach", "What does bilious vomiting mean?", "Obstruction below the duodenal papilla: a surgical emergency.", 2, "qgtqlb"],
+ ["Approach", "What are the first steps in a newborn with bilious vomiting?", "Nil by mouth, a nasogastric tube, intravenous fluids, a surgeon, and an upper gastrointestinal contrast study.", 2, "1ttt09o"],
+ ["Approach", "What does the double bubble sign indicate?", "Duodenal atresia, which is associated with Down syndrome.", 1, "83ykwt"],
+ ["Approach", "What does early-morning vomiting with headache suggest?", "Raised intracranial pressure.", 2, "3dfdi5"],
+ ["Approach", "An infant has vomiting with fever. What must always be excluded?", "Urinary tract infection and meningitis.", 2, "16o0vyx"],
+ ["Reflux", "When does infant reflux peak, and when does it resolve?", "It peaks at 4 months and resolves by 12–18 months.", 1, "4wyolk"],
+ ["Reflux", "How does gastro-oesophageal reflux differ from gastro-oesophageal reflux disease?", "Reflux disease is reflux with complications: poor growth, oesophagitis or aspiration.", 2, "1gdugxk"],
+ ["Reflux", "What is Sandifer syndrome?", "A twisting or arching posture of the neck caused by reflux.", 2, "1ymnav0"],
+ ["Reflux", "What is the best test for reflux?", "A 24-hour pH-impedance study.", 2, "1oali3e"],
+ ["Reflux", "What is the first treatment of a \"happy spitter\"?", "Reassurance, and avoiding overfeeding.", 1, "18ga7o6"],
+ ["Reflux", "Reflux does not improve with thickened feeds. What is tried next?", "A 2–4 week trial of extensively hydrolysed formula, for possible cow's milk protein allergy.", 3, "jg8swz"],
+ ["Reflux", "When is a proton pump inhibitor given for reflux?", "For proven oesophagitis, for 4–8 weeks.", 2, "1vz1m7c"],
+ ["Reflux", "In which position should an infant with reflux sleep?", "Supine (on the back).", 2, "vr4nfu"],
+ ["Reflux", "Which operation is done for severe gastro-oesophageal reflux disease?", "Fundoplication.", 1, "v4yg7v"],
+ ["Pyloric stenosis", "Which infant typically has pyloric stenosis?", "A first-born boy aged 2–8 weeks.", 1, "sjt5je"],
+ ["Pyloric stenosis", "What is the vomiting of pyloric stenosis like?", "Projectile, non-bilious vomiting after every feed; the baby is hungry afterwards.", 1, "lk6fm0"],
+ ["Pyloric stenosis", "What are the examination signs of pyloric stenosis?", "Visible peristalsis from left to right, and an olive-shaped mass during a test feed.", 2, "1388kwo"],
+ ["Pyloric stenosis", "What does the blood gas show in pyloric stenosis?", "A hypochloraemic, hypokalaemic metabolic alkalosis.", 2, "d02ccs"],
+ ["Pyloric stenosis", "What does the urine show in late cases of pyloric stenosis?", "Paradoxical aciduria.", 3, "1u4cx94"],
+ ["Pyloric stenosis", "What is the test of choice for pyloric stenosis, and what are the criteria?", "Ultrasound: a muscle thickness of 3 mm or more and a canal length of 15 mm or more.", 2, "1ym5u3n"],
+ ["Pyloric stenosis", "What does the barium study show in pyloric stenosis?", "The string sign (and the shoulder sign).", 2, "gqaauo"],
+ ["Pyloric stenosis", "Is pyloric stenosis an emergency operation?", "No. Fluids and electrolytes are corrected first.", 3, "1v5k0gr"],
+ ["Pyloric stenosis", "Which operation treats pyloric stenosis?", "Ramstedt pyloromyotomy.", 1, "x1cjq0"],
+ ["Pyloric stenosis", "Which antibiotics are a risk factor for pyloric stenosis?", "Erythromycin or azithromycin given in the first 2 weeks of life.", 2, "1oa6srb"],
+ ["Pyloric stenosis", "What are the stools like in pyloric stenosis?", "Small and infrequent (constipation).", 2, "1kji5tw"],
+ ["Malrotation", "How does malrotation with volvulus present?", "Sudden bilious vomiting in a newborn who was feeding well; later, blood per rectum and shock.", 2, "n8pox9"],
+ ["Malrotation", "What is the test of choice for malrotation?", "An upper gastrointestinal contrast study: the duodenojejunal flexure lies to the right of the midline, with a corkscrew appearance.", 2, "17kcmn8"],
+ ["Malrotation", "Which operation treats malrotation?", "The Ladd procedure, by emergency laparotomy.", 1, "1wltqs9"],
+ ["Malrotation", "What is the long-term risk after a volvulus?", "Short bowel syndrome.", 2, "t6qub9"]
 ]

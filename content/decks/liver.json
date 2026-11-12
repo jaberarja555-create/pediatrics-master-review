@@ -1,187 +1,39 @@
 [
- [
-  "Liver tests",
-  "Best marker of severity in acute liver injury?",
-  "Prothrombin time / INR."
- ],
- [
-  "Liver tests",
-  "Pattern of cholestasis?",
-  "High conjugated bilirubin, ALP, GGT; pale stools, dark urine."
- ],
- [
-  "Liver tests",
-  "Most liver-specific enzyme?",
-  "ALT."
- ],
- [
-  "Hepatitis A",
-  "Spread of hepatitis A and E?",
-  "Faeco-oral."
- ],
- [
-  "Hepatitis A",
-  "Incubation of hepatitis A?",
-  "2–6 weeks."
- ],
- [
-  "Hepatitis A",
-  "Diagnostic test for acute hepatitis A?",
-  "Anti-HAV IgM."
- ],
- [
-  "Hepatitis A",
-  "Does hepatitis A become chronic?",
-  "Never; no carrier state."
- ],
- [
-  "Hepatitis A",
-  "School exclusion in hepatitis A?",
-  "1 week after jaundice starts."
- ],
- [
-  "Hepatitis A",
-  "Diet in hepatitis A?",
-  "Normal diet; no need to avoid fat."
- ],
- [
-  "Hepatitis A",
-  "Hepatitis A vaccine schedule?",
-  "Inactivated, 2 doses 6 months apart."
- ],
- [
-  "Hepatitis E",
-  "Hepatitis E danger group?",
-  "Pregnant women (high death rate)."
- ],
- [
-  "Hepatitis B",
-  "Main route in children?",
-  "Mother to baby at birth."
- ],
- [
-  "Hepatitis B",
-  "Chronic rate if infected at birth?",
-  "About 90%."
- ],
- [
-  "Hepatitis B",
-  "HBsAg > 6 months means?",
-  "Chronic hepatitis B."
- ],
- [
-  "Hepatitis B",
-  "Marker of acute hepatitis B?",
-  "Anti-HBc IgM."
- ],
- [
-  "Hepatitis B",
-  "Marker of high infectivity?",
-  "HBeAg."
- ],
- [
-  "Hepatitis B",
-  "Only anti-HBs positive?",
-  "Vaccinated."
- ],
- [
-  "Hepatitis B",
-  "Anti-HBs + anti-HBc IgG?",
-  "Past infection, recovered."
- ],
- [
-  "Hepatitis B",
-  "Hepatitis B birth dose timing?",
-  "Within 24 hours."
- ],
- [
-  "Hepatitis B",
-  "Baby of HBsAg-positive mother?",
-  "HBIG 0.5 ml IM within 12 h + birth dose vaccine."
- ],
- [
-  "Hepatitis B",
-  "Breastfeeding with maternal hepatitis B?",
-  "Allowed."
- ],
- [
-  "Hepatitis B",
-  "Drugs for chronic hepatitis B (WHO 2024)?",
-  "Tenofovir or entecavir."
- ],
- [
-  "Hepatitis B",
-  "Long-term complications of HBV?",
-  "Cirrhosis and hepatocellular carcinoma."
- ],
- [
-  "Hepatitis C",
-  "Spread of hepatitis C?",
-  "Blood (transfusion, injections), mother to baby ~5%."
- ],
- [
-  "Hepatitis C",
-  "Test to confirm active hepatitis C?",
-  "HCV RNA (PCR)."
- ],
- [
-  "Hepatitis C",
-  "Treatment of hepatitis C in children (WHO 2022)?",
-  "Direct-acting antivirals from 3 years, 12 weeks."
- ],
- [
-  "Hepatitis D",
-  "Hepatitis D needs?",
-  "HBsAg (only with hepatitis B)."
- ],
- [
-  "Liver failure",
-  "Definition of paediatric acute liver failure?",
-  "INR ≥ 1.5 with encephalopathy or ≥ 2 without, not corrected by vitamin K."
- ],
- [
-  "Liver failure",
-  "Commonest cause where hepatitis A is endemic?",
-  "Hepatitis A."
- ],
- [
-  "Liver failure",
-  "Key treatment points?",
-  "ICU, glucose, vitamin K, lactulose, mannitol for raised ICP, transplant."
- ],
- [
-  "Chronic liver",
-  "Lab signs of decompensation?",
-  "Low albumin, prolonged PT; enzymes may be normal."
- ],
- [
-  "Chronic liver",
-  "Varices and big spleen with normal liver function, irrigated farming area?",
-  "Schistosomal periportal fibrosis (S. mansoni)."
- ],
- [
-  "Chronic liver",
-  "Variceal bleeding treatment?",
-  "Resuscitation, octreotide, antibiotics, endoscopic band ligation."
- ],
- [
-  "Wilson",
-  "Inheritance of Wilson disease?",
-  "Autosomal recessive (ATP7B)."
- ],
- [
-  "Wilson",
-  "Tests for Wilson disease?",
-  "Low caeruloplasmin, high 24-h urine copper, liver copper, KF rings."
- ],
- [
-  "Wilson",
-  "Treatment of Wilson disease?",
-  "Penicillamine or trientine; zinc maintenance."
- ],
- [
-  "Reye",
-  "Reye syndrome?",
-  "Encephalopathy + fatty liver without jaundice after aspirin in viral illness."
- ]
+ ["Liver tests", "What is the best marker of severity in acute liver injury?", "The prothrombin time (INR).", 2, "60a8sb"],
+ ["Liver tests", "What is the pattern of cholestasis?", "A high conjugated bilirubin, ALP and GGT, with pale stools and dark urine.", 2, "16s3wgo"],
+ ["Liver tests", "Which is the most liver-specific enzyme?", "ALT.", 1, "3kv1g5"],
+ ["Hepatitis A", "How are hepatitis A and E spread?", "By the faeco-oral route.", 1, "1ve3hkz"],
+ ["Hepatitis A", "What is the incubation period of hepatitis A?", "2–6 weeks.", 1, "17zz7x2"],
+ ["Hepatitis A", "What is the diagnostic test for acute hepatitis A?", "Anti-HAV IgM.", 1, "12a4rm3"],
+ ["Hepatitis A", "Does hepatitis A become chronic?", "Never; there is no carrier state.", 2, "yeid5z"],
+ ["Hepatitis A", "For how long is a child with hepatitis A kept off school?", "For 1 week after the jaundice starts.", 2, "vg0eps"],
+ ["Hepatitis A", "What diet is advised in hepatitis A?", "A normal diet; there is no need to avoid fat.", 2, "rsfolu"],
+ ["Hepatitis A", "What is the hepatitis A vaccine schedule?", "An inactivated vaccine, 2 doses 6 months apart.", 2, "1xygdnd"],
+ ["Hepatitis E", "Which group is in danger from hepatitis E?", "Pregnant women, in whom the death rate is high.", 2, "1q8iem5"],
+ ["Hepatitis B", "What is the main route of hepatitis B infection in children?", "From mother to baby at birth.", 1, "15gq0w3"],
+ ["Hepatitis B", "What proportion of babies infected with hepatitis B at birth develop chronic infection?", "About 90%.", 2, "1ezu9q"],
+ ["Hepatitis B", "What does HBsAg persisting for more than 6 months mean?", "Chronic hepatitis B.", 1, "5m2wpd"],
+ ["Hepatitis B", "What is the marker of acute hepatitis B?", "Anti-HBc IgM.", 2, "1pa4o69"],
+ ["Hepatitis B", "What is the marker of high infectivity in hepatitis B?", "HBeAg.", 2, "1cgt24u"],
+ ["Hepatitis B", "What does a positive anti-HBs alone mean?", "The child has been vaccinated.", 3, "1yylu94"],
+ ["Hepatitis B", "What do a positive anti-HBs and anti-HBc IgG mean?", "Past infection with recovery.", 3, "1srjvpt"],
+ ["Hepatitis B", "When is the birth dose of hepatitis B vaccine given?", "Within 24 hours of birth.", 1, "foywt2"],
+ ["Hepatitis B", "What does the baby of an HBsAg-positive mother receive?", "Hepatitis B immunoglobulin 0.5 ml intramuscularly within 12 hours, with the birth dose of vaccine.", 2, "1mm5sxu"],
+ ["Hepatitis B", "Is breastfeeding allowed when the mother has hepatitis B?", "Yes.", 2, "eesvid"],
+ ["Hepatitis B", "Which drugs treat chronic hepatitis B (WHO 2024)?", "Tenofovir or entecavir.", 2, "1cid727"],
+ ["Hepatitis B", "What are the long-term complications of hepatitis B?", "Cirrhosis and hepatocellular carcinoma.", 1, "13sfsfy"],
+ ["Hepatitis C", "How is hepatitis C spread?", "By blood (transfusions and injections), and from mother to baby in about 5%.", 1, "1p36qhp"],
+ ["Hepatitis C", "Which test confirms active hepatitis C?", "HCV RNA by PCR.", 2, "1eltfr8"],
+ ["Hepatitis C", "How is hepatitis C treated in children (WHO 2022)?", "With direct-acting antivirals from 3 years of age, for 12 weeks.", 2, "18ov6ut"],
+ ["Hepatitis D", "What does hepatitis D need in order to infect?", "HBsAg: it occurs only together with hepatitis B.", 2, "1l6y52b"],
+ ["Liver failure", "How is acute liver failure defined in children?", "An INR of 1.5 or more with encephalopathy, or 2 or more without encephalopathy, that is not corrected by vitamin K.", 2, "ucdemn"],
+ ["Liver failure", "What is the commonest cause of acute liver failure where hepatitis A is endemic?", "Hepatitis A.", 2, "1ux0pen"],
+ ["Liver failure", "What are the key points in the treatment of acute liver failure?", "Intensive care, glucose, vitamin K, lactulose, mannitol for raised intracranial pressure, and liver transplantation.", 3, "1y8uwj"],
+ ["Chronic liver disease", "What are the laboratory signs of decompensated liver disease?", "A low albumin and a prolonged prothrombin time; the enzymes may be normal.", 3, "14cqiqg"],
+ ["Chronic liver disease", "A child from an irrigated farming area has varices and a big spleen with normal liver function. What is the cause?", "Periportal fibrosis from Schistosoma mansoni.", 2, "1sjqu97"],
+ ["Chronic liver disease", "How is variceal bleeding treated?", "Resuscitation, octreotide, antibiotics and endoscopic band ligation.", 2, "156x4j2"],
+ ["Wilson disease", "How is Wilson disease inherited?", "Autosomal recessive (the ATP7B gene).", 1, "vu3pa0"],
+ ["Wilson disease", "Which tests show Wilson disease?", "A low caeruloplasmin, a high 24-hour urine copper, a high liver copper and Kayser–Fleischer rings.", 2, "q8gzit"],
+ ["Wilson disease", "How is Wilson disease treated?", "With penicillamine or trientine; zinc for maintenance.", 2, "gy8eoa"],
+ ["Reye syndrome", "What is Reye syndrome?", "Encephalopathy with a fatty liver but no jaundice, after aspirin during a viral illness.", 2, "yrw7vx"]
 ]

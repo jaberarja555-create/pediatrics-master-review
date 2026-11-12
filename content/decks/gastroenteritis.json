@@ -1,192 +1,40 @@
 [
- [
-  "Definition",
-  "Definition of diarrhoea (WHO)?",
-  "3 or more loose or watery stools in 24 hours."
- ],
- [
-  "Definition",
-  "Is frequent soft stool in a breastfed baby diarrhoea?",
-  "No: it is normal for a breastfed baby."
- ],
- [
-  "Definition",
-  "Acute diarrhoea versus persistent diarrhoea?",
-  "Acute < 14 days; persistent ≥ 14 days."
- ],
- [
-  "Definition",
-  "Definition of dysentery?",
-  "Diarrhoea with visible blood in the stool."
- ],
- [
-  "Causes",
-  "Commonest cause of severe dehydrating diarrhoea under 2 years?",
-  "Rotavirus."
- ],
- [
-  "Causes",
-  "Commonest bacterial cause of watery diarrhoea?",
-  "Enterotoxigenic E. coli (ETEC)."
- ],
- [
-  "Causes",
-  "Commonest cause of dysentery?",
-  "Shigella."
- ],
- [
-  "Causes",
-  "Diarrhoea organism linked with convulsions?",
-  "Shigella."
- ],
- [
-  "Causes",
-  "Bloody diarrhoea followed by HUS: organism?",
-  "E. coli O157:H7 (also Shigella dysenteriae type 1)."
- ],
- [
-  "Causes",
-  "Diarrhoea organism later causing Guillain–Barré syndrome?",
-  "Campylobacter jejuni."
- ],
- [
-  "Causes",
-  "Profuse painless rice-water stools?",
-  "Cholera (Vibrio cholerae)."
- ],
- [
-  "Mechanisms",
-  "Diarrhoea that stops on fasting?",
-  "Osmotic diarrhoea (e.g. lactose intolerance)."
- ],
- [
-  "Mechanisms",
-  "Diarrhoea that continues on fasting?",
-  "Secretory diarrhoea (cholera, ETEC)."
- ],
- [
-  "Mechanisms",
-  "Why does ORS work in a damaged gut?",
-  "Sodium–glucose co-transport stays intact; water follows."
- ],
- [
-  "Assessment",
-  "IMCI signs of severe dehydration (2 or more)?",
-  "Lethargic/unconscious, sunken eyes, not able to drink or drinks poorly, skin pinch goes back very slowly."
- ],
- [
-  "Assessment",
-  "IMCI signs of some dehydration (2 or more)?",
-  "Restless/irritable, sunken eyes, drinks eagerly, skin pinch goes back slowly."
- ],
- [
-  "Assessment",
-  "Where is the skin pinch done?",
-  "Abdomen, halfway between umbilicus and side, held 1 second."
- ],
- [
-  "Assessment",
-  "Very slow skin pinch means?",
-  "Goes back in more than 2 seconds: severe dehydration."
- ],
- [
-  "Assessment",
-  "Deficit by weight loss in infants (mild/moderate/severe)?",
-  "5%, 10%, 15% (older children 3%, 6%, 9%)."
- ],
- [
-  "Assessment",
-  "Fluid deficit formula?",
-  "% dehydration × weight (kg) × 10 = ml."
- ],
- [
-  "Assessment",
-  "Why is dehydration hard to judge in SAM?",
-  "Wasting gives sunken eyes and slow skin pinch even without dehydration."
- ],
- [
-  "Plan A",
-  "ORS after each loose stool (IMCI)?",
-  "Under 2 years 50–100 ml; 2 years or more 100–200 ml."
- ],
- [
-  "Plan A",
-  "Zinc dose in diarrhoea (IMCI)?",
-  "Under 6 months 10 mg; 6 months or more 20 mg daily for 10–14 days."
- ],
- [
-  "Plan A",
-  "The four rules of home treatment?",
-  "Extra fluid, zinc, continue feeding, when to return."
- ],
- [
-  "Plan B",
-  "Plan B volume?",
-  "ORS 75 ml/kg over 4 hours."
- ],
- [
-  "Plan B",
-  "Child vomits during Plan B?",
-  "Wait 10 minutes, then give ORS more slowly."
- ],
- [
-  "Plan C",
-  "Plan C fluid and volume?",
-  "Ringer lactate (or 0.9% saline) 100 ml/kg."
- ],
- [
-  "Plan C",
-  "Plan C timing under 12 months?",
-  "30 ml/kg in 1 hour, then 70 ml/kg in 5 hours."
- ],
- [
-  "Plan C",
-  "Plan C timing 12 months and older?",
-  "30 ml/kg in 30 minutes, then 70 ml/kg in 2½ hours."
- ],
- [
-  "Plan C",
-  "Severe dehydration, IV impossible?",
-  "ORS by NGT 20 ml/kg/hour for 6 hours."
- ],
- [
-  "ORS",
-  "Sodium and osmolarity of low-osmolarity ORS?",
-  "Na 75 mmol/L; total 245 mOsm/L."
- ],
- [
-  "Drugs",
-  "Antibiotic for dysentery (WHO)?",
-  "Ciprofloxacin 15 mg/kg twice daily for 3 days."
- ],
- [
-  "Drugs",
-  "Antibiotic for cholera?",
-  "Azithromycin 20 mg/kg single dose."
- ],
- [
-  "Drugs",
-  "Antibiotics for watery diarrhoea?",
-  "Not given (WHO 2024)."
- ],
- [
-  "Drugs",
-  "Drugs NOT given in childhood diarrhoea?",
-  "Antidiarrhoeals, routine antiemetics, routine probiotics."
- ],
- [
-  "Complications",
-  "Triad of haemolytic uraemic syndrome?",
-  "Haemolytic anaemia (fragmented RBCs), low platelets, acute kidney injury."
- ],
- [
-  "Complications",
-  "Weakness and abdominal distension after diarrhoea?",
-  "Hypokalaemia."
- ],
- [
-  "Prevention",
-  "Vaccines that prevent diarrhoea deaths?",
-  "Rotavirus and measles vaccines (EPI)."
- ]
+ ["Definition", "How does WHO define diarrhoea?", "3 or more loose or watery stools in 24 hours.", 1, "e3qfnt"],
+ ["Definition", "Are frequent soft stools in a breastfed baby diarrhoea?", "No. They are normal for a breastfed baby.", 1, "pzrxdj"],
+ ["Definition", "How does acute diarrhoea differ from persistent diarrhoea?", "Acute diarrhoea lasts less than 14 days; persistent diarrhoea lasts 14 days or more.", 1, "txr9dg"],
+ ["Definition", "What is dysentery?", "Diarrhoea with visible blood in the stool.", 1, "13nogos"],
+ ["Causes", "What is the commonest cause of severe dehydrating diarrhoea under 2 years of age?", "Rotavirus.", 1, "1pmjfe8"],
+ ["Causes", "What is the commonest bacterial cause of watery diarrhoea?", "Enterotoxigenic E. coli (ETEC).", 2, "9tiii"],
+ ["Causes", "What is the commonest cause of dysentery?", "Shigella.", 1, "ccawa5"],
+ ["Causes", "Which diarrhoeal organism is linked with convulsions?", "Shigella.", 2, "ox9bn0"],
+ ["Causes", "Which organism causes bloody diarrhoea followed by haemolytic uraemic syndrome?", "E. coli O157:H7 (and Shigella dysenteriae type 1).", 2, "1gpacsc"],
+ ["Causes", "Which diarrhoeal organism can later cause Guillain–Barré syndrome?", "Campylobacter jejuni.", 2, "5wprt7"],
+ ["Causes", "What causes profuse, painless rice-water stools?", "Cholera (Vibrio cholerae).", 1, "1fsi1ll"],
+ ["Mechanisms", "Which type of diarrhoea stops when the child fasts?", "Osmotic diarrhoea, for example in lactose intolerance.", 2, "1p775wz"],
+ ["Mechanisms", "Which type of diarrhoea continues when the child fasts?", "Secretory diarrhoea, as in cholera and ETEC infection.", 2, "dosqb2"],
+ ["Mechanisms", "Why does ORS work even when the gut is damaged?", "Sodium–glucose co-transport in the gut stays intact, and water follows the absorbed sodium.", 3, "130okfi"],
+ ["Assessment", "What are the IMCI signs of severe dehydration (two or more)?", "Lethargic or unconscious, sunken eyes, not able to drink or drinking poorly, and a skin pinch that goes back very slowly.", 1, "m45ibk"],
+ ["Assessment", "What are the IMCI signs of some dehydration (two or more)?", "Restless or irritable, sunken eyes, drinks eagerly (thirsty), and a skin pinch that goes back slowly.", 1, "1r8rd4w"],
+ ["Assessment", "Where is the skin pinch done?", "On the abdomen, halfway between the umbilicus and the side, held for 1 second.", 2, "wsdyn4"],
+ ["Assessment", "What does a very slow skin pinch mean?", "The skin goes back in more than 2 seconds: severe dehydration.", 1, "96sthh"],
+ ["Assessment", "What weight losses correspond to mild, moderate and severe dehydration in infants?", "5%, 10% and 15% in infants (3%, 6% and 9% in older children).", 2, "1k5pnst"],
+ ["Assessment", "How is the fluid deficit calculated?", "Percentage of dehydration × weight (kg) × 10 = deficit in ml.", 2, "1vjowh1"],
+ ["Assessment", "Why is dehydration hard to judge in severe acute malnutrition?", "Wasting causes sunken eyes and a slow skin pinch even without dehydration.", 3, "vgivh5"],
+ ["Plan A", "How much ORS is given after each loose stool (IMCI)?", "Under 2 years: 50–100 ml. From 2 years: 100–200 ml.", 1, "1ilr4na"],
+ ["Plan A", "What is the zinc dose in diarrhoea (IMCI)?", "Under 6 months: 10 mg daily. From 6 months: 20 mg daily. It is given for 10–14 days.", 1, "1haddyr"],
+ ["Plan A", "What are the four rules of home treatment of diarrhoea?", "Extra fluid, zinc, continued feeding, and advice on when to return.", 1, "1g7hhzn"],
+ ["Plan B", "How much ORS is given in Plan B?", "ORS 75 ml/kg over 4 hours.", 1, "1yffv5c"],
+ ["Plan B", "What is done if the child vomits during Plan B?", "Wait 10 minutes, then give the ORS more slowly.", 2, "h26yt9"],
+ ["Plan C", "Which fluid and volume are given in Plan C?", "Ringer's lactate (or 0.9% saline), 100 ml/kg.", 1, "pnzsuq"],
+ ["Plan C", "How is Plan C timed in infants under 12 months?", "30 ml/kg in 1 hour, then 70 ml/kg in 5 hours.", 2, "179ftw7"],
+ ["Plan C", "How is Plan C timed in children of 12 months or older?", "30 ml/kg in 30 minutes, then 70 ml/kg in 2½ hours.", 2, "797gp0"],
+ ["Plan C", "A child is severely dehydrated and an intravenous line is impossible. What is done?", "ORS by nasogastric tube, 20 ml/kg per hour for 6 hours.", 3, "21or4k"],
+ ["ORS", "What are the sodium content and osmolarity of low-osmolarity ORS?", "Sodium 75 mmol/L; total osmolarity 245 mOsm/L.", 2, "1c5lbov"],
+ ["Drugs", "Which antibiotic is given for dysentery (WHO)?", "Ciprofloxacin 15 mg/kg twice daily for 3 days.", 1, "1g1vc2k"],
+ ["Drugs", "Which antibiotic is given for cholera?", "Azithromycin 20 mg/kg as a single dose.", 2, "jzp7y4"],
+ ["Drugs", "Are antibiotics given for watery diarrhoea?", "No (WHO 2024).", 2, "8gq3v6"],
+ ["Drugs", "Which drugs are NOT given in childhood diarrhoea?", "Antidiarrhoeal drugs, routine antiemetics and routine probiotics.", 2, "16kbs3q"],
+ ["Complications", "What is the triad of haemolytic uraemic syndrome?", "Haemolytic anaemia with fragmented red cells, low platelets and acute kidney injury.", 2, "e039a6"],
+ ["Complications", "A child develops weakness and abdominal distension after diarrhoea. What is the likely cause?", "Hypokalaemia.", 3, "g3byzb"],
+ ["Prevention", "Which vaccines prevent deaths from diarrhoea?", "Rotavirus and measles vaccines (EPI).", 2, "uuyzcw"]
 ]
