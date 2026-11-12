@@ -352,3 +352,20 @@ picture). The About tiles open each page as a poster (`ab_<name>.jpg`, thumbnail
 and run `node tools/frontshots.js http://localhost:PORT/ <prefix> && python3 tools/frontshots.py`, then build again. The owner's AI posters
 can carry wrong names/universities (his Surgery reviewers poster did): names and universities come from the book's own list. New app
 features go into the how-to / study-tools pages through this script.
+
+## Speed (owner, 12 Nov 2026: "the app is very slow: opening a book, opening its content, moving between pages and chapters")
+Measured on a simulated mid-range phone (Chromium, CPU 4x slower): start 2.1 s → 1.2 s, opening the reader 5.7 s → 0.7 s, smooth scrolling (median frame 17 ms).
+- **Pages are built on demand** (src/app.js `LAZY`, `ensurePage`, `renderPage(i,force)`): at start every page is only an empty sheet of the right
+  size (`.pw` > `.bk`); its content is cloned from the `<template id="bookPages">` source when it comes near the screen (`decorateNear`: pages on
+  the screen at once, the next ones in idle time through `DQ`). Search text, highlights' text and page keys read the SOURCES (`srcPages`), never
+  the built pages. Anything that needs a page's DOM must call `ensurePage(i)` first. `window.__renderAll()` builds everything.
+  **Tools** (paginate, check, measure, screenshots) run in an automated browser (`navigator.webdriver`) and get all pages built at start, as
+  before; set `window.__lazy = 1` before the page loads to test the students' way.
+- **Each page is its own layout island**: `.pw{contain:strict}` and, with lazy pages, `html.lz .pw{content-visibility:auto}`. Do not put
+  anything inside a `.pw` that must show outside its box.
+- **Scroll**: one update per frame (`onScroll('s')`); the bars, page number and saved position are rewritten only when the page in view
+  changes (v2.js `pill` too). Do not add work to the scroll path; never write the DOM or localStorage on every scroll event.
+- **Page spacing** (`fillPage`): the value is found by interpolation (about 3 layouts instead of 9); the result is the same within 2 px.
+- **Opening from the device**: the service worker answers the book page from the saved copy at once (no waiting for the internet). A new
+  build has a new worker file (cache name = page hash): the browser finds it in the background, the worker saves the new page and reloads
+  the open book (also asked again when the app returns to the screen after 30 minutes). Do not go back to "internet first".
