@@ -317,7 +317,7 @@ Opening and language (owner, 11 Nov 2026): the greeting shows on every opening; 
 - Subscription = the shared Supabase system of the Obstetrics book (one admin for the three books, book 'ped'): requests, receipts,
   plans, device link numbers. src/app.js: `window.__sbRpc` (adds p_book to obs_request_status / obs_request_submit), hex device id
   prr-sdev, the book's key in prr-k checked against access.key_hash (HASK), sync through obs_sync_get / obs_sync_put. Old codes from the
-  Worker still open the book until access.old_until (launch day + one month). key_hash and old_until go in tools/v2book.json "access"
+  Worker still open the book until access.old_until (launch day + one month). key_hash is set (migration 009 applied 12 Nov 2026); old_until goes in tools/v2book.json "access" on launch day
   once the Supabase migration (obstetrics tools/supabase/pending/009_three_books.sql) is applied. Tests used: a simulated Supabase
   (request → approval → opens by itself → sync; a forged key is dropped).
 - Go live (after the owner approves): set key_hash + old_until, build docs with PRR_V2=1, new icons from v2_logo, push the live branch.

@@ -103,7 +103,7 @@
   "_": "Merged into META.access by the new-app build. key_hash = SHA-256 of this book's key in Supabase (obs_book_keys, printed by migration 009 when it is applied); old_until = launch day + one month (old PMR codes stop then).",
   "supabase_url": "https://kgdmjeffeqfdlfnjnnek.supabase.co",
   "supabase_anon": "sb_publishable_aUgkKc4QpItV4yKKViVFCg_dipnUdDl",
-  "key_hash": "",
+  "key_hash": "698bb79800f8534ccff8fd231d8fc42dbeda944af7aaf26b25a1a13098406ec0",
   "old_until": "",
   "plans": [
    {
