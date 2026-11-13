@@ -148,16 +148,24 @@ var PROGU=stj('progu')||{};          // pageKey -> time of the student's last ch
 function saveRead(){stj('prog',readSet);stj('progu',PROGU);if(typeof syncSoon==='function')syncSoon();gcommit()}function saveKnown(){stj('known',KNOWN);if(typeof syncSoon==='function')syncSoon()}
 
 /* ---------- pages ---------- */
-var tpl=$('bookPages').content, pagesEl=$('pages'), wraps=[], srcPages=[].slice.call(tpl.querySelectorAll('section.page'));
+/* Speed (owner, 13 Nov 2026: "still a delay, especially Surgery and Pediatrics"): the pages come as plain text (script#bookPagesTxt) and
+   each page is made from its text the first time it is needed (srcPages is a Proxy that parses on first read); parsing every page into a
+   <template> at each opening cost about a second on a phone. Automated tools (paginate, check, fill) get the <template> filled as before. */
+var PGTX=(function(){var e=$('bookPagesTxt');if(!e)return null;var t=e.textContent.replace(/<\\\/script/gi,'</script').replace(/<\\!--/g,'<!--');e.remove();
+  return t.split(/(?=<section[\s>])/).filter(function(x){return x.slice(0,8)==='<section'})})();
+if(PGTX&&navigator.webdriver&&!window.__lazy){$('bookPages').innerHTML=PGTX.join('');PGTX=null}
+var tpl=$('bookPages').content, pagesEl=$('pages'), wraps=[], srcPages=PGTX?PGTX.slice():[].slice.call(tpl.querySelectorAll('section.page'));
 srcPages=(function(){var k=0;return PAGES.map(function(p){if(!p.user)return srcPages[k++];var s=document.createElement('section');s.className='page upage';s.dataset.id=p.id;
   s.innerHTML='<div class="uph"><span>صفحتي · My notes</span><em>'+esc(PAGES[PAGES.indexOf(p)-1]?PAGES[PAGES.indexOf(p)-1].label:'')+'</em></div><div class="upl"></div>';return s})})();
+function untag(h){var e={amp:'&',lt:'<',gt:'>',quot:'"',nbsp:' ',apos:"'"};return h.replace(/<[^>]*>/g,'').replace(/&(#x?[0-9a-f]+|[a-z]+);/gi,function(m,c){if(c[0]==='#'){var n=c[1]==='x'||c[1]==='X'?parseInt(c.slice(2),16):parseInt(c.slice(1),10);return isNaN(n)?m:String.fromCodePoint(n)}return e[c.toLowerCase()]!=null?e[c.toLowerCase()]:m})}
+var PGR=PGTX?srcPages:null;if(PGTX)srcPages=new Proxy(srcPages,{get:function(t,k){var v=t[k];if(typeof v==='string'&&typeof k==='string'&&/^\d+$/.test(k)){var d=document.createElement('template');d.innerHTML=v;v=t[k]=d.content.firstElementChild}return v}});
 /* Speed (owner, 12 Nov 2026: "the app is very slow"): a page's content is built only when it comes near the screen (ensurePage);
    before that its wrapper is an empty sheet of the right size. Tools that measure every page (paginate.js, check.js, screenshots)
    run in an automated browser and get all pages at once, as before; window.__lazy = 1 forces the students' way there. */
 var LAZY=!navigator.webdriver||!!window.__lazy;if(LAZY)document.documentElement.classList.add('lz');
-(function(){var fr=document.createDocumentFragment();srcPages.forEach(function(sec,i){
+(function(){var fr=document.createDocumentFragment();PAGES.forEach(function(_p,i){
   var pw=document.createElement('div');pw.className='pw';pw.dataset.i=i;
-  var host=document.createElement('div');host.className='bk';if(!LAZY||PAGES[i].user){host.appendChild(sec.cloneNode(true));pw.dataset.r='1'}
+  var host=document.createElement('div');host.className='bk';if(!LAZY||PAGES[i].user){host.appendChild(srcPages[i].cloneNode(true));pw.dataset.r='1'}
   pw.appendChild(host);fr.appendChild(pw);wraps.push(pw)});pagesEl.appendChild(fr)})();
 function ensurePage(i){var pw=wraps[i];if(pw&&!pw.dataset.r)renderPage(i,1)}
 window.__renderAll=function(){for(var i=0;i<wraps.length;i++)ensurePage(i)};
@@ -1117,10 +1125,10 @@ document.addEventListener('click',function(e){var g=e.target.closest&&e.target.c
 document.addEventListener('scroll',function(){if(tipFor)hideTip()},true);
 
 /* ---------- search ---------- */
-var TEXT=srcPages.map(function(pw){return pw.textContent.replace(/\s+/g,' ')});
+var TEXT=[];function textReady(){if(TEXT.length===srcPages.length)return;TEXT=(PGR||srcPages).map(function(pw){return (typeof pw==='string'?untag(pw):pw.textContent).replace(/\s+/g,' ')})}   /* made at the first search, not at every opening */
 $('qchips').innerHTML=META.chips.map(function(c){return '<button class="chip" type="button">'+esc(c)+'</button>'+'<button type="button" class="chip" data-sub="1">Device</button>'}).join('');
 $('qchips').onclick=function(e){var b=e.target.closest('.chip');if(b){$('q').value=b.textContent;runSearch()}};
-function runSearch(){var q=$('q').value.trim();var out=$('results');if(q.length<2){out.innerHTML='<p class="empty">Type at least 2 letters. Every page of the book is searched.</p>';return}
+function runSearch(){var q=$('q').value.trim();var out=$('results');textReady();if(q.length<2){out.innerHTML='<p class="empty">Type at least 2 letters. Every page of the book is searched.</p>';return}
   var ql=q.toLowerCase(),hits=[];TEXT.forEach(function(t,i){var tl=t.toLowerCase(),k=tl.indexOf(ql),n=0;if(k<0)return;var c=k;while(c>=0){n++;c=tl.indexOf(ql,c+1)}
     var a=Math.max(0,k-60),snip=(a?'…':'')+esc(t.slice(a,k))+'<mark>'+esc(t.slice(k,k+q.length))+'</mark>'+esc(t.slice(k+q.length,k+q.length+80))+'…';hits.push({i:i,n:n,snip:snip})});
   out.innerHTML=hits.length?'<div class="res">'+hits.map(function(h){return '<button class="ri" type="button" data-i="'+h.i+'"><span class="pn">p '+(PAGES[h.i].bn||'✎')+'</span><span><b>'+esc(PAGES[h.i].label)+' · '+h.n+'×</b><span>'+h.snip+'</span></span></button>'}).join('')+'</div>':'<p class="empty">No page mentions “'+esc(q)+'”.</p>'}
