@@ -376,3 +376,12 @@ Measured on a simulated mid-range phone (Chromium, CPU 4x slower): start 2.1 s �
   `fillPage` applies `data-fl` with no measuring. **After any change of content or styles run:**
   `python3 build.py && node tools/fill.js && python3 build.py` (if it is forgotten nothing breaks: changed pages carry no `data-fl` and are
   measured on the phone as before, only slower). Phone simulation after this: opening the reader 0.41 s → 0.31 s, a topic 0.19 s → 0.13 s.
+- **Drawings and notes no longer slow the start (owner, 13 Nov 2026: "still not as fast as Pediatrics").** Every saved drawing used to be built
+  at each opening (a student with drawings on ~200 pages waited about 1.5 s longer, so a much-annotated book felt slower than a clean
+  one). `inkRender(i)` now does nothing for a page that is not built yet; `renderPage` draws a page's ink when it first builds the page.
+  The check that re-anchors highlights (`reanchorHL`) runs 2.5 s after the start, not during it.
+- **The greeting no longer comes twice (owner, 13 Nov 2026).** A new version used to reload the book in front of the student (the service
+  worker navigated every open page, and the page reloaded itself within 90 s). Now the worker never reloads pages, and the page (head
+  script in src/shell.html) reloads itself ONLY while the student cannot see it: the app is in the background, or the book is waiting off
+  the screen inside Student Master Review (IntersectionObserver on the frame). A book on the screen keeps running; the new version shows
+  at its next opening. Tested with a local parent page: on screen = no reload, off screen = one silent reload.

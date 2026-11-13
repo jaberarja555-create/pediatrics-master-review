@@ -20,8 +20,14 @@
 </script><script>
 /* A new version of the book replaces the saved copy at once when the app has just been opened (owner, 12 Nov 2026: changes must show),
    instead of only at the next opening: when the new saved copy is ready in the first 90 s (or while the app is in the background), reload once. */
-(function(){if(!('serviceWorker' in navigator))return;var had=!!navigator.serviceWorker.controller,t0=Date.now(),done=false;
-  navigator.serviceWorker.addEventListener('controllerchange',function(){if(done||!had)return;if(Date.now()-t0<90000||document.hidden){done=true;location.reload()}})})();
+/* (owner, 13 Nov 2026: "the greeting sometimes comes twice, like a reload") The new version is now put in place ONLY while the student cannot
+   see the book: the app is in the background, or this book is waiting off the screen inside Student Master Review (where books are loaded
+   ahead in the background, so this is the usual case). A book that is on the screen keeps running and shows the new version at its next opening. */
+(function(){if(!('serviceWorker' in navigator))return;var had=!!navigator.serviceWorker.controller,want=false,done=false,off=false;
+  function go(){if(done||!want)return;if(document.hidden||off){done=true;location.reload()}}
+  navigator.serviceWorker.addEventListener('controllerchange',function(){if(!had)return;want=true;go()});
+  document.addEventListener('visibilitychange',go);
+  try{if(window.top!==window&&'IntersectionObserver' in window)new IntersectionObserver(function(es){off=!es[es.length-1].isIntersecting;go()}).observe(document.documentElement)}catch(e){}})();
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">

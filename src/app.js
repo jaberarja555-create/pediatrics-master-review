@@ -498,7 +498,7 @@ function textNodes(sec){var w=document.createTreeWalker(sec,NodeFilter.SHOW_TEXT
 /* a highlight or note on a dark box gets a see-through colour so the words stay readable (owner, 8 Nov 2026) */
 function markDk(sec){sec.querySelectorAll('mark.uhl').forEach(function(m){var e=m.parentElement;while(e&&e!==sec){var c=getComputedStyle(e).backgroundColor,v=c.match(/[\d.]+/g);
   if(v&&(v.length<4||+v[3]>.5)){if(.2126*v[0]+.7152*v[1]+.0722*v[2]<110)m.classList.add('dk');return}e=e.parentElement}})}
-function renderPage(i,force){var pw0=wraps[i];if(!pw0||(!pw0.dataset.r&&!force))return;pw0.dataset.r='1';var host=wraps[i].firstChild,sec=srcPages[i].cloneNode(true);host.innerHTML='';host.appendChild(sec);delete wraps[i].dataset.dec;
+function renderPage(i,force){var pw0=wraps[i];if(!pw0||(!pw0.dataset.r&&!force))return;var first0=!pw0.dataset.r;pw0.dataset.r='1';if(first0&&typeof INK==='object'&&INK&&INK[PKEY[i]])inkRender(i);var host=wraps[i].firstChild,sec=srcPages[i].cloneNode(true);host.innerHTML='';host.appendChild(sec);delete wraps[i].dataset.dec;
   (HL[PKEY[i]]||[]).forEach(function(h,k){if(!hlOk(i,h))return;wrapRange(sec,h.s,h.e,function(){var m=document.createElement('mark');m.className='uhl '+h.c+(h.uw?' uw'+h.uw:'')+(h.hs===2?' hs2':'')+(h.n?' hasn':'');m.dataset.k=k;return m});
     if(h.n){var ms=sec.querySelectorAll('mark.uhl[data-k="'+k+'"]'),last=ms[ms.length-1];if(last){var nm=document.createElement('span');nm.className='nm';nm.dataset.k=k;nm.title='Note';last.parentNode.insertBefore(nm,last.nextSibling)}}});markDk(sec);if(Math.abs(i-lastCur)<=2)decorate(i)}
 /* Highlights and notes are saved as text offsets on a page. When the book is re-laid out (new pages, moved boxes), the offsets
@@ -665,7 +665,9 @@ function inkF(e,prev,last,p){if(e.pointerType==='pen'&&e.pressure>0)return Math.
   if(!last)return 1;var dt=Math.max(1,(e.timeStamp||0)-(prev.ts||0)),v=Math.hypot(p[0]-last[0],p[1]-last[1])/dt,f=Math.max(.62,Math.min(1.2,1.22-v*.22));return .75*(last[2]||1)+.25*f}
 /* light smoothing of a finished stroke: removes the small hand tremor and finger jitter */
 function inkSmooth(q){if(q.length<4)return q;var o=[q[0]];for(var n=1;n<q.length-1;n++)o.push(q[n].map(function(v,j){return (q[n-1][j]+2*v+q[n+1][j])/4}));o.push(q[q.length-1]);return o}
-function inkRender(i){var L=INK[PKEY[i]],svg=inkSvg(wraps[i],L&&L.length);if(!svg)return;
+/* Speed (13 Nov 2026): a page's drawings are made when the page itself is built (renderPage), not for every drawn page at every opening:
+   a student with drawings on 200 pages waited about 1.5 s longer at each start */
+function inkRender(i){if(LAZY&&wraps[i]&&!wraps[i].dataset.r)return;var L=INK[PKEY[i]],svg=inkSvg(wraps[i],L&&L.length);if(!svg)return;
   svg.innerHTML=(L||[]).filter(function(x){return x.t==='i'}).map(inkEl).join('')+(L||[]).filter(function(x){return x.t!=='i'}).map(inkEl).join('')+imgSelSvg(i)}
 /* undo / redo: a history of this session's actions ({t:'add'|'del', k: page key, items}); every change still syncs */
 var ITOOL=['p','h','a','u','e','i'].indexOf(st('itool'))>=0?st('itool'):'p',IHIST=[],IREDO=[];
@@ -987,7 +989,8 @@ var HLDEL=stj('hldel')||{};
 function hid(k,h){return k+'|'+h.s+'|'+h.e+(isU(h.c)?'|u':'')}   // an underline and a highlight on the same words are two items
 function hsnap(){var o={};Object.keys(HL).forEach(function(k){HL[k].forEach(function(h){o[hid(k,h)]=(h.c||'')+'\u0001'+(h.n||'')+'\u0001'+(h.uw||'')})});return o}
 var HLPREV=hsnap();
-try{if(reanchorHL())setTimeout(function(){PAGES.forEach(function(p,i){if(HL[PKEY[i]])renderPage(i)})},0)}catch(e){}
+/* checked a moment after the start, not during it (it reads the text of every page that has a highlight) */
+setTimeout(function(){try{if(reanchorHL())PAGES.forEach(function(p,i){if(HL[PKEY[i]])renderPage(i)})}catch(e){}},LAZY?2500:0);
 function saveHL(){var now=Date.now(),cur=hsnap();
   Object.keys(HL).forEach(function(k){HL[k].forEach(function(h){var id=hid(k,h);if(HLPREV[id]!==cur[id]){h.u=now;delete HLDEL[id]}})});
   Object.keys(HLPREV).forEach(function(id){if(cur[id]===undefined)HLDEL[id]=now});
