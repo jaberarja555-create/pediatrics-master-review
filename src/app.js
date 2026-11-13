@@ -500,6 +500,9 @@ function textNodes(sec){var w=document.createTreeWalker(sec,NodeFilter.SHOW_TEXT
 function markDk(sec){sec.querySelectorAll('mark.uhl').forEach(function(m){var e=m.parentElement;while(e&&e!==sec){var c=getComputedStyle(e).backgroundColor,v=c.match(/[\d.]+/g);
   if(v&&(v.length<4||+v[3]>.5)){if(.2126*v[0]+.7152*v[1]+.0722*v[2]<110)m.classList.add('dk');return}e=e.parentElement}})}
 function renderPage(i,force){var pw0=wraps[i];if(!pw0||(!pw0.dataset.r&&!force))return;var first0=!pw0.dataset.r;pw0.dataset.r='1';if(first0&&typeof INK==='object'&&INK&&INK[PKEY[i]])inkRender(i);var host=wraps[i].firstChild,sec=srcPages[i].cloneNode(true);host.innerHTML='';host.appendChild(sec);delete wraps[i].dataset.dec;
+  /* tap meanings and topic links are found before the student's highlights are drawn, so a highlight over part of a term (only "Pringle" of
+     "Pringle manoeuvre") no longer hides its meaning (owner, 13 Nov 2026) */
+  var hl0=HL[PKEY[i]];if(hl0&&hl0.length)decorate(i);
   (HL[PKEY[i]]||[]).forEach(function(h,k){if(!hlOk(i,h))return;wrapRange(sec,h.s,h.e,function(){var m=document.createElement('mark');m.className='uhl '+h.c+(h.uw?' uw'+h.uw:'')+(h.hs===2?' hs2':'')+(h.n?' hasn':'');m.dataset.k=k;return m});
     if(h.n){var ms=sec.querySelectorAll('mark.uhl[data-k="'+k+'"]'),last=ms[ms.length-1];if(last){var nm=document.createElement('span');nm.className='nm';nm.dataset.k=k;nm.title='Note';last.parentNode.insertBefore(nm,last.nextSibling)}}});markDk(sec);if(Math.abs(i-lastCur)<=2)decorate(i)}
 /* Highlights and notes are saved as text offsets on a page. When the book is re-laid out (new pages, moved boxes), the offsets
