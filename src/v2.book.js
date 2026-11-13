@@ -32,11 +32,19 @@ function labelOf(){var ua=navigator.userAgent;if(/iPad/.test(ua)||(/Macintosh/.t
 function keyMeta(j){st('exp',j.exp?String(Date.parse(j.exp)):'');st('plan',j.plan||'');if(j.name)st('sname',j.name);try{localStorage.removeItem(BK.prefix+'-ended')}catch(e){}}
 function dropKey(){['k','kc','exp','plan'].forEach(function(k){try{localStorage.removeItem(BK.prefix+'-'+k)}catch(e){}})}
 if(HASK&&!REVIEW){sha(st('k')).then(function(h){if(h!==ACC.key_hash){dropKey();location.reload()}}).catch(function(){})}
-/* online check (at most once a day): a plan that ended or a subscription the owner switched off locks this device again */
-if(HASK&&window.__sbRpc&&navigator.onLine!==false&&Date.now()-(+st('kc')||0)>864e5)window.__sbRpc('obs_check',{p_dev:SDEV}).then(function(r){var j=r.data;if(r.error||!j)return;
-  if(j.ok){keyMeta(j);st('kc',String(Date.now()));if(j.key&&j.key!==st('k')){st('k',j.key);location.reload()}}
+/* online check (owner, 13 Nov 2026: "make the change reach the phone immediately", then "every minute will slow their phone"): on opening,
+   when the app comes back to the screen, when the internet returns and every 10 minutes while it stays open (one small request). A new end date, plan or name from the admin is shown at once; a plan that ended,
+   a subscription switched off or a device removed locks this device again. */
+function keyMeta2(j){var was=[st('exp'),st('plan'),st('sname')].join('|');keyMeta(j);try{localStorage.removeItem(BK.prefix+'-wassub')}catch(e){}
+  if([st('exp'),st('plan'),st('sname')].join('|')!==was)try{window.dispatchEvent(new Event('obs-sub'))}catch(e){}}
+var RCL=0;
+function recheck(){if(!HASK||!window.__sbRpc||navigator.onLine===false||Date.now()-RCL<20000)return;RCL=Date.now();
+  window.__sbRpc('obs_check',{p_dev:SDEV}).then(function(r){var j=r.data;if(r.error||!j)return;
+  if(j.ok){keyMeta2(j);st('kc',String(Date.now()));if(j.key&&j.key!==st('k')){st('k',j.key);location.reload()}}
   else if(j.reason==='expired'){st('ended','1');dropKey();location.reload()}
-  else if(j.reason==='off'||j.reason==='none'){dropKey();location.reload()}}).catch(function(){});
+  else if(j.reason==='off'||j.reason==='none'){dropKey();st('wassub','1');location.reload()}}).catch(function(){})}
+if(HASK&&!REVIEW){recheck();setInterval(function(){if(!document.hidden)recheck()},600000);
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)recheck()});window.addEventListener('online',recheck)}
 window.__lic=window.__sbRpc?{dev:SDEV,kind:kindOf,label:labelOf,rpc:window.__sbRpc,
   unlocked:function(){return !LOCKED&&!INTRIAL},intrial:function(){return INTRIAL},fresh:function(){return TRIALNEW},
   trialLeft:trialTxt,trialDur:trialDur,startTrial:function(){startTrial()},

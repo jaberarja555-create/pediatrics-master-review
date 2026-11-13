@@ -10490,11 +10490,19 @@ function labelOf(){var ua=navigator.userAgent;if(/iPad/.test(ua)||(/Macintosh/.t
 function keyMeta(j){st('exp',j.exp?String(Date.parse(j.exp)):'');st('plan',j.plan||'');if(j.name)st('sname',j.name);try{localStorage.removeItem(BK.prefix+'-ended')}catch(e){}}
 function dropKey(){['k','kc','exp','plan'].forEach(function(k){try{localStorage.removeItem(BK.prefix+'-'+k)}catch(e){}})}
 if(HASK&&!REVIEW){sha(st('k')).then(function(h){if(h!==ACC.key_hash){dropKey();location.reload()}}).catch(function(){})}
-/* online check (at most once a day): a plan that ended or a subscription the owner switched off locks this device again */
-if(HASK&&window.__sbRpc&&navigator.onLine!==false&&Date.now()-(+st('kc')||0)>864e5)window.__sbRpc('obs_check',{p_dev:SDEV}).then(function(r){var j=r.data;if(r.error||!j)return;
-  if(j.ok){keyMeta(j);st('kc',String(Date.now()));if(j.key&&j.key!==st('k')){st('k',j.key);location.reload()}}
+/* online check (owner, 13 Nov 2026: "make the change reach the phone immediately", then "every minute will slow their phone"): on opening,
+   when the app comes back to the screen, when the internet returns and every 10 minutes while it stays open (one small request). A new end date, plan or name from the admin is shown at once; a plan that ended,
+   a subscription switched off or a device removed locks this device again. */
+function keyMeta2(j){var was=[st('exp'),st('plan'),st('sname')].join('|');keyMeta(j);try{localStorage.removeItem(BK.prefix+'-wassub')}catch(e){}
+  if([st('exp'),st('plan'),st('sname')].join('|')!==was)try{window.dispatchEvent(new Event('obs-sub'))}catch(e){}}
+var RCL=0;
+function recheck(){if(!HASK||!window.__sbRpc||navigator.onLine===false||Date.now()-RCL<20000)return;RCL=Date.now();
+  window.__sbRpc('obs_check',{p_dev:SDEV}).then(function(r){var j=r.data;if(r.error||!j)return;
+  if(j.ok){keyMeta2(j);st('kc',String(Date.now()));if(j.key&&j.key!==st('k')){st('k',j.key);location.reload()}}
   else if(j.reason==='expired'){st('ended','1');dropKey();location.reload()}
-  else if(j.reason==='off'||j.reason==='none'){dropKey();location.reload()}}).catch(function(){});
+  else if(j.reason==='off'||j.reason==='none'){dropKey();st('wassub','1');location.reload()}}).catch(function(){})}
+if(HASK&&!REVIEW){recheck();setInterval(function(){if(!document.hidden)recheck()},600000);
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)recheck()});window.addEventListener('online',recheck)}
 window.__lic=window.__sbRpc?{dev:SDEV,kind:kindOf,label:labelOf,rpc:window.__sbRpc,
   unlocked:function(){return !LOCKED&&!INTRIAL},intrial:function(){return INTRIAL},fresh:function(){return TRIALNEW},
   trialLeft:trialTxt,trialDur:trialDur,startTrial:function(){startTrial()},
@@ -10900,7 +10908,12 @@ function poll(){if(!LIC||LIC.unlocked()||navigator.onLine===false)return Promise
     if(d.active)return LIC.rpc('obs_check',{p_dev:LIC.dev}).then(function(q){if(q.data&&q.data.ok&&q.data.key){spj('req',null);return LIC.adopt(q.data)}});
     var was=JSON.stringify(REQ);REQ=d.status==='none'||d.status==='cancelled'?null:{status:d.status,plan:d.plan,t:d.created,reason:d.reason};spj('req',REQ);if(JSON.stringify(REQ)!==was&&(CURV==='v2sub'||CURV==='v2home'))R[CURV]();header()}).catch(function(){})}
 setInterval(function(){if(!document.hidden&&((REQ&&REQ.status==='pending')||CURV==='v2sub'))poll()},45000);
-document.addEventListener('visibilitychange',function(){if(!document.hidden)poll()});
+/* a device whose subscription ended, was switched off or removed asks again every 10 minutes (and on every opening / return to the app),
+   so a renewal or switch-on in the admin opens it by itself */
+setInterval(function(){if(!document.hidden&&(st('ended')||st('wassub')))poll()},600000);
+document.addEventListener('visibilitychange',function(){if(!document.hidden)poll()});window.addEventListener('online',function(){poll()});
+/* the licence layer saw a new end date, plan or name from the admin: show it now */
+window.addEventListener('obs-sub',function(){try{header();if(CURV==='v2sub'||CURV==='v2home'||CURV==='v2settings')R[CURV]()}catch(e){}});
 R.v2sub=function(){var a=access(),ex=+st('exp')||0,pl=st('plan'),pend=a!=='paid'&&REQ&&REQ.status==='pending',h=title('الاشتراك',CURV==='v2sub'&&RETS?RETS:'v2settings');
   function chk(t){return '<li>'+I('check')+t+'</li>'}
   if(a==='paid')h+='<div class="v2c sbx ok" lang="ar"><b>'+I('crown')+'اشتراكك فعّال</b><p>'+(pl?'الخطة: '+plan(pl).ar+' · ':'')+(ex?'ينتهي في '+fdate(ex):'بلا تاريخ انتهاء')+'</p><p class="mu">اشتراكك يفتح هاتفك وجهازك اللوحي وحاسوبك، وملاحظاتك وتقدّمك تظهر في كل أجهزتك.</p><button type="button" class="v2btn sm" data-act="pairnew">'+I('sync')+'أضف جهازًا آخر</button><div id="prBox"></div></div>';

@@ -385,3 +385,8 @@ Measured on a simulated mid-range phone (Chromium, CPU 4x slower): start 2.1 s â
   script in src/shell.html) reloads itself ONLY while the student cannot see it: the app is in the background, or the book is waiting off
   the screen inside Student Master Review (IntersectionObserver on the frame). A book on the screen keeps running; the new version shows
   at its next opening. Tested with a local parent page: on screen = no reload, off screen = one silent reload.
+- **Admin changes reach the phone at its next opening (owner, 13 Nov 2026: "make the change reach the phone immediately"; then "every minute will slow
+  their phone"):** a subscribed device asks `obs_check` on opening, when the app comes back to the screen, when the internet returns and every 10 minutes while open (Obstetrics licence.js
+  `recheck`, Surgery/Pediatrics src/v2.book.js `recheck`); a new end date / plan / name is shown at once (event `obs-sub`, v2.js re-renders);
+  ended, switched off or removed â†’ locked. A locked device that had a subscription (`-ended` / `-wassub`) asks `obs_request_status` on opening and every
+  10 minutes (v2.js `poll`), so a renewal or switch-on opens it by itself.
