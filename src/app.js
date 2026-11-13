@@ -249,7 +249,8 @@ function onScroll(how){var c=currentPage(),same=how==='s'&&c===lastCur;lastCur=c
   inp.onblur=function(){setTimeout(function(){fin(false)},150)}})})();
 var lastSyncPg=-1;
 /* page progress button: each tap moves Not read (red) → Done (blue) → Mastered (green) → Not read */
-var PRS=[['ما قريتها','<circle cx="12" cy="12" r="8"/>'],['قريتها','<circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/>'],['أتقنتها','<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>']];
+function prL(n){var en=document.documentElement.getAttribute('data-lang')==='en';return en?['Not read','Read','Mastered'][n]:PRS[n][0]}
+var PRS=[['لم أقرأها','<circle cx="12" cy="12" r="8"/>'],['قرأتها','<circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/>'],['أتقنتها','<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>']];
 /* the side rail never scrolls: when it is taller than the reader it is scaled down so every button shows */
 function fitRail(){var r=$('rbar');if(!r||$('reader').hidden)return;railSpace()}   // tools bar sits along the top of the reader (owner, Nov 2026)
 /* the open rail never covers the book: the pages get the space to its left; hidden = full width (show button in the top bar) */
@@ -268,14 +269,14 @@ function railSpace(){var r=$('rbar'),sc=$('scroller');if(!r||!sc)return;var w=(r
   if(sc._rw===w)return;sc._rw=w;var cur=currentPage(),wp=wraps[cur],f=wp&&wp.offsetHeight?(sc.scrollTop-wp.offsetTop)/wp.offsetHeight:0;
   sc.style.top=w+'px';sc.style.right='0px';layout();if(wp)sc.scrollTop=wp.offsetTop+f*wp.offsetHeight}
 window.addEventListener('resize',fitRail);
-function updPr(c){var b=$('prBtn'),pg=PAGES[c]||{};b.hidden=!pg.topic;b.classList.toggle('soon',LOCKED&&!pageFree(c));var v=readSet[PKEY[c]]||0;b.className='pr'+v;b.querySelector('svg').innerHTML=PRS[v][1];$('prLbl').textContent=PRS[v][0]}
+function updPr(c){var b=$('prBtn'),pg=PAGES[c]||{};b.hidden=!pg.topic;b.classList.toggle('soon',LOCKED&&!pageFree(c));var v=readSet[PKEY[c]]||0;b.className='pr'+v;b.querySelector('svg').innerHTML=PRS[v][1];$('prLbl').textContent=prL(v)}
 var actx=null;function chime(notes,type){try{actx=actx||new (window.AudioContext||window.webkitAudioContext)();var t0=actx.currentTime+.02;
   notes.forEach(function(f,i){var o=actx.createOscillator(),g=actx.createGain(),t=t0+i*.09;o.type=type;o.frequency.value=f;
     g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.18,t+.015);g.gain.exponentialRampToValueAtTime(.001,t+.55);o.connect(g);g.connect(actx.destination);o.start(t);o.stop(t+.6)})}catch(e){}}
 /* tapping the button opens a small panel with the three choices; each choice has its own sound */
 $('prBtn').onclick=function(e){e.stopPropagation();var c=currentPage();if(LOCKED&&!pageFree(c)){railTip('هذه الصفحة للمشتركين: بعد الاشتراك يمكنك تعليمها «قرأتها» أو «أتقنتها»');return}
   var f=$('penFly');if(!f.hidden&&f.dataset.k==='p'){penFly(false);return}f.dataset.k='p';var v=readSet[PKEY[c]]||0;
-  f.innerHTML='<b>الصفحة دي</b>'+PRS.map(function(x,n){return '<button type="button" class="propt p'+n+(n===v?' cur':'')+'" data-pv="'+n+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">'+x[1]+'</svg>'+x[0]+'</button>'}).join('');flyAt(f,$('prBtn'))};
+  f.innerHTML='<b>'+(document.documentElement.getAttribute('data-lang')==='en'?'This page':'هذه الصفحة')+'</b>'+PRS.map(function(x,n){return '<button type="button" class="propt p'+n+(n===v?' cur':'')+'" data-pv="'+n+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">'+x[1]+'</svg>'+prL(n)+'</button>'}).join('');flyAt(f,$('prBtn'))};
 function setProg(v){var c=currentPage(),k=PKEY[c];if(v)readSet[k]=v;else delete readSet[k];PROGU[k]=Date.now();saveRead();updPr(c);
   var b=$('prBtn');b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop');
   if(v===0)chime([523.3,392],'sine');else if(v===1)chime([659.3,987.8],'sine');else chime([523.3,659.3,784,1046.5,1318.5],'triangle')}
@@ -403,7 +404,7 @@ function refreshHome(){
   $('prog').innerHTML='<div class="pgc"><div class="pgtop"><div class="pgring"><svg viewBox="0 0 100 100"><defs><linearGradient id="pgG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe7a6"/><stop offset=".55" stop-color="#e8c66e"/><stop offset="1" stop-color="#b8862b"/></linearGradient></defs><circle cx="50" cy="50" r="44" class="bg"/>'+(rv?'<circle cx="50" cy="50" r="44" class="fg" stroke-dasharray="'+(C*rv/100).toFixed(1)+' '+C.toFixed(1)+'"/>':'')+'</svg><div class="pgv"><b>'+rv+'<small>%</small></b></div></div>'+
     '<div class="pgtx"><span class="pgey">Pages read</span><b>'+tr+' <small>of '+tp+'</small></b><span class="pgmsg">'+msg+'</span></div></div>'+
     '<div class="pgms">'+tl('pmast','Mastered',tm,tp)+tl('pcard','Flashcards',tk,tc)+tl('ptop','Topics',done,TOPICS.length)+tl('pqb','Questions',qa,qn,qa?pct(qok,qa)+'% correct':'')+'</div>'+
-    '<div class="prhint" dir="rtl" lang="ar"><span>علّم صفحاتك من زر التقدّم:</span><span class="pgch"><b class="c1">قريتها</b><b class="c2">أتقنتها</b><b class="c0">ما قريتها</b></span></div></div>';
+    '<div class="prhint" dir="rtl" lang="ar"><span>علّم صفحاتك من زر التقدّم:</span><span class="pgch"><b class="c1">قرأتها</b><b class="c2">أتقنتها</b><b class="c0">لم أقرأها</b></span></div></div>';
   // Home: parts → chapter cards (tap to open) → topic rows with progress
   var tById={};TOPICS.forEach(function(t){tById[t.id]=t});
   var cur=(PAGES[lastPage()]||{}).topic, curCh=cur&&tById[cur]?tById[cur].ch:null;
@@ -908,7 +909,7 @@ var IMF=document.createElement('input');IMF.type='file';IMF.accept='image/*';IMF
 /* adding: tap صورة → choose a picture → tap the place on the page (any page: book or your own); or, with the tool on,
    tap an empty place first → choose → it goes there. If the device store fails the picture still shows (kept in memory). */
 var IMPEND=null;
-function imgPick(at){if(at&&wraps[at.i]&&wraps[at.i].classList.contains('lk')){railTip('الصفحة دي مقفولة');return}imgAt0=at||null;IMF.value='';IMF.click()}
+function imgPick(at){if(at&&wraps[at.i]&&wraps[at.i].classList.contains('lk')){railTip('هذه الصفحة مقفلة');return}imgAt0=at||null;IMF.value='';IMF.click()}
 function imgPlace(at){var P=IMPEND;if(!P)return;IMPEND=null;var ar=P.ch/P.cw,w=Math.min(420,816-80),h=w*ar;if(h>560){h=560;w=h/ar}
   var x=Math.max(20,Math.min(816-20-w,at.p[0]-w/2)),y=Math.max(20,Math.min(1152-20-h,at.p[1]-h/2)),it={id:rid(),t:'i',src:P.sid,x:r1(x),y:r1(y),w:r1(w),h:r1(h),cr:[0,0,1,1]};
   inkDo({t:'add',k:PKEY[at.i],items:[it]});imgSel({i:at.i,id:it.id,crop:false});railTip('اسحب الصورة عشان تحرّكها، والنقط في الأركان عشان تكبّرها')}
@@ -1433,5 +1434,6 @@ window.__smrStats=function(){var r={pages:{total:0,read:0,mastered:0},q:{total:0
   QS.forEach(function(q){r.q.total++;var a=QU[q.id];if(a&&a.c!==undefined){r.q.answered++;if(a.c)r.q.correct++;else r.q.wrong++}});
   try{r.streak=streak()}catch(e){}
   r.ch=Object.keys(by).sort(function(a,b){return a-b}).map(function(k){return by[k]});return r};
+/* the page-progress label changes with the app language */
+try{new MutationObserver(function(){try{var c=currentPage();if(c!=null)updPr(c)}catch(e){}}).observe(document.documentElement,{attributes:true,attributeFilter:['data-lang']})}catch(e){}
 })();
-
