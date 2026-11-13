@@ -161,6 +161,12 @@ var LAZY=!navigator.webdriver||!!window.__lazy;if(LAZY)document.documentElement.
   pw.appendChild(host);fr.appendChild(pw);wraps.push(pw)});pagesEl.appendChild(fr)})();
 function ensurePage(i){var pw=wraps[i];if(pw&&!pw.dataset.r)renderPage(i,1)}
 window.__renderAll=function(){for(var i=0;i<wraps.length;i++)ensurePage(i)};
+/* for tools/fill.js: measure every page with the app's own fillPage and give back {page hash: spacing} */
+window.__fillDump=function(){window.__flm=1;goIdx(0);var out={};for(var i=0;i<wraps.length;i++){if(PAGES[i].user)continue;renderPage(i,1);if(!wraps[i].dataset.dec)decorate(i);
+  var sec=wraps[i].querySelector('section.page'),h=sec&&sec.getAttribute('data-h');if(!h)continue;var v='';
+  if(sec.classList.contains('fill')){var im=[].map.call(sec.querySelectorAll('.mzm img'),function(x){return x.style.height?String(parseFloat(x.style.height)):''});while(im.length&&im[im.length-1]==='')im.pop();
+    v=[sec.style.getPropertyValue('--ft'),sec.style.getPropertyValue('--fgap'),im.join(',')].join(';').replace(/;+$/,'')}out[h]=v}
+  window.__flm=0;return {css:META.flcss||'',pages:out}};
 if(LOCKED)wraps.forEach(function(pw,i){if(pageFree(i))return;pw.classList.add('lk');var o=document.createElement('div');o.className='lko';o.innerHTML='<div class="ar" dir="rtl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><b>هذه الصفحة للمشتركين</b><span>'+freeMsg()+' اشترك لتفتح الكتاب كاملًا مع كل البطاقات وبنك الأسئلة.</span><button type="button" class="btn" data-sub="1">اضغط هنا للاشتراك</button></div>';pw.appendChild(o)});
 var cm=$('coverMini');cm.appendChild(srcPages[0].cloneNode(true));
 function fitCover(){var w=cm.parentNode.clientWidth||112;cm.style.transform='scale('+(w/816)+')'}fitCover();
@@ -305,7 +311,12 @@ function decorate(i){var pw=wraps[i];if(!pw||pw.dataset.dec)return;if(!pw.datase
   termify(sec);fillPage(sec)}
 /* owner (Nov 2026): when a page has spare room at the bottom, spread it inside the page (roomier table rows and list items,
    then wider gaps between the boxes) instead of leaving the content packed at the top */
-function fillPage(sec){var m=sec.querySelector('.mzm'),ft=sec.querySelector('.ftr');if(!m||!ft||sec.classList.contains('ex')||m.querySelector('.dk'))return;
+/* Speed (13 Nov 2026): a page that carries data-fl was measured when the book was built (build.py, tools/fill.js): its spacing
+   (--ft; --fgap; picture heights) is applied as it is, with no measuring on the phone. window.__flm = 1 (the measuring tool) forces
+   the measuring below. */
+function fillPage(sec){var pf=sec.getAttribute('data-fl');if(pf!=null&&!window.__flm){if(pf&&!sec.classList.contains('fill')){var pq=pf.split(';');sec.classList.add('fill');if(pq[0])sec.style.setProperty('--ft',pq[0]);if(pq[1])sec.style.setProperty('--fgap',pq[1]);
+    if(pq[2]){var pim=sec.querySelectorAll('.mzm img');pq[2].split(',').forEach(function(h,k){if(h&&pim[k])pim[k].style.height=h+'px'})}}return}
+  var m=sec.querySelector('.mzm'),ft=sec.querySelector('.ftr');if(!m||!ft||sec.classList.contains('ex')||m.querySelector('.dk'))return;
   // owner (Nov 2026): use spare room INSIDE the boxes (more line spacing, padding, bigger rows), not as gaps between boxes
   function free(){var sc=sec.getBoundingClientRect().height/sec.offsetHeight||1,b=0;[].forEach.call(m.children,function(c){var r=c.getBoundingClientRect();if(r.height)b=Math.max(b,r.bottom)});return (ft.getBoundingClientRect().top-b)/sc}
   var f0=free();if(f0<80)return;

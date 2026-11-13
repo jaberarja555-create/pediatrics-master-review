@@ -369,3 +369,10 @@ Measured on a simulated mid-range phone (Chromium, CPU 4x slower): start 2.1 s �
 - **Opening from the device**: the service worker answers the book page from the saved copy at once (no waiting for the internet). A new
   build has a new worker file (cache name = page hash): the browser finds it in the background, the worker saves the new page and reloads
   the open book (also asked again when the app returns to the screen after 30 minutes). Do not go back to "internet first".
+- **Page spacing is measured when the book is built (owner, 13 Nov 2026: "Pediatrics feels faster than Surgery and Obstetrics").** Opening a
+  page made the phone lay it out 20–50 times to find `--ft` / `--fgap` (Surgery and Obstetrics about twice as much as Pediatrics). Now
+  `node tools/fill.js` runs the app's own `fillPage` once on every page and writes `content/fill.json` ({styles hash, page hash → spacing});
+  build.py gives every page `data-h` (hash of its HTML) and, when its HTML and the styles are unchanged since the measuring, `data-fl`;
+  `fillPage` applies `data-fl` with no measuring. **After any change of content or styles run:**
+  `python3 build.py && node tools/fill.js && python3 build.py` (if it is forgotten nothing breaks: changed pages carry no `data-fl` and are
+  measured on the phone as before, only slower). Phone simulation after this: opening the reader 0.41 s → 0.31 s, a topic 0.19 s → 0.13 s.

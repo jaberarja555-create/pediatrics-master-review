@@ -1002,6 +1002,26 @@ def build():
     def js_json(o):
         return json.dumps(o, ensure_ascii=False).replace('</', '<\\/')
 
+    # Speed (owner, 13 Nov 2026: "Surgery and Obstetrics open slower than Pediatrics"): how the spare room of a page is spread (app.js
+    # fillPage: --ft, --fgap, picture heights) used to be measured on the phone every time a page was opened, 20-50 layouts a page. It is
+    # now measured ONCE by `node tools/fill.js` (the app's own fillPage, in a browser) and kept in content/fill.json. Every page carries
+    # data-h (a hash of its HTML); a page whose HTML and the styles are the same as when it was measured also carries data-fl, and the
+    # phone just applies it. After a change of content or styles the hash differs, data-fl is left out and the phone measures as before
+    # until fill.js is run again:  python3 build.py && node tools/fill.js && python3 build.py
+    v2css = ''.join((SRC / n).read_text() for n in ('v2.css', 'v2.book.css') if (SRC / n).exists())
+    flcss = hashlib.sha1((css + chapter_css_all + v2css).encode()).hexdigest()[:12]
+    try:
+        fl = json.loads((CONTENT / 'fill.json').read_text())
+        fl = fl.get('pages', {}) if fl.get('css') == flcss else {}
+    except Exception:
+        fl = {}
+    def _mark(s):
+        if s.count('<section') != 1:
+            return s
+        h = hashlib.sha1(s.encode()).hexdigest()[:10]
+        return s.replace('<section', '<section data-h="%s"' % h + (' data-fl="%s"' % fl[h] if h in fl else ''), 1)
+    html_pages = [_mark(s) for s in html_pages]
+    meta['flcss'] = flcss
     page = (SRC / 'shell.html').read_text()
     app_js = (SRC / 'app.js').read_text()
     if os.environ.get('PRR_V2', '1') != '0':   # the new app design (owner, 11 Nov 2026): preview builds only until the owner approves
