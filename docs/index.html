@@ -10500,16 +10500,28 @@ window.__lic=window.__sbRpc?{dev:SDEV,kind:kindOf,label:labelOf,rpc:window.__sbR
   trialLeft:trialTxt,trialDur:trialDur,startTrial:function(){startTrial()},
   adopt:function(j){return sha(j.key||'').then(function(h){if(h!==ACC.key_hash)throw new Error('key');keyMeta(j);st('k',j.key);if(j.code)st('scode',j.code);st('kc',String(Date.now()));
     choiceSnd('ok');openingFx('تم تفعيل اشتراكك · جارٍ فتح الكتاب كاملًا');setTimeout(function(){location.reload()},1100)})},
-  /* an old activation code (PMR- or SMR-XXXX-XXXX) typed in the new app: the Worker checks it, as before */
+  /* an old activation code (PMR- or SMR-XXXX-XXXX) typed in the new app: first the shared system (the owner moves the old codes there,
+     13 Nov 2026), then the book's own server (Worker), as before */
   activate:function(code,say){code=String(code||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
-    if(OLDEND){say('انتهت مدة أكواد التفعيل القديمة. اشترك من هذه الصفحة.');return}
     if(code.slice(0,3)!==BK.code||!/^[A-Z]{3}[A-Z0-9]{8}$/.test(code)){say('يكون الكود بهذا الشكل: '+BK.code+'-XXXX-XXXX');return}
-    if(SRV==null){say('التفعيل يعمل من رابط الكتاب الأصلي فقط.');return}
     say('جارٍ التفعيل…');
+    oldToNew(code).then(function(j){if(j){window.__lic.adopt(j).catch(function(){say(ACT_ERR.server)});return}
+    if(OLDEND){say('انتهت مدة أكواد التفعيل القديمة. اشترك من هذه الصفحة.');return}
+    if(SRV==null){say('التفعيل يعمل من رابط الكتاب الأصلي فقط.');return}
     fetch(SRV.replace(/\/$/,'')+'/activate',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({code:code,dev:DEV})}).then(function(r){return r.json()}).then(function(j){
       if(!j||!j.ok){say(ACT_ERR[j&&j.reason]||ACT_ERR.server);return}
       return checkCode(j.token).then(function(ok){if(!ok){say(ACT_ERR.server);return}st('act',j.token);st('code',j.code);if(j.name)st('name',j.name);say('تم التفعيل. يُفتح الكتاب كاملًا الآن…');choiceSnd('ok');setTimeout(function(){location.reload()},900)})})
-      .catch(function(){say(ACT_ERR.net)})}}:null;
+      .catch(function(){say(ACT_ERR.net)})})}}:null;
+/* Old codes moved to the shared system (owner, 13 Nov 2026: "shift the old codes to new-style subscriptions, starting with 1 month").
+   oldToNew(code) asks the shared system to take this device on the moved code; it answers the key (or null when the code is not there).
+   A device that opened the book with an old code joins by itself: once every 6 hours until it has this book's key, with no message and
+   no reload (the book is already open; the new key is used from the next opening). */
+function oldToNew(code){code=String(code||'').toUpperCase().replace(/[^A-Z0-9]/g,'');if(!window.__sbRpc||!/^[A-Z]{3}[A-Z0-9]{8}$/.test(code))return Promise.resolve(null);
+  var f=code.slice(0,3)+'-'+code.slice(3,7)+'-'+code.slice(7),R=window.__sbRpc;
+  return R('obs_request_status',{p_dev:SDEV,p_kind:kindOf(),p_label:labelOf()}).then(function(){return R('obs_activate',{p_code:f,p_dev:SDEV,p_kind:kindOf(),p_label:labelOf()})})
+    .then(function(r){var j=r&&r.data;if(r.error||!j||!j.ok||!j.key)return null;return sha(j.key).then(function(h){return h===ACC.key_hash?j:null})}).catch(function(){return null})}
+if(window.__sbRpc&&!REVIEW&&!st('k')&&st('act')&&st('code')&&navigator.onLine!==false&&Date.now()-(+st('mvtry')||0)>6*36e5){st('mvtry',String(Date.now()));
+  setTimeout(function(){oldToNew(st('code')).then(function(j){if(!j)return;keyMeta(j);st('k',j.key);if(j.code)st('scode',j.code);st('kc',String(Date.now()))})},4000)}
 
 var INFO=window.BOOK_INFO||{},TOT=INFO.tot||{},CFG=window.BOOK_CFG||{};
 function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
@@ -10797,7 +10809,7 @@ var HELP=[['home','الرئيسية','من هنا تبدأ كل شيء.',['<b>ت
  ['reader','القراءة وأدوات المذاكرة','الأدوات رموز في شريط أعلى الصفحة، وأزرار القراءة في الأسفل. يختفي الشريطان أثناء النزول في القراءة ويعودان بضغطة على الصفحة.',['<b>تظليل</b> و<b>خط</b>: اضغط مطوّلًا على كلمة ثم مدّ التحديد إلى ما تريد، فيظهر شريط الخيارات: اختر لون التظليل أو «خط».','<b>قلم</b>: للرسم والكتابة على الصفحة، و<b>نص</b>: لكتابة ملاحظة في أي مكان.','<b>ملاحظات</b>: حدّد الكلام بالطريقة نفسها ثم اختر «ملاحظة» من الشريط واكتب ملاحظتك.','<b>صفحة</b>: يضيف صفحة فارغة لك، و<b>الحجم</b>: يكبّر الصفحة أو يصغّرها.','في الأسفل: <b>المحاضرات</b> و<b>الفيديو</b> لهذا الموضوع، و<b>المحتويات</b> لمحتويات الكتاب كاملة: كل الفصول ومواضيعها وأرقام صفحاتها.','<b>تقدّم الصفحة</b> (الدائرة في الأسفل): اختر «قرأتها» أو «أتقنتها» ليُحسب تقدّمك.','في أعلى الشاشة: السهم يعيدك إلى الفصل، وزر <b>البيت</b> يعيدك إلى الرئيسية، ثم علامة الحفظ ولون الصفحة. على الجهاز اللوحي والحاسوب يوجد زر يخفي القائمة الجانبية ويظهرها.']],
  ['practice','الممارسة: الأسئلة والبطاقات','اختبر نفسك بعد كل موضوع.',['اضغط <b>Practice</b> ثم اختر «الأسئلة» أو «البطاقات».','<b>الأسئلة</b>: اختر نمط التدريب أو الامتحان بالوقت، ثم الفصول وعدد الأسئلة، واضغط Start. بعد الإجابة يظهر الشرح.','<b>البطاقات</b>: اضغط البطاقة ليظهر الجواب، ثم اختر «عرفتها» أو «مرة أخرى».','<b>بطاقات اليوم</b>: عشر بطاقات كل يوم، وإكمالها يزيد سلسلة أيامك.']],
  ['resources','المصادر','كل ما تحتاجه للمراجعة في مكان واحد.',['<b>المراجعة السريعة</b>: بطاقة امتحان لكل موضوع.','<b>أدوية الأطفال</b>: الجرعات والمحاذير.','<b>السريري OSCE</b>: محطات الفحص والتاريخ المرضي.','<b>الفيديو</b> و<b>المحاضرات</b>: تظهر هنا عند إضافتها.','<b>ملاحظاتي</b>: كل ملاحظاتك وتظليلك، و<b>المصادر المحفوظة</b>: ما حفظته بعلامة الحفظ.']],
- ['sub','الاشتراك','من الإعدادات ← الاشتراك.',['<b>الخطة التجريبية</b>: اضغط «ابدأ التجربة» ليُفتح الكتاب كاملًا ساعة واحدة.','للاشتراك: اختر الخطة (شهري أو سنوي أو مدى الحياة) ثم اضغط <b>اشترك الآن</b>.','حوّل المبلغ إلى الحساب الظاهر، ثم ارفع صورة الإيصال واكتب اسمك ورقم هاتفك واضغط <b>إرسال طلب التفعيل</b>.','يظهر «طلبك قيد المراجعة». يمكنك <b>تعديل الطلب</b> أو <b>إلغاؤه</b> قبل الموافقة.','بعد الموافقة يُفتح الكتاب كاملًا تلقائيًا، بلا أي كود.','<b>جهاز آخر</b>: من جهازك المشترك اضغط «أضف جهازًا آخر»، واكتب رقم الربط في الجهاز الجديد (حتى ثلاثة أجهزة).','عند انتهاء الاشتراك تبقى ملاحظاتك وتقدّمك محفوظة وتعود عند التجديد.']],
+ ['sub','الاشتراك','من الإعدادات ← الاشتراك.',['<b>الخطة التجريبية</b>: اضغط «ابدأ التجربة» ليُفتح الكتاب كاملًا ساعة واحدة.','للاشتراك: اختر الخطة (شهري أو سنوي أو مدى الحياة) ثم اضغط <b>اشترك الآن</b>.','حوّل المبلغ إلى الحساب الظاهر، ثم اكتب اسمك ورقم هاتفك (صورة الإيصال اختيارية) واضغط <b>إرسال طلب التفعيل</b>.','يظهر «طلبك قيد المراجعة». يمكنك <b>تعديل الطلب</b> أو <b>إلغاؤه</b> قبل الموافقة.','بعد الموافقة يُفتح الكتاب كاملًا تلقائيًا، بلا أي كود.','<b>جهاز آخر</b>: من جهازك المشترك اضغط «أضف جهازًا آخر»، واكتب رقم الربط في الجهاز الجديد (حتى ثلاثة أجهزة).','عند انتهاء الاشتراك تبقى ملاحظاتك وتقدّمك محفوظة وتعود عند التجديد.']],
  ['settings','الإعدادات','اضبط التطبيق كما تحب.',['<b>الملف الشخصي</b>: اسمك وصورتك ورقم المستخدم.','<b>المظهر</b>: نهاري أو ليلي أو تلقائي. زر الشمس أو القمر في أعلى الشاشة يبدّل بسرعة.','<b>لون التطبيق</b>: ستة ألوان، ويتغيّر معها غلاف الكتاب.','<b>المزامنة</b>: تحفظ ملاحظاتك وتقدّمك بين أجهزتك.','<b>التنزيلات</b> و<b>الإشعارات</b> و<b>تقدّمي</b>.','<b>المساعدة</b>: راسلنا في واتساب.']]];
 /* the owner's five user-guide posters come first (11 Nov 2026), then the detailed steps with screenshots */
 var UG5=['التنقّل والرئيسية','القراءة والتعليقات','الأسئلة والبطاقات','المصادر وأدوات الدراسة','الإعدادات والاشتراك'];
@@ -10914,13 +10926,13 @@ R.v2pay=function(){var ED=PAY.edit&&REQ&&REQ.status==='pending',p=plan(PAY.plan)
   $('v2payW').innerHTML=title(ED?'تعديل الطلب':'إكمال الاشتراك','v2sub')+
    (ED?'<div class="plans" lang="ar">'+PLANS.map(function(q){return '<button type="button" class="v2c pln'+(PAY.plan===q.id?' on':'')+'" data-act="plan2" data-p="'+q.id+'" aria-pressed="'+(PAY.plan===q.id)+'"><i></i><span>'+(sp('lang')==='en'?q.en:q.ar)+'</span><b dir="ltr">'+X(q.price)+'</b></button>'}).join('')+'</div>'
    :'<div class="v2c sbx" lang="ar"><div class="prow"><span>'+I('cal')+'الخطة المختارة</span><b>'+p.ar+' · <bdi dir="ltr">'+X(p.price)+'</bdi></b><button type="button" class="v2btn sm ol" data-v="v2sub">تغيير الخطة</button></div></div>')+
-   '<div class="v2c sbx" lang="ar"><b>'+I('sync')+'التحويل إلى الحساب</b><p>اسم الحساب: <b>'+X(CFG.bankak_name||'')+'</b></p><div class="acct"><span dir="ltr">'+X(CFG.bankak||'')+'</span><button type="button" class="v2btn sm ol" data-act="copy2" data-c="'+X(CFG.bankak||'')+'">'+I('copy')+'نسخ رقم الحساب</button></div><p class="mu">حوّل <bdi dir="ltr">'+X(p.price)+'</bdi> ثم ارفع صورة إشعار التحويل هنا.</p></div>'+
-   '<div class="v2c sbx frm" lang="ar"><label class="upl" id="rcL">'+I('dl')+'<span id="rcT">'+(PAY.file?'✓ '+X(PAY.file.name):ED?'الإيصال المرسل محفوظ · اضغط لتغييره':'رفع الإيصال (صورة أو PDF)')+'</span><input id="rcF" type="file" accept="image/*,application/pdf" hidden></label>'+
+   '<div class="v2c sbx" lang="ar"><b>'+I('sync')+'التحويل إلى الحساب</b><p>اسم الحساب: <b>'+X(CFG.bankak_name||'')+'</b></p><div class="acct"><span dir="ltr">'+X(CFG.bankak||'')+'</span><button type="button" class="v2btn sm ol" data-act="copy2" data-c="'+X(CFG.bankak||'')+'">'+I('copy')+'نسخ رقم الحساب</button></div><p class="mu">حوّل <bdi dir="ltr">'+X(p.price)+'</bdi> ثم أرسل الطلب. صورة إشعار التحويل اختيارية، وتسرّع المراجعة.</p></div>'+
+   '<div class="v2c sbx frm" lang="ar"><label class="upl" id="rcL">'+I('dl')+'<span id="rcT">'+(PAY.file?'✓ '+X(PAY.file.name):ED?'الإيصال المرسل محفوظ · اضغط لتغييره':'رفع الإيصال (اختياري: صورة أو PDF)')+'</span><input id="rcF" type="file" accept="image/*,application/pdf" hidden></label>'+
     '<label>الاسم<input id="pyN" type="text" maxlength="60" value="'+X(sp('rname')||myName())+'" dir="auto" autocomplete="name"></label>'+
     '<label>رقم الهاتف<input id="pyP" type="tel" maxlength="20" value="'+X(sp('tel')||'')+'" dir="ltr" inputmode="tel" placeholder="09XXXXXXXX" autocomplete="tel"></label>'+
     '<label>رقم المستخدم<input type="text" value="'+dev+'" readonly dir="ltr"></label>'+
     '<label>تعليق (اختياري)<textarea id="pyC" maxlength="500" rows="2" dir="auto"></textarea></label></div>'+
-   '<button type="button" class="v2btn" id="pyGo" data-act="send" lang="ar" style="height:50px">'+(ED?'حفظ التعديل':'إرسال طلب التفعيل')+I('back')+'</button><p class="v2crumb" id="pyMsg" lang="ar" style="text-align:center" role="status">يُراجع طلبك بعد إرسال الإيصال، ويُفتح الكتاب تلقائيًا بعد الموافقة.</p>';
+   '<button type="button" class="v2btn" id="pyGo" data-act="send" lang="ar" style="height:50px">'+(ED?'حفظ التعديل':'إرسال طلب التفعيل')+I('back')+'</button><p class="v2crumb" id="pyMsg" lang="ar" style="text-align:center" role="status">يُراجع طلبك بعد إرساله، ويُفتح الكتاب تلقائيًا بعد الموافقة.</p>';
   $('rcF').onchange=function(){var f=this.files[0],T=$('rcT');if(!f)return;PAY.file=null;
     function done(mime,b64){if(b64.length>2000000){T.textContent='الملف كبير جدًا. اختر صورة أصغر.';return}PAY.file={mime:mime,data:b64,name:f.name};T.textContent='✓ '+f.name}
     if(f.type==='application/pdf'){if(f.size>1400000){T.textContent='ملف PDF كبير جدًا (الحد 1.4 ميغابايت). أرسل صورة بدلًا منه.';return}var fr=new FileReader();fr.onload=function(){done('application/pdf',String(fr.result).split(',')[1]||'')};fr.readAsDataURL(f);return}
@@ -10956,11 +10968,11 @@ var ACT={sub:function(){RETS=V2.indexOf(CURV)>=0&&CURV!=='v2sub'&&CURV!=='v2pay'
   copy2:function(b){try{navigator.clipboard.writeText(b.dataset.c);var t=b.innerHTML;b.innerHTML=I('check')+'تم النسخ';setTimeout(function(){b.innerHTML=t},1400)}catch(e){}},
   send:function(b){var M=$('pyMsg'),nm=$('pyN').value.trim(),ph=$('pyP').value.replace(/[٠-٩]/g,function(d){return '٠١٢٣٤٥٦٧٨٩'.indexOf(d)}).trim();
     if(PAY.busy)return;if(!LIC){M.textContent='إرسال الطلب غير متاح في نسخة المراجعة.';return}
-    var ED=PAY.edit&&REQ&&REQ.status==='pending';if(!PAY.file&&!ED){M.textContent='ارفع صورة إشعار التحويل أولًا.';return}if(nm.length<2){M.textContent='اكتب اسمك.';return}if(!/^[0-9+ ]{7,20}$/.test(ph)){M.textContent='اكتب رقم هاتف صحيحًا.';return}
+    var ED=PAY.edit&&REQ&&REQ.status==='pending';if(nm.length<2){M.textContent='اكتب اسمك.';return}if(!/^[0-9+ ]{7,20}$/.test(ph)){M.textContent='اكتب رقم هاتف صحيحًا.';return}
     if(navigator.onLine===false){M.textContent='لا يوجد اتصال بالإنترنت. حاول مرة أخرى عند توفر الاتصال.';return}
     PAY.busy=true;b.disabled=true;M.textContent=ED?'جارٍ حفظ التعديل…':'جارٍ إرسال الطلب…';sp('tel',ph);sp('rname',nm);if(!sp('name'))sp('name',nm);
     (ED?LIC.rpc('obs_request_update',{p_dev:LIC.dev,p_name:nm,p_phone:ph,p_plan:PAY.plan,p_comment:$('pyC').value,p_mime:PAY.file?PAY.file.mime:null,p_data:PAY.file?PAY.file.data:null})
-      :LIC.rpc('obs_request_submit',{p_dev:LIC.dev,p_kind:LIC.kind(),p_label:LIC.label(),p_name:nm,p_phone:ph,p_plan:PAY.plan,p_comment:$('pyC').value,p_mime:PAY.file.mime,p_data:PAY.file.data})).then(function(r){PAY.busy=false;b.disabled=false;var d=r.data;
+      :LIC.rpc('obs_request_submit',{p_dev:LIC.dev,p_kind:LIC.kind(),p_label:LIC.label(),p_name:nm,p_phone:ph,p_plan:PAY.plan,p_comment:$('pyC').value,p_mime:PAY.file?PAY.file.mime:null,p_data:PAY.file?PAY.file.data:null})).then(function(r){PAY.busy=false;b.disabled=false;var d=r.data;
       if(r.error||!d){M.textContent='تعذّر الإرسال. تأكد من الاتصال واضغط الزر مرة أخرى.';return}
       if(!d.ok&&d.reason==='none'&&ED){PAY.edit=false;M.textContent='تمت مراجعة طلبك قبل التعديل.';poll();return}
       if(!d.ok&&d.reason!=='pending'){M.textContent={wait:'انتظر لحظات ثم اضغط مرة أخرى.',many:'أرسلت عدة طلبات اليوم. انتظر المراجعة أو راسلنا في واتساب.',busy:'الطلبات كثيرة الآن. حاول بعد قليل.',name:'اكتب اسمك.',phone:'اكتب رقم هاتف صحيحًا.',file:'الإيصال غير مقبول. ارفع صورة أو ملف PDF.'}[d.reason]||'تعذّر الإرسال. حاول مرة أخرى.';return}
@@ -11235,7 +11247,7 @@ var T_EN={
 "تحديد الكل كمقروء":"Mark all as read","تدريب أو امتحان بالوقت · اختيار الفصول وعدد الأسئلة · # سؤال محفوظ":"Tutor or timed · choose chapters and number of questions · # questions saved","تدرّب حسب الفصل":"Practise by chapter","تظليل":"Highlight","تعديل الطلب":"edit the request",
 "تعرّف على الكتاب، وفريقه، وطريقة الاستفادة منه":"Get to know the book, its team and how to use it","تعني أنه مفتوح في النسخة المجانية، والقفل يعني أنه يحتاج إلى اشتراك.":"means it is open in the free version; the lock means it needs a subscription.","تغيير الصورة":"Change photo","تقدّم الصفحة":"Page progress","تقدّمك":"Your progress","تقدّمي":"My progress",
 "تلقائي":"Automatic","تمت الإجابة":"Answered","تيليجرام":"Telegram","ثم اختر «الأسئلة» أو «البطاقات».":"then choose “Questions” or “Flashcards”.","ثم اختر الفصل.":"then choose the chapter.","جهاز آخر":"Another device","حان وقت المراجعة":"Time to revise","حجم الصفحة":"Page size","حسب الفصل والموضوع":"By chapter and topic",
-"حفظ التغييرات":"Save changes","حقوق النشر وشروط الاستخدام":"Copyright and terms of use","حماية العين":"Eye comfort","حوّل المبلغ إلى الحساب الظاهر، ثم ارفع صورة الإيصال واكتب اسمك ورقم هاتفك واضغط":"Transfer the amount to the account shown, then upload a photo of the receipt, write your name and phone number and press",
+"حفظ التغييرات":"Save changes","حقوق النشر وشروط الاستخدام":"Copyright and terms of use","حماية العين":"Eye comfort","حوّل المبلغ إلى الحساب الظاهر، ثم اكتب اسمك ورقم هاتفك (صورة الإيصال اختيارية) واضغط":"Transfer the amount to the account shown, then write your name and phone number (a photo of the receipt is optional) and press",
 "خط":"Underline","خط تحت النص":"Underline text","د. العباس عبدالرحمن":"Dr. Alabass Abdulrahman","د. عبدالجليل ارجا":"Dr. Abdaljalil Arja","دليل الاستخدام":"User manual","رفيقك في رحلة تعلّم طب الأطفال":"Your companion in learning pediatrics","رقم المستخدم (رقم هذا الجهاز)":"User number (this device's number)","سؤال":"questions",
 "ستُضاف محاضرة لكل موضوع، وتظهر هنا فور رفعها.":"A lecture will be added for every topic and will appear here as soon as it is uploaded.","ستُضاف محاضرة فيديو لكل موضوع، وتظهر هنا فور رفعها.":"A video lecture will be added for every topic and will appear here as soon as it is uploaded.","سطور صغيرة":"Narrow lines","سطور كبيرة":"Wide lines",
 "سلايدات المحاضرات":"Lecture slides","شرح التطبيق بالصور":"The app explained with pictures","شرح مفصّل بالصور":"Detailed guide with pictures","شرح مفصّل بصور من التطبيق":"Detailed guide with pictures of the app","شغّل التظليل السريع":"Turn on quick highlighting","شغّل الخط السريع":"Turn on quick underlining","شغّل القلم":"Turn the pen on",
@@ -11290,14 +11302,14 @@ var T_EN={
 "اسم الحساب:":"Account name:",
 "نسخ رقم الحساب":"Copy account number",
 "حوّل":"Transfer",
-"ثم ارفع صورة إشعار التحويل هنا.":"then upload a picture of the transfer receipt here.",
+"ثم أرسل الطلب. صورة إشعار التحويل اختيارية، وتسرّع المراجعة.":"then send the request. A picture of the transfer receipt is optional and speeds up the review.",
 "الإيصال المرسل محفوظ · اضغط لتغييره":"The receipt you sent is saved · tap to change it",
-"رفع الإيصال (صورة أو PDF)":"Upload the receipt (picture or PDF)",
+"رفع الإيصال (اختياري: صورة أو PDF)":"Upload the receipt (optional: picture or PDF)",
 "رقم الهاتف":"Phone number",
 "رقم المستخدم":"User number",
 "تعليق (اختياري)":"Comment (optional)",
 "حفظ التعديل":"Save changes",
-"يُراجع طلبك بعد إرسال الإيصال، ويُفتح الكتاب تلقائيًا بعد الموافقة.":"Your request is reviewed after you send the receipt, and the book opens automatically after approval.",
+"يُراجع طلبك بعد إرساله، ويُفتح الكتاب تلقائيًا بعد الموافقة.":"Your request is reviewed after you send it, and the book opens automatically after approval.",
 "الملف كبير جدًا. اختر صورة أصغر.":"The file is too large. Choose a smaller picture.",
 "ملف PDF كبير جدًا (الحد # ميغابايت). أرسل صورة بدلًا منه.":"The PDF is too large (limit # MB). Send a picture instead.",
 "تعذّر قراءة الصورة. اختر صورة أخرى.":"The picture could not be read. Choose another one.",
