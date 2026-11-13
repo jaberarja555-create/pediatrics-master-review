@@ -361,6 +361,11 @@ Measured on a simulated mid-range phone (Chromium, CPU 4x slower): start 2.1 s �
   the built pages. Anything that needs a page's DOM must call `ensurePage(i)` first. `window.__renderAll()` builds everything.
   **Tools** (paginate, check, measure, screenshots) run in an automated browser (`navigator.webdriver`) and get all pages built at start, as
   before; set `window.__lazy = 1` before the page loads to test the students' way.
+- **Pages as text (owner, 13 Nov 2026: "still a delay opening Surgery and Pediatrics"):** build.py puts the pages in `<script type="text/x-pages"
+  id="bookPagesTxt">` (`</script` and `<!--` escaped), not in the `<template>`; app.js splits it per page and `srcPages` is a Proxy that makes a page
+  from its text the first time it is read (`PGR` = the raw array; `TEXT` for search is made by `textReady()` at the first search). Never read every
+  `srcPages[i]` at start. Automated tools (navigator.webdriver) get `#bookPages` filled as before. The platform hides its «Opening…» screen when the
+  book posts `{smr:'up'}` (end of src/shell.html), not on the frame's load event.
 - **Each page is its own layout island**: `.pw{contain:strict}` and, with lazy pages, `html.lz .pw{content-visibility:auto}`. Do not put
   anything inside a `.pw` that must show outside its box.
 - **Scroll**: one update per frame (`onScroll('s')`); the bars, page number and saved position are rewritten only when the page in view
