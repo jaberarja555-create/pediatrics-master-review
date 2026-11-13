@@ -1096,7 +1096,12 @@ function termify(root,skip){if(!root||root.dataset.tm)return;root.dataset.tm='1'
 var FRONT=/^(cover|authors|about|reviewers|howto|references|contents|abbr)/;
 var tip=document.createElement('div');tip.className='gtip';tip.hidden=true;document.body.appendChild(tip);var tipFor=null,ptr='mouse';
 function tipHtml(k){var ids=k.slice(1).split('.'),L=k[0]==='a'?TM.ab:TM.gl;return ids.map(function(i){var r=L[+i];return '<b>'+esc(k[0]==='a'?r[1]:r[0][0].charAt(0).toUpperCase()+r[0][0].slice(1))+'</b><span>'+esc(r[2])+'</span>'}).join('')}
-function showTip(el){tipFor=el;tip.innerHTML=tipHtml(el.dataset.t);tip.className='gtip '+(el.dataset.t[0]==='a'?'ab':'gl');tip.hidden=false;
+function tipMark(el){return el.closest('mark.uhl')||el.querySelector('mark.uhl')}
+tip.addEventListener('click',function(e){var b=e.target.closest('[data-tn]');if(!b||!tipFor)return;var m=tipMark(tipFor);hideTip();if(!m)return;var w=m.closest('.pw');
+  if(m.classList.contains('hasn'))openNote(+w.dataset.i,+m.dataset.k);else pickHL(m)});
+function showTip(el){tipFor=el;tip.innerHTML=tipHtml(el.dataset.t);
+  var mk=el.closest('#pages')&&tipMark(el);if(mk){var en=document.documentElement.dataset.lang==='en',hn=mk.classList.contains('hasn');   /* a marked word: its note or highlight is one tap away (owner, 13 Nov 2026) */
+    tip.insertAdjacentHTML('beforeend','<button type="button" class="gtn" data-tn>'+(hn?(en?'📝 Open my note':'📝 فتح ملاحظتي'):(en?'🖍 Highlight options':'🖍 خيارات التظليل'))+'</button>')}tip.className='gtip '+(el.dataset.t[0]==='a'?'ab':'gl');tip.hidden=false;
   var r=el.getBoundingClientRect(),W=innerWidth,tw=Math.min(300,W-24);tip.style.maxWidth=tw+'px';tip.style.left='0px';tip.style.top='0px';
   var b=tip.getBoundingClientRect(),x=Math.max(12,Math.min(W-12-b.width,r.left+r.width/2-b.width/2)),y=r.top-b.height-8;if(y<8)y=r.bottom+8;
   tip.style.left=x+'px';tip.style.top=y+'px'}
