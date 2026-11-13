@@ -390,3 +390,11 @@ Measured on a simulated mid-range phone (Chromium, CPU 4x slower): start 2.1 s �
   `recheck`, Surgery/Pediatrics src/v2.book.js `recheck`); a new end date / plan / name is shown at once (event `obs-sub`, v2.js re-renders);
   ended, switched off or removed → locked. A locked device that had a subscription (`-ended` / `-wassub`) asks `obs_request_status` on opening and every
   10 minutes (v2.js `poll`), so a renewal or switch-on opens it by itself.
+- **Messages and adding a book (owner, 13 Nov 2026; migration 012):** table `obs_msgs` (one conversation per student: `tk` = 'p:' + last 9 digits
+  of the subscription's phone, so the same student in every book; 'c:' + code without a phone; 'd:' + device without a subscription). App
+  (v2.js, ported): Help and Notifications have «مراسلة الإدارة» → screen `v2msg` (chat, `obs_msg_send`); answers come with `obs_msg_list` on
+  opening, return to the app, internet back, every 10 minutes and every 20 s while the chat is open (`mpoll`, kept in `<px>-msgs`) and show
+  first in the notifications («رسالة من الإدارة», with the sound). Admin: «Messages» view (red count, sound for a new message, conversations,
+  reply, delete), «Message» on each student card, «Add a book» (`obs_admin_add_book`: a subscription of the missing book with the student's
+  name and phone + a link number valid 14 days, sent to the student as a message: Subscription → «مشترك على جهاز آخر؟»), «Link number» on a
+  book row with no device yet (`obs_admin_pin`, a new 14-day number).
