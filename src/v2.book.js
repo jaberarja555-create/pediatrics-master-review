@@ -71,4 +71,4 @@ function oldToNew(code){code=String(code||'').toUpperCase().replace(/[^A-Z0-9]/g
   return R('obs_request_status',{p_dev:SDEV,p_kind:kindOf(),p_label:labelOf()}).then(function(){return R('obs_activate',{p_code:f,p_dev:SDEV,p_kind:kindOf(),p_label:labelOf()})})
     .then(function(r){var j=r&&r.data;if(r.error||!j||!j.ok||!j.key)return null;return sha(j.key).then(function(h){return h===ACC.key_hash?j:null})}).catch(function(){return null})}
 if(window.__sbRpc&&!REVIEW&&!st('k')&&st('act')&&st('code')&&navigator.onLine!==false&&Date.now()-(+st('mvtry')||0)>6*36e5){st('mvtry',String(Date.now()));
-  setTimeout(function(){oldToNew(st('code')).then(function(j){if(!j)return;keyMeta(j);st('k',j.key);if(j.code)st('scode',j.code);st('kc',String(Date.now()))})},4000)}
+  setTimeout(function(){oldToNew(st('code')).then(function(j){if(!j)return;keyMeta(j);st('k',j.key);if(j.code)st('scode',j.code);st('kc',String(Date.now()));if(window.__oldPull)window.__oldPull()})},4000)}

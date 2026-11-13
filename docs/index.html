@@ -10093,6 +10093,17 @@ function syncNow(tries){if(!SYNC||navigator.onLine===false)return Promise.resolv
     .then(function(){st('synced',Date.now());imgUpload()})
     .catch(function(e){syncErr=e&&e.reason?e.reason:'net';if(/^(off|reset|unknown|token)$/.test(syncErr))SYNC=false})
     .then(function(){syncing=false;showSync();if(syncAgain){syncAgain=false;syncSoon()}})}
+/* Notes kept on the book's own old server (owner, 14 Nov 2026: "some notes are still missing in the admin, especially in Surgery; same in Pediatrics"): a device that
+   began with an old activation code synced to this book's own server (SRV /sync) until it received the shared-system key, so the notes it saved
+   there never reached the shared system the admin reads. Once the device has the key, the old server's data of its code is read ONCE, merged
+   into this device (nothing is lost: hlMerge keeps the newest of each highlight, note and drawing) and uploaded with the next sync. */
+function oldPull(){if(!HASK||!SYNC||st('wkmig')||!st('code')||!st('act')||SRV==null||navigator.onLine===false)return;
+  fetch(SRV.replace(/\/$/,'')+'/sync',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({code:st('code'),dev:DEV,token:st('act')})})
+    .then(function(r){return r.json()}).then(function(j){
+      if(j&&j.ok){if(j.data)hlApply(hlMerge({hl:HL,del:HLDEL,prog:progData(),ink:INK,idel:INKDEL,sm:smData()},j.data));st('wkmig','1');syncSoon();return}
+      if(j&&/^(off|reset|unknown|token|none|device)$/.test(j.reason||''))st('wkmig','1')}).catch(function(){})}
+window.__oldPull=function(){HASK=!!(st('k')&&ACC.key_hash);if(HASK){SYNC=true;setTimeout(oldPull,1500);syncSoon()}};
+setTimeout(oldPull,6000);
 function ago(t){var m=Math.round((Date.now()-t)/6e4);return m<1?'just now':m<60?m+' min ago':m<1440?Math.round(m/60)+' h ago':Math.round(m/1440)+' d ago'}
 function syncBar(){var t=+st('synced')||0,msg,btn='';
   if(SYNC){msg=syncing?'Syncing…':syncErr==='net'?'Not synced: no internet. It syncs again when you are online.':syncErr==='big'?'Not synced: too much saved (mostly drawings). Clear some drawings and try again.':syncErr?'Not synced. Try again later.':t?'Saved online · '+ago(t):'Not saved online yet';btn='<button type="button" class="chip" id="syncGo"'+(syncing?' disabled':'')+'>Sync now</button>'}
@@ -10577,7 +10588,7 @@ function oldToNew(code){code=String(code||'').toUpperCase().replace(/[^A-Z0-9]/g
   return R('obs_request_status',{p_dev:SDEV,p_kind:kindOf(),p_label:labelOf()}).then(function(){return R('obs_activate',{p_code:f,p_dev:SDEV,p_kind:kindOf(),p_label:labelOf()})})
     .then(function(r){var j=r&&r.data;if(r.error||!j||!j.ok||!j.key)return null;return sha(j.key).then(function(h){return h===ACC.key_hash?j:null})}).catch(function(){return null})}
 if(window.__sbRpc&&!REVIEW&&!st('k')&&st('act')&&st('code')&&navigator.onLine!==false&&Date.now()-(+st('mvtry')||0)>6*36e5){st('mvtry',String(Date.now()));
-  setTimeout(function(){oldToNew(st('code')).then(function(j){if(!j)return;keyMeta(j);st('k',j.key);if(j.code)st('scode',j.code);st('kc',String(Date.now()))})},4000)}
+  setTimeout(function(){oldToNew(st('code')).then(function(j){if(!j)return;keyMeta(j);st('k',j.key);if(j.code)st('scode',j.code);st('kc',String(Date.now()));if(window.__oldPull)window.__oldPull()})},4000)}
 
 var INFO=window.BOOK_INFO||{},TOT=INFO.tot||{},CFG=window.BOOK_CFG||{};
 function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}

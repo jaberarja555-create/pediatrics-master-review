@@ -1047,6 +1047,17 @@ function syncNow(tries){if(!SYNC||navigator.onLine===false)return Promise.resolv
     .then(function(){st('synced',Date.now());imgUpload()})
     .catch(function(e){syncErr=e&&e.reason?e.reason:'net';if(/^(off|reset|unknown|token)$/.test(syncErr))SYNC=false})
     .then(function(){syncing=false;showSync();if(syncAgain){syncAgain=false;syncSoon()}})}
+/* Notes kept on the book's own old server (owner, 14 Nov 2026: "some notes are still missing in the admin, especially in Surgery; same in Pediatrics"): a device that
+   began with an old activation code synced to this book's own server (SRV /sync) until it received the shared-system key, so the notes it saved
+   there never reached the shared system the admin reads. Once the device has the key, the old server's data of its code is read ONCE, merged
+   into this device (nothing is lost: hlMerge keeps the newest of each highlight, note and drawing) and uploaded with the next sync. */
+function oldPull(){if(!HASK||!SYNC||st('wkmig')||!st('code')||!st('act')||SRV==null||navigator.onLine===false)return;
+  fetch(SRV.replace(/\/$/,'')+'/sync',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},body:JSON.stringify({code:st('code'),dev:DEV,token:st('act')})})
+    .then(function(r){return r.json()}).then(function(j){
+      if(j&&j.ok){if(j.data)hlApply(hlMerge({hl:HL,del:HLDEL,prog:progData(),ink:INK,idel:INKDEL,sm:smData()},j.data));st('wkmig','1');syncSoon();return}
+      if(j&&/^(off|reset|unknown|token|none|device)$/.test(j.reason||''))st('wkmig','1')}).catch(function(){})}
+window.__oldPull=function(){HASK=!!(st('k')&&ACC.key_hash);if(HASK){SYNC=true;setTimeout(oldPull,1500);syncSoon()}};
+setTimeout(oldPull,6000);
 function ago(t){var m=Math.round((Date.now()-t)/6e4);return m<1?'just now':m<60?m+' min ago':m<1440?Math.round(m/60)+' h ago':Math.round(m/1440)+' d ago'}
 function syncBar(){var t=+st('synced')||0,msg,btn='';
   if(SYNC){msg=syncing?'Syncing…':syncErr==='net'?'Not synced: no internet. It syncs again when you are online.':syncErr==='big'?'Not synced: too much saved (mostly drawings). Clear some drawings and try again.':syncErr?'Not synced. Try again later.':t?'Saved online · '+ago(t):'Not saved online yet';btn='<button type="button" class="chip" id="syncGo"'+(syncing?' disabled':'')+'>Sync now</button>'}
