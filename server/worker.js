@@ -220,9 +220,9 @@ export default {
       if (path === '/img' && req.method === 'POST') return await img(req, env);
       if (path === '/trial' && req.method === 'POST') return await trial(req, env);
       if (path === '/release' && req.method === 'POST') return await release(req, env);
-      if (path.startsWith('/api/')) return await api(req, env, path);
+      // owner, 13 Nov 2026: the old code admin (/admin, /api/codes) is closed; all codes are in the shared admin
+      if (path.startsWith('/api/')) return json({ error: 'Closed' }, 410);
     } catch (e) { return json({ error: 'Server error: ' + e.message, reason: 'server' }, 500) }
-    if (path === '/admin' || path === '/admin/') return new Response(PAGE(env, url.origin + '/'), { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });
     if (env.ASSETS) return env.ASSETS.fetch(req);  // the book app
     return new Response('Not found', { status: 404 });
   }
