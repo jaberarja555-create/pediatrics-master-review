@@ -446,3 +446,4 @@ https://srg.studentmasterreview.com and https://ped.studentmasterreview.com (Wor
   the same student's subscription of this book (same sid or phone) takes the device with no link number. Details in the Obstetrics CLAUDE.md
   (migration 023).
 
+- **Book guide on the first opening (owner, 14 Nov 2026):** seven screens with this book's own pictures (content/img/tour_<n>.webp) after the greeting, before the subscription choices; seen once (`<px>-btour`); Settings → دليل الاستخدام → «جولة في الكتاب» shows it again. Code in the ported src/v2.tools.js (`__btour`); details and the picture script in the Obstetrics CLAUDE.md ("Two guides"). The app (Student Master Review) has its own guide.
