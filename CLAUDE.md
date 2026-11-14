@@ -441,3 +441,8 @@ https://srg.studentmasterreview.com and https://ped.studentmasterreview.com (Wor
 - **Same student on two cards (migration 017):** a student card's «Same person as…» moves everything to the other card: its subscriptions
   take that card's name and phone (cards are grouped by phone), and a book both cards have is merged (`obs_admin_merge`: devices moved,
   device count raised, better plan and later end date kept, synced notes kept or re-uploaded by the devices, the second subscription removed).
+- **Books added by the admin open by themselves (owner, 14 Nov 2026):** v2.js (ported from Obstetrics) reports this book's device number to
+  Student Master Review and, when the book has no subscription, calls `obs_auto_join` with the other books' device numbers on the phone;
+  the same student's subscription of this book (same sid or phone) takes the device with no link number. Details in the Obstetrics CLAUDE.md
+  (migration 023).
+
