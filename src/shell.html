@@ -224,6 +224,7 @@
   window.addEventListener('message', function (e) {
     if (e.origin !== org || !e.data) return;
     if (e.data.smr === 'getStats') send();
+    if (e.data.smr === 'show' || e.data.smr === 'hide') { try { if (typeof window.__smrSync === 'function') window.__smrSync(); } catch (er) {} if (e.data.smr === 'hide') send(); }
     if (e.data.smr === 'profile') profIn(e.data);
     if (e.data.smr === 'lang' && /^(ar|en)$/.test(e.data.lang)) {
       PL = e.data.lang; try { sessionStorage.setItem('smr-plang', PL); } catch (er) {}

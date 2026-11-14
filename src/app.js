@@ -1036,6 +1036,7 @@ function hlApply(m){progApply(m.prog||{});smApply(m.sm||{});inkApply(m.ink||{},m
   HL=m.hl;HLDEL=m.del;HLPREV=hsnap();stj('hl',HL);stj('hldel',HLDEL);reanchorHL();
   Object.keys(touched).forEach(function(k){if(byKey[k]!==undefined)renderPage(byKey[k])});
   if(!$('home').hidden)refreshHome();if(!$('sheet').hidden&&$('syncBar'))$('sheetBody').innerHTML=hlHtml()}
+window.__smrSync=function(){return syncNow()};   // the book opened or closed inside Student Master Review
 function syncNow(tries){if(!SYNC||navigator.onLine===false)return Promise.resolve();
   if(syncing){syncAgain=true;return Promise.resolve()}
   if(NOTE||pending||picked){syncSoon();return Promise.resolve()}      // the student is busy with a highlight: sync a bit later

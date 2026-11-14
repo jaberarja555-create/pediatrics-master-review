@@ -10109,6 +10109,7 @@ function hlApply(m){progApply(m.prog||{});smApply(m.sm||{});inkApply(m.ink||{},m
   HL=m.hl;HLDEL=m.del;HLPREV=hsnap();stj('hl',HL);stj('hldel',HLDEL);reanchorHL();
   Object.keys(touched).forEach(function(k){if(byKey[k]!==undefined)renderPage(byKey[k])});
   if(!$('home').hidden)refreshHome();if(!$('sheet').hidden&&$('syncBar'))$('sheetBody').innerHTML=hlHtml()}
+window.__smrSync=function(){return syncNow()};   // the book opened or closed inside Student Master Review
 function syncNow(tries){if(!SYNC||navigator.onLine===false)return Promise.resolve();
   if(syncing){syncAgain=true;return Promise.resolve()}
   if(NOTE||pending||picked){syncSoon();return Promise.resolve()}      // the student is busy with a highlight: sync a bit later
@@ -11687,6 +11688,7 @@ if(!st('v2z')){st('v2z','1');if(st('zoom')){try{localStorage.removeItem(BK.prefi
   window.addEventListener('message', function (e) {
     if (e.origin !== org || !e.data) return;
     if (e.data.smr === 'getStats') send();
+    if (e.data.smr === 'show' || e.data.smr === 'hide') { try { if (typeof window.__smrSync === 'function') window.__smrSync(); } catch (er) {} if (e.data.smr === 'hide') send(); }
     if (e.data.smr === 'profile') profIn(e.data);
     if (e.data.smr === 'lang' && /^(ar|en)$/.test(e.data.lang)) {
       PL = e.data.lang; try { sessionStorage.setItem('smr-plang', PL); } catch (er) {}

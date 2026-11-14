@@ -447,3 +447,8 @@ https://srg.studentmasterreview.com and https://ped.studentmasterreview.com (Wor
   (migration 023).
 
 - **Book guide on the first opening (owner, 14 Nov 2026):** seven screens with this book's own pictures (content/img/tour_<n>.webp) after the greeting, before the subscription choices; seen once (`<px>-btour`); Settings → دليل الاستخدام → «جولة في الكتاب» shows it again. Code in the ported src/v2.tools.js (`__btour`); details and the picture script in the Obstetrics CLAUDE.md ("Two guides"). The app (Student Master Review) has its own guide.
+- **Sync when a book is opened or closed inside Student Master Review (owner, 14 Nov 2026):** a book frame stays loaded when the student
+  goes back to the library, so the app's own open/close syncs never ran. The platform (js/app.js `tellVis`, `SHOWN`) now posts `{smr:'show'}`
+  when a book comes forward and `{smr:'hide'}` when it leaves the screen; the end script of each book's src/shell.html calls
+  `window.__smrSync()` (= syncNow: fetch the other devices' changes, upload what is not online) on both. Opening or closing the app itself
+  already synced (start, visibilitychange, pagehide).
